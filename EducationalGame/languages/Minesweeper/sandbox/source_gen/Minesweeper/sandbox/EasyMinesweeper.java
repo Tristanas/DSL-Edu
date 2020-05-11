@@ -7,10 +7,10 @@ import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
-public class Minesweeper extends JFrame {
+public class EasyMinesweeper extends JFrame {
   private JLabel statusbar;
 
-  public Minesweeper() {
+  public EasyMinesweeper() {
     initUI();
   }
 
@@ -18,7 +18,7 @@ public class Minesweeper extends JFrame {
     statusbar = new JLabel("");
     add(statusbar, BorderLayout.SOUTH);
 
-    add(new Board(statusbar));
+    add(new EasyMinesweeperBoard(statusbar));
 
     setResizable(false);
     pack();
@@ -32,7 +32,7 @@ public class Minesweeper extends JFrame {
     EventQueue.invokeLater(new Runnable() {
       @Override
       public void run() {
-        Minesweeper ex = new Minesweeper();
+        EasyMinesweeper ex = new EasyMinesweeper();
         ex.setVisible(true);
       }
     });

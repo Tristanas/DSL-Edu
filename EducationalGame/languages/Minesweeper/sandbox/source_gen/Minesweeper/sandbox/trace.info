@@ -14,7 +14,43 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084417757618">
-    <file name="Board.java">
+    <file name="MediumMinesweeper.java">
+      <node id="4981817084417757618" at="11,0,12,0" concept="3" trace="statusbar" />
+      <node id="4981817084417757618" at="13,30,14,13" concept="2" />
+      <node id="4981817084417757618" at="17,25,18,31" concept="2" />
+      <node id="4981817084417757618" at="18,31,19,39" concept="2" />
+      <node id="4981817084417757618" at="19,39,20,0" concept="10" />
+      <node id="4981817084417757618" at="20,0,21,47" concept="2" />
+      <node id="4981817084417757618" at="21,47,22,0" concept="10" />
+      <node id="4981817084417757618" at="22,0,23,24" concept="2" />
+      <node id="4981817084417757618" at="23,24,24,11" concept="2" />
+      <node id="4981817084417757618" at="24,11,25,0" concept="10" />
+      <node id="4981817084417757618" at="25,0,26,34" concept="2" />
+      <node id="4981817084417757618" at="26,34,27,32" concept="2" />
+      <node id="4981817084417757618" at="27,32,28,51" concept="2" />
+      <node id="4981817084417757618" at="34,25,35,55" concept="7" />
+      <node id="4981817084417757618" at="35,55,36,28" concept="2" />
+      <node id="4981817084417757618" at="13,0,16,0" concept="1" trace="MediumMinesweeper#()V" />
+      <node id="4981817084417757618" at="33,0,38,0" concept="6" trace="run#()V" />
+      <node id="4981817084417757618" at="31,42,38,7" concept="2" />
+      <node id="4981817084417757618" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
+      <node id="4981817084417757618" at="17,0,30,0" concept="6" trace="initUI#()V" />
+      <scope id="4981817084417757618" at="13,30,14,13" />
+      <scope id="4981817084417757618" at="34,25,36,28">
+        <var name="ex" id="4981817084417757618" />
+      </scope>
+      <scope id="4981817084417757618" at="13,0,16,0" />
+      <scope id="4981817084417757618" at="33,0,38,0" />
+      <scope id="4981817084417757618" at="31,42,38,7" />
+      <scope id="4981817084417757618" at="31,0,40,0">
+        <var name="args" id="4981817084417757618" />
+      </scope>
+      <scope id="4981817084417757618" at="17,25,28,51" />
+      <scope id="4981817084417757618" at="17,0,30,0" />
+      <unit id="4981817084417757618" at="32,31,38,5" name="Minesweeper.sandbox.MediumMinesweeper$1" />
+      <unit id="4981817084417757618" at="10,0,41,0" name="Minesweeper.sandbox.MediumMinesweeper" />
+    </file>
+    <file name="MediumMinesweeperBoard.java">
       <node id="4981817084417757618" at="16,0,17,0" concept="3" trace="NUM_IMAGES" />
       <node id="4981817084417757618" at="17,0,18,0" concept="3" trace="CELL_SIZE" />
       <node id="4981817084417757618" at="19,0,20,0" concept="3" trace="COVER_FOR_CELL" />
@@ -38,7 +74,7 @@
       <node id="4981817084417757618" at="41,0,42,0" concept="3" trace="img" />
       <node id="4981817084417757618" at="43,0,44,0" concept="3" trace="allCells" />
       <node id="4981817084417757618" at="44,0,45,0" concept="3" trace="statusbar" />
-      <node id="4981817084417757618" at="46,34,47,31" concept="2" />
+      <node id="4981817084417757618" at="46,51,47,31" concept="2" />
       <node id="4981817084417757618" at="47,31,48,16" concept="2" />
       <node id="4981817084417757618" at="51,28,52,45" concept="2" />
       <node id="4981817084417757618" at="52,45,53,63" concept="2" />
@@ -224,7 +260,7 @@
       <node id="4981817084417757618" at="340,50,343,11" concept="5" />
       <node id="4981817084417757618" at="348,25,351,13" concept="5" />
       <node id="4981817084417757618" at="352,0,355,13" concept="5" />
-      <node id="4981817084417757618" at="46,0,50,0" concept="1" trace="Board#(Ljavax/swing/JLabel;)V" />
+      <node id="4981817084417757618" at="46,0,50,0" concept="1" trace="MediumMinesweeperBoard#(Ljavax/swing/JLabel;)V" />
       <node id="4981817084417757618" at="306,54,310,7" concept="5" />
       <node id="4981817084417757618" at="59,65,64,5" concept="4" />
       <node id="4981817084417757618" at="100,39,105,11" concept="5" />
@@ -303,7 +339,7 @@
       <scope id="4981817084417757618" at="341,66,342,19" />
       <scope id="4981817084417757618" at="349,61,350,29" />
       <scope id="4981817084417757618" at="353,62,354,55" />
-      <scope id="4981817084417757618" at="46,34,48,16" />
+      <scope id="4981817084417757618" at="46,51,48,16" />
       <scope id="4981817084417757618" at="282,40,284,22" />
       <scope id="4981817084417757618" at="307,22,309,18" />
       <scope id="4981817084417757618" at="60,42,63,48">
@@ -410,48 +446,48 @@
         <var name="j" id="4981817084417757618" />
       </scope>
       <scope id="4981817084417757618" at="70,0,162,0" />
-      <unit id="4981817084417757618" at="294,0,369,0" name="Minesweeper.sandbox.Board$MinesAdapter" />
-      <unit id="4981817084417757618" at="15,0,382,0" name="Minesweeper.sandbox.Board" />
-    </file>
-    <file name="Minesweeper.java">
-      <node id="4981817084417757618" at="11,0,12,0" concept="3" trace="statusbar" />
-      <node id="4981817084417757618" at="13,24,14,13" concept="2" />
-      <node id="4981817084417757618" at="17,25,18,31" concept="2" />
-      <node id="4981817084417757618" at="18,31,19,39" concept="2" />
-      <node id="4981817084417757618" at="19,39,20,0" concept="10" />
-      <node id="4981817084417757618" at="20,0,21,30" concept="2" />
-      <node id="4981817084417757618" at="21,30,22,0" concept="10" />
-      <node id="4981817084417757618" at="22,0,23,24" concept="2" />
-      <node id="4981817084417757618" at="23,24,24,11" concept="2" />
-      <node id="4981817084417757618" at="24,11,25,0" concept="10" />
-      <node id="4981817084417757618" at="25,0,26,34" concept="2" />
-      <node id="4981817084417757618" at="26,34,27,32" concept="2" />
-      <node id="4981817084417757618" at="27,32,28,51" concept="2" />
-      <node id="4981817084417757618" at="34,25,35,43" concept="7" />
-      <node id="4981817084417757618" at="35,43,36,28" concept="2" />
-      <node id="4981817084417757618" at="13,0,16,0" concept="1" trace="Minesweeper#()V" />
-      <node id="4981817084417757618" at="33,0,38,0" concept="6" trace="run#()V" />
-      <node id="4981817084417757618" at="31,42,38,7" concept="2" />
-      <node id="4981817084417757618" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
-      <node id="4981817084417757618" at="17,0,30,0" concept="6" trace="initUI#()V" />
-      <scope id="4981817084417757618" at="13,24,14,13" />
-      <scope id="4981817084417757618" at="34,25,36,28">
-        <var name="ex" id="4981817084417757618" />
-      </scope>
-      <scope id="4981817084417757618" at="13,0,16,0" />
-      <scope id="4981817084417757618" at="33,0,38,0" />
-      <scope id="4981817084417757618" at="31,42,38,7" />
-      <scope id="4981817084417757618" at="31,0,40,0">
-        <var name="args" id="4981817084417757618" />
-      </scope>
-      <scope id="4981817084417757618" at="17,25,28,51" />
-      <scope id="4981817084417757618" at="17,0,30,0" />
-      <unit id="4981817084417757618" at="32,31,38,5" name="Minesweeper.sandbox.Minesweeper$1" />
-      <unit id="4981817084417757618" at="10,0,41,0" name="Minesweeper.sandbox.Minesweeper" />
+      <unit id="4981817084417757618" at="294,0,369,0" name="Minesweeper.sandbox.MediumMinesweeperBoard$MinesAdapter" />
+      <unit id="4981817084417757618" at="15,0,382,0" name="Minesweeper.sandbox.MediumMinesweeperBoard" />
     </file>
   </root>
   <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421199496">
-    <file name="Board.java">
+    <file name="ImpossibleMinesweeper.java">
+      <node id="4981817084421199496" at="11,0,12,0" concept="3" trace="statusbar" />
+      <node id="4981817084421199496" at="13,34,14,13" concept="2" />
+      <node id="4981817084421199496" at="17,25,18,31" concept="2" />
+      <node id="4981817084421199496" at="18,31,19,39" concept="2" />
+      <node id="4981817084421199496" at="19,39,20,0" concept="10" />
+      <node id="4981817084421199496" at="20,0,21,51" concept="2" />
+      <node id="4981817084421199496" at="21,51,22,0" concept="10" />
+      <node id="4981817084421199496" at="22,0,23,24" concept="2" />
+      <node id="4981817084421199496" at="23,24,24,11" concept="2" />
+      <node id="4981817084421199496" at="24,11,25,0" concept="10" />
+      <node id="4981817084421199496" at="25,0,26,38" concept="2" />
+      <node id="4981817084421199496" at="26,38,27,32" concept="2" />
+      <node id="4981817084421199496" at="27,32,28,51" concept="2" />
+      <node id="4981817084421199496" at="34,25,35,63" concept="7" />
+      <node id="4981817084421199496" at="35,63,36,28" concept="2" />
+      <node id="4981817084421199496" at="13,0,16,0" concept="1" trace="ImpossibleMinesweeper#()V" />
+      <node id="4981817084421199496" at="33,0,38,0" concept="6" trace="run#()V" />
+      <node id="4981817084421199496" at="31,42,38,7" concept="2" />
+      <node id="4981817084421199496" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
+      <node id="4981817084421199496" at="17,0,30,0" concept="6" trace="initUI#()V" />
+      <scope id="4981817084421199496" at="13,34,14,13" />
+      <scope id="4981817084421199496" at="34,25,36,28">
+        <var name="ex" id="4981817084421199496" />
+      </scope>
+      <scope id="4981817084421199496" at="13,0,16,0" />
+      <scope id="4981817084421199496" at="33,0,38,0" />
+      <scope id="4981817084421199496" at="31,42,38,7" />
+      <scope id="4981817084421199496" at="31,0,40,0">
+        <var name="args" id="4981817084421199496" />
+      </scope>
+      <scope id="4981817084421199496" at="17,25,28,51" />
+      <scope id="4981817084421199496" at="17,0,30,0" />
+      <unit id="4981817084421199496" at="32,31,38,5" name="Minesweeper.sandbox.ImpossibleMinesweeper$1" />
+      <unit id="4981817084421199496" at="10,0,41,0" name="Minesweeper.sandbox.ImpossibleMinesweeper" />
+    </file>
+    <file name="ImpossibleMinesweeperBoard.java">
       <node id="4981817084421199496" at="16,0,17,0" concept="3" trace="NUM_IMAGES" />
       <node id="4981817084421199496" at="17,0,18,0" concept="3" trace="CELL_SIZE" />
       <node id="4981817084421199496" at="19,0,20,0" concept="3" trace="COVER_FOR_CELL" />
@@ -475,7 +511,7 @@
       <node id="4981817084421199496" at="41,0,42,0" concept="3" trace="img" />
       <node id="4981817084421199496" at="43,0,44,0" concept="3" trace="allCells" />
       <node id="4981817084421199496" at="44,0,45,0" concept="3" trace="statusbar" />
-      <node id="4981817084421199496" at="46,34,47,31" concept="2" />
+      <node id="4981817084421199496" at="46,55,47,31" concept="2" />
       <node id="4981817084421199496" at="47,31,48,16" concept="2" />
       <node id="4981817084421199496" at="51,28,52,45" concept="2" />
       <node id="4981817084421199496" at="52,45,53,63" concept="2" />
@@ -661,7 +697,7 @@
       <node id="4981817084421199496" at="340,50,343,11" concept="5" />
       <node id="4981817084421199496" at="348,25,351,13" concept="5" />
       <node id="4981817084421199496" at="352,0,355,13" concept="5" />
-      <node id="4981817084421199496" at="46,0,50,0" concept="1" trace="Board#(Ljavax/swing/JLabel;)V" />
+      <node id="4981817084421199496" at="46,0,50,0" concept="1" trace="ImpossibleMinesweeperBoard#(Ljavax/swing/JLabel;)V" />
       <node id="4981817084421199496" at="306,54,310,7" concept="5" />
       <node id="4981817084421199496" at="59,65,64,5" concept="4" />
       <node id="4981817084421199496" at="100,39,105,11" concept="5" />
@@ -740,7 +776,7 @@
       <scope id="4981817084421199496" at="341,66,342,19" />
       <scope id="4981817084421199496" at="349,61,350,29" />
       <scope id="4981817084421199496" at="353,62,354,55" />
-      <scope id="4981817084421199496" at="46,34,48,16" />
+      <scope id="4981817084421199496" at="46,55,48,16" />
       <scope id="4981817084421199496" at="282,40,284,22" />
       <scope id="4981817084421199496" at="307,22,309,18" />
       <scope id="4981817084421199496" at="60,42,63,48">
@@ -847,48 +883,48 @@
         <var name="j" id="4981817084421199496" />
       </scope>
       <scope id="4981817084421199496" at="70,0,162,0" />
-      <unit id="4981817084421199496" at="294,0,369,0" name="Minesweeper.sandbox.Board$MinesAdapter" />
-      <unit id="4981817084421199496" at="15,0,382,0" name="Minesweeper.sandbox.Board" />
-    </file>
-    <file name="Minesweeper.java">
-      <node id="4981817084421199496" at="11,0,12,0" concept="3" trace="statusbar" />
-      <node id="4981817084421199496" at="13,24,14,13" concept="2" />
-      <node id="4981817084421199496" at="17,25,18,31" concept="2" />
-      <node id="4981817084421199496" at="18,31,19,39" concept="2" />
-      <node id="4981817084421199496" at="19,39,20,0" concept="10" />
-      <node id="4981817084421199496" at="20,0,21,30" concept="2" />
-      <node id="4981817084421199496" at="21,30,22,0" concept="10" />
-      <node id="4981817084421199496" at="22,0,23,24" concept="2" />
-      <node id="4981817084421199496" at="23,24,24,11" concept="2" />
-      <node id="4981817084421199496" at="24,11,25,0" concept="10" />
-      <node id="4981817084421199496" at="25,0,26,38" concept="2" />
-      <node id="4981817084421199496" at="26,38,27,32" concept="2" />
-      <node id="4981817084421199496" at="27,32,28,51" concept="2" />
-      <node id="4981817084421199496" at="34,25,35,43" concept="7" />
-      <node id="4981817084421199496" at="35,43,36,28" concept="2" />
-      <node id="4981817084421199496" at="13,0,16,0" concept="1" trace="Minesweeper#()V" />
-      <node id="4981817084421199496" at="33,0,38,0" concept="6" trace="run#()V" />
-      <node id="4981817084421199496" at="31,42,38,7" concept="2" />
-      <node id="4981817084421199496" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
-      <node id="4981817084421199496" at="17,0,30,0" concept="6" trace="initUI#()V" />
-      <scope id="4981817084421199496" at="13,24,14,13" />
-      <scope id="4981817084421199496" at="34,25,36,28">
-        <var name="ex" id="4981817084421199496" />
-      </scope>
-      <scope id="4981817084421199496" at="13,0,16,0" />
-      <scope id="4981817084421199496" at="33,0,38,0" />
-      <scope id="4981817084421199496" at="31,42,38,7" />
-      <scope id="4981817084421199496" at="31,0,40,0">
-        <var name="args" id="4981817084421199496" />
-      </scope>
-      <scope id="4981817084421199496" at="17,25,28,51" />
-      <scope id="4981817084421199496" at="17,0,30,0" />
-      <unit id="4981817084421199496" at="32,31,38,5" name="Minesweeper.sandbox.Minesweeper$1" />
-      <unit id="4981817084421199496" at="10,0,41,0" name="Minesweeper.sandbox.Minesweeper" />
+      <unit id="4981817084421199496" at="294,0,369,0" name="Minesweeper.sandbox.ImpossibleMinesweeperBoard$MinesAdapter" />
+      <unit id="4981817084421199496" at="15,0,382,0" name="Minesweeper.sandbox.ImpossibleMinesweeperBoard" />
     </file>
   </root>
   <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421223198">
-    <file name="Board.java">
+    <file name="EasyMinesweeper.java">
+      <node id="4981817084421223198" at="11,0,12,0" concept="3" trace="statusbar" />
+      <node id="4981817084421223198" at="13,28,14,13" concept="2" />
+      <node id="4981817084421223198" at="17,25,18,31" concept="2" />
+      <node id="4981817084421223198" at="18,31,19,39" concept="2" />
+      <node id="4981817084421223198" at="19,39,20,0" concept="10" />
+      <node id="4981817084421223198" at="20,0,21,45" concept="2" />
+      <node id="4981817084421223198" at="21,45,22,0" concept="10" />
+      <node id="4981817084421223198" at="22,0,23,24" concept="2" />
+      <node id="4981817084421223198" at="23,24,24,11" concept="2" />
+      <node id="4981817084421223198" at="24,11,25,0" concept="10" />
+      <node id="4981817084421223198" at="25,0,26,32" concept="2" />
+      <node id="4981817084421223198" at="26,32,27,32" concept="2" />
+      <node id="4981817084421223198" at="27,32,28,51" concept="2" />
+      <node id="4981817084421223198" at="34,25,35,51" concept="7" />
+      <node id="4981817084421223198" at="35,51,36,28" concept="2" />
+      <node id="4981817084421223198" at="13,0,16,0" concept="1" trace="EasyMinesweeper#()V" />
+      <node id="4981817084421223198" at="33,0,38,0" concept="6" trace="run#()V" />
+      <node id="4981817084421223198" at="31,42,38,7" concept="2" />
+      <node id="4981817084421223198" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
+      <node id="4981817084421223198" at="17,0,30,0" concept="6" trace="initUI#()V" />
+      <scope id="4981817084421223198" at="13,28,14,13" />
+      <scope id="4981817084421223198" at="34,25,36,28">
+        <var name="ex" id="4981817084421223198" />
+      </scope>
+      <scope id="4981817084421223198" at="13,0,16,0" />
+      <scope id="4981817084421223198" at="33,0,38,0" />
+      <scope id="4981817084421223198" at="31,42,38,7" />
+      <scope id="4981817084421223198" at="31,0,40,0">
+        <var name="args" id="4981817084421223198" />
+      </scope>
+      <scope id="4981817084421223198" at="17,25,28,51" />
+      <scope id="4981817084421223198" at="17,0,30,0" />
+      <unit id="4981817084421223198" at="32,31,38,5" name="Minesweeper.sandbox.EasyMinesweeper$1" />
+      <unit id="4981817084421223198" at="10,0,41,0" name="Minesweeper.sandbox.EasyMinesweeper" />
+    </file>
+    <file name="EasyMinesweeperBoard.java">
       <node id="4981817084421223198" at="16,0,17,0" concept="3" trace="NUM_IMAGES" />
       <node id="4981817084421223198" at="17,0,18,0" concept="3" trace="CELL_SIZE" />
       <node id="4981817084421223198" at="19,0,20,0" concept="3" trace="COVER_FOR_CELL" />
@@ -912,7 +948,7 @@
       <node id="4981817084421223198" at="41,0,42,0" concept="3" trace="img" />
       <node id="4981817084421223198" at="43,0,44,0" concept="3" trace="allCells" />
       <node id="4981817084421223198" at="44,0,45,0" concept="3" trace="statusbar" />
-      <node id="4981817084421223198" at="46,34,47,31" concept="2" />
+      <node id="4981817084421223198" at="46,49,47,31" concept="2" />
       <node id="4981817084421223198" at="47,31,48,16" concept="2" />
       <node id="4981817084421223198" at="51,28,52,45" concept="2" />
       <node id="4981817084421223198" at="52,45,53,63" concept="2" />
@@ -1098,7 +1134,7 @@
       <node id="4981817084421223198" at="340,50,343,11" concept="5" />
       <node id="4981817084421223198" at="348,25,351,13" concept="5" />
       <node id="4981817084421223198" at="352,0,355,13" concept="5" />
-      <node id="4981817084421223198" at="46,0,50,0" concept="1" trace="Board#(Ljavax/swing/JLabel;)V" />
+      <node id="4981817084421223198" at="46,0,50,0" concept="1" trace="EasyMinesweeperBoard#(Ljavax/swing/JLabel;)V" />
       <node id="4981817084421223198" at="306,54,310,7" concept="5" />
       <node id="4981817084421223198" at="59,65,64,5" concept="4" />
       <node id="4981817084421223198" at="100,39,105,11" concept="5" />
@@ -1177,7 +1213,7 @@
       <scope id="4981817084421223198" at="341,66,342,19" />
       <scope id="4981817084421223198" at="349,61,350,29" />
       <scope id="4981817084421223198" at="353,62,354,55" />
-      <scope id="4981817084421223198" at="46,34,48,16" />
+      <scope id="4981817084421223198" at="46,49,48,16" />
       <scope id="4981817084421223198" at="282,40,284,22" />
       <scope id="4981817084421223198" at="307,22,309,18" />
       <scope id="4981817084421223198" at="60,42,63,48">
@@ -1284,44 +1320,8 @@
         <var name="j" id="4981817084421223198" />
       </scope>
       <scope id="4981817084421223198" at="70,0,162,0" />
-      <unit id="4981817084421223198" at="294,0,369,0" name="Minesweeper.sandbox.Board$MinesAdapter" />
-      <unit id="4981817084421223198" at="15,0,382,0" name="Minesweeper.sandbox.Board" />
-    </file>
-    <file name="Minesweeper.java">
-      <node id="4981817084421223198" at="11,0,12,0" concept="3" trace="statusbar" />
-      <node id="4981817084421223198" at="13,24,14,13" concept="2" />
-      <node id="4981817084421223198" at="17,25,18,31" concept="2" />
-      <node id="4981817084421223198" at="18,31,19,39" concept="2" />
-      <node id="4981817084421223198" at="19,39,20,0" concept="10" />
-      <node id="4981817084421223198" at="20,0,21,30" concept="2" />
-      <node id="4981817084421223198" at="21,30,22,0" concept="10" />
-      <node id="4981817084421223198" at="22,0,23,24" concept="2" />
-      <node id="4981817084421223198" at="23,24,24,11" concept="2" />
-      <node id="4981817084421223198" at="24,11,25,0" concept="10" />
-      <node id="4981817084421223198" at="25,0,26,32" concept="2" />
-      <node id="4981817084421223198" at="26,32,27,32" concept="2" />
-      <node id="4981817084421223198" at="27,32,28,51" concept="2" />
-      <node id="4981817084421223198" at="34,25,35,43" concept="7" />
-      <node id="4981817084421223198" at="35,43,36,28" concept="2" />
-      <node id="4981817084421223198" at="13,0,16,0" concept="1" trace="Minesweeper#()V" />
-      <node id="4981817084421223198" at="33,0,38,0" concept="6" trace="run#()V" />
-      <node id="4981817084421223198" at="31,42,38,7" concept="2" />
-      <node id="4981817084421223198" at="31,0,40,0" concept="11" trace="main#([Ljava/lang/String;)V" />
-      <node id="4981817084421223198" at="17,0,30,0" concept="6" trace="initUI#()V" />
-      <scope id="4981817084421223198" at="13,24,14,13" />
-      <scope id="4981817084421223198" at="34,25,36,28">
-        <var name="ex" id="4981817084421223198" />
-      </scope>
-      <scope id="4981817084421223198" at="13,0,16,0" />
-      <scope id="4981817084421223198" at="33,0,38,0" />
-      <scope id="4981817084421223198" at="31,42,38,7" />
-      <scope id="4981817084421223198" at="31,0,40,0">
-        <var name="args" id="4981817084421223198" />
-      </scope>
-      <scope id="4981817084421223198" at="17,25,28,51" />
-      <scope id="4981817084421223198" at="17,0,30,0" />
-      <unit id="4981817084421223198" at="32,31,38,5" name="Minesweeper.sandbox.Minesweeper$1" />
-      <unit id="4981817084421223198" at="10,0,41,0" name="Minesweeper.sandbox.Minesweeper" />
+      <unit id="4981817084421223198" at="294,0,369,0" name="Minesweeper.sandbox.EasyMinesweeperBoard$MinesAdapter" />
+      <unit id="4981817084421223198" at="15,0,382,0" name="Minesweeper.sandbox.EasyMinesweeperBoard" />
     </file>
   </root>
 </debug-info>

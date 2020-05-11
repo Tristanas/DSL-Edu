@@ -12,7 +12,7 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Board extends JPanel {
+public class EasyMinesweeperBoard extends JPanel {
   private final int NUM_IMAGES = 13;
   public final int CELL_SIZE = 15;
 
@@ -43,7 +43,7 @@ public class Board extends JPanel {
   private int allCells;
   private final JLabel statusbar;
 
-  public Board(JLabel statusbar) {
+  public EasyMinesweeperBoard(JLabel statusbar) {
     this.statusbar = statusbar;
     initBoard();
   }

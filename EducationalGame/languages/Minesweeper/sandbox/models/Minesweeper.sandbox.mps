@@ -29,7 +29,7 @@
     <property role="TrG5h" value="ImpossibleMinesweeper" />
     <property role="1KmNlM" value="20" />
     <property role="1KmNlO" value="20" />
-    <property role="1KmNlL" value="40" />
+    <property role="1KmNlL" value="200" />
   </node>
   <node concept="1KmNlR" id="4kyY3TkTzcu">
     <property role="TrG5h" value="EasyMinesweeper" />
