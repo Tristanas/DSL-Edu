@@ -14,7 +14,9 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAnswer = createDescriptorForAnswer();
   /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
+  /*package*/ final ConceptDescriptor myConceptSingleChoiceQuestion = createDescriptorForSingleChoiceQuestion();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -29,15 +31,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptGame);
+    return Arrays.asList(myConceptAnswer, myConceptGame, myConceptSingleChoiceQuestion);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Answer:
+        return myConceptAnswer;
       case LanguageConceptSwitch.Game:
         return myConceptGame;
+      case LanguageConceptSwitch.SingleChoiceQuestion:
+        return myConceptSingleChoiceQuestion;
       default:
         return null;
     }
@@ -52,6 +58,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAnswer() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Answer", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x2124eace002ddad1L);
+    b.class_(false, false, false);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/2388291872900373201");
+    b.version(2);
+    b.property("text", 0x2124eace002ddad2L).type(PrimitiveTypeId.STRING).origin("2388291872900373202").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForGame() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
     b.class_(false, false, true);
@@ -62,6 +76,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("width", 0x6cece7c61cb7d2b2L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281842").done();
     b.property("height", 0x6cece7c61cb7d2b4L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281844").done();
     b.property("bombs", 0x6cece7c61cb7d2b7L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281847").done();
+    b.aggregate("questions", 0x2124eace002ddbbeL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x2124eace002ddad4L).optional(true).ordered(true).multiple(true).origin("2388291872900373438").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSingleChoiceQuestion() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "SingleChoiceQuestion", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x2124eace002ddad4L);
+    b.class_(false, false, false);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/2388291872900373204");
+    b.version(2);
+    b.property("question", 0x2124eace002ddb3eL).type(PrimitiveTypeId.STRING).origin("2388291872900373310").done();
+    b.aggregate("correctAnswer", 0x2124eace002ddad5L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x2124eace002ddad1L).optional(false).ordered(true).multiple(false).origin("2388291872900373205").done();
+    b.aggregate("incorrectAnswers", 0x2124eace002ddad7L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x2124eace002ddad1L).optional(false).ordered(true).multiple(true).origin("2388291872900373207").done();
     return b.create();
   }
 }

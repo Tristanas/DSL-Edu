@@ -9,51 +9,122 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,30,0" name="Minesweeper.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,46,0" name="Minesweeper.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="Minesweeper.structure.LanguageConceptSwitch" />
+      <unit at="10,0,32,0" name="Minesweeper.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,68,0" name="Minesweeper.structure.StructureAspectDescriptor" />
+      <unit at="16,0,93,0" name="Minesweeper.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/2388291872900373201">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2388291872900373201" at="12,0,13,0" concept="1" trace="props_Answer" />
+      <node id="2388291872900373201" at="22,35,23,76" concept="3" />
+      <node id="2388291872900373201" at="23,76,24,40" concept="0" />
+      <node id="2388291872900373201" at="24,40,25,38" concept="0" />
+      <node id="2388291872900373201" at="26,9,27,28" concept="4" />
+      <node id="2388291872900373201" at="21,40,26,9" concept="2" />
+      <scope id="2388291872900373201" at="22,35,25,38">
+        <var name="cpb" id="2388291872900373201" />
+      </scope>
+      <scope id="2388291872900373201" at="21,40,27,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2388291872900373201" at="12,0,13,0" concept="5" trace="Answer" />
+      <node id="2388291872900373201" at="17,116,18,45" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2388291872900373201" at="17,0,18,0" concept="1" trace="myConceptAnswer" />
+      <node id="2388291872900373201" at="41,40,42,31" concept="4" />
+      <node id="2388291872900373201" at="61,64,62,152" concept="3" />
+      <node id="2388291872900373201" at="62,152,63,34" concept="0" />
+      <node id="2388291872900373201" at="63,34,64,98" concept="0" />
+      <node id="2388291872900373201" at="64,98,65,17" concept="0" />
+      <node id="2388291872900373202" at="65,17,66,110" concept="0" />
+      <node id="2388291872900373201" at="66,110,67,22" concept="4" />
+      <node id="2388291872900373201" at="61,0,69,0" concept="6" trace="createDescriptorForAnswer#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2388291872900373201" at="41,40,42,31" />
+      <scope id="2388291872900373201" at="61,64,67,22">
+        <var name="b" id="2388291872900373201" />
+      </scope>
+      <scope id="2388291872900373201" at="61,0,69,0" />
+    </file>
+  </root>
+  <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/2388291872900373204">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2388291872900373204" at="14,0,15,0" concept="1" trace="props_SingleChoiceQuestion" />
+      <node id="2388291872900373204" at="36,49,37,76" concept="3" />
+      <node id="2388291872900373204" at="37,76,38,54" concept="0" />
+      <node id="2388291872900373204" at="38,54,39,52" concept="0" />
+      <node id="2388291872900373204" at="40,9,41,42" concept="4" />
+      <node id="2388291872900373204" at="35,54,40,9" concept="2" />
+      <scope id="2388291872900373204" at="36,49,39,52">
+        <var name="cpb" id="2388291872900373204" />
+      </scope>
+      <scope id="2388291872900373204" at="35,54,41,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2388291872900373204" at="14,0,15,0" concept="5" trace="SingleChoiceQuestion" />
+      <node id="2388291872900373204" at="19,43,20,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2388291872900373204" at="19,0,20,0" concept="1" trace="myConceptSingleChoiceQuestion" />
+      <node id="2388291872900373204" at="45,54,46,45" concept="4" />
+      <node id="2388291872900373204" at="82,78,83,166" concept="3" />
+      <node id="2388291872900373204" at="83,166,84,34" concept="0" />
+      <node id="2388291872900373204" at="84,34,85,98" concept="0" />
+      <node id="2388291872900373204" at="85,98,86,17" concept="0" />
+      <node id="2388291872900373310" at="86,17,87,114" concept="0" />
+      <node id="2388291872900373205" at="87,114,88,207" concept="0" />
+      <node id="2388291872900373207" at="88,207,89,209" concept="0" />
+      <node id="2388291872900373204" at="89,209,90,22" concept="4" />
+      <node id="2388291872900373204" at="82,0,92,0" concept="6" trace="createDescriptorForSingleChoiceQuestion#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2388291872900373204" at="45,54,46,45" />
+      <scope id="2388291872900373204" at="82,78,90,22">
+        <var name="b" id="2388291872900373204" />
+      </scope>
+      <scope id="2388291872900373204" at="82,0,92,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/7848903088671281841">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="7848903088671281841" at="12,0,13,0" concept="1" trace="props_Game" />
-      <node id="7848903088671281841" at="20,33,21,76" concept="3" />
-      <node id="7848903088671281841" at="21,76,22,35" concept="0" />
-      <node id="7848903088671281841" at="22,35,23,36" concept="0" />
-      <node id="7848903088671281841" at="24,9,25,26" concept="4" />
-      <node id="7848903088671281841" at="19,38,24,9" concept="2" />
-      <scope id="7848903088671281841" at="20,33,23,36">
+      <node id="7848903088671281841" at="13,0,14,0" concept="1" trace="props_Game" />
+      <node id="7848903088671281841" at="29,33,30,76" concept="3" />
+      <node id="7848903088671281841" at="30,76,31,35" concept="0" />
+      <node id="7848903088671281841" at="31,35,32,36" concept="0" />
+      <node id="7848903088671281841" at="33,9,34,26" concept="4" />
+      <node id="7848903088671281841" at="28,38,33,9" concept="2" />
+      <scope id="7848903088671281841" at="29,33,32,36">
         <var name="cpb" id="7848903088671281841" />
       </scope>
-      <scope id="7848903088671281841" at="19,38,25,26" />
+      <scope id="7848903088671281841" at="28,38,34,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7848903088671281841" at="12,0,13,0" concept="5" trace="Game" />
-      <node id="7848903088671281841" at="15,116,16,43" concept="0" />
+      <node id="7848903088671281841" at="13,0,14,0" concept="5" trace="Game" />
+      <node id="7848903088671281841" at="18,45,19,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="7848903088671281841" at="17,0,18,0" concept="1" trace="myConceptGame" />
-      <node id="7848903088671281841" at="39,38,40,29" concept="4" />
-      <node id="7848903088671281841" at="55,62,56,150" concept="3" />
-      <node id="7848903088671281841" at="56,150,57,33" concept="0" />
-      <node id="7848903088671281841" at="57,33,58,71" concept="0" />
-      <node id="7848903088671281841" at="58,71,59,76" concept="0" />
-      <node id="7848903088671281841" at="59,76,60,98" concept="0" />
-      <node id="7848903088671281841" at="60,98,61,17" concept="0" />
-      <node id="7848903088671281842" at="61,17,62,112" concept="0" />
-      <node id="7848903088671281844" at="62,112,63,113" concept="0" />
-      <node id="7848903088671281847" at="63,113,64,112" concept="0" />
-      <node id="7848903088671281841" at="64,112,65,22" concept="4" />
-      <node id="7848903088671281841" at="55,0,67,0" concept="6" trace="createDescriptorForGame#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="7848903088671281841" at="39,38,40,29" />
-      <scope id="7848903088671281841" at="55,62,65,22">
+      <node id="7848903088671281841" at="18,0,19,0" concept="1" trace="myConceptGame" />
+      <node id="7848903088671281841" at="43,38,44,29" concept="4" />
+      <node id="7848903088671281841" at="69,62,70,150" concept="3" />
+      <node id="7848903088671281841" at="70,150,71,33" concept="0" />
+      <node id="7848903088671281841" at="71,33,72,71" concept="0" />
+      <node id="7848903088671281841" at="72,71,73,76" concept="0" />
+      <node id="7848903088671281841" at="73,76,74,98" concept="0" />
+      <node id="7848903088671281841" at="74,98,75,17" concept="0" />
+      <node id="7848903088671281842" at="75,17,76,112" concept="0" />
+      <node id="7848903088671281844" at="76,112,77,113" concept="0" />
+      <node id="7848903088671281847" at="77,113,78,112" concept="0" />
+      <node id="2388291872900373438" at="78,112,79,201" concept="0" />
+      <node id="7848903088671281841" at="79,201,80,22" concept="4" />
+      <node id="7848903088671281841" at="69,0,82,0" concept="6" trace="createDescriptorForGame#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7848903088671281841" at="43,38,44,29" />
+      <scope id="7848903088671281841" at="69,62,80,22">
         <var name="b" id="7848903088671281841" />
       </scope>
-      <scope id="7848903088671281841" at="55,0,67,0" />
+      <scope id="7848903088671281841" at="69,0,82,0" />
     </file>
   </root>
 </debug-info>

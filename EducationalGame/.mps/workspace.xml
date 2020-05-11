@@ -148,7 +148,7 @@
     </option>
   </component>
   <component name="ProjectView">
-    <navigator currentView="FileSystem" proportions="" version="1" />
+    <navigator proportions="" version="1" />
     <panes>
       <pane id="ProjectPane">
         <subPane>
@@ -158,71 +158,17 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="r:3378f1ca-b81b-40d8-81f0-bfaa91aadd08(Minesweeper.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:165e5802-2379-46fd-9e18-a528988f951e(main.utility) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main.utility.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,6 +206,66 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -279,6 +285,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:165e5802-2379-46fd-9e18-a528988f951e(main.utility) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main.utility.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,22 +553,22 @@
       <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
     <state x="599" y="-779" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589142230462" />
-    <state width="1077" height="230" key="GridCell.Tab.0.bottom" timestamp="1589188685332">
+    <state width="1077" height="230" key="GridCell.Tab.0.bottom" timestamp="1589197581697">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1077" height="230" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589188685332" />
-    <state width="1077" height="230" key="GridCell.Tab.0.center" timestamp="1589188685331">
+    <state width="1077" height="230" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589197581697" />
+    <state width="1077" height="230" key="GridCell.Tab.0.center" timestamp="1589197581697">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1077" height="230" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589188685331" />
-    <state width="1077" height="230" key="GridCell.Tab.0.left" timestamp="1589188685331">
+    <state width="1077" height="230" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589197581697" />
+    <state width="1077" height="230" key="GridCell.Tab.0.left" timestamp="1589197581697">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1077" height="230" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589188685331" />
-    <state width="1077" height="230" key="GridCell.Tab.0.right" timestamp="1589188685331">
+    <state width="1077" height="230" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589197581697" />
+    <state width="1077" height="230" key="GridCell.Tab.0.right" timestamp="1589197581697">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1077" height="230" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589188685331" />
+    <state width="1077" height="230" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589197581697" />
     <state x="303" y="75" key="SettingsEditor" timestamp="1589145157303">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

@@ -9,13 +9,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Answer;
   private ConceptPresentation props_Game;
+  private ConceptPresentation props_SingleChoiceQuestion;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Answer:
+        if (props_Answer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Answer");
+          props_Answer = cpb.create();
+        }
+        return props_Answer;
       case LanguageConceptSwitch.Game:
         if (props_Game == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -23,6 +32,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Game = cpb.create();
         }
         return props_Game;
+      case LanguageConceptSwitch.SingleChoiceQuestion:
+        if (props_SingleChoiceQuestion == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SingleChoiceQuestion");
+          props_SingleChoiceQuestion = cpb.create();
+        }
+        return props_SingleChoiceQuestion;
     }
     return null;
   }
