@@ -32,7 +32,7 @@
     <property role="TrG5h" value="MediumMinesweeper" />
     <property role="1KmNlM" value="25" />
     <property role="1KmNlO" value="25" />
-    <property role="1KmNlL" value="80" />
+    <property role="1KmNlL" value="400" />
   </node>
   <node concept="1KmNlR" id="4kyY3TkTtq8">
     <property role="TrG5h" value="ImpossibleMinesweeper" />
@@ -43,7 +43,7 @@
   <node concept="1KmNlR" id="4kyY3TkTzcu">
     <property role="TrG5h" value="EasyMinesweeper" />
     <property role="1KmNlM" value="10" />
-    <property role="1KmNlO" value="10" />
+    <property role="1KmNlO" value="12" />
     <property role="1KmNlL" value="8" />
     <node concept="x2j0q" id="24$UGS0bBBE" role="x2j5K">
       <property role="x2j7K" value="Am I a question?" />

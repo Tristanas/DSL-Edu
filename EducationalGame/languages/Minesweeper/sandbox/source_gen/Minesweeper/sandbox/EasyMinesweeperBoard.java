@@ -30,7 +30,7 @@ public class EasyMinesweeperBoard extends JPanel {
 
   private final int N_MINES = 8;
   private final int N_ROWS = 10;
-  private final int N_COLS = 10;
+  private final int N_COLS = 12;
 
   private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
   private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;

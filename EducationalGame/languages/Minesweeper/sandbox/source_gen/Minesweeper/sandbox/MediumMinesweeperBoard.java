@@ -28,7 +28,7 @@ public class MediumMinesweeperBoard extends JPanel {
   private final int DRAW_MARK = 11;
   private final int DRAW_WRONG_MARK = 12;
 
-  private final int N_MINES = 80;
+  private final int N_MINES = 400;
   private final int N_ROWS = 25;
   private final int N_COLS = 25;
 
