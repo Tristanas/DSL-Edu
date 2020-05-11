@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="vu.mif.calculator.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:585bf920-7252-4815-9cb1-07fc60d79a77(vu.mif.calculator.constraints)/8102881121105539301">
+    <file name="InputFieldReference_Constraints.java">
+      <node id="8102881121105539301" at="23,44,24,43" concept="6" />
+      <node id="8102881121105582619" at="31,44,32,20" concept="4" />
+      <node id="8102881121105582619" at="39,63,40,57" concept="4" />
+      <node id="8102881121105582619" at="43,80,44,147" concept="3" />
+      <node id="8102881121105582619" at="44,147,45,62" concept="4" />
+      <node id="8102881121105539301" at="49,6,50,131" concept="3" />
+      <node id="8102881121105582619" at="50,131,51,42" concept="1" />
+      <node id="8102881121105539301" at="51,42,52,22" concept="4" />
+      <node id="8102881121105539301" at="54,0,55,0" concept="5" trace="breakingNode_43tbk9_a0a0a0a0a1a0a0a0c" />
+      <node id="8102881121105539301" at="57,0,58,0" concept="5" trace="InputFieldReference$zs" />
+      <node id="8102881121105539301" at="58,0,59,0" concept="5" trace="InputField$YA" />
+      <node id="8102881121105539301" at="62,0,63,0" concept="5" trace="field$5Ri0" />
+      <node id="8102881121105539301" at="23,0,26,0" concept="0" trace="InputFieldReference_Constraints#()V" />
+      <node id="8102881121105582619" at="30,0,34,0" concept="2" trace="hasOwnScopeProvider#()Z" />
+      <node id="8102881121105582619" at="38,0,42,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8102881121105582619" at="42,0,47,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8102881121105582619" at="36,56,47,10" concept="4" />
+      <node id="8102881121105582619" at="34,0,49,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="8102881121105582619" at="28,90,49,6" concept="3" />
+      <node id="8102881121105539301" at="27,0,54,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="8102881121105539301" at="23,44,24,43" />
+      <scope id="8102881121105582619" at="31,44,32,20" />
+      <scope id="8102881121105582619" at="39,63,40,57" />
+      <scope id="8102881121105582619" at="43,80,45,62">
+        <var name="scope" id="8102881121105582619" />
+      </scope>
+      <scope id="8102881121105539301" at="23,0,26,0" />
+      <scope id="8102881121105582619" at="30,0,34,0" />
+      <scope id="8102881121105582619" at="38,0,42,0" />
+      <scope id="8102881121105582619" at="42,0,47,0">
+        <var name="_context" id="8102881121105582619" />
+      </scope>
+      <scope id="8102881121105582619" at="36,56,47,10" />
+      <scope id="8102881121105582619" at="34,0,49,0" />
+      <scope id="8102881121105539301" at="28,90,52,22">
+        <var name="d0" id="8102881121105582619" />
+        <var name="references" id="8102881121105539301" />
+      </scope>
+      <scope id="8102881121105539301" at="27,0,54,0" />
+      <unit id="8102881121105539301" at="61,0,64,0" name="vu.mif.calculator.constraints.InputFieldReference_Constraints$LINKS" />
+      <unit id="8102881121105539301" at="56,0,60,0" name="vu.mif.calculator.constraints.InputFieldReference_Constraints$CONCEPTS" />
+      <unit id="8102881121105582619" at="37,19,47,9" name="vu.mif.calculator.constraints.InputFieldReference_Constraints$1$1" />
+      <unit id="8102881121105582619" at="29,48,49,5" name="vu.mif.calculator.constraints.InputFieldReference_Constraints$1" />
+      <unit id="8102881121105539301" at="22,0,65,0" name="vu.mif.calculator.constraints.InputFieldReference_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

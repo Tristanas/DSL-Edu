@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="vu.mif.calculator.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:90dbe3f5-2bb7-4da2-9162-8853c9b6a812(vu.mif.calculator.typesystem)/8102881121105731883">
+    <file name="TypesystemDescriptor.java">
+      <node id="8102881121105731883" at="10,5,11,91" concept="4" />
+      <node id="8102881121105731883" at="11,91,12,47" concept="2" />
+      <node id="8102881121105731883" at="9,33,13,5" concept="0" />
+      <scope id="8102881121105731883" at="10,5,12,47">
+        <var name="inferenceRule" id="8102881121105731883" />
+      </scope>
+    </file>
+    <file name="typeof_InputFieldReference_InferenceRule.java">
+      <node id="8102881121105731890" at="21,5,22,61" concept="4" />
+      <node id="8102881121105731890" at="22,61,23,194" concept="4" />
+      <node id="8102881121105731890" at="23,194,24,275" concept="2" />
+      <node id="8102881121105731883" at="27,50,28,43" concept="5" />
+      <node id="8102881121105731883" at="30,68,31,102" concept="5" />
+      <node id="8102881121105731883" at="33,30,34,17" concept="5" />
+      <node id="8102881121105731997" at="36,65,37,63" concept="4" />
+      <node id="8102881121105731997" at="37,63,38,30" concept="4" />
+      <node id="8102881121105731997" at="38,30,39,230" concept="2" />
+      <node id="8102881121105731997" at="39,230,40,24" concept="5" />
+      <node id="8102881121105731883" at="44,0,45,0" concept="6" trace="InputFieldReference$zs" />
+      <node id="8102881121105731883" at="18,0,20,0" concept="1" trace="typeof_InputFieldReference_InferenceRule#()V" />
+      <node id="8102881121105731883" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8102881121105731883" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8102881121105731883" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="8102881121105731890" at="20,132,25,5" concept="0" />
+      <node id="8102881121105731997" at="36,0,42,0" concept="7" trace="_quotation_createNode_q8g7ld_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8102881121105731883" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8102881121105731883" at="18,53,18,53" />
+      <scope id="8102881121105731883" at="27,50,28,43" />
+      <scope id="8102881121105731883" at="30,68,31,102" />
+      <scope id="8102881121105731883" at="33,30,34,17" />
+      <scope id="8102881121105731883" at="18,0,20,0" />
+      <scope id="8102881121105731890" at="21,5,24,275">
+        <var name="_info_12389875345" id="8102881121105731890" />
+        <var name="_nodeToCheck_1029348928467" id="8102881121105731890" />
+      </scope>
+      <scope id="8102881121105731883" at="27,0,30,0" />
+      <scope id="8102881121105731883" at="30,0,33,0">
+        <var name="argument" id="8102881121105731883" />
+      </scope>
+      <scope id="8102881121105731883" at="33,0,36,0" />
+      <scope id="8102881121105731997" at="36,65,40,24">
+        <var name="facade" id="8102881121105731997" />
+        <var name="quotedNode_1" id="8102881121105731997" />
+      </scope>
+      <scope id="8102881121105731884" at="20,132,25,5" />
+      <scope id="8102881121105731997" at="36,0,42,0" />
+      <scope id="8102881121105731883" at="20,0,27,0">
+        <var name="inputFieldReference" id="8102881121105731883" />
+        <var name="status" id="8102881121105731883" />
+        <var name="typeCheckingContext" id="8102881121105731883" />
+      </scope>
+      <unit id="8102881121105731883" at="43,0,46,0" name="vu.mif.calculator.typesystem.typeof_InputFieldReference_InferenceRule$CONCEPTS" />
+      <unit id="8102881121105731883" at="17,0,47,0" name="vu.mif.calculator.typesystem.typeof_InputFieldReference_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

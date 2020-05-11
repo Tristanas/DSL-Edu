@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarksTool">
+    <option name="myTreeState">
+      <TreeState />
+    </option>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee557576-fbdf-4fb2-9d05-c5383ffa94a8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ConsoleHistory">
+    <option name="tabs">
+      <list>
+        <TabState>
+          <option name="title" value="Console" />
+          <tab>
+            <model ref="84e827ed-e5d9-4b93-80cf-17cfeb0122ae/r:ead6bd9b-7059-408d-ac44-fa83bf2fb04a(TempModule84e827ed-e5d9-4b93-80cf-17cfeb0122ae/ConsoleModel_975227297291800)">
+              <persistence version="9" />
+              <languages>
+                <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
+              </languages>
+              <imports />
+              <registry>
+                <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
+                  <concept id="1583916890557930028" name="jetbrains.mps.console.base.structure.ConsoleRoot" flags="ng" index="aymSD">
+                    <child id="1583916890557930415" name="history" index="aymYE" />
+                    <child id="1583916890557930417" name="commandHolder" index="aymYO" />
+                    <child id="9025248442620242919" name="cursor" index="1PhJh3" />
+                  </concept>
+                  <concept id="5758176878586720817" name="jetbrains.mps.console.base.structure.CommandHolderRef" flags="ng" index="2_V_lH">
+                    <reference id="5758176878586720818" name="target" index="2_V_lI" />
+                  </concept>
+                  <concept id="351968380916615243" name="jetbrains.mps.console.base.structure.CommandHolder" flags="ng" index="2Clz$F" />
+                  <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
+                </language>
+              </registry>
+              <node concept="aymSD" id="4kyY3TkT$sP">
+                <node concept="3balQm" id="4kyY3TkT$sQ" role="aymYE" />
+                <node concept="2Clz$F" id="4kyY3TkT$sR" role="aymYO" />
+                <node concept="2_V_lH" id="4kyY3TkT$sS" role="1PhJh3">
+                  <ref role="2_V_lI" node="4kyY3TkT$sR" resolve="CommandHolder" />
+                </node>
+              </node>
+            </model>
+          </tab>
+        </TabState>
+      </list>
+    </option>
+  </component>
+  <component name="DefaultSearchOptions3">
+    <search_options>
+      <finders>
+        <finders />
+      </finders>
+      <scope>
+        <scope_type scope_type="PROJECT" module="&lt;default&gt;" model="&lt;default&gt;" />
+      </scope>
+      <view>
+        <flags show_one_result="true" new_tab="false" />
+      </view>
+    </search_options>
+  </component>
+  <component name="MPSBookmarkManager">
+    <option name="myBookmarkInfos">
+      <array>
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+      </array>
+    </option>
+  </component>
+  <component name="MessagesViewTool">
+    <option name="defaultListState">
+      <MessageListState>
+        <option name="autoscrollToSource" value="true" />
+        <option name="info" value="true" />
+        <option name="warnings" value="true" />
+      </MessageListState>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bJBTxuXU9MCfXy16COSEkqklC8" />
+  <component name="ProjectPluginManager">
+    <option name="pluginsState">
+      <option name="jetbrains.mps.baseLanguage.lightweightdsl.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.editor.contextActionsTool.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.execution.configurations.implementation.plugin.plugin.Plugin_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.actions.Ide_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="jetbrains.mps.ide.actions.BehaviorDialogsPersistentOptions_PreferencesComponent" />
+                  <params>
+                    <option name="addReturnsOnImplement" value="false" />
+                    <option name="sortAlphabetically" value="false" />
+                    <option name="removeAttributes" value="true" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.devkit.actions.Mpsdevkit_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.make.actions.Make_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.vcs.mergehints.plugin.plugin.Plugin_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes>
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a2529709-285a-4094-b8dd-6708987c7058(Furniture.editor) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Garage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure) in IdeaFile[path: C:/Program Files/JetBrains/MPS 2019.3/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc-src.jar!/module/languageModels/structure.mpb]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:04c352a6-7c7b-4a1f-b049-82507094521e(Furniture.sandbox) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/sandbox/models/Furniture.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8800464279703411839" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a2529709-285a-4094-b8dd-6708987c7058(Furniture.editor) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Warehouse" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a2529709-285a-4094-b8dd-6708987c7058(Furniture.editor) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:04c352a6-7c7b-4a1f-b049-82507094521e(Furniture.sandbox) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/sandbox/models/Furniture.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8800464279703593190" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a2529709-285a-4094-b8dd-6708987c7058(Furniture.editor) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Style" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:87ed07dc-bdb2-44c5-8db4-8d5a74e959ff(jetbrains.mps.baseLanguage.javadoc.editor) in IdeaFile[path: C:/Program Files/JetBrains/MPS 2019.3/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc-src.jar!/module/languageModels/editor.mpb]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure) in IdeaFile[path: C:/Program Files/JetBrains/MPS 2019.3/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc-src.jar!/module/languageModels/structure.mpb]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tag" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:04c352a6-7c7b-4a1f-b049-82507094521e(Furniture.sandbox) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/sandbox/models/Furniture.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8800464279703419274" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:04c352a6-7c7b-4a1f-b049-82507094521e(Furniture.sandbox) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/sandbox/models/Furniture.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="68216aec-f342-4982-b5dd-7a1ddcfa9734" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Furniture#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:0eac0146-f870-419e-a262-e2e5edbe3b3c(main@generator) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/generator/templates/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2c25248-3773-4879-8bfc-859bbe4db0d8(Furniture)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a2529709-285a-4094-b8dd-6708987c7058(Furniture.editor) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Style" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8800464279703609143" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee557576-fbdf-4fb2-9d05-c5383ffa94a8" name="Default Changelist" comment="" />
+      <created>1588340327306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588340327306</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UsagesViewTool">
+    <version id="1" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="138" key="#MPSPropertiesConfigurable" timestamp="1589181754284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="446" y="138" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589181754284" />
+    <state x="480" y="188" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard" timestamp="1588349342479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="480" y="188" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588349342479" />
+    <state x="580" y="174" key="FileChooserDialogImpl" timestamp="1588356013971">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="174" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588356013971" />
+    <state x="303" y="75" key="SettingsEditor" timestamp="1588356171947">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="303" y="75" key="SettingsEditor/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588356171947" />
+    <state x="508" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1588966035114">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="508" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588966035114" />
+    <state x="558" y="231" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1588367854606">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="558" y="231" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588367854606" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="main.utility.GameBoard">
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+</dependenciesRoot>
+
