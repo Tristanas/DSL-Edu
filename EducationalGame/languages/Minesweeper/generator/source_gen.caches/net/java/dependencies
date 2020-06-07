@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="net.java.ImageScaler">
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.Image" />
+    <classNode dependClassName="java.awt.RenderingHints" />
+    <classNode dependClassName="java.awt.Transparency" />
+    <classNode dependClassName="java.awt.image.BufferedImage" />
+    <classNode dependClassName="java.lang.Object" />
+  </dependency>
+</dependenciesRoot>
+

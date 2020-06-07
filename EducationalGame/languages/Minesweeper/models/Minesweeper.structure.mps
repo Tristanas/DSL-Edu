@@ -62,6 +62,11 @@
       <property role="TrG5h" value="bombs" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="2MpfW3fQpJ$" role="1TKVEl">
+      <property role="IQ2nx" value="3213669906458975204" />
+      <property role="TrG5h" value="cellSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="PrWs8" id="4kyY3TkFYqC" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

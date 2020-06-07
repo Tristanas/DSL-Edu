@@ -16,6 +16,7 @@
         <property id="2388291872900373202" name="text" index="x2j0s" />
       </concept>
       <concept id="7848903088671281841" name="Minesweeper.structure.Game" flags="ng" index="1KmNlR">
+        <property id="3213669906458975204" name="cellSize" index="3zgag$" />
         <property id="7848903088671281847" name="bombs" index="1KmNlL" />
         <property id="7848903088671281844" name="height" index="1KmNlM" />
         <property id="7848903088671281842" name="width" index="1KmNlO" />
@@ -33,18 +34,21 @@
     <property role="1KmNlM" value="25" />
     <property role="1KmNlO" value="25" />
     <property role="1KmNlL" value="400" />
+    <property role="3zgag$" value="30" />
   </node>
   <node concept="1KmNlR" id="4kyY3TkTtq8">
     <property role="TrG5h" value="ImpossibleMinesweeper" />
     <property role="1KmNlM" value="20" />
     <property role="1KmNlO" value="20" />
     <property role="1KmNlL" value="200" />
+    <property role="3zgag$" value="15" />
   </node>
   <node concept="1KmNlR" id="4kyY3TkTzcu">
     <property role="TrG5h" value="EasyMinesweeper" />
     <property role="1KmNlM" value="10" />
     <property role="1KmNlO" value="12" />
     <property role="1KmNlL" value="8" />
+    <property role="3zgag$" value="45" />
     <node concept="x2j0q" id="24$UGS0bBBE" role="x2j5K">
       <property role="x2j7K" value="Am I a question?" />
       <node concept="x2j0v" id="24$UGS0bBBF" role="x2j0r">

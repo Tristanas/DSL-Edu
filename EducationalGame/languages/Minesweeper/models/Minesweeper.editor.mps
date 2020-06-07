@@ -99,6 +99,18 @@
       <node concept="3F0A7n" id="4kyY3TkFYs$" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:6NGTWosHXaR" resolve="bombs" />
       </node>
+      <node concept="3F0ifn" id="2MpfW3fQpK9" role="3EZMnx">
+        <property role="3F0ifm" value="Cell size:" />
+        <node concept="pVoyu" id="2MpfW3fQpLX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2MpfW3fQpLZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2MpfW3fQpLw" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:2MpfW3fQpJ$" resolve="cellSize" />
+      </node>
       <node concept="3F0ifn" id="24$UGS0btJk" role="3EZMnx">
         <node concept="pVoyu" id="24$UGS0btKg" role="3F10Kt">
           <property role="VOm3f" value="true" />
