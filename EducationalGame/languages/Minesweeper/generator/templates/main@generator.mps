@@ -1018,6 +1018,15 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4XM$1KT7r9S" role="3cqZAp">
+          <node concept="2YIFZM" id="4XM$1KT5Nt9" role="3clFbG">
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.shuffle(java.util.List)" resolve="shuffle" />
+            <node concept="37vLTw" id="4XM$1KT5ObD" role="37wK5m">
+              <ref role="3cqZAo" node="4XM$1KSYqKz" resolve="questions" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4kyY3TkKRGa" role="3cqZAp" />
         <node concept="3clFbF" id="4kyY3TkKS7W" role="3cqZAp">
           <node concept="37vLTI" id="4kyY3TkKTfn" role="3clFbG">
@@ -5168,7 +5177,7 @@
         </node>
         <node concept="3clFbS" id="4XM$1KSYqZy" role="3clF47">
           <node concept="3SKdUt" id="4XM$1KSYr29" role="3cqZAp">
-            <node concept="1PaTwC" id="4XM$1KSYr2a" role="3ndbpf">
+            <node concept="1PaTwC" id="4XM$1KT6esl" role="3ndbpf">
               <node concept="3oM_SD" id="4XM$1KSYr2d" role="1PaTwD">
                 <property role="3oM_SC" value="If" />
               </node>
@@ -5199,8 +5208,41 @@
               <node concept="3oM_SD" id="4XM$1KSYr2m" role="1PaTwD">
                 <property role="3oM_SC" value="becomes" />
               </node>
-              <node concept="3oM_SD" id="4XM$1KSYr2n" role="1PaTwD">
+              <node concept="3oM_SD" id="4XM$1KT6ggK" role="1PaTwD">
                 <property role="3oM_SC" value="null." />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4XM$1KT6i5M" role="3cqZAp" />
+          <node concept="3cpWs8" id="4XM$1KT69Tr" role="3cqZAp">
+            <node concept="3cpWsn" id="4XM$1KT69Tx" role="3cpWs9">
+              <property role="TrG5h" value="answers" />
+              <node concept="2YIFZM" id="4XM$1KT6dwK" role="33vP2m">
+                <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                <node concept="2OqwBi" id="4XM$1KT6ede" role="37wK5m">
+                  <node concept="37vLTw" id="4XM$1KT6e1r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4XM$1KSYqZw" resolve="q" />
+                  </node>
+                  <node concept="2OwXpG" id="4XM$1KT6en4" role="2OqNvi">
+                    <ref role="2Oxat5" node="4XM$1KSYr2K" resolve="answers" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3uibUv" id="4XM$1KT6pxn" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                <node concept="3uibUv" id="4XM$1KT6qis" role="11_B2D">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4XM$1KT6lEh" role="3cqZAp">
+            <node concept="2YIFZM" id="4XM$1KT6mOr" role="3clFbG">
+              <ref role="37wK5l" to="33ny:~Collections.shuffle(java.util.List)" resolve="shuffle" />
+              <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              <node concept="37vLTw" id="4XM$1KT6rz1" role="37wK5m">
+                <ref role="3cqZAo" node="4XM$1KT69Tx" resolve="answers" />
               </node>
             </node>
           </node>
@@ -5238,12 +5280,12 @@
                     <ref role="3cqZAo" to="dxuu:~JOptionPane.QUESTION_MESSAGE" resolve="QUESTION_MESSAGE" />
                   </node>
                   <node concept="10Nm6u" id="4XM$1KSYr7k" role="37wK5m" />
-                  <node concept="2OqwBi" id="4XM$1KSYrdD" role="37wK5m">
-                    <node concept="37vLTw" id="4XM$1KSYrdC" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4XM$1KSYqZw" resolve="q" />
+                  <node concept="2OqwBi" id="4XM$1KT6wXO" role="37wK5m">
+                    <node concept="37vLTw" id="4XM$1KT6s2q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4XM$1KT69Tx" resolve="answers" />
                     </node>
-                    <node concept="2OwXpG" id="4XM$1KT0qNS" role="2OqNvi">
-                      <ref role="2Oxat5" node="4XM$1KSYr2K" resolve="answers" />
+                    <node concept="liA8E" id="4XM$1KT6zxc" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.toArray()" resolve="toArray" />
                     </node>
                   </node>
                   <node concept="AH0OO" id="4XM$1KT4NOs" role="37wK5m">

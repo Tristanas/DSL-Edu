@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import java.util.Random;
+import java.util.Collections;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
@@ -17,6 +18,8 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.List;
+import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 public class MediumMinesweeperBoard extends JPanel {
@@ -93,6 +96,7 @@ public class MediumMinesweeperBoard extends JPanel {
     minesLeft = N_MINES;
     mineExploded = false;
     questionsAnswered = 0;
+    Collections.shuffle(questions);
 
     allCells = N_ROWS * N_COLS;
     field = new int[allCells];
@@ -478,7 +482,10 @@ public class MediumMinesweeperBoard extends JPanel {
 
     public boolean askQuestion(MediumMinesweeper.Question q) {
       // If player closes question window or clicks cancel, selectedOption becomes null. 
-      String selectedOption = (String) JOptionPane.showInputDialog(parentWindow, "You have clicked on a mine. It will explode unless you answer correctly.\n\nQuestion: " + q.question, "Question time", JOptionPane.QUESTION_MESSAGE, null, q.answers, q.answers[0]);
+
+      List<String> answers = Arrays.asList(q.answers);
+      Collections.shuffle(answers);
+      String selectedOption = (String) JOptionPane.showInputDialog(parentWindow, "You have clicked on a mine. It will explode unless you answer correctly.\n\nQuestion: " + q.question, "Question time", JOptionPane.QUESTION_MESSAGE, null, answers.toArray(), q.answers[0]);
       // Do not use a custom icon 
       // Possible answers 
       return selectedOption != null && selectedOption.equals(q.correctAnswer);
