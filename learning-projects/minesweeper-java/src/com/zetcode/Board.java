@@ -365,14 +365,35 @@ public class Board extends JPanel {
                             //Showing the mine player clicked on, so that it's clear that one is in trouble and needs to answer a question.
                             clickedMinePosition = (cRow * N_COLS) + cCol;
                             repaint();
-                            JOptionPane.showMessageDialog(parentWindow, "You have clicked on a mine. " +
-                                    "Answer this question correctly and you will miraculously survive.");
-                            // Answered incorrectly:
-                            if (false) {
+                            //Create an array of the text and components to be displayed.
+
+                            String correctAnswer = "I'm true";
+                            Object[] answers = {"Submit answer", "Give up", correctAnswer};
+                            // If player closes question window, selectedOption becomes null.
+                            String selectedOption = (String) JOptionPane.showInputDialog(
+                                    parentWindow,
+                                    "You have clicked on a mine.\n" +
+                                    "Answer this question correctly and you will miraculously survive.",
+                                    "Question time",
+                                    JOptionPane.QUESTION_MESSAGE,
+                                    null, // Do not use a custom icon
+                                    answers, // Possible answers
+                                    correctAnswer);
+
+                            if (selectedOption == null || !selectedOption.equals(correctAnswer)) {
+                                // Answered incorrectly:
+                                JOptionPane.showMessageDialog(parentWindow,
+                                        "You did not answer the question correctly. \nThe mine exploded.",
+                                        "Incorrect answer - you lose",
+                                        JOptionPane.ERROR_MESSAGE);
                                 inGame = false;
                                 mineExploded = true;
                             }
                             else {
+                                JOptionPane.showMessageDialog(parentWindow,
+                                        "You have answered the question correctly. The mine is marked for your convenience.",
+                                        "Correct answer",
+                                        JOptionPane.INFORMATION_MESSAGE);
                                 field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL;
                             }
                         }
