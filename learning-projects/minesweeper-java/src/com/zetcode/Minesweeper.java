@@ -25,7 +25,7 @@ public class Minesweeper extends JFrame {
         statusbar = new JLabel("");
         add(statusbar, BorderLayout.SOUTH);
 
-        add(new Board(statusbar));
+        add(new Board(statusbar, this));
 
         setResizable(false);
         pack();
@@ -33,7 +33,6 @@ public class Minesweeper extends JFrame {
         setTitle("Minesweeper");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JOptionPane.showMessageDialog(this, "Eggs are not supposed to be green.");
     }
 
     public static void main(String[] args) {

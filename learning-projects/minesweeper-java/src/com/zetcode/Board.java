@@ -5,11 +5,8 @@ import net.java.ImageScaler;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.image.BufferedImage;
 import java.util.Random;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class Board extends JPanel {
 
@@ -38,14 +35,17 @@ public class Board extends JPanel {
 
     private int[] field;
     private boolean inGame;
+    private boolean mineExploded;
     private int minesLeft;
     private Image[] img;
+    private int clickedMinePosition;
 
     private int allCells;
     private final JLabel statusbar;
+    private final JFrame parentWindow;
 
-    public Board(JLabel statusbar) {
-
+    public Board(JLabel statusbar, JFrame fFrame) {
+        this.parentWindow = fFrame;
         this.statusbar = statusbar;
         initBoard();
     }
@@ -72,6 +72,7 @@ public class Board extends JPanel {
 
         var random = new Random();
         inGame = true;
+        mineExploded = false;
         minesLeft = N_MINES;
 
         allCells = N_ROWS * N_COLS;
@@ -259,8 +260,9 @@ public class Board extends JPanel {
 
                 int cell = field[(i * N_COLS) + j];
 
-                if (inGame && cell == MINE_CELL) {
-
+                if (inGame && mineExploded && cell == MINE_CELL) {
+                    // This code is reached only when a mine was clicked and inGame was not set to false.
+                    // If the player has lost all lives, answered a question incorrectly or has no more questions, then it's game over.
                     inGame = false;
                 }
 
@@ -314,8 +316,7 @@ public class Board extends JPanel {
 
             boolean doRepaint = false;
 
-            if (!inGame) {
-
+            if (!inGame && mineExploded) {
                 newGame();
                 repaint();
             }
@@ -361,7 +362,19 @@ public class Board extends JPanel {
                         doRepaint = true;
 
                         if (field[(cRow * N_COLS) + cCol] == MINE_CELL) {
-                            inGame = false;
+                            //Showing the mine player clicked on, so that it's clear that one is in trouble and needs to answer a question.
+                            clickedMinePosition = (cRow * N_COLS) + cCol;
+                            repaint();
+                            JOptionPane.showMessageDialog(parentWindow, "You have clicked on a mine. " +
+                                    "Answer this question correctly and you will miraculously survive.");
+                            // Answered incorrectly:
+                            if (false) {
+                                inGame = false;
+                                mineExploded = true;
+                            }
+                            else {
+                                field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL;
+                            }
                         }
 
                         if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
