@@ -11,7 +11,7 @@ import javax.swing.*;
 public class Board extends JPanel {
 
     private final int NUM_IMAGES = 13;
-    private final int CELL_SIZE = 30;
+    private final int CELL_SIZE = 34;
     private final int IMAGE_SIZE = 15;
 
     private final int COVER_FOR_CELL = 10;
