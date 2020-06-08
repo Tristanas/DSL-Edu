@@ -4,7 +4,9 @@ package Minesweeper.sandbox;
 
 import javax.swing.JPanel;
 import java.awt.Image;
+import java.util.ArrayList;
 import javax.swing.JLabel;
+import javax.swing.JFrame;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import java.util.Random;
@@ -15,6 +17,7 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JOptionPane;
 
 public class EasyMinesweeperBoard extends JPanel {
   private final int NUM_IMAGES = 13;
@@ -42,13 +45,22 @@ public class EasyMinesweeperBoard extends JPanel {
 
   private int[] field;
   private boolean inGame;
+  private boolean mineExploded;
   private int minesLeft;
   private Image[] img;
+  private int clickedMinePosition;
+  private int questionsAnswered;
+  private final int questionsCount;
+  private final ArrayList<EasyMinesweeper.Question> questions;
 
   private int allCells;
   private final JLabel statusbar;
+  private final JFrame parentWindow;
 
-  public EasyMinesweeperBoard(JLabel statusbar) {
+  public EasyMinesweeperBoard(JLabel statusbar, JFrame fFrame, ArrayList<EasyMinesweeper.Question> questions) {
+    this.parentWindow = fFrame;
+    this.questions = questions;
+    this.questionsCount = questions.size();
     this.statusbar = statusbar;
     initBoard();
   }
@@ -79,6 +91,8 @@ public class EasyMinesweeperBoard extends JPanel {
     Random random = new Random();
     inGame = true;
     minesLeft = N_MINES;
+    mineExploded = false;
+    questionsAnswered = 0;
 
     allCells = N_ROWS * N_COLS;
     field = new int[allCells];
@@ -266,7 +280,9 @@ public class EasyMinesweeperBoard extends JPanel {
         int cell = field[(i * N_COLS) + j];
 
         // If we're drawing a mine and you were playing, it's game over. 
-        if (inGame && cell == MINE_CELL) {
+        if (inGame && mineExploded && cell == MINE_CELL) {
+          // This code is reached only when a mine was clicked and inGame was not set to false. 
+          // If the player has lost all lives, answered a question incorrectly or has no more questions, then it's game over. 
           inGame = false;
         }
 
@@ -424,7 +440,21 @@ public class EasyMinesweeperBoard extends JPanel {
 
             // Game over 
             if (field[(cRow * N_COLS) + cCol] == MINE_CELL) {
-              inGame = false;
+              // Showing the mine player clicked on, so that it's clear that one is in trouble and needs to answer a question. 
+              clickedMinePosition = (cRow * N_COLS) + cCol;
+              repaint();
+              boolean answeredCorrectly = false;
+              if (questionsAnswered < questionsCount) {
+                answeredCorrectly = askQuestion(questions.get(questionsAnswered));
+                if (!(answeredCorrectly)) {
+                  // Answered incorrectly: 
+                  handleIncorrectAnswer();
+                } else {
+                  handleCorrectAnswer();
+                }
+              } else {
+                outOfQuestions();
+              }
             }
 
             if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
@@ -435,11 +465,35 @@ public class EasyMinesweeperBoard extends JPanel {
         // Click was done, need to update the table. 
         if (doRepaint) {
           System.out.println("Repainting");
-
           repaint();
         }
-
       }
+    }
+
+    public boolean askQuestion(EasyMinesweeper.Question q) {
+      // If player closes question window or clicks cancel, selectedOption becomes null. 
+      String selectedOption = (String) JOptionPane.showInputDialog(parentWindow, "You have clicked on a mine. It will explode unless you answer correctly.\n\nQuestion: " + q.question, "Question time", JOptionPane.QUESTION_MESSAGE, null, q.answers, q.correctAnswer);
+      // Do not use a custom icon 
+      // Possible answers 
+      return selectedOption != null && selectedOption.equals(q.correctAnswer);
+    }
+
+    private void handleCorrectAnswer() {
+      JOptionPane.showMessageDialog(parentWindow, "You have answered the question correctly. The mine is marked for your convenience.", "Correct answer", JOptionPane.INFORMATION_MESSAGE);
+      field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL;
+      questionsAnswered++;
+    }
+
+    private void handleIncorrectAnswer() {
+      inGame = false;
+      mineExploded = true;
+      JOptionPane.showMessageDialog(parentWindow, "You did not answer the question correctly. \nThe mine exploded.", "Incorrect answer - you lose", JOptionPane.ERROR_MESSAGE);
+    }
+
+    private void outOfQuestions() {
+      inGame = false;
+      mineExploded = true;
+      JOptionPane.showMessageDialog(parentWindow, "Out of questions. \nThe mine exploded.", "Game over", JOptionPane.ERROR_MESSAGE);
     }
 
   }

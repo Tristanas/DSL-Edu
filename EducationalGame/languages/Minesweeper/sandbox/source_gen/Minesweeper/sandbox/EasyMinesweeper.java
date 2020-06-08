@@ -4,13 +4,18 @@ package Minesweeper.sandbox;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import java.util.ArrayList;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 public class EasyMinesweeper extends JFrame {
   private JLabel statusbar;
+  public ArrayList<Question> questions;
 
   public EasyMinesweeper() {
+    questions = new ArrayList();
+    questions.add(new Question("Is it okay to sweep mines?", new String[]{"Yes", "No", "I'm just borrowing them"}, "Yes"));
+    questions.add(new Question("Question?", new String[]{"1", "2", "3"}, "1"));
     initUI();
   }
 
@@ -18,7 +23,7 @@ public class EasyMinesweeper extends JFrame {
     statusbar = new JLabel("");
     add(statusbar, BorderLayout.SOUTH);
 
-    add(new EasyMinesweeperBoard(statusbar));
+    add(new EasyMinesweeperBoard(statusbar, this, questions));
 
     setResizable(false);
     pack();
@@ -37,4 +42,16 @@ public class EasyMinesweeper extends JFrame {
       }
     });
   }
+
+  public class Question {
+    public String correctAnswer;
+    public String[] answers;
+    public String question;
+    public Question(String question, String[] answers, String correctAnswer) {
+      this.question = question;
+      this.answers = answers;
+      this.correctAnswer = correctAnswer;
+    }
+  }
+
 }
