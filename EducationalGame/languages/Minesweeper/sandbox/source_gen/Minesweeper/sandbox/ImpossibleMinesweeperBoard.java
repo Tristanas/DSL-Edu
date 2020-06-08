@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 public class ImpossibleMinesweeperBoard extends JPanel {
   private final int NUM_IMAGES = 13;
-  public final int CELL_SIZE = 15;
+  public final int CELL_SIZE = 30;
   public final int IMAGE_SIZE = 15;
 
   private final int COVER_FOR_CELL = 10;
@@ -311,6 +311,12 @@ public class ImpossibleMinesweeperBoard extends JPanel {
         g.drawImage(img[cell], (j * CELL_SIZE), (i * CELL_SIZE), this);
       }
     }
+    if (uncover == 0 && inGame) {
+      inGame = false;
+      statusbar.setText("Game won");
+    } else if (!(inGame)) {
+      statusbar.setText("Game lost");
+    }
   }
 
 
@@ -472,7 +478,7 @@ public class ImpossibleMinesweeperBoard extends JPanel {
 
     public boolean askQuestion(ImpossibleMinesweeper.Question q) {
       // If player closes question window or clicks cancel, selectedOption becomes null. 
-      String selectedOption = (String) JOptionPane.showInputDialog(parentWindow, "You have clicked on a mine. It will explode unless you answer correctly.\n\nQuestion: " + q.question, "Question time", JOptionPane.QUESTION_MESSAGE, null, q.answers, q.correctAnswer);
+      String selectedOption = (String) JOptionPane.showInputDialog(parentWindow, "You have clicked on a mine. It will explode unless you answer correctly.\n\nQuestion: " + q.question, "Question time", JOptionPane.QUESTION_MESSAGE, null, q.answers, q.answers[0]);
       // Do not use a custom icon 
       // Possible answers 
       return selectedOption != null && selectedOption.equals(q.correctAnswer);

@@ -14,8 +14,16 @@ public class EasyMinesweeper extends JFrame {
 
   public EasyMinesweeper() {
     questions = new ArrayList();
-    questions.add(new Question("Is it okay to sweep mines?", new String[]{"Yes", "No", "I'm just borrowing them"}, "Yes"));
-    questions.add(new Question("Question?", new String[]{"1", "2", "3"}, "1"));
+    questions.add(new Question("I want those purple _______.", new String[]{"One", "Ones"}, "Ones"));
+    questions.add(new Question("I like ____________.", new String[]{"grey ones", "the grey ones"}, "the grey ones"));
+    questions.add(new Question("________ likes it here.", new String[]{"All", "Everyone"}, "Everyone"));
+    questions.add(new Question("____ of us don't like pizza.", new String[]{"None", "Some"}, "Some"));
+    questions.add(new Question("Select the pronoun that can replace the words in caps. ANA, SARAH AND I are on our way to school.", new String[]{"They", "Us", "Our", "We"}, "We"));
+    questions.add(new Question("Select the pronoun that can replace the words in caps. MY BROTHER AND HIS WIFE are going to Las Vegas.", new String[]{"We", "He", "They"}, "They"));
+    questions.add(new Question("England is my _______.", new String[]{"City", "Club", "Country"}, "Country"));
+    questions.add(new Question("Anna: Are you Spanish? Marco: No, _______.", new String[]{"I don't", "I isn't", "I'm not"}, "I'm not"));
+    questions.add(new Question("One who hides away on a ship to optain a free passage is a __________.", new String[]{"Shipwright", "Compositor", "Stoker", "Stowaway"}, "Stowaway"));
+    questions.add(new Question("When is a negative question used?", new String[]{"In a statement.", "When you expect the listener to disagree.", "To show surprise or doubt."}, "To show surprise or doubt."));
     initUI();
   }
 

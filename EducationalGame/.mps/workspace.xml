@@ -172,15 +172,57 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:2eef48e2-ecc1-4e5f-9ea7-693f4ed65e81(Education.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Education/models/Education.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Questionaire" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,7 +254,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,11 +264,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:2eef48e2-ecc1-4e5f-9ea7-693f4ed65e81(Education.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Education/models/Education.editor.mps]" />
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,24 +285,8 @@
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionaire" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,16 +330,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -328,31 +348,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -612,10 +612,10 @@
     </default_view_options>
   </component>
   <component name="WindowStateProjectService">
-    <state x="377" y="-824" key="#MPSPropertiesConfigurable" timestamp="1591616011443">
+    <state x="377" y="-824" key="#MPSPropertiesConfigurable" timestamp="1591651517913">
       <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="377" y="-824" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591616011443" />
+    <state x="377" y="-824" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591651517913" />
     <state x="455" y="212" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591559495973" />
     <state x="273" y="-879" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589142586944">
       <screen x="-169" y="-1080" width="1920" height="1040" />
@@ -635,28 +635,28 @@
     </state>
     <state x="599" y="-779" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591650436170" />
     <state x="640" y="249" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591559374985" />
-    <state width="1557" height="289" key="GridCell.Tab.0.bottom" timestamp="1591562864804">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom" timestamp="1591652838319">
+      <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1298" height="289" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589199452381" />
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591652838319" />
     <state width="1557" height="289" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864804" />
     <state width="1074" height="289" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591552570714" />
-    <state width="1557" height="289" key="GridCell.Tab.0.center" timestamp="1591562864802">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="361" key="GridCell.Tab.0.center" timestamp="1591652838319">
+      <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1298" height="289" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589199452380" />
+    <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591652838319" />
     <state width="1557" height="289" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864802" />
     <state width="1074" height="289" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591552570714" />
-    <state width="1557" height="289" key="GridCell.Tab.0.left" timestamp="1591562864802">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="361" key="GridCell.Tab.0.left" timestamp="1591652838319">
+      <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1298" height="289" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589199452380" />
+    <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591652838319" />
     <state width="1557" height="289" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864802" />
     <state width="1074" height="289" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591552570714" />
-    <state width="1557" height="289" key="GridCell.Tab.0.right" timestamp="1591562864804">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="361" key="GridCell.Tab.0.right" timestamp="1591652838319">
+      <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1298" height="289" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589199452380" />
+    <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591652838319" />
     <state width="1557" height="289" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864804" />
     <state width="1074" height="289" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591552570714" />
     <state x="303" y="75" key="SettingsEditor" timestamp="1589145157303">
@@ -676,10 +676,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="499" y="227" key="jetbrains.mps.ide.refactoring.plugin.MoveModelDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589185067535" />
-    <state x="501" y="-801" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1591616009484">
+    <state x="501" y="-801" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1591651516395">
       <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="501" y="-801" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591616009484" />
+    <state x="501" y="-801" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591651516395" />
     <state x="558" y="231" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591559445707" />
     <state x="490" y="-763" key="jetbrains.mps.lang.structure.pluginSolution.plugin.MoveConceptDialog" timestamp="1591614439420">
       <screen x="-169" y="-1080" width="1920" height="1040" />

@@ -44,14 +44,17 @@
     <property role="1KmNlM" value="20" />
     <property role="1KmNlO" value="20" />
     <property role="1KmNlL" value="200" />
-    <property role="3zgag$" value="15" />
+    <property role="3zgag$" value="30" />
+    <node concept="1R_NyW" id="4XM$1KT4DII" role="x2j5K">
+      <ref role="1RwF4F" to="f1yb:4XM$1KSYoLV" resolve="Math" />
+    </node>
   </node>
   <node concept="1KmNlR" id="4kyY3TkTzcu">
     <property role="TrG5h" value="EasyMinesweeper" />
     <property role="1KmNlM" value="10" />
     <property role="1KmNlO" value="12" />
     <property role="1KmNlL" value="8" />
-    <property role="3zgag$" value="45" />
+    <property role="3zgag$" value="60" />
     <node concept="1R_NyW" id="4XM$1KSYoLS" role="x2j5K">
       <ref role="1RwF4F" to="f1yb:4XM$1KSYoGT" resolve="English" />
     </node>
