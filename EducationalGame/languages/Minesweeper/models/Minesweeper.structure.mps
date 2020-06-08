@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
@@ -30,7 +31,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -76,43 +76,8 @@
     <node concept="1TJgyj" id="24$UGS0btIY" role="1TKVEi">
       <property role="IQ2ns" value="2388291872900373438" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="questions" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="24$UGS0btFk" resolve="SingleChoiceQuestion" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="24$UGS0btFh">
-    <property role="EcuMT" value="2388291872900373201" />
-    <property role="TrG5h" value="Answer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="24$UGS0btFi" role="1TKVEl">
-      <property role="IQ2nx" value="2388291872900373202" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="24$UGS0btFk">
-    <property role="EcuMT" value="2388291872900373204" />
-    <property role="TrG5h" value="SingleChoiceQuestion" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="24$UGS0btFl" role="1TKVEi">
-      <property role="IQ2ns" value="2388291872900373205" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="correctAnswer" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="24$UGS0btFh" resolve="Answer" />
-    </node>
-    <node concept="1TJgyj" id="24$UGS0btFn" role="1TKVEi">
-      <property role="IQ2ns" value="2388291872900373207" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="incorrectAnswers" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="24$UGS0btFh" resolve="Answer" />
-    </node>
-    <node concept="1TJgyi" id="24$UGS0btGY" role="1TKVEl">
-      <property role="IQ2nx" value="2388291872900373310" />
-      <property role="TrG5h" value="question" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <property role="20kJfa" value="questionaire" />
+      <ref role="20lvS9" to="cgkn:4XM$1KSTqyw" resolve="TestReference" />
     </node>
   </node>
 </model>

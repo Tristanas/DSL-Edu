@@ -2,8 +2,7 @@ package com.zetcode;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.*;
 
 /**
  * Java Minesweeper Game
@@ -34,6 +33,7 @@ public class Minesweeper extends JFrame {
         setTitle("Minesweeper");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JOptionPane.showMessageDialog(this, "Eggs are not supposed to be green.");
     }
 
     public static void main(String[] args) {

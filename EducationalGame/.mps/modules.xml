@@ -2,8 +2,10 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Education/Education.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Minesweeper/sandbox/Minesweeper.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Questionaire/Questionaire.msd" folder="" />
     </projectModules>
   </component>
 </project>
