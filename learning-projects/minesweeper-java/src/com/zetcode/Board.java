@@ -5,6 +5,7 @@ import net.java.ImageScaler;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
 
@@ -39,13 +40,18 @@ public class Board extends JPanel {
     private int minesLeft;
     private Image[] img;
     private int clickedMinePosition;
+    private int questionsAnswered;
+    private final int questionsCount;
+    private final ArrayList<Minesweeper.Question> questions;
 
     private int allCells;
     private final JLabel statusbar;
     private final JFrame parentWindow;
 
-    public Board(JLabel statusbar, JFrame fFrame) {
+    public Board(JLabel statusbar, JFrame fFrame, ArrayList<Minesweeper.Question> questions) {
         this.parentWindow = fFrame;
+        this.questions = questions;
+        this.questionsCount = questions.size();
         this.statusbar = statusbar;
         initBoard();
     }
@@ -53,7 +59,6 @@ public class Board extends JPanel {
     private void initBoard() {
 
         setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
-
         img = new Image[NUM_IMAGES];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
@@ -74,6 +79,7 @@ public class Board extends JPanel {
         inGame = true;
         mineExploded = false;
         minesLeft = N_MINES;
+        questionsAnswered = 0;
 
         allCells = N_ROWS * N_COLS;
         field = new int[allCells];
@@ -365,20 +371,22 @@ public class Board extends JPanel {
                             //Showing the mine player clicked on, so that it's clear that one is in trouble and needs to answer a question.
                             clickedMinePosition = (cRow * N_COLS) + cCol;
                             repaint();
-                            //Create an array of the text and components to be displayed.
-
-                            String question = "I'm a good question, aren't I?";
-                            String correctAnswer = "I'm true";
-                            Object[] answers = {"Submit answer", "Give up", correctAnswer};
-                            boolean answeredCorrectly = askQuestion(question, answers, correctAnswer);
-
-                            if (!answeredCorrectly) {
-                                // Answered incorrectly:
-                                handleIncorrectAnswer();
+                            boolean answeredCorrectly = false;
+                            if (questionsAnswered < questionsCount) {
+                                answeredCorrectly = askQuestion(questions.get(questionsAnswered));
+                                if (!answeredCorrectly) {
+                                    // Answered incorrectly:
+                                    handleIncorrectAnswer();
+                                }
+                                else {
+                                    handleCorrectAnswer();
+                                }
                             }
                             else {
-                                handleCorrectAnswer();
+                                outOfQuestions();
                             }
+
+
                         }
 
                         if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
@@ -394,20 +402,20 @@ public class Board extends JPanel {
         }
     }
 
-    public boolean askQuestion(String question, Object[] answers, String correctAnswer)
+    public boolean askQuestion(Minesweeper.Question q)
     {
         // If player closes question window or clicks cancel, selectedOption becomes null.
         String selectedOption = (String) JOptionPane.showInputDialog(
                 parentWindow,
                 "You have clicked on a mine. It will explode unless you answer correctly.\n\n" +
-                        "Question: " + question,
+                        "Question: " + q.question,
                 "Question time",
                 JOptionPane.QUESTION_MESSAGE,
                 null, // Do not use a custom icon
-                answers, // Possible answers
-                correctAnswer);
+                q.answers, // Possible answers
+                q.correctAnswer);
 
-        return selectedOption != null && selectedOption.equals(correctAnswer);
+        return selectedOption != null && selectedOption.equals(q.correctAnswer);
     }
 
     private void handleCorrectAnswer()
@@ -417,6 +425,7 @@ public class Board extends JPanel {
                 "Correct answer",
                 JOptionPane.INFORMATION_MESSAGE);
         field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL;
+        questionsAnswered++;
     }
 
     private void handleIncorrectAnswer() {
@@ -425,6 +434,15 @@ public class Board extends JPanel {
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",
                 "Incorrect answer - you lose",
+                JOptionPane.ERROR_MESSAGE);
+    }
+
+    private void outOfQuestions() {
+        inGame = false;
+        mineExploded = true;
+        JOptionPane.showMessageDialog(parentWindow,
+                "Out of questions. \nThe mine exploded.",
+                "Game over",
                 JOptionPane.ERROR_MESSAGE);
     }
 }
