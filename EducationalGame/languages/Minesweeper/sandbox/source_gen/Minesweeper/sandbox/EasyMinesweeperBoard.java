@@ -24,7 +24,7 @@ import javax.swing.JOptionPane;
 
 public class EasyMinesweeperBoard extends JPanel {
   private final int NUM_IMAGES = 13;
-  public final int CELL_SIZE = 60;
+  public final int CELL_SIZE = 30;
   public final int IMAGE_SIZE = 15;
 
   private final int COVER_FOR_CELL = 10;
