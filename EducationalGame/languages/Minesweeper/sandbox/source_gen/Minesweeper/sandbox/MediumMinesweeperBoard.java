@@ -75,6 +75,8 @@ public class MediumMinesweeperBoard extends JPanel {
     img = new Image[NUM_IMAGES];
 
     System.out.println("Getting images");
+    System.out.println("Working Directory = " + System.getProperty("user.dir"));
+
     String picturesFolder = "C:/Users/Vilius/MPSProjects/EducationalGame/languages/Minesweeper/sandbox/resources/";
     System.out.println("CWD: " + System.getProperty("user.dir"));
     for (int i = 0; i < NUM_IMAGES; i++) {

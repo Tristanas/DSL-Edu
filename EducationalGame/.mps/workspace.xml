@@ -18,7 +18,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="d2531f80-4677-4949-b487-1fb9d5ce437d/r:361b1142-8764-4155-9173-7a2468225260(TempModuled2531f80-4677-4949-b487-1fb9d5ce437d/ConsoleModel_76753551802200)">
+            <model ref="8751e82c-569c-4458-bd30-89d69d9d26ef/r:00dd8d46-ec3e-4445-9ef7-9ea4b842f3d1(TempModule8751e82c-569c-4458-bd30-89d69d9d26ef/ConsoleModel_83315860722900)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -38,11 +38,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="41Q$OSavuy">
-                <node concept="3balQm" id="41Q$OSavuz" role="aymYE" />
-                <node concept="2Clz$F" id="41Q$OSavu$" role="aymYO" />
-                <node concept="2_V_lH" id="41Q$OSavu_" role="1PhJh3">
-                  <ref role="2_V_lI" node="41Q$OSavu$" resolve="CommandHolder" />
+              <node concept="aymSD" id="26_I6mU7c4e">
+                <node concept="3balQm" id="26_I6mU7c4f" role="aymYE" />
+                <node concept="2Clz$F" id="26_I6mU7c4g" role="aymYO" />
+                <node concept="2_V_lH" id="26_I6mU7c4h" role="1PhJh3">
+                  <ref role="2_V_lI" node="26_I6mU7c4g" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -247,38 +247,22 @@
               <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,7 +272,41 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -301,12 +319,32 @@
               <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="4981817084417761019" />
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -322,86 +360,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Minesweeper.java" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Java Application.Node EasyMinesweeper">
+  <component name="RunManager" selected="Java Application.Node ImpossibleMinesweeper">
     <configuration name="Node EasyMinesweeper" type="Java Application" factoryName="Java" temporary="true">
       <myNode>
         <MyState>
           <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421223198" />
           <option name="myNodeText" value="Minesweeper.sandbox.EasyMinesweeper" />
-        </MyState>
-      </myNode>
-      <myRunParameters>
-        <MyState>
-          <option name="myJavaParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="C:\Program Files\JetBrains\MPS 2019.3" />
-            </JavaRunParameters>
-          </option>
-        </MyState>
-      </myRunParameters>
-      <method v="2">
-        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Node ImpossibleMinesweeper" type="Java Application" factoryName="Java" temporary="true">
-      <myNode>
-        <MyState>
-          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421199496" />
-          <option name="myNodeText" value="Minesweeper.sandbox.ImpossibleMinesweeper" />
-        </MyState>
-      </myNode>
-      <myRunParameters>
-        <MyState>
-          <option name="myJavaParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="C:\Program Files\JetBrains\MPS 2019.3" />
-            </JavaRunParameters>
-          </option>
-        </MyState>
-      </myRunParameters>
-      <method v="2">
-        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Node MediumMinesweeper" type="Java Application" factoryName="Java" temporary="true">
-      <myNode>
-        <MyState>
-          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084417757618" />
-          <option name="myNodeText" value="Minesweeper.sandbox.MediumMinesweeper" />
-        </MyState>
-      </myNode>
-      <myRunParameters>
-        <MyState>
-          <option name="myJavaParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="C:\Program Files\JetBrains\MPS 2019.3" />
-            </JavaRunParameters>
-          </option>
-        </MyState>
-      </myRunParameters>
-      <method v="2">
-        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run Game" type="Java Application" factoryName="Java">
-      <myNode>
-        <MyState>
-          <option name="myNodePointer" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator)/4981817084420165571" />
-          <option name="myNodeText" value="main.Minesweeper" />
         </MyState>
       </myNode>
       <myRunParameters>
@@ -421,11 +387,89 @@
         <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Node ImpossibleMinesweeper" type="Java Application" factoryName="Java" temporary="true">
+      <myNode>
+        <MyState>
+          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421199496" />
+          <option name="myNodeText" value="Minesweeper.sandbox.ImpossibleMinesweeper" />
+        </MyState>
+      </myNode>
+      <myRunParameters>
+        <MyState>
+          <option name="myJavaParameters">
+            <JavaRunParameters>
+              <option name="jrePath" value="" />
+              <option name="programParameters" value="" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" value="" />
+              <option name="workingDirectory" value="$PROJECT_DIR$" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myRunParameters>
+      <method v="2">
+        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Node MediumMinesweeper" type="Java Application" factoryName="Java" temporary="true">
+      <myNode>
+        <MyState>
+          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084417757618" />
+          <option name="myNodeText" value="Minesweeper.sandbox.MediumMinesweeper" />
+        </MyState>
+      </myNode>
+      <myRunParameters>
+        <MyState>
+          <option name="myJavaParameters">
+            <JavaRunParameters>
+              <option name="jrePath" value="" />
+              <option name="programParameters" value="" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" value="" />
+              <option name="workingDirectory" value="$PROJECT_DIR$" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myRunParameters>
+      <method v="2">
+        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run Game" type="Java Application" factoryName="Java">
+      <myNode>
+        <MyState>
+          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421223198" />
+          <option name="myNodeText" value="Minesweeper.sandbox.EasyMinesweeper" />
+        </MyState>
+      </myNode>
+      <myRunParameters>
+        <MyState>
+          <option name="myJavaParameters">
+            <JavaRunParameters>
+              <option name="jrePath" value="" />
+              <option name="programParameters" value="" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" value="" />
+              <option name="workingDirectory" value="$PROJECT_DIR$" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myRunParameters>
+      <method v="2">
+        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Java Application.Run Game" />
+      <item itemvalue="Java Application.Node EasyMinesweeper" />
+      <item itemvalue="Java Application.Node ImpossibleMinesweeper" />
+      <item itemvalue="Java Application.Node MediumMinesweeper" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Java Application.Node MediumMinesweeper" />
         <item itemvalue="Java Application.Node ImpossibleMinesweeper" />
         <item itemvalue="Java Application.Node EasyMinesweeper" />
+        <item itemvalue="Java Application.Node MediumMinesweeper" />
       </list>
     </recent_temporary>
   </component>
@@ -462,15 +506,20 @@
     </default_view_options>
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="212" key="#MPSPropertiesConfigurable" timestamp="1592062830555">
+    <state x="455" y="212" key="#MPSPropertiesConfigurable" timestamp="1592238009378">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="377" y="-824" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591651517913" />
-    <state x="455" y="212" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592062830555" />
-    <state x="273" y="-879" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589142586944">
-      <screen x="-169" y="-1080" width="1920" height="1040" />
+    <state x="455" y="212" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238009378" />
+    <state x="538" y="169" key="#Node_EasyMinesweeper" timestamp="1592238004508">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="538" y="169" key="#Node_EasyMinesweeper/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238004508" />
+    <state x="368" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592238064527">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="273" y="-879" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1589142586944" />
+    <state x="368" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238064527" />
     <state x="471" y="-802" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard" timestamp="1591614583952">
       <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>
@@ -480,47 +529,47 @@
     </state>
     <state x="467" y="-853" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591650507265" />
     <state x="530" y="188" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591559913939" />
-    <state x="599" y="-779" key="FileChooserDialogImpl" timestamp="1591650436170">
-      <screen x="-169" y="-1080" width="1920" height="1040" />
+    <state x="640" y="249" key="FileChooserDialogImpl" timestamp="1592238002643">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="599" y="-779" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591650436170" />
-    <state x="640" y="249" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591559374985" />
-    <state width="1557" height="288" key="GridCell.Tab.0.bottom" timestamp="1591710010220">
+    <state x="640" y="249" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238002643" />
+    <state width="1557" height="288" key="GridCell.Tab.0.bottom" timestamp="1592238220435">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="289" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864804" />
+    <state width="1557" height="288" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238220435" />
     <state width="1557" height="288" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.center" timestamp="1591710010220">
+    <state width="1557" height="288" key="GridCell.Tab.0.center" timestamp="1592238220435">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="289" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864802" />
+    <state width="1557" height="288" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238220435" />
     <state width="1557" height="288" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.left" timestamp="1591710010220">
+    <state width="1557" height="288" key="GridCell.Tab.0.left" timestamp="1592238220435">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="289" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864802" />
+    <state width="1557" height="288" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238220435" />
     <state width="1557" height="288" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.right" timestamp="1591710010220">
+    <state width="1557" height="288" key="GridCell.Tab.0.right" timestamp="1592238220435">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="289" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1591562864804" />
+    <state width="1557" height="288" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238220435" />
     <state width="1557" height="288" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state x="303" y="75" key="SettingsEditor" timestamp="1592065824029">
+    <state x="303" y="75" key="SettingsEditor" timestamp="1592237892839">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="303" y="75" key="SettingsEditor/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592065824029" />
+    <state x="303" y="75" key="SettingsEditor/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592237892839" />
     <state x="92" y="92" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589187517423">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="92" y="92" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589187517423" />
-    <state x="508" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1592046763887">
+    <state x="508" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1592233209618">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="508" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592046763887" />
+    <state x="508" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592233209618" />
     <state x="508" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1591709432056" />
     <state x="499" y="227" key="jetbrains.mps.ide.refactoring.plugin.MoveModelDialog" timestamp="1589185067535">
       <screen x="0" y="0" width="1600" height="860" />

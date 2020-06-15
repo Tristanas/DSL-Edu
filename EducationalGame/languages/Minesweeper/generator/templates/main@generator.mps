@@ -805,12 +805,53 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="26_I6mU8NnF" role="3cqZAp">
+          <node concept="3cpWsn" id="26_I6mU8NnI" role="3cpWs9">
+            <property role="TrG5h" value="workingDirectory" />
+            <node concept="17QB3L" id="26_I6mU8NnD" role="1tU5fm" />
+            <node concept="2YIFZM" id="26_I6mU8O62" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <node concept="Xl_RD" id="26_I6mU8O63" role="37wK5m">
+                <property role="Xl_RC" value="user.dir" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4kyY3TkS2LB" role="3cqZAp">
           <node concept="3cpWsn" id="4kyY3TkS2LE" role="3cpWs9">
             <property role="TrG5h" value="picturesFolder" />
             <node concept="17QB3L" id="4kyY3TkS2L_" role="1tU5fm" />
-            <node concept="Xl_RD" id="4kyY3TkS3l_" role="33vP2m">
-              <property role="Xl_RC" value="C:/Users/Vilius/MPSProjects/EducationalGame/languages/Minesweeper/sandbox/resources/" />
+            <node concept="3cpWs3" id="26_I6mU8V_v" role="33vP2m">
+              <node concept="37vLTw" id="26_I6mU8WM8" role="3uHU7B">
+                <ref role="3cqZAo" node="26_I6mU8NnI" resolve="workingDirectory" />
+              </node>
+              <node concept="Xl_RD" id="4kyY3TkS3l_" role="3uHU7w">
+                <property role="Xl_RC" value="/languages/Minesweeper/sandbox/resources/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="26_I6mU7FO5" role="3cqZAp">
+          <node concept="2OqwBi" id="26_I6mU7FO6" role="3clFbG">
+            <node concept="10M0yZ" id="26_I6mU7FO7" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="26_I6mU7FO8" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="26_I6mU7HWB" role="37wK5m">
+                <node concept="2YIFZM" id="26_I6mU7Ott" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <node concept="Xl_RD" id="26_I6mU7PaQ" role="37wK5m">
+                    <property role="Xl_RC" value="user.dir" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="26_I6mU7FO9" role="3uHU7B">
+                  <property role="Xl_RC" value="Working Directory = " />
+                </node>
+              </node>
             </node>
           </node>
         </node>
