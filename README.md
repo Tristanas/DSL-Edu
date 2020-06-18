@@ -16,4 +16,4 @@ A MPS Solution which contains defined languages for game creation and a sandbox 
 5. You may need to migrate the project. It's optional. You may select "Migrate" or "Postpone".
 6. Right click on "EducationalGame" in the project view and select "Make Project". Wait for the build process to finish.
 
-Once you follow these steps you may define your own questionaires, Minesweeper games, extend or modify existing languages and play the games. Games are located in the Minesweeper sandbox solution. Right click on a game roo
+Once you follow these steps you may define your own questionaires, Minesweeper games, extend or modify existing languages and play the games. Games are located in the Minesweeper sandbox solution. Right click on a game and select "run node" to run it.
