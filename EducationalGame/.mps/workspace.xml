@@ -154,41 +154,7 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,12 +191,32 @@
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.behavior.mps]" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -240,11 +226,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-for-educational-games/EducationalGame/languages/Minesweeper/models/Minesweeper.behavior.mps]" />
+              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
             <PATH_ELEMENT>
-              <option name="myItemId" value="885304035644841660" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -302,7 +290,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/MPSSamples.2019.3.4/componentDependencies" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Java Application.Node EasyMinesweeper">
+  <component name="RunManager" selected="Java Application.Node MathSweeper">
     <configuration name="Node EasyMinesweeper" type="Java Application" factoryName="Java" temporary="true">
       <myNode>
         <MyState>
@@ -343,6 +331,30 @@
               <option name="useAlternativeJre" value="false" />
               <option name="vmOptions" value="" />
               <option name="workingDirectory" value="$PROJECT_DIR$" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myRunParameters>
+      <method v="2">
+        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Node MathSweeper" type="Java Application" factoryName="Java" temporary="true">
+      <myNode>
+        <MyState>
+          <option name="myNodePointer" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/885304035645152199" />
+          <option name="myNodeText" value="Minesweeper.sandbox.MathSweeper" />
+        </MyState>
+      </myNode>
+      <myRunParameters>
+        <MyState>
+          <option name="myJavaParameters">
+            <JavaRunParameters>
+              <option name="jrePath" />
+              <option name="programParameters" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" />
+              <option name="workingDirectory" value="C:\Program Files\JetBrains\MPS 2019.3" />
             </JavaRunParameters>
           </option>
         </MyState>
@@ -404,12 +416,14 @@
       <item itemvalue="Java Application.Node ImpossibleMinesweeper" />
       <item itemvalue="Java Application.Node MediumMinesweeper" />
       <item itemvalue="Java Application.Run Game" />
+      <item itemvalue="Java Application.Node MathSweeper" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Application.Node MathSweeper" />
+        <item itemvalue="Java Application.Node EasyMinesweeper" />
         <item itemvalue="Java Application.Node MediumMinesweeper" />
         <item itemvalue="Java Application.Node ImpossibleMinesweeper" />
-        <item itemvalue="Java Application.Node EasyMinesweeper" />
       </list>
     </recent_temporary>
   </component>
@@ -446,15 +460,19 @@
     </default_view_options>
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="237" key="#MPSPropertiesConfigurable" timestamp="1592499652671">
+    <state x="462" y="237" key="#MPSPropertiesConfigurable" timestamp="1592504367742">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="377" y="-824" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591651517913" />
-    <state x="462" y="237" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592499652671" />
+    <state x="462" y="237" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504367742" />
     <state x="538" y="169" key="#Node_EasyMinesweeper" timestamp="1592238004508">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="538" y="169" key="#Node_EasyMinesweeper/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592238004508" />
+    <state x="538" y="169" key="#Node_MathSweeper" timestamp="1592504134718">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="538" y="169" key="#Node_MathSweeper/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504134718" />
     <state x="368" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592238064527">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -474,30 +492,46 @@
     </state>
     <state x="599" y="-779" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591650436170" />
     <state x="640" y="249" key="FileChooserDialogImpl/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592493500375" />
-    <state width="1557" height="288" key="GridCell.Tab.0.bottom" timestamp="1592495872231">
+    <state width="1557" height="288" key="GridCell.Tab.0.bottom" timestamp="1592506182039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="288" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592495872231" />
+    <state width="1557" height="288" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592506182039" />
     <state width="1557" height="288" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.center" timestamp="1592495872231">
+    <state width="1557" height="288" key="GridCell.Tab.0.center" timestamp="1592506182039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="288" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592495872231" />
+    <state width="1557" height="288" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592506182039" />
     <state width="1557" height="288" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.left" timestamp="1592495872231">
+    <state width="1557" height="288" key="GridCell.Tab.0.left" timestamp="1592506182039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="288" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592495872231" />
+    <state width="1557" height="288" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592506182039" />
     <state width="1557" height="288" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
-    <state width="1557" height="288" key="GridCell.Tab.0.right" timestamp="1592495872231">
+    <state width="1557" height="288" key="GridCell.Tab.0.right" timestamp="1592506182039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591654240566" />
-    <state width="1557" height="288" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592495872231" />
+    <state width="1557" height="288" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592506182039" />
     <state width="1557" height="288" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591710010220" />
+    <state width="1557" height="284" key="GridCell.Tab.1.bottom" timestamp="1592504249926">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="284" key="GridCell.Tab.1.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504249926" />
+    <state width="1557" height="284" key="GridCell.Tab.1.center" timestamp="1592504249926">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="284" key="GridCell.Tab.1.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504249926" />
+    <state width="1557" height="284" key="GridCell.Tab.1.left" timestamp="1592504249926">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="284" key="GridCell.Tab.1.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504249926" />
+    <state width="1557" height="284" key="GridCell.Tab.1.right" timestamp="1592504249926">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="284" key="GridCell.Tab.1.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504249926" />
     <state x="303" y="75" key="SettingsEditor" timestamp="1592493182899">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -519,11 +553,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="499" y="227" key="jetbrains.mps.ide.refactoring.plugin.MoveModelDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1589185067535" />
-    <state x="579" y="431" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1592499533169">
+    <state x="579" y="431" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1592504364926">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="501" y="-801" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@-169.-1080.1920.1040" timestamp="1591651516395" />
-    <state x="579" y="431" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592499533169" />
+    <state x="579" y="431" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1592504364926" />
     <state x="490" y="-763" key="jetbrains.mps.lang.structure.pluginSolution.plugin.MoveConceptDialog" timestamp="1591614439420">
       <screen x="-169" y="-1080" width="1920" height="1040" />
     </state>

@@ -91,49 +91,48 @@
       <unit id="4981817084417757618" at="11,0,79,0" name="Minesweeper.sandbox.MediumMinesweeper" />
     </file>
     <file name="MediumMinesweeperBoard.java">
-      <node id="4981817084417757618" at="26,0,27,0" concept="4" trace="NUM_IMAGES" />
-      <node id="4981817084417757618" at="27,0,28,0" concept="4" trace="CELL_SIZE" />
-      <node id="4981817084417757618" at="28,0,29,0" concept="4" trace="IMAGE_SIZE" />
-      <node id="4981817084417757618" at="30,0,31,0" concept="4" trace="COVER_FOR_CELL" />
-      <node id="4981817084417757618" at="31,0,32,0" concept="4" trace="MARK_FOR_CELL" />
-      <node id="4981817084417757618" at="32,0,33,0" concept="4" trace="EMPTY_CELL" />
-      <node id="4981817084417757618" at="33,0,34,0" concept="4" trace="MINE_CELL" />
-      <node id="4981817084417757618" at="34,0,35,0" concept="4" trace="COVERED_MINE_CELL" />
-      <node id="4981817084417757618" at="35,0,36,0" concept="4" trace="MARKED_MINE_CELL" />
-      <node id="4981817084417757618" at="37,0,38,0" concept="4" trace="DRAW_MINE" />
-      <node id="4981817084417757618" at="38,0,39,0" concept="4" trace="DRAW_COVER" />
-      <node id="4981817084417757618" at="39,0,40,0" concept="4" trace="DRAW_MARK" />
-      <node id="4981817084417757618" at="40,0,41,0" concept="4" trace="DRAW_WRONG_MARK" />
-      <node id="4981817084417757618" at="42,0,43,0" concept="4" trace="N_MINES" />
-      <node id="4981817084417757618" at="43,0,44,0" concept="4" trace="N_ROWS" />
-      <node id="4981817084417757618" at="44,0,45,0" concept="4" trace="N_COLS" />
-      <node id="4981817084417757618" at="46,0,47,0" concept="4" trace="BOARD_WIDTH" />
-      <node id="4981817084417757618" at="47,0,48,0" concept="4" trace="BOARD_HEIGHT" />
-      <node id="4981817084417757618" at="49,0,50,0" concept="4" trace="field" />
-      <node id="4981817084417757618" at="50,0,51,0" concept="4" trace="inGame" />
-      <node id="4981817084417757618" at="51,0,52,0" concept="4" trace="mineExploded" />
-      <node id="4981817084417757618" at="52,0,53,0" concept="4" trace="minesLeft" />
-      <node id="4981817084417757618" at="53,0,54,0" concept="4" trace="img" />
-      <node id="4981817084417757618" at="54,0,55,0" concept="4" trace="clickedMinePosition" />
-      <node id="4981817084417757618" at="55,0,56,0" concept="4" trace="questionsAnswered" />
-      <node id="4981817084417757618" at="56,0,57,0" concept="4" trace="questionsCount" />
-      <node id="4981817084417757618" at="57,0,58,0" concept="4" trace="questions" />
-      <node id="4981817084417757618" at="59,0,60,0" concept="4" trace="allCells" />
-      <node id="4981817084417757618" at="60,0,61,0" concept="4" trace="statusbar" />
-      <node id="4981817084417757618" at="61,0,62,0" concept="4" trace="parentWindow" />
-      <node id="4981817084417757618" at="63,115,64,31" concept="3" />
-      <node id="4981817084417757618" at="64,31,65,31" concept="3" />
-      <node id="4981817084417757618" at="65,31,66,43" concept="3" />
-      <node id="4981817084417757618" at="66,43,67,31" concept="3" />
-      <node id="4981817084417757618" at="67,31,68,16" concept="3" />
-      <node id="4981817084417757618" at="71,28,72,45" concept="3" />
-      <node id="4981817084417757618" at="72,45,73,63" concept="3" />
-      <node id="4981817084417757618" at="73,63,74,0" concept="11" />
-      <node id="4981817084417757618" at="74,0,75,32" concept="3" />
-      <node id="4981817084417757618" at="75,32,76,0" concept="11" />
-      <node id="4981817084417757618" at="76,0,77,41" concept="3" />
-      <node id="4981817084417757618" at="77,41,78,105" concept="8" />
-      <node id="4981817084417757618" at="78,105,79,62" concept="3" />
+      <node id="4981817084417757618" at="27,0,28,0" concept="4" trace="NUM_IMAGES" />
+      <node id="4981817084417757618" at="28,0,29,0" concept="4" trace="CELL_SIZE" />
+      <node id="4981817084417757618" at="29,0,30,0" concept="4" trace="IMAGE_SIZE" />
+      <node id="4981817084417757618" at="31,0,32,0" concept="4" trace="COVER_FOR_CELL" />
+      <node id="4981817084417757618" at="32,0,33,0" concept="4" trace="MARK_FOR_CELL" />
+      <node id="4981817084417757618" at="33,0,34,0" concept="4" trace="EMPTY_CELL" />
+      <node id="4981817084417757618" at="34,0,35,0" concept="4" trace="MINE_CELL" />
+      <node id="4981817084417757618" at="35,0,36,0" concept="4" trace="COVERED_MINE_CELL" />
+      <node id="4981817084417757618" at="36,0,37,0" concept="4" trace="MARKED_MINE_CELL" />
+      <node id="4981817084417757618" at="38,0,39,0" concept="4" trace="DRAW_MINE" />
+      <node id="4981817084417757618" at="39,0,40,0" concept="4" trace="DRAW_COVER" />
+      <node id="4981817084417757618" at="40,0,41,0" concept="4" trace="DRAW_MARK" />
+      <node id="4981817084417757618" at="41,0,42,0" concept="4" trace="DRAW_WRONG_MARK" />
+      <node id="4981817084417757618" at="43,0,44,0" concept="4" trace="N_MINES" />
+      <node id="4981817084417757618" at="44,0,45,0" concept="4" trace="N_ROWS" />
+      <node id="4981817084417757618" at="45,0,46,0" concept="4" trace="N_COLS" />
+      <node id="4981817084417757618" at="47,0,48,0" concept="4" trace="BOARD_WIDTH" />
+      <node id="4981817084417757618" at="48,0,49,0" concept="4" trace="BOARD_HEIGHT" />
+      <node id="4981817084417757618" at="50,0,51,0" concept="4" trace="field" />
+      <node id="4981817084417757618" at="51,0,52,0" concept="4" trace="inGame" />
+      <node id="4981817084417757618" at="52,0,53,0" concept="4" trace="mineExploded" />
+      <node id="4981817084417757618" at="53,0,54,0" concept="4" trace="minesLeft" />
+      <node id="4981817084417757618" at="54,0,55,0" concept="4" trace="img" />
+      <node id="4981817084417757618" at="55,0,56,0" concept="4" trace="clickedMinePosition" />
+      <node id="4981817084417757618" at="56,0,57,0" concept="4" trace="questionsAnswered" />
+      <node id="4981817084417757618" at="57,0,58,0" concept="4" trace="questionsCount" />
+      <node id="4981817084417757618" at="58,0,59,0" concept="4" trace="questions" />
+      <node id="4981817084417757618" at="60,0,61,0" concept="4" trace="allCells" />
+      <node id="4981817084417757618" at="61,0,62,0" concept="4" trace="statusbar" />
+      <node id="4981817084417757618" at="62,0,63,0" concept="4" trace="parentWindow" />
+      <node id="4981817084417757618" at="64,115,65,31" concept="3" />
+      <node id="4981817084417757618" at="65,31,66,31" concept="3" />
+      <node id="4981817084417757618" at="66,31,67,43" concept="3" />
+      <node id="4981817084417757618" at="67,43,68,31" concept="3" />
+      <node id="4981817084417757618" at="68,31,69,16" concept="3" />
+      <node id="4981817084417757618" at="72,28,73,117" concept="8" />
+      <node id="4981817084417757618" at="73,117,74,63" concept="3" />
+      <node id="4981817084417757618" at="74,63,75,0" concept="11" />
+      <node id="4981817084417757618" at="75,0,76,32" concept="3" />
+      <node id="4981817084417757618" at="76,32,77,0" concept="11" />
+      <node id="4981817084417757618" at="77,0,78,41" concept="3" />
+      <node id="4981817084417757618" at="78,41,79,71" concept="8" />
       <node id="4981817084417757618" at="80,42,81,48" concept="8" />
       <node id="4981817084417757618" at="81,48,82,89" concept="3" />
       <node id="4981817084417757618" at="83,5,84,0" concept="11" />
@@ -370,7 +369,7 @@
       <node id="4981817084417757618" at="373,15,376,9" concept="6" />
       <node id="4981817084417757618" at="441,50,444,11" concept="6" />
       <node id="4981817084417757618" at="467,0,470,13" concept="6" />
-      <node id="4981817084417757618" at="79,62,83,5" concept="5" />
+      <node id="4981817084417757618" at="79,71,83,5" concept="5" />
       <node id="4981817084417757618" at="407,54,411,7" concept="6" />
       <node id="4981817084417757618" at="473,53,477,9" concept="6" />
       <node id="4981817084417757618" at="122,39,127,11" concept="6" />
@@ -402,7 +401,7 @@
       <node id="4981817084417757618" at="421,67,427,15" concept="6" />
       <node id="4981817084417757618" at="428,18,434,13" concept="0" />
       <node id="4981817084417757618" at="456,82,462,17" concept="6" />
-      <node id="4981817084417757618" at="63,0,70,0" concept="1" trace="MediumMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
+      <node id="4981817084417757618" at="64,0,71,0" concept="1" trace="MediumMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
       <node id="4981817084417757618" at="192,28,200,7" concept="6" />
       <node id="4981817084417757618" at="201,19,209,7" concept="6" />
       <node id="4981817084417757618" at="211,28,219,7" concept="6" />
@@ -417,7 +416,7 @@
       <node id="4981817084417757618" at="454,48,465,15" concept="6" />
       <node id="4981817084417757618" at="352,10,364,5" concept="6" />
       <node id="4981817084417757618" at="420,38,434,13" concept="6" />
-      <node id="4981817084417757618" at="71,0,88,0" concept="7" trace="initBoard#()V" />
+      <node id="4981817084417757618" at="72,0,88,0" concept="7" trace="initBoard#()V" />
       <node id="4981817084417757618" at="449,25,466,13" concept="6" />
       <node id="4981817084417757618" at="291,53,310,9" concept="6" />
       <node id="4981817084417757618" at="417,0,436,11" concept="6" />
@@ -491,7 +490,7 @@
       <scope id="4981817084417757618" at="492,40,495,26" />
       <scope id="4981817084417757618" at="498,42,501,175" />
       <scope id="4981817084417757618" at="504,35,507,132" />
-      <scope id="4981817084417757618" at="79,62,83,5">
+      <scope id="4981817084417757618" at="79,71,83,5">
         <var name="i" id="4981817084417757618" />
       </scope>
       <scope id="4981817084417757618" at="194,38,198,11" />
@@ -512,7 +511,7 @@
       <scope id="4981817084417757618" at="422,34,426,39">
         <var name="msg" id="4981817084417757618" />
       </scope>
-      <scope id="4981817084417757618" at="63,115,68,16" />
+      <scope id="4981817084417757618" at="64,115,69,16" />
       <scope id="4981817084417757618" at="353,24,358,26" />
       <scope id="4981817084417757618" at="428,20,433,37">
         <var name="msg" id="4981817084417757618" />
@@ -534,7 +533,7 @@
         <var name="targetWidth" id="4981817084417757618" />
       </scope>
       <scope id="4981817084417757618" at="421,67,427,15" />
-      <scope id="4981817084417757618" at="63,0,70,0">
+      <scope id="4981817084417757618" at="64,0,71,0">
         <var name="fFrame" id="4981817084417757618" />
         <var name="questions" id="4981817084417757618" />
         <var name="statusbar" id="4981817084417757618" />
@@ -549,13 +548,14 @@
       <scope id="4981817084417757618" at="481,0,491,0">
         <var name="q" id="4981817084417757618" />
       </scope>
-      <scope id="4981817084417757618" at="71,28,86,14">
+      <scope id="4981817084417757618" at="72,28,86,14">
         <var name="picturesFolder" id="4981817084417757618" />
+        <var name="sourceLocation" id="4981817084417757618" />
       </scope>
       <scope id="4981817084417757618" at="450,61,465,15">
         <var name="answeredCorrectly" id="4981817084417757618" />
       </scope>
-      <scope id="4981817084417757618" at="71,0,88,0" />
+      <scope id="4981817084417757618" at="72,0,88,0" />
       <scope id="4981817084417757618" at="418,58,435,0" />
       <scope id="4981817084417757618" at="365,8,383,16">
         <var name="g2" id="4981817084417757618" />
@@ -628,7 +628,7 @@
       </scope>
       <scope id="4981817084417757618" at="89,0,184,0" />
       <unit id="4981817084417757618" at="395,0,511,0" name="Minesweeper.sandbox.MediumMinesweeperBoard$MinesAdapter" />
-      <unit id="4981817084417757618" at="25,0,524,0" name="Minesweeper.sandbox.MediumMinesweeperBoard" />
+      <unit id="4981817084417757618" at="26,0,524,0" name="Minesweeper.sandbox.MediumMinesweeperBoard" />
     </file>
   </root>
   <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421199496">
@@ -708,49 +708,48 @@
       <unit id="4981817084421199496" at="11,0,79,0" name="Minesweeper.sandbox.ImpossibleMinesweeper" />
     </file>
     <file name="ImpossibleMinesweeperBoard.java">
-      <node id="4981817084421199496" at="26,0,27,0" concept="4" trace="NUM_IMAGES" />
-      <node id="4981817084421199496" at="27,0,28,0" concept="4" trace="CELL_SIZE" />
-      <node id="4981817084421199496" at="28,0,29,0" concept="4" trace="IMAGE_SIZE" />
-      <node id="4981817084421199496" at="30,0,31,0" concept="4" trace="COVER_FOR_CELL" />
-      <node id="4981817084421199496" at="31,0,32,0" concept="4" trace="MARK_FOR_CELL" />
-      <node id="4981817084421199496" at="32,0,33,0" concept="4" trace="EMPTY_CELL" />
-      <node id="4981817084421199496" at="33,0,34,0" concept="4" trace="MINE_CELL" />
-      <node id="4981817084421199496" at="34,0,35,0" concept="4" trace="COVERED_MINE_CELL" />
-      <node id="4981817084421199496" at="35,0,36,0" concept="4" trace="MARKED_MINE_CELL" />
-      <node id="4981817084421199496" at="37,0,38,0" concept="4" trace="DRAW_MINE" />
-      <node id="4981817084421199496" at="38,0,39,0" concept="4" trace="DRAW_COVER" />
-      <node id="4981817084421199496" at="39,0,40,0" concept="4" trace="DRAW_MARK" />
-      <node id="4981817084421199496" at="40,0,41,0" concept="4" trace="DRAW_WRONG_MARK" />
-      <node id="4981817084421199496" at="42,0,43,0" concept="4" trace="N_MINES" />
-      <node id="4981817084421199496" at="43,0,44,0" concept="4" trace="N_ROWS" />
-      <node id="4981817084421199496" at="44,0,45,0" concept="4" trace="N_COLS" />
-      <node id="4981817084421199496" at="46,0,47,0" concept="4" trace="BOARD_WIDTH" />
-      <node id="4981817084421199496" at="47,0,48,0" concept="4" trace="BOARD_HEIGHT" />
-      <node id="4981817084421199496" at="49,0,50,0" concept="4" trace="field" />
-      <node id="4981817084421199496" at="50,0,51,0" concept="4" trace="inGame" />
-      <node id="4981817084421199496" at="51,0,52,0" concept="4" trace="mineExploded" />
-      <node id="4981817084421199496" at="52,0,53,0" concept="4" trace="minesLeft" />
-      <node id="4981817084421199496" at="53,0,54,0" concept="4" trace="img" />
-      <node id="4981817084421199496" at="54,0,55,0" concept="4" trace="clickedMinePosition" />
-      <node id="4981817084421199496" at="55,0,56,0" concept="4" trace="questionsAnswered" />
-      <node id="4981817084421199496" at="56,0,57,0" concept="4" trace="questionsCount" />
-      <node id="4981817084421199496" at="57,0,58,0" concept="4" trace="questions" />
-      <node id="4981817084421199496" at="59,0,60,0" concept="4" trace="allCells" />
-      <node id="4981817084421199496" at="60,0,61,0" concept="4" trace="statusbar" />
-      <node id="4981817084421199496" at="61,0,62,0" concept="4" trace="parentWindow" />
-      <node id="4981817084421199496" at="63,123,64,31" concept="3" />
-      <node id="4981817084421199496" at="64,31,65,31" concept="3" />
-      <node id="4981817084421199496" at="65,31,66,43" concept="3" />
-      <node id="4981817084421199496" at="66,43,67,31" concept="3" />
-      <node id="4981817084421199496" at="67,31,68,16" concept="3" />
-      <node id="4981817084421199496" at="71,28,72,45" concept="3" />
-      <node id="4981817084421199496" at="72,45,73,63" concept="3" />
-      <node id="4981817084421199496" at="73,63,74,0" concept="11" />
-      <node id="4981817084421199496" at="74,0,75,32" concept="3" />
-      <node id="4981817084421199496" at="75,32,76,0" concept="11" />
-      <node id="4981817084421199496" at="76,0,77,41" concept="3" />
-      <node id="4981817084421199496" at="77,41,78,105" concept="8" />
-      <node id="4981817084421199496" at="78,105,79,62" concept="3" />
+      <node id="4981817084421199496" at="27,0,28,0" concept="4" trace="NUM_IMAGES" />
+      <node id="4981817084421199496" at="28,0,29,0" concept="4" trace="CELL_SIZE" />
+      <node id="4981817084421199496" at="29,0,30,0" concept="4" trace="IMAGE_SIZE" />
+      <node id="4981817084421199496" at="31,0,32,0" concept="4" trace="COVER_FOR_CELL" />
+      <node id="4981817084421199496" at="32,0,33,0" concept="4" trace="MARK_FOR_CELL" />
+      <node id="4981817084421199496" at="33,0,34,0" concept="4" trace="EMPTY_CELL" />
+      <node id="4981817084421199496" at="34,0,35,0" concept="4" trace="MINE_CELL" />
+      <node id="4981817084421199496" at="35,0,36,0" concept="4" trace="COVERED_MINE_CELL" />
+      <node id="4981817084421199496" at="36,0,37,0" concept="4" trace="MARKED_MINE_CELL" />
+      <node id="4981817084421199496" at="38,0,39,0" concept="4" trace="DRAW_MINE" />
+      <node id="4981817084421199496" at="39,0,40,0" concept="4" trace="DRAW_COVER" />
+      <node id="4981817084421199496" at="40,0,41,0" concept="4" trace="DRAW_MARK" />
+      <node id="4981817084421199496" at="41,0,42,0" concept="4" trace="DRAW_WRONG_MARK" />
+      <node id="4981817084421199496" at="43,0,44,0" concept="4" trace="N_MINES" />
+      <node id="4981817084421199496" at="44,0,45,0" concept="4" trace="N_ROWS" />
+      <node id="4981817084421199496" at="45,0,46,0" concept="4" trace="N_COLS" />
+      <node id="4981817084421199496" at="47,0,48,0" concept="4" trace="BOARD_WIDTH" />
+      <node id="4981817084421199496" at="48,0,49,0" concept="4" trace="BOARD_HEIGHT" />
+      <node id="4981817084421199496" at="50,0,51,0" concept="4" trace="field" />
+      <node id="4981817084421199496" at="51,0,52,0" concept="4" trace="inGame" />
+      <node id="4981817084421199496" at="52,0,53,0" concept="4" trace="mineExploded" />
+      <node id="4981817084421199496" at="53,0,54,0" concept="4" trace="minesLeft" />
+      <node id="4981817084421199496" at="54,0,55,0" concept="4" trace="img" />
+      <node id="4981817084421199496" at="55,0,56,0" concept="4" trace="clickedMinePosition" />
+      <node id="4981817084421199496" at="56,0,57,0" concept="4" trace="questionsAnswered" />
+      <node id="4981817084421199496" at="57,0,58,0" concept="4" trace="questionsCount" />
+      <node id="4981817084421199496" at="58,0,59,0" concept="4" trace="questions" />
+      <node id="4981817084421199496" at="60,0,61,0" concept="4" trace="allCells" />
+      <node id="4981817084421199496" at="61,0,62,0" concept="4" trace="statusbar" />
+      <node id="4981817084421199496" at="62,0,63,0" concept="4" trace="parentWindow" />
+      <node id="4981817084421199496" at="64,123,65,31" concept="3" />
+      <node id="4981817084421199496" at="65,31,66,31" concept="3" />
+      <node id="4981817084421199496" at="66,31,67,43" concept="3" />
+      <node id="4981817084421199496" at="67,43,68,31" concept="3" />
+      <node id="4981817084421199496" at="68,31,69,16" concept="3" />
+      <node id="4981817084421199496" at="72,28,73,117" concept="8" />
+      <node id="4981817084421199496" at="73,117,74,63" concept="3" />
+      <node id="4981817084421199496" at="74,63,75,0" concept="11" />
+      <node id="4981817084421199496" at="75,0,76,32" concept="3" />
+      <node id="4981817084421199496" at="76,32,77,0" concept="11" />
+      <node id="4981817084421199496" at="77,0,78,41" concept="3" />
+      <node id="4981817084421199496" at="78,41,79,71" concept="8" />
       <node id="4981817084421199496" at="80,42,81,48" concept="8" />
       <node id="4981817084421199496" at="81,48,82,89" concept="3" />
       <node id="4981817084421199496" at="83,5,84,0" concept="11" />
@@ -987,7 +986,7 @@
       <node id="4981817084421199496" at="373,15,376,9" concept="6" />
       <node id="4981817084421199496" at="441,50,444,11" concept="6" />
       <node id="4981817084421199496" at="467,0,470,13" concept="6" />
-      <node id="4981817084421199496" at="79,62,83,5" concept="5" />
+      <node id="4981817084421199496" at="79,71,83,5" concept="5" />
       <node id="4981817084421199496" at="407,54,411,7" concept="6" />
       <node id="4981817084421199496" at="473,53,477,9" concept="6" />
       <node id="4981817084421199496" at="122,39,127,11" concept="6" />
@@ -1019,7 +1018,7 @@
       <node id="4981817084421199496" at="421,67,427,15" concept="6" />
       <node id="4981817084421199496" at="428,18,434,13" concept="0" />
       <node id="4981817084421199496" at="456,82,462,17" concept="6" />
-      <node id="4981817084421199496" at="63,0,70,0" concept="1" trace="ImpossibleMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
+      <node id="4981817084421199496" at="64,0,71,0" concept="1" trace="ImpossibleMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
       <node id="4981817084421199496" at="192,28,200,7" concept="6" />
       <node id="4981817084421199496" at="201,19,209,7" concept="6" />
       <node id="4981817084421199496" at="211,28,219,7" concept="6" />
@@ -1034,7 +1033,7 @@
       <node id="4981817084421199496" at="454,48,465,15" concept="6" />
       <node id="4981817084421199496" at="352,10,364,5" concept="6" />
       <node id="4981817084421199496" at="420,38,434,13" concept="6" />
-      <node id="4981817084421199496" at="71,0,88,0" concept="7" trace="initBoard#()V" />
+      <node id="4981817084421199496" at="72,0,88,0" concept="7" trace="initBoard#()V" />
       <node id="4981817084421199496" at="449,25,466,13" concept="6" />
       <node id="4981817084421199496" at="291,53,310,9" concept="6" />
       <node id="4981817084421199496" at="417,0,436,11" concept="6" />
@@ -1108,7 +1107,7 @@
       <scope id="4981817084421199496" at="492,40,495,26" />
       <scope id="4981817084421199496" at="498,42,501,175" />
       <scope id="4981817084421199496" at="504,35,507,132" />
-      <scope id="4981817084421199496" at="79,62,83,5">
+      <scope id="4981817084421199496" at="79,71,83,5">
         <var name="i" id="4981817084421199496" />
       </scope>
       <scope id="4981817084421199496" at="194,38,198,11" />
@@ -1129,7 +1128,7 @@
       <scope id="4981817084421199496" at="422,34,426,39">
         <var name="msg" id="4981817084421199496" />
       </scope>
-      <scope id="4981817084421199496" at="63,123,68,16" />
+      <scope id="4981817084421199496" at="64,123,69,16" />
       <scope id="4981817084421199496" at="353,24,358,26" />
       <scope id="4981817084421199496" at="428,20,433,37">
         <var name="msg" id="4981817084421199496" />
@@ -1151,7 +1150,7 @@
         <var name="targetWidth" id="4981817084421199496" />
       </scope>
       <scope id="4981817084421199496" at="421,67,427,15" />
-      <scope id="4981817084421199496" at="63,0,70,0">
+      <scope id="4981817084421199496" at="64,0,71,0">
         <var name="fFrame" id="4981817084421199496" />
         <var name="questions" id="4981817084421199496" />
         <var name="statusbar" id="4981817084421199496" />
@@ -1166,13 +1165,14 @@
       <scope id="4981817084421199496" at="481,0,491,0">
         <var name="q" id="4981817084421199496" />
       </scope>
-      <scope id="4981817084421199496" at="71,28,86,14">
+      <scope id="4981817084421199496" at="72,28,86,14">
         <var name="picturesFolder" id="4981817084421199496" />
+        <var name="sourceLocation" id="4981817084421199496" />
       </scope>
       <scope id="4981817084421199496" at="450,61,465,15">
         <var name="answeredCorrectly" id="4981817084421199496" />
       </scope>
-      <scope id="4981817084421199496" at="71,0,88,0" />
+      <scope id="4981817084421199496" at="72,0,88,0" />
       <scope id="4981817084421199496" at="418,58,435,0" />
       <scope id="4981817084421199496" at="365,8,383,16">
         <var name="g2" id="4981817084421199496" />
@@ -1245,7 +1245,7 @@
       </scope>
       <scope id="4981817084421199496" at="89,0,184,0" />
       <unit id="4981817084421199496" at="395,0,511,0" name="Minesweeper.sandbox.ImpossibleMinesweeperBoard$MinesAdapter" />
-      <unit id="4981817084421199496" at="25,0,524,0" name="Minesweeper.sandbox.ImpossibleMinesweeperBoard" />
+      <unit id="4981817084421199496" at="26,0,524,0" name="Minesweeper.sandbox.ImpossibleMinesweeperBoard" />
     </file>
   </root>
   <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/4981817084421223198">
@@ -1312,49 +1312,48 @@
       <unit id="4981817084421223198" at="11,0,66,0" name="Minesweeper.sandbox.EasyMinesweeper" />
     </file>
     <file name="EasyMinesweeperBoard.java">
-      <node id="4981817084421223198" at="26,0,27,0" concept="4" trace="NUM_IMAGES" />
-      <node id="4981817084421223198" at="27,0,28,0" concept="4" trace="CELL_SIZE" />
-      <node id="4981817084421223198" at="28,0,29,0" concept="4" trace="IMAGE_SIZE" />
-      <node id="4981817084421223198" at="30,0,31,0" concept="4" trace="COVER_FOR_CELL" />
-      <node id="4981817084421223198" at="31,0,32,0" concept="4" trace="MARK_FOR_CELL" />
-      <node id="4981817084421223198" at="32,0,33,0" concept="4" trace="EMPTY_CELL" />
-      <node id="4981817084421223198" at="33,0,34,0" concept="4" trace="MINE_CELL" />
-      <node id="4981817084421223198" at="34,0,35,0" concept="4" trace="COVERED_MINE_CELL" />
-      <node id="4981817084421223198" at="35,0,36,0" concept="4" trace="MARKED_MINE_CELL" />
-      <node id="4981817084421223198" at="37,0,38,0" concept="4" trace="DRAW_MINE" />
-      <node id="4981817084421223198" at="38,0,39,0" concept="4" trace="DRAW_COVER" />
-      <node id="4981817084421223198" at="39,0,40,0" concept="4" trace="DRAW_MARK" />
-      <node id="4981817084421223198" at="40,0,41,0" concept="4" trace="DRAW_WRONG_MARK" />
-      <node id="4981817084421223198" at="42,0,43,0" concept="4" trace="N_MINES" />
-      <node id="4981817084421223198" at="43,0,44,0" concept="4" trace="N_ROWS" />
-      <node id="4981817084421223198" at="44,0,45,0" concept="4" trace="N_COLS" />
-      <node id="4981817084421223198" at="46,0,47,0" concept="4" trace="BOARD_WIDTH" />
-      <node id="4981817084421223198" at="47,0,48,0" concept="4" trace="BOARD_HEIGHT" />
-      <node id="4981817084421223198" at="49,0,50,0" concept="4" trace="field" />
-      <node id="4981817084421223198" at="50,0,51,0" concept="4" trace="inGame" />
-      <node id="4981817084421223198" at="51,0,52,0" concept="4" trace="mineExploded" />
-      <node id="4981817084421223198" at="52,0,53,0" concept="4" trace="minesLeft" />
-      <node id="4981817084421223198" at="53,0,54,0" concept="4" trace="img" />
-      <node id="4981817084421223198" at="54,0,55,0" concept="4" trace="clickedMinePosition" />
-      <node id="4981817084421223198" at="55,0,56,0" concept="4" trace="questionsAnswered" />
-      <node id="4981817084421223198" at="56,0,57,0" concept="4" trace="questionsCount" />
-      <node id="4981817084421223198" at="57,0,58,0" concept="4" trace="questions" />
-      <node id="4981817084421223198" at="59,0,60,0" concept="4" trace="allCells" />
-      <node id="4981817084421223198" at="60,0,61,0" concept="4" trace="statusbar" />
-      <node id="4981817084421223198" at="61,0,62,0" concept="4" trace="parentWindow" />
-      <node id="4981817084421223198" at="63,111,64,31" concept="3" />
-      <node id="4981817084421223198" at="64,31,65,31" concept="3" />
-      <node id="4981817084421223198" at="65,31,66,43" concept="3" />
-      <node id="4981817084421223198" at="66,43,67,31" concept="3" />
-      <node id="4981817084421223198" at="67,31,68,16" concept="3" />
-      <node id="4981817084421223198" at="71,28,72,45" concept="3" />
-      <node id="4981817084421223198" at="72,45,73,63" concept="3" />
-      <node id="4981817084421223198" at="73,63,74,0" concept="11" />
-      <node id="4981817084421223198" at="74,0,75,32" concept="3" />
-      <node id="4981817084421223198" at="75,32,76,0" concept="11" />
-      <node id="4981817084421223198" at="76,0,77,41" concept="3" />
-      <node id="4981817084421223198" at="77,41,78,105" concept="8" />
-      <node id="4981817084421223198" at="78,105,79,62" concept="3" />
+      <node id="4981817084421223198" at="27,0,28,0" concept="4" trace="NUM_IMAGES" />
+      <node id="4981817084421223198" at="28,0,29,0" concept="4" trace="CELL_SIZE" />
+      <node id="4981817084421223198" at="29,0,30,0" concept="4" trace="IMAGE_SIZE" />
+      <node id="4981817084421223198" at="31,0,32,0" concept="4" trace="COVER_FOR_CELL" />
+      <node id="4981817084421223198" at="32,0,33,0" concept="4" trace="MARK_FOR_CELL" />
+      <node id="4981817084421223198" at="33,0,34,0" concept="4" trace="EMPTY_CELL" />
+      <node id="4981817084421223198" at="34,0,35,0" concept="4" trace="MINE_CELL" />
+      <node id="4981817084421223198" at="35,0,36,0" concept="4" trace="COVERED_MINE_CELL" />
+      <node id="4981817084421223198" at="36,0,37,0" concept="4" trace="MARKED_MINE_CELL" />
+      <node id="4981817084421223198" at="38,0,39,0" concept="4" trace="DRAW_MINE" />
+      <node id="4981817084421223198" at="39,0,40,0" concept="4" trace="DRAW_COVER" />
+      <node id="4981817084421223198" at="40,0,41,0" concept="4" trace="DRAW_MARK" />
+      <node id="4981817084421223198" at="41,0,42,0" concept="4" trace="DRAW_WRONG_MARK" />
+      <node id="4981817084421223198" at="43,0,44,0" concept="4" trace="N_MINES" />
+      <node id="4981817084421223198" at="44,0,45,0" concept="4" trace="N_ROWS" />
+      <node id="4981817084421223198" at="45,0,46,0" concept="4" trace="N_COLS" />
+      <node id="4981817084421223198" at="47,0,48,0" concept="4" trace="BOARD_WIDTH" />
+      <node id="4981817084421223198" at="48,0,49,0" concept="4" trace="BOARD_HEIGHT" />
+      <node id="4981817084421223198" at="50,0,51,0" concept="4" trace="field" />
+      <node id="4981817084421223198" at="51,0,52,0" concept="4" trace="inGame" />
+      <node id="4981817084421223198" at="52,0,53,0" concept="4" trace="mineExploded" />
+      <node id="4981817084421223198" at="53,0,54,0" concept="4" trace="minesLeft" />
+      <node id="4981817084421223198" at="54,0,55,0" concept="4" trace="img" />
+      <node id="4981817084421223198" at="55,0,56,0" concept="4" trace="clickedMinePosition" />
+      <node id="4981817084421223198" at="56,0,57,0" concept="4" trace="questionsAnswered" />
+      <node id="4981817084421223198" at="57,0,58,0" concept="4" trace="questionsCount" />
+      <node id="4981817084421223198" at="58,0,59,0" concept="4" trace="questions" />
+      <node id="4981817084421223198" at="60,0,61,0" concept="4" trace="allCells" />
+      <node id="4981817084421223198" at="61,0,62,0" concept="4" trace="statusbar" />
+      <node id="4981817084421223198" at="62,0,63,0" concept="4" trace="parentWindow" />
+      <node id="4981817084421223198" at="64,111,65,31" concept="3" />
+      <node id="4981817084421223198" at="65,31,66,31" concept="3" />
+      <node id="4981817084421223198" at="66,31,67,43" concept="3" />
+      <node id="4981817084421223198" at="67,43,68,31" concept="3" />
+      <node id="4981817084421223198" at="68,31,69,16" concept="3" />
+      <node id="4981817084421223198" at="72,28,73,117" concept="8" />
+      <node id="4981817084421223198" at="73,117,74,63" concept="3" />
+      <node id="4981817084421223198" at="74,63,75,0" concept="11" />
+      <node id="4981817084421223198" at="75,0,76,32" concept="3" />
+      <node id="4981817084421223198" at="76,32,77,0" concept="11" />
+      <node id="4981817084421223198" at="77,0,78,41" concept="3" />
+      <node id="4981817084421223198" at="78,41,79,71" concept="8" />
       <node id="4981817084421223198" at="80,42,81,48" concept="8" />
       <node id="4981817084421223198" at="81,48,82,89" concept="3" />
       <node id="4981817084421223198" at="83,5,84,0" concept="11" />
@@ -1591,7 +1590,7 @@
       <node id="4981817084421223198" at="373,15,376,9" concept="6" />
       <node id="4981817084421223198" at="441,50,444,11" concept="6" />
       <node id="4981817084421223198" at="467,0,470,13" concept="6" />
-      <node id="4981817084421223198" at="79,62,83,5" concept="5" />
+      <node id="4981817084421223198" at="79,71,83,5" concept="5" />
       <node id="4981817084421223198" at="407,54,411,7" concept="6" />
       <node id="4981817084421223198" at="473,53,477,9" concept="6" />
       <node id="4981817084421223198" at="122,39,127,11" concept="6" />
@@ -1623,7 +1622,7 @@
       <node id="4981817084421223198" at="421,67,427,15" concept="6" />
       <node id="4981817084421223198" at="428,18,434,13" concept="0" />
       <node id="4981817084421223198" at="456,82,462,17" concept="6" />
-      <node id="4981817084421223198" at="63,0,70,0" concept="1" trace="EasyMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
+      <node id="4981817084421223198" at="64,0,71,0" concept="1" trace="EasyMinesweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
       <node id="4981817084421223198" at="192,28,200,7" concept="6" />
       <node id="4981817084421223198" at="201,19,209,7" concept="6" />
       <node id="4981817084421223198" at="211,28,219,7" concept="6" />
@@ -1638,7 +1637,7 @@
       <node id="4981817084421223198" at="454,48,465,15" concept="6" />
       <node id="4981817084421223198" at="352,10,364,5" concept="6" />
       <node id="4981817084421223198" at="420,38,434,13" concept="6" />
-      <node id="4981817084421223198" at="71,0,88,0" concept="7" trace="initBoard#()V" />
+      <node id="4981817084421223198" at="72,0,88,0" concept="7" trace="initBoard#()V" />
       <node id="4981817084421223198" at="449,25,466,13" concept="6" />
       <node id="4981817084421223198" at="291,53,310,9" concept="6" />
       <node id="4981817084421223198" at="417,0,436,11" concept="6" />
@@ -1712,7 +1711,7 @@
       <scope id="4981817084421223198" at="492,40,495,26" />
       <scope id="4981817084421223198" at="498,42,501,175" />
       <scope id="4981817084421223198" at="504,35,507,132" />
-      <scope id="4981817084421223198" at="79,62,83,5">
+      <scope id="4981817084421223198" at="79,71,83,5">
         <var name="i" id="4981817084421223198" />
       </scope>
       <scope id="4981817084421223198" at="194,38,198,11" />
@@ -1733,7 +1732,7 @@
       <scope id="4981817084421223198" at="422,34,426,39">
         <var name="msg" id="4981817084421223198" />
       </scope>
-      <scope id="4981817084421223198" at="63,111,68,16" />
+      <scope id="4981817084421223198" at="64,111,69,16" />
       <scope id="4981817084421223198" at="353,24,358,26" />
       <scope id="4981817084421223198" at="428,20,433,37">
         <var name="msg" id="4981817084421223198" />
@@ -1755,7 +1754,7 @@
         <var name="targetWidth" id="4981817084421223198" />
       </scope>
       <scope id="4981817084421223198" at="421,67,427,15" />
-      <scope id="4981817084421223198" at="63,0,70,0">
+      <scope id="4981817084421223198" at="64,0,71,0">
         <var name="fFrame" id="4981817084421223198" />
         <var name="questions" id="4981817084421223198" />
         <var name="statusbar" id="4981817084421223198" />
@@ -1770,13 +1769,14 @@
       <scope id="4981817084421223198" at="481,0,491,0">
         <var name="q" id="4981817084421223198" />
       </scope>
-      <scope id="4981817084421223198" at="71,28,86,14">
+      <scope id="4981817084421223198" at="72,28,86,14">
         <var name="picturesFolder" id="4981817084421223198" />
+        <var name="sourceLocation" id="4981817084421223198" />
       </scope>
       <scope id="4981817084421223198" at="450,61,465,15">
         <var name="answeredCorrectly" id="4981817084421223198" />
       </scope>
-      <scope id="4981817084421223198" at="71,0,88,0" />
+      <scope id="4981817084421223198" at="72,0,88,0" />
       <scope id="4981817084421223198" at="418,58,435,0" />
       <scope id="4981817084421223198" at="365,8,383,16">
         <var name="g2" id="4981817084421223198" />
@@ -1849,7 +1849,603 @@
       </scope>
       <scope id="4981817084421223198" at="89,0,184,0" />
       <unit id="4981817084421223198" at="395,0,511,0" name="Minesweeper.sandbox.EasyMinesweeperBoard$MinesAdapter" />
-      <unit id="4981817084421223198" at="25,0,524,0" name="Minesweeper.sandbox.EasyMinesweeperBoard" />
+      <unit id="4981817084421223198" at="26,0,524,0" name="Minesweeper.sandbox.EasyMinesweeperBoard" />
+    </file>
+  </root>
+  <root nodeRef="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox)/885304035645152199">
+    <file name="MathSweeper.java">
+      <node id="885304035645152199" at="12,0,13,0" concept="4" trace="statusbar" />
+      <node id="885304035645152199" at="13,0,14,0" concept="4" trace="questions" />
+      <node id="885304035645152199" at="15,24,16,32" concept="3" />
+      <node id="885304035645152199" at="16,32,17,91" concept="3" />
+      <node id="885304035645152199" at="17,91,18,184" concept="3" />
+      <node id="885304035645152199" at="18,184,19,13" concept="3" />
+      <node id="885304035645152199" at="22,25,23,31" concept="3" />
+      <node id="885304035645152199" at="23,31,24,39" concept="3" />
+      <node id="885304035645152199" at="24,39,25,0" concept="11" />
+      <node id="885304035645152199" at="25,0,26,58" concept="3" />
+      <node id="885304035645152199" at="26,58,27,0" concept="11" />
+      <node id="885304035645152199" at="27,0,28,24" concept="3" />
+      <node id="885304035645152199" at="28,24,29,11" concept="3" />
+      <node id="885304035645152199" at="29,11,30,0" concept="11" />
+      <node id="885304035645152199" at="30,0,31,28" concept="3" />
+      <node id="885304035645152199" at="31,28,32,32" concept="3" />
+      <node id="885304035645152199" at="32,32,33,51" concept="3" />
+      <node id="885304035645152199" at="39,25,40,43" concept="8" />
+      <node id="885304035645152199" at="40,43,41,28" concept="3" />
+      <node id="885304035645152199" at="47,0,48,0" concept="4" trace="correctAnswer" />
+      <node id="885304035645152199" at="48,0,49,0" concept="4" trace="answers" />
+      <node id="885304035645152199" at="49,0,50,0" concept="4" trace="question" />
+      <node id="885304035645152199" at="50,78,51,31" concept="3" />
+      <node id="885304035645152199" at="51,31,52,29" concept="3" />
+      <node id="885304035645152199" at="52,29,53,41" concept="3" />
+      <node id="885304035645152199" at="38,0,43,0" concept="7" trace="run#()V" />
+      <node id="885304035645152199" at="50,0,55,0" concept="1" trace="Question#(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="885304035645152199" at="15,0,21,0" concept="1" trace="MathSweeper#()V" />
+      <node id="885304035645152199" at="36,42,43,7" concept="3" />
+      <node id="885304035645152199" at="36,0,45,0" concept="12" trace="main#([Ljava/lang/String;)V" />
+      <node id="885304035645152199" at="22,0,35,0" concept="7" trace="initUI#()V" />
+      <scope id="885304035645152199" at="39,25,41,28">
+        <var name="ex" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="50,78,53,41" />
+      <scope id="885304035645152199" at="15,24,19,13" />
+      <scope id="885304035645152199" at="38,0,43,0" />
+      <scope id="885304035645152199" at="50,0,55,0">
+        <var name="answers" id="885304035645152199" />
+        <var name="correctAnswer" id="885304035645152199" />
+        <var name="question" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="15,0,21,0" />
+      <scope id="885304035645152199" at="36,42,43,7" />
+      <scope id="885304035645152199" at="36,0,45,0">
+        <var name="args" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="22,25,33,51" />
+      <scope id="885304035645152199" at="22,0,35,0" />
+      <unit id="885304035645152199" at="37,31,43,5" name="Minesweeper.sandbox.MathSweeper$1" />
+      <unit id="885304035645152199" at="46,0,56,0" name="Minesweeper.sandbox.MathSweeper$Question" />
+      <unit id="885304035645152199" at="11,0,58,0" name="Minesweeper.sandbox.MathSweeper" />
+    </file>
+    <file name="MathSweeperBoard.java">
+      <node id="885304035645152199" at="27,0,28,0" concept="4" trace="NUM_IMAGES" />
+      <node id="885304035645152199" at="28,0,29,0" concept="4" trace="CELL_SIZE" />
+      <node id="885304035645152199" at="29,0,30,0" concept="4" trace="IMAGE_SIZE" />
+      <node id="885304035645152199" at="31,0,32,0" concept="4" trace="COVER_FOR_CELL" />
+      <node id="885304035645152199" at="32,0,33,0" concept="4" trace="MARK_FOR_CELL" />
+      <node id="885304035645152199" at="33,0,34,0" concept="4" trace="EMPTY_CELL" />
+      <node id="885304035645152199" at="34,0,35,0" concept="4" trace="MINE_CELL" />
+      <node id="885304035645152199" at="35,0,36,0" concept="4" trace="COVERED_MINE_CELL" />
+      <node id="885304035645152199" at="36,0,37,0" concept="4" trace="MARKED_MINE_CELL" />
+      <node id="885304035645152199" at="38,0,39,0" concept="4" trace="DRAW_MINE" />
+      <node id="885304035645152199" at="39,0,40,0" concept="4" trace="DRAW_COVER" />
+      <node id="885304035645152199" at="40,0,41,0" concept="4" trace="DRAW_MARK" />
+      <node id="885304035645152199" at="41,0,42,0" concept="4" trace="DRAW_WRONG_MARK" />
+      <node id="885304035645152199" at="43,0,44,0" concept="4" trace="N_MINES" />
+      <node id="885304035645152199" at="44,0,45,0" concept="4" trace="N_ROWS" />
+      <node id="885304035645152199" at="45,0,46,0" concept="4" trace="N_COLS" />
+      <node id="885304035645152199" at="47,0,48,0" concept="4" trace="BOARD_WIDTH" />
+      <node id="885304035645152199" at="48,0,49,0" concept="4" trace="BOARD_HEIGHT" />
+      <node id="885304035645152199" at="50,0,51,0" concept="4" trace="field" />
+      <node id="885304035645152199" at="51,0,52,0" concept="4" trace="inGame" />
+      <node id="885304035645152199" at="52,0,53,0" concept="4" trace="mineExploded" />
+      <node id="885304035645152199" at="53,0,54,0" concept="4" trace="minesLeft" />
+      <node id="885304035645152199" at="54,0,55,0" concept="4" trace="img" />
+      <node id="885304035645152199" at="55,0,56,0" concept="4" trace="clickedMinePosition" />
+      <node id="885304035645152199" at="56,0,57,0" concept="4" trace="questionsAnswered" />
+      <node id="885304035645152199" at="57,0,58,0" concept="4" trace="questionsCount" />
+      <node id="885304035645152199" at="58,0,59,0" concept="4" trace="questions" />
+      <node id="885304035645152199" at="60,0,61,0" concept="4" trace="allCells" />
+      <node id="885304035645152199" at="61,0,62,0" concept="4" trace="statusbar" />
+      <node id="885304035645152199" at="62,0,63,0" concept="4" trace="parentWindow" />
+      <node id="885304035645152199" at="64,103,65,31" concept="3" />
+      <node id="885304035645152199" at="65,31,66,31" concept="3" />
+      <node id="885304035645152199" at="66,31,67,43" concept="3" />
+      <node id="885304035645152199" at="67,43,68,31" concept="3" />
+      <node id="885304035645152199" at="68,31,69,16" concept="3" />
+      <node id="885304035645152199" at="72,28,73,117" concept="8" />
+      <node id="885304035645152199" at="73,117,74,63" concept="3" />
+      <node id="885304035645152199" at="74,63,75,0" concept="11" />
+      <node id="885304035645152199" at="75,0,76,32" concept="3" />
+      <node id="885304035645152199" at="76,32,77,0" concept="11" />
+      <node id="885304035645152199" at="77,0,78,41" concept="3" />
+      <node id="885304035645152199" at="78,41,79,71" concept="8" />
+      <node id="885304035645152199" at="80,42,81,48" concept="8" />
+      <node id="885304035645152199" at="81,48,82,89" concept="3" />
+      <node id="885304035645152199" at="83,5,84,0" concept="11" />
+      <node id="885304035645152199" at="84,0,85,41" concept="3" />
+      <node id="885304035645152199" at="85,41,86,14" concept="3" />
+      <node id="885304035645152199" at="89,26,90,13" concept="8" />
+      <node id="885304035645152199" at="90,13,91,0" concept="11" />
+      <node id="885304035645152199" at="91,0,92,33" concept="8" />
+      <node id="885304035645152199" at="92,33,93,18" concept="3" />
+      <node id="885304035645152199" at="93,18,94,24" concept="3" />
+      <node id="885304035645152199" at="94,24,95,25" concept="3" />
+      <node id="885304035645152199" at="95,25,96,26" concept="3" />
+      <node id="885304035645152199" at="96,26,97,35" concept="3" />
+      <node id="885304035645152199" at="97,35,98,0" concept="11" />
+      <node id="885304035645152199" at="98,0,99,31" concept="3" />
+      <node id="885304035645152199" at="99,31,100,30" concept="3" />
+      <node id="885304035645152199" at="100,30,101,40" concept="3" />
+      <node id="885304035645152199" at="101,40,102,0" concept="11" />
+      <node id="885304035645152199" at="102,0,103,46" concept="10" />
+      <node id="885304035645152199" at="104,40,105,32" concept="3" />
+      <node id="885304035645152199" at="106,5,107,0" concept="11" />
+      <node id="885304035645152199" at="107,0,108,51" concept="3" />
+      <node id="885304035645152199" at="108,51,109,43" concept="10" />
+      <node id="885304035645152199" at="109,43,110,14" concept="8" />
+      <node id="885304035645152199" at="111,25,112,60" concept="8" />
+      <node id="885304035645152199" at="112,60,113,0" concept="11" />
+      <node id="885304035645152199" at="114,76,115,44" concept="8" />
+      <node id="885304035645152199" at="115,44,116,44" concept="3" />
+      <node id="885304035645152199" at="116,44,117,12" concept="3" />
+      <node id="885304035645152199" at="117,12,118,0" concept="11" />
+      <node id="885304035645152199" at="118,0,119,52" concept="10" />
+      <node id="885304035645152199" at="120,30,121,21" concept="10" />
+      <node id="885304035645152199" at="121,21,122,39" concept="3" />
+      <node id="885304035645152199" at="124,51,125,31" concept="3" />
+      <node id="885304035645152199" at="127,11,128,18" concept="10" />
+      <node id="885304035645152199" at="128,18,129,30" concept="3" />
+      <node id="885304035645152199" at="131,51,132,31" concept="3" />
+      <node id="885304035645152199" at="134,11,135,23" concept="10" />
+      <node id="885304035645152199" at="135,23,136,39" concept="3" />
+      <node id="885304035645152199" at="138,51,139,31" concept="3" />
+      <node id="885304035645152199" at="142,9,143,25" concept="10" />
+      <node id="885304035645152199" at="143,25,144,33" concept="3" />
+      <node id="885304035645152199" at="146,49,147,29" concept="3" />
+      <node id="885304035645152199" at="149,9,150,27" concept="10" />
+      <node id="885304035645152199" at="150,27,151,33" concept="3" />
+      <node id="885304035645152199" at="153,49,154,29" concept="3" />
+      <node id="885304035645152199" at="156,9,157,53" concept="10" />
+      <node id="885304035645152199" at="158,41,159,22" concept="10" />
+      <node id="885304035645152199" at="159,22,160,39" concept="3" />
+      <node id="885304035645152199" at="162,51,163,31" concept="3" />
+      <node id="885304035645152199" at="165,11,166,19" concept="10" />
+      <node id="885304035645152199" at="166,19,167,30" concept="3" />
+      <node id="885304035645152199" at="169,51,170,31" concept="3" />
+      <node id="885304035645152199" at="172,11,173,24" concept="10" />
+      <node id="885304035645152199" at="173,24,174,39" concept="3" />
+      <node id="885304035645152199" at="176,51,177,31" concept="3" />
+      <node id="885304035645152199" at="185,40,186,33" concept="8" />
+      <node id="885304035645152199" at="186,33,187,13" concept="8" />
+      <node id="885304035645152199" at="187,13,188,0" concept="11" />
+      <node id="885304035645152199" at="188,0,189,30" concept="10" />
+      <node id="885304035645152199" at="190,26,191,17" concept="10" />
+      <node id="885304035645152199" at="191,17,192,28" concept="3" />
+      <node id="885304035645152199" at="194,38,195,40" concept="3" />
+      <node id="885304035645152199" at="196,42,197,35" concept="3" />
+      <node id="885304035645152199" at="200,7,201,19" concept="3" />
+      <node id="885304035645152199" at="203,38,204,40" concept="3" />
+      <node id="885304035645152199" at="205,42,206,35" concept="3" />
+      <node id="885304035645152199" at="209,7,210,19" concept="10" />
+      <node id="885304035645152199" at="210,19,211,28" concept="3" />
+      <node id="885304035645152199" at="213,38,214,40" concept="3" />
+      <node id="885304035645152199" at="215,42,216,35" concept="3" />
+      <node id="885304035645152199" at="220,5,221,15" concept="10" />
+      <node id="885304035645152199" at="221,15,222,22" concept="3" />
+      <node id="885304035645152199" at="224,36,225,38" concept="3" />
+      <node id="885304035645152199" at="226,40,227,33" concept="3" />
+      <node id="885304035645152199" at="230,5,231,17" concept="10" />
+      <node id="885304035645152199" at="231,17,232,22" concept="3" />
+      <node id="885304035645152199" at="234,36,235,38" concept="3" />
+      <node id="885304035645152199" at="236,40,237,33" concept="3" />
+      <node id="885304035645152199" at="240,5,241,0" concept="11" />
+      <node id="885304035645152199" at="241,0,242,19" concept="10" />
+      <node id="885304035645152199" at="243,37,244,17" concept="10" />
+      <node id="885304035645152199" at="244,17,245,28" concept="3" />
+      <node id="885304035645152199" at="247,38,248,40" concept="3" />
+      <node id="885304035645152199" at="249,42,250,35" concept="3" />
+      <node id="885304035645152199" at="253,7,254,19" concept="3" />
+      <node id="885304035645152199" at="256,38,257,40" concept="3" />
+      <node id="885304035645152199" at="258,42,259,35" concept="3" />
+      <node id="885304035645152199" at="262,7,263,19" concept="10" />
+      <node id="885304035645152199" at="263,19,264,28" concept="3" />
+      <node id="885304035645152199" at="266,38,267,40" concept="3" />
+      <node id="885304035645152199" at="268,42,269,35" concept="3" />
+      <node id="885304035645152199" at="273,5,274,0" concept="11" />
+      <node id="885304035645152199" at="277,42,278,20" concept="8" />
+      <node id="885304035645152199" at="278,20,279,0" concept="11" />
+      <node id="885304035645152199" at="281,40,282,43" concept="8" />
+      <node id="885304035645152199" at="282,43,283,0" concept="11" />
+      <node id="885304035645152199" at="283,0,284,73" concept="10" />
+      <node id="885304035645152199" at="285,58,286,96" concept="10" />
+      <node id="885304035645152199" at="286,96,287,126" concept="10" />
+      <node id="885304035645152199" at="287,126,288,25" concept="3" />
+      <node id="885304035645152199" at="289,9,290,0" concept="11" />
+      <node id="885304035645152199" at="290,0,291,53" concept="10" />
+      <node id="885304035645152199" at="293,42,294,29" concept="3" />
+      <node id="885304035645152199" at="295,48,296,29" concept="3" />
+      <node id="885304035645152199" at="297,48,298,35" concept="3" />
+      <node id="885304035645152199" at="299,40,300,30" concept="3" />
+      <node id="885304035645152199" at="302,16,303,61" concept="10" />
+      <node id="885304035645152199" at="304,41,305,29" concept="3" />
+      <node id="885304035645152199" at="306,40,307,30" concept="3" />
+      <node id="885304035645152199" at="307,30,308,22" concept="3" />
+      <node id="885304035645152199" at="310,9,311,0" concept="11" />
+      <node id="885304035645152199" at="311,0,312,52" concept="10" />
+      <node id="885304035645152199" at="312,52,313,71" concept="3" />
+      <node id="885304035645152199" at="316,33,317,21" concept="3" />
+      <node id="885304035645152199" at="317,21,318,36" concept="3" />
+      <node id="885304035645152199" at="319,27,320,37" concept="3" />
+      <node id="885304035645152199" at="348,139,349,123" concept="8" />
+      <node id="885304035645152199" at="349,123,350,44" concept="8" />
+      <node id="885304035645152199" at="350,44,351,10" concept="8" />
+      <node id="885304035645152199" at="351,10,352,10" concept="8" />
+      <node id="885304035645152199" at="353,24,354,66" concept="10" />
+      <node id="885304035645152199" at="354,66,355,56" concept="10" />
+      <node id="885304035645152199" at="355,56,356,42" concept="10" />
+      <node id="885304035645152199" at="356,42,357,25" concept="3" />
+      <node id="885304035645152199" at="357,25,358,26" concept="3" />
+      <node id="885304035645152199" at="359,12,360,62" concept="10" />
+      <node id="885304035645152199" at="360,62,361,60" concept="10" />
+      <node id="885304035645152199" at="361,60,362,22" concept="3" />
+      <node id="885304035645152199" at="362,22,363,23" concept="3" />
+      <node id="885304035645152199" at="366,45,367,15" concept="3" />
+      <node id="885304035645152199" at="368,30,369,26" concept="3" />
+      <node id="885304035645152199" at="372,46,373,15" concept="3" />
+      <node id="885304035645152199" at="374,31,375,27" concept="3" />
+      <node id="885304035645152199" at="377,7,378,56" concept="8" />
+      <node id="885304035645152199" at="378,56,379,43" concept="8" />
+      <node id="885304035645152199" at="379,43,380,66" concept="3" />
+      <node id="885304035645152199" at="380,66,381,42" concept="3" />
+      <node id="885304035645152199" at="381,42,382,19" concept="3" />
+      <node id="885304035645152199" at="382,19,383,16" concept="3" />
+      <node id="885304035645152199" at="384,52,385,15" concept="9" />
+      <node id="885304035645152199" at="388,95,389,121" concept="8" />
+      <node id="885304035645152199" at="389,121,390,45" concept="8" />
+      <node id="885304035645152199" at="390,45,391,33" concept="3" />
+      <node id="885304035645152199" at="391,33,392,122" concept="9" />
+      <node id="885304035645152199" at="397,44,398,23" concept="8" />
+      <node id="885304035645152199" at="398,23,399,23" concept="8" />
+      <node id="885304035645152199" at="399,23,400,61" concept="3" />
+      <node id="885304035645152199" at="400,61,401,31" concept="8" />
+      <node id="885304035645152199" at="401,31,402,31" concept="8" />
+      <node id="885304035645152199" at="402,31,403,64" concept="3" />
+      <node id="885304035645152199" at="403,64,404,0" concept="11" />
+      <node id="885304035645152199" at="404,0,405,32" concept="8" />
+      <node id="885304035645152199" at="405,32,406,0" concept="11" />
+      <node id="885304035645152199" at="406,0,407,54" concept="10" />
+      <node id="885304035645152199" at="408,22,409,18" concept="3" />
+      <node id="885304035645152199" at="409,18,410,18" concept="3" />
+      <node id="885304035645152199" at="411,7,412,0" concept="11" />
+      <node id="885304035645152199" at="413,65,414,24" concept="10" />
+      <node id="885304035645152199" at="415,50,416,44" concept="3" />
+      <node id="885304035645152199" at="416,44,417,0" concept="11" />
+      <node id="885304035645152199" at="418,58,419,29" concept="3" />
+      <node id="885304035645152199" at="419,29,420,38" concept="10" />
+      <node id="885304035645152199" at="422,34,423,61" concept="3" />
+      <node id="885304035645152199" at="423,61,424,28" concept="3" />
+      <node id="885304035645152199" at="424,28,425,57" concept="8" />
+      <node id="885304035645152199" at="425,57,426,39" concept="3" />
+      <node id="885304035645152199" at="428,20,429,55" concept="10" />
+      <node id="885304035645152199" at="429,55,430,59" concept="3" />
+      <node id="885304035645152199" at="430,59,431,26" concept="3" />
+      <node id="885304035645152199" at="431,26,432,55" concept="8" />
+      <node id="885304035645152199" at="432,55,433,37" concept="3" />
+      <node id="885304035645152199" at="434,13,435,0" concept="11" />
+      <node id="885304035645152199" at="436,11,437,0" concept="11" />
+      <node id="885304035645152199" at="437,0,438,0" concept="11" />
+      <node id="885304035645152199" at="439,16,440,61" concept="10" />
+      <node id="885304035645152199" at="440,61,441,50" concept="3" />
+      <node id="885304035645152199" at="442,66,443,19" concept="9" />
+      <node id="885304035645152199" at="445,114,446,60" concept="3" />
+      <node id="885304035645152199" at="446,60,447,29" concept="3" />
+      <node id="885304035645152199" at="447,29,448,0" concept="11" />
+      <node id="885304035645152199" at="448,0,449,25" concept="10" />
+      <node id="885304035645152199" at="450,61,451,127" concept="10" />
+      <node id="885304035645152199" at="451,127,452,59" concept="3" />
+      <node id="885304035645152199" at="452,59,453,24" concept="3" />
+      <node id="885304035645152199" at="453,24,454,48" concept="8" />
+      <node id="885304035645152199" at="455,55,456,82" concept="3" />
+      <node id="885304035645152199" at="457,43,458,43" concept="10" />
+      <node id="885304035645152199" at="458,43,459,42" concept="3" />
+      <node id="885304035645152199" at="460,24,461,40" concept="3" />
+      <node id="885304035645152199" at="463,22,464,33" concept="3" />
+      <node id="885304035645152199" at="466,13,467,0" concept="11" />
+      <node id="885304035645152199" at="468,62,469,55" concept="3" />
+      <node id="885304035645152199" at="472,9,473,53" concept="10" />
+      <node id="885304035645152199" at="474,24,475,43" concept="3" />
+      <node id="885304035645152199" at="475,43,476,20" concept="3" />
+      <node id="885304035645152199" at="481,56,482,89" concept="10" />
+      <node id="885304035645152199" at="482,89,483,0" concept="11" />
+      <node id="885304035645152199" at="483,0,484,54" concept="8" />
+      <node id="885304035645152199" at="484,54,485,35" concept="3" />
+      <node id="885304035645152199" at="485,35,486,270" concept="8" />
+      <node id="885304035645152199" at="486,270,487,34" concept="10" />
+      <node id="885304035645152199" at="487,34,488,26" concept="10" />
+      <node id="885304035645152199" at="488,26,489,78" concept="9" />
+      <node id="885304035645152199" at="492,40,493,187" concept="3" />
+      <node id="885304035645152199" at="493,187,494,67" concept="3" />
+      <node id="885304035645152199" at="494,67,495,26" concept="3" />
+      <node id="885304035645152199" at="498,42,499,21" concept="3" />
+      <node id="885304035645152199" at="499,21,500,26" concept="3" />
+      <node id="885304035645152199" at="500,26,501,175" concept="3" />
+      <node id="885304035645152199" at="504,35,505,21" concept="3" />
+      <node id="885304035645152199" at="505,21,506,26" concept="3" />
+      <node id="885304035645152199" at="506,26,507,132" concept="3" />
+      <node id="885304035645152199" at="460,22,462,17" concept="0" />
+      <node id="885304035645152199" at="463,20,465,15" concept="0" />
+      <node id="885304035645152199" at="103,46,106,5" concept="5" />
+      <node id="885304035645152199" at="123,26,126,13" concept="6" />
+      <node id="885304035645152199" at="130,26,133,13" concept="6" />
+      <node id="885304035645152199" at="137,32,140,13" concept="6" />
+      <node id="885304035645152199" at="145,30,148,11" concept="6" />
+      <node id="885304035645152199" at="152,24,155,11" concept="6" />
+      <node id="885304035645152199" at="161,26,164,13" concept="6" />
+      <node id="885304035645152199" at="168,32,171,13" concept="6" />
+      <node id="885304035645152199" at="175,32,178,13" concept="6" />
+      <node id="885304035645152199" at="195,40,198,11" concept="6" />
+      <node id="885304035645152199" at="204,40,207,11" concept="6" />
+      <node id="885304035645152199" at="214,40,217,11" concept="6" />
+      <node id="885304035645152199" at="225,38,228,9" concept="6" />
+      <node id="885304035645152199" at="235,38,238,9" concept="6" />
+      <node id="885304035645152199" at="248,40,251,11" concept="6" />
+      <node id="885304035645152199" at="257,40,260,11" concept="6" />
+      <node id="885304035645152199" at="267,40,270,11" concept="6" />
+      <node id="885304035645152199" at="367,15,370,9" concept="6" />
+      <node id="885304035645152199" at="373,15,376,9" concept="6" />
+      <node id="885304035645152199" at="441,50,444,11" concept="6" />
+      <node id="885304035645152199" at="467,0,470,13" concept="6" />
+      <node id="885304035645152199" at="79,71,83,5" concept="5" />
+      <node id="885304035645152199" at="407,54,411,7" concept="6" />
+      <node id="885304035645152199" at="473,53,477,9" concept="6" />
+      <node id="885304035645152199" at="122,39,127,11" concept="6" />
+      <node id="885304035645152199" at="129,30,134,11" concept="6" />
+      <node id="885304035645152199" at="136,39,141,11" concept="6" />
+      <node id="885304035645152199" at="144,33,149,9" concept="6" />
+      <node id="885304035645152199" at="151,33,156,9" concept="6" />
+      <node id="885304035645152199" at="160,39,165,11" concept="6" />
+      <node id="885304035645152199" at="167,30,172,11" concept="6" />
+      <node id="885304035645152199" at="174,39,179,11" concept="6" />
+      <node id="885304035645152199" at="284,73,289,9" concept="6" />
+      <node id="885304035645152199" at="359,10,364,5" concept="0" />
+      <node id="885304035645152199" at="492,0,497,0" concept="7" trace="handleCorrectAnswer#()V" />
+      <node id="885304035645152199" at="498,0,503,0" concept="7" trace="handleIncorrectAnswer#()V" />
+      <node id="885304035645152199" at="504,0,509,0" concept="7" trace="outOfQuestions#()V" />
+      <node id="885304035645152199" at="193,22,199,9" concept="6" />
+      <node id="885304035645152199" at="202,22,208,9" concept="6" />
+      <node id="885304035645152199" at="212,28,218,9" concept="6" />
+      <node id="885304035645152199" at="223,20,229,7" concept="6" />
+      <node id="885304035645152199" at="233,26,239,7" concept="6" />
+      <node id="885304035645152199" at="246,22,252,9" concept="6" />
+      <node id="885304035645152199" at="255,28,261,9" concept="6" />
+      <node id="885304035645152199" at="265,28,271,9" concept="6" />
+      <node id="885304035645152199" at="303,61,309,11" concept="6" />
+      <node id="885304035645152199" at="315,5,321,5" concept="6" />
+      <node id="885304035645152199" at="365,8,371,7" concept="6" />
+      <node id="885304035645152199" at="371,7,377,7" concept="6" />
+      <node id="885304035645152199" at="388,0,394,0" concept="12" trace="createScaledImage#(Ljava/awt/Image;II)Ljava/awt/image/BufferedImage;" />
+      <node id="885304035645152199" at="421,67,427,15" concept="6" />
+      <node id="885304035645152199" at="428,18,434,13" concept="0" />
+      <node id="885304035645152199" at="456,82,462,17" concept="6" />
+      <node id="885304035645152199" at="64,0,71,0" concept="1" trace="MathSweeperBoard#(Ljavax/swing/JLabel;Ljavax/swing/JFrame;Ljava/util/ArrayList;)V" />
+      <node id="885304035645152199" at="192,28,200,7" concept="6" />
+      <node id="885304035645152199" at="201,19,209,7" concept="6" />
+      <node id="885304035645152199" at="211,28,219,7" concept="6" />
+      <node id="885304035645152199" at="222,22,230,5" concept="6" />
+      <node id="885304035645152199" at="232,22,240,5" concept="6" />
+      <node id="885304035645152199" at="245,28,253,7" concept="6" />
+      <node id="885304035645152199" at="254,19,262,7" concept="6" />
+      <node id="885304035645152199" at="264,28,272,7" concept="6" />
+      <node id="885304035645152199" at="302,14,310,9" concept="0" />
+      <node id="885304035645152199" at="292,24,301,11" concept="6" />
+      <node id="885304035645152199" at="481,0,491,0" concept="7" trace="askQuestion#(LMinesweeper/sandbox/MathSweeper/Question;)Z" />
+      <node id="885304035645152199" at="454,48,465,15" concept="6" />
+      <node id="885304035645152199" at="352,10,364,5" concept="6" />
+      <node id="885304035645152199" at="420,38,434,13" concept="6" />
+      <node id="885304035645152199" at="72,0,88,0" concept="7" trace="initBoard#()V" />
+      <node id="885304035645152199" at="449,25,466,13" concept="6" />
+      <node id="885304035645152199" at="291,53,310,9" concept="6" />
+      <node id="885304035645152199" at="417,0,436,11" concept="6" />
+      <node id="885304035645152199" at="364,5,384,52" concept="2" />
+      <node id="885304035645152199" at="119,52,142,9" concept="6" />
+      <node id="885304035645152199" at="157,53,180,9" concept="6" />
+      <node id="885304035645152199" at="444,11,471,11" concept="6" />
+      <node id="885304035645152199" at="189,30,220,5" concept="6" />
+      <node id="885304035645152199" at="242,19,273,5" concept="6" />
+      <node id="885304035645152199" at="439,14,472,9" concept="0" />
+      <node id="885304035645152199" at="280,38,314,7" concept="5" />
+      <node id="885304035645152199" at="279,0,315,5" concept="5" />
+      <node id="885304035645152199" at="348,0,387,0" concept="12" trace="getScaledInstance#(Ljava/awt/image/BufferedImage;IILjava/lang/Object;Z)Ljava/awt/image/BufferedImage;" />
+      <node id="885304035645152199" at="277,0,323,0" concept="7" trace="paintComponent#(Ljava/awt/Graphics;)V" />
+      <node id="885304035645152199" at="414,24,472,9" concept="6" />
+      <node id="885304035645152199" at="412,0,478,7" concept="6" />
+      <node id="885304035645152199" at="113,0,181,7" concept="6" />
+      <node id="885304035645152199" at="110,14,182,5" concept="13" />
+      <node id="885304035645152199" at="396,0,480,0" concept="7" trace="mousePressed#(Ljava/awt/event/MouseEvent;)V" />
+      <node id="885304035645152199" at="185,0,276,0" concept="7" trace="find_empty_cells#(I)V" />
+      <node id="885304035645152199" at="89,0,184,0" concept="7" trace="newGame#()V" />
+      <scope id="885304035645152199" at="104,40,105,32" />
+      <scope id="885304035645152199" at="124,51,125,31" />
+      <scope id="885304035645152199" at="131,51,132,31" />
+      <scope id="885304035645152199" at="138,51,139,31" />
+      <scope id="885304035645152199" at="146,49,147,29" />
+      <scope id="885304035645152199" at="153,49,154,29" />
+      <scope id="885304035645152199" at="162,51,163,31" />
+      <scope id="885304035645152199" at="169,51,170,31" />
+      <scope id="885304035645152199" at="176,51,177,31" />
+      <scope id="885304035645152199" at="196,42,197,35" />
+      <scope id="885304035645152199" at="205,42,206,35" />
+      <scope id="885304035645152199" at="215,42,216,35" />
+      <scope id="885304035645152199" at="226,40,227,33" />
+      <scope id="885304035645152199" at="236,40,237,33" />
+      <scope id="885304035645152199" at="249,42,250,35" />
+      <scope id="885304035645152199" at="258,42,259,35" />
+      <scope id="885304035645152199" at="268,42,269,35" />
+      <scope id="885304035645152199" at="293,42,294,29" />
+      <scope id="885304035645152199" at="295,48,296,29" />
+      <scope id="885304035645152199" at="297,48,298,35" />
+      <scope id="885304035645152199" at="299,40,300,30" />
+      <scope id="885304035645152199" at="304,41,305,29" />
+      <scope id="885304035645152199" at="319,27,320,37" />
+      <scope id="885304035645152199" at="368,30,369,26" />
+      <scope id="885304035645152199" at="374,31,375,27" />
+      <scope id="885304035645152199" at="442,66,443,19" />
+      <scope id="885304035645152199" at="460,24,461,40" />
+      <scope id="885304035645152199" at="463,22,464,33" />
+      <scope id="885304035645152199" at="468,62,469,55" />
+      <scope id="885304035645152199" at="80,42,82,89">
+        <var name="path" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="306,40,308,22" />
+      <scope id="885304035645152199" at="316,33,318,36" />
+      <scope id="885304035645152199" at="408,22,410,18" />
+      <scope id="885304035645152199" at="457,43,459,42" />
+      <scope id="885304035645152199" at="474,24,476,20" />
+      <scope id="885304035645152199" at="103,46,106,5">
+        <var name="i" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="123,26,126,13" />
+      <scope id="885304035645152199" at="130,26,133,13" />
+      <scope id="885304035645152199" at="137,32,140,13" />
+      <scope id="885304035645152199" at="145,30,148,11" />
+      <scope id="885304035645152199" at="152,24,155,11" />
+      <scope id="885304035645152199" at="161,26,164,13" />
+      <scope id="885304035645152199" at="168,32,171,13" />
+      <scope id="885304035645152199" at="175,32,178,13" />
+      <scope id="885304035645152199" at="285,58,288,25" />
+      <scope id="885304035645152199" at="492,40,495,26" />
+      <scope id="885304035645152199" at="498,42,501,175" />
+      <scope id="885304035645152199" at="504,35,507,132" />
+      <scope id="885304035645152199" at="79,71,83,5">
+        <var name="i" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="194,38,198,11" />
+      <scope id="885304035645152199" at="203,38,207,11" />
+      <scope id="885304035645152199" at="213,38,217,11" />
+      <scope id="885304035645152199" at="224,36,228,9" />
+      <scope id="885304035645152199" at="234,36,238,9" />
+      <scope id="885304035645152199" at="247,38,251,11" />
+      <scope id="885304035645152199" at="256,38,260,11" />
+      <scope id="885304035645152199" at="266,38,270,11" />
+      <scope id="885304035645152199" at="359,12,363,23" />
+      <scope id="885304035645152199" at="366,45,370,9" />
+      <scope id="885304035645152199" at="372,46,376,9" />
+      <scope id="885304035645152199" at="388,95,392,122">
+        <var name="bufferedImage" id="885304035645152199" />
+        <var name="g" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="422,34,426,39">
+        <var name="msg" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="64,103,69,16" />
+      <scope id="885304035645152199" at="353,24,358,26" />
+      <scope id="885304035645152199" at="428,20,433,37">
+        <var name="msg" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="492,0,497,0" />
+      <scope id="885304035645152199" at="498,0,503,0" />
+      <scope id="885304035645152199" at="504,0,509,0" />
+      <scope id="885304035645152199" at="193,22,199,9" />
+      <scope id="885304035645152199" at="202,22,208,9" />
+      <scope id="885304035645152199" at="212,28,218,9" />
+      <scope id="885304035645152199" at="223,20,229,7" />
+      <scope id="885304035645152199" at="233,26,239,7" />
+      <scope id="885304035645152199" at="246,22,252,9" />
+      <scope id="885304035645152199" at="255,28,261,9" />
+      <scope id="885304035645152199" at="265,28,271,9" />
+      <scope id="885304035645152199" at="388,0,394,0">
+        <var name="img" id="885304035645152199" />
+        <var name="targetHeight" id="885304035645152199" />
+        <var name="targetWidth" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="421,67,427,15" />
+      <scope id="885304035645152199" at="64,0,71,0">
+        <var name="fFrame" id="885304035645152199" />
+        <var name="questions" id="885304035645152199" />
+        <var name="statusbar" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="302,16,309,11" />
+      <scope id="885304035645152199" at="455,55,462,17" />
+      <scope id="885304035645152199" at="481,56,489,78">
+        <var name="answers" id="885304035645152199" />
+        <var name="selectedOption" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="292,24,301,11" />
+      <scope id="885304035645152199" at="481,0,491,0">
+        <var name="q" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="72,28,86,14">
+        <var name="picturesFolder" id="885304035645152199" />
+        <var name="sourceLocation" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="450,61,465,15">
+        <var name="answeredCorrectly" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="72,0,88,0" />
+      <scope id="885304035645152199" at="418,58,435,0" />
+      <scope id="885304035645152199" at="365,8,383,16">
+        <var name="g2" id="885304035645152199" />
+        <var name="tmp" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="120,30,141,11" />
+      <scope id="885304035645152199" at="158,41,179,11" />
+      <scope id="885304035645152199" at="415,50,438,0" />
+      <scope id="885304035645152199" at="445,114,470,13" />
+      <scope id="885304035645152199" at="190,26,219,7" />
+      <scope id="885304035645152199" at="243,37,272,7" />
+      <scope id="885304035645152199" at="281,40,313,71">
+        <var name="cell" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="439,16,471,11" />
+      <scope id="885304035645152199" at="280,38,314,7" />
+      <scope id="885304035645152199" at="280,38,314,7">
+        <var name="j" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="279,0,315,5">
+        <var name="i" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="348,139,385,15">
+        <var name="h" id="885304035645152199" />
+        <var name="ret" id="885304035645152199" />
+        <var name="type" id="885304035645152199" />
+        <var name="w" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="348,0,387,0">
+        <var name="higherQuality" id="885304035645152199" />
+        <var name="hint" id="885304035645152199" />
+        <var name="img" id="885304035645152199" />
+        <var name="targetHeight" id="885304035645152199" />
+        <var name="targetWidth" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="277,42,321,5">
+        <var name="uncover" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="277,0,323,0">
+        <var name="g" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="413,65,477,9" />
+      <scope id="885304035645152199" at="114,76,180,9">
+        <var name="current_col" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="111,25,181,7">
+        <var name="position" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="397,44,478,7">
+        <var name="cCol" id="885304035645152199" />
+        <var name="cRow" id="885304035645152199" />
+        <var name="doRepaint" id="885304035645152199" />
+        <var name="x" id="885304035645152199" />
+        <var name="y" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="396,0,480,0">
+        <var name="e" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="185,40,274,0">
+        <var name="cell" id="885304035645152199" />
+        <var name="current_col" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="185,0,276,0">
+        <var name="j" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="89,26,182,5">
+        <var name="cell" id="885304035645152199" />
+        <var name="i" id="885304035645152199" />
+        <var name="random" id="885304035645152199" />
+      </scope>
+      <scope id="885304035645152199" at="89,0,184,0" />
+      <unit id="885304035645152199" at="395,0,511,0" name="Minesweeper.sandbox.MathSweeperBoard$MinesAdapter" />
+      <unit id="885304035645152199" at="26,0,524,0" name="Minesweeper.sandbox.MathSweeperBoard" />
     </file>
   </root>
 </debug-info>

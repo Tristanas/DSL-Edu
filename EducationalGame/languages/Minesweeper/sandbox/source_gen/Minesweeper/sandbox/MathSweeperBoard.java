@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Arrays;
 import javax.swing.JOptionPane;
 
-public class ImpossibleMinesweeperBoard extends JPanel {
+public class MathSweeperBoard extends JPanel {
   private final int NUM_IMAGES = 13;
   public final int CELL_SIZE = 30;
   public final int IMAGE_SIZE = 15;
@@ -40,9 +40,9 @@ public class ImpossibleMinesweeperBoard extends JPanel {
   private final int DRAW_MARK = 11;
   private final int DRAW_WRONG_MARK = 12;
 
-  private final int N_MINES = 200;
-  private final int N_ROWS = 20;
-  private final int N_COLS = 20;
+  private final int N_MINES = 8;
+  private final int N_ROWS = 10;
+  private final int N_COLS = 10;
 
   private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
   private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
@@ -55,13 +55,13 @@ public class ImpossibleMinesweeperBoard extends JPanel {
   private int clickedMinePosition;
   private int questionsAnswered;
   private final int questionsCount;
-  private final ArrayList<ImpossibleMinesweeper.Question> questions;
+  private final ArrayList<MathSweeper.Question> questions;
 
   private int allCells;
   private final JLabel statusbar;
   private final JFrame parentWindow;
 
-  public ImpossibleMinesweeperBoard(JLabel statusbar, JFrame fFrame, ArrayList<ImpossibleMinesweeper.Question> questions) {
+  public MathSweeperBoard(JLabel statusbar, JFrame fFrame, ArrayList<MathSweeper.Question> questions) {
     this.parentWindow = fFrame;
     this.questions = questions;
     this.questionsCount = questions.size();
@@ -478,7 +478,7 @@ public class ImpossibleMinesweeperBoard extends JPanel {
       }
     }
 
-    public boolean askQuestion(ImpossibleMinesweeper.Question q) {
+    public boolean askQuestion(MathSweeper.Question q) {
       // If player closes question window or clicks cancel, selectedOption becomes null. 
 
       List<String> answers = Arrays.asList(q.answers);

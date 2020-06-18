@@ -7,6 +7,7 @@ import java.awt.Image;
 import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.JFrame;
+import java.io.File;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import java.util.Random;
@@ -69,14 +70,13 @@ public class MediumMinesweeperBoard extends JPanel {
   }
 
   private void initBoard() {
-    System.out.println("Board initializing");
+    File sourceLocation = new File(MinesAdapter.class.getProtectionDomain().getCodeSource().getLocation().getPath());
     setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
 
     img = new Image[NUM_IMAGES];
 
     System.out.println("Getting images");
-    String picturesFolder = System.getProperty("user.dir") + "/languages/Minesweeper/sandbox/resources/";
-    System.out.println("Pictures folder = " + picturesFolder);
+    String picturesFolder = sourceLocation.getParent() + "/resources/";
     for (int i = 0; i < NUM_IMAGES; i++) {
       String path = picturesFolder + i + ".png";
       img[i] = createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);

@@ -59,5 +59,15 @@
       <ref role="1RwF4F" to="f1yb:4XM$1KSYoGT" resolve="English" />
     </node>
   </node>
+  <node concept="1KmNlR" id="L9ePhMQlJ7">
+    <property role="1KmNlO" value="10" />
+    <property role="1KmNlM" value="10" />
+    <property role="1KmNlL" value="8" />
+    <property role="3zgag$" value="30" />
+    <property role="TrG5h" value="MathSweeper" />
+    <node concept="1R_NyW" id="L9ePhMQlJ8" role="x2j5K">
+      <ref role="1RwF4F" to="f1yb:4XM$1KSTqx5" resolve="Popquiz" />
+    </node>
+  </node>
 </model>
 

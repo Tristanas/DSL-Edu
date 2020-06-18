@@ -4,6 +4,7 @@
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education" version="0" />
+    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -15,7 +16,10 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="q0m6" ref="r:8282ba62-dea8-48b0-b11f-8b2f4b6a7c63(net.java)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" implicit="true" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
   </imports>
@@ -220,6 +224,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -281,6 +288,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -740,16 +754,38 @@
     <node concept="3clFb_" id="4kyY3TkHmAy" role="jymVt">
       <property role="TrG5h" value="initBoard" />
       <node concept="3clFbS" id="4kyY3TkHmA_" role="3clF47">
-        <node concept="3clFbF" id="4kyY3TkRyG7" role="3cqZAp">
-          <node concept="2OqwBi" id="4kyY3TkRzwO" role="3clFbG">
-            <node concept="10M0yZ" id="4kyY3TkRz3$" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+        <node concept="3cpWs8" id="L9ePhMRjUm" role="3cqZAp">
+          <node concept="3cpWsn" id="L9ePhMRjUn" role="3cpWs9">
+            <property role="TrG5h" value="sourceLocation" />
+            <node concept="3uibUv" id="L9ePhMXuuK" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
-            <node concept="liA8E" id="4kyY3TkRzTn" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="4kyY3TkRAIy" role="37wK5m">
-                <property role="Xl_RC" value="Board initializing" />
+            <node concept="2ShNRf" id="L9ePhMXw_5" role="33vP2m">
+              <node concept="1pGfFk" id="L9ePhMXyH7" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="2OqwBi" id="L9ePhMRGIS" role="37wK5m">
+                  <node concept="2OqwBi" id="L9ePhMRFCG" role="2Oq$k0">
+                    <node concept="2OqwBi" id="L9ePhMREBE" role="2Oq$k0">
+                      <node concept="2OqwBi" id="L9ePhMRDqL" role="2Oq$k0">
+                        <node concept="3VsKOn" id="L9ePhMRC_e" role="2Oq$k0">
+                          <ref role="3VsUkX" node="4kyY3TkHQCD" resolve="Board.MinesAdapter" />
+                        </node>
+                        <node concept="liA8E" id="L9ePhMREtE" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Class.getProtectionDomain()" resolve="getProtectionDomain" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="L9ePhMRFsb" role="2OqNvi">
+                        <ref role="37wK5l" to="jgjw:~ProtectionDomain.getCodeSource()" resolve="getCodeSource" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="L9ePhMRGxB" role="2OqNvi">
+                      <ref role="37wK5l" to="jgjw:~CodeSource.getLocation()" resolve="getLocation" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="L9ePhMRHKR" role="2OqNvi">
+                    <ref role="37wK5l" to="zf81:~URL.getPath()" resolve="getPath" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -805,38 +841,65 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4kyY3TkS2LB" role="3cqZAp">
-          <node concept="3cpWsn" id="4kyY3TkS2LE" role="3cpWs9">
+        <node concept="3cpWs8" id="L9ePhMYjYZ" role="3cqZAp">
+          <node concept="3cpWsn" id="L9ePhMYjZ2" role="3cpWs9">
             <property role="TrG5h" value="picturesFolder" />
-            <node concept="17QB3L" id="4kyY3TkS2L_" role="1tU5fm" />
-            <node concept="3cpWs3" id="26_I6mU8V_v" role="33vP2m">
-              <node concept="Xl_RD" id="4kyY3TkS3l_" role="3uHU7w">
-                <property role="Xl_RC" value="/languages/Minesweeper/sandbox/resources/" />
+            <node concept="17QB3L" id="L9ePhMYjYX" role="1tU5fm" />
+            <node concept="3cpWs3" id="L9ePhMYkTC" role="33vP2m">
+              <node concept="2OqwBi" id="L9ePhMYkTF" role="3uHU7B">
+                <node concept="37vLTw" id="L9ePhMYkTG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="L9ePhMRjUn" resolve="sourceLocation" />
+                </node>
+                <node concept="liA8E" id="L9ePhMYkTH" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
+                </node>
               </node>
-              <node concept="2YIFZM" id="26_I6mU8O62" role="3uHU7B">
-                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
-                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                <node concept="Xl_RD" id="26_I6mU8O63" role="37wK5m">
-                  <property role="Xl_RC" value="user.dir" />
+              <node concept="Xl_RD" id="L9ePhMYkTI" role="3uHU7w">
+                <property role="Xl_RC" value="/resources/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="L9ePhMYomj" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="4kyY3TkS2LB" role="8Wnug">
+            <node concept="3cpWsn" id="4kyY3TkS2LE" role="3cpWs9">
+              <property role="TrG5h" value="picturesFolder" />
+              <node concept="17QB3L" id="4kyY3TkS2L_" role="1tU5fm" />
+              <node concept="3cpWs3" id="26_I6mU8V_v" role="33vP2m">
+                <node concept="Xl_RD" id="4kyY3TkS3l_" role="3uHU7w">
+                  <property role="Xl_RC" value="/languages/Minesweeper/sandbox/resources/" />
+                </node>
+                <node concept="2YIFZM" id="26_I6mU8O62" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <node concept="Xl_RD" id="26_I6mU8O63" role="37wK5m">
+                    <property role="Xl_RC" value="user.dir" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="26_I6mU7FO5" role="3cqZAp">
-          <node concept="2OqwBi" id="26_I6mU7FO6" role="3clFbG">
-            <node concept="10M0yZ" id="26_I6mU7FO7" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="26_I6mU7FO8" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="26_I6mU7HWB" role="37wK5m">
-                <node concept="Xl_RD" id="26_I6mU7FO9" role="3uHU7B">
-                  <property role="Xl_RC" value="Pictures folder = " />
-                </node>
-                <node concept="37vLTw" id="26_I6mU916E" role="3uHU7w">
-                  <ref role="3cqZAo" node="4kyY3TkS2LE" resolve="picturesFolder" />
+        <node concept="1X3_iC" id="L9ePhMYpcC" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="26_I6mU7FO5" role="8Wnug">
+            <node concept="2OqwBi" id="26_I6mU7FO6" role="3clFbG">
+              <node concept="10M0yZ" id="26_I6mU7FO7" role="2Oq$k0">
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="26_I6mU7FO8" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="3cpWs3" id="26_I6mU7HWB" role="37wK5m">
+                  <node concept="Xl_RD" id="26_I6mU7FO9" role="3uHU7B">
+                    <property role="Xl_RC" value="Pictures folder = " />
+                  </node>
+                  <node concept="37vLTw" id="26_I6mU916E" role="3uHU7w">
+                    <ref role="3cqZAo" node="4kyY3TkS2LE" resolve="picturesFolder" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -856,8 +919,8 @@
                     <node concept="37vLTw" id="4kyY3TkHB4T" role="3uHU7w">
                       <ref role="3cqZAo" node="4kyY3TkHvsw" resolve="i" />
                     </node>
-                    <node concept="37vLTw" id="4kyY3TkS4jG" role="3uHU7B">
-                      <ref role="3cqZAo" node="4kyY3TkS2LE" resolve="picturesFolder" />
+                    <node concept="37vLTw" id="L9ePhMYoan" role="3uHU7B">
+                      <ref role="3cqZAo" node="L9ePhMYjZ2" resolve="picturesFolder" />
                     </node>
                   </node>
                 </node>
