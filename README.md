@@ -10,7 +10,7 @@ A MPS Solution which contains defined languages for game creation and a sandbox 
 
 ## Installation instructions:
 1. Download and install [MPS](https://www.jetbrains.com/mps/download/) for your Operating System.
-2. [Clone](https://github.com/Tristanas/DSL-for-educational-games.git) this repository or [download](https://github.com/Tristanas/DSL-for-educational-games/archive/master.zip) its source.
+2. [Clone](https://github.com/Tristanas/DSL-for-educational-games.git) this repository or [download](https://github.com/Tristanas/DSL-for-educational-games/archive/master.zip) its source. If you download the project from this link, you will need to extract it from the archive.
 3. Open the project with the MPS IDE.
 4. Right click on "EducationalGame" in the project view and select "Make Project". Wait for the build process to finish.
 
