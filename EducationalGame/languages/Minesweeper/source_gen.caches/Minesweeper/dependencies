@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Minesweeper.Language">
+    <classNode dependClassName="Minesweeper.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Minesweeper.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="Minesweeper.migration.MigrationDescriptor" />
     <classNode dependClassName="Minesweeper.structure.ConceptPresentationAspectImpl" />
@@ -12,6 +13,7 @@
     <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />

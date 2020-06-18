@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:22106e60-d997-49b6-a780-6b15a8b1785d(TeacherSolution.sandbox)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education">
+      <concept id="5724796527229373037" name="Education.structure.SimpleTest" flags="ng" index="1R_LDL" />
+    </language>
+  </registry>
+  <node concept="1R_LDL" id="L9ePhMP9PH" />
+</model>
+

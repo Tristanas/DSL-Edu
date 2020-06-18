@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:22106e60-d997-49b6-a780-6b15a8b1785d(TeacherSolution.sandbox)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education" version="0" />
+  </languages>
+  <imports />
+</model>
+

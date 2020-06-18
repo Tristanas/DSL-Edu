@@ -75,15 +75,11 @@ public class EasyMinesweeperBoard extends JPanel {
     img = new Image[NUM_IMAGES];
 
     System.out.println("Getting images");
-    System.out.println("Working Directory = " + System.getProperty("user.dir"));
-
-    String picturesFolder = "C:/Users/Vilius/MPSProjects/EducationalGame/languages/Minesweeper/sandbox/resources/";
-    System.out.println("CWD: " + System.getProperty("user.dir"));
+    String picturesFolder = System.getProperty("user.dir") + "/languages/Minesweeper/sandbox/resources/";
+    System.out.println("Pictures folder = " + picturesFolder);
     for (int i = 0; i < NUM_IMAGES; i++) {
       String path = picturesFolder + i + ".png";
-      System.out.println("Path to image: " + path);
       img[i] = createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
-
     }
 
     addMouseListener(new MinesAdapter());
