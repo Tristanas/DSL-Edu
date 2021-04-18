@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
 
+// Minesweeper board, main Panel of the application window.
 public class Board extends JPanel {
 
     private final int NUM_IMAGES = 13;
@@ -300,10 +301,8 @@ public class Board extends JPanel {
         }
 
         if (uncover == 0 && inGame) {
-
             inGame = false;
             statusbar.setText("Game won");
-
         } else if (!inGame) {
             statusbar.setText("Game lost");
         }
@@ -424,7 +423,8 @@ public class Board extends JPanel {
                 "You have answered the question correctly. The mine is marked for your convenience.",
                 "Correct answer",
                 JOptionPane.INFORMATION_MESSAGE);
-        field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL;
+        field[clickedMinePosition] += COVER_FOR_CELL + MARK_FOR_CELL; // Cover the mine.
+        minesLeft--;
         questionsAnswered++;
     }
 

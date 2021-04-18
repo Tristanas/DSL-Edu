@@ -31,23 +31,23 @@ public final class Game__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setWidth_idL9ePhMP9VN, setHeight_idL9ePhMPel7, setMinesCount_idL9ePhMPeNR, setCellSize_idL9ePhMPfo2);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.assign(__thisNode__, PROPS.width$XpK0, 10);
-    SPropertyOperations.assign(__thisNode__, PROPS.height$XpKY, 10);
-    SPropertyOperations.assign(__thisNode__, PROPS.bombs$XpMr, 8);
-    SPropertyOperations.assign(__thisNode__, PROPS.cellSize$a1xj, 30);
+    SPropertyOperations.assign(__thisNode__, PROPS.width$_pTQ, 10);
+    SPropertyOperations.assign(__thisNode__, PROPS.height$_qnS, 10);
+    SPropertyOperations.assign(__thisNode__, PROPS.bombs$_r4V, 8);
+    SPropertyOperations.assign(__thisNode__, PROPS.cellSize$GEM3, 30);
   }
 
   /*package*/ static void setWidth_idL9ePhMP9VN(@NotNull SNode __thisNode__, int width) {
-    SPropertyOperations.assign(__thisNode__, PROPS.width$XpK0, width);
+    SPropertyOperations.assign(__thisNode__, PROPS.width$_pTQ, width);
   }
   /*package*/ static void setHeight_idL9ePhMPel7(@NotNull SNode __thisNode__, int heigth) {
-    SPropertyOperations.assign(__thisNode__, PROPS.height$XpKY, heigth);
+    SPropertyOperations.assign(__thisNode__, PROPS.height$_qnS, heigth);
   }
   /*package*/ static void setMinesCount_idL9ePhMPeNR(@NotNull SNode __thisNode__, int mines) {
-    SPropertyOperations.assign(__thisNode__, PROPS.bombs$XpMr, mines);
+    SPropertyOperations.assign(__thisNode__, PROPS.bombs$_r4V, mines);
   }
   /*package*/ static void setCellSize_idL9ePhMPfo2(@NotNull SNode __thisNode__, int cellSize) {
-    SPropertyOperations.assign(__thisNode__, PROPS.cellSize$a1xj, cellSize);
+    SPropertyOperations.assign(__thisNode__, PROPS.cellSize$GEM3, cellSize);
   }
 
   /*package*/ Game__BehaviorDescriptor() {
@@ -107,9 +107,9 @@ public final class Game__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty width$XpK0 = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b2L, "width");
-    /*package*/ static final SProperty height$XpKY = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b4L, "height");
-    /*package*/ static final SProperty bombs$XpMr = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b7L, "bombs");
-    /*package*/ static final SProperty cellSize$a1xj = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x2c993fc0cfd99be4L, "cellSize");
+    /*package*/ static final SProperty width$_pTQ = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b2L, "width");
+    /*package*/ static final SProperty height$_qnS = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b4L, "height");
+    /*package*/ static final SProperty bombs$_r4V = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b7L, "bombs");
+    /*package*/ static final SProperty cellSize$GEM3 = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x2c993fc0cfd99be4L, "cellSize");
   }
 }

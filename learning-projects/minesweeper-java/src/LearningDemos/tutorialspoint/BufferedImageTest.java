@@ -1,4 +1,4 @@
-package com.tutorialspoint;
+package LearningDemos.tutorialspoint;
 
 import net.java.ImageScaler;
 

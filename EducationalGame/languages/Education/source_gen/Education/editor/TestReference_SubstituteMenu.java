@@ -28,7 +28,7 @@ public class TestReference_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_tasuyn_a(), CONCEPTS.TestReference$U4));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_tasuyn_a(), CONCEPTS.TestReference$db));
     result.add(new SMP_Subconcepts_tasuyn_b());
     return result;
   }
@@ -50,7 +50,7 @@ public class TestReference_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_tasuyn_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.TestReference$U4, LINKS.testReference$fLyK);
+      super((SAbstractConcept) CONCEPTS.TestReference$db, LINKS.testReference$3p8n);
     }
     @NotNull
     @Override
@@ -67,7 +67,7 @@ public class TestReference_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_tasuyn_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.TestReference$U4);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.TestReference$db);
     }
     @NotNull
     @Override
@@ -88,10 +88,10 @@ public class TestReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TestReference$U4 = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, "Education.structure.TestReference");
+    /*package*/ static final SConcept TestReference$db = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, "Education.structure.TestReference");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink testReference$fLyK = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, 0x4f72901c38f02137L, "testReference");
+    /*package*/ static final SReferenceLink testReference$3p8n = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, 0x4f72901c38f02137L, "testReference");
   }
 }
