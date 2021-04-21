@@ -33,7 +33,7 @@ public class Minesweeper extends JFrame implements ActionListener {
 
         lessons = new ArrayList<>();
         lessons.add(new Lesson("Delaying bachelors work:", "Is a bad idea. But you can do it in the remaining time if you believe in yourself."));
-
+        lessons.add(new Lesson("Once you start:", "You may actually have fun and finish early."));
         showMenu();
     }
 

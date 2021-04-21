@@ -119,78 +119,22 @@ public class Board extends JPanel {
 
             if ((position < allCells)
                     && (field[position] != COVERED_MINE_CELL)) {
+                modifySurroundings(1, true, position);
 
                 int current_col = position % N_COLS;
                 field[position] = COVERED_MINE_CELL;
                 i++;
-
-                if (current_col > 0) {
-                    cell = position - 1 - N_COLS;
-                    if (cell >= 0) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-                    cell = position - 1;
-                    if (cell >= 0) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-
-                    cell = position + N_COLS - 1;
-                    if (cell < allCells) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-                }
-
-                cell = position - N_COLS;
-                if (cell >= 0) {
-                    if (field[cell] != COVERED_MINE_CELL) {
-                        field[cell] += 1;
-                    }
-                }
-
-                cell = position + N_COLS;
-                if (cell < allCells) {
-                    if (field[cell] != COVERED_MINE_CELL) {
-                        field[cell] += 1;
-                    }
-                }
-
-                if (current_col < (N_COLS - 1)) {
-                    cell = position - N_COLS + 1;
-                    if (cell >= 0) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-                    cell = position + N_COLS + 1;
-                    if (cell < allCells) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-                    cell = position + 1;
-                    if (cell < allCells) {
-                        if (field[cell] != COVERED_MINE_CELL) {
-                            field[cell] += 1;
-                        }
-                    }
-                }
             }
         }
     }
 
     private void find_empty_cells(int j) {
-
-        int current_col = j % N_COLS;
-        int cell;
+                                                                        //123
+        int current_col = j % N_COLS;                                   //4x5
+        int cell;                                                       //678
 
         if (current_col > 0) {
-            cell = j - N_COLS - 1;
+            cell = j - N_COLS - 1;                                      //1
             if (cell >= 0) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -200,7 +144,7 @@ public class Board extends JPanel {
                 }
             }
 
-            cell = j - 1;
+            cell = j - 1;                                               //4
             if (cell >= 0) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -210,7 +154,7 @@ public class Board extends JPanel {
                 }
             }
 
-            cell = j + N_COLS - 1;
+            cell = j + N_COLS - 1;                                      //6
             if (cell < allCells) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -221,7 +165,7 @@ public class Board extends JPanel {
             }
         }
 
-        cell = j - N_COLS;
+        cell = j - N_COLS;                                              //2
         if (cell >= 0) {
             if (field[cell] > MINE_CELL) {
                 field[cell] -= COVER_FOR_CELL;
@@ -231,7 +175,7 @@ public class Board extends JPanel {
             }
         }
 
-        cell = j + N_COLS;
+        cell = j + N_COLS;                                              //7
         if (cell < allCells) {
             if (field[cell] > MINE_CELL) {
                 field[cell] -= COVER_FOR_CELL;
@@ -242,7 +186,7 @@ public class Board extends JPanel {
         }
 
         if (current_col < (N_COLS - 1)) {
-            cell = j - N_COLS + 1;
+            cell = j - N_COLS + 1;                                      //3
             if (cell >= 0) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -252,7 +196,7 @@ public class Board extends JPanel {
                 }
             }
 
-            cell = j + N_COLS + 1;
+            cell = j + N_COLS + 1;                                      //8
             if (cell < allCells) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -262,7 +206,7 @@ public class Board extends JPanel {
                 }
             }
 
-            cell = j + 1;
+            cell = j + 1;                                               //5
             if (cell < allCells) {
                 if (field[cell] > MINE_CELL) {
                     field[cell] -= COVER_FOR_CELL;
@@ -418,10 +362,10 @@ public class Board extends JPanel {
 
                         // Clicked on a special cell:
                         if (lessonWindow == null) {
-                            displayFoundLesson(lessons.get(0));
+                            lessonWindow = displayFoundLesson(lessons.get(0));
                         } else {
-                            if (lessonWindow.isVisible()) lessonWindow.setContentPane(lessons.get(1).createLessonPanel());
-                            else displayFoundLesson(lessons.get(1));
+                            lessonWindow.setContentPane(lessons.get(1).createLessonPanel());
+                            if (!lessonWindow.isVisible()) lessonWindow.setVisible(true);
                         }
                     }
                 }
@@ -492,15 +436,28 @@ public class Board extends JPanel {
     }
 
     private void modifySurroundings(int amount, boolean addition, int startPos) {
+        int row0 = -1, rowN = 2, col0 = -1, colN = 2;
+        int startCol = startPos % N_COLS, startRow = startPos / N_COLS;
+
         // Set subtraction:
         if (!addition) amount *= -1;
 
+        // Modify the surrounding square:
+        if (startRow == 0) row0 = 0;
+        if (startRow == N_ROWS - 1) rowN = 1;
+
+        if (startCol == 0) col0 = 0;
+        if (startCol == N_COLS - 1) colN = 1;
+
         // Circle around starting position:
-        for (int i = -1; i < 2; i++)
-            for (int j = -1; j < 2; j++) {
-                int currPos = startPos + j + i * N_COLS;
-                // Modify only if position is in boundaries and not the starting field:
-                if ((( currPos < allCells) || (currPos >= 0)) && currPos != startPos) field[currPos] += amount;
+        for (int row = row0; row < rowN; row++)
+            for (int col = col0; col < colN; col++) {
+                int currPos = startPos + col + row * N_COLS;
+                // Modify only if:
+                if (currPos < allCells && currPos >= 0 &&       // Cell is in bounds,
+                        currPos != startPos &&                  // Position is not the starting position,
+                        field[currPos] != COVERED_MINE_CELL)    // Cell is empty.
+                    field[currPos] += amount;
             }
     }
 
