@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
 
+import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
+
 // Minesweeper board, main Panel of the application window.
 public class Board extends JPanel {
 
@@ -35,30 +37,45 @@ public class Board extends JPanel {
     private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
     private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
 
+    // Minesweeper cells with mines and proximity counts:
     private int[] field;
+    private Image[] img;
+
+    // Special effects:
+    private int[] effect;
+    private Image[] effectImg;
+
+    // Status:
     private boolean inGame;
     private boolean mineExploded;
     private int minesLeft;
-    private Image[] img;
+
+    // Questions:
     private int clickedMinePosition;
     private int questionsAnswered;
     private final int questionsCount;
     private final ArrayList<Minesweeper.Question> questions;
 
+    // Lessons:
+    private final ArrayList<Lesson> lessons;
+    private final Dimension lessonWindowSize = new Dimension(350, 250);
+
     private int allCells;
     private final JLabel statusbar;
     private final JFrame parentWindow;
+    private JFrame lessonWindow;
 
-    public Board(JLabel statusbar, JFrame fFrame, ArrayList<Minesweeper.Question> questions) {
+    public Board(JLabel statusbar, JFrame fFrame, ArrayList<Minesweeper.Question> questions, ArrayList<Lesson> lessons) {
         this.parentWindow = fFrame;
         this.questions = questions;
         this.questionsCount = questions.size();
         this.statusbar = statusbar;
+        this.lessons = lessons;
+
         initBoard();
     }
 
     private void initBoard() {
-
         setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
         img = new Image[NUM_IMAGES];
 
@@ -69,6 +86,7 @@ public class Board extends JPanel {
         }
 
         addMouseListener(new MinesAdapter());
+
         newGame();
     }
 
@@ -84,6 +102,7 @@ public class Board extends JPanel {
 
         allCells = N_ROWS * N_COLS;
         field = new int[allCells];
+        effect = new int[allCells];
 
         for (int i = 0; i < allCells; i++) {
 
@@ -318,6 +337,7 @@ public class Board extends JPanel {
 
             int cCol = x / CELL_SIZE;
             int cRow = y / CELL_SIZE;
+            int cellNo = (cRow * N_COLS) + cCol;
 
             boolean doRepaint = false;
 
@@ -327,10 +347,10 @@ public class Board extends JPanel {
             }
 
             if ((x < N_COLS * CELL_SIZE) && (y < N_ROWS * CELL_SIZE)) {
-
+                // Marking action on right click:
                 if (e.getButton() == MouseEvent.BUTTON3) {
 
-                    if (field[(cRow * N_COLS) + cCol] > MINE_CELL) {
+                    if (field[cellNo] > MINE_CELL) {
 
                         doRepaint = true;
 
@@ -353,21 +373,24 @@ public class Board extends JPanel {
                         }
                     }
 
+                // Uncovering click on left click or middle click:
                 } else {
-
+                    // Pressed on flagged cell:
                     if (field[(cRow * N_COLS) + cCol] > COVERED_MINE_CELL) {
 
                         return;
                     }
 
+                    // Pressed on covered cell
                     if ((field[(cRow * N_COLS) + cCol] > MINE_CELL)
                             && (field[(cRow * N_COLS) + cCol] < MARKED_MINE_CELL)) {
 
                         field[(cRow * N_COLS) + cCol] -= COVER_FOR_CELL;
                         doRepaint = true;
 
+                        // Clicked on a mine:
                         if (field[(cRow * N_COLS) + cCol] == MINE_CELL) {
-                            //Showing the mine player clicked on, so that it's clear that one is in trouble and needs to answer a question.
+                            //Showing the mine player clicked on
                             clickedMinePosition = (cRow * N_COLS) + cCol;
                             repaint();
                             boolean answeredCorrectly = false;
@@ -388,8 +411,17 @@ public class Board extends JPanel {
 
                         }
 
+                        // Clicked on an empty cell:
                         if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
                             find_empty_cells((cRow * N_COLS) + cCol);
+                        }
+
+                        // Clicked on a special cell:
+                        if (lessonWindow == null) {
+                            displayFoundLesson(lessons.get(0));
+                        } else {
+                            if (lessonWindow.isVisible()) lessonWindow.setContentPane(lessons.get(1).createLessonPanel());
+                            else displayFoundLesson(lessons.get(1));
                         }
                     }
                 }
@@ -445,4 +477,31 @@ public class Board extends JPanel {
                 "Game over",
                 JOptionPane.ERROR_MESSAGE);
     }
+
+    private JFrame displayFoundLesson(Lesson lesson) {
+        JFrame frame = new JFrame("New lesson found");
+        frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        frame.add(lesson.createLessonPanel());
+        frame.setSize(lessonWindowSize);
+
+        Point location = getLocation();
+        location.translate(getWidth(), lessonWindowSize.width);
+        frame.setLocation(location);
+        frame.setVisible(true);
+        return frame;
+    }
+
+    private void modifySurroundings(int amount, boolean addition, int startPos) {
+        // Set subtraction:
+        if (!addition) amount *= -1;
+
+        // Circle around starting position:
+        for (int i = -1; i < 2; i++)
+            for (int j = -1; j < 2; j++) {
+                int currPos = startPos + j + i * N_COLS;
+                // Modify only if position is in boundaries and not the starting field:
+                if ((( currPos < allCells) || (currPos >= 0)) && currPos != startPos) field[currPos] += amount;
+            }
+    }
+
 }

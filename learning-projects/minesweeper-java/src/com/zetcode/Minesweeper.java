@@ -12,6 +12,8 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     private JLabel statusbar;
     public ArrayList<Question> questions;
+    public ArrayList<Lesson> lessons;
+
     JPanel menu, minesweeperBoard;
     final String play = "Play", learn = "Learn", exit = "Exit";
     final int buttonWidth = 100, buttonHeight = 40;
@@ -29,11 +31,16 @@ public class Minesweeper extends JFrame implements ActionListener {
                 "1"
         ));
 
+        lessons = new ArrayList<>();
+        lessons.add(new Lesson("Delaying bachelors work:", "Is a bad idea. But you can do it in the remaining time if you believe in yourself."));
+
         showMenu();
     }
 
     private void showMenu() {
         if (menu == null) createMenu();
+
+        menu.add(lessons.get(0).createLessonPanel());
 
         setContentPane(menu);
         setResizable(false);
@@ -47,7 +54,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     private void createMenu() {
         menu = new JPanel();
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
-        menu.setPreferredSize(new Dimension(200, 200));
+        menu.setPreferredSize(new Dimension(200, 300));
 
         addButton(play, menu);
         addButton(learn, menu);
@@ -86,11 +93,10 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     private void createGame() {
         statusbar = new JLabel("");
-
         minesweeperBoard = new JPanel();
         minesweeperBoard.setLayout(new BorderLayout());
         minesweeperBoard.add(statusbar, BorderLayout.SOUTH);
-        minesweeperBoard.add(new Board(statusbar, this, questions));
+        minesweeperBoard.add(new Board(statusbar, this, questions, lessons));
     }
 
     public void actionPerformed(ActionEvent e) {
