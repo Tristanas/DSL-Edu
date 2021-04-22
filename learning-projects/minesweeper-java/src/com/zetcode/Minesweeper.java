@@ -15,9 +15,19 @@ public class Minesweeper extends JFrame implements ActionListener {
     public ArrayList<Lesson> lessons;
 
     JPanel menu, game;
+
+    // Menu parameters:
+    final int N_BUTTONS = 3;
+    final int BUTTON_WIDTH = 140;
+    final int BUTTON_HEIGHT = 40;
+    final int BUTTON_SPACING = 30;
+    final int TOP_PADDING = 50;
+    final int BOTTOM_PADDING = 50;
+    final int MENU_WIDTH = 400;
+    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
+
     Board minesweeperBoard;
     final String play = "Play", learn = "Learn", exit = "Exit";
-    final int buttonWidth = 100, buttonHeight = 40;
 
     public Minesweeper() {
         questions = new ArrayList<>();
@@ -57,17 +67,16 @@ public class Minesweeper extends JFrame implements ActionListener {
     private void createMenu() {
         menu = new JPanel();
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
-        menu.setPreferredSize(new Dimension(200, 300));
+        menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
 
+        menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
         addButton(play, menu);
         addButton(learn, menu);
         addButton(exit, menu);
+        menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
     }
 
     private void addButton(String text, Container container) {
-        // Add top padding:
-        container.add(Box.createRigidArea(new Dimension(0, 10)));
-
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setActionCommand(text);
@@ -75,12 +84,13 @@ public class Minesweeper extends JFrame implements ActionListener {
 
         // Adding the button to a JPanel with a border layout so that all buttons are stretched to the same size.
         JPanel borderPane = new JPanel(new BorderLayout());
-        borderPane.setBorder(BorderFactory.createEmptyBorder(0, 50, 0, 50));
+        int sidePad = (MENU_WIDTH - BUTTON_WIDTH) / 2;
+        borderPane.setBorder(BorderFactory.createEmptyBorder(0, sidePad, 0, sidePad));
         borderPane.add(button, BorderLayout.CENTER);
         container.add(borderPane);
 
         // Add bottom padding:
-        container.add(Box.createRigidArea(new Dimension(0, 10)));
+        container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
     }
 
     private void showGame() {

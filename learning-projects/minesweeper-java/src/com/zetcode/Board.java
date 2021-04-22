@@ -122,14 +122,14 @@ public class Board extends JPanel {
         questionsAnswered = 0;
         correctFlags = 0;
         minesLeft = N_MINES;
-        statusbar.setText(Integer.toString(minesLeft));
-
         allCells = N_ROWS * N_COLS;
         uncover = allCells;
+        statusbar.setText(Integer.toString(minesLeft));
+
+        // Reset effects and fields:
         effect = new int[allCells];
         field = new int[allCells];
         for (i = 0; i < allCells; i++) {
-
             field[i] = COVER_FOR_CELL;
         }
 
@@ -213,10 +213,8 @@ public class Board extends JPanel {
                     cell = effect[position];
                     g.drawImage(effectImg[cell], (j * CELL_SIZE),
                             (i * CELL_SIZE), this);
-                } else {
-                    g.drawImage(img[cell], (j * CELL_SIZE),
+                } else g.drawImage(img[cell], (j * CELL_SIZE),
                             (i * CELL_SIZE), this);
-                }
             }
         }
     }
@@ -295,8 +293,7 @@ public class Board extends JPanel {
                         }
 
                         // Clicked on an empty cell:
-                        if (field[cellNo] == EMPTY_CELL)
-                            findEmptyCells(cellNo);
+                        if (field[cellNo] == EMPTY_CELL) findEmptyCells(cellNo);
                     }
                 }
 

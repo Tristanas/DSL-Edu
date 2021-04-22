@@ -36,8 +36,6 @@ public class Lesson{
         // Edit the look of the lesson title here:
         font = new Font(Font.SANS_SERIF, Font.BOLD, titleFontSize);
         titleLable.setFont(font);
-//        border = BorderFactory.createDashedBorder(Color.black);
-//        titleLable.setBorder(border);
         panel.add(titleLable, BorderLayout.NORTH);
 
         JMultilineLabel textArea = new JMultilineLabel(text);
