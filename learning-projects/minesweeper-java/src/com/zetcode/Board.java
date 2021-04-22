@@ -161,94 +161,21 @@ public class Board extends JPanel {
     }
 
     private void find_empty_cells(int j) {
-                                                                        //123
-        int current_col = j % N_COLS;                                   //4x5
-        int cell;                                                       //678
+        int[] square = initSurroundingsRect(j);
+        int currPos;
 
-        if (current_col > 0) {
-            cell = j - N_COLS - 1;                                      //1
-            if (cell >= 0) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
+        for (int row = square[0]; row < square[2]; row++)
+            for (int col = square[1]; col < square[3]; col++) {
+                currPos = j + col + row * N_COLS;
+                if (currPos >= 0) {
+                    if (field[currPos] > MINE_CELL) {
+                        field[currPos] -= COVER_FOR_CELL;
+                        if (field[currPos] == EMPTY_CELL) {
+                            find_empty_cells(currPos);
+                        }
                     }
                 }
             }
-
-            cell = j - 1;                                               //4
-            if (cell >= 0) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
-                    }
-                }
-            }
-
-            cell = j + N_COLS - 1;                                      //6
-            if (cell < allCells) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
-                    }
-                }
-            }
-        }
-
-        cell = j - N_COLS;                                              //2
-        if (cell >= 0) {
-            if (field[cell] > MINE_CELL) {
-                field[cell] -= COVER_FOR_CELL;
-                if (field[cell] == EMPTY_CELL) {
-                    find_empty_cells(cell);
-                }
-            }
-        }
-
-        cell = j + N_COLS;                                              //7
-        if (cell < allCells) {
-            if (field[cell] > MINE_CELL) {
-                field[cell] -= COVER_FOR_CELL;
-                if (field[cell] == EMPTY_CELL) {
-                    find_empty_cells(cell);
-                }
-            }
-        }
-
-        if (current_col < (N_COLS - 1)) {
-            cell = j - N_COLS + 1;                                      //3
-            if (cell >= 0) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
-                    }
-                }
-            }
-
-            cell = j + N_COLS + 1;                                      //8
-            if (cell < allCells) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
-                    }
-                }
-            }
-
-            cell = j + 1;                                               //5
-            if (cell < allCells) {
-                if (field[cell] > MINE_CELL) {
-                    field[cell] -= COVER_FOR_CELL;
-                    if (field[cell] == EMPTY_CELL) {
-                        find_empty_cells(cell);
-                    }
-                }
-            }
-        }
-
     }
 
     @Override
@@ -506,8 +433,7 @@ public class Board extends JPanel {
         if (!addition) amount *= -1;
 
         // Circle around starting position:
-        int[] square = {-1, -1, 2, 2};
-        adjustSquareForPosition(square, startPos);
+        int[] square = initSurroundingsRect( startPos);
         for (int row = square[0]; row < square[2]; row++)
             for (int col = square[1]; col < square[3]; col++) {
                 int currPos = startPos + col + row * N_COLS;
@@ -520,20 +446,19 @@ public class Board extends JPanel {
     }
 
     /*
-     Adjust the square size in case its center is near the board's border.
+        Creates a rectangle within which search or field modification can occur.
         square[0] and [1] - row and col of the top left corner.
         square[2] and [3] - bottom left corner
     */
-    private void adjustSquareForPosition(int[] square, int position)
+    private int[] initSurroundingsRect(int position)
     {
+        int[] square = {-1, -1, 2, 2};
         int col = position % N_COLS, row = position / N_COLS;
-
-        // Modify the surrounding square:
         if (row == 0) square[0] = 0;
         if (row == N_ROWS - 1) square[2] = 1;
-
         if (col == 0) square[1] = 0;
         if (col == N_COLS - 1) square[3] = 1;
+        return square;
     }
 
 }
