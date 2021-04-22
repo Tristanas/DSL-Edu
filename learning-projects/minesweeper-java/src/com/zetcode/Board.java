@@ -34,12 +34,13 @@ public class Board extends JPanel {
     private final int DRAW_WRONG_MARK = 12;
 
     // Constants for effects. Effect image naming: 'Sx.png', where x is the int value of the defining constant.
+    private final int N_EFFECTS = 4;
+    private final int NO_EFFECT_CELL = 0;   // In case of this effect the default cell is drawn.
     private final int LESSON_CELL = 1;
     private final int HP_CELL = 2;
     private final int REVEAL_CELL = 3;
 
     private final int N_MINES = 5;         // Count of mines on the board,
-    private final int N_EFFECTS = 4;        // Count of special effects (HP, cell reveals),
     private final int N_LESSONS = 10;       // Count of lessons.
     private final int N_ROWS = 16;          // Board dimensions.
     private final int N_COLS = 16;
@@ -61,6 +62,7 @@ public class Board extends JPanel {
     private int minesLeft;
     private int correctFlags;
     private int uncover;
+    private int allCells;
 
     // Questions:
     private int clickedMinePosition;
@@ -73,7 +75,7 @@ public class Board extends JPanel {
     private final Dimension lessonWindowSize = new Dimension(350, 250);
     private int lessonsFound;
 
-    private int allCells;
+    // UI:
     private final JLabel statusbar;
     private final JFrame parentWindow;
     private JFrame lessonWindow;
@@ -94,19 +96,16 @@ public class Board extends JPanel {
         effectImg = new Image[NUM_EFFECTS + 1];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
-
             var path = "src/resources/" + i + ".png";
             img[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
         }
 
         for (int i = 1; i <= NUM_EFFECTS; i++) {
-
             var path = "src/resources/S" + i + ".png";
             effectImg[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
         }
 
         addMouseListener(new MinesAdapter());
-
         newGame();
     }
 
@@ -137,14 +136,10 @@ public class Board extends JPanel {
         // Place mines:
         i = 0;
         while (i < N_MINES) {
-
             int position = (int) (allCells * random.nextDouble());
-
             if ((position < allCells)
                     && (field[position] != COVERED_MINE_CELL)) {
                 modifySurroundings(1, true, position);
-
-                int current_col = position % N_COLS;
                 field[position] = COVERED_MINE_CELL;
                 i++;
             }
@@ -154,10 +149,7 @@ public class Board extends JPanel {
         i = 0;
         while (i < N_LESSONS) {
             int position = (int) (allCells * random.nextDouble());
-
-            if ((position < allCells)
-                    && (field[position] != COVERED_MINE_CELL)) {
-
+            if (position < allCells  &&  field[position] != COVERED_MINE_CELL) {
                 effect[position] = LESSON_CELL;
                 i++;
             }
@@ -187,24 +179,17 @@ public class Board extends JPanel {
             }
     }
 
+    // Draws the minesweeper board: uncovered empty cells or with numbers, effects, covered cells and flags.
+    // Mines are only drawn when game is over. A single mine is drawn during a test question.
     @Override
     public void paintComponent(Graphics g) {
-        boolean mineDrawn = false;
-
-        // Draw board:
         for (int i = 0; i < N_ROWS; i++) {
-
             for (int j = 0; j < N_COLS; j++) {
                 int position = (i * N_COLS) + j;
                 int cell = field[position];
 
-                if (inGame && mineExploded && cell == MINE_CELL) {
-                    // This code is reached only when a mine was clicked and inGame was not set to false.
-                    // If the player has lost all lives, answered a question incorrectly or has no more questions, then it's game over.
-                    mineDrawn = true;
-                }
-
                 if (!inGame) {
+                    // Reveal mines if game is lost:
                     if (cell == COVERED_MINE_CELL) {
                         cell = DRAW_MINE;
                     } else if (cell == MARKED_MINE_CELL) {
@@ -232,11 +217,6 @@ public class Board extends JPanel {
                     g.drawImage(img[cell], (j * CELL_SIZE),
                             (i * CELL_SIZE), this);
                 }
-
-                if(mineDrawn) {
-                    inGame = false;
-                    handleGameOver(false);
-                }
             }
         }
     }
@@ -263,24 +243,21 @@ public class Board extends JPanel {
                 if (e.getButton() == MouseEvent.BUTTON3) {
                     if (field[cellNo] > MINE_CELL) {
                         doRepaint = true;
-                        if (field[(cRow * N_COLS) + cCol] <= COVERED_MINE_CELL) {
+                        if (field[cellNo] <= COVERED_MINE_CELL) {
                             if (minesLeft > 0) flagCell(cellNo, true);
                             else statusbar.setText("No marks left");
-                        } else {
-                            flagCell(cellNo, false);
-                        }
+                        } else flagCell(cellNo, false);
                     }
 
                 // Uncovering click on left click or middle click:
                 } else {
                     // Pressed on a flagged cell:
-                    if (field[(cRow * N_COLS) + cCol] > COVERED_MINE_CELL) {
+                    if (field[cellNo] > COVERED_MINE_CELL)
                         return;
-                    }
 
                     // Clicked on an uncovered cell with an effect:
                     if (field[cellNo] < COVER_FOR_CELL && effect[cellNo] > 0) {
-                        switch (effect[(cRow * N_COLS) + cCol]) {
+                        switch (effect[cellNo]) {
                             case LESSON_CELL:
                                 manageLessonWindow(lessons.get(lessonsFound));
                                 lessonsFound++;
@@ -297,58 +274,37 @@ public class Board extends JPanel {
                         doRepaint = true;
                     }
 
-
                     // Pressed on covered cell
-                    if ((field[(cRow * N_COLS) + cCol] > MINE_CELL)
-                            && (field[(cRow * N_COLS) + cCol] < MARKED_MINE_CELL)) {
-
-                        field[(cRow * N_COLS) + cCol] -= COVER_FOR_CELL;
+                    if ((field[cellNo] > MINE_CELL)
+                            && (field[cellNo] < MARKED_MINE_CELL)) {
+                        field[cellNo] -= COVER_FOR_CELL;
                         uncover--;
                         doRepaint = true;
 
                         // Clicked on a mine:
-                        if (field[(cRow * N_COLS) + cCol] == MINE_CELL) {
+                        if (field[cellNo] == MINE_CELL) {
                             //Showing the mine player clicked on
-                            clickedMinePosition = (cRow * N_COLS) + cCol;
+                            clickedMinePosition = cellNo;
                             repaint();
-                            boolean answeredCorrectly = false;
                             if (questionsAnswered < questionsCount) {
-                                answeredCorrectly = askQuestion(questions.get(questionsAnswered));
-                                if (!answeredCorrectly) {
-                                    // Answered incorrectly:
-                                    handleIncorrectAnswer();
-                                }
-                                else {
-                                    handleCorrectAnswer();
-                                }
+                                boolean answeredCorrectly = askQuestion(questions.get(questionsAnswered));
+                                if (answeredCorrectly) handleCorrectAnswer();
+                                else handleIncorrectAnswer();
                             }
-                            else {
-                                outOfQuestions();
-                            }
-
-
+                            else outOfQuestions();
                         }
 
                         // Clicked on an empty cell:
-                        if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
-                            findEmptyCells((cRow * N_COLS) + cCol);
-                        }
+                        if (field[cellNo] == EMPTY_CELL)
+                            findEmptyCells(cellNo);
                     }
                 }
 
-                if (doRepaint) {
-                    repaint();
-                }
+                if (doRepaint) repaint();
 
-                // If mine exploded, handle game over:
-                if (!inGame && mineExploded) {
-                    handleGameOver(false);
-                }
-
-                // If win condition is satisfied handle victory:
-                if (isGameWon()) {
-                    handleGameOver(true);
-                }
+                // Manage win-loss conditions:
+                if (!inGame && mineExploded) handleGameOver(false);
+                if (isGameWon()) handleGameOver(true);
             }
         }
     }
@@ -429,7 +385,6 @@ public class Board extends JPanel {
         frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
-
         Point location = parentWindow.getLocation();
         location.translate(-lessonWindowSize.width, 0);
         frame.setLocation(location);
@@ -501,6 +456,5 @@ public class Board extends JPanel {
                 noIncorrectFlags = (incorrectFlags == 0);
         return onlyMinesCovered && noIncorrectFlags;
     }
-
 }
 
