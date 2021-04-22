@@ -3,6 +3,7 @@ package com.zetcode;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Array;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -17,7 +18,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     JPanel menu, game;
 
     // Menu parameters:
-    final int N_BUTTONS = 3;
+    final int N_BUTTONS = 4;
     final int BUTTON_WIDTH = 140;
     final int BUTTON_HEIGHT = 40;
     final int BUTTON_SPACING = 30;
@@ -26,8 +27,13 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int MENU_WIDTH = 400;
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
+    // Button text:
+    final String PLAY = "Play";
+    final String TEST = "Take test";
+    final String LESSONS = "Check lessons";
+    final String EXIT = "Exit";
+
     Board minesweeperBoard;
-    final String play = "Play", learn = "Learn", exit = "Exit";
 
     public Minesweeper() {
         questions = new ArrayList<>();
@@ -70,9 +76,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
 
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(play, menu);
-        addButton(learn, menu);
-        addButton(exit, menu);
+        addButton(PLAY, menu);
+        addButton(TEST, menu);
+        addButton(LESSONS, menu);
+        addButton(EXIT, menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
     }
 
@@ -116,13 +123,16 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
-            case play:
+            case PLAY:
                 showGame();
                 break;
-            case learn:
+            case TEST:
+                JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
+                break;
+            case LESSONS:
                 JOptionPane.showMessageDialog(this, "This will show a page with lessons later.");
                 break;
-            case exit:
+            case EXIT:
                 System.out.println("Application exiting");
                 System.exit(0);
         }
