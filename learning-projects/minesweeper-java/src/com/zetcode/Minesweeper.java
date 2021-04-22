@@ -14,7 +14,8 @@ public class Minesweeper extends JFrame implements ActionListener {
     public ArrayList<Question> questions;
     public ArrayList<Lesson> lessons;
 
-    JPanel menu, minesweeperBoard;
+    JPanel menu, game;
+    Board minesweeperBoard;
     final String play = "Play", learn = "Learn", exit = "Exit";
     final int buttonWidth = 100, buttonHeight = 40;
 
@@ -83,8 +84,9 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     private void showGame() {
-        if (minesweeperBoard == null) createGame();
-        setContentPane(minesweeperBoard);
+        if (game == null) createGame();
+        else minesweeperBoard.newGame();
+        setContentPane(game);
         setResizable(false);
         pack();
 
@@ -95,10 +97,11 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     private void createGame() {
         statusbar = new JLabel("");
-        minesweeperBoard = new JPanel();
-        minesweeperBoard.setLayout(new BorderLayout());
-        minesweeperBoard.add(statusbar, BorderLayout.SOUTH);
-        minesweeperBoard.add(new Board(statusbar, this, questions, lessons));
+        game = new JPanel();
+        game.setLayout(new BorderLayout());
+        game.add(statusbar, BorderLayout.SOUTH);
+        minesweeperBoard = new Board(statusbar, this, questions, lessons);
+        game.add(minesweeperBoard);
     }
 
     public void actionPerformed(ActionEvent e) {

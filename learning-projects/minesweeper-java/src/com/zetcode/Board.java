@@ -108,7 +108,7 @@ public class Board extends JPanel {
         newGame();
     }
 
-    private void newGame() {
+    public void newGame() {
 
         int cell;
 
@@ -235,6 +235,7 @@ public class Board extends JPanel {
         if (uncover == 0 && inGame) {
             inGame = false;
             statusbar.setText("Game won");
+            handleGameOver(false);
         } else if (!inGame) {
             statusbar.setText("Game lost");
         }
@@ -355,7 +356,7 @@ public class Board extends JPanel {
 
                 // If mine exploded, handle game over:
                 if (!inGame && mineExploded) {
-                    handleGameOver();
+                    handleGameOver(false);
                 }
             }
         }
@@ -428,6 +429,12 @@ public class Board extends JPanel {
         return frame;
     }
 
+    /**
+     * Adds or removes an amount from all the surrounding cells. Respects game board borders.
+     * @param amount - how much the surroundings are modified,
+     * @param addition - true to add, false to subtract,
+     * @param startPos - the position in the field array of a given cell. The middle of the affected rectangle.
+     */
     private void modifySurroundings(int amount, boolean addition, int startPos) {
         // Set subtraction:
         if (!addition) amount *= -1;
@@ -447,8 +454,8 @@ public class Board extends JPanel {
 
     /**
         Creates a rectangle within which search or field modification can occur.
-        square[0] and [1] - row and col of the top left corner.
-        square[2] and [3] - bottom left corner
+        @return coordinates in respect of the square center: square[0] and [1] -
+        row and col of the top left corner, square[2] and [3] - bottom right corner
     */
     private int[] initSurroundingsRect(int position)
     {
@@ -465,11 +472,12 @@ public class Board extends JPanel {
      * Shows a confirmation message, prompting the player to play again or to return to menu.
      * @return true - replay game, false - go to menu.
      */
-    private void handleGameOver()
+    private void handleGameOver(boolean won)
     {
+        String title = (won == true) ? "Game won" : "Game lost";
         int selection = JOptionPane.showConfirmDialog(parentWindow,
                 "Would you like to play again?",
-                "Game lost",
+                title,
                 JOptionPane.YES_NO_OPTION);
 
         if (selection == JOptionPane.NO_OPTION) {
