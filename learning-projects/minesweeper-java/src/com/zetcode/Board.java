@@ -254,11 +254,6 @@ public class Board extends JPanel {
 
             boolean doRepaint = false;
 
-            if (!inGame && mineExploded) {
-                newGame();
-                repaint();
-            }
-
             System.out.println("Clicked on cell [" + cRow + ", " + cCol + "], " +
                     "value=" + field[cellNo] + ", effect=" + effect[cellNo]);
 
@@ -357,6 +352,11 @@ public class Board extends JPanel {
                 if (doRepaint) {
                     repaint();
                 }
+
+                // If mine exploded, handle game over:
+                if (!inGame && mineExploded) {
+                    handleGameOver();
+                }
             }
         }
     }
@@ -445,7 +445,7 @@ public class Board extends JPanel {
             }
     }
 
-    /*
+    /**
         Creates a rectangle within which search or field modification can occur.
         square[0] and [1] - row and col of the top left corner.
         square[2] and [3] - bottom left corner
@@ -459,6 +459,25 @@ public class Board extends JPanel {
         if (col == 0) square[1] = 0;
         if (col == N_COLS - 1) square[3] = 1;
         return square;
+    }
+
+    /**
+     * Shows a confirmation message, prompting the player to play again or to return to menu.
+     * @return true - replay game, false - go to menu.
+     */
+    private void handleGameOver()
+    {
+        int selection = JOptionPane.showConfirmDialog(parentWindow,
+                "Would you like to play again?",
+                "Game lost",
+                JOptionPane.YES_NO_OPTION);
+
+        if (selection == JOptionPane.NO_OPTION) {
+            ((Minesweeper) parentWindow).showMenu();
+        } else {
+            newGame();
+            repaint();
+        }
     }
 
 }

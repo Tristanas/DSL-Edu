@@ -39,10 +39,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         showMenu();
     }
 
-    private void showMenu() {
+    public void showMenu() {
         if (menu == null) createMenu();
 
-        menu.add(lessons.get(0).createLessonPanel());
+        //menu.add(lessons.get(0).createLessonPanel());
 
         setContentPane(menu);
         setResizable(false);
