@@ -15,9 +15,11 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 public class Board extends JPanel {
 
     private final int NUM_IMAGES = 13;
+    private final int NUM_EFFECTS = 3;
     private final int CELL_SIZE = 30;
     private final int IMAGE_SIZE = 15;
 
+    // Constants for minesweeper cell states:
     private final int COVER_FOR_CELL = 10;
     private final int MARK_FOR_CELL = 10;
     private final int EMPTY_CELL = 0;
@@ -25,13 +27,21 @@ public class Board extends JPanel {
     private final int COVERED_MINE_CELL = MINE_CELL + COVER_FOR_CELL;
     private final int MARKED_MINE_CELL = COVERED_MINE_CELL + MARK_FOR_CELL;
 
+    // Constants for drawing the correct state of the cell:
     private final int DRAW_MINE = 9;
     private final int DRAW_COVER = 10;
     private final int DRAW_MARK = 11;
     private final int DRAW_WRONG_MARK = 12;
 
-    private final int N_MINES = 40;
-    private final int N_ROWS = 16;
+    // Constants for effects. Effect image naming: 'Sx.png', where x is the int value of the defining constant.
+    private final int LESSON_CELL = 1;
+    private final int HP_CELL = 2;
+    private final int REVEAL_CELL = 3;
+
+    private final int N_MINES = 40;         // Count of mines on the board,
+    private final int N_EFFECTS = 4;        // Count of special effects (HP, cell reveals),
+    private final int N_LESSONS = 10;       // Count of lessons.
+    private final int N_ROWS = 16;          // Board dimensions.
     private final int N_COLS = 16;
 
     private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
@@ -59,6 +69,7 @@ public class Board extends JPanel {
     // Lessons:
     private final ArrayList<Lesson> lessons;
     private final Dimension lessonWindowSize = new Dimension(350, 250);
+    private int lessonsFound;
 
     private int allCells;
     private final JLabel statusbar;
@@ -78,11 +89,18 @@ public class Board extends JPanel {
     private void initBoard() {
         setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
         img = new Image[NUM_IMAGES];
+        effectImg = new Image[NUM_EFFECTS + 1];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
 
             var path = "src/resources/" + i + ".png";
             img[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+        }
+
+        for (int i = 1; i <= NUM_EFFECTS; i++) {
+
+            var path = "src/resources/S" + i + ".png";
+            effectImg[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
         }
 
         addMouseListener(new MinesAdapter());
@@ -113,6 +131,7 @@ public class Board extends JPanel {
 
         int i = 0;
 
+        // Place mines:
         while (i < N_MINES) {
 
             int position = (int) (allCells * random.nextDouble());
@@ -123,6 +142,19 @@ public class Board extends JPanel {
 
                 int current_col = position % N_COLS;
                 field[position] = COVERED_MINE_CELL;
+                i++;
+            }
+        }
+
+        // Place lesson effects:
+        i = 0;
+        while (i < N_LESSONS) {
+            int position = (int) (allCells * random.nextDouble());
+
+            if ((position < allCells)
+                    && (field[position] != COVERED_MINE_CELL)) {
+
+                effect[position] = LESSON_CELL;
                 i++;
             }
         }
@@ -224,11 +256,12 @@ public class Board extends JPanel {
 
         int uncover = 0;
 
+        // Draw board:
         for (int i = 0; i < N_ROWS; i++) {
 
             for (int j = 0; j < N_COLS; j++) {
-
-                int cell = field[(i * N_COLS) + j];
+                int position = (i * N_COLS) + j;
+                int cell = field[position];
 
                 if (inGame && mineExploded && cell == MINE_CELL) {
                     // This code is reached only when a mine was clicked and inGame was not set to false.
@@ -258,8 +291,17 @@ public class Board extends JPanel {
                     }
                 }
 
-                g.drawImage(img[cell], (j * CELL_SIZE),
-                        (i * CELL_SIZE), this);
+                // Draw effect:
+                if (effect[position] != 0 && field[position] < COVER_FOR_CELL) {
+                    cell = effect[position];
+                    g.drawImage(effectImg[cell], (j * CELL_SIZE),
+                            (i * CELL_SIZE), this);
+
+                } else {
+                    g.drawImage(img[cell], (j * CELL_SIZE),
+                            (i * CELL_SIZE), this);
+                }
+
             }
         }
 
@@ -290,8 +332,11 @@ public class Board extends JPanel {
                 repaint();
             }
 
+            System.out.println("Clicked on cell [" + cRow + ", " + cCol + "], " +
+                    "value=" + field[cellNo] + ", effect=" + effect[cellNo]);
+
             if ((x < N_COLS * CELL_SIZE) && (y < N_ROWS * CELL_SIZE)) {
-                // Marking action on right click:
+                // Marking cell with right click:
                 if (e.getButton() == MouseEvent.BUTTON3) {
 
                     if (field[cellNo] > MINE_CELL) {
@@ -324,6 +369,26 @@ public class Board extends JPanel {
 
                         return;
                     }
+
+                    // Clicked on an uncovered cell with an effect:
+                    if (field[cellNo] < COVER_FOR_CELL && effect[cellNo] > 0) {
+                        switch (effect[(cRow * N_COLS) + cCol]) {
+                            case LESSON_CELL:
+                                manageLessonWindow(lessons.get(lessonsFound));
+                                lessonsFound++;
+                                break;
+                            case HP_CELL:
+                                // ADD HP
+                                break;
+                            case REVEAL_CELL:
+                                // modifySurroundings(COVER_FOR_CELL, false, cellNo);
+                                break;
+                        }
+                        // Remove used-up effect:
+                        effect[cellNo] = 0;
+                        doRepaint = true;
+                    }
+
 
                     // Pressed on covered cell
                     if ((field[(cRow * N_COLS) + cCol] > MINE_CELL)
@@ -358,14 +423,6 @@ public class Board extends JPanel {
                         // Clicked on an empty cell:
                         if (field[(cRow * N_COLS) + cCol] == EMPTY_CELL) {
                             find_empty_cells((cRow * N_COLS) + cCol);
-                        }
-
-                        // Clicked on a special cell:
-                        if (lessonWindow == null) {
-                            lessonWindow = displayFoundLesson(lessons.get(0));
-                        } else {
-                            lessonWindow.setContentPane(lessons.get(1).createLessonPanel());
-                            if (!lessonWindow.isVisible()) lessonWindow.setVisible(true);
                         }
                     }
                 }
@@ -422,36 +479,37 @@ public class Board extends JPanel {
                 JOptionPane.ERROR_MESSAGE);
     }
 
+    private void manageLessonWindow(Lesson newLesson) {
+        if (lessonWindow == null) {
+            lessonWindow = displayFoundLesson(newLesson);
+        } else {
+            lessonWindow.setContentPane(newLesson.createLessonPanel());
+            lessonWindow.setVisible(true);
+        }
+    }
+
     private JFrame displayFoundLesson(Lesson lesson) {
         JFrame frame = new JFrame("New lesson found");
         frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
 
-        Point location = getLocation();
-        location.translate(getWidth(), lessonWindowSize.width);
+        Point location = parentWindow.getLocation();
+        location.translate(-lessonWindowSize.width, 0);
         frame.setLocation(location);
         frame.setVisible(true);
         return frame;
     }
 
     private void modifySurroundings(int amount, boolean addition, int startPos) {
-        int row0 = -1, rowN = 2, col0 = -1, colN = 2;
-        int startCol = startPos % N_COLS, startRow = startPos / N_COLS;
-
         // Set subtraction:
         if (!addition) amount *= -1;
 
-        // Modify the surrounding square:
-        if (startRow == 0) row0 = 0;
-        if (startRow == N_ROWS - 1) rowN = 1;
-
-        if (startCol == 0) col0 = 0;
-        if (startCol == N_COLS - 1) colN = 1;
-
         // Circle around starting position:
-        for (int row = row0; row < rowN; row++)
-            for (int col = col0; col < colN; col++) {
+        int[] square = {-1, -1, 2, 2};
+        adjustSquareForPosition(square, startPos);
+        for (int row = square[0]; row < square[2]; row++)
+            for (int col = square[1]; col < square[3]; col++) {
                 int currPos = startPos + col + row * N_COLS;
                 // Modify only if:
                 if (currPos < allCells && currPos >= 0 &&       // Cell is in bounds,
@@ -459,6 +517,23 @@ public class Board extends JPanel {
                         field[currPos] != COVERED_MINE_CELL)    // Cell is empty.
                     field[currPos] += amount;
             }
+    }
+
+    /*
+     Adjust the square size in case its center is near the board's border.
+        square[0] and [1] - row and col of the top left corner.
+        square[2] and [3] - bottom left corner
+    */
+    private void adjustSquareForPosition(int[] square, int position)
+    {
+        int col = position % N_COLS, row = position / N_COLS;
+
+        // Modify the surrounding square:
+        if (row == 0) square[0] = 0;
+        if (row == N_ROWS - 1) square[2] = 1;
+
+        if (col == 0) square[1] = 0;
+        if (col == N_COLS - 1) square[3] = 1;
     }
 
 }
