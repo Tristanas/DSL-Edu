@@ -11,10 +11,8 @@ import javax.swing.border.Border;
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
 
-    private JLabel statusbar;
     public ArrayList<Question> questions;
     public ArrayList<Lesson> lessons;
-
     JPanel menu, game;
 
     // Menu parameters:
@@ -58,13 +56,9 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     public void showMenu() {
         if (menu == null) createMenu();
-
-        //menu.add(lessons.get(0).createLessonPanel());
-
         setContentPane(menu);
         setResizable(false);
         pack();
-
         setTitle("Minesweeper Menu");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -76,18 +70,19 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
 
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(PLAY, menu);
-        addButton(TEST, menu);
-        addButton(LESSONS, menu);
-        addButton(EXIT, menu);
+        addButton(PLAY, "Play in learning mode", menu);
+        addButton(TEST, "Play an evaluation game",menu);
+        addButton(LESSONS,"View found lessons", menu);
+        addButton(EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
     }
 
-    private void addButton(String text, Container container) {
+    private void addButton(String text, String toolTip, Container container) {
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setActionCommand(text);
         button.addActionListener(this);
+        button.setToolTipText(toolTip);
 
         // Adding the button to a JPanel with a border layout so that all buttons are stretched to the same size.
         JPanel borderPane = new JPanel(new BorderLayout());
@@ -102,7 +97,7 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     private void showGame() {
         if (game == null) createGame();
-        else minesweeperBoard.newGame();
+        else minesweeperBoard.newGame(true, true);
         setContentPane(game);
         setResizable(false);
         pack();
@@ -113,12 +108,11 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     private void createGame() {
-        statusbar = new JLabel("");
         game = new JPanel();
         game.setLayout(new BorderLayout());
-        game.add(statusbar, BorderLayout.SOUTH);
-        minesweeperBoard = new Board(statusbar, this, questions, lessons);
+        minesweeperBoard = new Board(this, questions, lessons);
         game.add(minesweeperBoard);
+        game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }
 
     public void actionPerformed(ActionEvent e) {
