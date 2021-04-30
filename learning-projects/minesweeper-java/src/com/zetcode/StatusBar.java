@@ -12,7 +12,7 @@ import java.util.Objects;
 public class StatusBar extends JPanel implements ActionListener {
     // Constants:
     final int LABELS_COUNT = 2; // Labels with images
-    final int IMAGES_COUNT = 3;
+    final int IMAGES_COUNT = 4;
     final int BAR_HEIGHT = 50;
     final int ICON_SIZE = 30;
     final int VERTICAL_PADDING = (BAR_HEIGHT - ICON_SIZE) / 2;
@@ -25,8 +25,9 @@ public class StatusBar extends JPanel implements ActionListener {
     Board board;
     JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LIVES,
     ImageIcon[] images = new ImageIcon[IMAGES_COUNT];
-    String[] iconNames = {"flag.png", "hp.png", "reveal.png"};
+    String[] iconNames = {"flag.png", "hp.png", "reveal.png", "question.png"};
     JLabel scoreLabel;
+    JLabel questionsLabel;
     JButton revealBtn;
 
     public StatusBar(Board board) {
@@ -38,8 +39,6 @@ public class StatusBar extends JPanel implements ActionListener {
         setBorder(emptyBorder);
         emptyBorder = BorderFactory.createEmptyBorder(0,LABEL_SPACING,0,0);
 
-        JPanel firstRow = new JPanel();
-
         // Get images for labels and buttons:
         for (int i = 0; i < IMAGES_COUNT; i++) {
             var path = "src/resources/" + iconNames[i];
@@ -47,12 +46,27 @@ public class StatusBar extends JPanel implements ActionListener {
             images[i] = new ImageIcon(img);
         }
 
+        // First row:
         // Add effect labels:
         for (int i = 0; i < LABELS_COUNT; i++) {
             labels[i] = new JLabel("X " + i, images[i], JLabel.LEFT);
             labels[i].setBorder(lineBorder);
-            add(encapsulateComponent(labels[i]));
+            addComponent(labels[i]);
         }
+
+        // Questions label:
+        questionsLabel = new JLabel("x0/0", images[3], JLabel.LEFT);
+        questionsLabel.setBorder(lineBorder);
+        addComponent(questionsLabel);
+
+        // Second row:
+        // Add score label:
+        scoreLabel = new JLabel("Score: 0");
+        scoreLabel.setBorder(emptyBorder);
+        addComponent(scoreLabel);
+
+        // Add empty spot between two labels;
+        add(new JLabel(""));
 
         // Add reveal button:
         revealBtn = new JButton(REVEAL, images[2]);
@@ -60,12 +74,7 @@ public class StatusBar extends JPanel implements ActionListener {
         revealBtn.addActionListener(this);
         revealBtn.setToolTipText("Click to consume a 'Reveal' charge. You can safely click a cell and its surroundings will be revealed.");
         revealBtn.setBorder(lineBorder);
-        add(encapsulateComponent(revealBtn));
-
-        // Add score label:
-        scoreLabel = new JLabel("Score: 0");
-        scoreLabel.setBorder(emptyBorder);
-        add(scoreLabel);
+        addComponent(revealBtn);
     }
 
     public void update() {
@@ -73,6 +82,10 @@ public class StatusBar extends JPanel implements ActionListener {
         labels[1].setText("x" + board.getLives());
         revealBtn.setText("x" + board.getReveals());
         scoreLabel.setText("Score: " + board.getScore());
+
+        int qCount = board.getQuestionsCount(), qAnswered = board.getQuestionsAnswered();
+
+        questionsLabel.setText(qAnswered + "/" + qCount);
     }
 
     @Override
@@ -82,10 +95,10 @@ public class StatusBar extends JPanel implements ActionListener {
         update();
     }
 
-    public JPanel encapsulateComponent(Component comp)
+    public void addComponent(Component comp)
     {
         JPanel panel = new JPanel();
         panel.add(comp);
-        return panel;
+        add(panel);
     }
 }

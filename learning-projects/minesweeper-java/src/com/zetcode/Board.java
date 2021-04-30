@@ -441,9 +441,9 @@ public class Board extends JPanel {
         frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
-//        Point location = parentWindow.getLocation();
-//        location.translate(-lessonWindowSize.width, 0);
-//        frame.setLocation(location);
+        Point location = parentWindow.getLocation();
+        location.translate(-lessonWindowSize.width, 0);
+        frame.setLocation(location);
         frame.setVisible(true);
         return frame;
     }
@@ -569,6 +569,14 @@ public class Board extends JPanel {
 
     public int getScore() {
         return score;
+    }
+
+    public int getQuestionsCount() {
+        return questionsCount;
+    }
+
+    public int getQuestionsAnswered() {
+        return questionsAnswered;
     }
 }
 
