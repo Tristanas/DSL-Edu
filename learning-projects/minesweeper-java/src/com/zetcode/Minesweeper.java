@@ -3,10 +3,8 @@ package com.zetcode;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Array;
 import java.util.ArrayList;
 import javax.swing.*;
-import javax.swing.border.Border;
 
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
@@ -30,6 +28,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     final String TEST = "Take test";
     final String LESSONS = "Check lessons";
     final String EXIT = "Exit";
+    final String MENU = "Menu";
 
     Board minesweeperBoard;
 
@@ -47,8 +46,12 @@ public class Minesweeper extends JFrame implements ActionListener {
         ));
 
         lessons = new ArrayList<>();
-        lessons.add(new Lesson("Delaying bachelors work:", "Is a bad idea. But you can do it in the remaining time if you believe in yourself."));
-        lessons.add(new Lesson("Once you start:", "You may actually have fun and finish early."));
+        lessons.add(new Lesson("Math 1: average",
+                "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection."
+                    + " For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+        lessons.add(new Lesson("Math 1: median", "The median is the middle value in the list of numbers." +
+                " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
+                "so you may have to rewrite your list before you can find the median."));
         for (int i = 2; i < 20; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
 
         showMenu();
@@ -115,6 +118,13 @@ public class Minesweeper extends JFrame implements ActionListener {
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }
 
+    private void showLearningPortfolio() {
+        LearningPortfolio portfolio = new LearningPortfolio(lessons, this);
+        setTitle("Learning Portfolio");
+        setContentPane(portfolio);
+        pack();
+    }
+
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
             case PLAY:
@@ -124,11 +134,15 @@ public class Minesweeper extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
                 break;
             case LESSONS:
-                JOptionPane.showMessageDialog(this, "This will show a page with lessons later.");
+                showLearningPortfolio();
                 break;
             case EXIT:
                 System.out.println("Application exiting");
                 System.exit(0);
+                break;
+            case MENU:
+                showMenu();
+                break;
         }
         if ("play".equals(e.getActionCommand())) {
             showGame();

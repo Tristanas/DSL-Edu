@@ -4,10 +4,9 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-public class Lesson{
+public class Lesson {
     String title;
     String text;
-    String imagePath; // Image, if set, is displayed in the left side of the panel.
 
     Boolean unlocked;
     int lessonHeight;
@@ -16,7 +15,7 @@ public class Lesson{
     final int titleFontSize = 16,
         textFontSize = 13,
         lessonWidth = 200, // This might need to come from parent window or during initialization.
-        bottomPadding = 60;
+        bottomPadding = 0;
 
 
     public Lesson(String title, String text) {

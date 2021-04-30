@@ -41,7 +41,7 @@ public class Board extends JPanel {
 
     // Amounts of objects:
     private final int N_MINES = 10;         // Count of mines on the board,
-    private final int N_LESSONS = 2;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
+    private final int N_LESSONS = 3;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
     private final int N_EFFECTS = 1;       // Count of lessons.
     private final int N_ROWS = 8;          // Board dimensions.
     private final int N_COLS = 8;
@@ -69,6 +69,7 @@ public class Board extends JPanel {
     private int lives;
     private int reveals;
     private int lessonsFound;
+    private int score;
 
 
     // Questions:
@@ -410,6 +411,7 @@ public class Board extends JPanel {
             lessonWindow = displayFoundLesson(newLesson);
         } else {
             lessonWindow.setContentPane(newLesson.createLessonPanel());
+            //lessonWindow.pack();
             lessonWindow.setVisible(true);
         }
     }
