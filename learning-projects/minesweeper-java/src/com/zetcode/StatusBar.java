@@ -16,8 +16,9 @@ public class StatusBar extends JPanel {
     final int LABEL_SPACING = 5;
 
     Board board;
-    JLabel[] labels = new JLabel[LABELS_COUNT];        // FLAGS, LESSONS, LIVES, REVEALS,
+    JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LESSONS, LIVES, REVEALS,
     String[] iconNames = {"flag.png", "lesson.png", "hp.png", "reveal.png"};
+    JLabel scoreLabel;
 
     public StatusBar(Board board) {
         this.board = board;
@@ -27,6 +28,13 @@ public class StatusBar extends JPanel {
                 lineBorder = BorderFactory.createLineBorder(Color.BLACK);
         setBorder(emptyBorder);
         emptyBorder = BorderFactory.createEmptyBorder(0,LABEL_SPACING,0,0);
+
+        // Add score label:
+        scoreLabel = new JLabel("Score: 0");
+        scoreLabel.setBorder(emptyBorder);
+        add(scoreLabel);
+
+        // Add effect labels:
         for (int i = 0; i < LABELS_COUNT; i++) {
             var path = "src/resources/" + iconNames[i];
             Image img = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), ICON_SIZE, ICON_SIZE);
@@ -38,7 +46,6 @@ public class StatusBar extends JPanel {
 
         // Add a tool tip text to the "Reveal" effect:
         labels[3].setToolTipText("Press 'R' and then click on a covered cell to safely uncover it and its surroundings. Mines will be flagged.");
-
         // Hide lessons counter:
         remove(labels[1]);
 
@@ -49,6 +56,7 @@ public class StatusBar extends JPanel {
         labels[1].setText("x" + board.getLessonsFound());
         labels[2].setText("x" + board.getLives());
         labels[3].setText("x" + board.getReveals());
+        scoreLabel.setText("Score: " + board.getScore());
     }
 
 }

@@ -14,7 +14,7 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 // Minesweeper board, main Panel of the application window.
 public class Board extends JPanel {
 
-    private final int NUM_IMAGES = 13;
+    private final int NUM_IMAGES = 14;
     private final int NUM_EFFECTS = 3;
     private final int CELL_SIZE = 30;
     private final int IMAGE_SIZE = 15;
@@ -26,18 +26,24 @@ public class Board extends JPanel {
     private final int MINE_CELL = 9;
     private final int COVERED_MINE_CELL = MINE_CELL + COVER_FOR_CELL;
     private final int MARKED_MINE_CELL = COVERED_MINE_CELL + MARK_FOR_CELL;
+    private final int CERTAIN_MINE_MARK = MARKED_MINE_CELL + MARK_FOR_CELL;
 
     // Constants for drawing the correct state of the cell:
     private final int DRAW_MINE = 9;
     private final int DRAW_COVER = 10;
     private final int DRAW_MARK = 11;
     private final int DRAW_WRONG_MARK = 12;
+    private final int DRAW_CERTAIN_MARK = 13;
 
     // Constants for effects. Effect image naming: 'Sx.png', where x is the int value of the defining constant.
     private final int NO_EFFECT_CELL = 0;   // In case of this effect the default cell is drawn.
     private final int LESSON_CELL = 1;
     private final int HP_CELL = 2;
     private final int REVEAL_CELL = 3;
+
+    // Score:
+    private static final int CELL_UNCOVER_POINTS = 10;
+    private static final int CORRECT_ANSWER_POINTS = 50;
 
     // Amounts of objects:
     private final int N_MINES = 10;         // Count of mines on the board,
@@ -133,6 +139,7 @@ public class Board extends JPanel {
         lives = 2;
         lessonsFound = 0;
         reveals = 0;
+        score = 0;
 
         allCells = N_ROWS * N_COLS;
         uncover = allCells;
@@ -185,7 +192,7 @@ public class Board extends JPanel {
     }
 
     /**
-     * Recursive search to unveil all neighbouring empty cells.
+     * Recursive search to unveil all neighbouring empty cells. Also uncovers non-mine cells.
      * @param j - position of an empty cell.
      */
     private void findEmptyCells(int j) {
@@ -197,8 +204,7 @@ public class Board extends JPanel {
                 currPos = j + col + row * N_COLS;
                 if (currPos >= 0) {
                     if (field[currPos] > MINE_CELL) {
-                        field[currPos] -= COVER_FOR_CELL;
-                        uncover--;
+                        uncoverCell(currPos);
                         if (field[currPos] == EMPTY_CELL) {
                             findEmptyCells(currPos);
                         }
@@ -216,12 +222,14 @@ public class Board extends JPanel {
                 int position = (i * N_COLS) + j;
                 int cell = field[position];
 
+                // Draw game over board:
                 if (!inGame) {
-                    // Reveal mines if game is lost:
                     if (cell == COVERED_MINE_CELL) {
                         cell = DRAW_MINE;
                     } else if (cell == MARKED_MINE_CELL) {
                         cell = DRAW_MARK;
+                    } else if (cell == CERTAIN_MINE_MARK) {
+                        cell = DRAW_CERTAIN_MARK;
                     } else if (cell > COVERED_MINE_CELL) {
                         cell = DRAW_WRONG_MARK;
                     } else if (cell > MINE_CELL) {
@@ -229,7 +237,9 @@ public class Board extends JPanel {
                     }
 
                 } else {
-                    if (cell > COVERED_MINE_CELL) {
+                    if (cell > MARKED_MINE_CELL) { // Mine cell marked by a special effect or correctly answered question:
+                        cell = DRAW_CERTAIN_MARK;
+                    } else if (cell > COVERED_MINE_CELL) {
                         cell = DRAW_MARK;
                     } else if (cell > MINE_CELL) {
                         cell = DRAW_COVER;
@@ -273,8 +283,7 @@ public class Board extends JPanel {
                         doRepaint = true;
                         if (field[cellNo] <= COVERED_MINE_CELL) {
                             if (flagsLeft > 0) flagCell(cellNo, true);
-                            //else flagsLabel.setText("No marks left");
-                        } else flagCell(cellNo, false);
+                        } else if (field[cellNo] < CERTAIN_MINE_MARK) flagCell(cellNo, false);
                     }
 
                 // Uncovering click on left click or middle click:
@@ -306,8 +315,7 @@ public class Board extends JPanel {
                     // Pressed on covered cell
                     if ((field[cellNo] > MINE_CELL)
                             && (field[cellNo] < MARKED_MINE_CELL)) {
-                        field[cellNo] -= COVER_FOR_CELL;
-                        uncover--;
+                        uncoverCell(cellNo);
                         doRepaint = true;
 
                         // Clicked on a mine:
@@ -320,7 +328,12 @@ public class Board extends JPanel {
                                 if (answeredCorrectly) handleCorrectAnswer();
                                 else handleIncorrectAnswer();
                             }
-                            else outOfQuestions();
+                            else lives--;
+
+                            if (lives == 0) {
+                                inGame = false;
+                                mineExploded = true;
+                            }
                         }
 
                         // Clicked on an empty cell:
@@ -356,6 +369,12 @@ public class Board extends JPanel {
         //flagsLabel.setText(msg);
     }
 
+    public void uncoverCell(int cellNo) {
+        field[cellNo] -= COVER_FOR_CELL;
+        uncover--;
+        if (field[cellNo] != MINE_CELL) score += CELL_UNCOVER_POINTS;
+    }
+
     public boolean askQuestion(Minesweeper.Question q)
     {
         // If player closes question window or clicks cancel, selectedOption becomes null.
@@ -380,29 +399,19 @@ public class Board extends JPanel {
                 JOptionPane.INFORMATION_MESSAGE);
         field[clickedMinePosition] += COVER_FOR_CELL;       //Add cover
         flagCell(clickedMinePosition, true);        //Add flag
+        field[clickedMinePosition] = CERTAIN_MINE_MARK;     //Fixating the flag since it is known to mark a mine.
+
         uncover++;                                          //Compensating double cell reveal (on click and on flag)
         questionsAnswered++;
+        score += CORRECT_ANSWER_POINTS;
     }
 
     private void handleIncorrectAnswer() {
-        if (lives > 1) lives--;
-        else {
-            inGame = false;
-            mineExploded = true;
-            statusbar.update(); // Make sure the status bar updates.
-        }
+        lives--;
+        statusbar.update(); // Make sure the status bar updates.
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",
                 "Incorrect answer - you lose a life",
-                JOptionPane.ERROR_MESSAGE);
-    }
-
-    private void outOfQuestions() {
-        inGame = false;
-        mineExploded = true;
-        JOptionPane.showMessageDialog(parentWindow,
-                "Out of questions. \nThe mine exploded.",
-                "Game over",
                 JOptionPane.ERROR_MESSAGE);
     }
 
@@ -515,6 +524,10 @@ public class Board extends JPanel {
 
     public int getLessonsCount() {
         return lessons.size();
+    }
+
+    public int getScore() {
+        return score;
     }
 }
 
