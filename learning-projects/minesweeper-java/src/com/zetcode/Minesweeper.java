@@ -114,7 +114,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         game = new JPanel();
         game.setLayout(new BorderLayout());
         minesweeperBoard = new Board(this, questions, lessons);
-        minesweeperBoard.requestFocusInWindow();
         game.add(minesweeperBoard);
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }

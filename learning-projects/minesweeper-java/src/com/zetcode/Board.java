@@ -50,12 +50,12 @@ public class Board extends JPanel {
     // Amounts of objects:
     private final int N_MINES = 10;         // Count of mines on the board,
     private final int N_LESSONS = 3;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
-    private final int N_EFFECTS = 1;       // Count of lessons.
+    private final int N_EFFECTS = 1;       // Count of effects to place on the board.
     private final int N_ROWS = 8;          // Board dimensions.
     private final int N_COLS = 8;
 
-    private final int BOARD_WIDTH = N_COLS * (CELL_SIZE + 1);
-    private final int BOARD_HEIGHT = N_ROWS * (CELL_SIZE + 1);
+    private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
+    private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
 
     // Minesweeper cells with mines and proximity counts:
     private int[] field;
@@ -222,6 +222,8 @@ public class Board extends JPanel {
     // Mines are only drawn when game is over. A single mine is drawn during a test question.
     @Override
     public void paintComponent(Graphics g) {
+
+
         for (int i = 0; i < N_ROWS; i++) {
             for (int j = 0; j < N_COLS; j++) {
                 int position = (i * N_COLS) + j;
@@ -439,9 +441,9 @@ public class Board extends JPanel {
         frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
-        Point location = parentWindow.getLocation();
-        location.translate(-lessonWindowSize.width, 0);
-        frame.setLocation(location);
+//        Point location = parentWindow.getLocation();
+//        location.translate(-lessonWindowSize.width, 0);
+//        frame.setLocation(location);
         frame.setVisible(true);
         return frame;
     }
@@ -538,7 +540,7 @@ public class Board extends JPanel {
     }
 
     public void enableReveal() {
-        if (reveals > 0) {
+        if (reveals > 0 && !revealEnabled) {
             reveals--;
             revealEnabled = true;
         }

@@ -31,17 +31,14 @@ public class StatusBar extends JPanel implements ActionListener {
 
     public StatusBar(Board board) {
         this.board = board;
-        setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+        setLayout(new GridLayout(0, 3));
 
         Border emptyBorder = BorderFactory.createEmptyBorder(VERTICAL_PADDING,LEFT_PADDING,VERTICAL_PADDING,0),
                 lineBorder = BorderFactory.createLineBorder(Color.BLACK);
         setBorder(emptyBorder);
         emptyBorder = BorderFactory.createEmptyBorder(0,LABEL_SPACING,0,0);
 
-        // Add score label:
-        scoreLabel = new JLabel("Score: 0");
-        scoreLabel.setBorder(emptyBorder);
-        add(scoreLabel);
+        JPanel firstRow = new JPanel();
 
         // Get images for labels and buttons:
         for (int i = 0; i < IMAGES_COUNT; i++) {
@@ -53,8 +50,8 @@ public class StatusBar extends JPanel implements ActionListener {
         // Add effect labels:
         for (int i = 0; i < LABELS_COUNT; i++) {
             labels[i] = new JLabel("X " + i, images[i], JLabel.LEFT);
-            labels[i].setBorder(emptyBorder);
-            add(labels[i]);
+            labels[i].setBorder(lineBorder);
+            add(encapsulateComponent(labels[i]));
         }
 
         // Add reveal button:
@@ -63,7 +60,12 @@ public class StatusBar extends JPanel implements ActionListener {
         revealBtn.addActionListener(this);
         revealBtn.setToolTipText("Click to consume a 'Reveal' charge. You can safely click a cell and its surroundings will be revealed.");
         revealBtn.setBorder(lineBorder);
-        add(revealBtn);
+        add(encapsulateComponent(revealBtn));
+
+        // Add score label:
+        scoreLabel = new JLabel("Score: 0");
+        scoreLabel.setBorder(emptyBorder);
+        add(scoreLabel);
     }
 
     public void update() {
@@ -76,7 +78,14 @@ public class StatusBar extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (Objects.equals(e.getActionCommand(), REVEAL)) board.enableReveal();
-
+        board.repaint();
         update();
+    }
+
+    public JPanel encapsulateComponent(Component comp)
+    {
+        JPanel panel = new JPanel();
+        panel.add(comp);
+        return panel;
     }
 }
