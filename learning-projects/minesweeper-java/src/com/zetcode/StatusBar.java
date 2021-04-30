@@ -5,20 +5,29 @@ import net.java.ImageScaler;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Objects;
 
-public class StatusBar extends JPanel {
+public class StatusBar extends JPanel implements ActionListener {
     // Constants:
-    final int LABELS_COUNT = 4;
+    final int LABELS_COUNT = 2; // Labels with images
+    final int IMAGES_COUNT = 3;
     final int BAR_HEIGHT = 50;
     final int ICON_SIZE = 30;
     final int VERTICAL_PADDING = (BAR_HEIGHT - ICON_SIZE) / 2;
     final int LEFT_PADDING = 10;
     final int LABEL_SPACING = 5;
 
+    // Effect buttons:
+    final String REVEAL = "Reveal";
+
     Board board;
-    JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LESSONS, LIVES, REVEALS,
-    String[] iconNames = {"flag.png", "lesson.png", "hp.png", "reveal.png"};
+    JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LIVES,
+    ImageIcon[] images = new ImageIcon[IMAGES_COUNT];
+    String[] iconNames = {"flag.png", "hp.png", "reveal.png"};
     JLabel scoreLabel;
+    JButton revealBtn;
 
     public StatusBar(Board board) {
         this.board = board;
@@ -34,29 +43,40 @@ public class StatusBar extends JPanel {
         scoreLabel.setBorder(emptyBorder);
         add(scoreLabel);
 
-        // Add effect labels:
-        for (int i = 0; i < LABELS_COUNT; i++) {
+        // Get images for labels and buttons:
+        for (int i = 0; i < IMAGES_COUNT; i++) {
             var path = "src/resources/" + iconNames[i];
             Image img = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), ICON_SIZE, ICON_SIZE);
-            labels[i] = new JLabel("X " + i, new ImageIcon(img), JLabel.LEFT);
-            labels[i].setBorder(emptyBorder);
-            add(labels[i]);
-            //add(Box.createRigidArea(new Dimension(LABEL_SPACING, 0)));
+            images[i] = new ImageIcon(img);
         }
 
-        // Add a tool tip text to the "Reveal" effect:
-        labels[3].setToolTipText("Press 'R' and then click on a covered cell to safely uncover it and its surroundings. Mines will be flagged.");
-        // Hide lessons counter:
-        remove(labels[1]);
+        // Add effect labels:
+        for (int i = 0; i < LABELS_COUNT; i++) {
+            labels[i] = new JLabel("X " + i, images[i], JLabel.LEFT);
+            labels[i].setBorder(emptyBorder);
+            add(labels[i]);
+        }
 
+        // Add reveal button:
+        revealBtn = new JButton(REVEAL, images[2]);
+        revealBtn.setActionCommand(REVEAL);
+        revealBtn.addActionListener(this);
+        revealBtn.setToolTipText("Click to consume a 'Reveal' charge. You can safely click a cell and its surroundings will be revealed.");
+        revealBtn.setBorder(lineBorder);
+        add(revealBtn);
     }
 
     public void update() {
         labels[0].setText("x" + board.getFlagsLeft());
-        labels[1].setText("x" + board.getLessonsFound());
-        labels[2].setText("x" + board.getLives());
-        labels[3].setText("x" + board.getReveals());
+        labels[1].setText("x" + board.getLives());
+        revealBtn.setText("x" + board.getReveals());
         scoreLabel.setText("Score: " + board.getScore());
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (Objects.equals(e.getActionCommand(), REVEAL)) board.enableReveal();
+
+        update();
+    }
 }

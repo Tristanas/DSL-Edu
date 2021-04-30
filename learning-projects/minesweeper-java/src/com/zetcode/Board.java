@@ -3,6 +3,8 @@ package com.zetcode;
 import net.java.ImageScaler;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -52,8 +54,8 @@ public class Board extends JPanel {
     private final int N_ROWS = 8;          // Board dimensions.
     private final int N_COLS = 8;
 
-    private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
-    private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
+    private final int BOARD_WIDTH = N_COLS * (CELL_SIZE + 1);
+    private final int BOARD_HEIGHT = N_ROWS * (CELL_SIZE + 1);
 
     // Minesweeper cells with mines and proximity counts:
     private int[] field;
@@ -69,6 +71,8 @@ public class Board extends JPanel {
     private int correctFlags;
     private int uncover;
     private int allCells;
+    // Effect status:
+    private boolean revealEnabled;
 
     // Counters:
     private int flagsLeft;
@@ -133,12 +137,13 @@ public class Board extends JPanel {
         // Reset state and counters:
         inGame = true;
         mineExploded = false;
+        revealEnabled = false;
         questionsAnswered = 0;
         correctFlags = 0;
         flagsLeft = N_MINES;
         lives = 2;
         lessonsFound = 0;
-        reveals = 0;
+        reveals = 1;
         score = 0;
 
         allCells = N_ROWS * N_COLS;
@@ -272,11 +277,9 @@ public class Board extends JPanel {
             int cellNo = (cRow * N_COLS) + cCol;
 
             boolean doRepaint = false;
+            boolean clickedOnBoard = (x < N_COLS * CELL_SIZE) && (y < N_ROWS * CELL_SIZE);
 
-            /*System.out.println("Clicked on cell [" + cRow + ", " + cCol + "], " +
-                    "value=" + field[cellNo] + ", effect=" + effect[cellNo]);*/
-
-            if ((x < N_COLS * CELL_SIZE) && (y < N_ROWS * CELL_SIZE)) {
+            if (clickedOnBoard) {
                 // Marking cell with right click:
                 if (e.getButton() == MouseEvent.BUTTON3) {
                     if (field[cellNo] > MINE_CELL) {
@@ -304,7 +307,6 @@ public class Board extends JPanel {
                                 break;
                             case REVEAL_CELL:
                                 reveals++;
-                                // modifySurroundings(COVER_FOR_CELL, false, cellNo);
                                 break;
                         }
                         // Remove used-up effect:
@@ -315,24 +317,31 @@ public class Board extends JPanel {
                     // Pressed on covered cell
                     if ((field[cellNo] > MINE_CELL)
                             && (field[cellNo] < MARKED_MINE_CELL)) {
-                        uncoverCell(cellNo);
                         doRepaint = true;
 
-                        // Clicked on a mine:
-                        if (field[cellNo] == MINE_CELL) {
-                            //Showing the mine player clicked on
-                            clickedMinePosition = cellNo;
-                            repaint();
-                            if (questionsAnswered < questionsCount) {
-                                boolean answeredCorrectly = askQuestion(questions.get(questionsAnswered));
-                                if (answeredCorrectly) handleCorrectAnswer();
-                                else handleIncorrectAnswer();
-                            }
-                            else lives--;
+                        if (revealEnabled) {
+                            // Uncovering cell with the "Reveal" effect:
+                            revealEnabled = false;
+                            revealRectangle(cellNo);
+                        } else {
+                            // Regular cell uncovering:
+                            uncoverCell(cellNo);
 
-                            if (lives == 0) {
-                                inGame = false;
-                                mineExploded = true;
+                            if (field[cellNo] == MINE_CELL) {
+                                //Showing the mine player clicked on
+                                clickedMinePosition = cellNo;
+                                repaint();
+                                if (questionsAnswered < questionsCount) {
+                                    boolean answeredCorrectly = askQuestion(questions.get(questionsAnswered));
+                                    if (answeredCorrectly) handleCorrectAnswer();
+                                    else handleIncorrectAnswer();
+                                }
+                                else lives--;
+
+                                if (lives == 0) {
+                                    inGame = false;
+                                    mineExploded = true;
+                                }
                             }
                         }
 
@@ -448,7 +457,7 @@ public class Board extends JPanel {
         if (!addition) amount *= -1;
 
         // Circle around starting position:
-        int[] square = initSurroundingsRect( startPos);
+        int[] square = initSurroundingsRect(startPos);
         for (int row = square[0]; row < square[2]; row++)
             for (int col = square[1]; col < square[3]; col++) {
                 int currPos = startPos + col + row * N_COLS;
@@ -473,6 +482,28 @@ public class Board extends JPanel {
         if (col == 0) square[1] = 0;
         if (col == N_COLS - 1) square[3] = 1;
         return square;
+    }
+
+    private void revealRectangle(int position) {
+        int[] square = initSurroundingsRect(position);
+
+        for (int row = square[0]; row < square[2]; row++)
+            for (int col = square[1]; col < square[3]; col++) {
+                int currPos = position + col + row * N_COLS;
+                safelyReveal(currPos);
+            }
+    }
+
+    private void safelyReveal(int position) {
+        if (field[position] < COVER_FOR_CELL || field[position] == CERTAIN_MINE_MARK) return;
+
+        if (field[position] == COVERED_MINE_CELL) {
+            flagCell(position, true);
+            field[position] = CERTAIN_MINE_MARK;
+        } else uncoverCell(position);
+
+        // If an empty cell is revealed, reveal all connected non-mine cells:
+        if (field[position] == EMPTY_CELL) findEmptyCells(position);
     }
 
     /**
@@ -505,6 +536,14 @@ public class Board extends JPanel {
         else return false;
         //return onlyMinesCovered && noIncorrectFlags;
     }
+
+    public void enableReveal() {
+        if (reveals > 0) {
+            reveals--;
+            revealEnabled = true;
+        }
+    }
+
 
     public int getFlagsLeft() {
         return flagsLeft;
