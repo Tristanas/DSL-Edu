@@ -19,7 +19,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
-    <import index="ze73" ref="r:c2c67b03-4633-4f53-84a7-71eee242c321(common)" />
+    <import index="dm23" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common(runtimetest/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
   </imports>
@@ -814,8 +814,8 @@
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="3EkTMGpeVs8" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="5xSM7FRScrs" role="11_B2D">
-          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
+        <node concept="3uibUv" id="4_$qtmT4ms7" role="11_B2D">
+          <ref role="3uigEE" to="dm23:~Lesson" resolve="Lesson" />
         </node>
       </node>
       <node concept="3Tm6S6" id="3EkTMGpeVsa" role="1B3o_S" />
@@ -849,8 +849,8 @@
     <node concept="312cEg" id="3EkTMGpeVsq" role="jymVt">
       <property role="TrG5h" value="statusbar" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="6j4YlhQA9QQ" role="1tU5fm">
-        <ref role="3uigEE" to="ze73:3EkTMGp6hcH" resolve="StatusBar" />
+      <node concept="3uibUv" id="4_$qtmT4r78" role="1tU5fm">
+        <ref role="3uigEE" to="dm23:~StatusBar" resolve="StatusBar" />
       </node>
       <node concept="3Tm1VV" id="3EkTMGpeVst" role="1B3o_S" />
     </node>
@@ -876,8 +876,8 @@
         <property role="TrG5h" value="lessons" />
         <node concept="3uibUv" id="3EkTMGpfJrO" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-          <node concept="3uibUv" id="5xSM7FRSiB9" role="11_B2D">
-            <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
+          <node concept="3uibUv" id="4_$qtmT4slG" role="11_B2D">
+            <ref role="3uigEE" to="dm23:~Lesson" resolve="Lesson" />
           </node>
         </node>
       </node>
@@ -937,7 +937,7 @@
             </node>
             <node concept="2ShNRf" id="3EkTMGpfR21" role="37vLTx">
               <node concept="1pGfFk" id="3EkTMGpfR2h" role="2ShVmc">
-                <ref role="37wK5l" to="ze73:3EkTMGp6xt_" resolve="StatusBar" />
+                <ref role="37wK5l" to="dm23:~StatusBar.&lt;init&gt;(java.awt.event.ActionListener)" resolve="StatusBar" />
                 <node concept="10QFUN" id="6j4YlhQB6i9" role="37wK5m">
                   <node concept="3uibUv" id="6j4YlhQB6_P" role="10QFUM">
                     <ref role="3uigEE" to="hyam:~ActionListener" resolve="ActionListener" />
@@ -1086,8 +1086,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="7O4yon6jfvu" role="37vLTx">
-                  <ref role="37wK5l" to="ze73:5xSM7FRRYep" resolve="createScaledImage" />
-                  <ref role="1Pybhc" to="ze73:5xSM7FRRYc7" resolve="ImageScaler" />
+                  <ref role="1Pybhc" to="dm23:~ImageScaler" resolve="ImageScaler" />
+                  <ref role="37wK5l" to="dm23:~ImageScaler.createScaledImage(java.awt.Image,int,int)" resolve="createScaledImage" />
                   <node concept="2OqwBi" id="7O4yon6jfvv" role="37wK5m">
                     <node concept="1eOMI4" id="7O4yon6jfvw" role="2Oq$k0">
                       <node concept="2ShNRf" id="7O4yon6jfvx" role="1eOMHV">
@@ -1168,8 +1168,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="5xSM7FRSkTN" role="37vLTx">
-                  <ref role="37wK5l" to="ze73:5xSM7FRRYep" resolve="createScaledImage" />
-                  <ref role="1Pybhc" to="ze73:5xSM7FRRYc7" resolve="ImageScaler" />
+                  <ref role="1Pybhc" to="dm23:~ImageScaler" resolve="ImageScaler" />
+                  <ref role="37wK5l" to="dm23:~ImageScaler.createScaledImage(java.awt.Image,int,int)" resolve="createScaledImage" />
                   <node concept="2OqwBi" id="5xSM7FRSkTO" role="37wK5m">
                     <node concept="1eOMI4" id="5xSM7FRSkTP" role="2Oq$k0">
                       <node concept="2ShNRf" id="5xSM7FRSkTQ" role="1eOMHV">
@@ -1223,7 +1223,7 @@
               <ref role="3cqZAo" node="3EkTMGpeVsq" resolve="statusbar" />
             </node>
             <node concept="liA8E" id="3EkTMGpfQMH" role="2OqNvi">
-              <ref role="37wK5l" to="ze73:3EkTMGp6xwg" resolve="update" />
+              <ref role="37wK5l" to="dm23:~StatusBar.update(common.GameStats)" resolve="update" />
               <node concept="1rXfSq" id="6j4YlhQASqM" role="37wK5m">
                 <ref role="37wK5l" node="6j4YlhQAzeE" resolve="getStats" />
               </node>
@@ -2700,7 +2700,7 @@
               <ref role="3cqZAo" node="3EkTMGpeVsq" resolve="statusbar" />
             </node>
             <node concept="liA8E" id="3EkTMGpfRnu" role="2OqNvi">
-              <ref role="37wK5l" to="ze73:3EkTMGp6xwg" resolve="update" />
+              <ref role="37wK5l" to="dm23:~StatusBar.update(common.GameStats)" resolve="update" />
               <node concept="1rXfSq" id="6j4YlhQAQXC" role="37wK5m">
                 <ref role="37wK5l" node="6j4YlhQAzeE" resolve="getStats" />
               </node>
@@ -3746,9 +3746,9 @@
                 <ref role="37wK5l" to="hyam:~ActionEvent.getActionCommand()" resolve="getActionCommand" />
               </node>
             </node>
-            <node concept="10M0yZ" id="6j4YlhQAKw4" role="37wK5m">
-              <ref role="1PxDUh" to="ze73:6j4YlhQAJ73" resolve="GameConstants" />
-              <ref role="3cqZAo" to="ze73:6j4YlhQAJ91" resolve="REVEAL" />
+            <node concept="10M0yZ" id="4_$qtmT4PpF" role="37wK5m">
+              <ref role="3cqZAo" to="dm23:~GameConstants.REVEAL" resolve="REVEAL" />
+              <ref role="1PxDUh" to="dm23:~GameConstants" resolve="GameConstants" />
             </node>
           </node>
           <node concept="3clFbS" id="6j4YlhQAzex" role="3clFbx">
@@ -3770,7 +3770,7 @@
               <ref role="3cqZAo" node="3EkTMGpeVsq" resolve="statusbar" />
             </node>
             <node concept="liA8E" id="6j4YlhQACCU" role="2OqNvi">
-              <ref role="37wK5l" to="ze73:3EkTMGp6xwg" resolve="update" />
+              <ref role="37wK5l" to="dm23:~StatusBar.update(common.GameStats)" resolve="update" />
               <node concept="1rXfSq" id="6j4YlhQACCV" role="37wK5m">
                 <ref role="37wK5l" node="6j4YlhQAzeE" resolve="getStats" />
               </node>
@@ -3799,12 +3799,12 @@
         <node concept="3cpWs8" id="6j4YlhQAzeH" role="3cqZAp">
           <node concept="3cpWsn" id="6j4YlhQAzeG" role="3cpWs9">
             <property role="TrG5h" value="stats" />
-            <node concept="3uibUv" id="6j4YlhQAzeI" role="1tU5fm">
-              <ref role="3uigEE" to="ze73:6j4YlhQAdfv" resolve="GameStats" />
+            <node concept="3uibUv" id="4_$qtmT4Ji9" role="1tU5fm">
+              <ref role="3uigEE" to="dm23:~GameStats" resolve="GameStats" />
             </node>
             <node concept="2ShNRf" id="6j4YlhQAC$U" role="33vP2m">
-              <node concept="HV5vD" id="6j4YlhQAC$W" role="2ShVmc">
-                <ref role="HV5vE" to="ze73:6j4YlhQAdfv" resolve="GameStats" />
+              <node concept="1pGfFk" id="4_$qtmT4_w2" role="2ShVmc">
+                <ref role="37wK5l" to="dm23:~GameStats.&lt;init&gt;()" resolve="GameStats" />
               </node>
             </node>
           </node>
@@ -3815,8 +3815,8 @@
               <node concept="37vLTw" id="6j4YlhQACC6" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQACC8" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdh9" resolve="flags" />
+              <node concept="2OwXpG" id="4_$qtmT5vIS" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.flags" resolve="flags" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzeN" role="37vLTx">
@@ -3830,8 +3830,8 @@
               <node concept="37vLTw" id="6j4YlhQADbR" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQADbT" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdhd" resolve="lives" />
+              <node concept="2OwXpG" id="4_$qtmT5vPO" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.lives" resolve="lives" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzeR" role="37vLTx">
@@ -3845,8 +3845,8 @@
               <node concept="37vLTw" id="6j4YlhQACVb" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQACVd" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdhl" resolve="score" />
+              <node concept="2OwXpG" id="4_$qtmT5vSf" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.score" resolve="score" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzeV" role="37vLTx">
@@ -3860,8 +3860,8 @@
               <node concept="37vLTw" id="6j4YlhQAC_0" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQAC_2" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdht" resolve="questionsAnswered" />
+              <node concept="2OwXpG" id="4_$qtmT5vUE" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.questionsAnswered" resolve="questionsAnswered" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzeZ" role="37vLTx">
@@ -3875,8 +3875,8 @@
               <node concept="37vLTw" id="6j4YlhQADbu" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQADbw" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdhp" resolve="questionsCount" />
+              <node concept="2OwXpG" id="4_$qtmT5vX5" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.questionsCount" resolve="questionsCount" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzf3" role="37vLTx">
@@ -3890,8 +3890,8 @@
               <node concept="37vLTw" id="6j4YlhQACCv" role="2Oq$k0">
                 <ref role="3cqZAo" node="6j4YlhQAzeG" resolve="stats" />
               </node>
-              <node concept="2OwXpG" id="6j4YlhQACCx" role="2OqNvi">
-                <ref role="2Oxat5" to="ze73:6j4YlhQAdhh" resolve="reveals" />
+              <node concept="2OwXpG" id="4_$qtmT5vZ$" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~GameStats.reveals" resolve="reveals" />
               </node>
             </node>
             <node concept="37vLTw" id="6j4YlhQAzf7" role="37vLTx">
@@ -3906,8 +3906,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6j4YlhQAzfa" role="1B3o_S" />
-      <node concept="3uibUv" id="6j4YlhQAzfb" role="3clF45">
-        <ref role="3uigEE" to="ze73:6j4YlhQAdfv" resolve="GameStats" />
+      <node concept="3uibUv" id="4_$qtmT4Epl" role="3clF45">
+        <ref role="3uigEE" to="dm23:~GameStats" resolve="GameStats" />
       </node>
     </node>
     <node concept="2tJIrI" id="3EkTMGpfkT2" role="jymVt" />
@@ -4484,7 +4484,7 @@
               <ref role="3cqZAo" node="3EkTMGpeVsq" resolve="statusbar" />
             </node>
             <node concept="liA8E" id="3EkTMGpftME" role="2OqNvi">
-              <ref role="37wK5l" to="ze73:3EkTMGp6xwg" resolve="update" />
+              <ref role="37wK5l" to="dm23:~StatusBar.update(common.GameStats)" resolve="update" />
               <node concept="1rXfSq" id="6j4YlhQAMKe" role="37wK5m">
                 <ref role="37wK5l" node="6j4YlhQAzeE" resolve="getStats" />
               </node>
@@ -4541,8 +4541,8 @@
       <property role="TrG5h" value="manageLessonWindow" />
       <node concept="37vLTG" id="3EkTMGpfoi3" role="3clF46">
         <property role="TrG5h" value="newLesson" />
-        <node concept="3uibUv" id="5xSM7FRSjqG" role="1tU5fm">
-          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
+        <node concept="3uibUv" id="4_$qtmT4Oew" role="1tU5fm">
+          <ref role="3uigEE" to="dm23:~Lesson" resolve="Lesson" />
         </node>
       </node>
       <node concept="3clFbS" id="3EkTMGpfoi5" role="3clF47">
@@ -4567,7 +4567,7 @@
                         <ref role="3cqZAo" node="3EkTMGpfoi3" resolve="newLesson" />
                       </node>
                       <node concept="liA8E" id="3EkTMGpi4g_" role="2OqNvi">
-                        <ref role="37wK5l" to="ze73:5xSM7FRRYjs" resolve="createLessonPanel" />
+                        <ref role="37wK5l" to="dm23:~Lesson.createLessonPanel()" resolve="createLessonPanel" />
                       </node>
                     </node>
                   </node>
@@ -4620,8 +4620,8 @@
       <property role="TrG5h" value="displayFoundLesson" />
       <node concept="37vLTG" id="3EkTMGpfois" role="3clF46">
         <property role="TrG5h" value="lesson" />
-        <node concept="3uibUv" id="5xSM7FRSkjG" role="1tU5fm">
-          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
+        <node concept="3uibUv" id="4_$qtmT4P3s" role="1tU5fm">
+          <ref role="3uigEE" to="dm23:~Lesson" resolve="Lesson" />
         </node>
       </node>
       <node concept="3clFbS" id="3EkTMGpfoiu" role="3clF47">
@@ -4667,7 +4667,7 @@
                   <ref role="3cqZAo" node="3EkTMGpfois" resolve="lesson" />
                 </node>
                 <node concept="liA8E" id="3EkTMGpfCqB" role="2OqNvi">
-                  <ref role="37wK5l" to="ze73:5xSM7FRRYjs" resolve="createLessonPanel" />
+                  <ref role="37wK5l" to="dm23:~Lesson.createLessonPanel()" resolve="createLessonPanel" />
                 </node>
               </node>
             </node>
@@ -5987,7 +5987,7 @@
       <property role="TrG5h" value="questions" />
       <node concept="3uibUv" id="3EkTMGp7Vy$" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="3EkTMGp7Vy_" role="11_B2D">
+        <node concept="3uibUv" id="4_$qtmT5IEB" role="11_B2D">
           <ref role="3uigEE" node="3EkTMGp7$mb" resolve="Minesweeper.Question" />
         </node>
       </node>
@@ -5997,8 +5997,8 @@
       <property role="TrG5h" value="lessons" />
       <node concept="3uibUv" id="3EkTMGp7VyD" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="5xSM7FRSxVb" role="11_B2D">
-          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
+        <node concept="3uibUv" id="4_$qtmT5KCN" role="11_B2D">
+          <ref role="3uigEE" to="dm23:~Lesson" resolve="Lesson" />
         </node>
       </node>
       <node concept="3Tm1VV" id="3EkTMGp7VyF" role="1B3o_S" />
@@ -6338,7 +6338,7 @@
         <node concept="3clFbH" id="3EkTMGpl2S4" role="3cqZAp" />
         <node concept="3clFbF" id="3EkTMGpl3Ob" role="3cqZAp">
           <node concept="37vLTI" id="3EkTMGpl3Oc" role="3clFbG">
-            <node concept="37vLTw" id="3EkTMGpl3Od" role="37vLTJ">
+            <node concept="37vLTw" id="4_$qtmT5E7z" role="37vLTJ">
               <ref role="3cqZAo" node="3EkTMGp7VyB" resolve="lessons" />
             </node>
             <node concept="2ShNRf" id="3EkTMGpl56z" role="37vLTx">
@@ -6357,7 +6357,7 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="3EkTMGpl6WI" role="37wK5m">
                 <node concept="1pGfFk" id="3EkTMGpl6WU" role="2ShVmc">
-                  <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
+                  <ref role="37wK5l" to="dm23:~Lesson.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="Lesson" />
                   <node concept="Xl_RD" id="3EkTMGpl6WV" role="37wK5m">
                     <property role="Xl_RC" value="Math 1: average" />
                   </node>
@@ -6378,7 +6378,7 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="3EkTMGpl70B" role="37wK5m">
                 <node concept="1pGfFk" id="3EkTMGpl70M" role="2ShVmc">
-                  <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
+                  <ref role="37wK5l" to="dm23:~Lesson.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="Lesson" />
                   <node concept="Xl_RD" id="3EkTMGpl70N" role="37wK5m">
                     <property role="Xl_RC" value="Math 1: median" />
                   </node>
@@ -6421,7 +6421,7 @@
                   <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="3EkTMGpl56J" role="37wK5m">
                     <node concept="1pGfFk" id="3EkTMGpl56K" role="2ShVmc">
-                      <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
+                      <ref role="37wK5l" to="dm23:~Lesson.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="Lesson" />
                       <node concept="3cpWs3" id="3EkTMGpl56L" role="37wK5m">
                         <node concept="Xl_RD" id="3EkTMGpl56M" role="3uHU7B">
                           <property role="Xl_RC" value="Lesson " />
@@ -6601,9 +6601,9 @@
         <node concept="3clFbF" id="3EkTMGp7$iC" role="3cqZAp">
           <node concept="1rXfSq" id="3EkTMGp7$iD" role="3clFbG">
             <ref role="37wK5l" node="3EkTMGp7$j4" resolve="addButton" />
-            <node concept="10M0yZ" id="6j4YlhQBom9" role="37wK5m">
-              <ref role="3cqZAo" to="ze73:6j4YlhQAJ8L" resolve="PLAY" />
-              <ref role="1PxDUh" to="ze73:6j4YlhQAJ73" resolve="GameConstants" />
+            <node concept="10M0yZ" id="4_$qtmT5$pI" role="37wK5m">
+              <ref role="3cqZAo" to="dm23:~GameConstants.PLAY" resolve="PLAY" />
+              <ref role="1PxDUh" to="dm23:~GameConstants" resolve="GameConstants" />
             </node>
             <node concept="Xl_RD" id="3EkTMGp7$iF" role="37wK5m">
               <property role="Xl_RC" value="Play in learning mode" />
@@ -6616,9 +6616,9 @@
         <node concept="3clFbF" id="3EkTMGp7$iH" role="3cqZAp">
           <node concept="1rXfSq" id="3EkTMGp7$iI" role="3clFbG">
             <ref role="37wK5l" node="3EkTMGp7$j4" resolve="addButton" />
-            <node concept="10M0yZ" id="6j4YlhQBpRc" role="37wK5m">
-              <ref role="3cqZAo" to="ze73:6j4YlhQAJ8P" resolve="TEST" />
-              <ref role="1PxDUh" to="ze73:6j4YlhQAJ73" resolve="GameConstants" />
+            <node concept="10M0yZ" id="4_$qtmT5$ti" role="37wK5m">
+              <ref role="3cqZAo" to="dm23:~GameConstants.TEST" resolve="TEST" />
+              <ref role="1PxDUh" to="dm23:~GameConstants" resolve="GameConstants" />
             </node>
             <node concept="Xl_RD" id="3EkTMGp7$iK" role="37wK5m">
               <property role="Xl_RC" value="Play an evaluation game" />
@@ -6631,9 +6631,9 @@
         <node concept="3clFbF" id="3EkTMGp7$iM" role="3cqZAp">
           <node concept="1rXfSq" id="3EkTMGp7$iN" role="3clFbG">
             <ref role="37wK5l" node="3EkTMGp7$j4" resolve="addButton" />
-            <node concept="10M0yZ" id="6j4YlhQBrBl" role="37wK5m">
-              <ref role="3cqZAo" to="ze73:6j4YlhQAJ8T" resolve="LESSONS" />
-              <ref role="1PxDUh" to="ze73:6j4YlhQAJ73" resolve="GameConstants" />
+            <node concept="10M0yZ" id="4_$qtmT5$$c" role="37wK5m">
+              <ref role="3cqZAo" to="dm23:~GameConstants.LESSONS" resolve="LESSONS" />
+              <ref role="1PxDUh" to="dm23:~GameConstants" resolve="GameConstants" />
             </node>
             <node concept="Xl_RD" id="3EkTMGp7$iP" role="37wK5m">
               <property role="Xl_RC" value="View found lessons" />
@@ -6646,9 +6646,9 @@
         <node concept="3clFbF" id="3EkTMGp7$iR" role="3cqZAp">
           <node concept="1rXfSq" id="3EkTMGp7$iS" role="3clFbG">
             <ref role="37wK5l" node="3EkTMGp7$j4" resolve="addButton" />
-            <node concept="10M0yZ" id="6j4YlhQBtTW" role="37wK5m">
-              <ref role="3cqZAo" to="ze73:6j4YlhQAJ8X" resolve="EXIT" />
-              <ref role="1PxDUh" to="ze73:6j4YlhQAJ73" resolve="GameConstants" />
+            <node concept="10M0yZ" id="4_$qtmT5$O7" role="37wK5m">
+              <ref role="3cqZAo" to="dm23:~GameConstants.EXIT" resolve="EXIT" />
+              <ref role="1PxDUh" to="dm23:~GameConstants" resolve="GameConstants" />
             </node>
             <node concept="Xl_RD" id="3EkTMGp7$iU" role="37wK5m">
               <property role="Xl_RC" value="Close application" />
@@ -7154,12 +7154,12 @@
         <node concept="3cpWs8" id="3EkTMGp7$kX" role="3cqZAp">
           <node concept="3cpWsn" id="3EkTMGp7$kW" role="3cpWs9">
             <property role="TrG5h" value="portfolio" />
-            <node concept="3uibUv" id="6j4YlhQBkWa" role="1tU5fm">
-              <ref role="3uigEE" to="ze73:3EkTMGpkGNk" resolve="LearningPortfolio" />
+            <node concept="3uibUv" id="4_$qtmT63G8" role="1tU5fm">
+              <ref role="3uigEE" to="dm23:~LearningPortfolio" resolve="LearningPortfolio" />
             </node>
             <node concept="2ShNRf" id="3EkTMGpkWiN" role="33vP2m">
               <node concept="1pGfFk" id="3EkTMGpkWjs" role="2ShVmc">
-                <ref role="37wK5l" to="ze73:3EkTMGpkGNE" resolve="LearningPortfolio" />
+                <ref role="37wK5l" to="dm23:~LearningPortfolio.&lt;init&gt;(java.util.ArrayList,java.awt.event.ActionListener)" resolve="LearningPortfolio" />
                 <node concept="37vLTw" id="3EkTMGpkWjt" role="37wK5m">
                   <ref role="3cqZAo" node="3EkTMGp7VyB" resolve="lessons" />
                 </node>

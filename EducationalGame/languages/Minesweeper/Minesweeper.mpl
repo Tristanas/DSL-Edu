@@ -30,6 +30,7 @@
         <dependency reexport="false">b55d8dfc-0d9d-43d5-886d-c644e7083bff(jetbrains.mps.java.stub)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)</dependency>
+        <dependency reexport="false">ce6ad31d-75bc-4f87-98cf-cce06e26c44d(runtimetest)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f086fa03-c195-4951-a78f-bf3bd377c791:Education" version="0" />
@@ -69,6 +70,7 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+        <module reference="ce6ad31d-75bc-4f87-98cf-cce06e26c44d(runtimetest)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -149,6 +151,9 @@
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">ce6ad31d-75bc-4f87-98cf-cce06e26c44d(runtimetest)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>
   </extendedLanguages>
