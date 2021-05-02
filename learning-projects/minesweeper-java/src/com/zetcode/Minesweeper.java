@@ -1,12 +1,14 @@
 package com.zetcode;
 
 import common.GameConstants;
+import common.ImageScaler;
 import common.LearningPortfolio;
 import common.Lesson;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -58,6 +60,7 @@ public class Minesweeper extends JFrame implements ActionListener {
                 "so you may have to rewrite your list before you can find the median."));
         for (int i = 2; i < 8; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
 
+        setupResourcesPath();
         showMenu();
     }
 
@@ -159,6 +162,22 @@ public class Minesweeper extends JFrame implements ActionListener {
             var ex = new Minesweeper();
             ex.setVisible(true);
         });
+    }
+
+    public void setupResourcesPath() {
+        File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        ImageIcon img;
+        String imageName = "0.png";
+
+        // Path for the IntelliJ minesweeper project's resources folder:
+        String path = sourceLocation + "/resources/";
+        img = new ImageIcon(path + imageName);
+
+        // If the load fails, look for resources in parent folder:
+        if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+            path = sourceLocation.getParent() + "/resources/";
+        }
+        ImageScaler.ResourcesPath = path;
     }
 
     public class Question {

@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import common.Lesson;
 import javax.swing.JPanel;
+import java.io.File;
+import common.ImageScaler;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
@@ -20,6 +22,7 @@ import common.LearningPortfolio;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.awt.EventQueue;
+import javax.swing.ImageIcon;
 
 public class MathSweeper extends JFrame implements ActionListener {
   public ArrayList<Question> questions;
@@ -53,6 +56,17 @@ public class MathSweeper extends JFrame implements ActionListener {
       lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
     }
 
+    File sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+    String path1 = sourceLocation + "/resources/" + 1 + ".png";
+    String path2 = sourceLocation.getParent() + "/resources/" + 1 + ".png";
+    System.out.println(" Path1: " + path1 + "\n Path 2: " + path2);
+
+    sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+    String path3 = sourceLocation + "/resources/" + 1 + ".png";
+    String path4 = sourceLocation.getParent() + "/resources/" + 1 + ".png";
+    System.out.println(" Path3: " + path3 + "\n Path 4: " + path4);
+
+    setupResourcesPath();
     showMenu();
   }
 
@@ -159,6 +173,22 @@ public class MathSweeper extends JFrame implements ActionListener {
       }
     });
   }
+
+  public void setupResourcesPath() {
+    File sourceLocation = new File(MathSweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+    ImageIcon img;
+    String imageName = "0.png";
+    // Path for the IntelliJ minesweeper project's resources folder: 
+    String path = sourceLocation + "/resources/";
+    img = new ImageIcon(path + imageName);
+    // If the load fails, look for resources in parent folder: 
+    if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+      path = sourceLocation.getParent() + "/resources/";
+    }
+
+    ImageScaler.ResourcesPath = path;
+  }
+
 
   public class Question {
     public String correctAnswer;

@@ -11,7 +11,6 @@ import common.Lesson;
 import java.awt.Dimension;
 import common.StatusBar;
 import common.ImageScaler;
-import javax.swing.ImageIcon;
 import java.util.Random;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
@@ -24,7 +23,7 @@ import javax.swing.JOptionPane;
 import java.awt.Point;
 
 public class MediumMinesweeperBoard extends JPanel implements ActionListener {
-  private final int NUM_IMAGES = 13;
+  private final int NUM_IMAGES = 14;
   private final int NUM_EFFECTS = 3;
   public final int CELL_SIZE = 30;
   public final int IMAGE_SIZE = 15;
@@ -105,13 +104,12 @@ public class MediumMinesweeperBoard extends JPanel implements ActionListener {
     img = new Image[NUM_IMAGES];
     effectImg = new Image[NUM_EFFECTS + 1];
     for (int i = 0; i < NUM_IMAGES; i++) {
-      String path = "src/resources/" + i + ".png";
-      img[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+      img[i] = ImageScaler.createMinesweeperImage(i + ".png", CELL_SIZE, CELL_SIZE);
     }
     for (int i = 1; i <= NUM_EFFECTS; i++) {
-      String path = "src/resources/S" + i + ".png";
-      effectImg[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+      effectImg[i] = ImageScaler.createMinesweeperImage("S" + i + ".png", CELL_SIZE, CELL_SIZE);
     }
+
     addMouseListener(new MinesAdapter());
     newGame(true, true);
     statusbar.update(getStats());
@@ -121,7 +119,6 @@ public class MediumMinesweeperBoard extends JPanel implements ActionListener {
    * Resets game state and counters. New mines added, all cells covered, new effects, lessons.
    */
   public void newGame(boolean addLessons, boolean addEffects) {
-    int cell;
     int i;
     Random random = new Random();
     // Reset state and counters: 

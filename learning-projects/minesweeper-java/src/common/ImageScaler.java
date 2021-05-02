@@ -8,6 +8,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 public class ImageScaler {
+    public static String ResourcesPath;
+
+
     /**
      * Convenience method that returns a scaled instance of the
      * provided {@code BufferedImage}.
@@ -90,17 +93,10 @@ public class ImageScaler {
     }
 
     public static BufferedImage createMinesweeperImage(String imageName, int targetWidth, int targetHeight) {
-        File sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-
-        ImageIcon img;
-        // Path for the IntelliJ minesweeper project's resources folder:
-        String path = sourceLocation + "/resources/" + imageName + ".png";
-        img = new ImageIcon(path);
-
+        ImageIcon img = new ImageIcon(ResourcesPath + imageName);
         // If the load fails, look for resources in parent folder:
         if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
-            path = sourceLocation.getParent() + "/resources/" + imageName + ".png";
-            img = new ImageIcon(path);
+            System.err.println("Failed to get image: " + imageName);
         }
 
         return createScaledImage(img.getImage(), targetWidth, targetHeight);

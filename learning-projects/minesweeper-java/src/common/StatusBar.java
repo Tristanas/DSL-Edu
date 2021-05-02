@@ -24,7 +24,7 @@ public class StatusBar extends JPanel {
     ActionListener board;
     JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LIVES,
     ImageIcon[] images = new ImageIcon[IMAGES_COUNT];
-    String[] iconNames = {"flag", "hp", "reveal", "question"};
+    String[] iconNames = {"flag.png", "hp.png", "reveal.png", "question.png"};
     JLabel scoreLabel;
     JLabel questionsLabel;
     JButton revealBtn;

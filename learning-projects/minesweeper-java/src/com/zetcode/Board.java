@@ -113,11 +113,11 @@ public class Board extends JPanel implements ActionListener {
         effectImg = new Image[NUM_EFFECTS + 1];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
-            img[i] = ImageScaler.createMinesweeperImage(Integer.toString(i), CELL_SIZE, CELL_SIZE);
+            img[i] = ImageScaler.createMinesweeperImage(i + ".png", CELL_SIZE, CELL_SIZE);
         }
 
         for (int i = 1; i <= NUM_EFFECTS; i++) {
-            effectImg[i] = ImageScaler.createMinesweeperImage("S" + i, CELL_SIZE, CELL_SIZE);
+            effectImg[i] = ImageScaler.createMinesweeperImage("S" + i + ".png", CELL_SIZE, CELL_SIZE);
         }
 
         addMouseListener(new MinesAdapter());
