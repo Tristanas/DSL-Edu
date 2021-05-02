@@ -1,5 +1,7 @@
 package com.zetcode;
 
+import common.Lesson;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,11 +26,11 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
     // Button text:
-    final String PLAY = "Play";
-    final String TEST = "Take test";
-    final String LESSONS = "Check lessons";
-    final String EXIT = "Exit";
-    final String MENU = "Menu";
+    public final String PLAY = "Play";
+    public final String TEST = "Take test";
+    public final String LESSONS = "Check lessons";
+    public final String EXIT = "Exit";
+    public final String MENU = "Menu";
 
     Board minesweeperBoard;
 
@@ -52,7 +54,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons.add(new Lesson("Math 1: median", "The median is the middle value in the list of numbers." +
                 " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
                 "so you may have to rewrite your list before you can find the median."));
-        for (int i = 2; i < 20; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
+        for (int i = 2; i < 8; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
 
         showMenu();
     }

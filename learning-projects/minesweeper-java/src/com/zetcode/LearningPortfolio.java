@@ -1,5 +1,8 @@
 package com.zetcode;
 
+import com.zetcode.Minesweeper;
+import common.Lesson;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;

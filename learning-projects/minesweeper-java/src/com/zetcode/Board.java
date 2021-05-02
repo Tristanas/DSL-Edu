@@ -1,17 +1,14 @@
 package com.zetcode;
 
-import net.java.ImageScaler;
+import common.Lesson;
+import common.ImageScaler;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
-
-import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 // Minesweeper board, main Panel of the application window.
 public class Board extends JPanel {
@@ -338,7 +335,11 @@ public class Board extends JPanel {
                                     if (answeredCorrectly) handleCorrectAnswer();
                                     else handleIncorrectAnswer();
                                 }
-                                else lives--;
+                                else {
+                                    lives--;
+                                    flagsLeft--; // Mine is displayed, 1 less flag is required.
+                                    correctFlags++; // Maintaining win condition accurate.
+                                }
 
                                 if (lives == 0) {
                                     inGame = false;
@@ -376,8 +377,6 @@ public class Board extends JPanel {
         flagsLeft -= direction;
         uncover -= direction;
         if (field[cellNo] == COVERED_MINE_CELL || field[cellNo] == MARKED_MINE_CELL) correctFlags += direction;
-        String msg = "Mines left: " + Integer.toString(flagsLeft);
-        //flagsLabel.setText(msg);
     }
 
     public void uncoverCell(int cellNo) {
@@ -438,7 +437,7 @@ public class Board extends JPanel {
 
     private JFrame displayFoundLesson(Lesson lesson) {
         JFrame frame = new JFrame("New lesson found");
-        frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
         Point location = parentWindow.getLocation();

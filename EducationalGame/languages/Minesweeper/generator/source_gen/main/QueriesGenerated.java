@@ -60,9 +60,6 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object propertyMacro_GetValue_2_4(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
-  public static Object propertyMacro_GetValue_2_5(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
-  }
   public static Iterable<SNode> sourceNodesQuery_2_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.incorrectAnswers$ogmD);
   }
@@ -113,7 +110,6 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("5724796527231779705", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "wrongAnswers"));
     pvqMethods.put("5724796527231759149", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Answer"));
     pvqMethods.put("5724796527231732625", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Answer"));
-    pvqMethods.put("4981817084420353246", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Minesweeper"));
     pvqMethods.put("2388291872900261601", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Minesweeper"));
   }
   @NotNull
@@ -154,8 +150,6 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.propertyMacro_GetValue_2_3(ctx);
         case 9:
           return QueriesGenerated.propertyMacro_GetValue_2_4(ctx);
-        case 10:
-          return QueriesGenerated.propertyMacro_GetValue_2_5(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

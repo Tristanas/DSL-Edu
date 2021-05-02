@@ -1,4 +1,4 @@
-package net.java;
+package common;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

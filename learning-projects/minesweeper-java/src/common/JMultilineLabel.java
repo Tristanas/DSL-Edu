@@ -1,4 +1,4 @@
-package com.zetcode;
+package common;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -14,7 +14,6 @@ public class JMultilineLabel extends JTextArea {
         setFont(UIManager.getFont("Label.font"));
         setWrapStyleWord(true);
         setLineWrap(true);
-        //According to Mariana this might improve it
         setBorder(new EmptyBorder(5, 5, 5, 5));
         setAlignmentY(JLabel.CENTER_ALIGNMENT);
     }

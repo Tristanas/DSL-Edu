@@ -1,6 +1,6 @@
 package com.zetcode;
 
-import net.java.ImageScaler;
+import common.ImageScaler;
 
 import javax.swing.*;
 import javax.swing.border.Border;

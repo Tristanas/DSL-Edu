@@ -1,6 +1,6 @@
 package LearningDemos.tutorialspoint;
 
-import net.java.ImageScaler;
+import common.ImageScaler;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

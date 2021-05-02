@@ -1,4 +1,4 @@
-package com.zetcode;
+package common;
 
 import javax.swing.*;
 import javax.swing.border.Border;
