@@ -1,5 +1,6 @@
 package com.zetcode;
 
+import common.GameConstants;
 import common.LearningPortfolio;
 import common.Lesson;
 
@@ -74,12 +75,11 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu = new JPanel();
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
-
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(PLAY, "Play in learning mode", menu);
-        addButton(TEST, "Play an evaluation game",menu);
-        addButton(LESSONS,"View found lessons", menu);
-        addButton(EXIT, "Close application", menu);
+        addButton(GameConstants.PLAY, "Play in learning mode", menu);
+        addButton(GameConstants.TEST, "Play an evaluation game", menu);
+        addButton(GameConstants.LESSONS, "View found lessons", menu);
+        addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
     }
 

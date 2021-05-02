@@ -10,11 +10,13 @@ import javax.swing.JPanel;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
+import common.GameConstants;
 import java.awt.Container;
 import javax.swing.JButton;
 import java.awt.Component;
 import java.awt.BorderLayout;
 import javax.swing.BorderFactory;
+import common.LearningPortfolio;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.awt.EventQueue;
@@ -92,10 +94,10 @@ public class ImpossibleMinesweeper extends JFrame implements ActionListener {
     menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
     menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
     menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-    addButton(PLAY, "Play in learning mode", menu);
-    addButton(TEST, "Play an evaluation game", menu);
-    addButton(LESSONS, "View found lessons", menu);
-    addButton(EXIT, "Close application", menu);
+    addButton(GameConstants.PLAY, "Play in learning mode", menu);
+    addButton(GameConstants.TEST, "Play an evaluation game", menu);
+    addButton(GameConstants.LESSONS, "View found lessons", menu);
+    addButton(GameConstants.EXIT, "Close application", menu);
     menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
   }
 

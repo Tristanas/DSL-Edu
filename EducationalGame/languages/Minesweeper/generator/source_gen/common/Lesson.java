@@ -20,11 +20,13 @@ public class Lesson {
   /*package*/ final int textFontSize = 13;
   /*package*/ final int lessonWidth = 200;
   /*package*/ final int bottomPadding = 0;
+
   public Lesson(String title, String text) {
     this.title = title;
     this.text = text;
     lessonHeight = titleFontSize + textFontSize * (text.length() * textFontSize / lessonWidth) + bottomPadding;
   }
+
   public JPanel createLessonPanel() {
     JPanel panel = new JPanel();
     Border border;
@@ -46,6 +48,7 @@ public class Lesson {
     panel.setBorder(border);
     return panel;
   }
+
   public int getLessonHeight() {
     return lessonHeight;
   }

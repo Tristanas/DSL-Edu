@@ -1,5 +1,8 @@
 package common;
 
+/**
+ Constants for button text and action strings, minesweeper cell state and drawing logic.
+ */
 public class GameConstants {
     public static final String MENU = "Menu";
     public static final String PLAY = "Play";
