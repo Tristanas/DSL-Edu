@@ -5,7 +5,7 @@ package Minesweeper.sandbox;
 import javax.swing.JFrame;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import com.edu.Lesson;
+import common.Lesson;
 import javax.swing.JPanel;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;

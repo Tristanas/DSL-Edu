@@ -19,7 +19,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
-    <import index="p2a2" ref="r:2c5d456f-299a-4067-93ab-57fe9e96823c(common)" implicit="true" />
+    <import index="ze73" ref="r:c2c67b03-4633-4f53-84a7-71eee242c321(common)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
   </imports>
@@ -818,8 +818,8 @@
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="3EkTMGpeVs8" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="7O4yon6j9_9" role="11_B2D">
-          <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+        <node concept="3uibUv" id="5xSM7FRScrs" role="11_B2D">
+          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
         </node>
       </node>
       <node concept="3Tm6S6" id="3EkTMGpeVsa" role="1B3o_S" />
@@ -880,8 +880,8 @@
         <property role="TrG5h" value="lessons" />
         <node concept="3uibUv" id="3EkTMGpfJrO" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-          <node concept="3uibUv" id="7O4yon6jf9D" role="11_B2D">
-            <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+          <node concept="3uibUv" id="5xSM7FRSiB9" role="11_B2D">
+            <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
           </node>
         </node>
       </node>
@@ -1084,8 +1084,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="7O4yon6jfvu" role="37vLTx">
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYPi" resolve="createScaledImage" />
-                  <ref role="1Pybhc" to="p2a2:7O4yon6hYN0" resolve="ImageScaler" />
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYep" resolve="createScaledImage" />
+                  <ref role="1Pybhc" to=":^" />
                   <node concept="2OqwBi" id="7O4yon6jfvv" role="37wK5m">
                     <node concept="1eOMI4" id="7O4yon6jfvw" role="2Oq$k0">
                       <node concept="2ShNRf" id="7O4yon6jfvx" role="1eOMHV">
@@ -1165,28 +1165,28 @@
                     <ref role="3cqZAo" node="3EkTMGpfJtl" resolve="i" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="7O4yon6jg9p" role="37vLTx">
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYPi" resolve="createScaledImage" />
-                  <ref role="1Pybhc" to="p2a2:7O4yon6hYN0" resolve="ImageScaler" />
-                  <node concept="2OqwBi" id="7O4yon6jg9q" role="37wK5m">
-                    <node concept="1eOMI4" id="7O4yon6jg9r" role="2Oq$k0">
-                      <node concept="2ShNRf" id="7O4yon6jg9s" role="1eOMHV">
-                        <node concept="1pGfFk" id="7O4yon6jg9t" role="2ShVmc">
+                <node concept="2YIFZM" id="5xSM7FRSkTN" role="37vLTx">
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYep" resolve="createScaledImage" />
+                  <ref role="1Pybhc" to="ze73:5xSM7FRRYc7" resolve="ImageScaler" />
+                  <node concept="2OqwBi" id="5xSM7FRSkTO" role="37wK5m">
+                    <node concept="1eOMI4" id="5xSM7FRSkTP" role="2Oq$k0">
+                      <node concept="2ShNRf" id="5xSM7FRSkTQ" role="1eOMHV">
+                        <node concept="1pGfFk" id="5xSM7FRSkTR" role="2ShVmc">
                           <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.lang.String)" resolve="ImageIcon" />
-                          <node concept="37vLTw" id="7O4yon6jg9u" role="37wK5m">
+                          <node concept="37vLTw" id="5xSM7FRSkTS" role="37wK5m">
                             <ref role="3cqZAo" node="3EkTMGpfJtx" resolve="path" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="7O4yon6jg9v" role="2OqNvi">
+                    <node concept="liA8E" id="5xSM7FRSkTT" role="2OqNvi">
                       <ref role="37wK5l" to="dxuu:~ImageIcon.getImage()" resolve="getImage" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="7O4yon6jg9w" role="37wK5m">
+                  <node concept="37vLTw" id="5xSM7FRSkTU" role="37wK5m">
                     <ref role="3cqZAo" node="4kyY3TkI4Gu" resolve="CELL_SIZE" />
                   </node>
-                  <node concept="37vLTw" id="7O4yon6jg9x" role="37wK5m">
+                  <node concept="37vLTw" id="5xSM7FRSkTV" role="37wK5m">
                     <ref role="3cqZAo" node="4kyY3TkI4Gu" resolve="CELL_SIZE" />
                   </node>
                 </node>
@@ -4341,8 +4341,8 @@
       <property role="TrG5h" value="manageLessonWindow" />
       <node concept="37vLTG" id="3EkTMGpfoi3" role="3clF46">
         <property role="TrG5h" value="newLesson" />
-        <node concept="3uibUv" id="7O4yon6jh20" role="1tU5fm">
-          <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+        <node concept="3uibUv" id="5xSM7FRSjqG" role="1tU5fm">
+          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
         </node>
       </node>
       <node concept="3clFbS" id="3EkTMGpfoi5" role="3clF47">
@@ -4367,7 +4367,7 @@
                         <ref role="3cqZAo" node="3EkTMGpfoi3" resolve="newLesson" />
                       </node>
                       <node concept="liA8E" id="3EkTMGpi4g_" role="2OqNvi">
-                        <ref role="37wK5l" to="p2a2:7O4yon6hYUv" resolve="createLessonPanel" />
+                        <ref role="37wK5l" to="ze73:5xSM7FRRYjs" resolve="createLessonPanel" />
                       </node>
                     </node>
                   </node>
@@ -4420,8 +4420,8 @@
       <property role="TrG5h" value="displayFoundLesson" />
       <node concept="37vLTG" id="3EkTMGpfois" role="3clF46">
         <property role="TrG5h" value="lesson" />
-        <node concept="3uibUv" id="7O4yon6jkgN" role="1tU5fm">
-          <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+        <node concept="3uibUv" id="5xSM7FRSkjG" role="1tU5fm">
+          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
         </node>
       </node>
       <node concept="3clFbS" id="3EkTMGpfoiu" role="3clF47">
@@ -4467,7 +4467,7 @@
                   <ref role="3cqZAo" node="3EkTMGpfois" resolve="lesson" />
                 </node>
                 <node concept="liA8E" id="3EkTMGpfCqB" role="2OqNvi">
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYUv" resolve="createLessonPanel" />
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYjs" resolve="createLessonPanel" />
                 </node>
               </node>
             </node>
@@ -5794,8 +5794,8 @@
       <property role="TrG5h" value="lessons" />
       <node concept="3uibUv" id="3EkTMGp7VyD" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="7O4yon6jxfL" role="11_B2D">
-          <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+        <node concept="3uibUv" id="5xSM7FRSxVb" role="11_B2D">
+          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
         </node>
       </node>
       <node concept="3Tm1VV" id="3EkTMGp7VyF" role="1B3o_S" />
@@ -6154,7 +6154,7 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="3EkTMGpl6WI" role="37wK5m">
                 <node concept="1pGfFk" id="3EkTMGpl6WU" role="2ShVmc">
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYTW" resolve="Lesson" />
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
                   <node concept="Xl_RD" id="3EkTMGpl6WV" role="37wK5m">
                     <property role="Xl_RC" value="Math 1: average" />
                   </node>
@@ -6175,7 +6175,7 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="3EkTMGpl70B" role="37wK5m">
                 <node concept="1pGfFk" id="3EkTMGpl70M" role="2ShVmc">
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYTW" resolve="Lesson" />
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
                   <node concept="Xl_RD" id="3EkTMGpl70N" role="37wK5m">
                     <property role="Xl_RC" value="Math 1: median" />
                   </node>
@@ -6218,7 +6218,7 @@
                   <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="3EkTMGpl56J" role="37wK5m">
                     <node concept="1pGfFk" id="3EkTMGpl56K" role="2ShVmc">
-                      <ref role="37wK5l" to="p2a2:7O4yon6hYTW" resolve="Lesson" />
+                      <ref role="37wK5l" to="ze73:5xSM7FRRYiT" resolve="Lesson" />
                       <node concept="3cpWs3" id="3EkTMGpl56L" role="37wK5m">
                         <node concept="Xl_RD" id="3EkTMGpl56M" role="3uHU7B">
                           <property role="Xl_RC" value="Lesson " />
@@ -7651,8 +7651,8 @@
                   <ref role="3uigEE" to="z60i:~Image" resolve="Image" />
                 </node>
                 <node concept="2YIFZM" id="3EkTMGp6ETh" role="33vP2m">
-                  <ref role="1Pybhc" to="p2a2:7O4yon6hYN0" resolve="ImageScaler" />
-                  <ref role="37wK5l" to="p2a2:7O4yon6hYPi" resolve="createScaledImage" />
+                  <ref role="1Pybhc" to="ze73:5xSM7FRRYc7" resolve="ImageScaler" />
+                  <ref role="37wK5l" to="ze73:5xSM7FRRYep" resolve="createScaledImage" />
                   <node concept="2OqwBi" id="3EkTMGp6ETi" role="37wK5m">
                     <node concept="1eOMI4" id="3EkTMGp6ETj" role="2Oq$k0">
                       <node concept="2ShNRf" id="3EkTMGp6Oyl" role="1eOMHV">
@@ -8377,8 +8377,8 @@
       <property role="TrG5h" value="lessons" />
       <node concept="3uibUv" id="3EkTMGpkGN_" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="7O4yon6joko" role="11_B2D">
-          <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+        <node concept="3uibUv" id="5xSM7FRSoF1" role="11_B2D">
+          <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
         </node>
       </node>
     </node>
@@ -8394,8 +8394,8 @@
         <property role="TrG5h" value="lessons" />
         <node concept="3uibUv" id="3EkTMGpkGNH" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-          <node concept="3uibUv" id="7O4yon6jpNF" role="11_B2D">
-            <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+          <node concept="3uibUv" id="5xSM7FRSqnV" role="11_B2D">
+            <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
           </node>
         </node>
       </node>
@@ -8624,8 +8624,8 @@
           </node>
           <node concept="3cpWsn" id="3EkTMGpkGOW" role="1Duv9x">
             <property role="TrG5h" value="lesson" />
-            <node concept="3uibUv" id="7O4yon6jq8n" role="1tU5fm">
-              <ref role="3uigEE" to="p2a2:7O4yon6hYTu" resolve="Lesson" />
+            <node concept="3uibUv" id="5xSM7FRSqyx" role="1tU5fm">
+              <ref role="3uigEE" to="ze73:5xSM7FRRYir" resolve="Lesson" />
             </node>
           </node>
           <node concept="3clFbS" id="3EkTMGpkGOK" role="2LFqv$">
@@ -8640,7 +8640,7 @@
                     <ref role="3cqZAo" node="3EkTMGpkGOW" resolve="lesson" />
                   </node>
                   <node concept="liA8E" id="3EkTMGpkGVK" role="2OqNvi">
-                    <ref role="37wK5l" to="p2a2:7O4yon6hYUv" resolve="createLessonPanel" />
+                    <ref role="37wK5l" to="ze73:5xSM7FRRYjs" resolve="createLessonPanel" />
                   </node>
                 </node>
               </node>

@@ -546,7 +546,7 @@
       <node id="4981817084417757618" at="262,29,270,13" concept="6" />
       <node id="4981817084417757618" at="310,26,318,24" concept="6" />
       <node id="4981817084417757618" at="215,16,224,11" concept="6" />
-      <node id="4981817084417757618" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcom/edu/Lesson;)V" />
+      <node id="4981817084417757618" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcommon/Lesson;)V" />
       <node id="4981817084417757618" at="475,0,484,0" concept="7" trace="revealRectangle#(I)V" />
       <node id="4981817084417757618" at="225,16,235,11" concept="6" />
       <node id="4981817084417757618" at="354,0,364,0" concept="7" trace="flagCell#(IZ)V" />
@@ -556,7 +556,7 @@
       <node id="4981817084417757618" at="187,55,198,7" concept="5" />
       <node id="4981817084417757618" at="225,14,236,9" concept="0" />
       <node id="4981817084417757618" at="260,50,271,11" concept="6" />
-      <node id="4981817084417757618" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcom/edu/Lesson;)Ljavax/swing/JFrame;" />
+      <node id="4981817084417757618" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcommon/Lesson;)Ljavax/swing/JFrame;" />
       <node id="4981817084417757618" at="504,0,515,0" concept="7" trace="handleGameOver#(Z)V" />
       <node id="4981817084417757618" at="212,16,224,11" concept="6" />
       <node id="4981817084417757618" at="436,50,448,5" concept="5" />
@@ -1375,7 +1375,7 @@
       <node id="4981817084421199496" at="262,29,270,13" concept="6" />
       <node id="4981817084421199496" at="310,26,318,24" concept="6" />
       <node id="4981817084421199496" at="215,16,224,11" concept="6" />
-      <node id="4981817084421199496" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcom/edu/Lesson;)V" />
+      <node id="4981817084421199496" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcommon/Lesson;)V" />
       <node id="4981817084421199496" at="475,0,484,0" concept="7" trace="revealRectangle#(I)V" />
       <node id="4981817084421199496" at="225,16,235,11" concept="6" />
       <node id="4981817084421199496" at="354,0,364,0" concept="7" trace="flagCell#(IZ)V" />
@@ -1385,7 +1385,7 @@
       <node id="4981817084421199496" at="187,55,198,7" concept="5" />
       <node id="4981817084421199496" at="225,14,236,9" concept="0" />
       <node id="4981817084421199496" at="260,50,271,11" concept="6" />
-      <node id="4981817084421199496" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcom/edu/Lesson;)Ljavax/swing/JFrame;" />
+      <node id="4981817084421199496" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcommon/Lesson;)Ljavax/swing/JFrame;" />
       <node id="4981817084421199496" at="504,0,515,0" concept="7" trace="handleGameOver#(Z)V" />
       <node id="4981817084421199496" at="212,16,224,11" concept="6" />
       <node id="4981817084421199496" at="436,50,448,5" concept="5" />
@@ -2191,7 +2191,7 @@
       <node id="4981817084421223198" at="262,29,270,13" concept="6" />
       <node id="4981817084421223198" at="310,26,318,24" concept="6" />
       <node id="4981817084421223198" at="215,16,224,11" concept="6" />
-      <node id="4981817084421223198" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcom/edu/Lesson;)V" />
+      <node id="4981817084421223198" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcommon/Lesson;)V" />
       <node id="4981817084421223198" at="475,0,484,0" concept="7" trace="revealRectangle#(I)V" />
       <node id="4981817084421223198" at="225,16,235,11" concept="6" />
       <node id="4981817084421223198" at="354,0,364,0" concept="7" trace="flagCell#(IZ)V" />
@@ -2201,7 +2201,7 @@
       <node id="4981817084421223198" at="187,55,198,7" concept="5" />
       <node id="4981817084421223198" at="225,14,236,9" concept="0" />
       <node id="4981817084421223198" at="260,50,271,11" concept="6" />
-      <node id="4981817084421223198" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcom/edu/Lesson;)Ljavax/swing/JFrame;" />
+      <node id="4981817084421223198" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcommon/Lesson;)Ljavax/swing/JFrame;" />
       <node id="4981817084421223198" at="504,0,515,0" concept="7" trace="handleGameOver#(Z)V" />
       <node id="4981817084421223198" at="212,16,224,11" concept="6" />
       <node id="4981817084421223198" at="436,50,448,5" concept="5" />
@@ -2999,7 +2999,7 @@
       <node id="885304035645152199" at="262,29,270,13" concept="6" />
       <node id="885304035645152199" at="310,26,318,24" concept="6" />
       <node id="885304035645152199" at="215,16,224,11" concept="6" />
-      <node id="885304035645152199" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcom/edu/Lesson;)V" />
+      <node id="885304035645152199" at="402,0,411,0" concept="7" trace="manageLessonWindow#(Lcommon/Lesson;)V" />
       <node id="885304035645152199" at="475,0,484,0" concept="7" trace="revealRectangle#(I)V" />
       <node id="885304035645152199" at="225,16,235,11" concept="6" />
       <node id="885304035645152199" at="354,0,364,0" concept="7" trace="flagCell#(IZ)V" />
@@ -3009,7 +3009,7 @@
       <node id="885304035645152199" at="187,55,198,7" concept="5" />
       <node id="885304035645152199" at="225,14,236,9" concept="0" />
       <node id="885304035645152199" at="260,50,271,11" concept="6" />
-      <node id="885304035645152199" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcom/edu/Lesson;)Ljavax/swing/JFrame;" />
+      <node id="885304035645152199" at="412,0,423,0" concept="7" trace="displayFoundLesson#(Lcommon/Lesson;)Ljavax/swing/JFrame;" />
       <node id="885304035645152199" at="504,0,515,0" concept="7" trace="handleGameOver#(Z)V" />
       <node id="885304035645152199" at="212,16,224,11" concept="6" />
       <node id="885304035645152199" at="436,50,448,5" concept="5" />

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1177666668936:jetbrains.mps.baseLanguage.structure.DoWhileStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:c2c67b03-4633-4f53-84a7-71eee242c321(common)/6375065703013147399">
+    <file name="ImageScaler.java">
+      <node id="6375065703013147414" at="35,139,36,123" concept="7" />
+      <node id="6375065703013147424" at="36,123,37,44" concept="7" />
+      <node id="6375065703013147430" at="37,44,38,10" concept="7" />
+      <node id="6375065703013147433" at="38,10,39,10" concept="7" />
+      <node id="6375065703013147665" at="40,24,41,66" concept="9" />
+      <node id="6375065703013147676" at="41,66,42,56" concept="9" />
+      <node id="6375065703013147686" at="42,56,43,42" concept="9" />
+      <node id="6375065703013147439" at="43,42,44,25" concept="3" />
+      <node id="6375065703013147443" at="44,25,45,26" concept="3" />
+      <node id="6375065703013147695" at="46,12,47,62" concept="9" />
+      <node id="6375065703013147705" at="47,62,48,60" concept="9" />
+      <node id="6375065703013147449" at="48,60,49,22" concept="3" />
+      <node id="6375065703013147453" at="49,22,50,23" concept="3" />
+      <node id="6375065703013147474" at="53,45,54,15" concept="3" />
+      <node id="6375065703013147484" at="55,30,56,26" concept="3" />
+      <node id="6375065703013147496" at="59,46,60,15" concept="3" />
+      <node id="6375065703013147506" at="61,31,62,27" concept="3" />
+      <node id="6375065703013147511" at="64,7,65,56" concept="7" />
+      <node id="6375065703013147518" at="65,56,66,43" concept="7" />
+      <node id="6375065703013147521" at="66,43,67,66" concept="3" />
+      <node id="6375065703013147525" at="67,66,68,42" concept="3" />
+      <node id="6375065703013147533" at="68,42,69,19" concept="3" />
+      <node id="6375065703013147535" at="69,19,70,16" concept="3" />
+      <node id="6375065703013147540" at="71,52,72,15" concept="8" />
+      <node id="6375065703013147554" at="74,95,75,121" concept="7" />
+      <node id="6375065703013147563" at="75,121,76,45" concept="7" />
+      <node id="6375065703013147566" at="76,45,77,33" concept="3" />
+      <node id="6375065703013147572" at="77,33,78,122" concept="8" />
+      <node id="6375065703013147591" at="87,39,88,33" concept="8" />
+      <node id="6375065703013147725" at="89,5,90,49" concept="9" />
+      <node id="6375065703013147596" at="90,49,91,115" concept="7" />
+      <node id="6375065703013147734" at="91,115,92,47" concept="9" />
+      <node id="6375065703013147605" at="92,47,93,45" concept="7" />
+      <node id="6375065703013147608" at="93,45,94,35" concept="3" />
+      <node id="6375065703013147614" at="94,35,95,18" concept="3" />
+      <node id="6375065703013147745" at="95,18,96,33" concept="9" />
+      <node id="6375065703013147616" at="96,33,97,18" concept="8" />
+      <node id="6375065703013147478" at="54,15,57,9" concept="5" />
+      <node id="6375065703013147500" at="60,15,63,9" concept="5" />
+      <node id="6375065703013147585" at="86,58,89,5" concept="5" />
+      <node id="6375065703013147447" at="46,10,51,5" concept="0" />
+      <node id="6375065703013147466" at="52,8,58,7" concept="5" />
+      <node id="6375065703013147488" at="58,7,64,7" concept="5" />
+      <node id="6375065703013147545" at="74,0,80,0" concept="11" trace="createScaledImage#(Ljava/awt/Image;II)Ljava/awt/image/BufferedImage;" />
+      <node id="6375065703013147435" at="39,10,51,5" concept="5" />
+      <node id="6375065703013147581" at="86,0,99,0" concept="11" trace="toBufferedImage#(Ljava/awt/Image;)Ljava/awt/image/BufferedImage;" />
+      <node id="6375065703013147539" at="51,5,71,52" concept="2" />
+      <node id="6375065703013147401" at="35,0,74,0" concept="11" trace="getScaledInstance#(Ljava/awt/image/BufferedImage;IILjava/lang/Object;Z)Ljava/awt/image/BufferedImage;" />
+      <scope id="6375065703013147483" at="55,30,56,26" />
+      <scope id="6375065703013147505" at="61,31,62,27" />
+      <scope id="6375065703013147590" at="87,39,88,33" />
+      <scope id="6375065703013147448" at="46,12,50,23" />
+      <scope id="6375065703013147473" at="53,45,57,9" />
+      <scope id="6375065703013147495" at="59,46,63,9" />
+      <scope id="6375065703013147552" at="74,95,78,122">
+        <var name="bufferedImage" id="6375065703013147553" />
+        <var name="g" id="6375065703013147562" />
+      </scope>
+      <scope id="6375065703013147438" at="40,24,45,26" />
+      <scope id="6375065703013147545" at="74,0,80,0">
+        <var name="img" id="6375065703013147546" />
+        <var name="targetHeight" id="6375065703013147550" />
+        <var name="targetWidth" id="6375065703013147548" />
+      </scope>
+      <scope id="6375065703013147584" at="86,58,97,18">
+        <var name="bGr" id="6375065703013147604" />
+        <var name="bimage" id="6375065703013147595" />
+      </scope>
+      <scope id="6375065703013147581" at="86,0,99,0">
+        <var name="img" id="6375065703013147582" />
+      </scope>
+      <scope id="6375065703013147465" at="52,8,70,16">
+        <var name="g2" id="6375065703013147517" />
+        <var name="tmp" id="6375065703013147510" />
+      </scope>
+      <scope id="6375065703013147412" at="35,139,72,15">
+        <var name="h" id="6375065703013147432" />
+        <var name="ret" id="6375065703013147423" />
+        <var name="type" id="6375065703013147413" />
+        <var name="w" id="6375065703013147429" />
+      </scope>
+      <scope id="6375065703013147401" at="35,0,74,0">
+        <var name="higherQuality" id="6375065703013147410" />
+        <var name="hint" id="6375065703013147408" />
+        <var name="img" id="6375065703013147402" />
+        <var name="targetHeight" id="6375065703013147406" />
+        <var name="targetWidth" id="6375065703013147404" />
+      </scope>
+      <unit id="6375065703013147399" at="12,0,100,0" name="common.ImageScaler" />
+    </file>
+  </root>
+  <root nodeRef="r:c2c67b03-4633-4f53-84a7-71eee242c321(common)/6375065703013147752">
+    <file name="JMultilineLabel.java">
+      <node id="6375065703013147755" at="11,0,12,0" concept="10" trace="serialVersionUID" />
+      <node id="6375065703013147979" at="12,39,13,16" concept="12" />
+      <node id="6375065703013147764" at="13,16,14,23" concept="3" />
+      <node id="6375065703013147767" at="14,23,15,20" concept="3" />
+      <node id="6375065703013147770" at="15,20,16,21" concept="3" />
+      <node id="6375065703013147773" at="16,21,17,24" concept="3" />
+      <node id="6375065703013147776" at="17,24,18,45" concept="3" />
+      <node id="6375065703013147780" at="18,45,19,27" concept="3" />
+      <node id="6375065703013147783" at="19,27,20,22" concept="3" />
+      <node id="6375065703013147786" at="20,22,21,43" concept="3" />
+      <node id="6375065703013147793" at="21,43,22,46" concept="3" />
+      <node id="6375065703013147759" at="12,0,24,0" concept="1" trace="JMultilineLabel#(Ljava/lang/String;)V" />
+      <scope id="6375065703013147763" at="12,39,22,46" />
+      <scope id="6375065703013147759" at="12,0,24,0">
+        <var name="text" id="6375065703013147761" />
+      </scope>
+      <unit id="6375065703013147752" at="10,0,25,0" name="common.JMultilineLabel" />
+    </file>
+  </root>
+  <root nodeRef="r:c2c67b03-4633-4f53-84a7-71eee242c321(common)/6375065703013147803">
+    <file name="Lesson.java">
+      <node id="6375065703013147805" at="15,0,16,0" concept="4" trace="title" />
+      <node id="6375065703013147808" at="16,0,17,0" concept="4" trace="text" />
+      <node id="6375065703013147811" at="17,0,18,0" concept="4" trace="unlocked" />
+      <node id="6375065703013147814" at="18,0,19,0" concept="4" trace="lessonHeight" />
+      <node id="6375065703013147817" at="19,0,20,0" concept="4" trace="titleFontSize" />
+      <node id="6375065703013147821" at="20,0,21,0" concept="4" trace="textFontSize" />
+      <node id="6375065703013147825" at="21,0,22,0" concept="4" trace="lessonWidth" />
+      <node id="6375065703013147829" at="22,0,23,0" concept="4" trace="bottomPadding" />
+      <node id="6375065703013147840" at="23,44,24,23" concept="3" />
+      <node id="6375065703013147846" at="24,23,25,21" concept="3" />
+      <node id="6375065703013147852" at="25,21,26,111" concept="3" />
+      <node id="6375065703013147871" at="28,37,29,32" concept="7" />
+      <node id="6375065703013147875" at="29,32,30,18" concept="7" />
+      <node id="6375065703013147877" at="30,18,31,40" concept="3" />
+      <node id="6375065703013147881" at="31,40,32,42" concept="7" />
+      <node id="6375065703013147886" at="32,42,33,14" concept="7" />
+      <node id="6375065703013147949" at="33,14,34,47" concept="9" />
+      <node id="6375065703013147888" at="34,47,35,63" concept="3" />
+      <node id="6375065703013147895" at="35,63,36,29" concept="3" />
+      <node id="6375065703013147898" at="36,29,37,46" concept="3" />
+      <node id="6375065703013147903" at="37,46,38,57" concept="7" />
+      <node id="6375065703013147960" at="38,57,39,39" concept="9" />
+      <node id="6375065703013147907" at="39,39,40,63" concept="3" />
+      <node id="6375065703013147914" at="40,63,41,27" concept="3" />
+      <node id="6375065703013147917" at="41,27,42,45" concept="3" />
+      <node id="6375065703013147970" at="42,45,43,35" concept="9" />
+      <node id="6375065703013147921" at="43,35,44,69" concept="3" />
+      <node id="6375065703013147926" at="44,69,45,57" concept="3" />
+      <node id="6375065703013147931" at="45,57,46,28" concept="3" />
+      <node id="6375065703013147934" at="46,28,47,17" concept="8" />
+      <node id="6375065703013147940" at="49,32,50,24" concept="8" />
+      <node id="6375065703013147938" at="49,0,52,0" concept="6" trace="getLessonHeight#()I" />
+      <node id="6375065703013147833" at="23,0,28,0" concept="1" trace="Lesson#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="6375065703013147868" at="28,0,49,0" concept="6" trace="createLessonPanel#()Ljavax/swing/JPanel;" />
+      <scope id="6375065703013147939" at="49,32,50,24" />
+      <scope id="6375065703013147839" at="23,44,26,111" />
+      <scope id="6375065703013147938" at="49,0,52,0" />
+      <scope id="6375065703013147833" at="23,0,28,0">
+        <var name="text" id="6375065703013147837" />
+        <var name="title" id="6375065703013147835" />
+      </scope>
+      <scope id="6375065703013147869" at="28,37,47,17">
+        <var name="border" id="6375065703013147874" />
+        <var name="font" id="6375065703013147885" />
+        <var name="panel" id="6375065703013147870" />
+        <var name="textArea" id="6375065703013147902" />
+        <var name="titleLable" id="6375065703013147880" />
+      </scope>
+      <scope id="6375065703013147868" at="28,0,49,0" />
+      <unit id="6375065703013147803" at="14,0,53,0" name="common.Lesson" />
+    </file>
+  </root>
+</debug-info>
+

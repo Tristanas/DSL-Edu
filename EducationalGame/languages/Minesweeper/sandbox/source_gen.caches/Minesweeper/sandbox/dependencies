@@ -3,7 +3,7 @@
   <dependency className="Minesweeper.sandbox.EasyMinesweeper">
     <classNode dependClassName="Minesweeper.sandbox.EasyMinesweeperBoard" />
     <classNode dependClassName="Minesweeper.sandbox.LearningPortfolio" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />
@@ -26,8 +26,8 @@
   <dependency className="Minesweeper.sandbox.EasyMinesweeperBoard">
     <classNode dependClassName="Minesweeper.sandbox.EasyMinesweeper" />
     <classNode dependClassName="Minesweeper.sandbox.StatusBar" />
-    <classNode dependClassName="com.edu.ImageScaler" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.ImageScaler" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.awt.Image" />
@@ -48,7 +48,7 @@
   <dependency className="Minesweeper.sandbox.ImpossibleMinesweeper">
     <classNode dependClassName="Minesweeper.sandbox.ImpossibleMinesweeperBoard" />
     <classNode dependClassName="Minesweeper.sandbox.LearningPortfolio" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />
@@ -71,8 +71,8 @@
   <dependency className="Minesweeper.sandbox.ImpossibleMinesweeperBoard">
     <classNode dependClassName="Minesweeper.sandbox.ImpossibleMinesweeper" />
     <classNode dependClassName="Minesweeper.sandbox.StatusBar" />
-    <classNode dependClassName="com.edu.ImageScaler" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.ImageScaler" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.awt.Image" />
@@ -93,7 +93,7 @@
   <dependency className="Minesweeper.sandbox.MathSweeper">
     <classNode dependClassName="Minesweeper.sandbox.LearningPortfolio" />
     <classNode dependClassName="Minesweeper.sandbox.MathSweeperBoard" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />
@@ -116,8 +116,8 @@
   <dependency className="Minesweeper.sandbox.MathSweeperBoard">
     <classNode dependClassName="Minesweeper.sandbox.MathSweeper" />
     <classNode dependClassName="Minesweeper.sandbox.StatusBar" />
-    <classNode dependClassName="com.edu.ImageScaler" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.ImageScaler" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.awt.Image" />
@@ -138,7 +138,7 @@
   <dependency className="Minesweeper.sandbox.MediumMinesweeper">
     <classNode dependClassName="Minesweeper.sandbox.LearningPortfolio" />
     <classNode dependClassName="Minesweeper.sandbox.MediumMinesweeperBoard" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />
@@ -161,8 +161,8 @@
   <dependency className="Minesweeper.sandbox.MediumMinesweeperBoard">
     <classNode dependClassName="Minesweeper.sandbox.MediumMinesweeper" />
     <classNode dependClassName="Minesweeper.sandbox.StatusBar" />
-    <classNode dependClassName="com.edu.ImageScaler" />
-    <classNode dependClassName="com.edu.Lesson" />
+    <classNode dependClassName="common.ImageScaler" />
+    <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.awt.Image" />
