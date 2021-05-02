@@ -1,4 +1,4 @@
-package com.zetcode;
+package common;
 
 import common.GameConstants;
 import common.GameStats;

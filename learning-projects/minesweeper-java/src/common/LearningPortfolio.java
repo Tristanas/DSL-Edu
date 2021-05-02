@@ -1,4 +1,4 @@
-package com.zetcode;
+package common;
 
 import com.zetcode.Minesweeper;
 import common.GameConstants;

@@ -1,5 +1,6 @@
 package com.zetcode;
 
+import common.LearningPortfolio;
 import common.Lesson;
 
 import java.awt.*;

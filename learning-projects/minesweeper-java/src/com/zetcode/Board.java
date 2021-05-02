@@ -1,9 +1,6 @@
 package com.zetcode;
 
-import common.GameConstants;
-import common.GameStats;
-import common.Lesson;
-import common.ImageScaler;
+import common.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
