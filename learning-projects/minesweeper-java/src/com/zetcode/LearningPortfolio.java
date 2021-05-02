@@ -1,10 +1,12 @@
 package com.zetcode;
 
 import com.zetcode.Minesweeper;
+import common.GameConstants;
 import common.Lesson;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class LearningPortfolio extends JPanel {
@@ -13,9 +15,9 @@ public class LearningPortfolio extends JPanel {
     final int TOPIC_FONT_SIZE = 18;
 
     ArrayList<Lesson> lessons;
-    Minesweeper parentWindow;
+    ActionListener parentWindow;
 
-    public LearningPortfolio(ArrayList<Lesson> lessons, Minesweeper frame) {
+    public LearningPortfolio(ArrayList<Lesson> lessons, ActionListener frame) {
         super();
         this.lessons = lessons;
         this.parentWindow = frame;
@@ -54,7 +56,7 @@ public class LearningPortfolio extends JPanel {
         // Init navigation and action buttons:
         JPanel buttonsPanel = new JPanel();
         JButton button = new JButton("Back");
-        button.setActionCommand(parentWindow.MENU);
+        button.setActionCommand(GameConstants.MENU);
         button.addActionListener(parentWindow);
         buttonsPanel.add(button);
 

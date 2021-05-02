@@ -1,5 +1,7 @@
 package com.zetcode;
 
+import common.GameConstants;
+import common.GameStats;
 import common.ImageScaler;
 
 import javax.swing.*;
@@ -9,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
 
-public class StatusBar extends JPanel implements ActionListener {
+public class StatusBar extends JPanel {
     // Constants:
     final int LABELS_COUNT = 2; // Labels with images
     final int IMAGES_COUNT = 4;
@@ -19,10 +21,7 @@ public class StatusBar extends JPanel implements ActionListener {
     final int LEFT_PADDING = 10;
     final int LABEL_SPACING = 5;
 
-    // Effect buttons:
-    final String REVEAL = "Reveal";
-
-    Board board;
+    ActionListener board;
     JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LIVES,
     ImageIcon[] images = new ImageIcon[IMAGES_COUNT];
     String[] iconNames = {"flag.png", "hp.png", "reveal.png", "question.png"};
@@ -30,7 +29,7 @@ public class StatusBar extends JPanel implements ActionListener {
     JLabel questionsLabel;
     JButton revealBtn;
 
-    public StatusBar(Board board) {
+    public StatusBar(ActionListener board) {
         this.board = board;
         setLayout(new GridLayout(0, 3));
 
@@ -69,30 +68,20 @@ public class StatusBar extends JPanel implements ActionListener {
         add(new JLabel(""));
 
         // Add reveal button:
-        revealBtn = new JButton(REVEAL, images[2]);
-        revealBtn.setActionCommand(REVEAL);
-        revealBtn.addActionListener(this);
+        revealBtn = new JButton(GameConstants.REVEAL, images[2]);
+        revealBtn.setActionCommand(GameConstants.REVEAL);
+        revealBtn.addActionListener(board);
         revealBtn.setToolTipText("Click to consume a 'Reveal' charge. You can safely click a cell and its surroundings will be revealed.");
         revealBtn.setBorder(lineBorder);
         addComponent(revealBtn);
     }
 
-    public void update() {
-        labels[0].setText("x" + board.getFlagsLeft());
-        labels[1].setText("x" + board.getLives());
-        revealBtn.setText("x" + board.getReveals());
-        scoreLabel.setText("Score: " + board.getScore());
-
-        int qCount = board.getQuestionsCount(), qAnswered = board.getQuestionsAnswered();
-
-        questionsLabel.setText(qAnswered + "/" + qCount);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (Objects.equals(e.getActionCommand(), REVEAL)) board.enableReveal();
-        board.repaint();
-        update();
+    public void update(GameStats stats) {
+        labels[0].setText("x" + stats.flags);
+        labels[1].setText("x" + stats.lives);
+        revealBtn.setText("x" + stats.reveals);
+        scoreLabel.setText("Score: " + stats.score);
+        questionsLabel.setText(stats.questionsAnswered + "/" + stats.questionsCount);
     }
 
     public void addComponent(Component comp)
@@ -101,4 +90,7 @@ public class StatusBar extends JPanel implements ActionListener {
         panel.add(comp);
         add(panel);
     }
+
+
+
 }

@@ -90,6 +90,23 @@
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode extendsClassName="javax.swing.JPanel" />
   </dependency>
+  <dependency className="Minesweeper.sandbox.LearningPortfolio">
+    <classNode dependClassName="Minesweeper.sandbox.MathSweeper" />
+    <classNode dependClassName="common.Lesson" />
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Component" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.awt.Point" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.BorderFactory" />
+    <classNode dependClassName="javax.swing.BoxLayout" />
+    <classNode dependClassName="javax.swing.JButton" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.JScrollPane" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
   <dependency className="Minesweeper.sandbox.MathSweeper">
     <classNode dependClassName="Minesweeper.sandbox.LearningPortfolio" />
     <classNode dependClassName="Minesweeper.sandbox.MathSweeperBoard" />
@@ -178,6 +195,25 @@
     <classNode dependClassName="javax.swing.ImageIcon" />
     <classNode dependClassName="javax.swing.JFrame" />
     <classNode dependClassName="javax.swing.JOptionPane" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="Minesweeper.sandbox.StatusBar">
+    <classNode dependClassName="Minesweeper.sandbox.MathSweeperBoard" />
+    <classNode dependClassName="common.ImageScaler" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Component" />
+    <classNode dependClassName="java.awt.GridLayout" />
+    <classNode dependClassName="java.awt.Image" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Objects" />
+    <classNode dependClassName="javax.swing.BorderFactory" />
+    <classNode dependClassName="javax.swing.ImageIcon" />
+    <classNode dependClassName="javax.swing.JButton" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode extendsClassName="java.awt.event.ActionListener" />
     <classNode extendsClassName="javax.swing.JPanel" />
   </dependency>
 </dependenciesRoot>

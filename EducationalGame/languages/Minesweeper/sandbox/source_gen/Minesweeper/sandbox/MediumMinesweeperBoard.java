@@ -107,7 +107,7 @@ public class MediumMinesweeperBoard extends JPanel {
     }
     addMouseListener(new MinesAdapter());
     newGame(true, true);
-    statusbar.???();
+    statusbar.update();
   }
 
   /**
@@ -242,7 +242,7 @@ public class MediumMinesweeperBoard extends JPanel {
         g.drawImage(img[cell], (j * CELL_SIZE), (i * CELL_SIZE), this);
       }
     }
-    statusbar.???();
+    statusbar.update();
   }
 
   private class MinesAdapter extends MouseAdapter {
@@ -394,7 +394,7 @@ public class MediumMinesweeperBoard extends JPanel {
 
   private void handleIncorrectAnswer() {
     lives--;
-    statusbar.???();
+    statusbar.update();
     // Make sure the status bar updates. 
     JOptionPane.showMessageDialog(parentWindow, "You did not answer the question correctly. \nThe mine exploded.", "Incorrect answer - you lose a life", JOptionPane.ERROR_MESSAGE);
   }

@@ -1,17 +1,22 @@
 package com.zetcode;
 
+import common.GameConstants;
+import common.GameStats;
 import common.Lesson;
 import common.ImageScaler;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 import javax.swing.*;
 
 // Minesweeper board, main Panel of the application window.
-public class Board extends JPanel {
+public class Board extends JPanel implements ActionListener {
 
     private final int NUM_IMAGES = 14;
     private final int NUM_EFFECTS = 3;
@@ -121,7 +126,7 @@ public class Board extends JPanel {
 
         addMouseListener(new MinesAdapter());
         newGame(true, true);
-        statusbar.update();
+        statusbar.update(getStats());
     }
 
     /**
@@ -260,7 +265,7 @@ public class Board extends JPanel {
             }
         }
 
-        statusbar.update();
+        statusbar.update(getStats());
     }
 
     private class MinesAdapter extends MouseAdapter {
@@ -366,6 +371,28 @@ public class Board extends JPanel {
         }
     }
 
+    @Override
+    /**
+     * Handles button clicks from components that are listened by the game board.
+     * Specifically - special effect buttons.
+     */
+    public void actionPerformed(ActionEvent e) {
+        if (Objects.equals(e.getActionCommand(), GameConstants.REVEAL)) enableReveal();
+        repaint();
+        statusbar.update(getStats());
+    }
+
+    public GameStats getStats() {
+        GameStats stats =  new GameStats();
+        stats.flags = flagsLeft;
+        stats.lives = lives;
+        stats.score = score;
+        stats.questionsAnswered = questionsAnswered;
+        stats.questionsCount = questionsCount;
+        stats.reveals = reveals;
+        return stats;
+    }
+
     /**
      * Adds or removes a flag on the selected cell.
      * @param cellNo the cell to be marked.
@@ -418,7 +445,7 @@ public class Board extends JPanel {
 
     private void handleIncorrectAnswer() {
         lives--;
-        statusbar.update(); // Make sure the status bar updates.
+        statusbar.update(getStats()); // Make sure the status bar updates.
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",
                 "Incorrect answer - you lose a life",
