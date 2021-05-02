@@ -24,7 +24,7 @@ public class StatusBar extends JPanel {
     ActionListener board;
     JLabel[] labels = new JLabel[LABELS_COUNT];        // Effect labels: FLAGS, LIVES,
     ImageIcon[] images = new ImageIcon[IMAGES_COUNT];
-    String[] iconNames = {"flag.png", "hp.png", "reveal.png", "question.png"};
+    String[] iconNames = {"flag", "hp", "reveal", "question"};
     JLabel scoreLabel;
     JLabel questionsLabel;
     JButton revealBtn;
@@ -38,10 +38,9 @@ public class StatusBar extends JPanel {
         setBorder(emptyBorder);
         emptyBorder = BorderFactory.createEmptyBorder(0,LABEL_SPACING,0,0);
 
-        // Get images for labels and buttons:
+        // Get images for labels and buttons :
         for (int i = 0; i < IMAGES_COUNT; i++) {
-            var path = "src/resources/" + iconNames[i];
-            Image img = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), ICON_SIZE, ICON_SIZE);
+            Image img = ImageScaler.createMinesweeperImage(iconNames[i], ICON_SIZE, ICON_SIZE);
             images[i] = new ImageIcon(img);
         }
 

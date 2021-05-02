@@ -1,7 +1,11 @@
 package common;
 
+import com.zetcode.Board;
+
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 
 public class ImageScaler {
     /**
@@ -83,6 +87,23 @@ public class ImageScaler {
         Graphics g = bufferedImage.getGraphics();
         g.drawImage(img, 0, 0, null);
         return getScaledInstance(bufferedImage, targetWidth, targetHeight, RenderingHints.VALUE_INTERPOLATION_BICUBIC, false);
+    }
+
+    public static BufferedImage createMinesweeperImage(String imageName, int targetWidth, int targetHeight) {
+        File sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+
+        ImageIcon img;
+        // Path for the IntelliJ minesweeper project's resources folder:
+        String path = sourceLocation + "/resources/" + imageName + ".png";
+        img = new ImageIcon(path);
+
+        // If the load fails, look for resources in parent folder:
+        if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+            path = sourceLocation.getParent() + "/resources/" + imageName + ".png";
+            img = new ImageIcon(path);
+        }
+
+        return createScaledImage(img.getImage(), targetWidth, targetHeight);
     }
 
     /**

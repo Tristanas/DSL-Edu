@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -112,13 +113,11 @@ public class Board extends JPanel implements ActionListener {
         effectImg = new Image[NUM_EFFECTS + 1];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
-            var path = "src/resources/" + i + ".png";
-            img[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+            img[i] = ImageScaler.createMinesweeperImage(Integer.toString(i), CELL_SIZE, CELL_SIZE);
         }
 
         for (int i = 1; i <= NUM_EFFECTS; i++) {
-            var path = "src/resources/S" + i + ".png";
-            effectImg[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+            effectImg[i] = ImageScaler.createMinesweeperImage("S" + i, CELL_SIZE, CELL_SIZE);
         }
 
         addMouseListener(new MinesAdapter());
