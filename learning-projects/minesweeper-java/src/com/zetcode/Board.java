@@ -130,7 +130,7 @@ public class Board extends JPanel implements ActionListener {
      * Resets game state and counters. New mines added, all cells covered, new effects, lessons.
      */
     public void newGame(boolean addLessons, boolean addEffects) {
-        int cell, i;
+        int i;
         var random = new Random();
 
         // Reset state and counters:
@@ -355,8 +355,7 @@ public class Board extends JPanel implements ActionListener {
                     }
                 }
 
-                System.out.println("Mines left: " + Integer.toString(flagsLeft) + " Flagged correctly: " + Integer.toString(correctFlags) +
-                        " Covered: " + Integer.toString(uncover));
+                System.out.println("Mines left: " + flagsLeft + " Flagged correctly: " + correctFlags + " Covered: " + uncover);
 
                 if (doRepaint) repaint();
 
@@ -368,11 +367,11 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    @Override
     /**
      * Handles button clicks from components that are listened by the game board.
      * Specifically - special effect buttons.
      */
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (Objects.equals(e.getActionCommand(), GameConstants.REVEAL)) enableReveal();
         repaint();
@@ -533,11 +532,9 @@ public class Board extends JPanel implements ActionListener {
 
     /**
      * Shows a confirmation message, prompting the player to play again or to return to menu.
-     * @return true - replay game, false - go to menu.
      */
     private void handleGameOver(boolean won) {
-        String title = (won == true) ? "Game won" : "Game lost";
-        //flagsLabel.setText(title);
+        String title = (won) ? "Game won" : "Game lost";
 
         int selection = JOptionPane.showConfirmDialog(this,
                 "Would you like to play again?",
@@ -555,11 +552,7 @@ public class Board extends JPanel implements ActionListener {
         int incorrectFlags = N_MINES - flagsLeft - correctFlags;
         boolean onlyMinesCovered = (uncover == N_MINES - correctFlags),
                 noIncorrectFlags = (incorrectFlags == 0);
-        if (onlyMinesCovered && noIncorrectFlags) {
-            return true;
-        }
-        else return false;
-        //return onlyMinesCovered && noIncorrectFlags;
+        return onlyMinesCovered && noIncorrectFlags; // If both are true, game is won.
     }
 
     public void enableReveal() {
@@ -569,37 +562,5 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-
-    public int getFlagsLeft() {
-        return flagsLeft;
-    }
-
-    public int getLives() {
-        return lives;
-    }
-
-    public int getReveals() {
-        return reveals;
-    }
-
-    public int getLessonsFound() {
-        return lessonsFound;
-    }
-
-    public int getLessonsCount() {
-        return lessons.size();
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public int getQuestionsCount() {
-        return questionsCount;
-    }
-
-    public int getQuestionsAnswered() {
-        return questionsAnswered;
-    }
 }
 
