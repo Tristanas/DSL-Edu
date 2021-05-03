@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="runtimetest" uuid="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="CommonClasses" uuid="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/libs/minesweeper (1.2).jar!/" type="java_classes">
       <sourceRoot location="." />
@@ -26,8 +26,8 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="ce6ad31d-75bc-4f87-98cf-cce06e26c44d(CommonClasses)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="ce6ad31d-75bc-4f87-98cf-cce06e26c44d(runtimetest)" version="0" />
   </dependencyVersions>
 </solution>
 
