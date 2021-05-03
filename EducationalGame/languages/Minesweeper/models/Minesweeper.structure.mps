@@ -81,5 +81,15 @@
       <ref role="20lvS9" to="cgkn:4XM$1KSTqyw" resolve="TestReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="10qyPnJZpF9">
+    <property role="EcuMT" value="1160393055216179913" />
+    <property role="TrG5h" value="LearningGame" />
+    <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Game" />
+  </node>
+  <node concept="1TIwiD" id="10qyPnJZpFC">
+    <property role="EcuMT" value="1160393055216179944" />
+    <property role="TrG5h" value="TestGame" />
+    <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Game" />
+  </node>
 </model>
 
