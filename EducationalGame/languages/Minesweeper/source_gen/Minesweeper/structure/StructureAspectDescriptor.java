@@ -66,6 +66,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("bombs", 0x6cece7c61cb7d2b7L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281847").done();
     b.property("cellSize", 0x2c993fc0cfd99be4L).type(PrimitiveTypeId.INTEGER).origin("3213669906458975204").done();
     b.aggregate("questionaire", 0x2124eace002ddbbeL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L).optional(true).ordered(true).multiple(false).origin("2388291872900373438").done();
+    b.aggregate("lesson", 0x5a2dfcc968fb0942L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L).optional(true).ordered(true).multiple(false).origin("6498127779345402178").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLearningGame() {

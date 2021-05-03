@@ -12,12 +12,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Answer;
   private ConceptPresentation props_Concept;
   private ConceptPresentation props_Lesson;
+  private ConceptPresentation props_LessonReference;
   private ConceptPresentation props_SimpleTest;
   private ConceptPresentation props_SingleChoiceQuestion;
   private ConceptPresentation props_Subject;
   private ConceptPresentation props_TestReference;
   private ConceptPresentation props_Topic;
-  private ConceptPresentation props_test;
 
   @Override
   @Nullable
@@ -45,6 +45,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Lesson = cpb.create();
         }
         return props_Lesson;
+      case LanguageConceptSwitch.LessonReference:
+        if (props_LessonReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L, 0x5a2dfcc968fb05cfL, "LesssonRef", "", "");
+          props_LessonReference = cpb.create();
+        }
+        return props_LessonReference;
       case LanguageConceptSwitch.SimpleTest:
         if (props_SimpleTest == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,13 +87,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Topic = cpb.create();
         }
         return props_Topic;
-      case LanguageConceptSwitch.test:
-        if (props_test == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("test");
-          props_test = cpb.create();
-        }
-        return props_test;
     }
     return null;
   }

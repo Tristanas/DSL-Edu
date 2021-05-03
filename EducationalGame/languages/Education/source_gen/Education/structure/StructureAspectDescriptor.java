@@ -16,12 +16,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAnswer = createDescriptorForAnswer();
   /*package*/ final ConceptDescriptor myConceptConcept = createDescriptorForConcept();
   /*package*/ final ConceptDescriptor myConceptLesson = createDescriptorForLesson();
+  /*package*/ final ConceptDescriptor myConceptLessonReference = createDescriptorForLessonReference();
   /*package*/ final ConceptDescriptor myConceptSimpleTest = createDescriptorForSimpleTest();
   /*package*/ final ConceptDescriptor myConceptSingleChoiceQuestion = createDescriptorForSingleChoiceQuestion();
   /*package*/ final ConceptDescriptor myConceptSubject = createDescriptorForSubject();
   /*package*/ final ConceptDescriptor myConceptTestReference = createDescriptorForTestReference();
   /*package*/ final ConceptDescriptor myConceptTopic = createDescriptorForTopic();
-  /*package*/ final ConceptDescriptor myConcepttest = createDescriptorFortest();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -36,7 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAnswer, myConceptConcept, myConceptLesson, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic, myConcepttest);
+    return Arrays.asList(myConceptAnswer, myConceptConcept, myConceptLesson, myConceptLessonReference, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic);
   }
 
   @Override
@@ -49,6 +49,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptConcept;
       case LanguageConceptSwitch.Lesson:
         return myConceptLesson;
+      case LanguageConceptSwitch.LessonReference:
+        return myConceptLessonReference;
       case LanguageConceptSwitch.SimpleTest:
         return myConceptSimpleTest;
       case LanguageConceptSwitch.SingleChoiceQuestion:
@@ -59,8 +61,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTestReference;
       case LanguageConceptSwitch.Topic:
         return myConceptTopic;
-      case LanguageConceptSwitch.test:
-        return myConcepttest;
       default:
         return null;
     }
@@ -95,6 +95,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/1160393055216169711");
     b.version(2);
     b.aggregate("Concepts", 0x101a8b55effd99f9L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL).optional(true).ordered(true).multiple(true).origin("1160393055216179705").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessonReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "LessonReference", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L);
+    b.class_(false, false, false);
+    b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/6498127779345401249");
+    b.version(2);
+    b.associate("LesssonRef", 0x5a2dfcc968fb05cfL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL).optional(false).origin("6498127779345401295").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSimpleTest() {
@@ -139,14 +147,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("Name", 0x101a8b55effd9a0aL).type(PrimitiveTypeId.STRING).origin("1160393055216179722").done();
     b.aggregate("Lessons", 0x101a8b55effd9a0cL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL).optional(true).ordered(true).multiple(true).origin("1160393055216179724").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorFortest() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "test", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968ebbac1L);
-    b.class_(false, false, true);
-    b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/6498127779344399041");
-    b.version(2);
-    b.property("text", 0x5a2dfcc968ebbad1L).type(PrimitiveTypeId.STRING).origin("6498127779344399057").done();
     return b.create();
   }
 }

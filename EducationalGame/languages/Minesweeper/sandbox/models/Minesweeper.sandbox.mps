@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="f1yb" ref="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox)" />
+    <import index="1k9o" ref="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons)" />
   </imports>
   <registry>
     <language id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper">
@@ -16,9 +17,13 @@
         <property id="7848903088671281844" name="height" index="1KmNlM" />
         <property id="7848903088671281842" name="width" index="1KmNlO" />
         <child id="2388291872900373438" name="questionaire" index="x2j5K" />
+        <child id="6498127779345402178" name="lesson" index="MPJmb" />
       </concept>
     </language>
     <language id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education">
+      <concept id="6498127779345401249" name="Education.structure.LessonReference" flags="ng" index="MPJ_C">
+        <reference id="6498127779345401295" name="LesssonRef" index="MPJ$6" />
+      </concept>
       <concept id="5724796527229380768" name="Education.structure.TestReference" flags="ng" index="1R_NyW">
         <reference id="5724796527230066999" name="testReference" index="1RwF4F" />
       </concept>
@@ -57,6 +62,9 @@
     <property role="3zgag$" value="30" />
     <node concept="1R_NyW" id="4XM$1KSYoLS" role="x2j5K">
       <ref role="1RwF4F" to="f1yb:4XM$1KSYoGT" resolve="English" />
+    </node>
+    <node concept="MPJ_C" id="5CHZc_D0hY4" role="MPJmb">
+      <ref role="MPJ$6" to="1k9o:10qyPnJZG5I" resolve="Statistics introduction" />
     </node>
   </node>
   <node concept="1KmNlR" id="L9ePhMQlJ7">

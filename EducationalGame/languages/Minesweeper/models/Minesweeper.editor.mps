@@ -30,6 +30,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -131,6 +132,20 @@
       </node>
       <node concept="3F1sOY" id="4XM$1KSTqA1" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:24$UGS0btIY" resolve="questionaire" />
+      </node>
+      <node concept="3F0ifn" id="5CHZc_CYK_E" role="3EZMnx">
+        <property role="3F0ifm" value="Lesson:" />
+        <node concept="pVoyu" id="5CHZc_CYKAQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5CHZc_CYKAS" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:5CHZc_CYK_2" resolve="lesson" />
+      </node>
+      <node concept="35HoNQ" id="5CHZc_CZzqv" role="3EZMnx">
+        <node concept="pVoyu" id="5CHZc_CZzr8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4XM$1KSX3b6" role="3EZMnx">
         <property role="3F0ifm" value="Questions:" />

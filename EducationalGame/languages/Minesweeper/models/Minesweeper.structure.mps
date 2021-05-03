@@ -80,6 +80,12 @@
       <property role="20kJfa" value="questionaire" />
       <ref role="20lvS9" to="cgkn:4XM$1KSTqyw" resolve="TestReference" />
     </node>
+    <node concept="1TJgyj" id="5CHZc_CYK_2" role="1TKVEi">
+      <property role="IQ2ns" value="6498127779345402178" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lesson" />
+      <ref role="20lvS9" to="cgkn:5CHZc_CYKmx" resolve="LessonReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10qyPnJZpF9">
     <property role="EcuMT" value="1160393055216179913" />

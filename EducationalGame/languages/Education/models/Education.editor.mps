@@ -31,13 +31,9 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
-        <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -224,44 +220,14 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5CHZc_CUVGc">
-    <ref role="1XX52x" to="cgkn:5CHZc_CUVF1" resolve="test" />
-    <node concept="3EZMnI" id="5CHZc_CWzDo" role="2wV5jI">
-      <node concept="l2Vlx" id="5CHZc_CWzDp" role="2iSdaV" />
-      <node concept="3F0ifn" id="5CHZc_CWzDq" role="3EZMnx">
-        <property role="3F0ifm" value="test" />
-      </node>
-      <node concept="3F0ifn" id="5CHZc_CWzDr" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <node concept="3mYdg7" id="5CHZc_CWzDs" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
-        </node>
-        <node concept="ljvvj" id="5CHZc_CWzDt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="5CHZc_CWzDu" role="3EZMnx">
-        <node concept="l2Vlx" id="5CHZc_CWzDv" role="2iSdaV" />
-        <node concept="lj46D" id="5CHZc_CWzDw" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="5CHZc_CWzDx" role="3EZMnx">
-          <property role="3F0ifm" value="text" />
-        </node>
-        <node concept="3F0ifn" id="5CHZc_CWzDy" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="5CHZc_CWzDz" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="2v7bAL" id="5CHZc_CWzH4" role="3EZMnx">
-          <ref role="1NtTu8" to="cgkn:5CHZc_CUVFh" resolve="text" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5CHZc_CWzDA" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <node concept="3mYdg7" id="5CHZc_CWzDB" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
+  <node concept="24kQdi" id="5CHZc_CYKqr">
+    <ref role="1XX52x" to="cgkn:5CHZc_CYKmx" resolve="LessonReference" />
+    <node concept="1iCGBv" id="5CHZc_CYKqt" role="2wV5jI">
+      <ref role="1NtTu8" to="cgkn:5CHZc_CYKnf" resolve="LesssonRef" />
+      <node concept="1sVBvm" id="5CHZc_CYKqv" role="1sWHZn">
+        <node concept="3F0A7n" id="5CHZc_CYKqA" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
