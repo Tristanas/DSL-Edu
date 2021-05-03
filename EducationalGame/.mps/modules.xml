@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Minesweeper/sandbox/Minesweeper.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Education.sandbox/Education.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Questionaire/Questionaire.msd" folder="" />
     </projectModules>
   </component>

@@ -10,9 +10,14 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Answer;
+  private ConceptPresentation props_Concept;
+  private ConceptPresentation props_Lesson;
   private ConceptPresentation props_SimpleTest;
   private ConceptPresentation props_SingleChoiceQuestion;
+  private ConceptPresentation props_Subject;
   private ConceptPresentation props_TestReference;
+  private ConceptPresentation props_Topic;
+  private ConceptPresentation props_test;
 
   @Override
   @Nullable
@@ -26,6 +31,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Answer = cpb.create();
         }
         return props_Answer;
+      case LanguageConceptSwitch.Concept:
+        if (props_Concept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Concept");
+          props_Concept = cpb.create();
+        }
+        return props_Concept;
+      case LanguageConceptSwitch.Lesson:
+        if (props_Lesson == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Lesson = cpb.create();
+        }
+        return props_Lesson;
       case LanguageConceptSwitch.SimpleTest:
         if (props_SimpleTest == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -40,6 +59,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SingleChoiceQuestion = cpb.create();
         }
         return props_SingleChoiceQuestion;
+      case LanguageConceptSwitch.Subject:
+        if (props_Subject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Subject");
+          props_Subject = cpb.create();
+        }
+        return props_Subject;
       case LanguageConceptSwitch.TestReference:
         if (props_TestReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -47,6 +73,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TestReference = cpb.create();
         }
         return props_TestReference;
+      case LanguageConceptSwitch.Topic:
+        if (props_Topic == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Topic");
+          props_Topic = cpb.create();
+        }
+        return props_Topic;
+      case LanguageConceptSwitch.test:
+        if (props_test == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("test");
+          props_test = cpb.create();
+        }
+        return props_test;
     }
     return null;
   }

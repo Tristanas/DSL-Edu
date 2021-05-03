@@ -14,6 +14,8 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
+  /*package*/ final ConceptDescriptor myConceptLearningGame = createDescriptorForLearningGame();
+  /*package*/ final ConceptDescriptor myConceptTestGame = createDescriptorForTestGame();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -29,7 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptGame);
+    return Arrays.asList(myConceptGame, myConceptLearningGame, myConceptTestGame);
   }
 
   @Override
@@ -38,6 +40,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Game:
         return myConceptGame;
+      case LanguageConceptSwitch.LearningGame:
+        return myConceptLearningGame;
+      case LanguageConceptSwitch.TestGame:
+        return myConceptTestGame;
       default:
         return null;
     }
@@ -60,6 +66,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("bombs", 0x6cece7c61cb7d2b7L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281847").done();
     b.property("cellSize", 0x2c993fc0cfd99be4L).type(PrimitiveTypeId.INTEGER).origin("3213669906458975204").done();
     b.aggregate("questionaire", 0x2124eace002ddbbeL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L).optional(true).ordered(true).multiple(false).origin("2388291872900373438").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLearningGame() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LearningGame", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L);
+    b.class_(false, false, false);
+    b.super_("Minesweeper.structure.Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179913");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTestGame() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "TestGame", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L);
+    b.class_(false, false, false);
+    b.super_("Minesweeper.structure.Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179944");
+    b.version(2);
     return b.create();
   }
 }

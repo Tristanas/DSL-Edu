@@ -10,16 +10,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Answer = 0;
-  public static final int SimpleTest = 1;
-  public static final int SingleChoiceQuestion = 2;
-  public static final int TestReference = 3;
+  public static final int Concept = 1;
+  public static final int Lesson = 2;
+  public static final int SimpleTest = 3;
+  public static final int SingleChoiceQuestion = 4;
+  public static final int Subject = 5;
+  public static final int TestReference = 6;
+  public static final int Topic = 7;
+  public static final int test = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf086fa03c1954951L, 0xa78fbf3bd377c791L);
     builder.put(0x2124eace002ddad1L, Answer);
+    builder.put(0x101a8b55effd730eL, Concept);
+    builder.put(0x101a8b55effd72efL, Lesson);
     builder.put(0x4f72901c38e58a6dL, SimpleTest);
     builder.put(0x2124eace002ddad4L, SingleChoiceQuestion);
+    builder.put(0x2f5b75f5c2806743L, Subject);
     builder.put(0x4f72901c38e5a8a0L, TestReference);
+    builder.put(0x101a8b55effd72d0L, Topic);
+    builder.put(0x5a2dfcc968ebbac1L, test);
     myIndex = builder.seal();
   }
 

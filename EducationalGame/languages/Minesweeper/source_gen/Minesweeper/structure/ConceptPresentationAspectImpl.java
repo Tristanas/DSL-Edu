@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Game;
+  private ConceptPresentation props_LearningGame;
+  private ConceptPresentation props_TestGame;
 
   @Override
   @Nullable
@@ -23,6 +25,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Game = cpb.create();
         }
         return props_Game;
+      case LanguageConceptSwitch.LearningGame:
+        if (props_LearningGame == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_LearningGame = cpb.create();
+        }
+        return props_LearningGame;
+      case LanguageConceptSwitch.TestGame:
+        if (props_TestGame == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TestGame = cpb.create();
+        }
+        return props_TestGame;
     }
     return null;
   }
