@@ -1,8 +1,14 @@
 package com.zetcode;
 
+import common.GameConstants;
+import common.ImageScaler;
+import common.LearningPortfolio;
+import common.Lesson;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -24,11 +30,11 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
     // Button text:
-    final String PLAY = "Play";
-    final String TEST = "Take test";
-    final String LESSONS = "Check lessons";
-    final String EXIT = "Exit";
-    final String MENU = "Menu";
+    public final String PLAY = "Play";
+    public final String TEST = "Take test";
+    public final String LESSONS = "Check lessons";
+    public final String EXIT = "Exit";
+    public final String MENU = "Menu";
 
     Board minesweeperBoard;
 
@@ -52,8 +58,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons.add(new Lesson("Math 1: median", "The median is the middle value in the list of numbers." +
                 " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
                 "so you may have to rewrite your list before you can find the median."));
-        for (int i = 2; i < 20; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
+        for (int i = 2; i < 8; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
 
+        setupResourcesPath();
         showMenu();
     }
 
@@ -71,12 +78,11 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu = new JPanel();
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
-
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(PLAY, "Play in learning mode", menu);
-        addButton(TEST, "Play an evaluation game",menu);
-        addButton(LESSONS,"View found lessons", menu);
-        addButton(EXIT, "Close application", menu);
+        addButton(GameConstants.PLAY, "Play in learning mode", menu);
+        addButton(GameConstants.TEST, "Play an evaluation game", menu);
+        addButton(GameConstants.LESSONS, "View found lessons", menu);
+        addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
     }
 
@@ -156,6 +162,22 @@ public class Minesweeper extends JFrame implements ActionListener {
             var ex = new Minesweeper();
             ex.setVisible(true);
         });
+    }
+
+    public void setupResourcesPath() {
+        File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        ImageIcon img;
+        String imageName = "0.png";
+
+        // Path for the IntelliJ minesweeper project's resources folder:
+        String path = sourceLocation + "/resources/";
+        img = new ImageIcon(path + imageName);
+
+        // If the load fails, look for resources in parent folder:
+        if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+            path = sourceLocation.getParent() + "/resources/";
+        }
+        ImageScaler.ResourcesPath = path;
     }
 
     public class Question {

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
+  <attribute name="user-objects" value="true" />
   <languages />
   <imports>
     <import index="hrev" ref="r:71b38e24-7fc9-40ac-b1c3-775665b810d9(Minesweeper.typesystem)" />

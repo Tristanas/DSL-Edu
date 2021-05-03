@@ -1,20 +1,20 @@
 package com.zetcode;
 
-import net.java.ImageScaler;
+import common.*;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 import javax.swing.*;
 
-import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
-
 // Minesweeper board, main Panel of the application window.
-public class Board extends JPanel {
+public class Board extends JPanel implements ActionListener {
 
     private final int NUM_IMAGES = 14;
     private final int NUM_EFFECTS = 3;
@@ -113,25 +113,23 @@ public class Board extends JPanel {
         effectImg = new Image[NUM_EFFECTS + 1];
 
         for (int i = 0; i < NUM_IMAGES; i++) {
-            var path = "src/resources/" + i + ".png";
-            img[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+            img[i] = ImageScaler.createMinesweeperImage(i + ".png", CELL_SIZE, CELL_SIZE);
         }
 
         for (int i = 1; i <= NUM_EFFECTS; i++) {
-            var path = "src/resources/S" + i + ".png";
-            effectImg[i] = ImageScaler.createScaledImage((new ImageIcon(path)).getImage(), CELL_SIZE, CELL_SIZE);
+            effectImg[i] = ImageScaler.createMinesweeperImage("S" + i + ".png", CELL_SIZE, CELL_SIZE);
         }
 
         addMouseListener(new MinesAdapter());
         newGame(true, true);
-        statusbar.update();
+        statusbar.update(getStats());
     }
 
     /**
      * Resets game state and counters. New mines added, all cells covered, new effects, lessons.
      */
     public void newGame(boolean addLessons, boolean addEffects) {
-        int cell, i;
+        int i;
         var random = new Random();
 
         // Reset state and counters:
@@ -263,7 +261,7 @@ public class Board extends JPanel {
             }
         }
 
-        statusbar.update();
+        statusbar.update(getStats());
     }
 
     private class MinesAdapter extends MouseAdapter {
@@ -338,7 +336,11 @@ public class Board extends JPanel {
                                     if (answeredCorrectly) handleCorrectAnswer();
                                     else handleIncorrectAnswer();
                                 }
-                                else lives--;
+                                else {
+                                    lives--;
+                                    flagsLeft--; // Mine is displayed, 1 less flag is required.
+                                    correctFlags++; // Maintaining win condition accurate.
+                                }
 
                                 if (lives == 0) {
                                     inGame = false;
@@ -352,8 +354,7 @@ public class Board extends JPanel {
                     }
                 }
 
-                System.out.println("Mines left: " + Integer.toString(flagsLeft) + " Flagged correctly: " + Integer.toString(correctFlags) +
-                        " Covered: " + Integer.toString(uncover));
+                System.out.println("Mines left: " + flagsLeft + " Flagged correctly: " + correctFlags + " Covered: " + uncover);
 
                 if (doRepaint) repaint();
 
@@ -363,6 +364,28 @@ public class Board extends JPanel {
                 if (isGameWon()) handleGameOver(true);
             }
         }
+    }
+
+    /**
+     * Handles button clicks from components that are listened by the game board.
+     * Specifically - special effect buttons.
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (Objects.equals(e.getActionCommand(), GameConstants.REVEAL)) enableReveal();
+        repaint();
+        statusbar.update(getStats());
+    }
+
+    public GameStats getStats() {
+        GameStats stats =  new GameStats();
+        stats.flags = flagsLeft;
+        stats.lives = lives;
+        stats.score = score;
+        stats.questionsAnswered = questionsAnswered;
+        stats.questionsCount = questionsCount;
+        stats.reveals = reveals;
+        return stats;
     }
 
     /**
@@ -376,8 +399,6 @@ public class Board extends JPanel {
         flagsLeft -= direction;
         uncover -= direction;
         if (field[cellNo] == COVERED_MINE_CELL || field[cellNo] == MARKED_MINE_CELL) correctFlags += direction;
-        String msg = "Mines left: " + Integer.toString(flagsLeft);
-        //flagsLabel.setText(msg);
     }
 
     public void uncoverCell(int cellNo) {
@@ -419,7 +440,7 @@ public class Board extends JPanel {
 
     private void handleIncorrectAnswer() {
         lives--;
-        statusbar.update(); // Make sure the status bar updates.
+        statusbar.update(getStats()); // Make sure the status bar updates.
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",
                 "Incorrect answer - you lose a life",
@@ -438,7 +459,7 @@ public class Board extends JPanel {
 
     private JFrame displayFoundLesson(Lesson lesson) {
         JFrame frame = new JFrame("New lesson found");
-        frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(lesson.createLessonPanel());
         frame.setSize(lessonWindowSize);
         Point location = parentWindow.getLocation();
@@ -510,11 +531,9 @@ public class Board extends JPanel {
 
     /**
      * Shows a confirmation message, prompting the player to play again or to return to menu.
-     * @return true - replay game, false - go to menu.
      */
     private void handleGameOver(boolean won) {
-        String title = (won == true) ? "Game won" : "Game lost";
-        //flagsLabel.setText(title);
+        String title = (won) ? "Game won" : "Game lost";
 
         int selection = JOptionPane.showConfirmDialog(this,
                 "Would you like to play again?",
@@ -532,11 +551,7 @@ public class Board extends JPanel {
         int incorrectFlags = N_MINES - flagsLeft - correctFlags;
         boolean onlyMinesCovered = (uncover == N_MINES - correctFlags),
                 noIncorrectFlags = (incorrectFlags == 0);
-        if (onlyMinesCovered && noIncorrectFlags) {
-            return true;
-        }
-        else return false;
-        //return onlyMinesCovered && noIncorrectFlags;
+        return onlyMinesCovered && noIncorrectFlags; // If both are true, game is won.
     }
 
     public void enableReveal() {
@@ -546,37 +561,5 @@ public class Board extends JPanel {
         }
     }
 
-
-    public int getFlagsLeft() {
-        return flagsLeft;
-    }
-
-    public int getLives() {
-        return lives;
-    }
-
-    public int getReveals() {
-        return reveals;
-    }
-
-    public int getLessonsFound() {
-        return lessonsFound;
-    }
-
-    public int getLessonsCount() {
-        return lessons.size();
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public int getQuestionsCount() {
-        return questionsCount;
-    }
-
-    public int getQuestionsAnswered() {
-        return questionsAnswered;
-    }
 }
 

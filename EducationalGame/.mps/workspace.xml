@@ -5,12 +5,25 @@
       <TreeState />
     </option>
   </component>
+  <component name="BreakpointViewSettings">
+    <option name="myTreeState">
+      <TreeState>
+        <option name="expansion">
+          <list>
+            <option value="/" />
+          </list>
+        </option>
+      </TreeState>
+    </option>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/StatusBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/StatusBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/resources/hp.png" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/resources/hp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/runtimetest/libs/minesweeper (1.2).jar" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/CommonClasses/libs/minesweeper (1.2).jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/runtimetest/libs/minesweeper-new.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/runtimetest/runtimetest.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +36,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="1c9eaebf-4b2c-4ac3-be97-4fb38125e882/r:0b1d65c4-d652-46ee-b668-830b93da51ae(TempModule1c9eaebf-4b2c-4ac3-be97-4fb38125e882/ConsoleModel_613547577546600)">
+            <model ref="937b7ee5-0259-4ba2-87a5-6bf4c309f237/r:4ac6af93-181b-408f-8206-66ca4c4519fd(TempModule937b7ee5-0259-4ba2-87a5-6bf4c309f237/ConsoleModel_378566739488800)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -43,11 +56,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1L1H$CRE8LO">
-                <node concept="3balQm" id="1L1H$CRE8LP" role="aymYE" />
-                <node concept="2Clz$F" id="1L1H$CRE8LQ" role="aymYO" />
-                <node concept="2_V_lH" id="1L1H$CRE8LR" role="1PhJh3">
-                  <ref role="2_V_lI" node="1L1H$CRE8LQ" resolve="CommandHolder" />
+              <node concept="aymSD" id="2Xrtvn2sUPW">
+                <node concept="3balQm" id="2Xrtvn2sUPX" role="aymYE" />
+                <node concept="2Clz$F" id="2Xrtvn2sUPY" role="aymYO" />
+                <node concept="2_V_lH" id="2Xrtvn2sUPZ" role="1PhJh3">
+                  <ref role="2_V_lI" node="2Xrtvn2sUPY" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -98,7 +111,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1bddnp7AxtEe8Wh6pQG3WcWAQ2X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectPluginManager">
     <option name="pluginsState">
       <option name="jetbrains.mps.baseLanguage.lightweightdsl.pluginSolution.plugin.PluginSolution_ProjectPlugin">
@@ -200,6 +215,36 @@
               <item name="" type="" />
               <item name="" type="" />
             </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -208,67 +253,7 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionaire" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -276,37 +261,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
+              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Education/models/Education.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,7 +285,39 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -334,7 +327,17 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -350,9 +353,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -363,17 +376,26 @@
               <option name="myItemId" value="Questionaire" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Questionaire/models/Questionaire.sandbox.mps]" />
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5724796527230684283" />
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -381,12 +403,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/MPSSamples.2019.3.4/componentDependencies" />
-    <property name="settings.editor.selected.configurable" value="project.options.prefs.page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Java Application.Node EasyMinesweeper">
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <toRun name="Node EasyMinesweeper" type="Unknown" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Node EasyMinesweeper" type="Unknown" />
+      <method v="2" />
+    </configuration>
     <configuration name="Node EasyMinesweeper" type="Java Application" factoryName="Java" temporary="true">
       <myNode>
         <MyState>
@@ -508,6 +539,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Compound.Unnamed" />
       <item itemvalue="Java Application.Node EasyMinesweeper" />
       <item itemvalue="Java Application.Node ImpossibleMinesweeper" />
       <item itemvalue="Java Application.Node MathSweeper" />
@@ -523,8 +555,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Vilius\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -543,62 +576,7 @@
       <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
     </default_view_options>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="427" y="214" key="#MPSPropertiesConfigurable" timestamp="1615128505927">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="427" y="214" key="#MPSPropertiesConfigurable/0.0.1680.1010@0.0.1680.1010" timestamp="1615128505927" />
-    <state x="549" y="214" key="#Node_MathSweeper" timestamp="1615128326947">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="549" y="214" key="#Node_MathSweeper/0.0.1680.1010@0.0.1680.1010" timestamp="1615128326947" />
-    <state x="549" y="214" key="#Node_MediumMinesweeper" timestamp="1615128311107">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="549" y="214" key="#Node_MediumMinesweeper/0.0.1680.1010@0.0.1680.1010" timestamp="1615128311107" />
-    <state x="520" y="259" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard" timestamp="1615128192930">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="520" y="259" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard/0.0.1680.1010@0.0.1680.1010" timestamp="1615128192930" />
-    <state x="619" y="259" key="FileChooserDialogImpl" timestamp="1615128293581">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="619" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1615128293581" />
-    <state width="1637" height="279" key="GridCell.Tab.0.bottom" timestamp="1615325316987">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1637" height="279" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1615325316987" />
-    <state width="1637" height="279" key="GridCell.Tab.0.center" timestamp="1615325316987">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1637" height="279" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1615325316987" />
-    <state width="1637" height="279" key="GridCell.Tab.0.left" timestamp="1615325316987">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1637" height="279" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1615325316987" />
-    <state width="1637" height="279" key="GridCell.Tab.0.right" timestamp="1615325316987">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1637" height="279" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1615325316987" />
-    <state x="420" y="247" key="IDE.errors.dialog" timestamp="1615294583280">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="420" y="247" key="IDE.errors.dialog/0.0.1680.1010@0.0.1680.1010" timestamp="1615294583280" />
-    <state x="341" y="149" key="SettingsEditor" timestamp="1615126902684">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="341" y="149" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1615126902684" />
-    <state x="445" y="184" key="jetbrains.mps.ide.blame.dialog.BlameDialog" timestamp="1615294553352">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="445" y="184" key="jetbrains.mps.ide.blame.dialog.BlameDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1615294553352" />
-    <state x="634" y="257" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1615128120230">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="634" y="257" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1615128120230" />
-    <state x="557" y="363" key="jetbrains.mps.workbench.dialogs.project.properties.project.ProjectPropertiesDialog" timestamp="1615126861023">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="557" y="363" key="jetbrains.mps.workbench.dialogs.project.properties.project.ProjectPropertiesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1615126861023" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
