@@ -136,7 +136,6 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -3080,102 +3079,6 @@
       <node concept="3Tm1VV" id="7QFvLrHnK2a" role="1B3o_S" />
       <node concept="3cqZAl" id="7QFvLrHnK2b" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="7QFvLrHnFMp" role="jymVt" />
-    <node concept="2tJIrI" id="7QFvLrHnG3g" role="jymVt" />
-    <node concept="312cEu" id="3EkTMGp7$mb" role="jymVt">
-      <property role="TrG5h" value="Question" />
-      <property role="2bfB8j" value="true" />
-      <node concept="3Tm1VV" id="3EkTMGp7$mc" role="1B3o_S" />
-      <node concept="312cEg" id="3EkTMGp7$md" role="jymVt">
-        <property role="TrG5h" value="correctAnswer" />
-        <node concept="3uibUv" id="3EkTMGp7$mf" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-        <node concept="3Tm1VV" id="3EkTMGp7$mg" role="1B3o_S" />
-      </node>
-      <node concept="312cEg" id="3EkTMGp7$mh" role="jymVt">
-        <property role="TrG5h" value="answers" />
-        <node concept="10Q1$e" id="3EkTMGp7$mk" role="1tU5fm">
-          <node concept="3uibUv" id="3EkTMGp7$mj" role="10Q1$1">
-            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-          </node>
-        </node>
-        <node concept="3Tm1VV" id="3EkTMGp7$ml" role="1B3o_S" />
-      </node>
-      <node concept="312cEg" id="3EkTMGp7$mm" role="jymVt">
-        <property role="TrG5h" value="question" />
-        <node concept="3uibUv" id="3EkTMGp7$mo" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-        <node concept="3Tm1VV" id="3EkTMGp7$mp" role="1B3o_S" />
-      </node>
-      <node concept="3clFbW" id="3EkTMGp7$mq" role="jymVt">
-        <node concept="3cqZAl" id="3EkTMGp7$mr" role="3clF45" />
-        <node concept="37vLTG" id="3EkTMGp7$ms" role="3clF46">
-          <property role="TrG5h" value="question" />
-          <node concept="3uibUv" id="3EkTMGp7$mt" role="1tU5fm">
-            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="3EkTMGp7$mu" role="3clF46">
-          <property role="TrG5h" value="answers" />
-          <node concept="10Q1$e" id="3EkTMGp7$mw" role="1tU5fm">
-            <node concept="3uibUv" id="3EkTMGp7$mv" role="10Q1$1">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-          </node>
-        </node>
-        <node concept="37vLTG" id="3EkTMGp7$mx" role="3clF46">
-          <property role="TrG5h" value="correctAnswer" />
-          <node concept="3uibUv" id="3EkTMGp7$my" role="1tU5fm">
-            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="3EkTMGp7$mz" role="3clF47">
-          <node concept="3clFbF" id="3EkTMGp7$m$" role="3cqZAp">
-            <node concept="37vLTI" id="3EkTMGp7$m_" role="3clFbG">
-              <node concept="2OqwBi" id="3EkTMGp7$mA" role="37vLTJ">
-                <node concept="Xjq3P" id="3EkTMGp7$mB" role="2Oq$k0" />
-                <node concept="2OwXpG" id="3EkTMGp7$mC" role="2OqNvi">
-                  <ref role="2Oxat5" node="3EkTMGp7$mm" resolve="question" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3EkTMGp7$mD" role="37vLTx">
-                <ref role="3cqZAo" node="3EkTMGp7$ms" resolve="question" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="3EkTMGp7$mE" role="3cqZAp">
-            <node concept="37vLTI" id="3EkTMGp7$mF" role="3clFbG">
-              <node concept="2OqwBi" id="3EkTMGp7$mG" role="37vLTJ">
-                <node concept="Xjq3P" id="3EkTMGp7$mH" role="2Oq$k0" />
-                <node concept="2OwXpG" id="3EkTMGp7$mI" role="2OqNvi">
-                  <ref role="2Oxat5" node="3EkTMGp7$mh" resolve="answers" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3EkTMGp7$mJ" role="37vLTx">
-                <ref role="3cqZAo" node="3EkTMGp7$mu" resolve="answers" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="3EkTMGp7$mK" role="3cqZAp">
-            <node concept="37vLTI" id="3EkTMGp7$mL" role="3clFbG">
-              <node concept="2OqwBi" id="3EkTMGp7$mM" role="37vLTJ">
-                <node concept="Xjq3P" id="3EkTMGp7$mN" role="2Oq$k0" />
-                <node concept="2OwXpG" id="3EkTMGp7$mO" role="2OqNvi">
-                  <ref role="2Oxat5" node="3EkTMGp7$md" resolve="correctAnswer" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3EkTMGp7$mP" role="37vLTx">
-                <ref role="3cqZAo" node="3EkTMGp7$mx" resolve="correctAnswer" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3Tm1VV" id="3EkTMGp7$mQ" role="1B3o_S" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4XM$1KSZCwf" role="jymVt" />
     <node concept="3Tm1VV" id="4kyY3TkPwZ4" role="1B3o_S" />
     <node concept="n94m4" id="4kyY3TkPwZ5" role="lGtFl">
       <ref role="n9lRv" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
