@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.Image;
 import java.util.ArrayList;
 import javax.swing.JFrame;
-import common.Lesson;
+import common.Fact;
 import java.awt.Dimension;
 import common.StatusBar;
 import common.ImageScaler;
@@ -84,12 +84,12 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
   private final ArrayList<MathSweeper.Question> questions;
 
   private final JFrame parentWindow;
-  private final ArrayList<Lesson> lessons;
+  private final ArrayList<Fact> lessons;
   private final Dimension lessonWindowSize = new Dimension(350, 250);
   private JFrame lessonWindow;
   public final StatusBar statusbar;
 
-  public MathSweeperBoard(JFrame fFrame, ArrayList<MathSweeper.Question> questions, ArrayList<Lesson> lessons) {
+  public MathSweeperBoard(JFrame fFrame, ArrayList<MathSweeper.Question> questions, ArrayList<Fact> lessons) {
     this.parentWindow = fFrame;
     this.questions = questions;
     this.questionsCount = questions.size();
@@ -432,7 +432,7 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
     JOptionPane.showMessageDialog(parentWindow, "You did not answer the question correctly. \nThe mine exploded.", "Incorrect answer - you lose a life", JOptionPane.ERROR_MESSAGE);
   }
 
-  private void manageLessonWindow(Lesson newLesson) {
+  private void manageLessonWindow(Fact newLesson) {
     if (lessonWindow == null) {
       lessonWindow = displayFoundLesson(newLesson);
     } else {
@@ -442,7 +442,7 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
     }
   }
 
-  private JFrame displayFoundLesson(Lesson lesson) {
+  private JFrame displayFoundLesson(Fact lesson) {
     JFrame frame = new JFrame("New lesson found");
     frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     frame.add(lesson.createLessonPanel());

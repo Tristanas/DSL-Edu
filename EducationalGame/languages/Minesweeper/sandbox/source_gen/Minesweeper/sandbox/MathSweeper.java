@@ -5,9 +5,10 @@ package Minesweeper.sandbox;
 import javax.swing.JFrame;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import common.Lesson;
+import common.Fact;
 import common.LevelDescription;
 import javax.swing.JPanel;
+import com.zetcode.Board;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
@@ -26,8 +27,8 @@ import javax.swing.ImageIcon;
 import common.ImageScaler;
 
 public class MathSweeper extends JFrame implements ActionListener {
-  public ArrayList<Question> questions;
-  public ArrayList<Lesson> lessons;
+  public ArrayList<common.Question> questions;
+  public ArrayList<Fact> facts;
   public ArrayList<LevelDescription> levels;
 
   private JPanel menu;
@@ -47,39 +48,39 @@ public class MathSweeper extends JFrame implements ActionListener {
   public final String LESSONS = "Check lessons";
   public final String EXIT = "Exit";
   public final String MENU = "Menu";
-  private MathSweeperBoard minesweeperBoard;
+  private Board minesweeperBoard;
 
   public MathSweeper() {
     questions = new ArrayList();
-    questions.add(new Question("A canteen requires 112 kgs of wheat for one week. How many kgs of wheat will it require for 69 days?", new String[]{"1203 kgs", "1401 kgs", "1014 kgs", "1104 kgs"}, "1104 kgs"));
-    questions.add(new Question("If an amount of Rs 41,910 is distributed equally amongst 22 persons, how much amount would each person get?", new String[]{"2000", "745", "765", "1905"}, "1905"));
-    questions.add(new Question("How many pieces of 8.6 metres length cloth can be cut out of a length of 455.8 metres cloth?", new String[]{"43", "48", "55", "53"}, "53"));
-    questions.add(new Question("If an amount of Rs 15,487 is divided equally among 76 students, approximately how much amount will each student get?", new String[]{"206", "210", "218", "204"}, "204"));
-    questions.add(new Question("There are 12 dozen mangoes in a box. If there are 43 such boxes, how many mangoes are there in all the boxes together?", new String[]{"516", "3096", "628", "6192"}, "6192"));
-    questions.add(new Question("A canteen requires 13 dozen bananas per day. How many bananas will it require for 9 weeks?", new String[]{"1404", "9882", "728", "9828"}, "9828"));
-    questions.add(new Question("The cost of 3 chairs and 10 tables is Rs 9856. What is the cost of 6 chairs and 20 tables?", new String[]{"17227", "18712", "19172", "19712"}, "19712"));
-    questions.add(new Question("A, B, C, D and E are five consecutive odd numbers The sum of A and C is 146. What is the value of E?", new String[]{"73", "81", "71", "79"}, "79"));
-    questions.add(new Question("The product of two consecutive even numbers is 582168. Which is the smaller number?", new String[]{"760", "764", "766", "762"}, "762"));
-    questions.add(new Question("The sum of the squares of two consecutive even numbers is 6500. Which is the smaller number?", new String[]{"54", "52", "48", "56"}, "56"));
-    questions.add(new Question("The product of two consecutive odd numbers is 19043. Which is the smaller number?", new String[]{"131", "133", "123", "137"}, "137"));
-    questions.add(new Question("The product of two successive numbers is 8556. What is the smaller number?", new String[]{"89", "94", "90", "92"}, "92"));
-    questions.add(new Question("The product of two consecutive even numbers is 4488. Which is the smaller number?", new String[]{"62", "71", "65", "66"}, "66"));
-    questions.add(new Question("The sum of three consecutive integers is 39. Which of the following is the largest among the three?", new String[]{"12", "13", "15", "14"}, "14"));
-    questions.add(new Question("The sum of three consecutive integers is 165. Which of the following is the largest among the three?", new String[]{"58", "57", "59", "56"}, "56"));
-    questions.add(new Question("The product of two consecutive even numbers is 16128. Which is the larger number?", new String[]{"132", "124", "126", "128"}, "128"));
-    questions.add(new Question("The sum of a set of  five consecutive even numbers is 140. What is the sum of the next set of five consecutive even numbers?", new String[]{"180", "200", "160", "190"}, "190"));
-    questions.add(new Question("The product of two consecutive odd numbers is 1763. What is the larger number?", new String[]{"39", "41", "37", "43"}, "43"));
-    questions.add(new Question("The product of two consecutive even numbers is 5328. What is the smaller number?", new String[]{"70", "68", "74", "72"}, "72"));
-    questions.add(new Question("The average of four consecutive even numbers is 27. What is the highest number?", new String[]{"32", "28", "34", "30"}, "30"));
-    questions.add(new Question("If the difference between a number and two fifths of the number is 30, find the number.", new String[]{"75", "57", "60", "50"}, "50"));
-    questions.add(new Question("The difference between a number and one fifth of it is 84. What is the number?", new String[]{"95", "100", "108", "105"}, "105"));
-    questions.add(new Question("The sum of five consecutive even numbers of set A is 280. What is the sum of a different set B of five consecutive numbers whose lowest number is 71 less than double the lowest number of set A?", new String[]{"182", "165", "172", "175"}, "175"));
+    questions.add(new common.Question("A canteen requires 112 kgs of wheat for one week. How many kgs of wheat will it require for 69 days?", new String[]{"1203 kgs", "1401 kgs", "1014 kgs", "1104 kgs"}, "1104 kgs"));
+    questions.add(new common.Question("If an amount of Rs 41,910 is distributed equally amongst 22 persons, how much amount would each person get?", new String[]{"2000", "745", "765", "1905"}, "1905"));
+    questions.add(new common.Question("How many pieces of 8.6 metres length cloth can be cut out of a length of 455.8 metres cloth?", new String[]{"43", "48", "55", "53"}, "53"));
+    questions.add(new common.Question("If an amount of Rs 15,487 is divided equally among 76 students, approximately how much amount will each student get?", new String[]{"206", "210", "218", "204"}, "204"));
+    questions.add(new common.Question("There are 12 dozen mangoes in a box. If there are 43 such boxes, how many mangoes are there in all the boxes together?", new String[]{"516", "3096", "628", "6192"}, "6192"));
+    questions.add(new common.Question("A canteen requires 13 dozen bananas per day. How many bananas will it require for 9 weeks?", new String[]{"1404", "9882", "728", "9828"}, "9828"));
+    questions.add(new common.Question("The cost of 3 chairs and 10 tables is Rs 9856. What is the cost of 6 chairs and 20 tables?", new String[]{"17227", "18712", "19172", "19712"}, "19712"));
+    questions.add(new common.Question("A, B, C, D and E are five consecutive odd numbers The sum of A and C is 146. What is the value of E?", new String[]{"73", "81", "71", "79"}, "79"));
+    questions.add(new common.Question("The product of two consecutive even numbers is 582168. Which is the smaller number?", new String[]{"760", "764", "766", "762"}, "762"));
+    questions.add(new common.Question("The sum of the squares of two consecutive even numbers is 6500. Which is the smaller number?", new String[]{"54", "52", "48", "56"}, "56"));
+    questions.add(new common.Question("The product of two consecutive odd numbers is 19043. Which is the smaller number?", new String[]{"131", "133", "123", "137"}, "137"));
+    questions.add(new common.Question("The product of two successive numbers is 8556. What is the smaller number?", new String[]{"89", "94", "90", "92"}, "92"));
+    questions.add(new common.Question("The product of two consecutive even numbers is 4488. Which is the smaller number?", new String[]{"62", "71", "65", "66"}, "66"));
+    questions.add(new common.Question("The sum of three consecutive integers is 39. Which of the following is the largest among the three?", new String[]{"12", "13", "15", "14"}, "14"));
+    questions.add(new common.Question("The sum of three consecutive integers is 165. Which of the following is the largest among the three?", new String[]{"58", "57", "59", "56"}, "56"));
+    questions.add(new common.Question("The product of two consecutive even numbers is 16128. Which is the larger number?", new String[]{"132", "124", "126", "128"}, "128"));
+    questions.add(new common.Question("The sum of a set of  five consecutive even numbers is 140. What is the sum of the next set of five consecutive even numbers?", new String[]{"180", "200", "160", "190"}, "190"));
+    questions.add(new common.Question("The product of two consecutive odd numbers is 1763. What is the larger number?", new String[]{"39", "41", "37", "43"}, "43"));
+    questions.add(new common.Question("The product of two consecutive even numbers is 5328. What is the smaller number?", new String[]{"70", "68", "74", "72"}, "72"));
+    questions.add(new common.Question("The average of four consecutive even numbers is 27. What is the highest number?", new String[]{"32", "28", "34", "30"}, "30"));
+    questions.add(new common.Question("If the difference between a number and two fifths of the number is 30, find the number.", new String[]{"75", "57", "60", "50"}, "50"));
+    questions.add(new common.Question("The difference between a number and one fifth of it is 84. What is the number?", new String[]{"95", "100", "108", "105"}, "105"));
+    questions.add(new common.Question("The sum of five consecutive even numbers of set A is 280. What is the sum of a different set B of five consecutive numbers whose lowest number is 71 less than double the lowest number of set A?", new String[]{"182", "165", "172", "175"}, "175"));
 
-    lessons = new ArrayList();
-    lessons.add(new Lesson("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    lessons.add(new Lesson("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    lessons.add(new Lesson("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    lessons.add(new Lesson("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
+    facts = new ArrayList();
+    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
+    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
+    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
 
     int levelNo = 1;
     levels = new ArrayList();
@@ -159,13 +160,13 @@ public class MathSweeper extends JFrame implements ActionListener {
   private void createGame() {
     game = new JPanel();
     game.setLayout(new BorderLayout());
-    minesweeperBoard = new MathSweeperBoard(this, questions, lessons);
+    minesweeperBoard = new Board(this, questions, facts, levels.get(0));
     game.add(minesweeperBoard);
     game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
   }
 
   private void showLearningPortfolio() {
-    LearningPortfolio portfolio = new LearningPortfolio(lessons, this);
+    LearningPortfolio portfolio = new LearningPortfolio(facts, this);
     setTitle("Learning Portfolio");
     setContentPane(portfolio);
     pack();
