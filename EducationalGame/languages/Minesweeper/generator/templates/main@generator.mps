@@ -1052,6 +1052,47 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="TIatWLA1Lc" role="3cqZAp">
+                  <node concept="37vLTI" id="TIatWLA3Bz" role="3clFbG">
+                    <node concept="3cmrfG" id="TIatWLA5$N" role="37vLTx">
+                      <property role="3cmrfH" value="1" />
+                      <node concept="17Uvod" id="TIatWLA5TE" role="lGtFl">
+                        <property role="2qtEX9" value="value" />
+                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                        <node concept="3zFVjK" id="TIatWLA5TF" role="3zH0cK">
+                          <node concept="3clFbS" id="TIatWLA5TG" role="2VODD2">
+                            <node concept="3clFbF" id="TIatWLA7rv" role="3cqZAp">
+                              <node concept="2OqwBi" id="TIatWLA9l$" role="3clFbG">
+                                <node concept="2OqwBi" id="TIatWLA8YB" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="TIatWLA8ms" role="2Oq$k0">
+                                    <node concept="30H73N" id="TIatWLA7ru" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="TIatWLA8JM" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="TIatWLA98l" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="TIatWLA9Hm" role="2OqNvi">
+                                  <ref role="3TsBF5" to="8ed4:7E7jPp8Dxwi" resolve="reveals" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="TIatWLA2IQ" role="37vLTJ">
+                      <node concept="37vLTw" id="TIatWLA1La" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="learningLevel" />
+                      </node>
+                      <node concept="2OwXpG" id="TIatWLA2OM" role="2OqNvi">
+                        <ref role="2Oxat5" to="dm23:~LevelDescription.startingReveals" resolve="startingReveals" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="TIatWLlo_h" role="3cqZAp">
                   <node concept="2OqwBi" id="TIatWLlo_i" role="3clFbG">
                     <node concept="37vLTw" id="TIatWLlo_j" role="2Oq$k0">
@@ -1361,6 +1402,57 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="TIatWLAaAR" role="3cqZAp">
+                  <node concept="37vLTI" id="TIatWLAaAS" role="3clFbG">
+                    <node concept="3cmrfG" id="TIatWLAaAT" role="37vLTx">
+                      <property role="3cmrfH" value="1" />
+                      <node concept="17Uvod" id="TIatWLAaAU" role="lGtFl">
+                        <property role="2qtEX9" value="value" />
+                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                        <node concept="3zFVjK" id="TIatWLAaAV" role="3zH0cK">
+                          <node concept="3clFbS" id="TIatWLAaAW" role="2VODD2">
+                            <node concept="3clFbF" id="TIatWLAaAX" role="3cqZAp">
+                              <node concept="2OqwBi" id="TIatWLAaAY" role="3clFbG">
+                                <node concept="2OqwBi" id="TIatWLAaAZ" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="TIatWLAaB0" role="2Oq$k0">
+                                    <node concept="3TrEf2" id="TIatWLAcJJ" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8ed4:7bHEX4KRro7" resolve="difficulty" />
+                                    </node>
+                                    <node concept="2OqwBi" id="TIatWLAbYQ" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="TIatWLAbYR" role="2Oq$k0">
+                                        <node concept="30H73N" id="TIatWLAbYS" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="TIatWLAbYT" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrEf2" id="TIatWLAbYU" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="8ed4:7E7jPp8xYXc" resolve="testLevel" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="TIatWLAaB3" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="TIatWLAaB4" role="2OqNvi">
+                                  <ref role="3TsBF5" to="8ed4:7E7jPp8Dxwi" resolve="reveals" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="TIatWLAaB5" role="37vLTJ">
+                      <node concept="37vLTw" id="TIatWLAaB6" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="learningLevel" />
+                      </node>
+                      <node concept="2OwXpG" id="TIatWLAaB7" role="2OqNvi">
+                        <ref role="2Oxat5" to="dm23:~LevelDescription.startingReveals" resolve="startingReveals" />
                       </node>
                     </node>
                   </node>
