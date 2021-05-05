@@ -48,7 +48,7 @@ public class Board extends JPanel implements ActionListener {
     private static final int CORRECT_ANSWER_POINTS = 50;
 
     // Amounts of objects:
-    private final int N_MINES = 10;         // Count of mines on the board,
+    private final int N_MINES = 4;         // Count of mines on the board,
     private final int N_LESSONS = 3;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
     private final int N_EFFECTS = 1;       // Count of effects to place on the board.
     private final int N_ROWS = 8;          // Board dimensions.
@@ -440,6 +440,8 @@ public class Board extends JPanel implements ActionListener {
 
     private void handleIncorrectAnswer() {
         lives--;
+        flagsLeft--;
+        correctFlags++;
         statusbar.update(getStats()); // Make sure the status bar updates.
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",

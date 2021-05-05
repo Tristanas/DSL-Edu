@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import common.Lesson;
 import javax.swing.JPanel;
-import java.io.File;
-import common.ImageScaler;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
@@ -22,7 +20,9 @@ import common.LearningPortfolio;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.awt.EventQueue;
+import java.io.File;
 import javax.swing.ImageIcon;
+import common.ImageScaler;
 
 public class MathSweeper extends JFrame implements ActionListener {
   public ArrayList<Question> questions;
@@ -50,21 +50,10 @@ public class MathSweeper extends JFrame implements ActionListener {
     questions.add(new Question("How many countries will be in the world in 10 years?", new String[]{"2", "255", "190", "1", "Nobody can know for sure."}, "Nobody can know for sure."));
 
     lessons = new ArrayList();
-    lessons.add(new Lesson("Math 1: average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    lessons.add(new Lesson("Math 1: median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    for (int i = 2; i < 8; i++) {
-      lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
-    }
 
-    File sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-    String path1 = sourceLocation + "/resources/" + 1 + ".png";
-    String path2 = sourceLocation.getParent() + "/resources/" + 1 + ".png";
-    System.out.println(" Path1: " + path1 + "\n Path 2: " + path2);
 
-    sourceLocation = new File(ImageScaler.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-    String path3 = sourceLocation + "/resources/" + 1 + ".png";
-    String path4 = sourceLocation.getParent() + "/resources/" + 1 + ".png";
-    System.out.println(" Path3: " + path3 + "\n Path 4: " + path4);
+
+
 
     setupResourcesPath();
     showMenu();

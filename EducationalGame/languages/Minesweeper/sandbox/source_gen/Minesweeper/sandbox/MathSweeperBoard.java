@@ -308,8 +308,8 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
             } else {
               // Regular cell uncovering: 
               uncoverCell(cellNo);
+              // Clicked on a mine: 
               if (field[cellNo] == MINE_CELL) {
-                // Showing the mine player clicked on 
                 clickedMinePosition = cellNo;
                 repaint();
                 if (questionsAnswered < questionsCount) {
@@ -419,8 +419,14 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
     score += MathSweeperBoard.CORRECT_ANSWER_POINTS;
   }
 
+
+  /**
+   * Incorrect answer makes a mine explode. Lives are decreased. Amount of available flags as well, since the mine was revealed.
+   */
   private void handleIncorrectAnswer() {
     lives--;
+    flagsLeft--;
+    correctFlags++;
     statusbar.update(getStats());
     // Make sure the status bar updates. 
     JOptionPane.showMessageDialog(parentWindow, "You did not answer the question correctly. \nThe mine exploded.", "Incorrect answer - you lose a life", JOptionPane.ERROR_MESSAGE);
