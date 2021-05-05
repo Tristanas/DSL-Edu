@@ -4,12 +4,17 @@ package common;
  Constants for button text and action strings, minesweeper cell state and drawing logic.
  */
 public class GameConstants {
+    // Button text and action strings:
     public static final String MENU = "Menu";
     public static final String PLAY = "Play";
     public static final String TEST = "Take test";
     public static final String LESSONS = "Check lessons";
     public static final String EXIT = "Exit";
     public static final String REVEAL = "Reveal";
+
+    // Images/cell type counts:
+    public static final int NUM_IMAGES = 14;
+    public static final int NUM_EFFECTS = 3;  // implemented effects.
 
     // Minesweeper state:
     public static final int COVER_FOR_CELL = 10;
@@ -26,6 +31,10 @@ public class GameConstants {
     public static final int DRAW_MARK = 11;
     public static final int DRAW_WRONG_MARK = 12;
     public static final int DRAW_CERTAIN_MARK = 13;
+
+//    public enum Draw {
+//        Empty, One, Two, Three, Four, Five, Six, Seven, Eight, Mine, Cover
+//    }
 
     // Special effects: (related images are named "Sx.png", where x is equal to below constants)
     public static final int NO_EFFECT_CELL = 0;   // In case of this effect, cell is drawn according to constants above.

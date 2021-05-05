@@ -1,9 +1,6 @@
 package com.zetcode;
 
-import common.GameConstants;
-import common.ImageScaler;
-import common.LearningPortfolio;
-import common.Lesson;
+import common.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +14,7 @@ public class Minesweeper extends JFrame implements ActionListener {
 
     public ArrayList<Question> questions;
     public ArrayList<Lesson> lessons;
+    public ArrayList<LevelDescription> levels;
     JPanel menu, game;
 
     // Menu parameters:
@@ -59,6 +57,16 @@ public class Minesweeper extends JFrame implements ActionListener {
                 " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
                 "so you may have to rewrite your list before you can find the median."));
         for (int i = 2; i < 8; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
+
+        levels = new ArrayList<>();
+        LevelDescription level = new LevelDescription();
+        level.levelNo = 1;
+        level.setGameBase(8, 8, 10, 2);
+        level.setItemCounts(1, 3, 4);
+        levels.add(level);
+
+
+
 
         setupResourcesPath();
         showMenu();
@@ -119,7 +127,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     private void createGame() {
         game = new JPanel();
         game.setLayout(new BorderLayout());
-        minesweeperBoard = new Board(this, questions, lessons);
+        minesweeperBoard = new Board(this, questions, lessons, levels.get(0));
         game.add(minesweeperBoard);
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }

@@ -13,49 +13,28 @@ import java.util.Objects;
 import java.util.Random;
 import javax.swing.*;
 
+import static common.GameConstants.*;
+
 // Minesweeper board, main Panel of the application window.
 public class Board extends JPanel implements ActionListener {
-
-    private final int NUM_IMAGES = 14;
-    private final int NUM_EFFECTS = 3;
-    private final int CELL_SIZE = 30;
-    private final int IMAGE_SIZE = 15;
-
-    // Constants for minesweeper cell states:
-    private final int COVER_FOR_CELL = 10;
-    private final int MARK_FOR_CELL = 10;
-    private final int EMPTY_CELL = 0;
-    private final int MINE_CELL = 9;
-    private final int COVERED_MINE_CELL = MINE_CELL + COVER_FOR_CELL;
-    private final int MARKED_MINE_CELL = COVERED_MINE_CELL + MARK_FOR_CELL;
-    private final int CERTAIN_MINE_MARK = MARKED_MINE_CELL + MARK_FOR_CELL;
-
-    // Constants for drawing the correct state of the cell:
-    private final int DRAW_MINE = 9;
-    private final int DRAW_COVER = 10;
-    private final int DRAW_MARK = 11;
-    private final int DRAW_WRONG_MARK = 12;
-    private final int DRAW_CERTAIN_MARK = 13;
-
-    // Constants for effects. Effect image naming: 'Sx.png', where x is the int value of the defining constant.
-    private final int NO_EFFECT_CELL = 0;   // In case of this effect the default cell is drawn.
-    private final int LESSON_CELL = 1;
-    private final int HP_CELL = 2;
-    private final int REVEAL_CELL = 3;
+    // Container of level settings:
+    private LevelDescription level;
 
     // Score:
     private static final int CELL_UNCOVER_POINTS = 10;
     private static final int CORRECT_ANSWER_POINTS = 50;
 
     // Amounts of objects:
-    private final int N_MINES = 4;         // Count of mines on the board,
-    private final int N_LESSONS = 3;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
-    private final int N_EFFECTS = 1;       // Count of effects to place on the board.
-    private final int N_ROWS = 8;          // Board dimensions.
-    private final int N_COLS = 8;
+    private final int N_MINES;         // Count of mines on the board,
+    private final int N_LESSONS;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
+    private final int N_EFFECTS;       // Count of effects to place on the board.
+    private final int N_ROWS;          // Board dimensions.
+    private final int N_COLS;
 
-    private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
-    private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
+    // Display sizes:
+    private final int BOARD_WIDTH;
+    private final int BOARD_HEIGHT;
+    private final int CELL_SIZE;
 
     // Minesweeper cells with mines and proximity counts:
     private int[] field;
@@ -97,15 +76,29 @@ public class Board extends JPanel implements ActionListener {
     private JFrame lessonWindow;
     public final StatusBar statusbar;
 
-    public Board(JFrame fFrame, ArrayList<Minesweeper.Question> questions, ArrayList<Lesson> lessons) {
+    public Board(JFrame fFrame, ArrayList<Minesweeper.Question> questions, ArrayList<Lesson> lessons, LevelDescription level) {
         this.parentWindow = fFrame;
         this.questions = questions;
         this.questionsCount = questions.size();
         this.statusbar = new StatusBar(this);
         this.lessons = lessons;
+        this.level = level;
+
+        // Init final fields:
+        N_COLS = level.columns;
+        N_ROWS = level.rows;
+        CELL_SIZE = level.cellSize;
+        BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
+        BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
+
+        N_MINES = level.mines;
+        N_LESSONS = level.conceptCount;
+        N_EFFECTS = level.effectsCount;
 
         initBoard();
     }
+
+
 
     private void initBoard() {
         setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
@@ -139,9 +132,9 @@ public class Board extends JPanel implements ActionListener {
         questionsAnswered = 0;
         correctFlags = 0;
         flagsLeft = N_MINES;
-        lives = 2;
+        lives = level.lives;
         lessonsFound = 0;
-        reveals = 1;
+        reveals = level.startingReveals;
         score = 0;
 
         allCells = N_ROWS * N_COLS;
