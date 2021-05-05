@@ -126,7 +126,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     private void createGame() {
         game = new JPanel();
         game.setLayout(new BorderLayout());
-        minesweeperBoard = new Board(this, levels.get(0));
+        minesweeperBoard = new Board(this, levels.get(0), this);
         game.add(minesweeperBoard);
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }

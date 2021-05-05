@@ -72,13 +72,15 @@ public class Board extends JPanel implements ActionListener {
 
     // UI:
     private final JFrame parentWindow;
-    private JFrame lessonWindow;
     public final StatusBar statusbar;
+    private JFrame lessonWindow;
+    private ActionListener actionListener;
 
-    public Board(JFrame fFrame, LevelDescription level) {
+    public Board(JFrame fFrame, LevelDescription level, ActionListener actionListener) {
         this.parentWindow = fFrame;
         this.statusbar = new StatusBar(this);
         this.level = level;
+        this.actionListener = actionListener;
 
         if (level.type == LevelDescription.GameType.learn) {
             this.facts = level.lesson.facts;
@@ -541,7 +543,8 @@ public class Board extends JPanel implements ActionListener {
                 title,
                 JOptionPane.YES_NO_OPTION);
         if (selection == JOptionPane.NO_OPTION) {
-            ((Minesweeper) parentWindow).showMenu();
+            ActionEvent event = new ActionEvent(this, 1, MENU);
+            actionListener.actionPerformed(event);
         } else {
             newGame(true, true);
             repaint();
