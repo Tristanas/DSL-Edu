@@ -18,7 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/templates/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/templates/main@generator.mps" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +267,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:3378f1ca-b81b-40d8-81f0-bfaa91aadd08(Minesweeper.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.editor.mps]" />
+              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,63 +277,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:41c7225c-b6b4-43de-80a6-2d323b38ee26(Minesweeper.sandbox.levels) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.levels.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Education" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Education/models/Education.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,67 +305,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Education/models/Education.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionaire" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,17 +355,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:41c7225c-b6b4-43de-80a6-2d323b38ee26(Minesweeper.sandbox.levels) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.levels.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,7 +381,89 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemId" value="r:3378f1ca-b81b-40d8-81f0-bfaa91aadd08(Minesweeper.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClassStubModelDescriptor common@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.behavior.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Questionaire" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Questionaire/models/Questionaire.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,11 +491,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,15 +543,37 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Questionaire" />
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Questionaire/models/Questionaire.sandbox.mps]" />
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,16 +587,20 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemId" value="8e8e3604-c856-4159-b05c-550ddeed794b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Questionaire" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>

@@ -6122,6 +6122,17 @@
       </node>
       <node concept="3Tm1VV" id="3EkTMGp7VyF" role="1B3o_S" />
     </node>
+    <node concept="312cEg" id="7bHEX4KTJaM" role="jymVt">
+      <property role="TrG5h" value="levels" />
+      <node concept="3uibUv" id="7bHEX4KTJaO" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
+        <node concept="3uibUv" id="7bHEX4KTJaP" role="11_B2D">
+          <ref role="3uigEE" to="dm23:~LevelDescription" resolve="LevelDescription" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7bHEX4KTJaQ" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7bHEX4KTEmA" role="jymVt" />
     <node concept="312cEg" id="3EkTMGp7VyG" role="jymVt">
       <property role="TrG5h" value="menu" />
       <node concept="3uibUv" id="3EkTMGp7VyI" role="1tU5fm">
@@ -6136,6 +6147,7 @@
       </node>
       <node concept="3Tm6S6" id="3EkTMGp8adu" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7bHEX4KTMVi" role="jymVt" />
     <node concept="312cEg" id="3EkTMGp7VyM" role="jymVt">
       <property role="TrG5h" value="N_BUTTONS" />
       <property role="3TUv4t" value="true" />
@@ -6230,6 +6242,7 @@
       </node>
       <node concept="3Tm6S6" id="3EkTMGp8mq5" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7bHEX4KTR1$" role="jymVt" />
     <node concept="312cEg" id="3EkTMGp7Vzr" role="jymVt">
       <property role="TrG5h" value="PLAY" />
       <property role="3TUv4t" value="true" />
@@ -6595,7 +6608,159 @@
           </node>
         </node>
         <node concept="3clFbH" id="7E7jPp8u3E8" role="3cqZAp" />
-        <node concept="3clFbH" id="7E7jPp8sweK" role="3cqZAp" />
+        <node concept="3cpWs8" id="7bHEX4KUbXo" role="3cqZAp">
+          <node concept="3cpWsn" id="7bHEX4KUbXr" role="3cpWs9">
+            <property role="TrG5h" value="levelNo" />
+            <node concept="10Oyi0" id="7bHEX4KUbXm" role="1tU5fm" />
+            <node concept="3cmrfG" id="7bHEX4KUdNL" role="33vP2m">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KU3s3" role="3cqZAp">
+          <node concept="37vLTI" id="7bHEX4KU3s4" role="3clFbG">
+            <node concept="37vLTw" id="7bHEX4KU3s5" role="37vLTJ">
+              <ref role="3cqZAo" node="7bHEX4KTJaM" resolve="levels" />
+            </node>
+            <node concept="2ShNRf" id="7bHEX4KU58C" role="37vLTx">
+              <node concept="1pGfFk" id="7bHEX4KU58H" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7bHEX4KU3s8" role="3cqZAp">
+          <node concept="3cpWsn" id="7bHEX4KU3s7" role="3cpWs9">
+            <property role="TrG5h" value="level" />
+            <node concept="3uibUv" id="7bHEX4KU3s9" role="1tU5fm">
+              <ref role="3uigEE" to="dm23:~LevelDescription" resolve="LevelDescription" />
+            </node>
+            <node concept="2ShNRf" id="7bHEX4KU5w_" role="33vP2m">
+              <node concept="1pGfFk" id="7bHEX4KU5wA" role="2ShVmc">
+                <ref role="37wK5l" to="dm23:~LevelDescription.&lt;init&gt;()" resolve="LevelDescription" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7bHEX4KUwLA" role="3cqZAp" />
+        <node concept="3SKdUt" id="7bHEX4KU7S_" role="3cqZAp">
+          <node concept="1PaTwC" id="7bHEX4KU7SA" role="1aUNEU">
+            <node concept="3oM_SD" id="7bHEX4KU7SC" role="1PaTwD">
+              <property role="3oM_SC" value="Set" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KU9wQ" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KU9yC" role="1PaTwD">
+              <property role="3oM_SC" value="learning" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KUnlY" role="1PaTwD">
+              <property role="3oM_SC" value="levels:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KUz7X" role="3cqZAp">
+          <node concept="37vLTI" id="7bHEX4KU$Vd" role="3clFbG">
+            <node concept="2ShNRf" id="7bHEX4KUArE" role="37vLTx">
+              <node concept="1pGfFk" id="7bHEX4KUE7F" role="2ShVmc">
+                <ref role="37wK5l" to="dm23:~LevelDescription.&lt;init&gt;()" resolve="LevelDescription" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="7bHEX4KUz7V" role="37vLTJ">
+              <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="level" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KU3sb" role="3cqZAp">
+          <node concept="37vLTI" id="7bHEX4KU3sc" role="3clFbG">
+            <node concept="2OqwBi" id="7bHEX4KU58j" role="37vLTJ">
+              <node concept="37vLTw" id="7bHEX4KU58i" role="2Oq$k0">
+                <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="level" />
+              </node>
+              <node concept="2OwXpG" id="7bHEX4KU58k" role="2OqNvi">
+                <ref role="2Oxat5" to="dm23:~LevelDescription.levelNo" resolve="levelNo" />
+              </node>
+            </node>
+            <node concept="3uNrnE" id="7bHEX4KUm2u" role="37vLTx">
+              <node concept="37vLTw" id="7bHEX4KUm2w" role="2$L3a6">
+                <ref role="3cqZAo" node="7bHEX4KUbXr" resolve="levelNo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KU3sf" role="3cqZAp">
+          <node concept="2OqwBi" id="7bHEX4KU5aR" role="3clFbG">
+            <node concept="37vLTw" id="7bHEX4KU5aQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="level" />
+            </node>
+            <node concept="liA8E" id="7bHEX4KU5aS" role="2OqNvi">
+              <ref role="37wK5l" to="dm23:~LevelDescription.setGameBase(int,int,int,int)" resolve="setGameBase" />
+              <node concept="3cmrfG" id="7bHEX4KU5aT" role="37wK5m">
+                <property role="3cmrfH" value="8" />
+              </node>
+              <node concept="3cmrfG" id="7bHEX4KU5aU" role="37wK5m">
+                <property role="3cmrfH" value="8" />
+              </node>
+              <node concept="3cmrfG" id="7bHEX4KU5aV" role="37wK5m">
+                <property role="3cmrfH" value="10" />
+              </node>
+              <node concept="3cmrfG" id="7bHEX4KU5aW" role="37wK5m">
+                <property role="3cmrfH" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KU3sl" role="3cqZAp">
+          <node concept="2OqwBi" id="7bHEX4KU58M" role="3clFbG">
+            <node concept="37vLTw" id="7bHEX4KU58L" role="2Oq$k0">
+              <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="level" />
+            </node>
+            <node concept="liA8E" id="7bHEX4KU58N" role="2OqNvi">
+              <ref role="37wK5l" to="dm23:~LevelDescription.setItemCounts(int,int,int)" resolve="setItemCounts" />
+              <node concept="3cmrfG" id="7bHEX4KU58O" role="37wK5m">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="3cmrfG" id="7bHEX4KU58P" role="37wK5m">
+                <property role="3cmrfH" value="3" />
+              </node>
+              <node concept="3cmrfG" id="7bHEX4KU58Q" role="37wK5m">
+                <property role="3cmrfH" value="4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bHEX4KU3sq" role="3cqZAp">
+          <node concept="2OqwBi" id="7bHEX4KU5eu" role="3clFbG">
+            <node concept="37vLTw" id="7bHEX4KU5et" role="2Oq$k0">
+              <ref role="3cqZAo" node="7bHEX4KTJaM" resolve="levels" />
+            </node>
+            <node concept="liA8E" id="7bHEX4KU5ev" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
+              <node concept="37vLTw" id="7bHEX4KU5ew" role="37wK5m">
+                <ref role="3cqZAo" node="7bHEX4KU3s7" resolve="level" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7bHEX4KTUgO" role="3cqZAp" />
+        <node concept="3SKdUt" id="7bHEX4KUpFs" role="3cqZAp">
+          <node concept="1PaTwC" id="7bHEX4KUpFt" role="1aUNEU">
+            <node concept="3oM_SD" id="7bHEX4KUqfA" role="1PaTwD">
+              <property role="3oM_SC" value="Set" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KUqiC" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KUqje" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+            <node concept="3oM_SD" id="7bHEX4KUqko" role="1PaTwD">
+              <property role="3oM_SC" value="level:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7bHEX4KUnrv" role="3cqZAp" />
+        <node concept="3clFbH" id="7bHEX4KTUjL" role="3cqZAp" />
         <node concept="1X3_iC" id="7E7jPp8spYV" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />

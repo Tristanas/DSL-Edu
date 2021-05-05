@@ -9,6 +9,8 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
+import static common.GameConstants.*;
+
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
 
@@ -26,13 +28,6 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int BOTTOM_PADDING = 50;
     final int MENU_WIDTH = 400;
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
-
-    // Button text:
-    public final String PLAY = "Play";
-    public final String TEST = "Take test";
-    public final String LESSONS = "Check lessons";
-    public final String EXIT = "Exit";
-    public final String MENU = "Menu";
 
     Board minesweeperBoard;
 
@@ -87,7 +82,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(GameConstants.PLAY, "Play in learning mode", menu);
+        addButton(PLAY, "Play in learning mode", menu);
         addButton(GameConstants.TEST, "Play an evaluation game", menu);
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
