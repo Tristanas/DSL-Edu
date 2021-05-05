@@ -59,10 +59,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         level.setGameBase(8, 8, 10, 2);
         level.setItemCounts(1, 3, 4);
         levels.add(level);
-
-
-
-
+        
         setupResourcesPath();
         showMenu();
     }
