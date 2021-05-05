@@ -14,7 +14,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAnswer = createDescriptorForAnswer();
-  /*package*/ final ConceptDescriptor myConceptConcept = createDescriptorForConcept();
+  /*package*/ final ConceptDescriptor myConceptFact = createDescriptorForFact();
   /*package*/ final ConceptDescriptor myConceptLesson = createDescriptorForLesson();
   /*package*/ final ConceptDescriptor myConceptLessonReference = createDescriptorForLessonReference();
   /*package*/ final ConceptDescriptor myConceptSimpleTest = createDescriptorForSimpleTest();
@@ -36,7 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAnswer, myConceptConcept, myConceptLesson, myConceptLessonReference, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic);
+    return Arrays.asList(myConceptAnswer, myConceptFact, myConceptLesson, myConceptLessonReference, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic);
   }
 
   @Override
@@ -45,8 +45,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Answer:
         return myConceptAnswer;
-      case LanguageConceptSwitch.Concept:
-        return myConceptConcept;
+      case LanguageConceptSwitch.Fact:
+        return myConceptFact;
       case LanguageConceptSwitch.Lesson:
         return myConceptLesson;
       case LanguageConceptSwitch.LessonReference:
@@ -79,8 +79,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("text", 0x2124eace002ddad2L).type(PrimitiveTypeId.STRING).origin("2388291872900373202").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForConcept() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "Concept", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL);
+  private static ConceptDescriptor createDescriptorForFact() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "Fact", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL);
     b.class_(false, false, true);
     b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/1160393055216169742");
     b.version(2);
@@ -94,7 +94,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/1160393055216169711");
     b.version(2);
-    b.aggregate("Concepts", 0x101a8b55effd99f9L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL).optional(true).ordered(true).multiple(true).origin("1160393055216179705").done();
+    b.aggregate("Facts", 0x101a8b55effd99f9L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL).optional(true).ordered(true).multiple(true).origin("1160393055216179705").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLessonReference() {

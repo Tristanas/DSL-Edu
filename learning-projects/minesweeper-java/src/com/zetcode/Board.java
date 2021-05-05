@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -65,10 +64,10 @@ public class Board extends JPanel implements ActionListener {
     private int clickedMinePosition;
     private int questionsAnswered;
     private final int questionsCount;
-    private final ArrayList<Minesweeper.Question> questions;
+    private final ArrayList<Question> questions;
 
     // Lessons:
-    private final ArrayList<Lesson> lessons;
+    private final ArrayList<Fact> facts;
     private final Dimension lessonWindowSize = new Dimension(350, 250);
 
     // UI:
@@ -76,12 +75,12 @@ public class Board extends JPanel implements ActionListener {
     private JFrame lessonWindow;
     public final StatusBar statusbar;
 
-    public Board(JFrame fFrame, ArrayList<Minesweeper.Question> questions, ArrayList<Lesson> lessons, LevelDescription level) {
+    public Board(JFrame fFrame, ArrayList<Question> questions, ArrayList<Fact> facts, LevelDescription level) {
         this.parentWindow = fFrame;
         this.questions = questions;
         this.questionsCount = questions.size();
         this.statusbar = new StatusBar(this);
-        this.lessons = lessons;
+        this.facts = facts;
         this.level = level;
 
         // Init final fields:
@@ -161,7 +160,7 @@ public class Board extends JPanel implements ActionListener {
 
         // Place lesson effects:
         if (addLessons) {
-            int lessonsCount = lessons.size();
+            int lessonsCount = facts.size();
             if (lessonsCount > N_LESSONS) lessonsCount = N_LESSONS;
             i = 0;
             while (i < lessonsCount) {
@@ -292,7 +291,7 @@ public class Board extends JPanel implements ActionListener {
                     if (field[cellNo] < COVER_FOR_CELL && effect[cellNo] > 0) {
                         switch (effect[cellNo]) {
                             case LESSON_CELL:
-                                manageLessonWindow(lessons.get(lessonsFound));
+                                manageLessonWindow(facts.get(lessonsFound));
                                 lessonsFound++;
                                 break;
                             case HP_CELL:
@@ -400,7 +399,7 @@ public class Board extends JPanel implements ActionListener {
         if (field[cellNo] != MINE_CELL) score += CELL_UNCOVER_POINTS;
     }
 
-    public boolean askQuestion(Minesweeper.Question q)
+    public boolean askQuestion(Question q)
     {
         // If player closes question window or clicks cancel, selectedOption becomes null.
         String selectedOption = (String) JOptionPane.showInputDialog(
@@ -442,20 +441,20 @@ public class Board extends JPanel implements ActionListener {
                 JOptionPane.ERROR_MESSAGE);
     }
 
-    private void manageLessonWindow(Lesson newLesson) {
+    private void manageLessonWindow(Fact newFact) {
         if (lessonWindow == null) {
-            lessonWindow = displayFoundLesson(newLesson);
+            lessonWindow = displayFoundLesson(newFact);
         } else {
-            lessonWindow.setContentPane(newLesson.createLessonPanel());
+            lessonWindow.setContentPane(newFact.createLessonPanel());
             //lessonWindow.pack();
             lessonWindow.setVisible(true);
         }
     }
 
-    private JFrame displayFoundLesson(Lesson lesson) {
+    private JFrame displayFoundLesson(Fact fact) {
         JFrame frame = new JFrame("New lesson found");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.add(lesson.createLessonPanel());
+        frame.add(fact.createLessonPanel());
         frame.setSize(lessonWindowSize);
         Point location = parentWindow.getLocation();
         location.translate(-lessonWindowSize.width, 0);

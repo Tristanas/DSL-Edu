@@ -78,6 +78,11 @@
       <property role="20kJfa" value="difficulty" />
       <ref role="20lvS9" node="7E7jPp8FS9T" resolve="DifficultyRef" />
     </node>
+    <node concept="1TJgyi" id="TIatWLoRWs" role="1TKVEl">
+      <property role="IQ2nx" value="1039814602552213276" />
+      <property role="TrG5h" value="factsCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10qyPnJZpFC">
     <property role="EcuMT" value="1160393055216179944" />

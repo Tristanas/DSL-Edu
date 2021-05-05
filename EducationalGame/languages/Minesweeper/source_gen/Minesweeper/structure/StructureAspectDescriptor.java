@@ -108,6 +108,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Minesweeper.structure.Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179913");
     b.version(2);
+    b.property("factsCount", 0xe6e29df31637f1cL).type(PrimitiveTypeId.INTEGER).origin("1039814602552213276").done();
     b.aggregate("questionaire", 0x7a874f564887f02eL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L).optional(true).ordered(true).multiple(false).origin("8829112826485796910").done();
     b.aggregate("lesson", 0x7a874f564887f02fL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL).optional(true).ordered(true).multiple(false).origin("8829112826485796911").done();
     b.aggregate("difficulty", 0x7a874f5648b6ab58L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L).optional(true).ordered(true).multiple(false).origin("8829112826488859480").done();

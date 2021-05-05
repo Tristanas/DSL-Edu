@@ -164,7 +164,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="10qyPnK0xMt">
-    <ref role="1XX52x" to="cgkn:10qyPnJZnce" resolve="Concept" />
+    <ref role="1XX52x" to="cgkn:10qyPnJZnce" resolve="Fact" />
     <node concept="3EZMnI" id="10qyPnK0xNq" role="2wV5jI">
       <node concept="3F0A7n" id="10qyPnK0xNn" role="3EZMnx">
         <ref role="1NtTu8" to="cgkn:10qyPnJZpCI" resolve="Name" />
@@ -206,7 +206,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="10qyPnK0xR1" role="3EZMnx">
-        <ref role="1NtTu8" to="cgkn:10qyPnJZpBT" resolve="Concepts" />
+        <ref role="1NtTu8" to="cgkn:10qyPnJZpBT" resolve="Facts" />
         <node concept="l2Vlx" id="10qyPnK0xR3" role="2czzBx" />
         <node concept="pj6Ft" id="10qyPnK0xRa" role="3F10Kt">
           <property role="VOm3f" value="true" />

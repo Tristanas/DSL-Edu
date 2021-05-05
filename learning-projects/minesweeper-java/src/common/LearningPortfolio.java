@@ -1,9 +1,5 @@
 package common;
 
-import com.zetcode.Minesweeper;
-import common.GameConstants;
-import common.Lesson;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -14,12 +10,12 @@ public class LearningPortfolio extends JPanel {
     final int LESSON_BOT_PADDING = 20;
     final int TOPIC_FONT_SIZE = 18;
 
-    ArrayList<Lesson> lessons;
+    ArrayList<Fact> facts;
     ActionListener parentWindow;
 
-    public LearningPortfolio(ArrayList<Lesson> lessons, ActionListener frame) {
+    public LearningPortfolio(ArrayList<Fact> facts, ActionListener frame) {
         super();
-        this.lessons = lessons;
+        this.facts = facts;
         this.parentWindow = frame;
 
         initUI();
@@ -41,9 +37,9 @@ public class LearningPortfolio extends JPanel {
         JPanel lessonsList = new JPanel();
         lessonsList.setLayout(new BoxLayout(lessonsList, BoxLayout.Y_AXIS));
 
-        for (Lesson lesson : lessons
+        for (Fact fact : facts
              ) {
-            JPanel lessonPanel = lesson.createLessonPanel();
+            JPanel lessonPanel = fact.createLessonPanel();
             lessonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
             lessonsList.add(lessonPanel);
         }

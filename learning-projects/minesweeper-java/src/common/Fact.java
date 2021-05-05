@@ -4,24 +4,24 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-public class Lesson {
+public class Fact {
     String title;
     String text;
 
     Boolean unlocked;
-    int lessonHeight;
+    int windowHeight;
 
 
     final int titleFontSize = 16,
         textFontSize = 13,
-        lessonWidth = 200, // This might need to come from parent window or during initialization.
+        windowWidth = 200, // This might need to come from parent window or during initialization.
         bottomPadding = 0;
 
 
-    public Lesson(String title, String text) {
+    public Fact(String title, String text) {
         this.title = title;
         this.text = text;
-        lessonHeight = titleFontSize + textFontSize * (text.length() * textFontSize / lessonWidth) + bottomPadding;
+        windowHeight = titleFontSize + textFontSize * (text.length() * textFontSize / windowWidth) + bottomPadding;
     }
 
     public JPanel createLessonPanel() {
@@ -44,14 +44,14 @@ public class Lesson {
         panel.add(textArea, BorderLayout.CENTER);
 
         // Edit the look of the panel:
-        panel.setPreferredSize(new Dimension(lessonWidth, lessonHeight));
+        panel.setPreferredSize(new Dimension(windowWidth, windowHeight));
         border = BorderFactory.createLineBorder(Color.BLACK);
         panel.setBorder(border);
 
         return panel;
     }
 
-    public int getLessonHeight() {
-        return lessonHeight;
+    public int getWindowHeight() {
+        return windowHeight;
     }
 }

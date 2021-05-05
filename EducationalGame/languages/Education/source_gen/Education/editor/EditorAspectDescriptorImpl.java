@@ -21,7 +21,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Answer_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new Concept_Editor());
+        return Collections.<ConceptEditor>singletonList(new Fact_Editor());
       case 2:
         return Collections.<ConceptEditor>singletonList(new Lesson_Editor());
       case 3:

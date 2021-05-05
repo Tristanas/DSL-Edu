@@ -122,9 +122,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new ConceptsListHandler_hwd54a_e0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new FactsListHandler_hwd54a_e0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_Concepts");
+    editorCell.setCellId("refNodeList_Facts");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -133,11 +133,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class ConceptsListHandler_hwd54a_e0 extends RefNodeListHandler {
+  private static class FactsListHandler_hwd54a_e0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public ConceptsListHandler_hwd54a_e0(SNode ownerNode, EditorContext context) {
+    public FactsListHandler_hwd54a_e0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -147,10 +147,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.Concepts$YWXG;
+      return LINKS.Facts$YWXG;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Concept$dH;
+      return CONCEPTS.Fact$dH;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -160,7 +160,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(ConceptsListHandler_hwd54a_e0.this.getNode(), LINKS.Concepts$YWXG));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(FactsListHandler_hwd54a_e0.this.getNode(), LINKS.Facts$YWXG));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -207,10 +207,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept Concept$dH = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL, "Education.structure.Concept");
+    /*package*/ static final SConcept Fact$dH = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL, "Education.structure.Fact");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Concepts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Concepts");
+    /*package*/ static final SContainmentLink Facts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Facts");
   }
 }

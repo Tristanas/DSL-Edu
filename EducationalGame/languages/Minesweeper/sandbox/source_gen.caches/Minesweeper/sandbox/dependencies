@@ -6,6 +6,7 @@
     <classNode dependClassName="common.ImageScaler" />
     <classNode dependClassName="common.LearningPortfolio" />
     <classNode dependClassName="common.Lesson" />
+    <classNode dependClassName="common.LevelDescription" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />

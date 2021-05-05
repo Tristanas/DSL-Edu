@@ -200,7 +200,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_Concept" />
+      <property role="TrG5h" value="props_Fact" />
       <node concept="3uibUv" id="g" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -418,7 +418,7 @@
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <uo k="s:originTrace" v="n:1160393055216169742" />
                         <node concept="Xl_RD" id="1C" role="37wK5m">
-                          <property role="Xl_RC" value="Concept" />
+                          <property role="Xl_RC" value="Fact" />
                           <uo k="s:originTrace" v="n:1160393055216169742" />
                         </node>
                       </node>
@@ -435,7 +435,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="1F" role="37vLTJ">
-                        <ref role="3cqZAo" node="3" resolve="props_Concept" />
+                        <ref role="3cqZAo" node="3" resolve="props_Fact" />
                       </node>
                     </node>
                   </node>
@@ -443,18 +443,18 @@
                 <node concept="3clFbC" id="1t" role="3clFbw">
                   <node concept="10Nm6u" id="1I" role="3uHU7w" />
                   <node concept="37vLTw" id="1J" role="3uHU7B">
-                    <ref role="3cqZAo" node="3" resolve="props_Concept" />
+                    <ref role="3cqZAo" node="3" resolve="props_Fact" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="1r" role="3cqZAp">
                 <node concept="37vLTw" id="1K" role="3cqZAk">
-                  <ref role="3cqZAo" node="3" resolve="props_Concept" />
+                  <ref role="3cqZAo" node="3" resolve="props_Fact" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="1p" role="3Kbmr1">
-              <ref role="3cqZAo" node="4P" resolve="Concept" />
+              <ref role="3cqZAo" node="4P" resolve="Fact" />
               <ref role="1PxDUh" node="4M" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -1024,7 +1024,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="Concept" />
+      <property role="TrG5h" value="Fact" />
       <node concept="3Tm1VV" id="59" role="1B3o_S" />
       <node concept="10Oyi0" id="5a" role="1tU5fm" />
       <node concept="3cmrfG" id="5b" role="33vP2m">
@@ -1159,7 +1159,7 @@
                 <property role="1adDun" value="0x101a8b55effd730eL" />
               </node>
               <node concept="37vLTw" id="5Y" role="37wK5m">
-                <ref role="3cqZAo" node="4P" resolve="Concept" />
+                <ref role="3cqZAo" node="4P" resolve="Fact" />
               </node>
             </node>
           </node>
@@ -1369,12 +1369,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptConcept" />
+      <property role="TrG5h" value="myConceptFact" />
       <node concept="3uibUv" id="7v" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="7w" role="33vP2m">
-        <ref role="37wK5l" node="7l" resolve="createDescriptorForConcept" />
+        <ref role="37wK5l" node="7l" resolve="createDescriptorForFact" />
       </node>
     </node>
     <node concept="312cEg" id="6Y" role="jymVt">
@@ -1541,7 +1541,7 @@
               <ref role="3cqZAo" node="6W" resolve="myConceptAnswer" />
             </node>
             <node concept="37vLTw" id="8d" role="37wK5m">
-              <ref role="3cqZAo" node="6X" resolve="myConceptConcept" />
+              <ref role="3cqZAo" node="6X" resolve="myConceptFact" />
             </node>
             <node concept="37vLTw" id="8e" role="37wK5m">
               <ref role="3cqZAo" node="6Y" resolve="myConceptLesson" />
@@ -1609,12 +1609,12 @@
             <node concept="3clFbS" id="8H" role="3Kbo56">
               <node concept="3cpWs6" id="8J" role="3cqZAp">
                 <node concept="37vLTw" id="8K" role="3cqZAk">
-                  <ref role="3cqZAo" node="6X" resolve="myConceptConcept" />
+                  <ref role="3cqZAo" node="6X" resolve="myConceptFact" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="8I" role="3Kbmr1">
-              <ref role="3cqZAo" node="4P" resolve="Concept" />
+              <ref role="3cqZAo" node="4P" resolve="Fact" />
               <ref role="1PxDUh" node="4M" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -1896,7 +1896,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForConcept" />
+      <property role="TrG5h" value="createDescriptorForFact" />
       <node concept="3clFbS" id="ab" role="3clF47">
         <node concept="3cpWs8" id="ae" role="3cqZAp">
           <node concept="3cpWsn" id="al" role="3cpWs9">
@@ -1911,7 +1911,7 @@
                   <property role="Xl_RC" value="Education" />
                 </node>
                 <node concept="Xl_RD" id="aq" role="37wK5m">
-                  <property role="Xl_RC" value="Concept" />
+                  <property role="Xl_RC" value="Fact" />
                 </node>
                 <node concept="1adDum" id="ar" role="37wK5m">
                   <property role="1adDun" value="0xf086fa03c1954951L" />
@@ -2167,7 +2167,7 @@
                         <node concept="liA8E" id="bY" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="bZ" role="37wK5m">
-                            <property role="Xl_RC" value="Concepts" />
+                            <property role="Xl_RC" value="Facts" />
                           </node>
                           <node concept="1adDum" id="c0" role="37wK5m">
                             <property role="1adDun" value="0x101a8b55effd99f9L" />

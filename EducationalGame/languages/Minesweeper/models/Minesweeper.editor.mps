@@ -84,6 +84,24 @@
       <node concept="3F1sOY" id="5CHZc_CYKAS" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:7E7jPp8xZ0J" resolve="lesson" />
       </node>
+      <node concept="3F0ifn" id="TIatWLoVTU" role="3EZMnx">
+        <property role="3F0ifm" value="Facts per level:" />
+        <node concept="pVoyu" id="TIatWLoVV0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="TIatWLoVUC" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:TIatWLoRWs" resolve="factsCount" />
+      </node>
+      <node concept="3F0ifn" id="TIatWLqrze" role="3EZMnx">
+        <property role="3F0ifm" value="Questions per level:" />
+        <node concept="pVoyu" id="TIatWLqrQ5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="TIatWLqrPf" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8DxwX" resolve="questionsQount" />
+      </node>
       <node concept="35HoNQ" id="5CHZc_CZzqv" role="3EZMnx">
         <node concept="pVoyu" id="5CHZc_CZzr8" role="3F10Kt">
           <property role="VOm3f" value="true" />

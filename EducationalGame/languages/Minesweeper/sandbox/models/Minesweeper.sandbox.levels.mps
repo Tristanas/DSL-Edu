@@ -18,7 +18,11 @@
       <concept id="8829112826488390265" name="Minesweeper.structure.DifficultyRef" flags="ng" index="MacOJ">
         <reference id="8829112826488390285" name="difficultyRef" index="MacRr" />
       </concept>
+      <concept id="7848903088671281841" name="Minesweeper.structure.Level" flags="ng" index="1KmNlR">
+        <property id="8829112826487773245" name="questionsQount" index="M8ltF" />
+      </concept>
       <concept id="1160393055216179913" name="Minesweeper.structure.LearningLevel" flags="ng" index="3ZTL6s">
+        <property id="1039814602552213276" name="factsCount" index="Z3lr3" />
         <child id="8829112826485796910" name="questionaire" index="M0bXS" />
         <child id="8829112826485796911" name="lesson" index="M0bXT" />
         <child id="8829112826488859480" name="difficulty" index="Mcuge" />
@@ -41,6 +45,8 @@
   <node concept="M0a1I" id="7E7jPp8IQxN">
     <property role="TrG5h" value="Statistics" />
     <node concept="3ZTL6s" id="7E7jPp8IQ$U" role="M3OQe">
+      <property role="Z3lr3" value="3" />
+      <property role="M8ltF" value="4" />
       <node concept="MacOJ" id="7E7jPp8LkPM" role="Mcuge">
         <ref role="MacRr" to="mslf:7E7jPp8AAy2" resolve="Easy" />
       </node>

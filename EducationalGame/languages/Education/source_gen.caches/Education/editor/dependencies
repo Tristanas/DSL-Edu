@@ -33,14 +33,36 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="Education.editor.Concept_Editor">
-    <classNode dependClassName="Education.editor.Concept_EditorBuilder_a" />
+  <dependency className="Education.editor.EditorAspectDescriptorImpl">
+    <classNode dependClassName="Education.editor.Answer_Editor" />
+    <classNode dependClassName="Education.editor.Fact_Editor" />
+    <classNode dependClassName="Education.editor.LessonReference_Editor" />
+    <classNode dependClassName="Education.editor.LessonReference_SubstituteMenu" />
+    <classNode dependClassName="Education.editor.Lesson_Editor" />
+    <classNode dependClassName="Education.editor.SimpleTest_Editor" />
+    <classNode dependClassName="Education.editor.SingleChoiceQuestion_Editor" />
+    <classNode dependClassName="Education.editor.TestReference_Editor" />
+    <classNode dependClassName="Education.editor.TestReference_SubstituteMenu" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.SubstituteMenu" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
+  </dependency>
+  <dependency className="Education.editor.Fact_Editor">
+    <classNode dependClassName="Education.editor.Fact_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Education.editor.Concept_EditorBuilder_a">
+  <dependency className="Education.editor.Fact_EditorBuilder_a">
     <classNode dependClassName="de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
@@ -71,28 +93,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="Education.editor.EditorAspectDescriptorImpl">
-    <classNode dependClassName="Education.editor.Answer_Editor" />
-    <classNode dependClassName="Education.editor.Concept_Editor" />
-    <classNode dependClassName="Education.editor.LessonReference_Editor" />
-    <classNode dependClassName="Education.editor.LessonReference_SubstituteMenu" />
-    <classNode dependClassName="Education.editor.Lesson_Editor" />
-    <classNode dependClassName="Education.editor.SimpleTest_Editor" />
-    <classNode dependClassName="Education.editor.SingleChoiceQuestion_Editor" />
-    <classNode dependClassName="Education.editor.TestReference_Editor" />
-    <classNode dependClassName="Education.editor.TestReference_SubstituteMenu" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditor" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.SubstituteMenu" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
   <dependency className="Education.editor.LessonReference_Editor">
     <classNode dependClassName="Education.editor.LessonReference_EditorBuilder_a" />

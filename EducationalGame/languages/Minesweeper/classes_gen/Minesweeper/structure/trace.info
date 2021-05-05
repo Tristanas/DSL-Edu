@@ -15,7 +15,7 @@
       <unit at="10,0,42,0" name="Minesweeper.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,152,0" name="Minesweeper.structure.StructureAspectDescriptor" />
+      <unit at="15,0,153,0" name="Minesweeper.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179913">
@@ -43,16 +43,17 @@
       <node id="1160393055216179913" at="107,33,108,107" concept="0" />
       <node id="1160393055216179913" at="108,107,109,98" concept="0" />
       <node id="1160393055216179913" at="109,98,110,17" concept="0" />
-      <node id="8829112826485796910" at="110,17,111,205" concept="0" />
-      <node id="8829112826485796911" at="111,205,112,199" concept="0" />
-      <node id="8829112826488859480" at="112,199,113,203" concept="0" />
-      <node id="1160393055216179913" at="113,203,114,22" concept="4" />
-      <node id="1160393055216179913" at="105,0,116,0" concept="6" trace="createDescriptorForLearningLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1039814602552213276" at="110,17,111,116" concept="0" />
+      <node id="8829112826485796910" at="111,116,112,205" concept="0" />
+      <node id="8829112826485796911" at="112,205,113,199" concept="0" />
+      <node id="8829112826488859480" at="113,199,114,203" concept="0" />
+      <node id="1160393055216179913" at="114,203,115,22" concept="4" />
+      <node id="1160393055216179913" at="105,0,117,0" concept="6" trace="createDescriptorForLearningLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1160393055216179913" at="52,47,53,38" />
-      <scope id="1160393055216179913" at="105,71,114,22">
+      <scope id="1160393055216179913" at="105,71,115,22">
         <var name="b" id="1160393055216179913" />
       </scope>
-      <scope id="1160393055216179913" at="105,0,116,0" />
+      <scope id="1160393055216179913" at="105,0,117,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179944">
@@ -75,19 +76,19 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1160393055216179944" at="23,0,24,0" concept="1" trace="myConceptTestLevel" />
       <node id="1160393055216179944" at="60,43,61,34" concept="4" />
-      <node id="1160393055216179944" at="142,67,143,155" concept="3" />
-      <node id="1160393055216179944" at="143,155,144,34" concept="0" />
-      <node id="1160393055216179944" at="144,34,145,107" concept="0" />
-      <node id="1160393055216179944" at="145,107,146,98" concept="0" />
-      <node id="1160393055216179944" at="146,98,147,17" concept="0" />
-      <node id="8281464204760561159" at="147,17,148,203" concept="0" />
-      <node id="1160393055216179944" at="148,203,149,22" concept="4" />
-      <node id="1160393055216179944" at="142,0,151,0" concept="6" trace="createDescriptorForTestLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1160393055216179944" at="143,67,144,155" concept="3" />
+      <node id="1160393055216179944" at="144,155,145,34" concept="0" />
+      <node id="1160393055216179944" at="145,34,146,107" concept="0" />
+      <node id="1160393055216179944" at="146,107,147,98" concept="0" />
+      <node id="1160393055216179944" at="147,98,148,17" concept="0" />
+      <node id="8281464204760561159" at="148,17,149,203" concept="0" />
+      <node id="1160393055216179944" at="149,203,150,22" concept="4" />
+      <node id="1160393055216179944" at="143,0,152,0" concept="6" trace="createDescriptorForTestLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1160393055216179944" at="60,43,61,34" />
-      <scope id="1160393055216179944" at="142,67,149,22">
+      <scope id="1160393055216179944" at="143,67,150,22">
         <var name="b" id="1160393055216179944" />
       </scope>
-      <scope id="1160393055216179944" at="142,0,151,0" />
+      <scope id="1160393055216179944" at="143,0,152,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/7848903088671281841">
@@ -110,18 +111,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="7848903088671281841" at="20,0,21,0" concept="1" trace="myConceptLevel" />
       <node id="7848903088671281841" at="54,39,55,30" concept="4" />
-      <node id="7848903088671281841" at="116,63,117,151" concept="3" />
-      <node id="7848903088671281841" at="117,151,118,33" concept="0" />
-      <node id="7848903088671281841" at="118,33,119,98" concept="0" />
-      <node id="7848903088671281841" at="119,98,120,17" concept="0" />
-      <node id="8829112826487773245" at="120,17,121,121" concept="0" />
-      <node id="7848903088671281841" at="121,121,122,22" concept="4" />
-      <node id="7848903088671281841" at="116,0,124,0" concept="6" trace="createDescriptorForLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="7848903088671281841" at="117,63,118,151" concept="3" />
+      <node id="7848903088671281841" at="118,151,119,33" concept="0" />
+      <node id="7848903088671281841" at="119,33,120,98" concept="0" />
+      <node id="7848903088671281841" at="120,98,121,17" concept="0" />
+      <node id="8829112826487773245" at="121,17,122,121" concept="0" />
+      <node id="7848903088671281841" at="122,121,123,22" concept="4" />
+      <node id="7848903088671281841" at="117,0,125,0" concept="6" trace="createDescriptorForLevel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="7848903088671281841" at="54,39,55,30" />
-      <scope id="7848903088671281841" at="116,63,122,22">
+      <scope id="7848903088671281841" at="117,63,123,22">
         <var name="b" id="7848903088671281841" />
       </scope>
-      <scope id="7848903088671281841" at="116,0,124,0" />
+      <scope id="7848903088671281841" at="117,0,125,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826485796664">
@@ -144,20 +145,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="8829112826485796664" at="21,0,22,0" concept="1" trace="myConceptLevelCollection" />
       <node id="8829112826485796664" at="56,49,57,40" concept="4" />
-      <node id="8829112826485796664" at="124,73,125,161" concept="3" />
-      <node id="8829112826485796664" at="125,161,126,33" concept="0" />
-      <node id="8829112826485796664" at="126,33,127,71" concept="0" />
-      <node id="8829112826485796664" at="127,71,128,98" concept="0" />
-      <node id="8829112826485796664" at="128,98,129,17" concept="0" />
-      <node id="8829112826485796684" at="129,17,130,202" concept="0" />
-      <node id="8829112826485801688" at="130,202,131,206" concept="0" />
-      <node id="8829112826485796664" at="131,206,132,22" concept="4" />
-      <node id="8829112826485796664" at="124,0,134,0" concept="6" trace="createDescriptorForLevelCollection#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="8829112826485796664" at="125,73,126,161" concept="3" />
+      <node id="8829112826485796664" at="126,161,127,33" concept="0" />
+      <node id="8829112826485796664" at="127,33,128,71" concept="0" />
+      <node id="8829112826485796664" at="128,71,129,98" concept="0" />
+      <node id="8829112826485796664" at="129,98,130,17" concept="0" />
+      <node id="8829112826485796684" at="130,17,131,202" concept="0" />
+      <node id="8829112826485801688" at="131,202,132,206" concept="0" />
+      <node id="8829112826485796664" at="132,206,133,22" concept="4" />
+      <node id="8829112826485796664" at="125,0,135,0" concept="6" trace="createDescriptorForLevelCollection#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="8829112826485796664" at="56,49,57,40" />
-      <scope id="8829112826485796664" at="124,73,132,22">
+      <scope id="8829112826485796664" at="125,73,133,22">
         <var name="b" id="8829112826485796664" />
       </scope>
-      <scope id="8829112826485796664" at="124,0,134,0" />
+      <scope id="8829112826485796664" at="125,0,135,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826485796814">
@@ -216,18 +217,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="8829112826486068857" at="22,0,23,0" concept="1" trace="myConceptLevelCollectionRef" />
       <node id="8829112826486068857" at="58,52,59,43" concept="4" />
-      <node id="8829112826486068857" at="134,76,135,164" concept="3" />
-      <node id="8829112826486068857" at="135,164,136,34" concept="0" />
-      <node id="8829112826486068857" at="136,34,137,98" concept="0" />
-      <node id="8829112826486068857" at="137,98,138,17" concept="0" />
-      <node id="8829112826486068876" at="138,17,139,179" concept="0" />
-      <node id="8829112826486068857" at="139,179,140,22" concept="4" />
-      <node id="8829112826486068857" at="134,0,142,0" concept="6" trace="createDescriptorForLevelCollectionRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="8829112826486068857" at="135,76,136,164" concept="3" />
+      <node id="8829112826486068857" at="136,164,137,34" concept="0" />
+      <node id="8829112826486068857" at="137,34,138,98" concept="0" />
+      <node id="8829112826486068857" at="138,98,139,17" concept="0" />
+      <node id="8829112826486068876" at="139,17,140,179" concept="0" />
+      <node id="8829112826486068857" at="140,179,141,22" concept="4" />
+      <node id="8829112826486068857" at="135,0,143,0" concept="6" trace="createDescriptorForLevelCollectionRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="8829112826486068857" at="58,52,59,43" />
-      <scope id="8829112826486068857" at="134,76,140,22">
+      <scope id="8829112826486068857" at="135,76,141,22">
         <var name="b" id="8829112826486068857" />
       </scope>
-      <scope id="8829112826486068857" at="134,0,142,0" />
+      <scope id="8829112826486068857" at="135,0,143,0" />
     </file>
   </root>
   <root nodeRef="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826486788966">

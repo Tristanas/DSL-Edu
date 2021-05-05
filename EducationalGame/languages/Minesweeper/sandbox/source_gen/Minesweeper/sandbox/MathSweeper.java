@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import common.Lesson;
+import common.LevelDescription;
 import javax.swing.JPanel;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
@@ -27,8 +28,11 @@ import common.ImageScaler;
 public class MathSweeper extends JFrame implements ActionListener {
   public ArrayList<Question> questions;
   public ArrayList<Lesson> lessons;
+  public ArrayList<LevelDescription> levels;
+
   private JPanel menu;
   private JPanel game;
+
   private final int N_BUTTONS = 4;
   private final int BUTTON_WIDTH = 140;
   private final int BUTTON_HEIGHT = 40;
@@ -37,6 +41,7 @@ public class MathSweeper extends JFrame implements ActionListener {
   private final int BOTTOM_PADDING = 50;
   private final int MENU_WIDTH = 400;
   private final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
+
   public final String PLAY = "Play";
   public final String TEST = "Take test";
   public final String LESSONS = "Check lessons";
@@ -75,6 +80,20 @@ public class MathSweeper extends JFrame implements ActionListener {
     lessons.add(new Lesson("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
     lessons.add(new Lesson("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
     lessons.add(new Lesson("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
+
+    int levelNo = 1;
+    levels = new ArrayList();
+    LevelDescription learningLevel;
+    LevelDescription testLevel;
+
+    // Set up levels: 
+    learningLevel = new LevelDescription();
+    learningLevel.levelNo = levelNo++;
+    learningLevel.setGameBase(9, 9, 10, 2);
+    learningLevel.setItemCounts(1, 3, 4);
+    levels.add(learningLevel);
+
+
 
 
 
