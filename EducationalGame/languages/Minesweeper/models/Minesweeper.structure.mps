@@ -83,6 +83,12 @@
     <property role="EcuMT" value="1160393055216179944" />
     <property role="TrG5h" value="TestLevel" />
     <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Level" />
+    <node concept="1TJgyj" id="7bHEX4KRro7" role="1TKVEi">
+      <property role="IQ2ns" value="8281464204760561159" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="difficulty" />
+      <ref role="20lvS9" node="7E7jPp8FS9T" resolve="DifficultyRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7E7jPp8xYWS">
     <property role="EcuMT" value="8829112826485796664" />
