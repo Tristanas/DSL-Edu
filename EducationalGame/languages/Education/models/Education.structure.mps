@@ -175,5 +175,16 @@
       <ref role="20lvS9" node="10qyPnJZnbJ" resolve="Lesson" />
     </node>
   </node>
+  <node concept="1TIwiD" id="TIatWLDu60">
+    <property role="EcuMT" value="1039814602556563840" />
+    <property role="TrG5h" value="TopicReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="TIatWLDu6k" role="1TKVEi">
+      <property role="IQ2ns" value="1039814602556563860" />
+      <property role="20kJfa" value="topicRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="10qyPnJZnbg" resolve="Topic" />
+    </node>
+  </node>
 </model>
 

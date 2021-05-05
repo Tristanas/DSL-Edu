@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Subject;
   private ConceptPresentation props_TestReference;
   private ConceptPresentation props_Topic;
+  private ConceptPresentation props_TopicReference;
 
   @Override
   @Nullable
@@ -87,6 +88,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Topic = cpb.create();
         }
         return props_Topic;
+      case LanguageConceptSwitch.TopicReference:
+        if (props_TopicReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0xe6e29df31a5e180L, 0xe6e29df31a5e194L, "topicRef", "", "");
+          props_TopicReference = cpb.create();
+        }
+        return props_TopicReference;
     }
     return null;
   }

@@ -9,6 +9,8 @@ import common.Fact;
 import common.LevelDescription;
 import javax.swing.JPanel;
 import com.zetcode.Board;
+import common.Lesson;
+import common.Topic;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
@@ -51,6 +53,20 @@ public class MathSweeper extends JFrame implements ActionListener {
   private Board minesweeperBoard;
 
   public MathSweeper() {
+    LevelDescription learningLevel;
+    LevelDescription testLevel;
+    Lesson lesson;
+    Topic topic;
+    ArrayList<Lesson> lessons;
+    ArrayList<Topic> topics = new ArrayList();
+
+    levels = new ArrayList();
+
+    int levelNo = 1;
+
+    // Set up levels: 
+    lessons = new ArrayList();
+    // Lesson " Statistics introduction " and its level: 
     questions = new ArrayList();
     questions.add(new common.Question("A canteen requires 112 kgs of wheat for one week. How many kgs of wheat will it require for 69 days?", new String[]{"1203 kgs", "1401 kgs", "1014 kgs", "1104 kgs"}, "1104 kgs"));
     questions.add(new common.Question("If an amount of Rs 41,910 is distributed equally amongst 22 persons, how much amount would each person get?", new String[]{"2000", "745", "765", "1905"}, "1905"));
@@ -82,21 +98,16 @@ public class MathSweeper extends JFrame implements ActionListener {
     facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
     facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
 
-    int levelNo = 1;
-    levels = new ArrayList();
-    LevelDescription learningLevel;
-    LevelDescription testLevel;
+    lesson = new Lesson("Statistics introduction", facts, questions);
+    lessons.add(lesson);
 
-    // Set up levels: 
     learningLevel = new LevelDescription();
     learningLevel.levelNo = levelNo++;
     learningLevel.setGameBase(9, 9, 10, 2);
     learningLevel.setItemCounts(1, 3, 4);
+    learningLevel.startingReveals = 1;
+    learningLevel.setLearningGame(lesson);
     levels.add(learningLevel);
-
-
-
-
 
 
 
@@ -160,7 +171,7 @@ public class MathSweeper extends JFrame implements ActionListener {
   private void createGame() {
     game = new JPanel();
     game.setLayout(new BorderLayout());
-    minesweeperBoard = new Board(this, questions, facts, levels.get(0));
+    minesweeperBoard = new Board(this, levels.get(0));
     game.add(minesweeperBoard);
     game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
   }

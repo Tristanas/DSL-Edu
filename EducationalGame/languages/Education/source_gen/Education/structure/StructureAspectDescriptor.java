@@ -22,6 +22,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSubject = createDescriptorForSubject();
   /*package*/ final ConceptDescriptor myConceptTestReference = createDescriptorForTestReference();
   /*package*/ final ConceptDescriptor myConceptTopic = createDescriptorForTopic();
+  /*package*/ final ConceptDescriptor myConceptTopicReference = createDescriptorForTopicReference();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -36,7 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAnswer, myConceptFact, myConceptLesson, myConceptLessonReference, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic);
+    return Arrays.asList(myConceptAnswer, myConceptFact, myConceptLesson, myConceptLessonReference, myConceptSimpleTest, myConceptSingleChoiceQuestion, myConceptSubject, myConceptTestReference, myConceptTopic, myConceptTopicReference);
   }
 
   @Override
@@ -61,6 +62,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTestReference;
       case LanguageConceptSwitch.Topic:
         return myConceptTopic;
+      case LanguageConceptSwitch.TopicReference:
+        return myConceptTopicReference;
       default:
         return null;
     }
@@ -147,6 +150,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("Name", 0x101a8b55effd9a0aL).type(PrimitiveTypeId.STRING).origin("1160393055216179722").done();
     b.aggregate("Lessons", 0x101a8b55effd9a0cL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL).optional(true).ordered(true).multiple(true).origin("1160393055216179724").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTopicReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "TopicReference", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0xe6e29df31a5e180L);
+    b.class_(false, false, false);
+    b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/1039814602556563840");
+    b.version(2);
+    b.associate("topicRef", 0xe6e29df31a5e194L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72d0L).optional(false).origin("1039814602556563860").done();
     return b.create();
   }
 }

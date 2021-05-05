@@ -94,6 +94,18 @@
       <property role="20kJfa" value="difficulty" />
       <ref role="20lvS9" node="7E7jPp8FS9T" resolve="DifficultyRef" />
     </node>
+    <node concept="1TJgyj" id="TIatWLCzo0" role="1TKVEi">
+      <property role="IQ2ns" value="1039814602556323328" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="questionaire" />
+      <ref role="20lvS9" to="cgkn:4XM$1KSToDH" resolve="SimpleTest" />
+    </node>
+    <node concept="1TJgyj" id="TIatWLD_r_" role="1TKVEi">
+      <property role="IQ2ns" value="1039814602556593893" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="topic" />
+      <ref role="20lvS9" to="cgkn:TIatWLDu60" resolve="TopicReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7E7jPp8xYWS">
     <property role="EcuMT" value="8829112826485796664" />

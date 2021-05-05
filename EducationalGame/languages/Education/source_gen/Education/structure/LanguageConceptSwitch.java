@@ -18,6 +18,7 @@ public final class LanguageConceptSwitch {
   public static final int Subject = 6;
   public static final int TestReference = 7;
   public static final int Topic = 8;
+  public static final int TopicReference = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf086fa03c1954951L, 0xa78fbf3bd377c791L);
@@ -30,6 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2f5b75f5c2806743L, Subject);
     builder.put(0x4f72901c38e5a8a0L, TestReference);
     builder.put(0x101a8b55effd72d0L, Topic);
+    builder.put(0xe6e29df31a5e180L, TopicReference);
     myIndex = builder.seal();
   }
 

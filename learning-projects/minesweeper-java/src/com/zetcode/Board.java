@@ -75,13 +75,20 @@ public class Board extends JPanel implements ActionListener {
     private JFrame lessonWindow;
     public final StatusBar statusbar;
 
-    public Board(JFrame fFrame, ArrayList<Question> questions, ArrayList<Fact> facts, LevelDescription level) {
+    public Board(JFrame fFrame, LevelDescription level) {
         this.parentWindow = fFrame;
-        this.questions = questions;
-        this.questionsCount = questions.size();
         this.statusbar = new StatusBar(this);
-        this.facts = facts;
         this.level = level;
+
+        if (level.type == LevelDescription.GameType.learn) {
+            this.facts = level.lesson.facts;
+            this.questions = level.lesson.questions;
+        } else {
+            this.facts = new ArrayList<>();
+            this.questions = level.topic.generateTest();
+        }
+
+        this.questionsCount = questions.size();
 
         // Init final fields:
         N_COLS = level.columns;
