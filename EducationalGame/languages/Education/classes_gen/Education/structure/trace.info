@@ -296,38 +296,38 @@
       <scope id="5724796527229380768" at="135,0,143,0" />
     </file>
   </root>
-  <root nodeRef="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/6498127779345401249">
+  <root nodeRef="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/8829112826485797354">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="6498127779345401249" at="15,0,16,0" concept="1" trace="props_LessonReference" />
-      <node id="6498127779345401249" at="49,44,50,76" concept="3" />
-      <node id="6498127779345401249" at="50,76,51,144" concept="0" />
-      <node id="6498127779345401249" at="51,144,52,47" concept="0" />
-      <node id="6498127779345401249" at="53,9,54,37" concept="4" />
-      <node id="6498127779345401249" at="48,49,53,9" concept="2" />
-      <scope id="6498127779345401249" at="49,44,52,47">
-        <var name="cpb" id="6498127779345401249" />
+      <node id="8829112826485797354" at="15,0,16,0" concept="1" trace="props_LessonReference" />
+      <node id="8829112826485797354" at="49,44,50,76" concept="3" />
+      <node id="8829112826485797354" at="50,76,51,143" concept="0" />
+      <node id="8829112826485797354" at="51,143,52,47" concept="0" />
+      <node id="8829112826485797354" at="53,9,54,37" concept="4" />
+      <node id="8829112826485797354" at="48,49,53,9" concept="2" />
+      <scope id="8829112826485797354" at="49,44,52,47">
+        <var name="cpb" id="8829112826485797354" />
       </scope>
-      <scope id="6498127779345401249" at="48,49,54,37" />
+      <scope id="8829112826485797354" at="48,49,54,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6498127779345401249" at="15,0,16,0" concept="5" trace="LessonReference" />
-      <node id="6498127779345401249" at="26,45,27,54" concept="0" />
+      <node id="8829112826485797354" at="15,0,16,0" concept="5" trace="LessonReference" />
+      <node id="8829112826485797354" at="26,45,27,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="6498127779345401249" at="19,0,20,0" concept="1" trace="myConceptLessonReference" />
-      <node id="6498127779345401249" at="52,49,53,40" concept="4" />
-      <node id="6498127779345401249" at="100,73,101,159" concept="3" />
-      <node id="6498127779345401249" at="101,159,102,34" concept="0" />
-      <node id="6498127779345401249" at="102,34,103,96" concept="0" />
-      <node id="6498127779345401249" at="103,96,104,17" concept="0" />
-      <node id="6498127779345401295" at="104,17,105,174" concept="0" />
-      <node id="6498127779345401249" at="105,174,106,22" concept="4" />
-      <node id="6498127779345401249" at="100,0,108,0" concept="6" trace="createDescriptorForLessonReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="6498127779345401249" at="52,49,53,40" />
-      <scope id="6498127779345401249" at="100,73,106,22">
-        <var name="b" id="6498127779345401249" />
+      <node id="8829112826485797354" at="19,0,20,0" concept="1" trace="myConceptLessonReference" />
+      <node id="8829112826485797354" at="52,49,53,40" concept="4" />
+      <node id="8829112826485797354" at="100,73,101,159" concept="3" />
+      <node id="8829112826485797354" at="101,159,102,34" concept="0" />
+      <node id="8829112826485797354" at="102,34,103,96" concept="0" />
+      <node id="8829112826485797354" at="103,96,104,17" concept="0" />
+      <node id="8829112826485797372" at="104,17,105,173" concept="0" />
+      <node id="8829112826485797354" at="105,173,106,22" concept="4" />
+      <node id="8829112826485797354" at="100,0,108,0" concept="6" trace="createDescriptorForLessonReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8829112826485797354" at="52,49,53,40" />
+      <scope id="8829112826485797354" at="100,73,106,22">
+        <var name="b" id="8829112826485797354" />
       </scope>
-      <scope id="6498127779345401249" at="100,0,108,0" />
+      <scope id="8829112826485797354" at="100,0,108,0" />
     </file>
   </root>
 </debug-info>

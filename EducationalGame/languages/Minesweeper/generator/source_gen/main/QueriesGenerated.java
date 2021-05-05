@@ -7,6 +7,7 @@ import jetbrains.mps.generator.impl.query.QueryProviderBase;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import java.util.Map;
@@ -30,16 +31,16 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), PROPS.cellSize$GEM3);
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.difficulty$5ewA), LINKS.difficultyRef$yEpj), PROPS.cellSize$fGxe);
   }
   public static Object propertyMacro_GetValue_1_1(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), PROPS.bombs$_r4V);
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.difficulty$5ewA), LINKS.difficultyRef$yEpj), PROPS.bombs$fBmS);
   }
   public static Object propertyMacro_GetValue_1_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), PROPS.height$_qnS);
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.difficulty$5ewA), LINKS.difficultyRef$yEpj), PROPS.height$fB7R);
   }
   public static Object propertyMacro_GetValue_1_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), PROPS.width$_pTQ);
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.difficulty$5ewA), LINKS.difficultyRef$yEpj), PROPS.width$fASQ);
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "Board";
@@ -69,10 +70,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.incorrectAnswers$ogmD);
   }
   public static Iterable<SNode> sourceNodesQuery_2_1(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.questionaire$GIWd), LINKS.testReference$3p8n), LINKS.questions$3WMF);
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.questionaire$91xn), LINKS.testReference$3p8n), LINKS.questions$3WMF);
   }
   public static Iterable<SNode> sourceNodesQuery_2_2(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.lesson$H$s4), LINKS.LesssonRef$_pOX), LINKS.Concepts$YWXG);
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc)).getElement(0), LINKS.levelCollection$x$UM), LINKS.learningLevels$h2Gi)).getElement(0), LINKS.lesson$91Ko), LINKS.LessonRef$aYr2), LINKS.Concepts$YWXG);
   }
   private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
   {
@@ -167,26 +168,31 @@ public class QueriesGenerated extends QueryProviderBase {
     }
   }
 
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink levelCollections$9hLc = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887efceL, 0x7a874f56488801bbL, "levelCollections");
+    /*package*/ static final SReferenceLink levelCollection$x$UM = MetaAdapterFactory.getReferenceLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L, 0x7a874f56488c168cL, "levelCollection");
+    /*package*/ static final SContainmentLink learningLevels$h2Gi = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L, 0x7a874f56488802d8L, "learningLevels");
+    /*package*/ static final SContainmentLink difficulty$5ewA = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L, 0x7a874f5648b6ab58L, "difficulty");
+    /*package*/ static final SReferenceLink difficultyRef$yEpj = MetaAdapterFactory.getReferenceLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L, 0x7a874f5648af828dL, "difficultyRef");
+    /*package*/ static final SContainmentLink correctAnswer$ofSB = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad5L, "correctAnswer");
+    /*package*/ static final SContainmentLink incorrectAnswers$ogmD = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad7L, "incorrectAnswers");
+    /*package*/ static final SContainmentLink questionaire$91xn = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L, 0x7a874f564887f02eL, "questionaire");
+    /*package*/ static final SReferenceLink testReference$3p8n = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, 0x4f72901c38f02137L, "testReference");
+    /*package*/ static final SContainmentLink questions$3WMF = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e58a6dL, 0x2124eace002ddbbeL, "questions");
+    /*package*/ static final SContainmentLink lesson$91Ko = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L, 0x7a874f564887f02fL, "lesson");
+    /*package*/ static final SReferenceLink LessonRef$aYr2 = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL, 0x7a874f564887f1fcL, "LessonRef");
+    /*package*/ static final SContainmentLink Concepts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Concepts");
+  }
+
   private static final class PROPS {
-    /*package*/ static final SProperty cellSize$GEM3 = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x2c993fc0cfd99be4L, "cellSize");
-    /*package*/ static final SProperty bombs$_r4V = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b7L, "bombs");
-    /*package*/ static final SProperty height$_qnS = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b4L, "height");
-    /*package*/ static final SProperty width$_pTQ = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x6cece7c61cb7d2b2L, "width");
+    /*package*/ static final SProperty cellSize$fGxe = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L, 0x7a874f564897136aL, "cellSize");
+    /*package*/ static final SProperty bombs$fBmS = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L, 0x7a874f5648971369L, "bombs");
+    /*package*/ static final SProperty height$fB7R = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L, 0x7a874f5648971368L, "height");
+    /*package*/ static final SProperty width$fASQ = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L, 0x7a874f5648971367L, "width");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty question$rRt2 = MetaAdapterFactory.getProperty(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddb3eL, "question");
     /*package*/ static final SProperty text$ofa7 = MetaAdapterFactory.getProperty(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad1L, 0x2124eace002ddad2L, "text");
     /*package*/ static final SProperty Name$ZyJG = MetaAdapterFactory.getProperty(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL, 0x101a8b55effd9a2eL, "Name");
     /*package*/ static final SProperty Description$ZC93 = MetaAdapterFactory.getProperty(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL, 0x101a8b55effd9a30L, "Description");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink correctAnswer$ofSB = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad5L, "correctAnswer");
-    /*package*/ static final SContainmentLink incorrectAnswers$ogmD = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad7L, "incorrectAnswers");
-    /*package*/ static final SContainmentLink questionaire$GIWd = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x2124eace002ddbbeL, "questionaire");
-    /*package*/ static final SReferenceLink testReference$3p8n = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, 0x4f72901c38f02137L, "testReference");
-    /*package*/ static final SContainmentLink questions$3WMF = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e58a6dL, 0x2124eace002ddbbeL, "questions");
-    /*package*/ static final SContainmentLink lesson$H$s4 = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x5a2dfcc968fb0942L, "lesson");
-    /*package*/ static final SReferenceLink LesssonRef$_pOX = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L, 0x5a2dfcc968fb05cfL, "LesssonRef");
-    /*package*/ static final SContainmentLink Concepts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Concepts");
   }
 }

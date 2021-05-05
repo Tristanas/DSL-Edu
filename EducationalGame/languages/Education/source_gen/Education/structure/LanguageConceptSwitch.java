@@ -24,7 +24,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2124eace002ddad1L, Answer);
     builder.put(0x101a8b55effd730eL, Concept);
     builder.put(0x101a8b55effd72efL, Lesson);
-    builder.put(0x5a2dfcc968fb05a1L, LessonReference);
+    builder.put(0x7a874f564887f1eaL, LessonReference);
     builder.put(0x4f72901c38e58a6dL, SimpleTest);
     builder.put(0x2124eace002ddad4L, SingleChoiceQuestion);
     builder.put(0x2f5b75f5c2806743L, Subject);

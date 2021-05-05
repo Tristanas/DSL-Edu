@@ -48,7 +48,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.LessonReference:
         if (props_LessonReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L, 0x5a2dfcc968fb05cfL, "LesssonRef", "", "");
+          cpb.presentationByReference(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL, 0x7a874f564887f1fcL, "LessonRef", "", "");
           props_LessonReference = cpb.create();
         }
         return props_LessonReference;

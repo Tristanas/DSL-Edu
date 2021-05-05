@@ -13,9 +13,14 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
-  /*package*/ final ConceptDescriptor myConceptLearningGame = createDescriptorForLearningGame();
-  /*package*/ final ConceptDescriptor myConceptTestGame = createDescriptorForTestGame();
+  /*package*/ final ConceptDescriptor myConceptDifficulty = createDescriptorForDifficulty();
+  /*package*/ final ConceptDescriptor myConceptDifficultyRef = createDescriptorForDifficultyRef();
+  /*package*/ final ConceptDescriptor myConceptEducationalGame = createDescriptorForEducationalGame();
+  /*package*/ final ConceptDescriptor myConceptLearningLevel = createDescriptorForLearningLevel();
+  /*package*/ final ConceptDescriptor myConceptLevel = createDescriptorForLevel();
+  /*package*/ final ConceptDescriptor myConceptLevelCollection = createDescriptorForLevelCollection();
+  /*package*/ final ConceptDescriptor myConceptLevelCollectionRef = createDescriptorForLevelCollectionRef();
+  /*package*/ final ConceptDescriptor myConceptTestLevel = createDescriptorForTestLevel();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -31,19 +36,29 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptGame, myConceptLearningGame, myConceptTestGame);
+    return Arrays.asList(myConceptDifficulty, myConceptDifficultyRef, myConceptEducationalGame, myConceptLearningLevel, myConceptLevel, myConceptLevelCollection, myConceptLevelCollectionRef, myConceptTestLevel);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Game:
-        return myConceptGame;
-      case LanguageConceptSwitch.LearningGame:
-        return myConceptLearningGame;
-      case LanguageConceptSwitch.TestGame:
-        return myConceptTestGame;
+      case LanguageConceptSwitch.Difficulty:
+        return myConceptDifficulty;
+      case LanguageConceptSwitch.DifficultyRef:
+        return myConceptDifficultyRef;
+      case LanguageConceptSwitch.EducationalGame:
+        return myConceptEducationalGame;
+      case LanguageConceptSwitch.LearningLevel:
+        return myConceptLearningLevel;
+      case LanguageConceptSwitch.Level:
+        return myConceptLevel;
+      case LanguageConceptSwitch.LevelCollection:
+        return myConceptLevelCollection;
+      case LanguageConceptSwitch.LevelCollectionRef:
+        return myConceptLevelCollectionRef;
+      case LanguageConceptSwitch.TestLevel:
+        return myConceptTestLevel;
       default:
         return null;
     }
@@ -54,33 +69,80 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForGame() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+  private static ConceptDescriptor createDescriptorForDifficulty() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Difficulty", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826486788966");
+    b.version(2);
+    b.property("width", 0x7a874f5648971367L).type(PrimitiveTypeId.INTEGER).origin("8829112826486788967").done();
+    b.property("height", 0x7a874f5648971368L).type(PrimitiveTypeId.INTEGER).origin("8829112826486788968").done();
+    b.property("bombs", 0x7a874f5648971369L).type(PrimitiveTypeId.INTEGER).origin("8829112826486788969").done();
+    b.property("cellSize", 0x7a874f564897136aL).type(PrimitiveTypeId.INTEGER).origin("8829112826486788970").done();
+    b.property("lives", 0x7a874f5648a61810L).type(PrimitiveTypeId.INTEGER).origin("8829112826487773200").done();
+    b.property("reveals", 0x7a874f5648a61812L).type(PrimitiveTypeId.INTEGER).origin("8829112826487773202").done();
+    b.property("specialEffects", 0x7a874f5648a61ac2L).type(PrimitiveTypeId.INTEGER).origin("8829112826487773890").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDifficultyRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "DifficultyRef", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L);
+    b.class_(false, false, false);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826488390265");
+    b.version(2);
+    b.associate("difficultyRef", 0x7a874f5648af828dL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L).optional(false).origin("8829112826488390285").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEducationalGame() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "EducationalGame", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887efceL);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
-    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/7848903088671281841");
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826485796814");
     b.version(2);
-    b.property("width", 0x6cece7c61cb7d2b2L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281842").done();
-    b.property("height", 0x6cece7c61cb7d2b4L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281844").done();
-    b.property("bombs", 0x6cece7c61cb7d2b7L).type(PrimitiveTypeId.INTEGER).origin("7848903088671281847").done();
-    b.property("cellSize", 0x2c993fc0cfd99be4L).type(PrimitiveTypeId.INTEGER).origin("3213669906458975204").done();
-    b.aggregate("questionaire", 0x2124eace002ddbbeL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L).optional(true).ordered(true).multiple(false).origin("2388291872900373438").done();
-    b.aggregate("lesson", 0x5a2dfcc968fb0942L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L).optional(true).ordered(true).multiple(false).origin("6498127779345402178").done();
+    b.aggregate("levelCollections", 0x7a874f56488801bbL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L).optional(false).ordered(true).multiple(true).origin("8829112826485801403").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForLearningGame() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LearningGame", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L);
-    b.class_(false, false, false);
-    b.super_("Minesweeper.structure.Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+  private static ConceptDescriptor createDescriptorForLearningLevel() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LearningLevel", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L);
+    b.class_(false, false, true);
+    b.super_("Minesweeper.structure.Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179913");
     b.version(2);
+    b.aggregate("questionaire", 0x7a874f564887f02eL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L).optional(true).ordered(true).multiple(false).origin("8829112826485796910").done();
+    b.aggregate("lesson", 0x7a874f564887f02fL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL).optional(true).ordered(true).multiple(false).origin("8829112826485796911").done();
+    b.aggregate("difficulty", 0x7a874f5648b6ab58L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L).optional(true).ordered(true).multiple(false).origin("8829112826488859480").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTestGame() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "TestGame", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L);
+  private static ConceptDescriptor createDescriptorForLevel() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+    b.class_(false, false, true);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/7848903088671281841");
+    b.version(2);
+    b.property("questionsQount", 0x7a874f5648a6183dL).type(PrimitiveTypeId.INTEGER).origin("8829112826487773245").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLevelCollection() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LevelCollection", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826485796664");
+    b.version(2);
+    b.aggregate("testLevel", 0x7a874f564887ef4cL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L).optional(true).ordered(true).multiple(false).origin("8829112826485796684").done();
+    b.aggregate("learningLevels", 0x7a874f56488802d8L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L).optional(true).ordered(true).multiple(true).origin("8829112826485801688").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLevelCollectionRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LevelCollectionRef", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L);
     b.class_(false, false, false);
-    b.super_("Minesweeper.structure.Game", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
+    b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826486068857");
+    b.version(2);
+    b.associate("levelCollection", 0x7a874f56488c168cL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L).optional(false).origin("8829112826486068876").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTestLevel() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "TestLevel", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L);
+    b.class_(false, false, false);
+    b.super_("Minesweeper.structure.Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179944");
     b.version(2);
     return b.create();

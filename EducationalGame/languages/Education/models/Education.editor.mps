@@ -220,16 +220,19 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5CHZc_CYKqr">
-    <ref role="1XX52x" to="cgkn:5CHZc_CYKmx" resolve="LessonReference" />
-    <node concept="1iCGBv" id="5CHZc_CYKqt" role="2wV5jI">
-      <ref role="1NtTu8" to="cgkn:5CHZc_CYKnf" resolve="LesssonRef" />
-      <node concept="1sVBvm" id="5CHZc_CYKqv" role="1sWHZn">
-        <node concept="3F0A7n" id="5CHZc_CYKqA" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+  <node concept="24kQdi" id="7E7jPp8xZ85">
+    <ref role="1XX52x" to="cgkn:7E7jPp8xZ7E" resolve="LessonReference" />
+    <node concept="3EZMnI" id="7E7jPp8xZ87" role="2wV5jI">
+      <node concept="1iCGBv" id="7E7jPp8xZ8e" role="3EZMnx">
+        <ref role="1NtTu8" to="cgkn:7E7jPp8xZ7W" resolve="LessonRef" />
+        <node concept="1sVBvm" id="7E7jPp8xZ8g" role="1sWHZn">
+          <node concept="3F0A7n" id="7E7jPp8xZ8n" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="7E7jPp8xZ8a" role="2iSdaV" />
     </node>
   </node>
 </model>

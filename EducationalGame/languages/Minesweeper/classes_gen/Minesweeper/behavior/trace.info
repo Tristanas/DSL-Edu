@@ -15,120 +15,82 @@
       <unit at="14,0,32,0" name="Minesweeper.behavior.BehaviorAspectDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior)/885304035644841660">
-    <file name="Game__BehaviorDescriptor.java">
-      <node id="885304035644841660" at="24,0,25,0" concept="6" trace="CONCEPT" />
-      <node id="885304035644841660" at="26,0,27,0" concept="6" trace="setWidth_idL9ePhMP9VN" />
-      <node id="885304035644841660" at="27,0,28,0" concept="6" trace="setHeight_idL9ePhMPel7" />
-      <node id="885304035644841660" at="28,0,29,0" concept="6" trace="setMinesCount_idL9ePhMPeNR" />
-      <node id="885304035644841660" at="29,0,30,0" concept="6" trace="setCellSize_idL9ePhMPfo2" />
-      <node id="885304035644841660" at="31,0,32,0" concept="6" trace="BH_METHODS" />
-      <node id="885304035644866328" at="33,63,34,67" concept="1" />
-      <node id="885304035644871740" at="34,67,35,68" concept="1" />
-      <node id="885304035644876064" at="35,68,36,66" concept="1" />
-      <node id="885304035644880591" at="36,66,37,70" concept="1" />
-      <node id="885304035644841759" at="40,89,41,70" concept="1" />
-      <node id="885304035644859723" at="43,91,44,72" concept="1" />
-      <node id="885304035644861691" at="46,94,47,70" concept="1" />
-      <node id="885304035644864006" at="49,95,50,76" concept="1" />
-      <node id="885304035644841660" at="57,114,58,21" concept="1" />
-      <node id="885304035644841660" at="62,114,63,49" concept="4" />
-      <node id="885304035644841660" at="64,26,65,56" concept="9" />
-      <node id="885304035644841660" at="68,13,69,69" concept="1" />
-      <node id="885304035644841660" at="69,69,70,20" concept="5" />
-      <node id="885304035644841660" at="71,13,72,70" concept="1" />
-      <node id="885304035644841660" at="72,70,73,20" concept="5" />
-      <node id="885304035644841660" at="74,13,75,74" concept="1" />
-      <node id="885304035644841660" at="75,74,76,20" concept="5" />
-      <node id="885304035644841660" at="77,13,78,72" concept="1" />
-      <node id="885304035644841660" at="78,72,79,20" concept="5" />
-      <node id="885304035644841660" at="80,14,81,58" concept="9" />
-      <node id="885304035644841660" at="86,128,87,49" concept="4" />
-      <node id="885304035644841660" at="88,26,89,56" concept="9" />
-      <node id="885304035644841660" at="92,14,93,58" concept="9" />
-      <node id="885304035644841660" at="99,48,100,22" concept="5" />
-      <node id="885304035644841660" at="105,40,106,19" concept="5" />
-      <node id="885304035644841660" at="110,0,111,0" concept="6" trace="width$_pTQ" />
-      <node id="885304035644841660" at="111,0,112,0" concept="6" trace="height$_qnS" />
-      <node id="885304035644841660" at="112,0,113,0" concept="6" trace="bombs$_r4V" />
-      <node id="885304035644841660" at="113,0,114,0" concept="6" trace="cellSize$GEM3" />
-      <node id="885304035644841660" at="53,0,55,0" concept="0" trace="Game__BehaviorDescriptor#()V" />
-      <node id="885304035644841660" at="40,0,43,0" concept="7" trace="setWidth_idL9ePhMP9VN#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
-      <node id="885304035644841660" at="43,0,46,0" concept="7" trace="setHeight_idL9ePhMPel7#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
-      <node id="885304035644841660" at="46,0,49,0" concept="7" trace="setMinesCount_idL9ePhMPeNR#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
-      <node id="885304035644841660" at="49,0,52,0" concept="7" trace="setCellSize_idL9ePhMPfo2#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
-      <node id="885304035644841660" at="63,49,66,5" concept="2" />
-      <node id="885304035644841660" at="87,49,90,5" concept="2" />
-      <node id="885304035644841660" at="56,0,60,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="885304035644841660" at="90,5,94,5" concept="8" />
-      <node id="885304035644841660" at="97,0,102,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="885304035644841660" at="103,0,108,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="885304035644841660" at="33,0,39,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="885304035644841660" at="85,0,96,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="885304035644841660" at="66,5,82,5" concept="8" />
-      <node id="885304035644841660" at="61,0,84,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="885304035644841660" at="53,42,53,42" />
-      <scope id="885304035644841718" at="40,89,41,70" />
-      <scope id="885304035644859722" at="43,91,44,72" />
-      <scope id="885304035644861690" at="46,94,47,70" />
-      <scope id="885304035644864005" at="49,95,50,76" />
-      <scope id="885304035644841660" at="57,114,58,21" />
-      <scope id="885304035644841660" at="64,26,65,56" />
-      <scope id="885304035644841660" at="80,14,81,58" />
-      <scope id="885304035644841660" at="88,26,89,56" />
-      <scope id="885304035644841660" at="92,14,93,58" />
-      <scope id="885304035644841660" at="99,48,100,22" />
-      <scope id="885304035644841660" at="105,40,106,19" />
-      <scope id="885304035644841660" at="53,0,55,0" />
-      <scope id="885304035644841660" at="68,13,70,20" />
-      <scope id="885304035644841660" at="71,13,73,20" />
-      <scope id="885304035644841660" at="74,13,76,20" />
-      <scope id="885304035644841660" at="77,13,79,20" />
-      <scope id="885304035644841660" at="40,0,43,0">
-        <var name="__thisNode__" id="885304035644841660" />
-        <var name="width" id="885304035644854032" />
+  <root nodeRef="r:cae49060-0cf1-4388-b57d-accf0eea79ba(Minesweeper.behavior)/8829112826487110019">
+    <file name="Difficulty__BehaviorDescriptor.java">
+      <node id="8829112826487110019" at="20,0,21,0" concept="6" trace="CONCEPT" />
+      <node id="8829112826487110019" at="23,0,24,0" concept="6" trace="BH_METHODS" />
+      <node id="8829112826487118765" at="25,63,26,67" concept="1" />
+      <node id="8829112826487123663" at="26,67,27,67" concept="1" />
+      <node id="8829112826487128327" at="27,67,28,66" concept="1" />
+      <node id="8829112826487132580" at="28,66,29,70" concept="1" />
+      <node id="8829112826487774459" at="29,70,30,66" concept="1" />
+      <node id="8829112826487778793" at="30,66,31,68" concept="1" />
+      <node id="8829112826487783609" at="31,68,32,75" concept="1" />
+      <node id="8829112826487110019" at="40,114,41,21" concept="1" />
+      <node id="8829112826487110019" at="45,114,46,49" concept="4" />
+      <node id="8829112826487110019" at="47,26,48,56" concept="9" />
+      <node id="8829112826487110019" at="51,14,52,58" concept="9" />
+      <node id="8829112826487110019" at="57,128,58,49" concept="4" />
+      <node id="8829112826487110019" at="59,26,60,56" concept="9" />
+      <node id="8829112826487110019" at="63,14,64,58" concept="9" />
+      <node id="8829112826487110019" at="70,48,71,22" concept="5" />
+      <node id="8829112826487110019" at="76,40,77,19" concept="5" />
+      <node id="8829112826487110019" at="81,0,82,0" concept="6" trace="bombs$fBmS" />
+      <node id="8829112826487110019" at="82,0,83,0" concept="6" trace="height$fB7R" />
+      <node id="8829112826487110019" at="83,0,84,0" concept="6" trace="width$fASQ" />
+      <node id="8829112826487110019" at="84,0,85,0" concept="6" trace="cellSize$fGxe" />
+      <node id="8829112826487110019" at="85,0,86,0" concept="6" trace="lives$FIRj" />
+      <node id="8829112826487110019" at="86,0,87,0" concept="6" trace="reveals$FJll" />
+      <node id="8829112826487110019" at="87,0,88,0" concept="6" trace="specialEffects$1T8K" />
+      <node id="8829112826487110019" at="36,0,38,0" concept="0" trace="Difficulty__BehaviorDescriptor#()V" />
+      <node id="8829112826487110019" at="46,49,49,5" concept="2" />
+      <node id="8829112826487110019" at="58,49,61,5" concept="2" />
+      <node id="8829112826487110019" at="39,0,43,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="8829112826487110019" at="49,5,53,5" concept="8" />
+      <node id="8829112826487110019" at="61,5,65,5" concept="8" />
+      <node id="8829112826487110019" at="68,0,73,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="8829112826487110019" at="74,0,79,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8829112826487110019" at="25,0,34,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8829112826487110019" at="44,0,55,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="8829112826487110019" at="56,0,67,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="8829112826487110019" at="36,48,36,48" />
+      <scope id="8829112826487110019" at="40,114,41,21" />
+      <scope id="8829112826487110019" at="47,26,48,56" />
+      <scope id="8829112826487110019" at="51,14,52,58" />
+      <scope id="8829112826487110019" at="59,26,60,56" />
+      <scope id="8829112826487110019" at="63,14,64,58" />
+      <scope id="8829112826487110019" at="70,48,71,22" />
+      <scope id="8829112826487110019" at="76,40,77,19" />
+      <scope id="8829112826487110019" at="36,0,38,0" />
+      <scope id="8829112826487110019" at="39,0,43,0">
+        <var name="constructor" id="8829112826487110019" />
+        <var name="node" id="8829112826487110019" />
+        <var name="parameters" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="43,0,46,0">
-        <var name="__thisNode__" id="885304035644841660" />
-        <var name="heigth" id="885304035644859729" />
+      <scope id="8829112826487110019" at="68,0,73,0" />
+      <scope id="8829112826487110019" at="74,0,79,0" />
+      <scope id="8829112826487110019" at="25,63,32,75" />
+      <scope id="8829112826487110019" at="45,114,53,5">
+        <var name="methodIndex" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="46,0,49,0">
-        <var name="__thisNode__" id="885304035644841660" />
-        <var name="mines" id="885304035644861697" />
+      <scope id="8829112826487110019" at="57,128,65,5">
+        <var name="methodIndex" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="49,0,52,0">
-        <var name="__thisNode__" id="885304035644841660" />
-        <var name="cellSize" id="885304035644864012" />
+      <scope id="8829112826487110019" at="25,0,34,0">
+        <var name="__thisNode__" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="33,63,37,70" />
-      <scope id="885304035644841660" at="56,0,60,0">
-        <var name="constructor" id="885304035644841660" />
-        <var name="node" id="885304035644841660" />
-        <var name="parameters" id="885304035644841660" />
+      <scope id="8829112826487110019" at="44,0,55,0">
+        <var name="method" id="8829112826487110019" />
+        <var name="node" id="8829112826487110019" />
+        <var name="parameters" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="97,0,102,0" />
-      <scope id="885304035644841660" at="103,0,108,0" />
-      <scope id="885304035644841660" at="33,0,39,0">
-        <var name="__thisNode__" id="885304035644841660" />
+      <scope id="8829112826487110019" at="56,0,67,0">
+        <var name="concept" id="8829112826487110019" />
+        <var name="method" id="8829112826487110019" />
+        <var name="parameters" id="8829112826487110019" />
       </scope>
-      <scope id="885304035644841660" at="86,128,94,5">
-        <var name="methodIndex" id="885304035644841660" />
-      </scope>
-      <scope id="885304035644841660" at="85,0,96,0">
-        <var name="concept" id="885304035644841660" />
-        <var name="method" id="885304035644841660" />
-        <var name="parameters" id="885304035644841660" />
-      </scope>
-      <scope id="885304035644841660" at="62,114,82,5">
-        <var name="methodIndex" id="885304035644841660" />
-      </scope>
-      <scope id="885304035644841660" at="61,0,84,0">
-        <var name="method" id="885304035644841660" />
-        <var name="node" id="885304035644841660" />
-        <var name="parameters" id="885304035644841660" />
-      </scope>
-      <unit id="885304035644841660" at="109,0,115,0" name="Minesweeper.behavior.Game__BehaviorDescriptor$PROPS" />
-      <unit id="885304035644841660" at="23,0,116,0" name="Minesweeper.behavior.Game__BehaviorDescriptor" />
+      <unit id="8829112826487110019" at="80,0,89,0" name="Minesweeper.behavior.Difficulty__BehaviorDescriptor$PROPS" />
+      <unit id="8829112826487110019" at="19,0,90,0" name="Minesweeper.behavior.Difficulty__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

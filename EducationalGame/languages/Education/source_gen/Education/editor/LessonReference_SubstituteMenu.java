@@ -28,7 +28,7 @@ public class LessonReference_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_hi9zbm_a(), CONCEPTS.LessonReference$dM));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_hi9zbm_a(), CONCEPTS.LessonReference$1F));
     result.add(new SMP_Subconcepts_hi9zbm_b());
     return result;
   }
@@ -37,7 +37,7 @@ public class LessonReference_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for LessonReference. Generated from implicit smart reference attribute.", new SNodePointer("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)", "6498127779345401249")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for LessonReference. Generated from implicit smart reference attribute.", new SNodePointer("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)", "8829112826485797354")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -50,7 +50,7 @@ public class LessonReference_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_hi9zbm_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.LessonReference$dM, LINKS.LesssonRef$_pOX);
+      super((SAbstractConcept) CONCEPTS.LessonReference$1F, LINKS.LessonRef$aYr2);
     }
     @NotNull
     @Override
@@ -67,7 +67,7 @@ public class LessonReference_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_hi9zbm_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.LessonReference$dM);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.LessonReference$1F);
     }
     @NotNull
     @Override
@@ -88,10 +88,10 @@ public class LessonReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept LessonReference$dM = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L, "Education.structure.LessonReference");
+    /*package*/ static final SConcept LessonReference$1F = MetaAdapterFactory.getConcept(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL, "Education.structure.LessonReference");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink LesssonRef$_pOX = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L, 0x5a2dfcc968fb05cfL, "LesssonRef");
+    /*package*/ static final SReferenceLink LessonRef$aYr2 = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL, 0x7a874f564887f1fcL, "LessonRef");
   }
 }

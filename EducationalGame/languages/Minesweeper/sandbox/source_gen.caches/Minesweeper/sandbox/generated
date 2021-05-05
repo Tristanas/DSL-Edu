@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3iof0qfjastgweouhls3n6p5liezldd">
-  <files names="EasyMinesweeper.java:EasyMinesweeperBoard.java:ImpossibleMinesweeper.java:ImpossibleMinesweeperBoard.java:MathSweeper.java:MathSweeperBoard.java:MediumMinesweeper.java:MediumMinesweeperBoard.java" />
+<product version="3" modelHash="dgt6oevsiy53b24w0bhjuopixx3hlnj">
+  <files names="MathSweeper.java:MathSweeperBoard.java" />
 </product>
 

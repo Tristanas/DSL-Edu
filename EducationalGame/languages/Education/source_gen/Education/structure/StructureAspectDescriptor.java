@@ -98,11 +98,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLessonReference() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "LessonReference", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x5a2dfcc968fb05a1L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Education", "LessonReference", 0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x7a874f564887f1eaL);
     b.class_(false, false, false);
-    b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/6498127779345401249");
+    b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/8829112826485797354");
     b.version(2);
-    b.associate("LesssonRef", 0x5a2dfcc968fb05cfL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL).optional(false).origin("6498127779345401295").done();
+    b.associate("LessonRef", 0x7a874f564887f1fcL).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL).optional(false).origin("8829112826485797372").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSimpleTest() {

@@ -314,16 +314,22 @@
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1225711141656" name="jetbrains.mps.baseLanguage.collections.structure.ListElementAccessExpression" flags="nn" index="1y4W85">
+        <child id="1225711182005" name="list" index="1y566C" />
+        <child id="1225711191269" name="index" index="1y58nS" />
+      </concept>
+    </language>
   </registry>
   <node concept="bUwia" id="6NGTWosHXaG">
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="4kyY3TkGl6N" role="3lj3bC">
-      <ref role="30HIoZ" to="8ed4:6NGTWosHXaL" resolve="Game" />
       <ref role="3lhOvi" node="4kyY3TkGlVV" resolve="Board" />
+      <ref role="30HIoZ" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
     </node>
     <node concept="3lhOvk" id="4kyY3TkQrWC" role="3lj3bC">
-      <ref role="30HIoZ" to="8ed4:6NGTWosHXaL" resolve="Game" />
       <ref role="3lhOvi" node="4kyY3TkPwZ3" resolve="Minesweeper" />
+      <ref role="30HIoZ" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
     </node>
   </node>
   <node concept="312cEu" id="4kyY3TkGlVV">
@@ -358,10 +364,45 @@
           <node concept="3zFVjK" id="2MpfW3fQRLE" role="3zH0cK">
             <node concept="3clFbS" id="2MpfW3fQRLF" role="2VODD2">
               <node concept="3clFbF" id="2MpfW3fQT_w" role="3cqZAp">
-                <node concept="2OqwBi" id="2MpfW3fQTSV" role="3clFbG">
-                  <node concept="30H73N" id="2MpfW3fQT_v" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="2MpfW3fQUcE" role="2OqNvi">
-                    <ref role="3TsBF5" to="8ed4:2MpfW3fQpJ$" resolve="cellSize" />
+                <node concept="2OqwBi" id="7E7jPp8GMof" role="3clFbG">
+                  <node concept="2OqwBi" id="7E7jPp8CujA" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7E7jPp8yYOH" role="2Oq$k0">
+                      <node concept="3TrEf2" id="7E7jPp8Ipu3" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
+                      </node>
+                      <node concept="1y4W85" id="7E7jPp8zONi" role="2Oq$k0">
+                        <node concept="3cmrfG" id="7E7jPp8zONj" role="1y58nS">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="2OqwBi" id="7E7jPp8zONk" role="1y566C">
+                          <node concept="2OqwBi" id="7E7jPp8zONl" role="2Oq$k0">
+                            <node concept="1y4W85" id="7E7jPp8zONm" role="2Oq$k0">
+                              <node concept="3cmrfG" id="7E7jPp8zONn" role="1y58nS">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="2OqwBi" id="7E7jPp8zONo" role="1y566C">
+                                <node concept="30H73N" id="7E7jPp8zONp" role="2Oq$k0" />
+                                <node concept="3Tsc0h" id="7E7jPp8zONq" role="2OqNvi">
+                                  <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="7E7jPp8zONr" role="2OqNvi">
+                              <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="7E7jPp8zONs" role="2OqNvi">
+                            <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="7E7jPp8Iq7d" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="7E7jPp8GM$w" role="2OqNvi">
+                    <ref role="3TsBF5" to="8ed4:7E7jPp8_LdE" resolve="cellSize" />
                   </node>
                 </node>
               </node>
@@ -576,9 +617,44 @@
             <node concept="3clFbS" id="4kyY3TkGSlr" role="2VODD2">
               <node concept="3clFbF" id="4kyY3TkGTPA" role="3cqZAp">
                 <node concept="2OqwBi" id="4kyY3TkGUFX" role="3clFbG">
-                  <node concept="30H73N" id="4kyY3TkGTP_" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="4kyY3TkGUOt" role="2OqNvi">
-                    <ref role="3TsBF5" to="8ed4:6NGTWosHXaR" resolve="bombs" />
+                  <node concept="3TrcHB" id="7E7jPp8EUQg" role="2OqNvi">
+                    <ref role="3TsBF5" to="8ed4:7E7jPp8_LdD" resolve="bombs" />
+                  </node>
+                  <node concept="2OqwBi" id="7E7jPp8GNbe" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7E7jPp8GNbf" role="2Oq$k0">
+                      <node concept="3TrEf2" id="7E7jPp8Iqsh" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
+                      </node>
+                      <node concept="1y4W85" id="7E7jPp8GNbh" role="2Oq$k0">
+                        <node concept="3cmrfG" id="7E7jPp8GNbi" role="1y58nS">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="2OqwBi" id="7E7jPp8GNbj" role="1y566C">
+                          <node concept="2OqwBi" id="7E7jPp8GNbk" role="2Oq$k0">
+                            <node concept="1y4W85" id="7E7jPp8GNbl" role="2Oq$k0">
+                              <node concept="3cmrfG" id="7E7jPp8GNbm" role="1y58nS">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="2OqwBi" id="7E7jPp8GNbn" role="1y566C">
+                                <node concept="30H73N" id="7E7jPp8GNbo" role="2Oq$k0" />
+                                <node concept="3Tsc0h" id="7E7jPp8GNbp" role="2OqNvi">
+                                  <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="7E7jPp8GNbq" role="2OqNvi">
+                              <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="7E7jPp8GNbr" role="2OqNvi">
+                            <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="7E7jPp8IqWE" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -619,9 +695,44 @@
             <node concept="3clFbS" id="4kyY3TkGWke" role="2VODD2">
               <node concept="3clFbF" id="4kyY3TkGXf_" role="3cqZAp">
                 <node concept="2OqwBi" id="4kyY3TkGXV7" role="3clFbG">
-                  <node concept="30H73N" id="4kyY3TkGXf$" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="4kyY3TkGY3B" role="2OqNvi">
-                    <ref role="3TsBF5" to="8ed4:6NGTWosHXaO" resolve="height" />
+                  <node concept="3TrcHB" id="7E7jPp8EUDO" role="2OqNvi">
+                    <ref role="3TsBF5" to="8ed4:7E7jPp8_LdC" resolve="height" />
+                  </node>
+                  <node concept="2OqwBi" id="7E7jPp8GNR6" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7E7jPp8GNR7" role="2Oq$k0">
+                      <node concept="3TrEf2" id="7E7jPp8Ir9h" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
+                      </node>
+                      <node concept="1y4W85" id="7E7jPp8GNR9" role="2Oq$k0">
+                        <node concept="3cmrfG" id="7E7jPp8GNRa" role="1y58nS">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="2OqwBi" id="7E7jPp8GNRb" role="1y566C">
+                          <node concept="2OqwBi" id="7E7jPp8GNRc" role="2Oq$k0">
+                            <node concept="1y4W85" id="7E7jPp8GNRd" role="2Oq$k0">
+                              <node concept="3cmrfG" id="7E7jPp8GNRe" role="1y58nS">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="2OqwBi" id="7E7jPp8GNRf" role="1y566C">
+                                <node concept="30H73N" id="7E7jPp8GNRg" role="2Oq$k0" />
+                                <node concept="3Tsc0h" id="7E7jPp8GNRh" role="2OqNvi">
+                                  <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="7E7jPp8GNRi" role="2OqNvi">
+                              <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="7E7jPp8GNRj" role="2OqNvi">
+                            <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="7E7jPp8Irce" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -644,9 +755,44 @@
             <node concept="3clFbS" id="4kyY3TkGZtP" role="2VODD2">
               <node concept="3clFbF" id="4kyY3TkH0pc" role="3cqZAp">
                 <node concept="2OqwBi" id="4kyY3TkH14I" role="3clFbG">
-                  <node concept="30H73N" id="4kyY3TkH0pb" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="4kyY3TkH1lW" role="2OqNvi">
-                    <ref role="3TsBF5" to="8ed4:6NGTWosHXaM" resolve="width" />
+                  <node concept="3TrcHB" id="7E7jPp8EVmK" role="2OqNvi">
+                    <ref role="3TsBF5" to="8ed4:7E7jPp8_LdB" resolve="width" />
+                  </node>
+                  <node concept="2OqwBi" id="7E7jPp8GOqg" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7E7jPp8GOqh" role="2Oq$k0">
+                      <node concept="3TrEf2" id="7E7jPp8Irxi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
+                      </node>
+                      <node concept="1y4W85" id="7E7jPp8GOqj" role="2Oq$k0">
+                        <node concept="3cmrfG" id="7E7jPp8GOqk" role="1y58nS">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="2OqwBi" id="7E7jPp8GOql" role="1y566C">
+                          <node concept="2OqwBi" id="7E7jPp8GOqm" role="2Oq$k0">
+                            <node concept="1y4W85" id="7E7jPp8GOqn" role="2Oq$k0">
+                              <node concept="3cmrfG" id="7E7jPp8GOqo" role="1y58nS">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="2OqwBi" id="7E7jPp8GOqp" role="1y566C">
+                                <node concept="30H73N" id="7E7jPp8GOqq" role="2Oq$k0" />
+                                <node concept="3Tsc0h" id="7E7jPp8GOqr" role="2OqNvi">
+                                  <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="7E7jPp8GOqs" role="2OqNvi">
+                              <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="7E7jPp8GOqt" role="2OqNvi">
+                            <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="7E7jPp8Is1F" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5924,7 +6070,7 @@
     </node>
     <node concept="3Tm1VV" id="4kyY3TkGlVW" role="1B3o_S" />
     <node concept="n94m4" id="4kyY3TkGlVX" role="lGtFl">
-      <ref role="n9lRv" to="8ed4:6NGTWosHXaL" resolve="Game" />
+      <ref role="n9lRv" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
     </node>
     <node concept="3uibUv" id="4kyY3TkG$Qv" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
@@ -6290,9 +6436,34 @@
                   <node concept="2OqwBi" id="4XM$1KT1JPF" role="3clFbG">
                     <node concept="2OqwBi" id="4XM$1KT1Jsv" role="2Oq$k0">
                       <node concept="2OqwBi" id="4XM$1KT1J3M" role="2Oq$k0">
-                        <node concept="30H73N" id="4XM$1KT1IOI" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="4XM$1KT1Jgh" role="2OqNvi">
-                          <ref role="3Tt5mk" to="8ed4:24$UGS0btIY" resolve="questionaire" />
+                        <node concept="3TrEf2" id="7E7jPp8zUqz" role="2OqNvi">
+                          <ref role="3Tt5mk" to="8ed4:7E7jPp8xZ0I" resolve="questionaire" />
+                        </node>
+                        <node concept="1y4W85" id="7E7jPp8zTdh" role="2Oq$k0">
+                          <node concept="3cmrfG" id="7E7jPp8zTdi" role="1y58nS">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                          <node concept="2OqwBi" id="7E7jPp8zTdj" role="1y566C">
+                            <node concept="2OqwBi" id="7E7jPp8zTdk" role="2Oq$k0">
+                              <node concept="1y4W85" id="7E7jPp8zTdl" role="2Oq$k0">
+                                <node concept="3cmrfG" id="7E7jPp8zTdm" role="1y58nS">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                                <node concept="2OqwBi" id="7E7jPp8zTdn" role="1y566C">
+                                  <node concept="30H73N" id="7E7jPp8zTdo" role="2Oq$k0" />
+                                  <node concept="3Tsc0h" id="7E7jPp8zTdp" role="2OqNvi">
+                                    <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="7E7jPp8zTdq" role="2OqNvi">
+                                <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                              </node>
+                            </node>
+                            <node concept="3Tsc0h" id="7E7jPp8zTdr" role="2OqNvi">
+                              <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                       <node concept="3TrEf2" id="4XM$1KT1JGo" role="2OqNvi">
@@ -6380,13 +6551,38 @@
                   <node concept="2OqwBi" id="7E7jPp8u4fB" role="3clFbG">
                     <node concept="2OqwBi" id="7E7jPp8u4fC" role="2Oq$k0">
                       <node concept="2OqwBi" id="7E7jPp8u4fD" role="2Oq$k0">
-                        <node concept="30H73N" id="7E7jPp8u4fE" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="7E7jPp8u4fF" role="2OqNvi">
-                          <ref role="3Tt5mk" to="8ed4:5CHZc_CYK_2" resolve="lesson" />
+                        <node concept="3TrEf2" id="7E7jPp8zV_k" role="2OqNvi">
+                          <ref role="3Tt5mk" to="8ed4:7E7jPp8xZ0J" resolve="lesson" />
+                        </node>
+                        <node concept="1y4W85" id="7E7jPp8zUPd" role="2Oq$k0">
+                          <node concept="3cmrfG" id="7E7jPp8zUPe" role="1y58nS">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                          <node concept="2OqwBi" id="7E7jPp8zUPf" role="1y566C">
+                            <node concept="2OqwBi" id="7E7jPp8zUPg" role="2Oq$k0">
+                              <node concept="1y4W85" id="7E7jPp8zUPh" role="2Oq$k0">
+                                <node concept="3cmrfG" id="7E7jPp8zUPi" role="1y58nS">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                                <node concept="2OqwBi" id="7E7jPp8zUPj" role="1y566C">
+                                  <node concept="30H73N" id="7E7jPp8zYmQ" role="2Oq$k0" />
+                                  <node concept="3Tsc0h" id="7E7jPp8zUPl" role="2OqNvi">
+                                    <ref role="3TtcxE" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="7E7jPp8zUPm" role="2OqNvi">
+                                <ref role="3Tt5mk" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+                              </node>
+                            </node>
+                            <node concept="3Tsc0h" id="7E7jPp8zUPn" role="2OqNvi">
+                              <ref role="3TtcxE" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7E7jPp8u4fG" role="2OqNvi">
-                        <ref role="3Tt5mk" to="cgkn:5CHZc_CYKnf" resolve="LesssonRef" />
+                      <node concept="3TrEf2" id="7E7jPp8zW8z" role="2OqNvi">
+                        <ref role="3Tt5mk" to="cgkn:7E7jPp8xZ7W" resolve="LessonRef" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7E7jPp8u4fH" role="2OqNvi">
@@ -7819,7 +8015,7 @@
     <node concept="2tJIrI" id="4XM$1KSZCwf" role="jymVt" />
     <node concept="3Tm1VV" id="4kyY3TkPwZ4" role="1B3o_S" />
     <node concept="n94m4" id="4kyY3TkPwZ5" role="lGtFl">
-      <ref role="n9lRv" to="8ed4:6NGTWosHXaL" resolve="Game" />
+      <ref role="n9lRv" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
     </node>
     <node concept="3uibUv" id="4kyY3TkPx1f" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JFrame" resolve="JFrame" />

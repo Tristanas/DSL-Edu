@@ -50,11 +50,11 @@ public class MathSweeperBoard extends JPanel implements ActionListener {
   private static final int CELL_UNCOVER_POINTS = 10;
   private static final int CORRECT_ANSWER_POINTS = 50;
 
-  private final int N_MINES = 8;
+  private final int N_MINES = 10;
   private final int N_LESSONS = 3;
   private final int N_EFFECTS = 1;
-  private final int N_ROWS = 10;
-  private final int N_COLS = 10;
+  private final int N_ROWS = 9;
+  private final int N_COLS = 9;
 
   private final int BOARD_WIDTH = N_COLS * CELL_SIZE + 1;
   private final int BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
