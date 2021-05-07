@@ -9,11 +9,13 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
+import static common.GameConstants.*;
+
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
 
     public ArrayList<Question> questions;
-    public ArrayList<Lesson> lessons;
+    public ArrayList<Fact> facts;
     public ArrayList<LevelDescription> levels;
     JPanel menu, game;
 
@@ -27,47 +29,10 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int MENU_WIDTH = 400;
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
-    // Button text:
-    public final String PLAY = "Play";
-    public final String TEST = "Take test";
-    public final String LESSONS = "Check lessons";
-    public final String EXIT = "Exit";
-    public final String MENU = "Menu";
-
     Board minesweeperBoard;
 
     public Minesweeper() {
-        questions = new ArrayList<>();
-        questions.add(new Question(
-                "Is it okay to sweep mines?",
-                new String[]{"Yes", "No", "I'm just borrowing them"},
-                "Yes"
-        ));
-        questions.add(new Question(
-                "Question?",
-                new String[]{"1", "2", "3"},
-                "1"
-        ));
-
-        lessons = new ArrayList<>();
-        lessons.add(new Lesson("Math 1: average",
-                "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection."
-                    + " For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-        lessons.add(new Lesson("Math 1: median", "The median is the middle value in the list of numbers." +
-                " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
-                "so you may have to rewrite your list before you can find the median."));
-        for (int i = 2; i < 8; i++) lessons.add(new Lesson("Lesson " + i, "A Placeholder lesson, not informative"));
-
-        levels = new ArrayList<>();
-        LevelDescription level = new LevelDescription();
-        level.levelNo = 1;
-        level.setGameBase(8, 8, 10, 2);
-        level.setItemCounts(1, 3, 4);
-        levels.add(level);
-
-
-
-
+        setupDefaultGameSettings();
         setupResourcesPath();
         showMenu();
     }
@@ -87,7 +52,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
-        addButton(GameConstants.PLAY, "Play in learning mode", menu);
+        addButton(PLAY, "Play in learning mode", menu);
         addButton(GameConstants.TEST, "Play an evaluation game", menu);
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
@@ -112,9 +77,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
     }
 
-    private void showGame() {
-        if (game == null) createGame();
-        else minesweeperBoard.newGame(true, true);
+    private void showGame(LevelDescription level) {
+        createGame(level);
+        //else minesweeperBoard.newGame(true, true);
         setContentPane(game);
         setResizable(false);
         pack();
@@ -124,25 +89,39 @@ public class Minesweeper extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    private void createGame() {
+    private void createGame(LevelDescription level) {
         game = new JPanel();
         game.setLayout(new BorderLayout());
-        minesweeperBoard = new Board(this, questions, lessons, levels.get(0));
+        minesweeperBoard = new Board(this, level, this);
         game.add(minesweeperBoard);
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }
 
     private void showLearningPortfolio() {
-        LearningPortfolio portfolio = new LearningPortfolio(lessons, this);
+        LearningPortfolio portfolio = new LearningPortfolio(facts, this);
         setTitle("Learning Portfolio");
         setContentPane(portfolio);
         pack();
     }
 
+    private void showLevelSelection() {
+        LevelSelection levelSelection = new LevelSelection(levels, this);
+        setContentPane(levelSelection);
+        pack();
+    }
+
     public void actionPerformed(ActionEvent e) {
+        // Manage level selection button presses:
+        try {
+            int levelNo = Integer.parseInt(e.getActionCommand());
+            showGame(levels.get(levelNo));
+            return;
+        } catch (NumberFormatException ignored) {}
+
+        // Manage menu and navigation buttons:
         switch (e.getActionCommand()) {
             case PLAY:
-                showGame();
+                showLevelSelection();
                 break;
             case TEST:
                 JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
@@ -158,15 +137,10 @@ public class Minesweeper extends JFrame implements ActionListener {
                 showMenu();
                 break;
         }
-        if ("play".equals(e.getActionCommand())) {
-            showGame();
-        }
     }
 
     public static void main(String[] args) {
-
         EventQueue.invokeLater(() -> {
-
             var ex = new Minesweeper();
             ex.setVisible(true);
         });
@@ -188,16 +162,87 @@ public class Minesweeper extends JFrame implements ActionListener {
         ImageScaler.ResourcesPath = path;
     }
 
-    public class Question {
-        public String correctAnswer;
-        public String[] answers;
-        public String question;
+    public void setupDefaultGameSettings() {
+        LevelDescription learningLevel;
+        LevelDescription testLevel;
+        Lesson lesson;
+        Topic topic;
+        ArrayList<Lesson> lessons;
+        ArrayList<Topic> topics = new ArrayList<>();
+        levels = new ArrayList<>();
 
-        public Question(String question, String[] answers, String correctAnswer)
-        {
-            this.question = question;
-            this.answers = answers;
-            this.correctAnswer = correctAnswer;
-        }
+        int levelNo = 0;
+        // Setup education part:
+        lessons = new ArrayList<>();
+        questions = new ArrayList<>();
+        questions.add(new Question(
+                "Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
+        ));
+        questions.add(new Question(
+                "Question?",
+                new String[]{"1", "2", "3"},
+                "1"
+        ));
+
+        facts = new ArrayList<>();
+        facts.add(new Fact("Math 1: average",
+                "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection."
+                        + " For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+        facts.add(new Fact("Math 1: median", "The median is the middle value in the list of numbers." +
+                " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
+                "so you may have to rewrite your list before you can find the median."));
+        for (int i = 2; i < 8; i++) facts.add(new Fact("Lesson " + i, "A Placeholder lesson, not informative"));
+
+        lesson = new Lesson("Statistics basics", facts, questions);
+        lessons.add(lesson);
+        topic = new Topic("Statistics", new ArrayList<Lesson>(lessons), new ArrayList<Question>());
+        topics.add(topic);
+
+        // Set up learning levels:
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(8, 8, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(9, 9, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(10, 10, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(11, 11, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+        // Setup test:
+        testLevel = new LevelDescription();
+        testLevel.levelNo = levelNo++;
+        testLevel.setGameBase(8, 8, 10, 2);
+        testLevel.setItemCounts(1, 0, 4);
+        testLevel.startingReveals = 1;
+        testLevel.setTestGame(topic);
+        levels.add(testLevel);
     }
 }

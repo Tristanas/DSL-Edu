@@ -21,7 +21,14 @@ public class LevelDescription {
 
     // Learning game:
     public int conceptCount; // Amount of lesson items to add to the board;
+    public Lesson lesson;
 
+    // Test game:
+    public Topic topic;
+
+    // Status:
+    public boolean completed;
+    public int highScore;
 
     public enum GameType {
         test, learn
@@ -52,5 +59,25 @@ public class LevelDescription {
         this.conceptCount = concepts;
         this.questionsCount = questions;
     }
+
+    /**
+     * Sets the description for a learning game which is aimed at a particular lesson.
+     * @param lesson - object whose questions and facts will be used in the level.
+     */
+    public void setLearningGame(Lesson lesson) {
+        this.type = GameType.learn;
+        this.lesson = lesson;
+    }
+
+    /**
+     * Sets the description for a test game, which is played to evaluate knowledge over a topic.
+     * @param topic - object from which a test is generated.
+     */
+    public void setTestGame(Topic topic) {
+        this.type = GameType.test;
+        this.topic = topic;
+    }
+
+
 
 }

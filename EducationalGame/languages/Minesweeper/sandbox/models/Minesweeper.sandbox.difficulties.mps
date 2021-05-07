@@ -29,7 +29,7 @@
     <property role="M45KL" value="9" />
     <property role="M45KZ" value="10" />
     <property role="M45KW" value="30" />
-    <property role="M8lt6" value="2" />
+    <property role="M8lt6" value="1" />
     <property role="M8lt4" value="1" />
     <property role="M8lmk" value="1" />
   </node>
@@ -39,7 +39,7 @@
     <property role="M45KL" value="16" />
     <property role="M45KZ" value="40" />
     <property role="M45KW" value="30" />
-    <property role="M8lt6" value="2" />
+    <property role="M8lt6" value="1" />
     <property role="M8lt4" value="1" />
     <property role="M8lmk" value="3" />
   </node>

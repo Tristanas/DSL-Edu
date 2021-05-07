@@ -60,12 +60,6 @@
     <property role="TrG5h" value="LearningLevel" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Level" />
-    <node concept="1TJgyj" id="7E7jPp8xZ0I" role="1TKVEi">
-      <property role="IQ2ns" value="8829112826485796910" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="questionaire" />
-      <ref role="20lvS9" to="cgkn:4XM$1KSTqyw" resolve="TestReference" />
-    </node>
     <node concept="1TJgyj" id="7E7jPp8xZ0J" role="1TKVEi">
       <property role="IQ2ns" value="8829112826485796911" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -78,6 +72,11 @@
       <property role="20kJfa" value="difficulty" />
       <ref role="20lvS9" node="7E7jPp8FS9T" resolve="DifficultyRef" />
     </node>
+    <node concept="1TJgyi" id="TIatWLoRWs" role="1TKVEl">
+      <property role="IQ2nx" value="1039814602552213276" />
+      <property role="TrG5h" value="factsCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10qyPnJZpFC">
     <property role="EcuMT" value="1160393055216179944" />
@@ -88,6 +87,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="difficulty" />
       <ref role="20lvS9" node="7E7jPp8FS9T" resolve="DifficultyRef" />
+    </node>
+    <node concept="1TJgyj" id="TIatWLCzo0" role="1TKVEi">
+      <property role="IQ2ns" value="1039814602556323328" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="questionaire" />
+      <ref role="20lvS9" to="cgkn:4XM$1KSToDH" resolve="SimpleTest" />
+    </node>
+    <node concept="1TJgyj" id="TIatWLD_r_" role="1TKVEi">
+      <property role="IQ2ns" value="1039814602556593893" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="topic" />
+      <ref role="20lvS9" to="cgkn:TIatWLDu60" resolve="TopicReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="7E7jPp8xYWS">

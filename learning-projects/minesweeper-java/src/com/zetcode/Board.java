@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -65,24 +64,33 @@ public class Board extends JPanel implements ActionListener {
     private int clickedMinePosition;
     private int questionsAnswered;
     private final int questionsCount;
-    private final ArrayList<Minesweeper.Question> questions;
+    private final ArrayList<Question> questions;
 
     // Lessons:
-    private final ArrayList<Lesson> lessons;
+    private final ArrayList<Fact> facts;
     private final Dimension lessonWindowSize = new Dimension(350, 250);
 
     // UI:
     private final JFrame parentWindow;
-    private JFrame lessonWindow;
     public final StatusBar statusbar;
+    private JFrame lessonWindow;
+    private ActionListener actionListener;
 
-    public Board(JFrame fFrame, ArrayList<Minesweeper.Question> questions, ArrayList<Lesson> lessons, LevelDescription level) {
+    public Board(JFrame fFrame, LevelDescription level, ActionListener actionListener) {
         this.parentWindow = fFrame;
-        this.questions = questions;
-        this.questionsCount = questions.size();
         this.statusbar = new StatusBar(this);
-        this.lessons = lessons;
         this.level = level;
+        this.actionListener = actionListener;
+
+        if (level.type == LevelDescription.GameType.learn) {
+            this.facts = level.lesson.facts;
+            this.questions = level.lesson.questions;
+        } else {
+            this.facts = new ArrayList<>();
+            this.questions = level.topic.generateTest();
+        }
+
+        this.questionsCount = questions.size();
 
         // Init final fields:
         N_COLS = level.columns;
@@ -161,7 +169,7 @@ public class Board extends JPanel implements ActionListener {
 
         // Place lesson effects:
         if (addLessons) {
-            int lessonsCount = lessons.size();
+            int lessonsCount = facts.size();
             if (lessonsCount > N_LESSONS) lessonsCount = N_LESSONS;
             i = 0;
             while (i < lessonsCount) {
@@ -292,7 +300,7 @@ public class Board extends JPanel implements ActionListener {
                     if (field[cellNo] < COVER_FOR_CELL && effect[cellNo] > 0) {
                         switch (effect[cellNo]) {
                             case LESSON_CELL:
-                                manageLessonWindow(lessons.get(lessonsFound));
+                                manageLessonWindow(facts.get(lessonsFound));
                                 lessonsFound++;
                                 break;
                             case HP_CELL:
@@ -400,7 +408,7 @@ public class Board extends JPanel implements ActionListener {
         if (field[cellNo] != MINE_CELL) score += CELL_UNCOVER_POINTS;
     }
 
-    public boolean askQuestion(Minesweeper.Question q)
+    public boolean askQuestion(Question q)
     {
         // If player closes question window or clicks cancel, selectedOption becomes null.
         String selectedOption = (String) JOptionPane.showInputDialog(
@@ -442,20 +450,20 @@ public class Board extends JPanel implements ActionListener {
                 JOptionPane.ERROR_MESSAGE);
     }
 
-    private void manageLessonWindow(Lesson newLesson) {
+    private void manageLessonWindow(Fact newFact) {
         if (lessonWindow == null) {
-            lessonWindow = displayFoundLesson(newLesson);
+            lessonWindow = displayFoundLesson(newFact);
         } else {
-            lessonWindow.setContentPane(newLesson.createLessonPanel());
+            lessonWindow.setContentPane(newFact.createLessonPanel());
             //lessonWindow.pack();
             lessonWindow.setVisible(true);
         }
     }
 
-    private JFrame displayFoundLesson(Lesson lesson) {
+    private JFrame displayFoundLesson(Fact fact) {
         JFrame frame = new JFrame("New lesson found");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.add(lesson.createLessonPanel());
+        frame.add(fact.createLessonPanel());
         frame.setSize(lessonWindowSize);
         Point location = parentWindow.getLocation();
         location.translate(-lessonWindowSize.width, 0);
@@ -535,7 +543,8 @@ public class Board extends JPanel implements ActionListener {
                 title,
                 JOptionPane.YES_NO_OPTION);
         if (selection == JOptionPane.NO_OPTION) {
-            ((Minesweeper) parentWindow).showMenu();
+            ActionEvent event = new ActionEvent(this, 1, Integer.toString(level.levelNo));
+            actionListener.actionPerformed(event);
         } else {
             newGame(true, true);
             repaint();
