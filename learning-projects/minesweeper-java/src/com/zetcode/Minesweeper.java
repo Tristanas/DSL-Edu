@@ -32,41 +32,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     Board minesweeperBoard;
 
     public Minesweeper() {
-        questions = new ArrayList<>();
-        questions.add(new Question(
-                "Is it okay to sweep mines?",
-                new String[]{"Yes", "No", "I'm just borrowing them"},
-                "Yes"
-        ));
-        questions.add(new Question(
-                "Question?",
-                new String[]{"1", "2", "3"},
-                "1"
-        ));
-
-        facts = new ArrayList<>();
-        facts.add(new Fact("Math 1: average",
-                "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection."
-                    + " For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-        facts.add(new Fact("Math 1: median", "The median is the middle value in the list of numbers." +
-                " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
-                "so you may have to rewrite your list before you can find the median."));
-        for (int i = 2; i < 8; i++) facts.add(new Fact("Lesson " + i, "A Placeholder lesson, not informative"));
-        Lesson lesson = new Lesson("Statistics basics", facts, questions);
-        ArrayList<Lesson> lessons = new ArrayList<>();
-        lessons.add(lesson);
-
-        Topic topic = new Topic("Statistics", new ArrayList<Lesson>(lessons), new ArrayList<Question>());
-
-        levels = new ArrayList<>();
-        LevelDescription level = new LevelDescription();
-        level.levelNo = 1;
-        level.setGameBase(8, 8, 10, 2);
-        level.setItemCounts(1, 3, 4);
-        level.startingReveals = 1;
-        level.setLearningGame(lesson);
-        levels.add(level);
-
+        setupDefaultGameSettings();
         setupResourcesPath();
         showMenu();
     }
@@ -111,9 +77,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
     }
 
-    private void showGame() {
-        if (game == null) createGame();
-        else minesweeperBoard.newGame(true, true);
+    private void showGame(LevelDescription level) {
+        createGame(level);
+        //else minesweeperBoard.newGame(true, true);
         setContentPane(game);
         setResizable(false);
         pack();
@@ -123,10 +89,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    private void createGame() {
+    private void createGame(LevelDescription level) {
         game = new JPanel();
         game.setLayout(new BorderLayout());
-        minesweeperBoard = new Board(this, levels.get(0), this);
+        minesweeperBoard = new Board(this, level, this);
         game.add(minesweeperBoard);
         game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
     }
@@ -138,10 +104,26 @@ public class Minesweeper extends JFrame implements ActionListener {
         pack();
     }
 
+    private void showLevelSelection() {
+        LevelSelection levelSelection = new LevelSelection(levels, this);
+        setContentPane(levelSelection);
+        pack();
+
+    }
+
     public void actionPerformed(ActionEvent e) {
+        // Manage level selection button presses:
+        try {
+            int levelNo = Integer.parseInt(e.getActionCommand());
+            showGame(levels.get(levelNo));
+            return;
+        } catch (NumberFormatException ignored) {}
+
+        // Manage menu and navigation buttons:
         switch (e.getActionCommand()) {
             case PLAY:
-                showGame();
+                //showGame();
+                showLevelSelection();
                 break;
             case TEST:
                 JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
@@ -156,9 +138,6 @@ public class Minesweeper extends JFrame implements ActionListener {
             case MENU:
                 showMenu();
                 break;
-        }
-        if ("play".equals(e.getActionCommand())) {
-            showGame();
         }
     }
 
@@ -185,5 +164,89 @@ public class Minesweeper extends JFrame implements ActionListener {
             path = sourceLocation.getParent() + "/resources/";
         }
         ImageScaler.ResourcesPath = path;
+    }
+
+    public void setupDefaultGameSettings() {
+        LevelDescription learningLevel;
+        LevelDescription testLevel;
+        Lesson lesson;
+        Topic topic;
+        ArrayList<Lesson> lessons;
+        ArrayList<Topic> topics = new ArrayList<>();
+        levels = new ArrayList<>();
+
+        int levelNo = 0;
+        // Setup education part:
+        lessons = new ArrayList<>();
+        questions = new ArrayList<>();
+        questions.add(new Question(
+                "Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
+        ));
+        questions.add(new Question(
+                "Question?",
+                new String[]{"1", "2", "3"},
+                "1"
+        ));
+
+        facts = new ArrayList<>();
+        facts.add(new Fact("Math 1: average",
+                "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection."
+                        + " For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+        facts.add(new Fact("Math 1: median", "The median is the middle value in the list of numbers." +
+                " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
+                "so you may have to rewrite your list before you can find the median."));
+        for (int i = 2; i < 8; i++) facts.add(new Fact("Lesson " + i, "A Placeholder lesson, not informative"));
+
+        lesson = new Lesson("Statistics basics", facts, questions);
+        lessons.add(lesson);
+        topic = new Topic("Statistics", new ArrayList<Lesson>(lessons), new ArrayList<Question>());
+        topics.add(topic);
+
+        // Set up learning levels:
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(8, 8, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(9, 9, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(10, 10, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+
+        learningLevel = new LevelDescription();
+        learningLevel.levelNo = levelNo++;
+        learningLevel.setGameBase(11, 11, 10, 2);
+        learningLevel.setItemCounts(1, 3, 4);
+        learningLevel.startingReveals = 1;
+        learningLevel.setLearningGame(lesson);
+        levels.add(learningLevel);
+
+        // Setup test:
+        testLevel = new LevelDescription();
+        testLevel.levelNo = levelNo++;
+        testLevel.setGameBase(8, 8, 10, 2);
+        testLevel.setItemCounts(1, 0, 4);
+        testLevel.startingReveals = 1;
+        testLevel.setTestGame(topic);
+        levels.add(testLevel);
     }
 }
