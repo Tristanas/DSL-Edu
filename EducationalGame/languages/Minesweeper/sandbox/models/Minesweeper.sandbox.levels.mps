@@ -9,10 +9,12 @@
     <import index="1k9o" ref="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons)" />
     <import index="f1yb" ref="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox)" />
     <import index="mslf" ref="r:e1395d8b-7045-4fb3-91de-568a313ccdf1(Minesweeper.sandbox.difficulties)" />
+    <import index="7i3a" ref="r:68a8bc6e-7de3-494a-aa64-23dfc6f46ead(Education.sandbox.topics)" />
   </imports>
   <registry>
     <language id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper">
       <concept id="8829112826485796664" name="Minesweeper.structure.LevelCollection" flags="ng" index="M0a1I">
+        <child id="8829112826485796684" name="testLevel" index="M0a0q" />
         <child id="8829112826485801688" name="learningLevels" index="M3OQe" />
       </concept>
       <concept id="8829112826488390265" name="Minesweeper.structure.DifficultyRef" flags="ng" index="MacOJ">
@@ -26,10 +28,17 @@
         <child id="8829112826485796911" name="lesson" index="M0bXT" />
         <child id="8829112826488859480" name="difficulty" index="Mcuge" />
       </concept>
+      <concept id="1160393055216179944" name="Minesweeper.structure.TestLevel" flags="ng" index="3ZTL6X">
+        <child id="1039814602556593893" name="topic" index="ZM7WU" />
+        <child id="8281464204760561159" name="difficulty" index="12c1Rm" />
+      </concept>
     </language>
     <language id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education">
       <concept id="8829112826485797354" name="Education.structure.LessonReference" flags="ng" index="M0bUW">
         <reference id="8829112826485797372" name="LessonRef" index="M0bUE" />
+      </concept>
+      <concept id="1039814602556563840" name="Education.structure.TopicReference" flags="ng" index="ZMWxv">
+        <reference id="1039814602556563860" name="topicRef" index="ZMWxb" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -68,6 +77,15 @@
       </node>
       <node concept="M0bUW" id="45FrEmTN79N" role="M0bXT">
         <ref role="M0bUE" to="1k9o:10qyPnJZG5I" resolve="Statistics introduction" />
+      </node>
+    </node>
+    <node concept="3ZTL6X" id="5yn1ZNt7WE2" role="M0a0q">
+      <property role="M8ltF" value="10" />
+      <node concept="MacOJ" id="5yn1ZNt7WG9" role="12c1Rm">
+        <ref role="MacRr" to="mslf:7E7jPp8B6u6" resolve="Medium" />
+      </node>
+      <node concept="ZMWxv" id="5yn1ZNt9nGA" role="ZM7WU">
+        <ref role="ZMWxb" to="7i3a:5yn1ZNt9non" resolve="Statistics" />
       </node>
     </node>
   </node>

@@ -281,5 +281,38 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5yn1ZNt7ewz">
+    <ref role="1XX52x" to="8ed4:10qyPnJZpFC" resolve="TestLevel" />
+    <node concept="3EZMnI" id="5yn1ZNt7ex4" role="2wV5jI">
+      <node concept="3F0ifn" id="5yn1ZNt7exb" role="3EZMnx">
+        <property role="3F0ifm" value="Topic:" />
+        <node concept="pVoyu" id="5yn1ZNt7exc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5yn1ZNt7exd" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:TIatWLD_r_" resolve="topic" />
+      </node>
+      <node concept="3F0ifn" id="5yn1ZNt7exe" role="3EZMnx">
+        <property role="3F0ifm" value="Difficulty:" />
+        <node concept="pVoyu" id="5yn1ZNt7exf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5yn1ZNt7exg" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7bHEX4KRro7" resolve="difficulty" />
+      </node>
+      <node concept="3F0ifn" id="5yn1ZNt7exk" role="3EZMnx">
+        <property role="3F0ifm" value="Questions per level:" />
+        <node concept="pVoyu" id="5yn1ZNt7exl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5yn1ZNt7exm" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8DxwX" resolve="questionsQount" />
+      </node>
+      <node concept="l2Vlx" id="5yn1ZNt7ex7" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

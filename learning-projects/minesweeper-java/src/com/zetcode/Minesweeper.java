@@ -108,7 +108,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         LevelSelection levelSelection = new LevelSelection(levels, this);
         setContentPane(levelSelection);
         pack();
-
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -122,7 +121,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         // Manage menu and navigation buttons:
         switch (e.getActionCommand()) {
             case PLAY:
-                //showGame();
                 showLevelSelection();
                 break;
             case TEST:
@@ -142,9 +140,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-
         EventQueue.invokeLater(() -> {
-
             var ex = new Minesweeper();
             ex.setVisible(true);
         });

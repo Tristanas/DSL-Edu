@@ -56,8 +56,8 @@
     <file name="ConceptPresentationAspectImpl.java">
       <node id="1160393055216169680" at="20,0,21,0" concept="1" trace="props_Topic" />
       <node id="1160393055216169680" at="85,34,86,76" concept="3" />
-      <node id="1160393055216169680" at="86,76,87,39" concept="0" />
-      <node id="1160393055216169680" at="87,39,88,37" concept="0" />
+      <node id="1160393055216169680" at="86,76,87,35" concept="0" />
+      <node id="1160393055216169680" at="87,35,88,37" concept="0" />
       <node id="1160393055216169680" at="89,9,90,27" concept="4" />
       <node id="1160393055216169680" at="84,39,89,9" concept="2" />
       <scope id="1160393055216169680" at="85,34,88,37">
@@ -73,11 +73,11 @@
       <node id="1160393055216169680" at="24,0,25,0" concept="1" trace="myConceptTopic" />
       <node id="1160393055216169680" at="63,39,64,30" concept="4" />
       <node id="1160393055216169680" at="147,63,148,149" concept="3" />
-      <node id="1160393055216169680" at="148,149,149,34" concept="0" />
-      <node id="1160393055216169680" at="149,34,150,96" concept="0" />
-      <node id="1160393055216169680" at="150,96,151,17" concept="0" />
-      <node id="1160393055216179722" at="151,17,152,110" concept="0" />
-      <node id="1160393055216179724" at="152,110,153,199" concept="0" />
+      <node id="1160393055216169680" at="148,149,149,33" concept="0" />
+      <node id="1160393055216169680" at="149,33,150,71" concept="0" />
+      <node id="1160393055216169680" at="150,71,151,96" concept="0" />
+      <node id="1160393055216169680" at="151,96,152,17" concept="0" />
+      <node id="1160393055216179724" at="152,17,153,199" concept="0" />
       <node id="1160393055216169680" at="153,199,154,22" concept="4" />
       <node id="1160393055216169680" at="147,0,156,0" concept="6" trace="createDescriptorForTopic#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1160393055216169680" at="63,39,64,30" />

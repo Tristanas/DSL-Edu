@@ -543,7 +543,7 @@ public class Board extends JPanel implements ActionListener {
                 title,
                 JOptionPane.YES_NO_OPTION);
         if (selection == JOptionPane.NO_OPTION) {
-            ActionEvent event = new ActionEvent(this, 1, MENU);
+            ActionEvent event = new ActionEvent(this, 1, Integer.toString(level.levelNo));
             actionListener.actionPerformed(event);
         } else {
             newGame(true, true);

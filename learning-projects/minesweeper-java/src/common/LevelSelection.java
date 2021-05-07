@@ -69,7 +69,7 @@ public class LevelSelection extends JPanel {
         levelsPanel.setLayout(levelsLayout);
         levelsPanel.setPreferredSize(new Dimension((int)(buttonSize.getWidth()) + BUTTON_SPACING,
                 (int)(buttonSize.getHeight())+ BUTTON_SPACING * 2));
-        levelsPanel.setBorder(BorderFactory.createEmptyBorder(0,LEFT_PADDING,0,RIGHT_PADDING));
+        levelsPanel.setBorder(BorderFactory.createEmptyBorder(0,LEFT_PADDING,BOTTOM_PADDING / 2,RIGHT_PADDING));
 
         // Buttons:
         for (int i = 0; i < levels.size(); i++)
@@ -104,18 +104,21 @@ public class LevelSelection extends JPanel {
      * @return
      */
     public JButton createButtonForLevel(LevelDescription level, int index) {
-        JButton levelButton = new JButton(Integer.toString(index));
+        JButton levelButton = new JButton(Integer.toString(index + 1));
         levelButton.setPreferredSize(buttonSize);
         levelButton.setActionCommand(Integer.toString(index));
         levelButton.addActionListener(actionListener);
 
         Border buttonBorder;
+        String completed = level.completed ? "Completed" : "Not Completed";
 
         // Distinguish learning levels from test levels:
         if (level.type == LevelDescription.GameType.learn) {
             buttonBorder = BorderFactory.createLineBorder(Color.BLACK, BTN_BORDER_THICKNESS);
+            levelButton.setToolTipText("Lesson: " + level.lesson.title + ", " + completed + ", Highscore: 0");
         } else {
             buttonBorder = BorderFactory.createLineBorder(Color.RED, BTN_BORDER_THICKNESS);
+            levelButton.setToolTipText("Test: " + level.topic.title + ", " + completed + ", Highscore: 0");
         }
         levelButton.setBorder(buttonBorder);
 

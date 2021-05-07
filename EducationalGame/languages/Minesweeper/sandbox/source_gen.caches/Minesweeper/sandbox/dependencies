@@ -8,6 +8,7 @@
     <classNode dependClassName="common.LearningPortfolio" />
     <classNode dependClassName="common.Lesson" />
     <classNode dependClassName="common.LevelDescription" />
+    <classNode dependClassName="common.LevelSelection" />
     <classNode dependClassName="common.Question" />
     <classNode dependClassName="common.Topic" />
     <classNode dependClassName="java.awt.BorderLayout" />
@@ -17,6 +18,8 @@
     <classNode dependClassName="java.awt.EventQueue" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.NumberFormatException" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />

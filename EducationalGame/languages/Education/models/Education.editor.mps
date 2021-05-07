@@ -260,11 +260,44 @@
         <node concept="1sVBvm" id="TIatWLDu6C" role="1sWHZn">
           <node concept="3F0A7n" id="TIatWLDu6J" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="cgkn:10qyPnJZpCa" resolve="Name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
       <node concept="l2Vlx" id="TIatWLDu6y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5yn1ZNt83sw">
+    <ref role="1XX52x" to="cgkn:10qyPnJZnbg" resolve="Topic" />
+    <node concept="3EZMnI" id="5yn1ZNt83sB" role="2wV5jI">
+      <node concept="3F0ifn" id="5yn1ZNt83sI" role="3EZMnx">
+        <property role="3F0ifm" value="Topic:" />
+      </node>
+      <node concept="3F0A7n" id="5yn1ZNt83sO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="35HoNQ" id="5yn1ZNt83tc" role="3EZMnx">
+        <node concept="pVoyu" id="5yn1ZNt83tj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5yn1ZNt83sW" role="3EZMnx">
+        <property role="3F0ifm" value="Lessons:" />
+        <node concept="pVoyu" id="5yn1ZNt83tl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5yn1ZNt83tn" role="3EZMnx">
+        <ref role="1NtTu8" to="cgkn:10qyPnJZpCc" resolve="Lessons" />
+        <node concept="l2Vlx" id="5yn1ZNt83tp" role="2czzBx" />
+        <node concept="pVoyu" id="5yn1ZNt83ty" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5yn1ZNt83t$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5yn1ZNt83sE" role="2iSdaV" />
     </node>
   </node>
 </model>

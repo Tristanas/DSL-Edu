@@ -118,18 +118,17 @@
   <node concept="1TIwiD" id="10qyPnJZnbg">
     <property role="EcuMT" value="1160393055216169680" />
     <property role="TrG5h" value="Topic" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="10qyPnJZpCa" role="1TKVEl">
-      <property role="IQ2nx" value="1160393055216179722" />
-      <property role="TrG5h" value="Name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="10qyPnJZpCc" role="1TKVEi">
       <property role="IQ2ns" value="1160393055216179724" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="Lessons" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="10qyPnJZnbJ" resolve="Lesson" />
+      <ref role="20lvS9" node="7E7jPp8xZ7E" resolve="LessonReference" />
+    </node>
+    <node concept="PrWs8" id="5yn1ZNt8hf_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="10qyPnJZnbJ">

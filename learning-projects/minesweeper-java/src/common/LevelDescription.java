@@ -26,6 +26,10 @@ public class LevelDescription {
     // Test game:
     public Topic topic;
 
+    // Status:
+    public boolean completed;
+    public int highScore;
+
     public enum GameType {
         test, learn
     }

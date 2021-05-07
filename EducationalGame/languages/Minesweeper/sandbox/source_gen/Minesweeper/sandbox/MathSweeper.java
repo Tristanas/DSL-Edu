@@ -10,8 +10,6 @@ import common.Fact;
 import common.LevelDescription;
 import javax.swing.JPanel;
 import com.zetcode.Board;
-import common.Lesson;
-import common.Topic;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
@@ -22,12 +20,15 @@ import java.awt.Component;
 import java.awt.BorderLayout;
 import javax.swing.BorderFactory;
 import common.LearningPortfolio;
+import common.LevelSelection;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.awt.EventQueue;
 import java.io.File;
 import javax.swing.ImageIcon;
 import common.ImageScaler;
+import common.Lesson;
+import common.Topic;
 
 public class MathSweeper extends JFrame implements ActionListener {
   public ArrayList<Question> questions;
@@ -49,97 +50,7 @@ public class MathSweeper extends JFrame implements ActionListener {
   private Board minesweeperBoard;
 
   public MathSweeper() {
-    LevelDescription learningLevel;
-    LevelDescription testLevel;
-    Lesson lesson;
-    Topic topic;
-    ArrayList<Lesson> lessons;
-    ArrayList<Topic> topics = new ArrayList();
-
-    levels = new ArrayList();
-
-    int levelNo = 1;
-
-    // Set up levels: 
-    lessons = new ArrayList();
-    // Lesson " Statistics introduction " and its level: 
-    questions = new ArrayList();
-    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
-    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
-    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
-
-    facts = new ArrayList();
-    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
-    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
-
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
-
-    learningLevel = new LevelDescription();
-    learningLevel.levelNo = levelNo++;
-    learningLevel.setGameBase(9, 9, 10, 2);
-    learningLevel.setItemCounts(1, 10, 3);
-    learningLevel.startingReveals = 1;
-    learningLevel.setLearningGame(lesson);
-    levels.add(learningLevel);
-    // Lesson " Statistics introduction " and its level: 
-    questions = new ArrayList();
-    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
-    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
-    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
-
-    facts = new ArrayList();
-    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
-    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
-
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
-
-    learningLevel = new LevelDescription();
-    learningLevel.levelNo = levelNo++;
-    learningLevel.setGameBase(16, 16, 40, 2);
-    learningLevel.setItemCounts(3, 3, 4);
-    learningLevel.startingReveals = 1;
-    learningLevel.setLearningGame(lesson);
-    levels.add(learningLevel);
-    // Lesson " Statistics introduction " and its level: 
-    questions = new ArrayList();
-    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
-    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
-    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
-
-    facts = new ArrayList();
-    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
-    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
-
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
-
-    learningLevel = new LevelDescription();
-    learningLevel.levelNo = levelNo++;
-    learningLevel.setGameBase(30, 16, 99, 1);
-    learningLevel.setItemCounts(3, 4, 5);
-    learningLevel.startingReveals = 0;
-    learningLevel.setLearningGame(lesson);
-    levels.add(learningLevel);
-
-
-
+    setupDefaultGameSettings();
     setupResourcesPath();
     showMenu();
   }
@@ -184,11 +95,9 @@ public class MathSweeper extends JFrame implements ActionListener {
     container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
   }
 
-  private void showGame() {
-    if (game == null) {
-      createGame();
-    } else
-    minesweeperBoard.newGame(true, true);
+  private void showGame(LevelDescription level) {
+    createGame(level);
+    // else minesweeperBoard.newGame(true, true); 
     setContentPane(game);
     setResizable(false);
     pack();
@@ -197,10 +106,10 @@ public class MathSweeper extends JFrame implements ActionListener {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
 
-  private void createGame() {
+  private void createGame(LevelDescription level) {
     game = new JPanel();
     game.setLayout(new BorderLayout());
-    minesweeperBoard = new Board(this, levels.get(0));
+    minesweeperBoard = new Board(this, level, this);
     game.add(minesweeperBoard);
     game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
   }
@@ -212,10 +121,25 @@ public class MathSweeper extends JFrame implements ActionListener {
     pack();
   }
 
+  private void showLevelSelection() {
+    LevelSelection levelSelection = new LevelSelection(levels, this);
+    setContentPane(levelSelection);
+    pack();
+  }
+
   public void actionPerformed(ActionEvent e) {
+    // Manage level selection button presses: 
+    try {
+      int levelNo = Integer.parseInt(e.getActionCommand());
+      showGame(levels.get(levelNo));
+      return;
+    } catch (NumberFormatException ignored) {
+    }
+
+    // Manage menu and navigation button presses: 
     switch (e.getActionCommand()) {
       case GameConstants.PLAY:
-        showGame();
+        showLevelSelection();
         break;
       case GameConstants.TEST:
         JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
@@ -231,9 +155,6 @@ public class MathSweeper extends JFrame implements ActionListener {
         showMenu();
         break;
       default:
-    }
-    if ("play".equals(e.getActionCommand())) {
-      showGame();
     }
   }
 
@@ -262,4 +183,109 @@ public class MathSweeper extends JFrame implements ActionListener {
 
     ImageScaler.ResourcesPath = path;
   }
+
+  public void setupDefaultGameSettings() {
+    LevelDescription learningLevel;
+    LevelDescription testLevel;
+    Lesson lesson;
+    Topic topic;
+    ArrayList<Lesson> lessons;
+    ArrayList<Topic> topics = new ArrayList();
+    levels = new ArrayList();
+    int levelNo = 0;
+
+    // Set up levels: 
+    lessons = new ArrayList();
+    // Lesson " Statistics introduction " and its level: 
+    questions = new ArrayList();
+    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
+    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
+    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
+
+    facts = new ArrayList();
+    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
+    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
+    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
+    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
+
+    lesson = new Lesson("Statistics introduction", facts, questions);
+    lessons.add(lesson);
+
+    learningLevel = new LevelDescription();
+    learningLevel.levelNo = levelNo++;
+    learningLevel.setGameBase(9, 9, 10, 1);
+    learningLevel.setItemCounts(1, 10, 3);
+    learningLevel.startingReveals = 1;
+    learningLevel.setLearningGame(lesson);
+    levels.add(learningLevel);
+    // Lesson " Statistics introduction " and its level: 
+    questions = new ArrayList();
+    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
+    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
+    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
+
+    facts = new ArrayList();
+    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
+    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
+    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
+    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
+
+    lesson = new Lesson("Statistics introduction", facts, questions);
+    lessons.add(lesson);
+
+    learningLevel = new LevelDescription();
+    learningLevel.levelNo = levelNo++;
+    learningLevel.setGameBase(16, 16, 40, 1);
+    learningLevel.setItemCounts(3, 3, 4);
+    learningLevel.startingReveals = 1;
+    learningLevel.setLearningGame(lesson);
+    levels.add(learningLevel);
+    // Lesson " Statistics introduction " and its level: 
+    questions = new ArrayList();
+    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
+    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
+    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
+    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
+
+    facts = new ArrayList();
+    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
+    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
+    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
+    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
+    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
+
+    lesson = new Lesson("Statistics introduction", facts, questions);
+    lessons.add(lesson);
+
+    learningLevel = new LevelDescription();
+    learningLevel.levelNo = levelNo++;
+    learningLevel.setGameBase(30, 16, 99, 1);
+    learningLevel.setItemCounts(3, 4, 5);
+    learningLevel.startingReveals = 0;
+    learningLevel.setLearningGame(lesson);
+    levels.add(learningLevel);
+
+    // Test for the topic:  <node> 
+    questions = new ArrayList();
+
+    topic = new Topic("Statistics", lessons, questions);
+    topics.add(topic);
+
+    testLevel = new LevelDescription();
+    testLevel.levelNo = levelNo++;
+    testLevel.setGameBase(16, 16, 40, 1);
+    testLevel.setItemCounts(3, 0, 10);
+    testLevel.startingReveals = 1;
+    testLevel.setTestGame(topic);
+    levels.add(testLevel);
+
+  }
+
 }
