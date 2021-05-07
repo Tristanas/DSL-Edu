@@ -144,6 +144,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="10qyPnJZnce" resolve="Fact" />
     </node>
+    <node concept="1TJgyj" id="45FrEmTJtoB" role="1TKVEi">
+      <property role="IQ2ns" value="4713983093038241319" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Questions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="24$UGS0btFk" resolve="SingleChoiceQuestion" />
+    </node>
     <node concept="PrWs8" id="10qyPnJZG8p" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

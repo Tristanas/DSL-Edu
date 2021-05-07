@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="8ed4" ref="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)" implicit="true" />
-    <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -19,7 +18,6 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
-      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -60,21 +58,6 @@
   <node concept="24kQdi" id="7E7jPp8z1cS">
     <ref role="1XX52x" to="8ed4:10qyPnJZpF9" resolve="LearningLevel" />
     <node concept="3EZMnI" id="7E7jPp8z1cU" role="2wV5jI">
-      <node concept="3F0ifn" id="7E7jPp8C1ZO" role="3EZMnx">
-        <property role="3F0ifm" value="Difficulty:" />
-      </node>
-      <node concept="3F1sOY" id="7E7jPp8IgjX" role="3EZMnx">
-        <ref role="1NtTu8" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
-      </node>
-      <node concept="3F0ifn" id="24$UGS0btKC" role="3EZMnx">
-        <property role="3F0ifm" value="Questionaire:" />
-        <node concept="pVoyu" id="24$UGS0btKY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="4XM$1KSTqA1" role="3EZMnx">
-        <ref role="1NtTu8" to="8ed4:7E7jPp8xZ0I" resolve="questionaire" />
-      </node>
       <node concept="3F0ifn" id="5CHZc_CYK_E" role="3EZMnx">
         <property role="3F0ifm" value="Lesson:" />
         <node concept="pVoyu" id="5CHZc_CYKAQ" role="3F10Kt">
@@ -83,6 +66,15 @@
       </node>
       <node concept="3F1sOY" id="5CHZc_CYKAS" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:7E7jPp8xZ0J" resolve="lesson" />
+      </node>
+      <node concept="3F0ifn" id="7E7jPp8C1ZO" role="3EZMnx">
+        <property role="3F0ifm" value="Difficulty:" />
+        <node concept="pVoyu" id="45FrEmTN7ly" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7E7jPp8IgjX" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8HEHo" resolve="difficulty" />
       </node>
       <node concept="3F0ifn" id="TIatWLoVTU" role="3EZMnx">
         <property role="3F0ifm" value="Facts per level:" />
@@ -102,34 +94,8 @@
       <node concept="3F0A7n" id="TIatWLqrPf" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:7E7jPp8DxwX" resolve="questionsQount" />
       </node>
-      <node concept="35HoNQ" id="5CHZc_CZzqv" role="3EZMnx">
-        <node concept="pVoyu" id="5CHZc_CZzr8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4XM$1KSX3b6" role="3EZMnx">
-        <property role="3F0ifm" value="Questions:" />
-        <node concept="pVoyu" id="4XM$1KSX3by" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="4XM$1KSXUXI" role="3EZMnx">
-        <ref role="1NtTu8" to="8ed4:7E7jPp8xZ0I" resolve="questionaire" />
-        <node concept="1sVBvm" id="4XM$1KSXUXK" role="1sWHZn">
-          <node concept="1iCGBv" id="4XM$1KSXUYi" role="2wV5jI">
-            <ref role="1NtTu8" to="cgkn:4XM$1KSW24R" resolve="testReference" />
-            <node concept="1sVBvm" id="4XM$1KSXUYk" role="1sWHZn">
-              <node concept="3F2HdR" id="4XM$1KSXUYr" role="2wV5jI">
-                <ref role="1NtTu8" to="cgkn:24$UGS0btIY" resolve="questions" />
-                <node concept="2iRkQZ" id="4XM$1KSXUYt" role="2czzBx" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pVoyu" id="4XM$1KSYm9p" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="4XM$1KSYm9r" role="3F10Kt">
+      <node concept="35HoNQ" id="45FrEmTN7T4" role="3EZMnx">
+        <node concept="pVoyu" id="45FrEmTN7TI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -265,6 +231,54 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7E7jPp8FSar" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="45FrEmTN7nS">
+    <ref role="1XX52x" to="8ed4:7E7jPp8xYWS" resolve="LevelCollection" />
+    <node concept="3EZMnI" id="45FrEmTN7ol" role="2wV5jI">
+      <node concept="3F0ifn" id="45FrEmTN7pC" role="3EZMnx">
+        <property role="3F0ifm" value="Level collection:" />
+      </node>
+      <node concept="3F0A7n" id="45FrEmTN7A1" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="45FrEmTN7oo" role="2iSdaV" />
+      <node concept="3F0ifn" id="45FrEmTN7qZ" role="3EZMnx">
+        <property role="3F0ifm" value="Test level:" />
+        <node concept="pVoyu" id="45FrEmTN7$a" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="45FrEmTN7F8" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8xYXc" resolve="testLevel" />
+        <node concept="pVoyu" id="45FrEmTN7FJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="45FrEmTN7Gc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="35HoNQ" id="45FrEmTN7Cb" role="3EZMnx">
+        <node concept="pVoyu" id="45FrEmTN7Dw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="45FrEmTN7u4" role="3EZMnx">
+        <property role="3F0ifm" value="Learning levels:" />
+        <node concept="pVoyu" id="45FrEmTN7$B" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="45FrEmTN7GE" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8y0bo" resolve="learningLevels" />
+        <node concept="l2Vlx" id="45FrEmTN7GG" role="2czzBx" />
+        <node concept="pVoyu" id="45FrEmTN7Hl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="45FrEmTN7HM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

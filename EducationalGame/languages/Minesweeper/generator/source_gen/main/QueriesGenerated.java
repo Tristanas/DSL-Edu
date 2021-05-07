@@ -128,7 +128,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.incorrectAnswers$ogmD);
   }
   public static Iterable<SNode> sourceNodesQuery_1_1(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.questionaire$91xn), LINKS.testReference$3p8n), LINKS.questions$3WMF);
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.lesson$91Ko), LINKS.LessonRef$aYr2), LINKS.Questions$DWXJ);
   }
   public static Iterable<SNode> sourceNodesQuery_1_2(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.lesson$91Ko), LINKS.LessonRef$aYr2), LINKS.Facts$YWXG);
@@ -151,7 +151,7 @@ public class QueriesGenerated extends QueryProviderBase {
     snsqMethods.put("1039814602555957879", new SNsQ(i++));
     snsqMethods.put("1039814602555957914", new SNsQ(i++));
     snsqMethods.put("1039814602556008710", new SNsQ(i++));
-    snsqMethods.put("1039814602551382513", new SNsQ(i++));
+    snsqMethods.put("4713983093038501351", new SNsQ(i++));
     snsqMethods.put("1039814602556292453", new SNsQ(i++));
     snsqMethods.put("1039814602556292488", new SNsQ(i++));
     snsqMethods.put("1039814602551288786", new SNsQ(i++));
@@ -342,12 +342,11 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SReferenceLink topicRef$wps$ = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0xe6e29df31a5e180L, 0xe6e29df31a5e194L, "topicRef");
     /*package*/ static final SContainmentLink difficulty$4Kkk = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L, 0x72edabd130ddb607L, "difficulty");
     /*package*/ static final SContainmentLink incorrectAnswers$ogmD = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad7L, "incorrectAnswers");
-    /*package*/ static final SContainmentLink questionaire$91xn = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L, 0x7a874f564887f02eL, "questionaire");
-    /*package*/ static final SReferenceLink testReference$3p8n = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e5a8a0L, 0x4f72901c38f02137L, "testReference");
-    /*package*/ static final SContainmentLink questions$3WMF = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e58a6dL, 0x2124eace002ddbbeL, "questions");
+    /*package*/ static final SContainmentLink Questions$DWXJ = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x416b6ea5b9bdd627L, "Questions");
     /*package*/ static final SContainmentLink Facts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Facts");
     /*package*/ static final SContainmentLink learningLevels$h2Gi = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L, 0x7a874f56488802d8L, "learningLevels");
     /*package*/ static final SContainmentLink questionaire$rGhI = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L, 0xe6e29df31a23600L, "questionaire");
+    /*package*/ static final SContainmentLink questions$3WMF = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e58a6dL, 0x2124eace002ddbbeL, "questions");
     /*package*/ static final SContainmentLink levelCollections$9hLc = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887efceL, 0x7a874f56488801bbL, "levelCollections");
   }
 

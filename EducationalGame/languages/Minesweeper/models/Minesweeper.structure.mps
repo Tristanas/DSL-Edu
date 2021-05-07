@@ -60,12 +60,6 @@
     <property role="TrG5h" value="LearningLevel" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Level" />
-    <node concept="1TJgyj" id="7E7jPp8xZ0I" role="1TKVEi">
-      <property role="IQ2ns" value="8829112826485796910" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="questionaire" />
-      <ref role="20lvS9" to="cgkn:4XM$1KSTqyw" resolve="TestReference" />
-    </node>
     <node concept="1TJgyj" id="7E7jPp8xZ0J" role="1TKVEi">
       <property role="IQ2ns" value="8829112826485796911" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="7vk9enf1s1q8yy0cj9osetkky9zb8rp" />
+<product version="3" modelHash="7z583yemrfc88pquq7mrstbbh5gse41">
+  <files names="BehaviorAspectDescriptor.java:SingleChoiceQuestion__BehaviorDescriptor.java" />
+</product>
 

@@ -98,6 +98,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)/1160393055216169711");
     b.version(2);
     b.aggregate("Facts", 0x101a8b55effd99f9L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd730eL).optional(true).ordered(true).multiple(true).origin("1160393055216179705").done();
+    b.aggregate("Questions", 0x416b6ea5b9bdd627L).target(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L).optional(true).ordered(true).multiple(true).origin("4713983093038241319").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLessonReference() {

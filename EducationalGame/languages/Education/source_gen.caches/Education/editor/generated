@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="6qz2fhccvakloiehy1lf1vb05bvcn3a">
+<product version="3" modelHash="-95z7kfxrlhw3esdh2s0z7474gm2ub2w">
   <files names="Answer_Editor.java:Answer_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Fact_Editor.java:Fact_EditorBuilder_a.java:LessonReference_Editor.java:LessonReference_EditorBuilder_a.java:LessonReference_SubstituteMenu.java:Lesson_Editor.java:Lesson_EditorBuilder_a.java:SimpleTest_Editor.java:SimpleTest_EditorBuilder_a.java:SingleChoiceQuestion_Editor.java:SingleChoiceQuestion_EditorBuilder_a.java:TestReference_Editor.java:TestReference_EditorBuilder_a.java:TestReference_SubstituteMenu.java:TopicReference_Editor.java:TopicReference_EditorBuilder_a.java:TopicReference_SubstituteMenu.java" />
 </product>
 
