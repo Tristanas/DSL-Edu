@@ -1,15 +1,13 @@
-package common;
+package common.ui;
 
-import common.GameConstants;
-import common.GameStats;
-import common.ImageScaler;
+import common.data.GameConstants;
+import common.data.GameStats;
+import common.util.ImageScaler;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Objects;
 
 public class StatusBar extends JPanel {
     // Constants:

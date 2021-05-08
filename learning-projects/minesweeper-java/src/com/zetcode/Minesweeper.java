@@ -1,6 +1,17 @@
 package com.zetcode;
 
-import common.*;
+import common.data.ApplicationState;
+import common.data.GameConstants;
+import common.data.LevelDescription;
+import common.edu.Fact;
+import common.edu.Lesson;
+import common.edu.Question;
+import common.edu.Topic;
+import common.ui.Board;
+import common.ui.LearningPortfolio;
+import common.ui.LevelSelection;
+import common.util.GameWindowListener;
+import common.util.ImageScaler;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +20,7 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
-import static common.GameConstants.*;
+import static common.data.GameConstants.*;
 
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {

@@ -1,11 +1,8 @@
-package common;
-
-import com.zetcode.Board;
+package common.util;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 public class ImageScaler {
     public static String ResourcesPath;

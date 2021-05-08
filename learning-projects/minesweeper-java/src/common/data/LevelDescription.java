@@ -1,4 +1,7 @@
-package common;
+package common.data;
+
+import common.edu.Lesson;
+import common.edu.Topic;
 
 public class LevelDescription {
     public int levelNo; // Keep track of which level this is;

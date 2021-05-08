@@ -1,4 +1,4 @@
-package common;
+package common.data;
 
 /**
  Constants for button text and action strings, minesweeper cell state and drawing logic.

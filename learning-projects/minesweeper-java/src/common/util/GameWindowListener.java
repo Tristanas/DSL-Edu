@@ -1,4 +1,6 @@
-package common;
+package common.util;
+
+import common.data.ApplicationState;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;

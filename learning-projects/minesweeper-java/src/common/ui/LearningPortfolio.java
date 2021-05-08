@@ -1,4 +1,9 @@
-package common;
+package common.ui;
+
+import common.data.GameConstants;
+import common.edu.Fact;
+import common.edu.Lesson;
+import common.edu.Topic;
 
 import javax.swing.*;
 import java.awt.*;

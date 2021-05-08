@@ -1,6 +1,11 @@
-package com.zetcode;
+package common.ui;
 
-import common.*;
+import common.data.GameConstants;
+import common.data.GameStats;
+import common.data.LevelDescription;
+import common.edu.Fact;
+import common.edu.Question;
+import common.util.ImageScaler;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +17,7 @@ import java.util.Objects;
 import java.util.Random;
 import javax.swing.*;
 
-import static common.GameConstants.*;
+import static common.data.GameConstants.*;
 
 // Minesweeper board, main Panel of the application window.
 public class Board extends JPanel implements ActionListener {

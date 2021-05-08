@@ -1,4 +1,7 @@
-package common;
+package common.ui;
+
+import common.data.GameConstants;
+import common.data.LevelDescription;
 
 import javax.swing.*;
 import javax.swing.border.Border;

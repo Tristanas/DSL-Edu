@@ -1,15 +1,17 @@
-package common;
+package common.edu;
+
+import common.ui.JMultilineLabel;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
 public class Fact {
-    String title;
-    String text;
+    public final String title;
+    public final String text;
 
-    Boolean unlocked;
-    int windowHeight;
+    public Boolean unlocked;
+    private final int windowHeight;
 
 
     final int titleFontSize = 16,

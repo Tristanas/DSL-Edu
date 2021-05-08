@@ -1,4 +1,6 @@
-package common;
+package common.data;
+
+import common.edu.Topic;
 
 import java.io.Serializable;
 import java.util.ArrayList;
