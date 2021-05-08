@@ -28,10 +28,12 @@ public class ApplicationState implements Serializable {
             out.close();
             file.close();
 
-            System.out.println("Appliction state has been serialized");
+            System.out.println("Application state has been serialized");
         }
         catch (IOException ex) {
-            System.out.println("IOException is caught");
+            System.out.println("IOException is caught:");
+            ex.printStackTrace();
+
         }
     }
 
