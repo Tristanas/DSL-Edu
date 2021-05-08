@@ -20,7 +20,7 @@ public class LevelDescription {
     public GameType type;
 
     // Learning game:
-    public int conceptCount; // Amount of lesson items to add to the board;
+    public int factCount; // Amount of lesson items to add to the board;
     public Lesson lesson;
 
     // Test game:
@@ -56,7 +56,7 @@ public class LevelDescription {
      */
     public void setItemCounts(int effects, int concepts, int questions) {
         this.effectsCount = effects;
-        this.conceptCount = concepts;
+        this.factCount = concepts;
         this.questionsCount = questions;
     }
 
@@ -77,7 +77,5 @@ public class LevelDescription {
         this.type = GameType.test;
         this.topic = topic;
     }
-
-
 
 }

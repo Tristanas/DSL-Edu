@@ -70,9 +70,15 @@ public class LearningPortfolio extends JPanel implements ActionListener {
 
         for (Fact fact : facts
         ) {
-            JPanel factPanel = fact.createLessonPanel();
-            factPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-            factList.add(factPanel);
+            if (fact.unlocked) {
+                JPanel factPanel = fact.createFactPanel();
+                factPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+                factList.add(factPanel);
+            }
+        }
+
+        if (factList.getComponentCount() == 0) {
+            factList.add(new JMultilineLabel("You have not unlocked any facts yet. You may play a level for this lesson to unlock the facts"));
         }
 
         // Return the list put inside a scroll pane:

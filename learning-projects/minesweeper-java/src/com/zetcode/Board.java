@@ -25,7 +25,7 @@ public class Board extends JPanel implements ActionListener {
 
     // Amounts of objects:
     private final int N_MINES;         // Count of mines on the board,
-    private final int N_LESSONS;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
+    private final int N_FACTS;       // Count of lessons. If larger than the lessons list size, fewer lessons will be  displayed.
     private final int N_EFFECTS;       // Count of effects to place on the board.
     private final int N_ROWS;          // Board dimensions.
     private final int N_COLS;
@@ -56,7 +56,7 @@ public class Board extends JPanel implements ActionListener {
     private int flagsLeft;
     private int lives;
     private int reveals;
-    private int lessonsFound;
+    private int factsFound;
     private int score;
 
 
@@ -67,13 +67,13 @@ public class Board extends JPanel implements ActionListener {
     private final ArrayList<Question> questions;
 
     // Lessons:
-    private final ArrayList<Fact> facts;
-    private final Dimension lessonWindowSize = new Dimension(350, 250);
+    private ArrayList<Fact> facts;
+    private final Dimension factWindowSize = new Dimension(350, 250);
 
     // UI:
     private final JFrame parentWindow;
     public final StatusBar statusbar;
-    private JFrame lessonWindow;
+    private JFrame factWindow;
     private ActionListener actionListener;
 
     public Board(JFrame fFrame, LevelDescription level, ActionListener actionListener) {
@@ -83,7 +83,6 @@ public class Board extends JPanel implements ActionListener {
         this.actionListener = actionListener;
 
         if (level.type == LevelDescription.GameType.learn) {
-            this.facts = level.lesson.facts;
             this.questions = level.lesson.questions;
         } else {
             this.facts = new ArrayList<>();
@@ -100,7 +99,7 @@ public class Board extends JPanel implements ActionListener {
         BOARD_HEIGHT = N_ROWS * CELL_SIZE + 1;
 
         N_MINES = level.mines;
-        N_LESSONS = level.conceptCount;
+        N_FACTS = level.factCount;
         N_EFFECTS = level.effectsCount;
 
         initBoard();
@@ -127,13 +126,14 @@ public class Board extends JPanel implements ActionListener {
     }
 
     /**
-     * Resets game state and counters. New mines added, all cells covered, new effects, lessons.
+     * Resets game state and counters. New mines added, all cells covered, new effects, facts.
      */
-    public void newGame(boolean addLessons, boolean addEffects) {
+    public void newGame(boolean addFacts, boolean addEffects) {
         int i;
         var random = new Random();
 
         // Reset state and counters:
+        facts = level.lesson.getRandomFacts(level.factCount);
         inGame = true;
         mineExploded = false;
         revealEnabled = false;
@@ -141,7 +141,7 @@ public class Board extends JPanel implements ActionListener {
         correctFlags = 0;
         flagsLeft = N_MINES;
         lives = level.lives;
-        lessonsFound = 0;
+        factsFound = 0;
         reveals = level.startingReveals;
         score = 0;
 
@@ -167,15 +167,15 @@ public class Board extends JPanel implements ActionListener {
             }
         }
 
-        // Place lesson effects:
-        if (addLessons) {
-            int lessonsCount = facts.size();
-            if (lessonsCount > N_LESSONS) lessonsCount = N_LESSONS;
+        // Place lesson item effects:
+        if (addFacts) {
+            int factsCount = facts.size();
+            if (factsCount > N_FACTS) factsCount = N_FACTS;
             i = 0;
-            while (i < lessonsCount) {
+            while (i < factsCount) {
                 int position = (int) (allCells * random.nextDouble());
                 if (position < allCells  &&  field[position] != COVERED_MINE_CELL) {
-                    effect[position] = LESSON_CELL;
+                    effect[position] = FACT_CELL;
                     i++;
                 }
             }
@@ -299,9 +299,11 @@ public class Board extends JPanel implements ActionListener {
                     // Clicked on an uncovered cell with an effect:
                     if (field[cellNo] < COVER_FOR_CELL && effect[cellNo] > 0) {
                         switch (effect[cellNo]) {
-                            case LESSON_CELL:
-                                manageLessonWindow(facts.get(lessonsFound));
-                                lessonsFound++;
+                            case FACT_CELL:
+                                Fact revealedFact = facts.get(factsFound);
+                                revealedFact.unlock();
+                                manageFactWindow(revealedFact);
+                                factsFound++;
                                 break;
                             case HP_CELL:
                                 lives++;
@@ -450,23 +452,22 @@ public class Board extends JPanel implements ActionListener {
                 JOptionPane.ERROR_MESSAGE);
     }
 
-    private void manageLessonWindow(Fact newFact) {
-        if (lessonWindow == null) {
-            lessonWindow = displayFoundLesson(newFact);
+    private void manageFactWindow(Fact newFact) {
+        if (factWindow == null) {
+            factWindow = displayFoundFact(newFact);
         } else {
-            lessonWindow.setContentPane(newFact.createLessonPanel());
-            //lessonWindow.pack();
-            lessonWindow.setVisible(true);
+            factWindow.setContentPane(newFact.createFactPanel());
+            factWindow.setVisible(true);
         }
     }
 
-    private JFrame displayFoundLesson(Fact fact) {
-        JFrame frame = new JFrame("New lesson found");
+    private JFrame displayFoundFact(Fact fact) {
+        JFrame frame = new JFrame("New fact found");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.add(fact.createLessonPanel());
-        frame.setSize(lessonWindowSize);
+        frame.add(fact.createFactPanel());
+        frame.setSize(factWindowSize);
         Point location = parentWindow.getLocation();
-        location.translate(-lessonWindowSize.width, 0);
+        location.translate(-factWindowSize.width, 0);
         frame.setLocation(location);
         frame.setVisible(true);
         return frame;
@@ -543,7 +544,7 @@ public class Board extends JPanel implements ActionListener {
                 title,
                 JOptionPane.YES_NO_OPTION);
         if (selection == JOptionPane.NO_OPTION) {
-            ActionEvent event = new ActionEvent(this, 1, Integer.toString(level.levelNo));
+            ActionEvent event = new ActionEvent(this, 1, MENU);
             actionListener.actionPerformed(event);
         } else {
             newGame(true, true);

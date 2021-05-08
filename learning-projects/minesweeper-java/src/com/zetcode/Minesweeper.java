@@ -204,7 +204,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         // Set up learning levels:
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
-        learningLevel.setGameBase(8, 8, 10, 2);
+        learningLevel.setGameBase(8, 8, 5, 2);
         learningLevel.setItemCounts(1, 3, 4);
         learningLevel.startingReveals = 1;
         learningLevel.setLearningGame(lesson);
@@ -219,7 +219,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons.add(lesson);
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
-        learningLevel.setGameBase(9, 9, 10, 2);
+        learningLevel.setGameBase(9, 9, 3, 2);
         learningLevel.setItemCounts(1, 3, 4);
         learningLevel.startingReveals = 1;
         learningLevel.setLearningGame(lesson);
@@ -247,7 +247,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons.add(lesson);
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
-        learningLevel.setGameBase(11, 11, 10, 2);
+        learningLevel.setGameBase(11, 11, 5, 2);
         learningLevel.setItemCounts(1, 3, 4);
         learningLevel.startingReveals = 1;
         learningLevel.setLearningGame(lesson);

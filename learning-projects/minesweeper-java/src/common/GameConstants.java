@@ -38,7 +38,7 @@ public class GameConstants {
 
     // Special effects: (related images are named "Sx.png", where x is equal to below constants)
     public static final int NO_EFFECT_CELL = 0;   // In case of this effect, cell is drawn according to constants above.
-    public static final int LESSON_CELL = 1;
+    public static final int FACT_CELL = 1;
     public static final int HP_CELL = 2;
     public static final int REVEAL_CELL = 3;
 }

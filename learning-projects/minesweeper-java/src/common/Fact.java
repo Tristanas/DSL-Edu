@@ -21,10 +21,11 @@ public class Fact {
     public Fact(String title, String text) {
         this.title = title;
         this.text = text;
+        this.unlocked = false;
         windowHeight = titleFontSize + textFontSize * (text.length() * textFontSize / windowWidth) + bottomPadding;
     }
 
-    public JPanel createLessonPanel() {
+    public JPanel createFactPanel() {
         JPanel panel = new JPanel();
         Border border;
 
@@ -49,6 +50,13 @@ public class Fact {
         panel.setBorder(border);
 
         return panel;
+    }
+
+    /**
+     * Makes the fact available in the learning portfolio.
+     */
+    public void unlock() {
+        unlocked = true;
     }
 
     public int getWindowHeight() {
