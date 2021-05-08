@@ -49,6 +49,27 @@ public class Minesweeper extends JFrame implements ActionListener {
         showMenu();
     }
 
+    public void setupAppState() {
+        appState = ApplicationState.deserializeAppState(saveFileLocation);
+        if (appState == null) setupDefaultGameSettings();
+    }
+
+    public void setupResourcesPath() {
+        File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        ImageIcon img;
+        String imageName = "0.png";
+
+        // Path for the IntelliJ minesweeper project's resources folder:
+        String path = sourceLocation + "/resources/";
+        img = new ImageIcon(path + imageName);
+
+        // If the load fails, look for resources in parent folder:
+        if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+            path = sourceLocation.getParent() + "/resources/";
+        }
+        ImageScaler.ResourcesPath = path;
+    }
+
     public void showMenu() {
         if (menu == null) createMenu();
         setContentPane(menu);
@@ -69,24 +90,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
-    }
-
-    private void addButton(String text, String toolTip, Container container) {
-        JButton button = new JButton(text);
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setActionCommand(text);
-        button.addActionListener(this);
-        button.setToolTipText(toolTip);
-
-        // Adding the button to a JPanel with a border layout so that all buttons are stretched to the same size.
-        JPanel borderPane = new JPanel(new BorderLayout());
-        int sidePad = (MENU_WIDTH - BUTTON_WIDTH) / 2;
-        borderPane.setBorder(BorderFactory.createEmptyBorder(0, sidePad, 0, sidePad));
-        borderPane.add(button, BorderLayout.CENTER);
-        container.add(borderPane);
-
-        // Add bottom padding:
-        container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
     }
 
     private void showGame(LevelDescription level) {
@@ -120,6 +123,24 @@ public class Minesweeper extends JFrame implements ActionListener {
         LevelSelection levelSelection = new LevelSelection(appState.levels, this);
         setContentPane(levelSelection);
         pack();
+    }
+
+    private void addButton(String text, String toolTip, Container container) {
+        JButton button = new JButton(text);
+        button.setAlignmentX(Component.CENTER_ALIGNMENT);
+        button.setActionCommand(text);
+        button.addActionListener(this);
+        button.setToolTipText(toolTip);
+
+        // Adding the button to a JPanel with a border layout so that all buttons are stretched to the same size.
+        JPanel borderPane = new JPanel(new BorderLayout());
+        int sidePad = (MENU_WIDTH - BUTTON_WIDTH) / 2;
+        borderPane.setBorder(BorderFactory.createEmptyBorder(0, sidePad, 0, sidePad));
+        borderPane.add(button, BorderLayout.CENTER);
+        container.add(borderPane);
+
+        // Add bottom padding:
+        container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -156,27 +177,6 @@ public class Minesweeper extends JFrame implements ActionListener {
             var ex = new Minesweeper();
             ex.setVisible(true);
         });
-    }
-
-    public void setupResourcesPath() {
-        File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-        ImageIcon img;
-        String imageName = "0.png";
-
-        // Path for the IntelliJ minesweeper project's resources folder:
-        String path = sourceLocation + "/resources/";
-        img = new ImageIcon(path + imageName);
-
-        // If the load fails, look for resources in parent folder:
-        if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
-            path = sourceLocation.getParent() + "/resources/";
-        }
-        ImageScaler.ResourcesPath = path;
-    }
-
-    public void setupAppState() {
-        appState = ApplicationState.deserializeAppState(saveFileLocation);
-        if (appState == null) setupDefaultGameSettings();
     }
 
     public void setupDefaultGameSettings() {
