@@ -13,10 +13,11 @@ import static common.GameConstants.*;
 
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
+    // Application state:
+    final String saveFileLocation = "to be decided.obj";
+    ApplicationState appState;
 
 
-    public ArrayList<LevelDescription> levels;
-    ArrayList<Topic> topics = new ArrayList<>();
 
     JPanel menu, game;
 
@@ -33,6 +34,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     Board minesweeperBoard;
 
     public Minesweeper() {
+        addWindowListener(new GameWindowListener(appState, saveFileLocation));
         setupDefaultGameSettings();
         setupResourcesPath();
         showMenu();
@@ -99,14 +101,14 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     private void showLearningPortfolio() {
-        LearningPortfolio portfolio = new LearningPortfolio(topics, this);
+        LearningPortfolio portfolio = new LearningPortfolio(appState.topics, this);
         setTitle("Learning Portfolio");
         setContentPane(portfolio);
         pack();
     }
 
     private void showLevelSelection() {
-        LevelSelection levelSelection = new LevelSelection(levels, this);
+        LevelSelection levelSelection = new LevelSelection(appState.levels, this);
         setContentPane(levelSelection);
         pack();
     }
@@ -115,7 +117,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         // Manage level selection button presses:
         try {
             int levelNo = Integer.parseInt(e.getActionCommand());
-            showGame(levels.get(levelNo));
+            showGame(appState.levels.get(levelNo));
             return;
         } catch (NumberFormatException ignored) {}
 
@@ -171,6 +173,8 @@ public class Minesweeper extends JFrame implements ActionListener {
         ArrayList<Lesson> lessons;
         ArrayList<Question> questions;
         ArrayList<Fact> facts;
+        ArrayList<LevelDescription> levels;
+        ArrayList<Topic> topics = new ArrayList<>();
 
         levels = new ArrayList<>();
 
@@ -265,5 +269,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         testLevel.startingReveals = 1;
         testLevel.setTestGame(topic);
         levels.add(testLevel);
+
+        // Initialize application state:
+        appState = new ApplicationState(topics, levels);
     }
+
 }

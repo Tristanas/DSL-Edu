@@ -11,9 +11,9 @@ public class LevelDescription {
     public int cellSize = 30;
 
     // Minesweeper effects:
-    public boolean effectsEnabled;
-    public int effectsCount;
-    public int startingReveals;
+    public boolean effectsEnabled = false;
+    public int effectsCount = 1;
+    public int startingReveals = 0;
 
     // Educational section:
     public int questionsCount; // Amount of questions (from a lesson or a question pool) to include in the level;
@@ -27,12 +27,13 @@ public class LevelDescription {
     public Topic topic;
 
     // Status:
-    public boolean completed;
-    public int highScore;
+    public boolean completed = false;
+    public int highScore = 0;
 
     public enum GameType {
         test, learn
     }
+
 
     /**
      * Sets base game parameters.

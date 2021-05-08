@@ -115,10 +115,10 @@ public class LevelSelection extends JPanel {
         // Distinguish learning levels from test levels:
         if (level.type == LevelDescription.GameType.learn) {
             buttonBorder = BorderFactory.createLineBorder(Color.BLACK, BTN_BORDER_THICKNESS);
-            levelButton.setToolTipText("Lesson: " + level.lesson.title + ", " + completed + ", Highscore: 0");
+            levelButton.setToolTipText("Lesson: " + level.lesson.title + ", " + completed + ", Highscore: " + level.highScore);
         } else {
             buttonBorder = BorderFactory.createLineBorder(Color.RED, BTN_BORDER_THICKNESS);
-            levelButton.setToolTipText("Test: " + level.topic.title + ", " + completed + ", Highscore: 0");
+            levelButton.setToolTipText("Test: " + level.topic.title + ", " + completed + ", Highscore: " + level.highScore);
         }
         levelButton.setBorder(buttonBorder);
 
