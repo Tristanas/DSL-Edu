@@ -21,11 +21,11 @@ public class LevelDescription implements Serializable {
     public int startingReveals = 0;
 
     // Educational section:
-    public int questionsCount; // Amount of questions (from a lesson or a question pool) to include in the level;
+    public int questionsCount = 0; // Amount of questions (from a lesson or a question pool) to include in the level;
     public GameType type;
 
     // Learning game:
-    public int factCount; // Amount of lesson items to add to the board;
+    public int factCount = 0; // Amount of lesson items to add to the board;
     public Lesson lesson;
 
     // Test game:

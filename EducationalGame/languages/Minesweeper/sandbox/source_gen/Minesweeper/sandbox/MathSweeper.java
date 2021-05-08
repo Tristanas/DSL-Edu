@@ -4,39 +4,37 @@ package Minesweeper.sandbox;
 
 import javax.swing.JFrame;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import common.Question;
-import common.Fact;
-import common.LevelDescription;
+import common.data.ApplicationState;
+import common.ui.Board;
 import javax.swing.JPanel;
-import com.zetcode.Board;
+import common.util.GameWindowListener;
+import java.io.File;
+import javax.swing.ImageIcon;
+import common.util.ImageScaler;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
 import javax.swing.Box;
-import common.GameConstants;
+import common.data.GameConstants;
+import common.data.LevelDescription;
+import java.awt.BorderLayout;
+import common.ui.LearningPortfolio;
+import common.ui.LevelSelection;
 import java.awt.Container;
 import javax.swing.JButton;
 import java.awt.Component;
-import java.awt.BorderLayout;
 import javax.swing.BorderFactory;
-import common.LearningPortfolio;
-import common.LevelSelection;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.awt.EventQueue;
-import java.io.File;
-import javax.swing.ImageIcon;
-import common.ImageScaler;
-import common.Lesson;
-import common.Topic;
+import common.edu.Lesson;
+import common.edu.Topic;
+import java.util.ArrayList;
+import common.edu.Question;
+import common.edu.Fact;
 
 public class MathSweeper extends JFrame implements ActionListener {
-  public ArrayList<Question> questions;
-  public ArrayList<Fact> facts;
-  public ArrayList<LevelDescription> levels;
-
-  private JPanel menu;
-  private JPanel game;
+  public final String saveFileLocation = "minesweeper-save.ser";
+  private ApplicationState appState;
 
   private final int N_BUTTONS = 4;
   private final int BUTTON_WIDTH = 140;
@@ -48,13 +46,34 @@ public class MathSweeper extends JFrame implements ActionListener {
   private final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
   private Board minesweeperBoard;
+  private JPanel menu;
+  private JPanel game;
 
   public MathSweeper() {
-    setupDefaultGameSettings();
+    setupAppState();
     setupResourcesPath();
+    addWindowListener(new GameWindowListener(appState, saveFileLocation));
     showMenu();
   }
-
+  public void setupAppState() {
+    appState = ApplicationState.deserializeAppState(saveFileLocation);
+    if (appState == null) {
+      setupDefaultGameSettings();
+    }
+  }
+  public void setupResourcesPath() {
+    File sourceLocation = new File(MathSweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+    ImageIcon img;
+    String imageName = "0.png";
+    // Path for the IntelliJ minesweeper project's resources folder: 
+    String path = sourceLocation + "/resources/";
+    img = new ImageIcon(path + imageName);
+    // If the load fails, look for resources in parent folder: 
+    if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
+      path = sourceLocation.getParent() + "/resources/";
+    }
+    ImageScaler.ResourcesPath = path;
+  }
   public void showMenu() {
     if (menu == null) {
       createMenu();
@@ -66,7 +85,6 @@ public class MathSweeper extends JFrame implements ActionListener {
     setLocationRelativeTo(null);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
-
   private void createMenu() {
     menu = new JPanel();
     menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
@@ -78,7 +96,34 @@ public class MathSweeper extends JFrame implements ActionListener {
     addButton(GameConstants.EXIT, "Close application", menu);
     menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
   }
-
+  private void showGame(LevelDescription level) {
+    createGame(level);
+    // else minesweeperBoard.newGame(true, true); 
+    setContentPane(game);
+    setResizable(false);
+    pack();
+    setTitle("Minesweeper");
+    setLocationRelativeTo(null);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  }
+  private void createGame(LevelDescription level) {
+    game = new JPanel();
+    game.setLayout(new BorderLayout());
+    minesweeperBoard = new Board(this, level, this);
+    game.add(minesweeperBoard);
+    game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
+  }
+  private void showLearningPortfolio() {
+    LearningPortfolio portfolio = new LearningPortfolio(appState.topics, this);
+    setTitle("Learning Portfolio");
+    setContentPane(portfolio);
+    pack();
+  }
+  private void showLevelSelection() {
+    LevelSelection levelSelection = new LevelSelection(appState.levels, this);
+    setContentPane(levelSelection);
+    pack();
+  }
   private void addButton(String text, String toolTip, Container container) {
     JButton button = new JButton(text);
     button.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -94,49 +139,15 @@ public class MathSweeper extends JFrame implements ActionListener {
     // Add bottom padding: 
     container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
   }
-
-  private void showGame(LevelDescription level) {
-    createGame(level);
-    // else minesweeperBoard.newGame(true, true); 
-    setContentPane(game);
-    setResizable(false);
-    pack();
-    setTitle("Minesweeper");
-    setLocationRelativeTo(null);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-  }
-
-  private void createGame(LevelDescription level) {
-    game = new JPanel();
-    game.setLayout(new BorderLayout());
-    minesweeperBoard = new Board(this, level, this);
-    game.add(minesweeperBoard);
-    game.add(minesweeperBoard.statusbar, BorderLayout.SOUTH);
-  }
-
-  private void showLearningPortfolio() {
-    LearningPortfolio portfolio = new LearningPortfolio(facts, this);
-    setTitle("Learning Portfolio");
-    setContentPane(portfolio);
-    pack();
-  }
-
-  private void showLevelSelection() {
-    LevelSelection levelSelection = new LevelSelection(levels, this);
-    setContentPane(levelSelection);
-    pack();
-  }
-
   public void actionPerformed(ActionEvent e) {
     // Manage level selection button presses: 
     try {
       int levelNo = Integer.parseInt(e.getActionCommand());
-      showGame(levels.get(levelNo));
+      showGame(appState.levels.get(levelNo));
       return;
     } catch (NumberFormatException ignored) {
     }
-
-    // Manage menu and navigation button presses: 
+    // Manage menu and navigation buttons: 
     switch (e.getActionCommand()) {
       case GameConstants.PLAY:
         showLevelSelection();
@@ -168,22 +179,6 @@ public class MathSweeper extends JFrame implements ActionListener {
       }
     });
   }
-
-  public void setupResourcesPath() {
-    File sourceLocation = new File(MathSweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-    ImageIcon img;
-    String imageName = "0.png";
-    // Path for the IntelliJ minesweeper project's resources folder: 
-    String path = sourceLocation + "/resources/";
-    img = new ImageIcon(path + imageName);
-    // If the load fails, look for resources in parent folder: 
-    if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
-      path = sourceLocation.getParent() + "/resources/";
-    }
-
-    ImageScaler.ResourcesPath = path;
-  }
-
   public void setupDefaultGameSettings() {
     LevelDescription learningLevel;
     LevelDescription testLevel;
@@ -191,6 +186,10 @@ public class MathSweeper extends JFrame implements ActionListener {
     Topic topic;
     ArrayList<Lesson> lessons;
     ArrayList<Topic> topics = new ArrayList();
+    ArrayList<Question> questions;
+    ArrayList<Fact> facts;
+    ArrayList<LevelDescription> levels;
+
     levels = new ArrayList();
     int levelNo = 0;
 
@@ -285,6 +284,10 @@ public class MathSweeper extends JFrame implements ActionListener {
     testLevel.startingReveals = 1;
     testLevel.setTestGame(topic);
     levels.add(testLevel);
+
+
+    // Initialize application state: 
+    appState = new ApplicationState(topics, levels);
 
   }
 

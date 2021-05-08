@@ -362,7 +362,7 @@ public class Board extends JPanel implements ActionListener {
                     }
                 }
 
-                System.out.println("Mines left: " + flagsLeft + " Flagged correctly: " + correctFlags + " Covered: " + uncover);
+                //System.out.println("Mines left: " + flagsLeft + " Flagged correctly: " + correctFlags + " Covered: " + uncover);
 
                 if (doRepaint) repaint();
 
