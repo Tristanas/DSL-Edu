@@ -26,6 +26,7 @@ public class GameWindowListener implements WindowListener {
         System.out.println("Closing application");
         System.out.println("Saving application sate");
         ApplicationState.serializeAppState(appState, saveFileLocation);
+        System.exit(0);
     }
 
     // This might not be called if the main window is closed.

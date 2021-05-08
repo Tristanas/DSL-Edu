@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="CommonClasses" uuid="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}/libs/minesweeper 2.1.jar!/" type="java_classes">
+    <modelRoot contentPath="${module}/libs/minesweeper 2.2.jar!/" type="java_classes">
       <sourceRoot location="." />
+      <sourceRoot location="com" />
+      <sourceRoot location="common" />
     </modelRoot>
   </models>
   <facets>
@@ -11,7 +13,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/libs/minesweeper 2.1.jar" />
+    <stubModelEntry path="${module}/libs/minesweeper 2.2.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

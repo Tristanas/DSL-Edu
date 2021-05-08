@@ -1716,6 +1716,23 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="7Cfb6vrrAxL" role="3cqZAp">
+                <node concept="2YIFZM" id="7Cfb6vrrAZP" role="3clFbG">
+                  <ref role="1Pybhc" to="t8el:~ApplicationState" resolve="ApplicationState" />
+                  <ref role="37wK5l" to="t8el:~ApplicationState.serializeAppState(common.data.ApplicationState,java.lang.String)" resolve="serializeAppState" />
+                  <node concept="37vLTw" id="7Cfb6vrrAZQ" role="37wK5m">
+                    <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
+                  </node>
+                  <node concept="3cpWs3" id="7Cfb6vrrAZR" role="37wK5m">
+                    <node concept="37vLTw" id="7Cfb6vrrAZS" role="3uHU7B">
+                      <ref role="3cqZAo" node="7Cfb6vre25K" resolve="rootPath" />
+                    </node>
+                    <node concept="37vLTw" id="7Cfb6vrrAZT" role="3uHU7w">
+                      <ref role="3cqZAo" node="7Cfb6vr5tAR" resolve="saveFileName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="7Cfb6vr5UBA" role="3cqZAp">
                 <node concept="2YIFZM" id="7Cfb6vr69RZ" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />

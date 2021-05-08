@@ -164,6 +164,7 @@ public class MathSweeper extends JFrame implements ActionListener {
         break;
       case GameConstants.EXIT:
         System.out.println("Application exiting");
+        ApplicationState.serializeAppState(appState, rootPath + saveFileName);
         System.exit(0);
         break;
       case GameConstants.MENU:

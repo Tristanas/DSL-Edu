@@ -30,6 +30,9 @@ public class Minesweeper extends JFrame implements ActionListener {
     final String saveFileName = "minesweeper-save.ser";
     private String rootPath;
 
+    // Autosave:
+    final int AUTO_SAVE_PERIOD = 60;
+
     // Menu parameters:
     final int N_BUTTONS = 4;
     final int BUTTON_WIDTH = 140;
@@ -167,6 +170,7 @@ public class Minesweeper extends JFrame implements ActionListener {
                 break;
             case EXIT:
                 System.out.println("Application exiting");
+                ApplicationState.serializeAppState(appState, rootPath + saveFileName);
                 System.exit(0);
                 break;
             case MENU:
