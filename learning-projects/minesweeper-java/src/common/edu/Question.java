@@ -1,6 +1,8 @@
 package common.edu;
 
-public class Question {
+import java.io.Serializable;
+
+public class Question implements Serializable {
     public String correctAnswer;
     public String[] answers;
     public String question;

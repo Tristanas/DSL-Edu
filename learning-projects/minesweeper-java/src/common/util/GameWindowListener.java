@@ -7,10 +7,10 @@ import java.awt.event.WindowListener;
 
 public class GameWindowListener implements WindowListener {
     String saveFileLocation;
-    ApplicationState gameState;
+    ApplicationState appState;
 
     public GameWindowListener (ApplicationState state, String saveFileLocation) {
-        this.gameState = state;
+        this.appState = state;
         this.saveFileLocation = saveFileLocation;
     }
 
@@ -20,10 +20,11 @@ public class GameWindowListener implements WindowListener {
     }
 
 
-    // Saves game state into a serialized file.
+    // Saves application state into a serialized file.
     @Override
     public void windowClosing(WindowEvent e) {
         System.out.println("Closing application");
+        ApplicationState.serializeAppState(appState, saveFileLocation);
     }
 
     // This might not be called if the main window is closed.

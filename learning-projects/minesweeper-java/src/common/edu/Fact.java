@@ -5,8 +5,9 @@ import common.ui.JMultilineLabel;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.io.Serializable;
 
-public class Fact {
+public class Fact implements Serializable {
     public final String title;
     public final String text;
 

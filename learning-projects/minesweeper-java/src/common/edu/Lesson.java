@@ -1,9 +1,10 @@
 package common.edu;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Lesson {
+public class Lesson implements Serializable {
     public final String title;
     public final ArrayList<Fact> facts;
     public final ArrayList<Question> questions;

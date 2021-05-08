@@ -16,7 +16,7 @@ import common.util.ImageScaler;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -24,13 +24,10 @@ import static common.data.GameConstants.*;
 
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
+
     // Application state:
-    final String saveFileLocation = "to be decided.obj";
+    final String saveFileLocation = "minesweeper-save.ser";
     ApplicationState appState;
-
-
-
-    JPanel menu, game;
 
     // Menu parameters:
     final int N_BUTTONS = 4;
@@ -43,11 +40,12 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
     Board minesweeperBoard;
+    JPanel menu, game;
 
     public Minesweeper() {
-        addWindowListener(new GameWindowListener(appState, saveFileLocation));
-        setupDefaultGameSettings();
+        setupAppState();
         setupResourcesPath();
+        addWindowListener(new GameWindowListener(appState, saveFileLocation));
         showMenu();
     }
 
@@ -176,6 +174,11 @@ public class Minesweeper extends JFrame implements ActionListener {
         ImageScaler.ResourcesPath = path;
     }
 
+    public void setupAppState() {
+        appState = ApplicationState.deserializeAppState(saveFileLocation);
+        if (appState == null) setupDefaultGameSettings();
+    }
+
     public void setupDefaultGameSettings() {
         LevelDescription learningLevel;
         LevelDescription testLevel;
@@ -284,5 +287,4 @@ public class Minesweeper extends JFrame implements ActionListener {
         // Initialize application state:
         appState = new ApplicationState(topics, levels);
     }
-
 }

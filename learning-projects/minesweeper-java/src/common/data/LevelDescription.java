@@ -3,7 +3,9 @@ package common.data;
 import common.edu.Lesson;
 import common.edu.Topic;
 
-public class LevelDescription {
+import java.io.Serializable;
+
+public class LevelDescription implements Serializable {
     public int levelNo; // Keep track of which level this is;
 
     // Base game: default values - standard minesweeper game.
