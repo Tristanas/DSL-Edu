@@ -33,8 +33,9 @@ import common.edu.Question;
 import common.edu.Fact;
 
 public class MathSweeper extends JFrame implements ActionListener {
-  public final String saveFileLocation = "minesweeper-save.ser";
   private ApplicationState appState;
+  public final String saveFileName = "minesweeper-save.ser";
+  private String rootPath;
 
   private final int N_BUTTONS = 4;
   private final int BUTTON_WIDTH = 140;
@@ -50,29 +51,32 @@ public class MathSweeper extends JFrame implements ActionListener {
   private JPanel game;
 
   public MathSweeper() {
+    setupPaths();
     setupAppState();
-    setupResourcesPath();
-    addWindowListener(new GameWindowListener(appState, saveFileLocation));
+    addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
     showMenu();
   }
   public void setupAppState() {
-    appState = ApplicationState.deserializeAppState(saveFileLocation);
+    appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
     if (appState == null) {
       setupDefaultGameSettings();
     }
   }
-  public void setupResourcesPath() {
+  public void setupPaths() {
     File sourceLocation = new File(MathSweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
     ImageIcon img;
     String imageName = "0.png";
     // Path for the IntelliJ minesweeper project's resources folder: 
-    String path = sourceLocation + "/resources/";
+    rootPath = sourceLocation.getPath() + "/";
+    String path = rootPath + "resources/";
     img = new ImageIcon(path + imageName);
     // If the load fails, look for resources in parent folder: 
     if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
-      path = sourceLocation.getParent() + "/resources/";
+      rootPath = sourceLocation.getParent() + "/";
+      path = rootPath + "resources/";
     }
     ImageScaler.ResourcesPath = path;
+
   }
   public void showMenu() {
     if (menu == null) {
@@ -288,7 +292,6 @@ public class MathSweeper extends JFrame implements ActionListener {
 
     // Initialize application state: 
     appState = new ApplicationState(topics, levels);
-
   }
 
 }

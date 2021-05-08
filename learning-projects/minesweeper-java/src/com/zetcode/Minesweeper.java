@@ -26,8 +26,9 @@ import static common.data.GameConstants.*;
 public class Minesweeper extends JFrame implements ActionListener {
 
     // Application state:
-    final String saveFileLocation = "minesweeper-save.ser";
     ApplicationState appState;
+    final String saveFileName = "minesweeper-save.ser";
+    private String rootPath;
 
     // Menu parameters:
     final int N_BUTTONS = 4;
@@ -43,29 +44,31 @@ public class Minesweeper extends JFrame implements ActionListener {
     JPanel menu, game;
 
     public Minesweeper() {
+        setupPaths();
         setupAppState();
-        setupResourcesPath();
-        addWindowListener(new GameWindowListener(appState, saveFileLocation));
+        addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
     }
 
     public void setupAppState() {
-        appState = ApplicationState.deserializeAppState(saveFileLocation);
+        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
     }
 
-    public void setupResourcesPath() {
+    public void setupPaths() {
         File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
         ImageIcon img;
         String imageName = "0.png";
 
         // Path for the IntelliJ minesweeper project's resources folder:
-        String path = sourceLocation + "/resources/";
+        rootPath = sourceLocation.getPath() + "/";
+        String path = rootPath + "resources/";
         img = new ImageIcon(path + imageName);
 
         // If the load fails, look for resources in parent folder:
         if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
-            path = sourceLocation.getParent() + "/resources/";
+            rootPath = sourceLocation.getParent() + "/";
+            path = rootPath + "resources/";
         }
         ImageScaler.ResourcesPath = path;
     }

@@ -33,7 +33,6 @@ public class ApplicationState implements Serializable {
         catch (IOException ex) {
             System.out.println("IOException is caught:");
             ex.printStackTrace();
-
         }
     }
 
@@ -63,11 +62,13 @@ public class ApplicationState implements Serializable {
         catch(IOException ex)
         {
             System.out.println("Failed to deserialize app state: could not read from save file.");
+            ex.printStackTrace();
         }
 
         catch(ClassNotFoundException ex)
         {
             System.out.println("Failed to deserialize app state: saved state was from a different version of the app.");
+            ex.printStackTrace();
         }
 
         return appState;
