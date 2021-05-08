@@ -14,9 +14,10 @@ import static common.GameConstants.*;
 // Application root container. Contains Minesweeper board.
 public class Minesweeper extends JFrame implements ActionListener {
 
-    public ArrayList<Question> questions;
-    public ArrayList<Fact> facts;
+
     public ArrayList<LevelDescription> levels;
+    ArrayList<Topic> topics = new ArrayList<>();
+
     JPanel menu, game;
 
     // Menu parameters:
@@ -98,7 +99,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     private void showLearningPortfolio() {
-        LearningPortfolio portfolio = new LearningPortfolio(facts, this);
+        LearningPortfolio portfolio = new LearningPortfolio(topics, this);
         setTitle("Learning Portfolio");
         setContentPane(portfolio);
         pack();
@@ -168,7 +169,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         Lesson lesson;
         Topic topic;
         ArrayList<Lesson> lessons;
-        ArrayList<Topic> topics = new ArrayList<>();
+        ArrayList<Question> questions;
+        ArrayList<Fact> facts;
+
         levels = new ArrayList<>();
 
         int levelNo = 0;
@@ -193,12 +196,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         facts.add(new Fact("Math 1: median", "The median is the middle value in the list of numbers." +
                 " To find the median, your numbers have to be listed in numerical order from smallest to largest, " +
                 "so you may have to rewrite your list before you can find the median."));
-        for (int i = 2; i < 8; i++) facts.add(new Fact("Lesson " + i, "A Placeholder lesson, not informative"));
+        for (int i = 2; i < 5; i++) facts.add(new Fact("Lesson " + i, "A Placeholder lesson, not informative"));
 
         lesson = new Lesson("Statistics basics", facts, questions);
         lessons.add(lesson);
-        topic = new Topic("Statistics", new ArrayList<Lesson>(lessons), new ArrayList<Question>());
-        topics.add(topic);
 
         // Set up learning levels:
         learningLevel = new LevelDescription();
@@ -210,6 +211,12 @@ public class Minesweeper extends JFrame implements ActionListener {
         levels.add(learningLevel);
 
 
+        facts = new ArrayList<>();
+        facts.add(new Fact("Tables", "Visualising data in tables..."));
+        facts.add(new Fact("Bar diagrams", "Represent data in rows or columns of comparable sizes."));
+        facts.add(new Fact("Pie charts", "Represent data in to highlight distribution and proportions."));
+        lesson = new Lesson("Visualising data", facts, questions);
+        lessons.add(lesson);
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
         learningLevel.setGameBase(9, 9, 10, 2);
@@ -219,6 +226,11 @@ public class Minesweeper extends JFrame implements ActionListener {
         levels.add(learningLevel);
 
 
+        facts = new ArrayList<>();
+        facts.add(new Fact("Combination", "nCm = ..."));
+        facts.add(new Fact("Permutation", "nAm = ..."));
+        lesson = new Lesson("Combinations and permutations", facts, questions);
+        lessons.add(lesson);
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
         learningLevel.setGameBase(10, 10, 10, 2);
@@ -228,6 +240,11 @@ public class Minesweeper extends JFrame implements ActionListener {
         levels.add(learningLevel);
 
 
+        facts = new ArrayList<>();
+        facts.add(new Fact("Events", "Event is ..."));
+        facts.add(new Fact("Likelihood", "A numerical expression that shows how likely it is for an event to occur."));
+        lesson = new Lesson("Probability basics", facts, questions);
+        lessons.add(lesson);
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
         learningLevel.setGameBase(11, 11, 10, 2);
@@ -235,6 +252,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         learningLevel.startingReveals = 1;
         learningLevel.setLearningGame(lesson);
         levels.add(learningLevel);
+
+        // Setup topic:
+        topic = new Topic("Statistics", new ArrayList<Lesson>(lessons), new ArrayList<Question>());
+        topics.add(topic);
 
         // Setup test:
         testLevel = new LevelDescription();

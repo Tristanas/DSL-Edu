@@ -2,20 +2,26 @@ package common;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class LearningPortfolio extends JPanel {
+public class LearningPortfolio extends JPanel implements ActionListener {
     final int LESSON_TOP_PADDING = 20;
     final int LESSON_BOT_PADDING = 20;
     final int TOPIC_FONT_SIZE = 18;
 
-    ArrayList<Fact> facts;
+    // Implement topic switching later:
+    final String NEXT_TOPIC = "Next topic";
+    final String PREVIOUS_TOPIC = "Previous topic";
+    int currentTopicNo;
+
+    ArrayList<Topic> topics;
     ActionListener parentWindow;
 
-    public LearningPortfolio(ArrayList<Fact> facts, ActionListener frame) {
+    public LearningPortfolio(ArrayList<Topic> topics, ActionListener frame) {
         super();
-        this.facts = facts;
+        this.topics = topics;
         this.parentWindow = frame;
 
         initUI();
@@ -25,31 +31,60 @@ public class LearningPortfolio extends JPanel {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(500, 600));
 
+        // Display first topic by default:
+        Topic topic = topics.get(0);
+
         // Topic section:
         JPanel topicPane = new JPanel();
-        JLabel topicTitle = new JLabel("Mathematics: introduction into statistics");
+        JLabel topicTitle = new JLabel(topic.title);
         topicTitle.setFont(new Font(Font.SANS_SERIF, Font.BOLD, TOPIC_FONT_SIZE));
         topicTitle.setAlignmentX(Component.LEFT_ALIGNMENT);
         topicPane.add(topicTitle);
         add(topicPane, BorderLayout.NORTH);
 
-        // Lessons:
-        JPanel lessonsList = new JPanel();
-        lessonsList.setLayout(new BoxLayout(lessonsList, BoxLayout.Y_AXIS));
+        JTabbedPane topicContents = createTabPane(topic);
+        add(topicContents, BorderLayout.CENTER);
 
-        for (Fact fact : facts
+        initNavigation();
+    }
+
+    private JTabbedPane createTabPane(Topic topic) {
+        JTabbedPane lessonTabs = new JTabbedPane();
+
+        // Create tabs for each lesson:
+        for (Lesson lesson: topic.lessons
              ) {
-            JPanel lessonPanel = fact.createLessonPanel();
-            lessonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-            lessonsList.add(lessonPanel);
+            JScrollPane lessonContents = createFactsList(lesson.facts);
+//            JPanel card = new JPanel();
+//            card.add(lessonContents);
+            lessonTabs.addTab(lesson.title, lessonContents);
         }
 
-        // Make the list of lessons scrollable:
-        JScrollPane scrollPane = new JScrollPane(lessonsList);
-        add(scrollPane, BorderLayout.CENTER);
-        scrollPane.getViewport().setViewPosition(new Point(0,0));
+        return lessonTabs;
+    }
 
-        // Init navigation and action buttons:
+    private JScrollPane createFactsList(ArrayList<Fact> facts) {
+        // Create a vertical list of lessons:
+        JPanel factList = new JPanel();
+        factList.setLayout(new BoxLayout(factList, BoxLayout.Y_AXIS));
+
+        for (Fact fact : facts
+        ) {
+            JPanel factPanel = fact.createLessonPanel();
+            factPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+            factList.add(factPanel);
+        }
+
+        // Return the list put inside a scroll pane:
+        return new JScrollPane(factList);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
+    private void initNavigation() {
         JPanel buttonsPanel = new JPanel();
         JButton button = new JButton("Back");
         button.setActionCommand(GameConstants.MENU);
@@ -57,6 +92,5 @@ public class LearningPortfolio extends JPanel {
         buttonsPanel.add(button);
 
         add(buttonsPanel, BorderLayout.SOUTH);
-
     }
 }
