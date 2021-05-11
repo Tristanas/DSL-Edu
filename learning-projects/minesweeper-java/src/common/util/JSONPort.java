@@ -1,5 +1,6 @@
 package common.util;
 
+import common.data.ApplicationState;
 import common.data.LevelDescription;
 import common.edu.Fact;
 import common.edu.Lesson;
@@ -10,10 +11,14 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class JSONPort {
+      // Export folder path:
+      public static final String exportFolder = "C:/Users/Vilius/Desktop/";
+
       // Constants for json object field names:
       // Question:
       private static final String ANSWERS = "answers";
@@ -48,6 +53,63 @@ public class JSONPort {
       private static final String LEVEL_QUESTIONS = "questionsCount";
       private static final String LEVEL_REVEALS = "reveals";
       private static final String LEVEL_TYPE = "type";
+
+      public static void exportTopic(Topic topic, String path) {
+            try {
+                  String fileName = "EXPORT " + topic.title + ".json";
+                  FileOutputStream file = new FileOutputStream(path + fileName);
+                  ObjectOutputStream out = new ObjectOutputStream(file);
+
+                  String topicJson = encodeTopic(topic).toJSONString();
+                  out.writeObject(topicJson);
+                  out.close();
+                  file.close();
+
+                  System.out.println("Topic has been exported");
+            }
+            catch (IOException ex) {
+                  System.out.println("IOException is caught:");
+                  ex.printStackTrace();
+            }
+      }
+
+      public static void importTopic(ApplicationState appState, String completePath) {
+            try
+            {
+                  // Reading the object from a file
+                  FileInputStream file = new FileInputStream(completePath);
+                  ObjectInputStream in = new ObjectInputStream(file);
+
+                  // Method for deserialization of object
+                  String topicJson = (String) in.readObject();
+                  Topic topic = decodeTopic(topicJson, new JSONParser());
+
+                  // Add topic and levels to the app state:
+                  if (topic != null) {
+                        appState.topics.add(topic);
+                        for (Lesson lesson: topic.lessons)
+                              appState.levels.add(lesson.learningLevel);
+                        appState.levels.add(topic.testLevel);
+                  }
+
+                  in.close();
+                  file.close();
+
+                  System.out.println("Topic has been imported.");
+            }
+
+            catch(IOException ex)
+            {
+                  System.out.println("Failed to import topic: could not read from save file.");
+                  ex.printStackTrace();
+            }
+
+            catch(ClassNotFoundException ex)
+            {
+                  System.out.println("Failed to import topic: wrong object was imported or the topic was from a different version of the app.");
+                  ex.printStackTrace();
+            }
+      }
 
       /**
        * Deserializes level from a JSON string.
