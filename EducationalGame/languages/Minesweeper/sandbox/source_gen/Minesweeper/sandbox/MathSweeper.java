@@ -76,7 +76,6 @@ public class MathSweeper extends JFrame implements ActionListener {
       path = rootPath + "resources/";
     }
     ImageScaler.ResourcesPath = path;
-
   }
   public void showMenu() {
     if (menu == null) {

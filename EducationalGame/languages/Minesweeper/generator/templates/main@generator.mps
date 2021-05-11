@@ -27,6 +27,7 @@
     <import index="jk8j" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.edu(CommonClasses/)" />
     <import index="t8el" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.data(CommonClasses/)" />
     <import index="4h0l" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.util(CommonClasses/)" />
+    <import index="hyqs" ref="67b3c41d-58b3-4756-b971-30bf8a9d63e6/java:jetbrains.jetpad.json(jetbrains.jetpad/)" />
     <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -747,7 +748,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7Cfb6vregli" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="7Cfb6vr5Uzf" role="1B3o_S" />
       <node concept="3cqZAl" id="7Cfb6vr5Uzg" role="3clF45" />

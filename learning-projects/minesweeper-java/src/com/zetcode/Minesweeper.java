@@ -12,6 +12,8 @@ import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
+import common.util.JSONPort;
+import org.json.simple.parser.JSONParser;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -49,8 +51,36 @@ public class Minesweeper extends JFrame implements ActionListener {
     public Minesweeper() {
         setupPaths();
         setupAppState();
+        testJSONPort(); // Temporary method call
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
+    }
+
+    public void testJSONPort() {
+        JSONParser parser = new JSONParser();
+
+        String levelJSON = JSONPort.encodeLevel(appState.levels.get(0)).toJSONString();
+        System.out.println(levelJSON);
+        LevelDescription levelFromJSON = JSONPort.decodeLevel(levelJSON, parser);
+
+        String topicJSON = JSONPort.encodeTopic(appState.topics.get(0)).toJSONString();
+        System.out.println(topicJSON);
+        Topic tFromJSON = JSONPort.decodeTopic(topicJSON, parser);
+
+        String lessonJSON = JSONPort.encodeLesson(appState.levels.get(0).lesson).toJSONString();
+        System.out.println(lessonJSON);
+        Lesson lFromJSON = JSONPort.decodeLesson(lessonJSON, parser);
+
+        /*
+        String questionJson = JSONPort.encodeQuestion(appState.levels.get(0).lesson.questions.get(0)).toJSONString();
+        System.out.println(questionJson);
+        Question qFromJSON = JSONPort.decodeQuestion(questionJson, parser);
+
+        String factJson = JSONPort.encodeFact(appState.levels.get(0).lesson.facts.get(0)).toJSONString();
+        System.out.println(factJson);
+        Fact fFromJSON = JSONPort.decodeFact(factJson, parser);
+        */
+
     }
 
     public void setupAppState() {

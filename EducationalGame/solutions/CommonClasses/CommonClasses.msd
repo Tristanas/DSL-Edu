@@ -3,8 +3,6 @@
   <models>
     <modelRoot contentPath="${module}/libs/minesweeper 2.2.jar!/" type="java_classes">
       <sourceRoot location="." />
-      <sourceRoot location="com" />
-      <sourceRoot location="common" />
     </modelRoot>
   </models>
   <facets>
@@ -14,6 +12,7 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/libs/minesweeper 2.2.jar" />
+    <stubModelEntry path="${module}/libs/json-simple-1.1.1.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
