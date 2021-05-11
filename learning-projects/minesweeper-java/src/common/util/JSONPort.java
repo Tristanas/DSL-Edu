@@ -28,10 +28,13 @@ public class JSONPort {
       private static final String QUESTIONS = "questions";
       private static final String FACTS = "facts";
       private static final String LESSON_TITLE = "title";
+      private static final String LESSON_LEVEL = "learningLevel";
 
       // Topic:
-      private static final String TOPIC_TITLE = "title";
       private static final String LESSONS = "lessons";
+      private static final String TOPIC_TITLE = "title";
+      private static final String TOPIC_TEST_LEVEL = "testLevel";
+      private static final String TOPIC_TEST_QUESTIONS = "testQuestions";
 
       // Level:
       private static final String LEVEL_COLUMNS = "columns";
@@ -98,13 +101,22 @@ public class JSONPort {
             Topic topic = null;
             try {
                   ArrayList<Lesson> lessons = new ArrayList<>();
+                  ArrayList<Question> testQuestions = new ArrayList<>();
                   JSONObject jTopic = (JSONObject) parser.parse(jsonString);
-                  String title = (String) jTopic.get(TOPIC_TITLE);
 
                   // Get lessons:
                   for (Object jLesson: (JSONArray) jTopic.get(LESSONS)) {
                         lessons.add(decodeLesson(((JSONObject) jLesson).toJSONString(), parser));
                   }
+
+                  // Get test questions:
+                  for (Object jQuestion: (JSONArray) jTopic.get(TOPIC_TEST_QUESTIONS)) {
+                        testQuestions.add(decodeQuestion(((JSONObject) jQuestion).toJSONString(), parser));
+                  }
+
+                  String title = (String) jTopic.get(TOPIC_TITLE);
+                  LevelDescription testLevel = decodeLevel(((JSONObject) jTopic.get(TOPIC_TEST_LEVEL)).toJSONString(), parser);
+                  topic = new Topic(title, lessons, testQuestions, testLevel);
             } catch (ParseException pe) {
                   System.out.println("position: " + pe.getPosition());
                   System.out.println(pe);
@@ -116,12 +128,19 @@ public class JSONPort {
       public static JSONObject encodeTopic(Topic topic) {
             JSONObject jTopic = new JSONObject();
             jTopic.put(TOPIC_TITLE, topic.title);
+            jTopic.put(TOPIC_TEST_LEVEL, encodeLevel(topic.testLevel));
 
             JSONArray jLessons = new JSONArray();
             for (Lesson lesson: topic.lessons) {
                   jLessons.add(encodeLesson(lesson));
             }
             jTopic.put(LESSONS, jLessons);
+
+            JSONArray jTestQuestions = new JSONArray();
+            for (Question question: topic.testQuestions) {
+                  jTestQuestions.add(encodeQuestion(question));
+            }
+            jTopic.put(TOPIC_TEST_QUESTIONS, jTestQuestions);
 
             return jTopic;
       }
@@ -147,8 +166,9 @@ public class JSONPort {
                         questions.add(decodeQuestion(((JSONObject) question).toJSONString(), parser));
                   }
 
+                  LevelDescription learningLevel = decodeLevel(((JSONObject) jLesson.get(LESSON_LEVEL)).toJSONString(), parser);
                   String title =  (String) jLesson.get(LESSON_TITLE);
-                  lesson = new Lesson(title, facts, questions);
+                  lesson = new Lesson(title, facts, questions, learningLevel);
             } catch (ParseException pe) {
                   System.out.println("position: " + pe.getPosition());
                   System.out.println(pe);
@@ -171,6 +191,7 @@ public class JSONPort {
                   facts.add(encodeFact(fact));
             }
 
+            jLesson.put(LESSON_LEVEL, encodeLevel(lesson.learningLevel));
             jLesson.put(QUESTIONS, questions);
             jLesson.put(FACTS, facts);
             return jLesson;

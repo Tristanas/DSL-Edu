@@ -1,5 +1,7 @@
 package common.edu;
 
+import common.data.LevelDescription;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,12 +10,15 @@ public class Lesson implements Serializable {
     public final String title;
     public final ArrayList<Fact> facts;
     public final ArrayList<Question> questions;
+    public LevelDescription learningLevel;
 
-    public Lesson(String title, ArrayList<Fact> facts, ArrayList<Question> questions)
+    public Lesson(String title, ArrayList<Fact> facts, ArrayList<Question> questions, LevelDescription learningLevel)
     {
         this.facts = facts;
         this.title = title;
         this.questions = questions;
+        this.learningLevel = learningLevel;
+        learningLevel.setLearningGame(this);
     }
 
     public ArrayList<Fact> getRandomFacts(int amount) {
