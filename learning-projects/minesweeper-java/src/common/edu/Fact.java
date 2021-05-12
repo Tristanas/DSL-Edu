@@ -8,8 +8,8 @@ import java.awt.*;
 import java.io.Serializable;
 
 public class Fact implements Serializable {
-    public final String title;
-    public final String text;
+    public String title;
+    public String text;
 
     public Boolean unlocked;
     private final int windowHeight;

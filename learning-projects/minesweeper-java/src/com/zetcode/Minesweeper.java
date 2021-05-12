@@ -10,6 +10,7 @@ import common.edu.Topic;
 import common.ui.Board;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
+import common.ui.editor.FactEditor;
 import common.ui.editor.QuestionEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
@@ -43,7 +44,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int TOP_PADDING = 50;
     final int BOTTOM_PADDING = 50;
     final int MENU_WIDTH = 400;
-    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS + 400;
+    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS + 200;
 
     Board minesweeperBoard;
     JPanel menu, game;
@@ -105,12 +106,13 @@ public class Minesweeper extends JFrame implements ActionListener {
         addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
 
-        QuestionEditor qEditor = new QuestionEditor(appState.levels.get(0).lesson.questions.get(0), this);
-        menu.add(qEditor);
+        //QuestionEditor qEditor = new QuestionEditor(appState.levels.get(0).lesson.questions.get(0), this);
+        FactEditor fEditor = new FactEditor(appState.levels.get(0).lesson.facts.get(0), this);
+        menu.add(fEditor);
 
         JButton updateBtn = new JButton("Update");
         updateBtn.setActionCommand(UPDATE);
-        updateBtn.addActionListener(qEditor);
+        updateBtn.addActionListener(fEditor);
         updateBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
         menu.add(updateBtn);
     }

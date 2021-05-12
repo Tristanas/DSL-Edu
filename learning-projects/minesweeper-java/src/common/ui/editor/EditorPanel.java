@@ -1,5 +1,7 @@
 package common.ui.editor;
 
+import common.ui.JMultilineLabel;
+
 import static common.data.GameConstants.*;
 
 import javax.swing.*;
@@ -38,6 +40,16 @@ public abstract class EditorPanel extends JPanel implements ActionListener {
           textField.setAlignmentX(Component.LEFT_ALIGNMENT);
           container.add(textField);
           return textField;
+     }
+
+     public JTextArea addTextArea(Container container) {
+          JTextArea textArea = new JTextArea();
+          textArea.setAlignmentX(Component.LEFT_ALIGNMENT);
+          textArea.setLineWrap(true);
+          textArea.setWrapStyleWord(true);
+          //JScrollPane scrollPane = new JScrollPane(textArea);
+          container.add(textArea);
+          return textArea;
      }
 
      @Override

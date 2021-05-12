@@ -58,10 +58,12 @@ public class QuestionEditor extends EditorPanel {
     public void updateObject() {
         question.question = questionField.getText();
         question.correctAnswer = answers.get(0).getText();
+
+        String[] newAnswers = new String[answers.size()];
         int i = 0;
-        for (JTextField answerTB: answers) {
-            question.answers[i++] = answerTB.getText();
-        }
+        for (JTextField answerTB: answers)
+            newAnswers[i++] = answerTB.getText();
+        question.answers = newAnswers;
     }
 
     @Override
