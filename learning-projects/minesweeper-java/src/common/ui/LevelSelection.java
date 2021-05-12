@@ -36,9 +36,6 @@ public class LevelSelection extends JPanel {
     final int PAGE_WIDTH = LEFT_PADDING + RIGHT_PADDING + N_COLS * (BUTTON_SIZE + BUTTON_SPACING) + TITLE_FONT_SIZE;
     final int PAGE_HEIGHT;
 
-
-
-
     public LevelSelection(ArrayList<LevelDescription> levels, ActionListener actionListener) {
         super();
         this.levels = levels;
@@ -47,7 +44,6 @@ public class LevelSelection extends JPanel {
         N_ROWS = (int) java.lang.Math.ceil((float) levels.size() / N_COLS);
         PAGE_HEIGHT = TOP_PADDING + BOTTOM_PADDING + NAV_BAR_HEIGHT + (BUTTON_SPACING + BUTTON_SIZE) * N_ROWS;
         setPreferredSize(new Dimension(PAGE_WIDTH, PAGE_HEIGHT));
-
         initLayout();
     }
 

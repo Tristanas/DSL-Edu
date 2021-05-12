@@ -11,6 +11,7 @@ import common.ui.Board;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
 import common.ui.editor.FactEditor;
+import common.ui.editor.LevelEditor;
 import common.ui.editor.QuestionEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
@@ -107,12 +108,13 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
 
         //QuestionEditor qEditor = new QuestionEditor(appState.levels.get(0).lesson.questions.get(0), this);
-        FactEditor fEditor = new FactEditor(appState.levels.get(0).lesson.facts.get(0), this);
-        menu.add(fEditor);
+        //FactEditor fEditor = new FactEditor(appState.levels.get(0).lesson.facts.get(0), this);
+        LevelEditor lEditor = new LevelEditor(appState.levels.get(0), this);
+        menu.add(lEditor);
 
         JButton updateBtn = new JButton("Update");
         updateBtn.setActionCommand(UPDATE);
-        updateBtn.addActionListener(fEditor);
+        updateBtn.addActionListener(lEditor);
         updateBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
         menu.add(updateBtn);
     }
