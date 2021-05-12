@@ -1,11 +1,12 @@
-package common.ui;
+package common.ui.editor;
 
 import common.data.LevelDescription;
+import common.ui.editor.EditorPanel;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LevelEditor extends EditorPanel{
+public class LevelEditor extends EditorPanel {
     LevelDescription level;
 
     public LevelEditor(LevelDescription level, ActionListener listener) {

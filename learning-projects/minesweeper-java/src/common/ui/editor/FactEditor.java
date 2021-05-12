@@ -1,11 +1,12 @@
-package common.ui;
+package common.ui.editor;
 
 import common.edu.Fact;
+import common.ui.editor.EditorPanel;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class FactEditor extends EditorPanel{
+public class FactEditor extends EditorPanel {
     Fact fact;
 
     public FactEditor(Fact fact, ActionListener listener) {

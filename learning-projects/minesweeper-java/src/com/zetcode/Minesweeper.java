@@ -10,11 +10,10 @@ import common.edu.Topic;
 import common.ui.Board;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
-import common.ui.QuestionEditor;
+import common.ui.editor.QuestionEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
 import common.util.JSONPort;
-import org.json.simple.parser.JSONParser;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

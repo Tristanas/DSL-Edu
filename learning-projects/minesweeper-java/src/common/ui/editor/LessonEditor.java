@@ -1,4 +1,4 @@
-package common.ui;
+package common.ui.editor;
 
 import common.edu.Lesson;
 

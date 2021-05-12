@@ -1,7 +1,7 @@
-package common.ui;
+package common.ui.editor;
 
-import common.data.GameConstants;
 import common.edu.Question;
+import common.ui.editor.EditorPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -66,10 +66,9 @@ public class QuestionEditor extends EditorPanel {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        switch (e.getActionCommand()) {
-            case GameConstants.UPDATE:
-                updateObject();
-                break;
-        }
+        super.actionPerformed(e);
+
+        // Question editor specific actions: (add/remove question)
+
     }
 }

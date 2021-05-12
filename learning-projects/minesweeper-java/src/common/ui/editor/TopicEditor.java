@@ -1,7 +1,8 @@
-package common.ui;
+package common.ui.editor;
 
 import common.data.ApplicationState;
 import common.edu.Topic;
+import common.ui.editor.EditorPanel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
