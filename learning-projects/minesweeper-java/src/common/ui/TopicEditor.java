@@ -24,6 +24,16 @@ public class TopicEditor extends EditorPanel {
         initUI();
     }
 
+    @Override
+    public void updateFields() {
+
+    }
+
+    @Override
+    public void updateObject() {
+
+    }
+
     // Topic title, test questions, test level and lessons:
     public void initUI() {
 

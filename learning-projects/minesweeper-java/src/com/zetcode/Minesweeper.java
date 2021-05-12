@@ -10,6 +10,7 @@ import common.edu.Topic;
 import common.ui.Board;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
+import common.ui.QuestionEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
 import common.util.JSONPort;
@@ -43,7 +44,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int TOP_PADDING = 50;
     final int BOTTOM_PADDING = 50;
     final int MENU_WIDTH = 400;
-    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
+    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS + 400;
 
     Board minesweeperBoard;
     JPanel menu, game;
@@ -51,7 +52,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     public Minesweeper() {
         setupPaths();
         setupAppState();
-        testJSONPort();
+        //testJSONPort();
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
     }
@@ -62,7 +63,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     public void setupAppState() {
-        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
+        //appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
     }
 
@@ -104,6 +105,15 @@ public class Minesweeper extends JFrame implements ActionListener {
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
+
+        QuestionEditor qEditor = new QuestionEditor(appState.levels.get(0).lesson.questions.get(0), this);
+        menu.add(qEditor);
+
+        JButton updateBtn = new JButton("Update");
+        updateBtn.setActionCommand(UPDATE);
+        updateBtn.addActionListener(qEditor);
+        updateBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
+        menu.add(updateBtn);
     }
 
     private void showGame(LevelDescription level) {

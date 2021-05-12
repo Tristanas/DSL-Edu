@@ -12,6 +12,9 @@ public class GameConstants {
     public static final String EXIT = "Exit";
     public static final String REVEAL = "Reveal";
 
+    // Action strings for editing:
+    public static final String UPDATE = "Update";
+
     // Images/cell type counts:
     public static final int NUM_IMAGES = 14;
     public static final int NUM_EFFECTS = 3;  // implemented effects.

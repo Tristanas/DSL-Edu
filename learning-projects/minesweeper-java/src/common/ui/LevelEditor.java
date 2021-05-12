@@ -16,6 +16,16 @@ public class LevelEditor extends EditorPanel{
     }
 
     @Override
+    public void updateFields() {
+
+    }
+
+    @Override
+    public void updateObject() {
+
+    }
+
+    @Override
     public void initUI() {
 
     }
