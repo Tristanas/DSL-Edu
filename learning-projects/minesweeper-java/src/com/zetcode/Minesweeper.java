@@ -13,6 +13,7 @@ import common.ui.LevelSelection;
 import common.ui.editor.FactEditor;
 import common.ui.editor.LevelEditor;
 import common.ui.editor.QuestionEditor;
+import common.ui.editor.TopicEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
 import common.util.JSONPort;
@@ -102,7 +103,8 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
         addButton(PLAY, "Play in learning mode", menu);
-        addButton(GameConstants.TEST, "Play an evaluation game", menu);
+        //addButton(GameConstants.TEST, "Play an evaluation game", menu);
+        addButton(EDIT, "Create and edit topics, lessons, levels", menu);
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
@@ -152,6 +154,12 @@ public class Minesweeper extends JFrame implements ActionListener {
         pack();
     }
 
+    private void showTopicEditor() {
+        TopicEditor topicEditor = new TopicEditor(appState, this, this);
+        setContentPane(topicEditor);
+        pack();
+    }
+
     private void addButton(String text, String toolTip, Container container) {
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -185,6 +193,9 @@ public class Minesweeper extends JFrame implements ActionListener {
                 break;
             case TEST:
                 JOptionPane.showMessageDialog(this, "This will turn on the 'test' game mode.");
+                break;
+            case EDIT:
+                showTopicEditor();
                 break;
             case LESSONS:
                 showLearningPortfolio();

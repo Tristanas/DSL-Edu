@@ -30,6 +30,25 @@ public class LevelEditor extends EditorPanel {
     }
 
     @Override
+    public void initUI() {
+        layout = new GridLayout(0, 2);
+        setLayout(layout);
+
+        rows = addField("Rows:");
+        questions = addField("Questions:");
+        cols = addField("Columns:");
+        reveals = addField("Reveals:");
+        lives = addField("Lives:");
+        effects = addField("Effects:");
+        mines = addField("Mines:");
+        if (level.type == LevelDescription.GameType.learn) {
+            facts = addField("Facts:");
+        }
+
+        updateFields();
+    }
+
+    @Override
     public void updateFields() {
         rows.setText(Integer.toString(level.rows));
         cols.setText(Integer.toString(level.columns));
@@ -38,7 +57,9 @@ public class LevelEditor extends EditorPanel {
         questions.setText(Integer.toString(level.questionsCount));
         effects.setText(Integer.toString(level.effectsCount));
         reveals.setText(Integer.toString(level.startingReveals));
-        facts.setText(Integer.toString(level.factCount));
+        if (level.type == LevelDescription.GameType.learn) {
+            facts.setText(Integer.toString(level.factCount));
+        }
 
     }
 
@@ -51,24 +72,9 @@ public class LevelEditor extends EditorPanel {
         level.questionsCount = Integer.parseInt(questions.getText());
         level.effectsCount = Integer.parseInt( effects.getText());
         level.startingReveals = Integer.parseInt(reveals.getText());
-        level.factCount = Integer.parseInt(facts.getText());
-    }
-
-    @Override
-    public void initUI() {
-        layout = new GridLayout(0, 2);
-        setLayout(layout);
-
-        rows = addField("Rows:");
-        questions = addField("Questions:");
-        cols = addField("Columns:");
-        reveals = addField("Reveals:");
-        lives = addField("Lives:");
-        effects = addField("Effects:");
-        mines = addField("Mines:");
-        facts = addField("Facts:");
-
-        updateFields();
+        if (level.type == LevelDescription.GameType.learn) {
+            level.factCount = Integer.parseInt(facts.getText());
+        }
     }
 
     @Override
