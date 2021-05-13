@@ -46,7 +46,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     final int TOP_PADDING = 50;
     final int BOTTOM_PADDING = 50;
     final int MENU_WIDTH = 400;
-    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS + 200;
+    final int MENU_HEIGHT = TOP_PADDING + BOTTOM_PADDING + (BUTTON_SPACING + BUTTON_HEIGHT) * N_BUTTONS;
 
     Board minesweeperBoard;
     JPanel menu, game;

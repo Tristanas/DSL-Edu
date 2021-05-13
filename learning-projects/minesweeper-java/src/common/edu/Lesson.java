@@ -7,17 +7,23 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Lesson implements Serializable {
-    public final String title;
+    public String title;
     public final ArrayList<Fact> facts;
     public final ArrayList<Question> questions;
     public LevelDescription learningLevel;
 
-    public Lesson(String title, ArrayList<Fact> facts, ArrayList<Question> questions, LevelDescription learningLevel)
-    {
+    public Lesson(String title, ArrayList<Fact> facts, ArrayList<Question> questions, LevelDescription learningLevel) {
         this.facts = facts;
         this.title = title;
         this.questions = questions;
         this.learningLevel = learningLevel;
+        learningLevel.setLearningGame(this);
+    }
+
+    public Lesson() {
+        facts = new ArrayList<>();
+        questions = new ArrayList<>();
+        learningLevel = new LevelDescription();
         learningLevel.setLearningGame(this);
     }
 

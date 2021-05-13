@@ -2,8 +2,10 @@ package common.ui.editor;
 
 import common.data.ApplicationState;
 import common.data.GameConstants;
+import common.edu.Lesson;
 import common.edu.Question;
 import common.edu.Topic;
+import common.util.JSONPort;
 
 import javax.swing.*;
 import java.awt.*;
@@ -149,14 +151,7 @@ public class TopicEditor extends EditorPanel {
         lessonsList = new JPanel();
         lessonsList.setLayout(new BoxLayout(lessonsList, BoxLayout.Y_AXIS));
         int i = 0;
-        currTopic.lessons.forEach(lesson -> {
-            JButton lessonBtn = new JButton(lesson.title);
-            lessonBtn.addActionListener(e -> {
-                System.out.println("Trying to edit lesson: " + lesson.title);
-            });
-            lessonsList.add(lessonBtn);
-            lessonButtons.add(lessonBtn);
-        });
+        currTopic.lessons.forEach(this::addLesson);
 
         JScrollPane scrollPane = new JScrollPane(lessonsList);
         lessonsPanel.add(scrollPane, BorderLayout.CENTER);
@@ -167,29 +162,39 @@ public class TopicEditor extends EditorPanel {
         JPanel buttonsPanel = new JPanel();
 
         // Return to menu:
-        JButton button = new JButton("Back");
+        JButton button = addNavButton("Back", buttonsPanel);
         button.setActionCommand(GameConstants.MENU);
         button.addActionListener(parentListener);
-        buttonsPanel.add(button);
 
         // Add a new test question:
-        button = new JButton("Add question");
+        button = addNavButton("New Question", buttonsPanel);
         button.addActionListener(e -> addNewQuestion());
-        buttonsPanel.add(button);
 
-        // Save:
-        button = new JButton("Save");
-        button.setActionCommand(UPDATE);
-        button.addActionListener(this);
-        buttonsPanel.add(button);
+        // Add a new lesson:
+        button = addNavButton("New Lesson", buttonsPanel);
+        button.addActionListener(e -> addNewLesson());
 
         // Refresh - undo changes:
-        button = new JButton("Undo");
+        button = addNavButton("Undo", buttonsPanel);
         button.setActionCommand(REFRESH);
         button.addActionListener(this);
-        buttonsPanel.add(button);
+
+        // Save:
+        button = addNavButton("Save", buttonsPanel);
+        button.setActionCommand(UPDATE);
+        button.addActionListener(this);
+
+        // Export
+        button = addNavButton("Export", buttonsPanel);
+        button.addActionListener(e -> JSONPort.exportTopic(currTopic, "C:\\Users\\Vilius\\Desktop\\"));
 
         add(buttonsPanel, BorderLayout.SOUTH);
+    }
+
+    public JButton addNavButton(String text, JPanel container) {
+        JButton button = new JButton(text);
+        container.add(button);
+        return  button;
     }
 
     public JPanel createSectionTitle(String sectionTitle) {
@@ -214,6 +219,22 @@ public class TopicEditor extends EditorPanel {
         encapsulationPanel.add(questionEditor);
         questionsList.add(encapsulationPanel);
         questionEditors.add(questionEditor);
+    }
+
+    public void addNewLesson() {
+        Lesson newLesson = new Lesson();
+        addLesson(newLesson);
+        lessonsList.updateUI();
+        // show lesson editor page for the new lesson?
+    }
+
+    public void addLesson(Lesson lesson) {
+        JButton lessonBtn = new JButton(lesson.title);
+        lessonBtn.addActionListener(e -> {
+            System.out.println("Trying to edit lesson: " + lesson.title);
+        });
+        lessonsList.add(lessonBtn);
+        lessonButtons.add(lessonBtn);
     }
 
     @Override

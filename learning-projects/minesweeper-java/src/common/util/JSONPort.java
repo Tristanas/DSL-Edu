@@ -54,6 +54,11 @@ public class JSONPort {
       private static final String LEVEL_REVEALS = "reveals";
       private static final String LEVEL_TYPE = "type";
 
+      /**
+       * Exports a topic to a JSON file in a specific folder. The file is named based on the topic title.
+       * @param topic the object to export.
+       * @param path the location of the folder where the JSON file will be placed. Path should end with a "/" symbol.
+       */
       public static void exportTopic(Topic topic, String path) {
             try {
                   String fileName = "EXPORT " + topic.title + ".json";
