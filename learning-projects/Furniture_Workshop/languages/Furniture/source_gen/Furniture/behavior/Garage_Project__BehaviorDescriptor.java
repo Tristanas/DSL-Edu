@@ -36,8 +36,8 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static int getExpenses_id7CxxUaMfVk1(@NotNull SNode __thisNode__) {
     int expenses = 0;
-    for (SNode component : SLinkOperations.getChildren(__thisNode__, LINKS.components$11R7)) {
-      expenses += SPropertyOperations.getInteger(SLinkOperations.getTarget(component, LINKS.component$11Du), PROPS.price$3BB7) * SPropertyOperations.getInteger(component, PROPS.quantity$11Cw);
+    for (SNode component : SLinkOperations.getChildren(__thisNode__, LINKS.components$_S9g)) {
+      expenses += SPropertyOperations.getInteger(SLinkOperations.getTarget(component, LINKS.component$_Lyp), PROPS.price$Qapg) * SPropertyOperations.getInteger(component, PROPS.quantity$_L4n);
     }
     return expenses;
   }
@@ -94,12 +94,12 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink components$11R7 = MetaAdapterFactory.getContainmentLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5b1L, 0x7a2187a2b23dc5b6L, "components");
-    /*package*/ static final SReferenceLink component$11Du = MetaAdapterFactory.getReferenceLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5afL, "component");
+    /*package*/ static final SContainmentLink components$_S9g = MetaAdapterFactory.getContainmentLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5b1L, 0x7a2187a2b23dc5b6L, "components");
+    /*package*/ static final SReferenceLink component$_Lyp = MetaAdapterFactory.getReferenceLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5afL, "component");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty quantity$11Cw = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5adL, "quantity");
-    /*package*/ static final SProperty price$3BB7 = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23c5e16L, 0x7a2187a2b23c5e1bL, "price");
+    /*package*/ static final SProperty quantity$_L4n = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5adL, "quantity");
+    /*package*/ static final SProperty price$Qapg = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23c5e16L, 0x7a2187a2b23c5e1bL, "price");
   }
 }

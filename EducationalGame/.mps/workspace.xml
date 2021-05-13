@@ -20,7 +20,14 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="" />
+    <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/mathsweeper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/minesweeper-save.ser" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/minesweeper-save.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common/ui/editor/LevelEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common/ui/editor/LevelEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common/util/GameWindowListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common/util/GameWindowListener.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +39,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="961ea621-4504-4ea4-930c-527aa9894e56/r:2ffc44db-fe80-4530-bd3d-0123f02982fa(TempModule961ea621-4504-4ea4-930c-527aa9894e56/ConsoleModel_1072189404969200)">
+            <model ref="97906df0-2299-4062-9b20-2a9cffe5bede/r:94768aca-55c5-41e0-9a74-42fe612e8cf4(TempModule97906df0-2299-4062-9b20-2a9cffe5bede/ConsoleModel_1166548993698300)">
               <persistence version="9" />
               <languages>
                 <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
@@ -87,256 +94,256 @@
                   </concept>
                 </language>
               </registry>
-              <node concept="aymSD" id="1DKwcNq88MF">
-                <node concept="3balQm" id="1DKwcNq88MG" role="aymYE">
-                  <node concept="2Clz$F" id="1DKwcNq88MH" role="18xWvz">
-                    <node concept="25zly9" id="1DKwcNq88MI" role="2Clzx4">
-                      <node concept="1dCxOl" id="1DKwcNq88MJ" role="hHs2v">
+              <node concept="aymSD" id="33A2dllpouy">
+                <node concept="3balQm" id="33A2dllpouz" role="aymYE">
+                  <node concept="2Clz$F" id="33A2dllpou$" role="18xWvz">
+                    <node concept="25zly9" id="33A2dllpou_" role="2Clzx4">
+                      <node concept="1dCxOl" id="33A2dllpouA" role="hHs2v">
                         <property role="1XweGQ" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68" />
-                        <node concept="1j_P7g" id="1DKwcNq88MK" role="1j$8Uc">
+                        <node concept="1j_P7g" id="33A2dllpouB" role="1j$8Uc">
                           <property role="1j_P7h" value="Minesweeper.sandbox" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="ZBF_j" id="1DKwcNq88ML" role="18xWvz">
-                    <node concept="Zy5XD" id="1DKwcNq88MM" role="Zy5mW">
+                  <node concept="ZBF_j" id="33A2dllpouC" role="18xWvz">
+                    <node concept="Zy5XD" id="33A2dllpouD" role="Zy5mW">
                       <property role="Zy5T0" value="---------------------  mappings partitioning  -----------------------------------" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88MN" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88MO" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88MP" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouE" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpouF" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouG" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 1 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88MQ" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88MR" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouH" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouI" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88MS" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88MT" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpouJ" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpouK" role="Zy5X4">
                         <property role="3QmkSK" value="1f3698ec-8a44-4aaa-b907-0ac2077d80a4" />
                         <property role="3QjdP_" value="jetbrains.mps.lang.core.generator.template.main.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88MU" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88MV" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88MW" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouL" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpouM" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouN" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 2 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88MX" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88MY" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouO" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouP" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88MZ" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88N0" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpouQ" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpouR" role="Zy5X4">
                         <property role="3QmkSK" value="e12af3e9-8538-46c4-8b97-41ac8896ba44" />
                         <property role="3QjdP_" value="main.*" />
                       </node>
                     </node>
-                    <node concept="Zy5XD" id="1DKwcNq88N1" role="Zy5mW">
+                    <node concept="Zy5XD" id="33A2dllpouS" role="Zy5mW">
                       <property role="Zy5T0" value=" [Minesweeper#01]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88N2" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88N3" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88N4" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouT" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpouU" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouV" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 3 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88N5" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88N6" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpouW" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpouX" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88N7" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88N8" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpouY" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpouZ" role="Zy5X4">
                         <property role="3QmkSK" value="857d0a79-6f44-4f46-84ed-9c5b42632011" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main.preproc" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88N9" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88Na" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Nb" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpov0" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpov1" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpov2" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 4 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nc" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Nd" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpov3" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpov4" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88Ne" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88Nf" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpov5" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpov6" role="Zy5X4">
                         <property role="3QmkSK" value="857d0a79-6f44-4f46-84ed-9c5b42632011" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main.main" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Ng" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88Nh" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Ni" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpov7" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpov8" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpov9" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 5 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nj" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Nk" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpova" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovb" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88Nl" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88Nm" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovc" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovd" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.properties.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nn" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88No" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Np" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpove" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpovf" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovg" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 6 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nq" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Nr" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovh" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovi" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88Ns" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88Nt" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovj" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovk" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.references.desugar" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nu" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88Nv" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Nw" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovl" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpovm" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovn" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 7 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Nx" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Ny" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovo" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovp" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88Nz" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88N$" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovq" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovr" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.references.main" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88N_" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88NA" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NB" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovs" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpovt" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovu" role="Zy5mW">
                       <property role="Zy5T0" value=" [ 8 ]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NC" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88ND" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovv" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovw" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88NE" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88NF" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovx" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovy" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.closures.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NG" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NH" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovz" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpov$" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88NI" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88NJ" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpov_" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovA" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.main.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NK" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NL" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovB" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovC" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88NM" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88NN" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovD" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovE" role="Zy5X4">
                         <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.strings.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NO" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NP" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovF" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovG" role="Zy5mW">
                       <property role="Zy5T0" value=" " />
                     </node>
-                    <node concept="Zy5X5" id="1DKwcNq88NQ" role="Zy5mW">
-                      <node concept="3QjmSW" id="1DKwcNq88NR" role="Zy5X4">
+                    <node concept="Zy5X5" id="33A2dllpovH" role="Zy5mW">
+                      <node concept="3QjmSW" id="33A2dllpovI" role="Zy5X4">
                         <property role="3QmkSK" value="46ef3033-ce72-4166-b19e-6ceed23b6844" />
                         <property role="3QjdP_" value="jetbrains.mps.baseLanguageInternal.generator.template.main.*" />
                       </node>
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NS" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88NT" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NU" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovJ" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpovK" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovL" role="Zy5mW">
                       <property role="Zy5T0" value="---------------------------------------------------------------------------------" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NV" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NW" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovM" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovN" role="Zy5mW">
                       <property role="Zy5T0" value="Model directly uses next languages (including explicitly engaged, if any):" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NX" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88NY" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovO" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovP" role="Zy5mW">
                       <property role="Zy5T0" value="  Minesweeper" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88NZ" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88O0" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovQ" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovR" role="Zy5mW">
                       <property role="Zy5T0" value="=================================" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88O1" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88O2" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovS" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovT" role="Zy5mW">
                       <property role="Zy5T0" value="Engaged generators with trace:" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88O3" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88O4" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovU" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovV" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88O5" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88O6" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovW" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovX" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.lang.core/generator as OWNED through [EngagedLanguage: jetbrains.mps.lang.core as EXTENDS through [EngagedLanguage: Minesweeper]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88O7" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88O8" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpovY" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpovZ" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88O9" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Oa" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpow0" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpow1" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage.closures/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage.closures as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Ob" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Oc" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpow2" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpow3" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as EXTENDED GENERATOR through [EngagedGenerator: jetbrains.mps.baseLanguage.closures/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage.closures as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Od" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Oe" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpow4" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpow5" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguageInternal/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguageInternal as GENERATES INTO through [EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Of" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Og" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpow6" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpow7" role="Zy5mW">
                       <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as EXTENDED GENERATOR through [EngagedGenerator: jetbrains.mps.baseLanguageInternal/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguageInternal as GENERATES INTO through [EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]]]" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Oh" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Oi" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpow8" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpow9" role="Zy5mW">
                       <property role="Zy5T0" value="=================================" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Oj" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Ok" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpowa" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpowb" role="Zy5mW">
                       <property role="Zy5T0" value="1 roots, 1 components" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Ol" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Om" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpowc" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpowd" role="Zy5mW">
                       <property role="Zy5T0" value="#0(1):  MathSweeper" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88On" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88Oo" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="1DKwcNq88Op" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Oq" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpowe" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpowf" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpowg" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpowh" role="Zy5mW">
                       <property role="Zy5T0" value="Strong:" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Or" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Os" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpowi" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpowj" role="Zy5mW">
                       <property role="Zy5T0" value="1 roots, 1 components" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Ot" role="Zy5mW" />
-                    <node concept="Zy5XD" id="1DKwcNq88Ou" role="Zy5mW">
+                    <node concept="Zy5Tx" id="33A2dllpowk" role="Zy5mW" />
+                    <node concept="Zy5XD" id="33A2dllpowl" role="Zy5mW">
                       <property role="Zy5T0" value="#0(1):  MathSweeper" />
                     </node>
-                    <node concept="Zy5Tx" id="1DKwcNq88Ov" role="Zy5mW" />
+                    <node concept="Zy5Tx" id="33A2dllpowm" role="Zy5mW" />
                   </node>
                 </node>
-                <node concept="2Clz$F" id="1DKwcNq88Ow" role="aymYO" />
-                <node concept="2_V_lH" id="1DKwcNq88Ox" role="1PhJh3">
-                  <ref role="2_V_lI" node="1DKwcNq88Ow" resolve="CommandHolder" />
+                <node concept="2Clz$F" id="33A2dllpown" role="aymYO" />
+                <node concept="2_V_lH" id="33A2dllpowo" role="1PhJh3">
+                  <ref role="2_V_lI" node="33A2dllpown" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -473,6 +480,265 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Education.sandbox/models/Education.sandbox.lessons.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClassStubModelDescriptor com.zetcode@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClassStubModelDescriptor common.ui@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
       <pane id="FileSystem">
         <subPane>
           <expand>
@@ -543,87 +809,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ce6ad31d-75bc-4f87-98cf-cce06e26c44d" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -634,8 +819,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/common" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/Furniture_Workshop" />
+    <property name="settings.editor.selected.configurable" value="mps.compiler" />
   </component>
   <component name="RunManager" selected="Java Application.Node MathSweeper (1)">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">

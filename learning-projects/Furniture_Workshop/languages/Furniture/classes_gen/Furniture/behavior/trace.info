@@ -30,7 +30,7 @@
       <node id="8800464279703625494" at="57,14,58,58" concept="10" />
       <node id="8800464279703625494" at="64,48,65,22" concept="6" />
       <node id="8800464279703625494" at="70,40,71,19" concept="6" />
-      <node id="8800464279703625494" at="75,0,76,0" concept="7" trace="quantity$11Cw" />
+      <node id="8800464279703625494" at="75,0,76,0" concept="7" trace="quantity$_L4n" />
       <node id="8800464279703625494" at="30,0,32,0" concept="0" trace="Project_Component__BehaviorDescriptor#()V" />
       <node id="8800464279703625494" at="25,0,28,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8800464279703625494" at="40,49,43,5" concept="3" />
@@ -103,10 +103,10 @@
       <node id="8800464279703652947" at="79,14,80,58" concept="10" />
       <node id="8800464279703652947" at="86,48,87,22" concept="6" />
       <node id="8800464279703652947" at="92,40,93,19" concept="6" />
-      <node id="8800464279703652947" at="97,0,98,0" concept="7" trace="components$11R7" />
-      <node id="8800464279703652947" at="98,0,99,0" concept="7" trace="component$11Du" />
-      <node id="8800464279703652947" at="102,0,103,0" concept="7" trace="quantity$11Cw" />
-      <node id="8800464279703652947" at="103,0,104,0" concept="7" trace="price$3BB7" />
+      <node id="8800464279703652947" at="97,0,98,0" concept="7" trace="components$_S9g" />
+      <node id="8800464279703652947" at="98,0,99,0" concept="7" trace="component$_Lyp" />
+      <node id="8800464279703652947" at="102,0,103,0" concept="7" trace="quantity$_L4n" />
+      <node id="8800464279703652947" at="103,0,104,0" concept="7" trace="price$Qapg" />
       <node id="8800464279703652947" at="34,0,36,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8800464279703652947" at="48,0,50,0" concept="0" trace="Garage_Project__BehaviorDescriptor#()V" />
       <node id="8800464279703632164" at="38,21,41,5" concept="2" />

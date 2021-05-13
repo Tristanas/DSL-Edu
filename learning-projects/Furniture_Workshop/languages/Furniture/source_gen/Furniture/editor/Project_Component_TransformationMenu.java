@@ -85,12 +85,12 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_a0a(), new TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_Action_y47kfc_a0a(), new TMP_Action_y47kfc_b0a());
     }
     private class TMP_Action_y47kfc_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_a0a.Item item = new TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_a0a.Item(context);
+        Item item = new Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -125,13 +125,13 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$11Cw, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$11Cw) - 1);
+          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$_L4n, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$_L4n) - 1);
           _context.getEditorContext().getEditorComponent().update();
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$11Cw) > 0;
+          return SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$_L4n) > 0;
         }
 
         @Override
@@ -155,7 +155,7 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
     private class TMP_Action_y47kfc_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_b0a.Item item = new TMP_SubMenu_y47kfc_a0.TMP_Action_y47kfc_b0a.Item(context);
+        Item item = new Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -190,7 +190,7 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$11Cw, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$11Cw) + 1);
+          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$_L4n, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$_L4n) + 1);
           _context.getEditorContext().getEditorComponent().update();
         }
 
@@ -216,6 +216,6 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty quantity$11Cw = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5adL, "quantity");
+    /*package*/ static final SProperty quantity$_L4n = MetaAdapterFactory.getProperty(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5adL, "quantity");
   }
 }

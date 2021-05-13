@@ -28,7 +28,7 @@ public class Project_Component_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_fnwasw_a(), CONCEPTS.Project_Component$_f));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_fnwasw_a(), CONCEPTS.Project_Component$26));
     result.add(new SMP_Subconcepts_fnwasw_b());
     return result;
   }
@@ -50,7 +50,7 @@ public class Project_Component_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_fnwasw_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.Project_Component$_f, LINKS.component$11Du);
+      super((SAbstractConcept) CONCEPTS.Project_Component$26, LINKS.component$_Lyp);
     }
     @NotNull
     @Override
@@ -67,7 +67,7 @@ public class Project_Component_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_fnwasw_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Project_Component$_f);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Project_Component$26);
     }
     @NotNull
     @Override
@@ -88,10 +88,10 @@ public class Project_Component_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Project_Component$_f = MetaAdapterFactory.getConcept(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, "Furniture.structure.Project_Component");
+    /*package*/ static final SConcept Project_Component$26 = MetaAdapterFactory.getConcept(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, "Furniture.structure.Project_Component");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink component$11Du = MetaAdapterFactory.getReferenceLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5afL, "component");
+    /*package*/ static final SReferenceLink component$_Lyp = MetaAdapterFactory.getReferenceLink(0xe2c2524837734879L, 0x8bfc859bbe4db0d8L, 0x7a2187a2b23dc5acL, 0x7a2187a2b23dc5afL, "component");
   }
 }

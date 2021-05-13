@@ -6,7 +6,249 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aebf39b-dfdc-4d6c-a651-8e10c8252899" name="Default Changelist" comment="" />
+    <list default="true" id="0aebf39b-dfdc-4d6c-a651-8e10c8252899" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../EducationalGame/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/mathsweeper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/CSS/sandbox/source_gen.caches/CSS/sandbox/dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/CSS/sandbox/source_gen.caches/CSS/sandbox/generated" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/CSS/sandbox/source_gen/CSS/sandbox/mydoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/CSS/sandbox/source_gen/CSS/sandbox/styling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/CSS/sandbox/source_gen/CSS/sandbox/trace.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculator/.mps/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shapes/.mps/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EducationalGame/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../EducationalGame/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EducationalGame/languages/Minesweeper/sandbox/minesweeper-save.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../EducationalGame/languages/Minesweeper/sandbox/minesweeper-save.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/CSS.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/CSS.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$declarationsListHandler_rzgwi8_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a$declarationsListHandler_rzgwi8_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$rulesetsListHandler_hc7gre_d0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a$rulesetsListHandler_hc7gre_d0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_File_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$blockSingleRoleHandler_ttmz9d_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$blockSingleRoleHandler_ttmz9d_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$selectorsListHandler_ttmz9d_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a$selectorsListHandler_ttmz9d_a0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/CSS_Selector_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_block_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_block_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_block_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Declaration_block_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_File_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_File_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_File_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_File_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Ruleset_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Ruleset_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Ruleset_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Ruleset_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Selector_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Selector_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Selector_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/CSS_Selector_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/classes_gen/CSS/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/models/CSS.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/models/CSS.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/sandbox/CSS.sandbox.msd" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/sandbox/CSS.sandbox.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen.caches/CSS/structure/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Declaration_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Declaration_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Declaration_block_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_File_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_File_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Ruleset_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Selector_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/CSS_Selector_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Declaration_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Declaration_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Declaration_block_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Declaration_block_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_File_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_File_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Ruleset_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Ruleset_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Selector_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/CSS_Selector_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/CSS/source_gen/CSS/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Basic CSS.build/Basic CSS.build.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Basic CSS.build/Basic CSS.build.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$inputFieldListHandler_uh00px_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$inputFieldListHandler_uh00px_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$outputFieldListHandler_uh00px_e0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$outputFieldListHandler_uh00px_e0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$expressionSingleRoleHandler_57hct5_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$expressionSingleRoleHandler_57hct5_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/generator/templates/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/generator/templates/main@generator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/models/vu.mif.calculator.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/models/vu.mif.calculator.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/sandbox/models/vu.mif.calculator.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/sandbox/models/vu.mif.calculator.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/sandbox/vu.mif.calculator.sandbox.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/sandbox/vu.mif.calculator.sandbox.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/vu.mif.calculator.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/languages/vu.mif.calculator/vu.mif.calculator.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/Furniture.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/Furniture.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Project_Component__BehaviorDescriptor$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Project_Component__BehaviorDescriptor$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Project_Component__BehaviorDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/Project_Component__BehaviorDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Component_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$componentsListHandler_skj745_k0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$componentsListHandler_skj745_k0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$descriptionListHandler_skj745_h0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a$descriptionListHandler_skj745_h0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Garage_Project_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$Inline_Builder0$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$SMP_ReferenceScope_fnwasw_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$SMP_ReferenceScope_fnwasw_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$SMP_Subconcepts_fnwasw_b.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu$SMP_Subconcepts_fnwasw_b.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_SubstituteMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$TMP_SubMenu_y47kfc_a0$TMP_Action_y47kfc_a0a$Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$TMP_SubMenu_y47kfc_a0$TMP_Action_y47kfc_a0a$Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$TMP_SubMenu_y47kfc_a0$TMP_Action_y47kfc_b0a$Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Project_Component_TransformationMenu$TMP_SubMenu_y47kfc_a0$TMP_Action_y47kfc_b0a$Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/TextLine_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$componentsListHandler_ex0eac_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/Warehouse_EditorBuilder_a$componentsListHandler_ex0eac_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/classes_gen/Furniture/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$IfMC.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$IfMC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$PVQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$PVQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$SNsQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated$SNsQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/QueriesGenerated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/classes_gen/main/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen.caches/Furniture/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen.caches/Furniture/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen.caches/main/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen.caches/main/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/generator/source_gen/main/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/models/Furniture.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen.caches/Furniture/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/Garage_Project__BehaviorDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/Project_Component__BehaviorDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/Project_Component__BehaviorDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Component_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Component_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Garage_Project_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Garage_Project_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_SubstituteMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_TransformationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Project_Component_TransformationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/TextLine_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/TextLine_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Warehouse_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/Warehouse_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/Furniture/source_gen/Furniture/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/HTML.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/HTML.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$documentSingleRoleHandler_ykiwdu_d0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a$documentSingleRoleHandler_ykiwdu_d0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/HtmlFile_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/HtmlFile_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/HtmlFile_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/HtmlFile_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/HtmlFile_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/classes_gen/HTML/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/generator/source_gen.caches/HTML/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/generator/source_gen.caches/HTML/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/models/HTML.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/models/HTML.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen.caches/HTML/structure/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/editor/HtmlFile_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/editor/HtmlFile_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/HtmlFile_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/HtmlFile_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Furniture_Workshop/languages/HTML/source_gen/HTML/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/Shapes.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/Shapes.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Canvas_EditorBuilder_a$shapesListHandler_v161ay_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Canvas_EditorBuilder_a$shapesListHandler_v161ay_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Canvas_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Canvas_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Circle_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Circle_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ColorReference_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ColorReference_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ColorReference_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ColorReference_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Color_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Color_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ShapeColor_ComponentBuilder_a$colorSingleRoleHandler_mblc8h_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/ShapeColor_ComponentBuilder_a$colorSingleRoleHandler_mblc8h_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Square_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/classes_gen/Shapes/editor/Square_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/models/Shapes.colors.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/models/Shapes.colors.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/models/Shapes.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/models/Shapes.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shapes/languages/Shapes/sandbox/Shapes.sandbox.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../Shapes/languages/Shapes/sandbox/Shapes.sandbox.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../minesweeper-java/src/com/zetcode/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minesweeper-java/src/com/zetcode/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../minesweeper-java/src/common/ui/editor/LevelEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minesweeper-java/src/common/ui/editor/LevelEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../minesweeper-java/src/common/util/GameWindowListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minesweeper-java/src/common/util/GameWindowListener.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +260,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="bd56dce7-348b-44e6-94ca-cb833f39dc6e/r:0ff760e1-7715-4292-b521-fb24fc3958d4(TempModulebd56dce7-348b-44e6-94ca-cb833f39dc6e/ConsoleModel_150676769702300)">
+            <model ref="4a067f3b-d46f-41a1-b86b-3e0a3900c1f5/r:8b310560-d149-4af0-a016-cc2e12281ae9(TempModule4a067f3b-d46f-41a1-b86b-3e0a3900c1f5/ConsoleModel_1166795760334200)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -38,11 +280,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1ii6wQuYMsq">
-                <node concept="3balQm" id="1ii6wQuYMsr" role="aymYE" />
-                <node concept="2Clz$F" id="1ii6wQuYMss" role="aymYO" />
-                <node concept="2_V_lH" id="1ii6wQuYMst" role="1PhJh3">
-                  <ref role="2_V_lI" node="1ii6wQuYMss" resolve="CommandHolder" />
+              <node concept="aymSD" id="33A2dllpzgS">
+                <node concept="3balQm" id="33A2dllpzgT" role="aymYE" />
+                <node concept="2Clz$F" id="33A2dllpzgU" role="aymYO" />
+                <node concept="2_V_lH" id="33A2dllpzgV" role="1PhJh3">
+                  <ref role="2_V_lI" node="33A2dllpzgU" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -63,6 +305,9 @@
         <flags show_one_result="true" new_tab="false" />
       </view>
     </search_options>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MPSBookmarkManager">
     <option name="myBookmarkInfos">
@@ -90,8 +335,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1bJ1tWDclb6OZSma0h7GZmazvoB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
     <option name="pluginsState">
+      <option name="de.itemis.mps.editor.celllayout.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.itemis.mps.selection.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
       <option name="jetbrains.mps.baseLanguage.lightweightdsl.pluginSolution.plugin.PluginSolution_ProjectPlugin">
         <value>
           <PluginState />
@@ -140,6 +396,11 @@
           <PluginState />
         </value>
       </option>
+      <option name="jetbrains.mps.lang.editor.tooltips.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
       <option name="jetbrains.mps.vcs.mergehints.plugin.plugin.Plugin_ProjectPlugin">
         <value>
           <PluginState />
@@ -148,8 +409,141 @@
     </option>
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" />
+    <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d8df13e6-0112-4836-8fb6-9a2b711575e2(CSS.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/learning-projects/Basic CSS/languages/CSS/sandbox/models/CSS.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jetbrains" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic CSS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3878803e-e0fa-4e92-aead-28bec22159e1(CSS)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="FileSystem">
         <subPane>
           <expand>
@@ -160,183 +554,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure) in IdeaFile[path: C:/Program Files/JetBrains/MPS 2019.3/languages/xml/jetbrains.mps.core.xml-src.jar!/module/languageModels/structure.mpb]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3878803e-e0fa-4e92-aead-28bec22159e1(CSS)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d91bc01a-6ff4-4d04-a679-55876296782b" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d8df13e6-0112-4836-8fb6-9a2b711575e2(CSS.sandbox) in IdeaFile[path: C:/Users/Vilius/MPSProjects/Basic CSS/languages/CSS/sandbox/models/CSS.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3878803e-e0fa-4e92-aead-28bec22159e1(CSS)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -364,6 +591,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -383,39 +611,5 @@
     <default_view_options>
       <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
     </default_view_options>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="506" y="212" key="#MPSPropertiesConfigurable" timestamp="1588347052867">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="506" y="212" key="#MPSPropertiesConfigurable/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588347052867" />
-    <state width="1557" height="230" key="GridCell.Tab.0.bottom" timestamp="1588340275292">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="230" key="GridCell.Tab.0.bottom/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588340275292" />
-    <state width="1557" height="230" key="GridCell.Tab.0.center" timestamp="1588340275292">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="230" key="GridCell.Tab.0.center/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588340275292" />
-    <state width="1557" height="230" key="GridCell.Tab.0.left" timestamp="1588340275292">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="230" key="GridCell.Tab.0.left/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588340275292" />
-    <state width="1557" height="230" key="GridCell.Tab.0.right" timestamp="1588340275292">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="230" key="GridCell.Tab.0.right/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588340275292" />
-    <state x="303" y="75" key="SettingsEditor" timestamp="1588357136012">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="303" y="75" key="SettingsEditor/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588357136012" />
-    <state x="508" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1588357168646">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="508" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588357168646" />
-    <state x="559" y="231" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1588347050742">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="559" y="231" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860/-169.-1080.1920.1040@0.0.1600.860" timestamp="1588347050742" />
   </component>
 </project>

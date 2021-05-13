@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 public class LevelEditor extends EditorPanel {
     LevelDescription level;
     GridLayout layout;
+    String caption = "Level:";
 
     // Fields:
     JTextField rows;
@@ -25,25 +26,36 @@ public class LevelEditor extends EditorPanel {
     public LevelEditor(LevelDescription level, ActionListener listener) {
         super(listener);
         this.level = level;
-
+        if (level.type == LevelDescription.GameType.learn) caption = "Learning level:";
+        else caption = "Test level:";
         initUI();
     }
 
     @Override
     public void initUI() {
-        layout = new GridLayout(0, 2);
-        setLayout(layout);
+        setLayout(new BorderLayout());
 
-        rows = addField("Rows:");
-        questions = addField("Questions:");
-        cols = addField("Columns:");
-        reveals = addField("Reveals:");
-        lives = addField("Lives:");
-        effects = addField("Effects:");
-        mines = addField("Mines:");
+        // Caption:
+        JLabel label = new JLabel(caption);
+        label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        add(label, BorderLayout.NORTH);
+
+        // Level info:
+        JPanel levelInfo = new JPanel();
+        layout = new GridLayout(0, 2);
+        levelInfo.setLayout(layout);
+
+        rows = addField("Rows:", levelInfo);
+        questions = addField("Questions:", levelInfo);
+        cols = addField("Columns:", levelInfo);
+        reveals = addField("Reveals:", levelInfo);
+        lives = addField("Lives:", levelInfo);
+        effects = addField("Effects:", levelInfo);
+        mines = addField("Mines:", levelInfo);
         if (level.type == LevelDescription.GameType.learn) {
-            facts = addField("Facts:");
+            facts = addField("Facts:", levelInfo);
         }
+        add(levelInfo, BorderLayout.CENTER);
 
         updateFields();
     }
@@ -89,13 +101,13 @@ public class LevelEditor extends EditorPanel {
      * @param label - text which describes the text field.
      * @return reference to the text field.
      */
-    public JTextField addField(String label) {
+    public JTextField addField(String label, JPanel container) {
         JTextField field = new JTextField();
         field.setPreferredSize(new Dimension(80,24));
         JPanel cellPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Try right later.
         addLabel(label, cellPanel);
         cellPanel.add(field);
-        add(cellPanel);
+        container.add(cellPanel);
         return field;
     }
 }

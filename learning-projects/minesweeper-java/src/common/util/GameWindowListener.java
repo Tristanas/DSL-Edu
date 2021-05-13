@@ -24,7 +24,7 @@ public class GameWindowListener implements WindowListener {
     @Override
     public void windowClosing(WindowEvent e) {
         System.out.println("Closing application");
-        System.out.println("Saving application sate");
+        System.out.println("Saving application state");
         ApplicationState.serializeAppState(appState, saveFileLocation);
         System.exit(0);
     }

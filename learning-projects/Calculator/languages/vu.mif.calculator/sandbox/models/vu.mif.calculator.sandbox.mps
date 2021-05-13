@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="433d109b-b772-4d40-8869-1370db4e5853" name="vu.mif.calculator" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports />
   <registry>

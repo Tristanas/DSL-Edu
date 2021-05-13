@@ -13,10 +13,10 @@ public class HtmlFile_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.document$qgEY));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.document$uVWx));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink document$qgEY = MetaAdapterFactory.getContainmentLink(0xf1f3a555bd3a4398L, 0xaebb78c7c4134995L, 0x7a2187a2b23c3f19L, 0x7a2187a2b23c3f1cL, "document");
+    /*package*/ static final SContainmentLink document$uVWx = MetaAdapterFactory.getContainmentLink(0xf1f3a555bd3a4398L, 0xaebb78c7c4134995L, 0x7a2187a2b23c3f19L, 0x7a2187a2b23c3f1cL, "document");
   }
 }

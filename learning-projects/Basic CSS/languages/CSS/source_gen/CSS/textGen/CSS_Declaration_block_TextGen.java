@@ -17,7 +17,7 @@ public class CSS_Declaration_block_TextGen extends TextGenDescriptorBase {
     tgs.append("{");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.declarations$xxdw)) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.declarations$A44O)) {
       tgs.appendNode(item);
     }
     ctx.getBuffer().area().decreaseIndent();
@@ -26,6 +26,6 @@ public class CSS_Declaration_block_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink declarations$xxdw = MetaAdapterFactory.getContainmentLink(0x3878803ee0fa4e92L, 0xaead28bec22159e1L, 0x7a2187a2b23a4234L, 0x7a2187a2b23a4235L, "declarations");
+    /*package*/ static final SContainmentLink declarations$A44O = MetaAdapterFactory.getContainmentLink(0x3878803ee0fa4e92L, 0xaead28bec22159e1L, 0x7a2187a2b23a4234L, 0x7a2187a2b23a4235L, "declarations");
   }
 }

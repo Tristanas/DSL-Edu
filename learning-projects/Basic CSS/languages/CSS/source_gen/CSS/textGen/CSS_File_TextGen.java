@@ -14,12 +14,12 @@ public class CSS_File_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.rulesets$xxq9)) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.rulesets$AacF)) {
       tgs.appendNode(item);
     }
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink rulesets$xxq9 = MetaAdapterFactory.getContainmentLink(0x3878803ee0fa4e92L, 0xaead28bec22159e1L, 0x7a2187a2b23a4237L, 0x7a2187a2b23a423aL, "rulesets");
+    /*package*/ static final SContainmentLink rulesets$AacF = MetaAdapterFactory.getContainmentLink(0x3878803ee0fa4e92L, 0xaead28bec22159e1L, 0x7a2187a2b23a4237L, 0x7a2187a2b23a423aL, "rulesets");
   }
 }
