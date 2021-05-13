@@ -2,7 +2,6 @@ package common.ui.editor;
 
 import common.edu.Fact;
 import common.ui.JMultilineLabel;
-import common.ui.editor.EditorPanel;
 
 import javax.swing.*;
 import java.awt.*;

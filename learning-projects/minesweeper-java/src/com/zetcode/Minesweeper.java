@@ -65,7 +65,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     public void setupAppState() {
-        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
+        //appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
     }
 
@@ -108,17 +108,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);
         menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
-
-        //QuestionEditor qEditor = new QuestionEditor(appState.levels.get(0).lesson.questions.get(0), this);
-        //FactEditor fEditor = new FactEditor(appState.levels.get(0).lesson.facts.get(0), this);
-        LevelEditor lEditor = new LevelEditor(appState.levels.get(0), this);
-        menu.add(lEditor);
-
-        JButton updateBtn = new JButton("Update");
-        updateBtn.setActionCommand(UPDATE);
-        updateBtn.addActionListener(lEditor);
-        updateBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
-        menu.add(updateBtn);
     }
 
     private void showGame(LevelDescription level) {

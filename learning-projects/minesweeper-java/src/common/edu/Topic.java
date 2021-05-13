@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Topic implements Serializable {
-    public final String title;
+    public String title;
     public final ArrayList<Lesson> lessons;
     public final ArrayList<Question> testQuestions;
     public LevelDescription testLevel;

@@ -1,7 +1,6 @@
 package common.ui.editor;
 
 import common.edu.Question;
-import common.ui.editor.EditorPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,14 +11,18 @@ import java.util.ArrayList;
 public class QuestionEditor extends EditorPanel {
     Question question;
     JTextField questionField;
+    private int questionWidth = 300;
+
+    private final int QUESTION_HEIGHT = 150;
 
     // First element is the correct answer
     ArrayList<JTextField> answers;
 
-    public QuestionEditor(Question question, ActionListener listener) {
+    public QuestionEditor(Question question, ActionListener listener, int questionWidth) {
         super(listener);
         this.question = question;
         this.answers = new ArrayList<>();
+        this.questionWidth = questionWidth;
 
         initUI();
     }
@@ -28,6 +31,7 @@ public class QuestionEditor extends EditorPanel {
     public void initUI(){
         super.initUI();
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        setPreferredSize(new Dimension(questionWidth, QUESTION_HEIGHT));
         setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Question part:
@@ -35,11 +39,12 @@ public class QuestionEditor extends EditorPanel {
         questionField = addTextField(this);
 
         // Answers:
-        addLabel("Correct: ", this);
+        addLabel("Answer: ", this);
         answers.add(addTextField(this));
-        addLabel("Incorrect: ", this);
-        answers.add(addTextField(this));
-        answers.add(addTextField(this));
+        addLabel("Incorrect answers: ", this);
+        for (int i = 1; i < question.answers.length; i++) {
+            answers.add(addTextField(this));
+        }
 
         // Set text in fields:
         updateFields();

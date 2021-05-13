@@ -36,9 +36,9 @@ public class LevelEditor extends EditorPanel {
         setLayout(new BorderLayout());
 
         // Caption:
-        JLabel label = new JLabel(caption);
+        /*JLabel label = new JLabel(caption);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
-        add(label, BorderLayout.NORTH);
+        add(label, BorderLayout.NORTH);*/
 
         // Level info:
         JPanel levelInfo = new JPanel();
@@ -103,7 +103,7 @@ public class LevelEditor extends EditorPanel {
      */
     public JTextField addField(String label, JPanel container) {
         JTextField field = new JTextField();
-        field.setPreferredSize(new Dimension(80,24));
+        field.setPreferredSize(new Dimension(40,24));
         JPanel cellPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Try right later.
         addLabel(label, cellPanel);
         cellPanel.add(field);

@@ -16,6 +16,7 @@ public class GameConstants {
     // Action strings for editing:
     public static final String UPDATE = "Update";
     public static final String REFRESH = "Refresh";
+    public static final String EDIT_LESSON = "EditLesson";
 
     // Images/cell type counts:
     public static final int NUM_IMAGES = 14;
