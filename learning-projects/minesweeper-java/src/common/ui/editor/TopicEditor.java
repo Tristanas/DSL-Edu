@@ -105,7 +105,13 @@ public class TopicEditor extends EditorPanel {
 
         // Export
         button = addNavButton("Export", buttonsPanel);
-        button.addActionListener(e -> JSONPort.exportTopic(currTopic, "C:\\Users\\Vilius\\Desktop\\"));
+        button.addActionListener(e -> {
+            String path = JSONPort.selectFolder(parentWindow, appState);
+            if (!path.equals("")) {
+                System.out.println("Exporting topic to destination: " + path);
+                JSONPort.exportTopic(currTopic, path);
+            }
+        });
 
         add(buttonsPanel, BorderLayout.SOUTH);
     }

@@ -11,13 +11,14 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class JSONPort {
       // Export folder path:
-      public static final String exportFolder = "C:/Users/Vilius/Desktop/";
+      //public static final String exportFolder = "C:/Users/Vilius/Desktop/";
 
       // Constants for json object field names:
       // Question:
@@ -62,6 +63,7 @@ public class JSONPort {
       public static void exportTopic(Topic topic, String path) {
             try {
                   String fileName = "EXPORT " + topic.title + ".json";
+
                   FileOutputStream file = new FileOutputStream(path + fileName);
                   ObjectOutputStream out = new ObjectOutputStream(file);
 
@@ -317,5 +319,28 @@ public class JSONPort {
                   System.out.println(pe);
             }
             return question;
+      }
+
+      /**
+       * Opens a file dialog which allows selecting only folders. Use for selecting a destination for a save/export file.
+       * @param frame JFrame that the dialog will be related to.
+       * @param applicationState application configuration object, which is used for storing default save file location.
+       * @return path to the selected folder.
+       */
+      public static String selectFolder(JFrame frame, ApplicationState applicationState) {
+            String saveFileFolder = ".";
+            if (!applicationState.exportFolder.equals("")) saveFileFolder = applicationState.exportFolder;
+
+            JFileChooser fileChooser = new JFileChooser(saveFileFolder);
+            fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            fileChooser.setAcceptAllFileFilterUsed(false);
+
+            if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+                  applicationState.exportFolder = fileChooser.getSelectedFile() + "/";
+                  return applicationState.exportFolder;
+            } else {
+                  System.out.println("No Selection ");
+            }
+            return "";
       }
 }

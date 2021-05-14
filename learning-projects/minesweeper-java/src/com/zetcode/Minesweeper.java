@@ -54,18 +54,12 @@ public class Minesweeper extends JFrame implements ActionListener {
     public Minesweeper() {
         setupPaths();
         setupAppState();
-        //testJSONPort();
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
     }
 
-    public void testJSONPort() {
-        JSONPort.exportTopic(appState.topics.get(0), JSONPort.exportFolder);
-        JSONPort.importTopic(appState, "C:/Users/Vilius/Desktop/EXPORT Statistics.json");
-    }
-
     public void setupAppState() {
-        //appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
+        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
     }
 

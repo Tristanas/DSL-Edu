@@ -9,9 +9,14 @@ public class ApplicationState implements Serializable {
     public ArrayList<Topic> topics;
     public ArrayList<LevelDescription> levels;
 
+    // File saving:
+    public String exportFolder;
+
+
     public ApplicationState(ArrayList<Topic> topics, ArrayList<LevelDescription> levels) {
         this.levels = levels;
         this.topics = topics;
+        exportFolder = "";
     }
 
     /**
