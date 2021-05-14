@@ -11,6 +11,7 @@
     <classNode dependClassName="common.ui.Board" />
     <classNode dependClassName="common.ui.LearningPortfolio" />
     <classNode dependClassName="common.ui.LevelSelection" />
+    <classNode dependClassName="common.ui.editor.TopicEditor" />
     <classNode dependClassName="common.util.GameWindowListener" />
     <classNode dependClassName="common.util.ImageScaler" />
     <classNode dependClassName="java.awt.BorderLayout" />

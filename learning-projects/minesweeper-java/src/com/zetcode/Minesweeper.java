@@ -97,7 +97,6 @@ public class Minesweeper extends JFrame implements ActionListener {
         menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
         menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
         addButton(PLAY, "Play in learning mode", menu);
-        //addButton(GameConstants.TEST, "Play an evaluation game", menu);
         addButton(EDIT, "Create and edit topics, lessons, levels", menu);
         addButton(GameConstants.LESSONS, "View found lessons", menu);
         addButton(GameConstants.EXIT, "Close application", menu);

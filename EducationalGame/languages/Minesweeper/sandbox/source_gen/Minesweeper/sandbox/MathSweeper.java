@@ -19,6 +19,7 @@ import common.data.LevelDescription;
 import java.awt.BorderLayout;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
+import common.ui.editor.TopicEditor;
 import java.awt.Container;
 import javax.swing.JButton;
 import java.awt.Component;
@@ -57,7 +58,6 @@ public class MathSweeper extends JFrame implements ActionListener {
     showMenu();
   }
   public void setupAppState() {
-    appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
     if (appState == null) {
       setupDefaultGameSettings();
     }
@@ -94,7 +94,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
     menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
     addButton(GameConstants.PLAY, "Play in learning mode", menu);
-    addButton(GameConstants.TEST, "Play an evaluation game", menu);
+    addButton(GameConstants.EDIT, "Create and edit topics, lessons, levels", menu);
     addButton(GameConstants.LESSONS, "View found lessons", menu);
     addButton(GameConstants.EXIT, "Close application", menu);
     menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
@@ -127,6 +127,12 @@ public class MathSweeper extends JFrame implements ActionListener {
     setContentPane(levelSelection);
     pack();
   }
+  private void showTopicEditor() {
+    TopicEditor topicEditor = new TopicEditor(appState, this, this);
+    setContentPane(topicEditor);
+    pack();
+  }
+
   private void addButton(String text, String toolTip, Container container) {
     JButton button = new JButton(text);
     button.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -168,6 +174,9 @@ public class MathSweeper extends JFrame implements ActionListener {
         break;
       case GameConstants.MENU:
         showMenu();
+        break;
+      case GameConstants.EDIT:
+        showTopicEditor();
         break;
       default:
     }
@@ -214,16 +223,16 @@ public class MathSweeper extends JFrame implements ActionListener {
     facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
     facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
 
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
 
     learningLevel = new LevelDescription();
     learningLevel.levelNo = levelNo++;
     learningLevel.setGameBase(9, 9, 10, 1);
     learningLevel.setItemCounts(1, 10, 3);
     learningLevel.startingReveals = 1;
-    learningLevel.setLearningGame(lesson);
     levels.add(learningLevel);
+
+    lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
+    lessons.add(lesson);
     // Lesson " Statistics introduction " and its level: 
     questions = new ArrayList();
     questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
@@ -239,16 +248,16 @@ public class MathSweeper extends JFrame implements ActionListener {
     facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
     facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
 
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
 
     learningLevel = new LevelDescription();
     learningLevel.levelNo = levelNo++;
     learningLevel.setGameBase(16, 16, 40, 1);
     learningLevel.setItemCounts(3, 3, 4);
     learningLevel.startingReveals = 1;
-    learningLevel.setLearningGame(lesson);
     levels.add(learningLevel);
+
+    lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
+    lessons.add(lesson);
     // Lesson " Statistics introduction " and its level: 
     questions = new ArrayList();
     questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
@@ -264,30 +273,30 @@ public class MathSweeper extends JFrame implements ActionListener {
     facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
     facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
 
-    lesson = new Lesson("Statistics introduction", facts, questions);
-    lessons.add(lesson);
 
     learningLevel = new LevelDescription();
     learningLevel.levelNo = levelNo++;
     learningLevel.setGameBase(30, 16, 99, 1);
     learningLevel.setItemCounts(3, 4, 5);
     learningLevel.startingReveals = 0;
-    learningLevel.setLearningGame(lesson);
     levels.add(learningLevel);
+
+    lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
+    lessons.add(lesson);
 
     // Test for the topic:  <node> 
     questions = new ArrayList();
 
-    topic = new Topic("Statistics", lessons, questions);
-    topics.add(topic);
 
     testLevel = new LevelDescription();
     testLevel.levelNo = levelNo++;
     testLevel.setGameBase(16, 16, 40, 1);
     testLevel.setItemCounts(3, 0, 10);
     testLevel.startingReveals = 1;
-    testLevel.setTestGame(topic);
     levels.add(testLevel);
+
+    topic = new Topic("Statistics", lessons, questions, testLevel);
+    topics.add(topic);
 
 
     // Initialize application state: 
