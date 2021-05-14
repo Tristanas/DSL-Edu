@@ -78,4 +78,12 @@ public class ApplicationState implements Serializable {
 
         return appState;
     }
+
+    public void updateLevels() {
+        this.levels = new ArrayList<>();
+        this.topics.forEach(topic -> {
+            topic.lessons.forEach(lesson -> this.levels.add(lesson.learningLevel));
+            this.levels.add(topic.testLevel);
+        });
+    }
 }

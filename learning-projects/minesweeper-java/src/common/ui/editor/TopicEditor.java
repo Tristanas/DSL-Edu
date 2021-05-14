@@ -161,6 +161,8 @@ public class TopicEditor extends EditorPanel {
         addLesson(newLesson);
         lessonsList.updateUI();
         showLessonEditor(newLesson);
+        currTopic.lessons.add(newLesson);
+        appState.updateLevels();
         // show lesson editor page for the new lesson?
     }
 
@@ -181,5 +183,6 @@ public class TopicEditor extends EditorPanel {
         if (e.getActionCommand().equals(SAVE_LESSON)) {
             updateLessons();
         }
+
     }
 }

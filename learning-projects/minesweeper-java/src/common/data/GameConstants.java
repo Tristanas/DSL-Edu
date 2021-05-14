@@ -20,6 +20,7 @@ public class GameConstants {
     public static final String REFRESH = "Refresh";
     public static final String EDIT_LESSON = "EditLesson";
     public static final String SAVE_LESSON = "SaveLesson";
+    public static final String UPDATE_UI = "UpdateUI";
 
     // Images/cell type counts:
     public static final int NUM_IMAGES = 14;
@@ -45,7 +46,7 @@ public class GameConstants {
     // TOPIC AND LESSON EDITOR LAYOUT:
     // Question:
     public static final int QUESTION_WIDTH = 300;
-    public static final int QUESTION_HEIGHT = 150;
+    public static final int QUESTION_HEIGHT = 250;
 
     // Section layout:
     public static final int SECTION_HEIGHT = 500;

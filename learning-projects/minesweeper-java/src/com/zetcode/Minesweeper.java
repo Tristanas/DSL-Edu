@@ -59,7 +59,7 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     public void setupAppState() {
-        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
+        //appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
     }
 

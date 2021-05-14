@@ -425,7 +425,7 @@ public class Board extends JPanel implements ActionListener {
                 "Question time",
                 JOptionPane.QUESTION_MESSAGE,
                 null, // Do not use a custom icon
-                q.answers, // Possible answers
+                q.answers.toArray(), // Possible answers
                 q.correctAnswer);
 
         return selectedOption != null && selectedOption.equals(q.correctAnswer);

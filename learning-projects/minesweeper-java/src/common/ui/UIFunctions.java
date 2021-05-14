@@ -15,31 +15,44 @@ public class UIFunctions {
         return titlePanel;
     }
 
-    public static JPanel encapsulatePanel(JPanel panel) {
-        JPanel encapsulationPanel = new JPanel();
-        encapsulationPanel.setBorder(BorderFactory.createEmptyBorder(0,0,10,0));
-        encapsulationPanel.add(panel);
+    public static JPanel encapsulateComponent(JComponent component) {
+        JPanel encapsulationPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        //encapsulationPanel.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+        encapsulationPanel.add(component);
         return encapsulationPanel;
+    }
+
+    /**
+     * Adds a label without encapsulating it into a JPanel.
+     */
+    public static JLabel addLabel(String text, Container container) {
+        return addLabel(text, container, false);
     }
 
     /**
      * Adds a label to a container. Sets some standard UI parameters.
      * @param text - what the label displays.
      * @param container - where to add the label.
+     * @param encapsulate should the component be encapsulated in a JPanel before adding.
      * @return - the created JLabel in case further adjustments are needed.
      */
-    public static JLabel addLabel(String text, Container container) {
+    public static JLabel addLabel(String text, Container container, boolean encapsulate) {
         JLabel label = new JLabel(text);
         label.setAlignmentX(Component.LEFT_ALIGNMENT);
-        container.add(label);
+        if (!encapsulate) container.add(label);
+        else container.add(encapsulateComponent(label));
         return label;
     }
 
     public static JTextField addTextField(Container container) {
+        return addTextField(container, false);
+    }
+
+    public static JTextField addTextField(Container container, boolean encapsulate) {
         JTextField textField = new JTextField();
         textField.setAlignmentX(Component.LEFT_ALIGNMENT);
-        textField.setPreferredSize(new Dimension());
-        container.add(textField);
+        if (!encapsulate) container.add(textField);
+        else container.add(encapsulateComponent(textField));
         return textField;
     }
 

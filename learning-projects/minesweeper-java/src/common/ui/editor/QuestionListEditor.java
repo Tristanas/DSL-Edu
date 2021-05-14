@@ -5,6 +5,7 @@ import common.ui.UIFunctions;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
@@ -59,14 +60,34 @@ public class QuestionListEditor extends EditorPanel {
     }
 
     public void addQuestion(Question question) {
-        QuestionEditor questionEditor = new QuestionEditor(question, this);
-        questionsList.add(UIFunctions.encapsulatePanel(questionEditor));
+        JButton removeBtn = new JButton("X");
+        //removeBtn.setPreferredSize(new Dimension(30, 28));
+
+        QuestionEditor questionEditor = new QuestionEditor(question, removeBtn, this);
+        JPanel questionPanel = UIFunctions.encapsulateComponent(questionEditor);
+        questionsList.add(questionPanel);
         questionEditors.add(questionEditor);
+
+        removeBtn.addActionListener(e -> {
+            questionEditors.remove(questionEditor);
+            questionsList.remove(questionPanel);
+            questions.remove(question);
+            updateUI();
+        });
     }
 
     public void setQuestions(ArrayList<Question> questions) {
         this.questions = questions;
         initQuestionsList(questions);
         updateFields();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        super.actionPerformed(e);
+
+        if (e.getActionCommand().equals(UPDATE_UI)) {
+            questionsList.updateUI();
+        }
     }
 }
