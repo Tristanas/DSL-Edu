@@ -61,17 +61,14 @@ public class UIFunctions {
      * @return editable JTextField which contains the title.
      */
     public static JTextField addTitlePanel(String title, String labelText, Container container) {
-        // Add topic title field:
-        JPanel titlePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-
         // Title label:
         JPanel cellPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        JLabel titleLabel = addLabel("Topic:", cellPanel);
+        JLabel titleLabel = addLabel(labelText, cellPanel);
         titleLabel.setFont(EDITOR_TITLE_FONT);
 
         // Title text field:
         JTextField titleField = new JTextField();
-        titleField.setPreferredSize(new Dimension(TOPIC_EDITOR_WIDTH / 2,TITLE_BAR_HEIGHT));
+        titleField.setPreferredSize(new Dimension(TOPIC_EDITOR_WIDTH - 150,TITLE_BAR_HEIGHT));
         titleField.setFont(EDITOR_TITLE_FONT);
         titleField.setText(title);
         cellPanel.add(titleField);

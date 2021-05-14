@@ -225,7 +225,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons = new ArrayList<>();
         questions = new ArrayList<>();
         questions.add(new Question(
-                "Is it okay to sweep mines?",
+                "1. Is it okay to sweep mines?",
                 new String[]{"Yes", "No", "I'm just borrowing them"},
                 "Yes"
         ));
@@ -256,6 +256,18 @@ public class Minesweeper extends JFrame implements ActionListener {
         levels.add(learningLevel);
 
 
+        questions = new ArrayList<>();
+        questions.add(new Question(
+                "2. Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
+        ));
+        questions.add(new Question(
+                "Question?",
+                new String[]{"1", "2", "3"},
+                "1"
+        ));
+
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
         learningLevel.setGameBase(9, 9, 3, 2);
@@ -270,6 +282,18 @@ public class Minesweeper extends JFrame implements ActionListener {
         levels.add(learningLevel);
 
 
+        questions = new ArrayList<>();
+        questions.add(new Question(
+                "3. Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
+        ));
+        questions.add(new Question(
+                "Question?",
+                new String[]{"1", "2", "3"},
+                "1"
+        ));
+
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;
         learningLevel.setGameBase(10, 10, 10, 2);
@@ -281,6 +305,18 @@ public class Minesweeper extends JFrame implements ActionListener {
         lesson = new Lesson("Combinations and permutations", facts, questions, learningLevel);
         lessons.add(lesson);
         levels.add(learningLevel);
+
+        questions = new ArrayList<>();
+        questions.add(new Question(
+                "4. Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
+        ));
+        questions.add(new Question(
+                "Question?",
+                new String[]{"1", "2", "3"},
+                "1"
+        ));
 
         learningLevel = new LevelDescription();
         learningLevel.levelNo = levelNo++;

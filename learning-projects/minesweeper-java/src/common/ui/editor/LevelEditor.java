@@ -121,4 +121,9 @@ public class LevelEditor extends EditorPanel {
         levelPanel.add(panel, BorderLayout.CENTER);
         return levelPanel;
     }
+
+    public void setLevel(LevelDescription level) {
+        this.level = level;
+        updateFields();
+    }
 }

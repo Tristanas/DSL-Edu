@@ -13,6 +13,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 
 public class LessonEditor extends JFrame implements ActionListener {
     ActionListener parentListener;
@@ -20,52 +21,42 @@ public class LessonEditor extends JFrame implements ActionListener {
     JPanel editorContents;
 
     // UI elements:
+    JFrame parentWindow;
     JTextField titleField;
     LevelEditor levelEditor;
     QuestionListEditor questionsEditor;
     FactListEditor factListEditor;
 
-    public LessonEditor (Lesson lesson, ActionListener parentListener) {
+    public LessonEditor (Lesson lesson, ActionListener parentListener, JFrame parentWindow) {
         this.lesson = lesson;
         this.parentListener = parentListener;
+        this.parentWindow = parentWindow;
         initUI();
     }
 
     // Lesson title, learning level, facts and questions:
     public void initUI() {
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         editorContents = new JPanel();
         editorContents.setPreferredSize(LESSON_EDITOR_SIZE);
         editorContents.setLayout(new BorderLayout());
 
-        // Add topic title field:
         titleField = UIFunctions.addTitlePanel(lesson.title, "Lesson:", editorContents);
-
-        levelEditor = new LevelEditor(lesson.learningLevel, this);
-        editorContents.add(levelEditor.createEditorPanel(), BorderLayout.WEST);
-
-        questionsEditor = new QuestionListEditor(lesson.questions, this);
-        editorContents.add(questionsEditor, BorderLayout.CENTER);
-
-        factListEditor = new FactListEditor(lesson.facts, this);
-        editorContents.add(factListEditor, BorderLayout.EAST);
-
+        initEditors();
         initNavigation();
+
         setContentPane(editorContents);
         pack();
         setResizable(false);
         setVisible(true);
+        setTitle("Edit lesson: " + lesson.title);
     }
 
     private void initNavigation() {
-        JPanel buttonsPanel = new JPanel();
-
-        // Return to menu:
-        JButton button = addNavButton("Back", buttonsPanel);
-        button.setActionCommand(GameConstants.MENU);
-        button.addActionListener(parentListener);
+        JPanel buttonsPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 
         // Add a new question:
-        button = addNavButton("New Question", buttonsPanel);
+        JButton button = addNavButton("New Question", buttonsPanel);
         button.addActionListener(e -> questionsEditor.addNewQuestion());
 
         // Add a new question:
@@ -83,6 +74,18 @@ public class LessonEditor extends JFrame implements ActionListener {
         button.addActionListener(this);
 
         editorContents.add(buttonsPanel, BorderLayout.SOUTH);
+    }
+
+    private void initEditors() {
+        levelEditor = new LevelEditor(lesson.learningLevel, this);
+        editorContents.add(levelEditor.createEditorPanel(), BorderLayout.WEST);
+
+        questionsEditor = new QuestionListEditor(lesson.questions, this);
+        questionsEditor.setBorder(BorderFactory.createEmptyBorder(0, SECTION_PADDING, 0, SECTION_PADDING));
+        editorContents.add(questionsEditor, BorderLayout.CENTER);
+
+        factListEditor = new FactListEditor(lesson.facts, this);
+        editorContents.add(factListEditor, BorderLayout.EAST);
     }
 
     @Override
@@ -109,6 +112,19 @@ public class LessonEditor extends JFrame implements ActionListener {
         levelEditor.updateObject();
         questionsEditor.updateObject();
         factListEditor.updateObject();
-        System.out.println("Topic '" + lesson.title + "' has been saved.");
+        System.out.println("Lesson '" + lesson.title + "' has been saved.");
+
+        JOptionPane.showMessageDialog(parentWindow, "Lesson '" + lesson.title + "' has been saved.");
+        parentListener.actionPerformed(new ActionEvent(this, 1, SAVE_LESSON));
+        setVisible(false);
+    }
+
+    public void editLesson(Lesson lesson) {
+        this.lesson = lesson;
+        initEditors();
+        levelEditor.setLevel(lesson.learningLevel);
+        questionsEditor.setQuestions(lesson.questions);
+        factListEditor.setFacts(lesson.facts);
+        titleField.setText(lesson.title);
     }
 }

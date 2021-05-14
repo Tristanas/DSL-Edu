@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static common.ui.UIFunctions.*;
+import static common.data.GameConstants.*;
 
 public class FactEditor extends EditorPanel {
     Fact fact;
@@ -42,7 +43,8 @@ public class FactEditor extends EditorPanel {
 
         addLabel("Name: ", this);
         nameField = addTextField(this);
-        nameField.setPreferredSize(new Dimension(150, 24));
+        nameField.setPreferredSize(new Dimension(FACT_LIST_WIDTH - 100, 24));
+        nameField.setMaximumSize(new Dimension(FACT_LIST_WIDTH, 24));
 
         addLabel("Description:", this);
         descriptionField = addTextArea(this);

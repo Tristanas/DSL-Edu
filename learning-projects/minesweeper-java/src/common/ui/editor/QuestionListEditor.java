@@ -45,7 +45,6 @@ public class QuestionListEditor extends EditorPanel {
     private void initQuestionsList(ArrayList<Question> questions) {
         questionsList = new JPanel();
         questionsList.setLayout(new BoxLayout(questionsList, BoxLayout.Y_AXIS));
-        questionsList.setPreferredSize(new Dimension(QUESTION_WIDTH, SECTION_HEIGHT));
         questions.forEach(this::addQuestion);
 
         JScrollPane questionsScrollPane = new JScrollPane(questionsList);
@@ -55,13 +54,19 @@ public class QuestionListEditor extends EditorPanel {
     public void addNewQuestion() {
         Question question = new Question();
         addQuestion(question);
-        updateUI();
         questions.add(question);
+        updateUI();
     }
 
     public void addQuestion(Question question) {
         QuestionEditor questionEditor = new QuestionEditor(question, this);
         questionsList.add(UIFunctions.encapsulatePanel(questionEditor));
         questionEditors.add(questionEditor);
+    }
+
+    public void setQuestions(ArrayList<Question> questions) {
+        this.questions = questions;
+        initQuestionsList(questions);
+        updateFields();
     }
 }

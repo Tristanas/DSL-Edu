@@ -20,6 +20,7 @@ public class TopicEditor extends EditorPanel {
     ApplicationState appState;
     Topic currTopic;
     JFrame parentWindow;
+    LessonEditor lessonEditor;
 
     // UI elements:
     JTextField titleField;
@@ -40,31 +41,6 @@ public class TopicEditor extends EditorPanel {
         lessonButtons = new ArrayList<>();
 
         initUI();
-    }
-
-    @Override
-    public void updateFields() {
-        titleField.setText(currTopic.title);
-        testLevelEditor.updateFields();
-        questionsEditor.updateFields();
-
-        // Update lesson buttons text:
-        currTopic.lessons.forEach(lesson ->
-                lessonButtons.get(currTopic.lessons.indexOf(lesson))
-                    .setText(lesson.title));
-    }
-
-    @Override
-    public void updateObject() {
-        // Update topic title:
-        currTopic.title = titleField.getText();
-
-        // Update level description:
-        testLevelEditor.updateObject();
-
-        // Update questions:
-        questionsEditor.updateObject();
-        System.out.println("Topic '" + currTopic.title + "' has been saved.");
     }
 
     // Topic title, test questions, test level and lessons:
@@ -134,8 +110,43 @@ public class TopicEditor extends EditorPanel {
         add(buttonsPanel, BorderLayout.SOUTH);
     }
 
+    @Override
+    public void updateFields() {
+        titleField.setText(currTopic.title);
+        testLevelEditor.updateFields();
+        questionsEditor.updateFields();
+
+        // Update lesson buttons text:
+        updateLessons();
+    }
+
+    private void updateLessons() {
+        currTopic.lessons.forEach(lesson ->
+                lessonButtons.get(currTopic.lessons.indexOf(lesson))
+                        .setText(lesson.title));
+    }
+
+    @Override
+    public void updateObject() {
+        // Update topic title:
+        currTopic.title = titleField.getText();
+
+        // Update level description:
+        testLevelEditor.updateObject();
+
+        // Update questions:
+        questionsEditor.updateObject();
+        System.out.println("Topic '" + currTopic.title + "' has been saved.");
+    }
+
     public void showLessonEditor(Lesson lesson) {
-        LessonEditor lessonEditor = new LessonEditor(lesson, this);
+        if (lessonEditor == null) {
+            lessonEditor = new LessonEditor(lesson, this, parentWindow);
+        } else {
+            lessonEditor.editLesson(lesson);
+            lessonEditor.setTitle("Edit lesson: " + lesson.title);
+            lessonEditor.setVisible(true);
+        }
 
         // Move the window so that the lessons list is visible:
         Point location = parentWindow.getLocation();
@@ -166,5 +177,9 @@ public class TopicEditor extends EditorPanel {
     @Override
     public void actionPerformed(ActionEvent e) {
         super.actionPerformed(e);
+
+        if (e.getActionCommand().equals(SAVE_LESSON)) {
+            updateLessons();
+        }
     }
 }

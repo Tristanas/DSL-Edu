@@ -70,7 +70,7 @@ public class GameConstants {
     public static final int TOPIC_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + LESSON_LIST_WIDTH + SECTION_PADDING * 4;
     public static Dimension TOPIC_EDITOR_SIZE = new Dimension(TOPIC_EDITOR_WIDTH, TOPIC_EDITOR_HEIGHT);
 
-    public static final int LESSON_EDITOR_HEIGHT = 700;
+    public static final int LESSON_EDITOR_HEIGHT = SECTION_HEIGHT + TITLE_BAR_HEIGHT + NAV_BAR_HEIGHT;
     public static final int LESSON_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + FACT_LIST_WIDTH + SECTION_PADDING * 4;
     public static Dimension LESSON_EDITOR_SIZE = new Dimension(LESSON_EDITOR_WIDTH, LESSON_EDITOR_HEIGHT);
 

@@ -64,4 +64,9 @@ public class FactListEditor extends EditorPanel{
         updateUI();
     }
 
+    public void setFacts(ArrayList<Fact> facts) {
+        this.facts = facts;
+        initFactsList(facts);
+        updateFields();
+    }
 }
