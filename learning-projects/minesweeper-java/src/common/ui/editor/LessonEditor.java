@@ -114,17 +114,8 @@ public class LessonEditor extends JFrame implements ActionListener {
         factListEditor.updateObject();
         System.out.println("Lesson '" + lesson.title + "' has been saved.");
 
+        setVisible(false);
         JOptionPane.showMessageDialog(parentWindow, "Lesson '" + lesson.title + "' has been saved.");
         parentListener.actionPerformed(new ActionEvent(this, 1, SAVE_LESSON));
-        setVisible(false);
-    }
-
-    public void editLesson(Lesson lesson) {
-        this.lesson = lesson;
-        initEditors();
-        levelEditor.setLevel(lesson.learningLevel);
-        questionsEditor.setQuestions(lesson.questions);
-        factListEditor.setFacts(lesson.facts);
-        titleField.setText(lesson.title);
     }
 }

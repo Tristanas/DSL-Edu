@@ -140,13 +140,7 @@ public class TopicEditor extends EditorPanel {
     }
 
     public void showLessonEditor(Lesson lesson) {
-        if (lessonEditor == null) {
-            lessonEditor = new LessonEditor(lesson, this, parentWindow);
-        } else {
-            lessonEditor.editLesson(lesson);
-            lessonEditor.setTitle("Edit lesson: " + lesson.title);
-            lessonEditor.setVisible(true);
-        }
+        lessonEditor = new LessonEditor(lesson, this, parentWindow);
 
         // Move the window so that the lessons list is visible:
         Point location = parentWindow.getLocation();
