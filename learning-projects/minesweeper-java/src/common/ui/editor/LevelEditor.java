@@ -1,12 +1,15 @@
 package common.ui.editor;
 
 import common.data.LevelDescription;
+import common.ui.UIFunctions;
 import common.ui.editor.EditorPanel;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import static common.ui.UIFunctions.addLabel;
 
 public class LevelEditor extends EditorPanel {
     LevelDescription level;
@@ -26,8 +29,8 @@ public class LevelEditor extends EditorPanel {
     public LevelEditor(LevelDescription level, ActionListener listener) {
         super(listener);
         this.level = level;
-        // if (level.type == LevelDescription.GameType.learn) caption = "Learning level:";
-        // else caption = "Test level:";
+        if (level.type == LevelDescription.GameType.learn) caption = "Learning level:";
+        else caption = "Test level:";
         initUI();
     }
 
@@ -111,7 +114,7 @@ public class LevelEditor extends EditorPanel {
      */
     public JPanel createEditorPanel() {
         JPanel levelPanel = new JPanel(new BorderLayout());
-        levelPanel.add(TopicEditor.createSectionTitle("Test level:"), BorderLayout.NORTH);
+        levelPanel.add(UIFunctions.createSectionTitle(caption), BorderLayout.NORTH);
 
         JPanel panel = new JPanel();
         panel.add(this);

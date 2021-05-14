@@ -14,7 +14,6 @@ public class Fact implements Serializable {
     public Boolean unlocked;
     private final int windowHeight;
 
-
     final int titleFontSize = 16,
         textFontSize = 13,
         windowWidth = 200, // This might need to come from parent window or during initialization.
@@ -26,6 +25,13 @@ public class Fact implements Serializable {
         this.text = text;
         this.unlocked = false;
         windowHeight = titleFontSize + textFontSize * (text.length() * textFontSize / windowWidth) + bottomPadding;
+    }
+
+    public Fact() {
+        this.title = "";
+        this.text = "";
+        this.unlocked = false;
+        windowHeight = titleFontSize + bottomPadding;
     }
 
     public JPanel createFactPanel() {

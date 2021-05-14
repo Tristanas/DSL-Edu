@@ -3,8 +3,8 @@ package common.ui.editor;
 import common.data.ApplicationState;
 import common.data.GameConstants;
 import common.edu.Lesson;
-import common.edu.Question;
 import common.edu.Topic;
+import common.ui.UIFunctions;
 import common.util.JSONPort;
 
 import javax.swing.*;
@@ -14,6 +14,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import static common.data.GameConstants.*;
+import static common.ui.UIFunctions.*;
 
 public class TopicEditor extends EditorPanel {
     ApplicationState appState;
@@ -22,15 +23,12 @@ public class TopicEditor extends EditorPanel {
 
     // UI elements:
     JTextField titleField;
-    JPanel questionsList;
-    JPanel lessonsList;
-    LevelEditor testLevelEditor;
-    JScrollPane questionsScrollPane;
-    ArrayList<QuestionEditor> questionEditors;
-    QuestionListEditor questionsEditor;
     ArrayList<JButton> lessonButtons;
 
-
+    // Sections:
+    JPanel lessonsList;
+    LevelEditor testLevelEditor;
+    QuestionListEditor questionsEditor;
 
     public TopicEditor(ApplicationState appState, ActionListener listener, JFrame parentWindow) {
         super(listener);
@@ -39,7 +37,6 @@ public class TopicEditor extends EditorPanel {
 
         // Show first topic by default:
         currTopic = appState.topics.get(0);
-        questionEditors = new ArrayList<>();
         lessonButtons = new ArrayList<>();
 
         initUI();
@@ -49,7 +46,6 @@ public class TopicEditor extends EditorPanel {
     public void updateFields() {
         titleField.setText(currTopic.title);
         testLevelEditor.updateFields();
-        //questionEditors.forEach(QuestionEditor::updateFields);
         questionsEditor.updateFields();
 
         // Update lesson buttons text:
@@ -67,7 +63,6 @@ public class TopicEditor extends EditorPanel {
         testLevelEditor.updateObject();
 
         // Update questions:
-        //questionEditors.forEach(QuestionEditor::updateObject);
         questionsEditor.updateObject();
         System.out.println("Topic '" + currTopic.title + "' has been saved.");
     }
@@ -75,55 +70,25 @@ public class TopicEditor extends EditorPanel {
     // Topic title, test questions, test level and lessons:
     public void initUI() {
         setLayout(new BorderLayout());
-        setPreferredSize(topicEditorSize);
-
-        Font titleFont = new Font(Font.SANS_SERIF, Font.BOLD, TITLE_FONT_SIZE);
-
-        // Add topic title field:
-        JPanel titlePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        titleField = new JTextField();
-        titleField.setPreferredSize(new Dimension(TOPIC_EDITOR_WIDTH / 2,TITLE_BAR_HEIGHT));
-        titleField.setFont(titleFont);
-        JPanel cellPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-
-        // Title label:
-        JLabel titleLabel = addLabel("Topic:", cellPanel);
-        titleLabel.setFont(titleFont);
-        cellPanel.add(titleField);
-        add(cellPanel, BorderLayout.NORTH);
+        setPreferredSize(TOPIC_EDITOR_SIZE);
+        titleField = addTitlePanel(currTopic.title, "Topic:", this);
 
         // Add topic content editors:
         testLevelEditor = new LevelEditor(currTopic.testLevel, this);
         add(testLevelEditor.createEditorPanel(), BorderLayout.WEST);
 
-        //initQuestionsEditor();
         questionsEditor = new QuestionListEditor(currTopic.testQuestions, this);
         add(questionsEditor, BorderLayout.CENTER);
 
         initLessonsList();
-
         initNavigation();
-    }
-
-    // DELETE:
-    private void initQuestionsEditor() {
-        JPanel questionsPanel = new JPanel(new BorderLayout());
-        questionsPanel.add(createSectionTitle("Test questions:"), BorderLayout.NORTH);
-
-        questionsList = new JPanel();
-        questionsList.setLayout(new BoxLayout(questionsList, BoxLayout.Y_AXIS));
-        currTopic.testQuestions.forEach(this::addQuestion);
-
-        questionsScrollPane = new JScrollPane(questionsList);
-        questionsPanel.add(questionsScrollPane, BorderLayout.CENTER);
-        add(questionsPanel, BorderLayout.CENTER);
     }
 
     private void initLessonsList() {
         JPanel lessonsPanel = new JPanel(new BorderLayout());
-        lessonsPanel.add(createSectionTitle("Lessons:"), BorderLayout.NORTH);
+        lessonsPanel.add(UIFunctions.createSectionTitle("Lessons:"), BorderLayout.NORTH);
         lessonsPanel.setBorder(BorderFactory.createEmptyBorder(0, SECTION_PADDING, 0, SECTION_PADDING));
-        lessonsPanel.setPreferredSize(new Dimension(QUESTION_LIST_WIDTH, SECTION_HEIGHT));
+        lessonsPanel.setPreferredSize(new Dimension(LESSON_LIST_WIDTH, SECTION_HEIGHT));
 
         // Populate lessons list:
         lessonsList = new JPanel();
@@ -146,7 +111,7 @@ public class TopicEditor extends EditorPanel {
 
         // Add a new test question:
         button = addNavButton("New Question", buttonsPanel);
-        button.addActionListener(e -> currTopic.testQuestions.add(questionsEditor.addNewQuestion()));
+        button.addActionListener(e -> questionsEditor.addNewQuestion());
 
         // Add a new lesson:
         button = addNavButton("New Lesson", buttonsPanel);
@@ -169,12 +134,6 @@ public class TopicEditor extends EditorPanel {
         add(buttonsPanel, BorderLayout.SOUTH);
     }
 
-    public JButton addNavButton(String text, JPanel container) {
-        JButton button = new JButton(text);
-        container.add(button);
-        return  button;
-    }
-
     public void showLessonEditor(Lesson lesson) {
         LessonEditor lessonEditor = new LessonEditor(lesson, this);
 
@@ -185,36 +144,12 @@ public class TopicEditor extends EditorPanel {
         lessonEditor.setVisible(true);
     }
 
-    public static JPanel createSectionTitle(String sectionTitle) {
-        JPanel titlePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        JLabel title = new JLabel(sectionTitle);
-        title.setFont(SECTION_FONT);
-        titlePanel.add(title);
-        return titlePanel;
-    }
-
-    // DELETE:
-    public void addNewQuestion() {
-        Question question = new Question();
-        currTopic.testQuestions.add(question);
-        addQuestion(question);
-        questionsScrollPane.updateUI();
-    }
-
-    // DELETE:
-    public void addQuestion(Question question) {
-        QuestionEditor questionEditor = new QuestionEditor(question, this);
-        JPanel encapsulationPanel = new JPanel();
-        encapsulationPanel.setBorder(BorderFactory.createEmptyBorder(0,0,10,0));
-        encapsulationPanel.add(questionEditor);
-        questionsList.add(encapsulationPanel);
-        questionEditors.add(questionEditor);
-    }
-
     public void addNewLesson() {
         Lesson newLesson = new Lesson();
+        newLesson.title = "New lesson";
         addLesson(newLesson);
         lessonsList.updateUI();
+        showLessonEditor(newLesson);
         // show lesson editor page for the new lesson?
     }
 

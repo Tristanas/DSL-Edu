@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import static common.data.GameConstants.*;
+import static common.ui.UIFunctions.addLabel;
+import static common.ui.UIFunctions.addTextField;
 
 public class QuestionEditor extends EditorPanel {
     Question question;

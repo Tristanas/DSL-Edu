@@ -55,8 +55,9 @@ public class GameConstants {
 
     // Specific sections:
     public static final int LEVEL_EDITOR_WIDTH = 200;
-    public static final int LESSON_LIST_WIDTH = 300;
-    public static final int QUESTION_LIST_WIDTH = QUESTION_WIDTH;
+    public static final int LESSON_LIST_WIDTH = 250;
+    public static final int FACT_LIST_WIDTH = 350;
+    public static final int QUESTION_LIST_WIDTH = QUESTION_WIDTH + 50;
 
     // Editor title and navigation sections:
     public static final int NAV_BAR_HEIGHT = 50;
@@ -64,11 +65,14 @@ public class GameConstants {
     public static final int TITLE_FONT_SIZE = 32;
 
     // Top level UI:
+    public static final Font EDITOR_TITLE_FONT = new Font(Font.SANS_SERIF, Font.BOLD, TITLE_FONT_SIZE);
     public static final int TOPIC_EDITOR_HEIGHT = SECTION_HEIGHT + TITLE_BAR_HEIGHT + NAV_BAR_HEIGHT;
-    public static final int TOPIC_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + LESSON_LIST_WIDTH + SECTION_PADDING * 2;
-    public static Dimension topicEditorSize = new Dimension(TOPIC_EDITOR_WIDTH, TOPIC_EDITOR_HEIGHT);
+    public static final int TOPIC_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + LESSON_LIST_WIDTH + SECTION_PADDING * 4;
+    public static Dimension TOPIC_EDITOR_SIZE = new Dimension(TOPIC_EDITOR_WIDTH, TOPIC_EDITOR_HEIGHT);
 
-
+    public static final int LESSON_EDITOR_HEIGHT = 700;
+    public static final int LESSON_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + FACT_LIST_WIDTH + SECTION_PADDING * 4;
+    public static Dimension LESSON_EDITOR_SIZE = new Dimension(LESSON_EDITOR_WIDTH, LESSON_EDITOR_HEIGHT);
 
 //    public enum Draw {
 //        Empty, One, Two, Three, Four, Five, Six, Seven, Eight, Mine, Cover

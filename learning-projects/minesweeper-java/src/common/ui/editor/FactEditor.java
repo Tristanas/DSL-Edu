@@ -8,6 +8,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static common.ui.UIFunctions.*;
+
 public class FactEditor extends EditorPanel {
     Fact fact;
     JTextField nameField;
@@ -40,10 +42,11 @@ public class FactEditor extends EditorPanel {
 
         addLabel("Name: ", this);
         nameField = addTextField(this);
+        nameField.setPreferredSize(new Dimension(150, 24));
 
         addLabel("Description:", this);
         descriptionField = addTextArea(this);
-
+        descriptionField.setPreferredSize(new Dimension(150, 72));
         updateFields();
     }
 }

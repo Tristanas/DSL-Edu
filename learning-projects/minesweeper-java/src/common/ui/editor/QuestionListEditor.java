@@ -1,6 +1,7 @@
 package common.ui.editor;
 
 import common.edu.Question;
+import common.ui.UIFunctions;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,11 +11,14 @@ import java.util.ArrayList;
 import static common.data.GameConstants.*;
 
 public class QuestionListEditor extends EditorPanel {
+    ArrayList<Question> questions;
     ArrayList<QuestionEditor> questionEditors;
-    public JPanel questionsList;
+    JPanel questionsList;
+
 
     public QuestionListEditor(ArrayList<Question> questions, ActionListener listener) {
         super(listener);
+        this.questions = questions;
         questionEditors = new ArrayList<>();
         initUI(questions);
     }
@@ -24,7 +28,7 @@ public class QuestionListEditor extends EditorPanel {
         setPreferredSize(new Dimension(QUESTION_LIST_WIDTH, SECTION_HEIGHT));
 
         // Add title and questions list:
-        add(TopicEditor.createSectionTitle("Questions:"), BorderLayout.NORTH);
+        add(UIFunctions.createSectionTitle("Questions:"), BorderLayout.NORTH);
         initQuestionsList(questions);
     }
 
@@ -41,27 +45,23 @@ public class QuestionListEditor extends EditorPanel {
     private void initQuestionsList(ArrayList<Question> questions) {
         questionsList = new JPanel();
         questionsList.setLayout(new BoxLayout(questionsList, BoxLayout.Y_AXIS));
+        questionsList.setPreferredSize(new Dimension(QUESTION_WIDTH, SECTION_HEIGHT));
         questions.forEach(this::addQuestion);
 
         JScrollPane questionsScrollPane = new JScrollPane(questionsList);
         add(questionsScrollPane, BorderLayout.CENTER);
     }
 
-    public Question addNewQuestion() {
+    public void addNewQuestion() {
         Question question = new Question();
         addQuestion(question);
         updateUI();
-        return question;
+        questions.add(question);
     }
 
     public void addQuestion(Question question) {
         QuestionEditor questionEditor = new QuestionEditor(question, this);
-        JPanel encapsulationPanel = new JPanel();
-        encapsulationPanel.setBorder(BorderFactory.createEmptyBorder(0,0,10,0));
-        encapsulationPanel.add(questionEditor);
-        questionsList.add(encapsulationPanel);
+        questionsList.add(UIFunctions.encapsulatePanel(questionEditor));
         questionEditors.add(questionEditor);
     }
-
-
 }
