@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 public class LevelEditor extends EditorPanel {
     LevelDescription level;
     GridLayout layout;
-    String caption = "Level:";
+    String caption;
 
     // Fields:
     JTextField rows;
@@ -26,19 +26,14 @@ public class LevelEditor extends EditorPanel {
     public LevelEditor(LevelDescription level, ActionListener listener) {
         super(listener);
         this.level = level;
-        if (level.type == LevelDescription.GameType.learn) caption = "Learning level:";
-        else caption = "Test level:";
+        // if (level.type == LevelDescription.GameType.learn) caption = "Learning level:";
+        // else caption = "Test level:";
         initUI();
     }
 
     @Override
     public void initUI() {
         setLayout(new BorderLayout());
-
-        // Caption:
-        /*JLabel label = new JLabel(caption);
-        label.setAlignmentX(Component.CENTER_ALIGNMENT);
-        add(label, BorderLayout.NORTH);*/
 
         // Level info:
         JPanel levelInfo = new JPanel();
@@ -72,7 +67,6 @@ public class LevelEditor extends EditorPanel {
         if (level.type == LevelDescription.GameType.learn) {
             facts.setText(Integer.toString(level.factCount));
         }
-
     }
 
     @Override
@@ -109,5 +103,19 @@ public class LevelEditor extends EditorPanel {
         cellPanel.add(field);
         container.add(cellPanel);
         return field;
+    }
+
+    /**
+     * Creates a JPanel which displays the level editor as a section of a page.
+     * @return a reference to the created panel.
+     */
+    public JPanel createEditorPanel() {
+        JPanel levelPanel = new JPanel(new BorderLayout());
+        levelPanel.add(TopicEditor.createSectionTitle("Test level:"), BorderLayout.NORTH);
+
+        JPanel panel = new JPanel();
+        panel.add(this);
+        levelPanel.add(panel, BorderLayout.CENTER);
+        return levelPanel;
     }
 }

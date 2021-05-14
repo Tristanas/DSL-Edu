@@ -13,8 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import static common.data.GameConstants.REFRESH;
-import static common.data.GameConstants.UPDATE;
+import static common.data.GameConstants.*;
 
 public class TopicEditor extends EditorPanel {
     ApplicationState appState;
@@ -28,27 +27,9 @@ public class TopicEditor extends EditorPanel {
     LevelEditor testLevelEditor;
     JScrollPane questionsScrollPane;
     ArrayList<QuestionEditor> questionEditors;
+    QuestionListEditor questionsEditor;
     ArrayList<JButton> lessonButtons;
 
-    // UI:
-    final int NAV_BAR_HEIGHT = 50;
-    final int TITLE_BAR_HEIGHT = 40;
-    final int TITLE_FONT_SIZE = 32;
-    final int SECTION_FONT_SIZE = 24;
-    Font sectionFont = new Font(Font.SANS_SERIF, Font.PLAIN, SECTION_FONT_SIZE);
-
-    // Sections:
-    final int QUESTION_WIDTH = 300;
-    final int SECTION_PADDING = 10;
-    final int QUESTION_LIST_WIDTH = QUESTION_WIDTH + SECTION_PADDING * 2;
-    final int LEVEL_EDITOR_WIDTH = 280;
-    final int LESSON_LIST_WIDTH = 300;
-
-    // Top level UI:
-    final int TOPIC_EDITOR_HEIGHT = 700;
-    final int SECTION_HEIGHT = TOPIC_EDITOR_HEIGHT - NAV_BAR_HEIGHT - TITLE_BAR_HEIGHT;
-    final int TOPIC_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + LESSON_LIST_WIDTH;
-    Dimension topicEditorSize = new Dimension(900, 600);
 
 
     public TopicEditor(ApplicationState appState, ActionListener listener, JFrame parentWindow) {
@@ -68,7 +49,8 @@ public class TopicEditor extends EditorPanel {
     public void updateFields() {
         titleField.setText(currTopic.title);
         testLevelEditor.updateFields();
-        questionEditors.forEach(QuestionEditor::updateFields);
+        //questionEditors.forEach(QuestionEditor::updateFields);
+        questionsEditor.updateFields();
 
         // Update lesson buttons text:
         currTopic.lessons.forEach(lesson ->
@@ -85,7 +67,8 @@ public class TopicEditor extends EditorPanel {
         testLevelEditor.updateObject();
 
         // Update questions:
-        questionEditors.forEach(QuestionEditor::updateObject);
+        //questionEditors.forEach(QuestionEditor::updateObject);
+        questionsEditor.updateObject();
         System.out.println("Topic '" + currTopic.title + "' has been saved.");
     }
 
@@ -110,24 +93,19 @@ public class TopicEditor extends EditorPanel {
         add(cellPanel, BorderLayout.NORTH);
 
         // Add topic content editors:
-        initLevelEditor();
-        initQuestionsEditor();
+        testLevelEditor = new LevelEditor(currTopic.testLevel, this);
+        add(testLevelEditor.createEditorPanel(), BorderLayout.WEST);
+
+        //initQuestionsEditor();
+        questionsEditor = new QuestionListEditor(currTopic.testQuestions, this);
+        add(questionsEditor, BorderLayout.CENTER);
+
         initLessonsList();
 
         initNavigation();
     }
 
-    private void initLevelEditor() {
-        JPanel levelPanel = new JPanel(new BorderLayout());
-        levelPanel.add(createSectionTitle("Test level:"), BorderLayout.NORTH);
-
-        testLevelEditor = new LevelEditor(currTopic.testLevel, this);
-        JPanel panel = new JPanel();
-        panel.add(testLevelEditor);
-        levelPanel.add(panel, BorderLayout.CENTER);
-        add(levelPanel, BorderLayout.WEST);
-    }
-
+    // DELETE:
     private void initQuestionsEditor() {
         JPanel questionsPanel = new JPanel(new BorderLayout());
         questionsPanel.add(createSectionTitle("Test questions:"), BorderLayout.NORTH);
@@ -168,7 +146,7 @@ public class TopicEditor extends EditorPanel {
 
         // Add a new test question:
         button = addNavButton("New Question", buttonsPanel);
-        button.addActionListener(e -> addNewQuestion());
+        button.addActionListener(e -> currTopic.testQuestions.add(questionsEditor.addNewQuestion()));
 
         // Add a new lesson:
         button = addNavButton("New Lesson", buttonsPanel);
@@ -197,14 +175,25 @@ public class TopicEditor extends EditorPanel {
         return  button;
     }
 
-    public JPanel createSectionTitle(String sectionTitle) {
+    public void showLessonEditor(Lesson lesson) {
+        LessonEditor lessonEditor = new LessonEditor(lesson, this);
+
+        // Move the window so that the lessons list is visible:
+        Point location = parentWindow.getLocation();
+        location.translate(-LESSON_LIST_WIDTH, 0);
+        lessonEditor.setLocation(location);
+        lessonEditor.setVisible(true);
+    }
+
+    public static JPanel createSectionTitle(String sectionTitle) {
         JPanel titlePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         JLabel title = new JLabel(sectionTitle);
-        title.setFont(sectionFont);
+        title.setFont(SECTION_FONT);
         titlePanel.add(title);
         return titlePanel;
     }
 
+    // DELETE:
     public void addNewQuestion() {
         Question question = new Question();
         currTopic.testQuestions.add(question);
@@ -212,8 +201,9 @@ public class TopicEditor extends EditorPanel {
         questionsScrollPane.updateUI();
     }
 
+    // DELETE:
     public void addQuestion(Question question) {
-        QuestionEditor questionEditor = new QuestionEditor(question, this, QUESTION_WIDTH);
+        QuestionEditor questionEditor = new QuestionEditor(question, this);
         JPanel encapsulationPanel = new JPanel();
         encapsulationPanel.setBorder(BorderFactory.createEmptyBorder(0,0,10,0));
         encapsulationPanel.add(questionEditor);
@@ -232,6 +222,7 @@ public class TopicEditor extends EditorPanel {
         JButton lessonBtn = new JButton(lesson.title);
         lessonBtn.addActionListener(e -> {
             System.out.println("Trying to edit lesson: " + lesson.title);
+            showLessonEditor(lesson);
         });
         lessonsList.add(lessonBtn);
         lessonButtons.add(lessonBtn);

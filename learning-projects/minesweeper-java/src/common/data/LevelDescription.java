@@ -39,7 +39,6 @@ public class LevelDescription implements Serializable {
         test, learn
     }
 
-
     /**
      * Sets base game parameters.
      * @param columns - number of columns on the minesweeper board,

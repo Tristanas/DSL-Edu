@@ -1,5 +1,7 @@
 package common.data;
 
+import java.awt.*;
+
 /**
  Constants for button text and action strings, minesweeper cell state and drawing logic.
  */
@@ -17,6 +19,7 @@ public class GameConstants {
     public static final String UPDATE = "Update";
     public static final String REFRESH = "Refresh";
     public static final String EDIT_LESSON = "EditLesson";
+    public static final String SAVE_LESSON = "SaveLesson";
 
     // Images/cell type counts:
     public static final int NUM_IMAGES = 14;
@@ -37,6 +40,35 @@ public class GameConstants {
     public static final int DRAW_MARK = 11;
     public static final int DRAW_WRONG_MARK = 12;
     public static final int DRAW_CERTAIN_MARK = 13;
+
+
+    // TOPIC AND LESSON EDITOR LAYOUT:
+    // Question:
+    public static final int QUESTION_WIDTH = 300;
+    public static final int QUESTION_HEIGHT = 150;
+
+    // Section layout:
+    public static final int SECTION_HEIGHT = 500;
+    public static final int SECTION_PADDING = 10;
+    public static final int SECTION_FONT_SIZE = 24;
+    public static Font SECTION_FONT = new Font(Font.SANS_SERIF, Font.PLAIN, SECTION_FONT_SIZE);
+
+    // Specific sections:
+    public static final int LEVEL_EDITOR_WIDTH = 200;
+    public static final int LESSON_LIST_WIDTH = 300;
+    public static final int QUESTION_LIST_WIDTH = QUESTION_WIDTH;
+
+    // Editor title and navigation sections:
+    public static final int NAV_BAR_HEIGHT = 50;
+    public static final int TITLE_BAR_HEIGHT = 40;
+    public static final int TITLE_FONT_SIZE = 32;
+
+    // Top level UI:
+    public static final int TOPIC_EDITOR_HEIGHT = SECTION_HEIGHT + TITLE_BAR_HEIGHT + NAV_BAR_HEIGHT;
+    public static final int TOPIC_EDITOR_WIDTH = QUESTION_LIST_WIDTH + LEVEL_EDITOR_WIDTH + LESSON_LIST_WIDTH + SECTION_PADDING * 2;
+    public static Dimension topicEditorSize = new Dimension(TOPIC_EDITOR_WIDTH, TOPIC_EDITOR_HEIGHT);
+
+
 
 //    public enum Draw {
 //        Empty, One, Two, Three, Four, Five, Six, Seven, Eight, Mine, Cover
