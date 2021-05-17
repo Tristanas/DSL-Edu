@@ -33,7 +33,7 @@
       <node id="8102881121105731997" at="37,63,38,30" concept="4" />
       <node id="8102881121105731997" at="38,30,39,230" concept="2" />
       <node id="8102881121105731997" at="39,230,40,24" concept="5" />
-      <node id="8102881121105731883" at="44,0,45,0" concept="6" trace="InputFieldReference$zs" />
+      <node id="8102881121105731883" at="44,0,45,0" concept="6" trace="InputFieldReference$fo" />
       <node id="8102881121105731883" at="18,0,20,0" concept="1" trace="typeof_InputFieldReference_InferenceRule#()V" />
       <node id="8102881121105731883" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8102881121105731883" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />

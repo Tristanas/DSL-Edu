@@ -39,25 +39,25 @@
       <node id="2052936260269926644" at="57,9,58,53" concept="1" />
       <node id="2052936260269926646" at="58,53,59,53" concept="1" />
       <node id="2052936260269926649" at="59,53,60,53" concept="1" />
-      <node id="2052936260269932438" at="61,39,62,61" concept="1" />
+      <node id="2052936260269932438" at="62,5,63,59" concept="1" />
       <node id="2052936260269918484" at="69,25,70,33" concept="1" />
       <node id="2052936260269918484" at="15,0,18,0" concept="3" trace="insertUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
       <node id="2052936260269918484" at="19,0,22,0" concept="3" trace="removeUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
       <node id="2052936260269918484" at="23,0,26,0" concept="3" trace="changedUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
       <node id="2052936260269918484" at="68,0,72,0" concept="3" trace="run#()V" />
+      <node id="2052936260269918484" at="56,16,62,5" concept="6" />
       <node id="2052936260269918484" at="66,42,72,7" concept="1" />
-      <node id="2052936260269918484" at="56,16,63,5" concept="6" />
       <node id="2052936260269918484" at="66,0,74,0" concept="5" trace="main#([Ljava/lang/String;)V" />
       <node id="2052936260269918484" at="53,0,65,0" concept="3" trace="update#()V" />
       <node id="2052936260269918484" at="14,0,27,0" concept="2" trace="listener" />
       <node id="2052936260269918484" at="33,0,52,0" concept="0" trace="ResearchCalculator#()V" />
+      <scope id="2052936260269918484" at="61,0,61,39">
+        <var name="e" id="2052936260269918484" />
+      </scope>
+      <scope id="2052936260269918484" at="61,39,61,39" />
       <scope id="2052936260269918484" at="15,48,16,15" />
       <scope id="2052936260269918484" at="19,48,20,15" />
       <scope id="2052936260269918484" at="23,49,24,15" />
-      <scope id="2052936260269918484" at="61,0,62,61">
-        <var name="e" id="2052936260269918484" />
-      </scope>
-      <scope id="2052936260269918484" at="61,39,62,61" />
       <scope id="2052936260269918484" at="69,25,70,33" />
       <scope id="2052936260269918484" at="15,0,18,0">
         <var name="p0" id="2052936260269918484" />
@@ -74,7 +74,7 @@
       <scope id="2052936260269918484" at="66,0,74,0">
         <var name="args" id="2052936260269918484" />
       </scope>
-      <scope id="2052936260269918484" at="53,24,63,5">
+      <scope id="2052936260269918484" at="53,24,63,59">
         <var name="i_a" id="2052936260269926644" />
         <var name="i_b" id="2052936260269926646" />
         <var name="i_c" id="2052936260269926649" />
@@ -85,6 +85,86 @@
       <unit id="2052936260269918484" at="67,35,72,5" name="vu.mif.calculator.sandbox.ResearchCalculator$2" />
       <unit id="2052936260269918484" at="14,42,26,3" name="vu.mif.calculator.sandbox.ResearchCalculator$1" />
       <unit id="2052936260269918484" at="13,0,75,0" name="vu.mif.calculator.sandbox.ResearchCalculator" />
+    </file>
+  </root>
+  <root nodeRef="r:ec4679d8-0971-41a9-a30c-0d4c3c673648(vu.mif.calculator.sandbox)/8102881121105539183">
+    <file name="HackCalk.java">
+      <node id="8102881121105539183" at="15,48,16,15" concept="1" />
+      <node id="8102881121105539183" at="19,48,20,15" concept="1" />
+      <node id="8102881121105539183" at="23,49,24,15" concept="1" />
+      <node id="8102881121105539184" at="28,0,29,0" concept="2" trace="inputField_a_0" />
+      <node id="8102881121105539186" at="29,0,30,0" concept="2" trace="inputField_b_0" />
+      <node id="8102881121105539189" at="30,0,31,0" concept="2" trace="inputField_c_0" />
+      <node id="8102881121105539193" at="31,0,32,0" concept="2" trace="outputField_a_0" />
+      <node id="8102881121105539183" at="33,21,34,25" concept="1" />
+      <node id="8102881121105539183" at="34,25,35,36" concept="1" />
+      <node id="8102881121105539183" at="35,36,36,63" concept="1" />
+      <node id="8102881121105539183" at="36,63,37,29" concept="1" />
+      <node id="8102881121105539183" at="37,29,38,24" concept="1" />
+      <node id="8102881121105539183" at="38,24,39,63" concept="1" />
+      <node id="8102881121105539183" at="39,63,40,29" concept="1" />
+      <node id="8102881121105539183" at="40,29,41,24" concept="1" />
+      <node id="8102881121105539183" at="41,24,42,63" concept="1" />
+      <node id="8102881121105539183" at="42,63,43,29" concept="1" />
+      <node id="8102881121105539183" at="43,29,44,24" concept="1" />
+      <node id="8102881121105539183" at="44,24,45,30" concept="1" />
+      <node id="8102881121105539183" at="45,30,46,25" concept="1" />
+      <node id="8102881121105539183" at="46,25,47,13" concept="1" />
+      <node id="8102881121105539183" at="47,13,48,44" concept="1" />
+      <node id="8102881121105539183" at="48,44,49,11" concept="1" />
+      <node id="8102881121105539183" at="49,11,50,21" concept="1" />
+      <node id="8102881121105539184" at="53,24,54,18" concept="4" />
+      <node id="8102881121105539186" at="54,18,55,18" concept="4" />
+      <node id="8102881121105539189" at="55,18,56,18" concept="4" />
+      <node id="8102881121105539184" at="57,9,58,57" concept="1" />
+      <node id="8102881121105539186" at="58,57,59,57" concept="1" />
+      <node id="8102881121105539189" at="59,57,60,57" concept="1" />
+      <node id="8102881121105539193" at="62,5,63,61" concept="1" />
+      <node id="8102881121105539183" at="69,25,70,23" concept="1" />
+      <node id="8102881121105539183" at="15,0,18,0" concept="3" trace="insertUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="8102881121105539183" at="19,0,22,0" concept="3" trace="removeUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="8102881121105539183" at="23,0,26,0" concept="3" trace="changedUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="8102881121105539183" at="68,0,72,0" concept="3" trace="run#()V" />
+      <node id="8102881121105539183" at="56,18,62,5" concept="6" />
+      <node id="8102881121105539183" at="66,42,72,7" concept="1" />
+      <node id="8102881121105539183" at="66,0,74,0" concept="5" trace="main#([Ljava/lang/String;)V" />
+      <node id="8102881121105539183" at="53,0,65,0" concept="3" trace="update#()V" />
+      <node id="8102881121105539183" at="14,0,27,0" concept="2" trace="listener" />
+      <node id="8102881121105539183" at="33,0,52,0" concept="0" trace="HackCalk#()V" />
+      <scope id="8102881121105539183" at="61,0,61,39">
+        <var name="e" id="8102881121105539183" />
+      </scope>
+      <scope id="8102881121105539183" at="61,39,61,39" />
+      <scope id="8102881121105539183" at="15,48,16,15" />
+      <scope id="8102881121105539183" at="19,48,20,15" />
+      <scope id="8102881121105539183" at="23,49,24,15" />
+      <scope id="8102881121105539183" at="69,25,70,23" />
+      <scope id="8102881121105539183" at="15,0,18,0">
+        <var name="p0" id="8102881121105539183" />
+      </scope>
+      <scope id="8102881121105539183" at="19,0,22,0">
+        <var name="p0" id="8102881121105539183" />
+      </scope>
+      <scope id="8102881121105539183" at="23,0,26,0">
+        <var name="p0" id="8102881121105539183" />
+      </scope>
+      <scope id="8102881121105539183" at="57,9,60,57" />
+      <scope id="8102881121105539183" at="68,0,72,0" />
+      <scope id="8102881121105539183" at="66,42,72,7" />
+      <scope id="8102881121105539183" at="66,0,74,0">
+        <var name="args" id="8102881121105539183" />
+      </scope>
+      <scope id="8102881121105539183" at="53,24,63,61">
+        <var name="i_a_0" id="8102881121105539184" />
+        <var name="i_b_0" id="8102881121105539186" />
+        <var name="i_c_0" id="8102881121105539189" />
+      </scope>
+      <scope id="8102881121105539183" at="53,0,65,0" />
+      <scope id="8102881121105539183" at="33,21,50,21" />
+      <scope id="8102881121105539183" at="33,0,52,0" />
+      <unit id="8102881121105539183" at="67,35,72,5" name="vu.mif.calculator.sandbox.HackCalk$2" />
+      <unit id="8102881121105539183" at="14,42,26,3" name="vu.mif.calculator.sandbox.HackCalk$1" />
+      <unit id="8102881121105539183" at="13,0,75,0" name="vu.mif.calculator.sandbox.HackCalk" />
     </file>
   </root>
 </debug-info>

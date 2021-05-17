@@ -25,7 +25,7 @@ public class typeof_InputFieldReference_InferenceRule extends AbstractInferenceR
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.InputFieldReference$zs;
+    return CONCEPTS.InputFieldReference$fo;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -41,6 +41,6 @@ public class typeof_InputFieldReference_InferenceRule extends AbstractInferenceR
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept InputFieldReference$zs = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
+    /*package*/ static final SConcept InputFieldReference$fo = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
   }
 }

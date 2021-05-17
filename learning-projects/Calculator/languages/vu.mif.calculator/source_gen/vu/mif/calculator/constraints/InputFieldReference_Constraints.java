@@ -21,12 +21,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class InputFieldReference_Constraints extends BaseConstraintsDescriptor {
   public InputFieldReference_Constraints() {
-    super(CONCEPTS.InputFieldReference$zs);
+    super(CONCEPTS.InputFieldReference$fo);
   }
 
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.field$5Ri0, this) {
+    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.field$2BpW, this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -41,7 +41,7 @@ public class InputFieldReference_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
-            Scope scope = Scope.getScope(_context.getContextNode(), _context.getContainmentLink(), _context.getPosition(), CONCEPTS.InputField$YA);
+            Scope scope = Scope.getScope(_context.getContextNode(), _context.getContainmentLink(), _context.getPosition(), CONCEPTS.InputField$Ey);
             return (scope == null ? new EmptyScope() : scope);
           }
         };
@@ -54,11 +54,11 @@ public class InputFieldReference_Constraints extends BaseConstraintsDescriptor {
   private static final SNodePointer breakingNode_43tbk9_a0a0a0a0a1a0a0a0c = new SNodePointer("r:585bf920-7252-4815-9cb1-07fc60d79a77(vu.mif.calculator.constraints)", "8102881121105582707");
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept InputFieldReference$zs = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
-    /*package*/ static final SConcept InputField$YA = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
+    /*package*/ static final SConcept InputFieldReference$fo = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
+    /*package*/ static final SConcept InputField$Ey = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink field$5Ri0 = MetaAdapterFactory.getReferenceLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, 0x1c7d7ea6dbe8ef8bL, "field");
+    /*package*/ static final SReferenceLink field$2BpW = MetaAdapterFactory.getReferenceLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, 0x1c7d7ea6dbe8ef8bL, "field");
   }
 }

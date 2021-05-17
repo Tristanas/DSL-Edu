@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/vu.mif.calculator/sandbox/vu.mif.calculator.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/vu.mif.calculator/vu.mif.calculator.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Calculator.build-app/Calculator.build-app.msd" folder="" />
     </projectModules>
   </component>
 </project>

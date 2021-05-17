@@ -21,26 +21,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/solutions/CommonClasses/libs/minesweeper 2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-game/EducationalGame.build-game.msd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-game/models/EducationalGame.build-game.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen/vu/mif/calculator/sandbox/HackCalk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/Calculator.build-app.msd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/models/Calculator.build-app.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/source_gen.caches/Calculator/build-app/dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/source_gen.caches/Calculator/build-app/generated" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/source_gen/Calculator/build-app/Calculator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build-app/source_gen/Calculator/build-app/trace.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/Calculator.build.msd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/models/Calculator.build.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/source_gen.caches/Calculator/build/dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/source_gen.caches/Calculator/build/generated" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/source_gen/Calculator/build/Calculator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-projects/Calculator/solutions/Calculator.build/source_gen/Calculator/build/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/Minesweeper/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/Minesweeper/Generator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/Minesweeper/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/Minesweeper/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/main/QueriesGenerated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/classes_gen/main/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen.caches/Minesweeper/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen.caches/Minesweeper/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen.caches/main/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen.caches/main/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/Minesweeper/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/Minesweeper/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/Minesweeper/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/Minesweeper/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/source_gen/main/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/generator/templates/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/generator/templates/main@generator.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/minesweeper-save.ser" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/minesweeper-save.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen.caches/Minesweeper/sandbox/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen.caches/Minesweeper/sandbox/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/MathSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/MathSweeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/mathsweeper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/sandbox/source_gen/Minesweeper/sandbox/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/minesweeper-java/src/com/zetcode/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Education/Education.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Education/Education.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Education/source_gen.caches/Education/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Education/source_gen.caches/Education/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/Minesweeper.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Minesweeper/source_gen.caches/Minesweeper/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Minesweeper/source_gen.caches/Minesweeper/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/.mps/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/constraints/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$inputFieldListHandler_uh00px_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$inputFieldListHandler_uh00px_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$outputFieldListHandler_uh00px_e0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a$outputFieldListHandler_uh00px_e0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$SMP_ReferenceScope_i4w2se_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$SMP_ReferenceScope_i4w2se_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$SMP_Subconcepts_i4w2se_b.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu$SMP_Subconcepts_i4w2se_b.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$expressionSingleRoleHandler_57hct5_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a$expressionSingleRoleHandler_57hct5_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/classes_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$PVQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$PVQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$RTQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$RTQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$SNQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$SNQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$SNsQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated$SNsQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/QueriesGenerated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/classes_gen/main/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/main/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/main/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/main/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/main/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/vu/mif/calculator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen.caches/vu/mif/calculator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/generator/source_gen/main/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/classes_gen/vu/mif/calculator/sandbox/ResearchCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/classes_gen/vu/mif/calculator/sandbox/ResearchCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/classes_gen/vu/mif/calculator/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/classes_gen/vu/mif/calculator/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen.caches/vu/mif/calculator/sandbox/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen.caches/vu/mif/calculator/sandbox/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen.caches/vu/mif/calculator/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen.caches/vu/mif/calculator/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen/vu/mif/calculator/sandbox/ResearchCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen/vu/mif/calculator/sandbox/ResearchCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen/vu/mif/calculator/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/sandbox/source_gen/vu/mif/calculator/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen.caches/vu/mif/calculator/structure/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/behavior/Calculator__BehaviorDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/InputFieldReference_Constraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/constraints/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/Calculator_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputFieldReference_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputFieldReference_SubstituteMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/InputField_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/OutputField_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-projects/Calculator/languages/vu.mif.calculator/source_gen/vu/mif/calculator/typesystem/typeof_InputFieldReference_InferenceRule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,313 +148,14 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="59782a27-72cf-4867-a4fd-1a3782afc48f/r:a6a36a9d-e90b-424e-9c89-3f7905c32cf9(TempModule59782a27-72cf-4867-a4fd-1a3782afc48f/ConsoleModel_1328697713488700)">
+            <model ref="7587d33a-0e36-4e2d-b501-d43dd3a36089/r:9dcb0598-7a64-4b78-8f44-2301eb0ab75b(TempModule7587d33a-0e36-4e2d-b501-d43dd3a36089/ConsoleModel_215593055291200)">
               <persistence version="9" />
               <languages>
                 <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
               </languages>
               <imports />
-              <registry>
-                <language id="a5e4de53-46a3-44da-aab3-68fdf1c34ed0" name="jetbrains.mps.console.ideCommands">
-                  <concept id="7057947030097724900" name="jetbrains.mps.console.ideCommands.structure.ShowGenPlan" flags="ng" index="25zly9">
-                    <child id="8137599547235585843" name="targetModel" index="hHs2v" />
-                  </concept>
-                  <concept id="3894227536041114995" name="jetbrains.mps.console.ideCommands.structure.ClickableGenerator" flags="ng" index="3QjmSW">
-                    <property id="3894227536041893247" name="moduleId" index="3QmkSK" />
-                  </concept>
-                </language>
-                <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
-                  <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
-                    <property id="1863527487546097494" name="modelId" index="1XweGQ" />
-                    <child id="679099339649067980" name="name" index="1j$8Uc" />
-                  </concept>
-                  <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
-                    <property id="679099339649053841" name="value" index="1j_P7h" />
-                  </concept>
-                </language>
-                <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
-                  <concept id="1583916890557930028" name="jetbrains.mps.console.base.structure.ConsoleRoot" flags="ng" index="aymSD">
-                    <child id="1583916890557930415" name="history" index="aymYE" />
-                    <child id="1583916890557930417" name="commandHolder" index="aymYO" />
-                    <child id="9025248442620242919" name="cursor" index="1PhJh3" />
-                  </concept>
-                  <concept id="2348043250037290416" name="jetbrains.mps.console.base.structure.IClickable" flags="ng" index="rb1_l">
-                    <property id="3894227536041201194" name="text" index="3QjdP_" />
-                  </concept>
-                  <concept id="5758176878586720817" name="jetbrains.mps.console.base.structure.CommandHolderRef" flags="ng" index="2_V_lH">
-                    <reference id="5758176878586720818" name="target" index="2_V_lI" />
-                  </concept>
-                  <concept id="351968380916615243" name="jetbrains.mps.console.base.structure.CommandHolder" flags="ng" index="2Clz$F">
-                    <child id="351968380916615460" name="command" index="2Clzx4" />
-                  </concept>
-                  <concept id="5637103006919122224" name="jetbrains.mps.console.base.structure.NewLineResponseItem" flags="ng" index="Zy5Tx" />
-                  <concept id="5637103006919121940" name="jetbrains.mps.console.base.structure.NodeResponseItem" flags="ng" index="Zy5X5">
-                    <child id="5637103006919121941" name="node" index="Zy5X4" />
-                  </concept>
-                  <concept id="5637103006919121976" name="jetbrains.mps.console.base.structure.TextResponseItem" flags="ng" index="Zy5XD">
-                    <property id="5637103006919122193" name="text" index="Zy5T0" />
-                  </concept>
-                  <concept id="5637103006918228482" name="jetbrains.mps.console.base.structure.Response" flags="ng" index="ZBF_j">
-                    <child id="5637103006919120621" name="item" index="Zy5mW" />
-                  </concept>
-                  <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm">
-                    <child id="7195119950189425818" name="item" index="18xWvz" />
-                  </concept>
-                </language>
-              </registry>
-              <node concept="aymSD" id="mB0BBH5yJy">
-                <node concept="3balQm" id="mB0BBH5yJz" role="aymYE">
-                  <node concept="2Clz$F" id="mB0BBH5yJ$" role="18xWvz">
-                    <node concept="25zly9" id="mB0BBH5yJ_" role="2Clzx4">
-                      <node concept="1dCxOl" id="mB0BBH5yJA" role="hHs2v">
-                        <property role="1XweGQ" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68" />
-                        <node concept="1j_P7g" id="mB0BBH5yJB" role="1j$8Uc">
-                          <property role="1j_P7h" value="Minesweeper.sandbox" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="ZBF_j" id="mB0BBH5yJC" role="18xWvz">
-                    <node concept="Zy5XD" id="mB0BBH5yJD" role="Zy5mW">
-                      <property role="Zy5T0" value="---------------------  mappings partitioning  -----------------------------------" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJE" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yJF" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJG" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 1 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJH" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJI" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yJJ" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yJK" role="Zy5X4">
-                        <property role="3QmkSK" value="1f3698ec-8a44-4aaa-b907-0ac2077d80a4" />
-                        <property role="3QjdP_" value="jetbrains.mps.lang.core.generator.template.main.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJL" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yJM" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJN" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 2 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJO" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJP" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yJQ" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yJR" role="Zy5X4">
-                        <property role="3QmkSK" value="e12af3e9-8538-46c4-8b97-41ac8896ba44" />
-                        <property role="3QjdP_" value="main.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5XD" id="mB0BBH5yJS" role="Zy5mW">
-                      <property role="Zy5T0" value=" [Minesweeper#01]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJT" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yJU" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJV" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 3 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yJW" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yJX" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yJY" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yJZ" role="Zy5X4">
-                        <property role="3QmkSK" value="857d0a79-6f44-4f46-84ed-9c5b42632011" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main.preproc" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yK0" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yK1" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yK2" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 4 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yK3" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yK4" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yK5" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yK6" role="Zy5X4">
-                        <property role="3QmkSK" value="857d0a79-6f44-4f46-84ed-9c5b42632011" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main.main" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yK7" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yK8" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yK9" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 5 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKa" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKb" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKc" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKd" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.properties.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKe" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yKf" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKg" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 6 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKh" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKi" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKj" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKk" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.references.desugar" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKl" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yKm" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKn" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 7 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKo" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKp" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKq" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKr" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.references.main" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKs" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yKt" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKu" role="Zy5mW">
-                      <property role="Zy5T0" value=" [ 8 ]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKv" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKw" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKx" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKy" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.closures.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKz" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yK$" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yK_" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKA" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.main.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKB" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKC" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKD" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKE" role="Zy5X4">
-                        <property role="3QmkSK" value="985c8c6a-64b4-486d-a91e-7d4112742556" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguage.generator.java.strings.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKF" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKG" role="Zy5mW">
-                      <property role="Zy5T0" value=" " />
-                    </node>
-                    <node concept="Zy5X5" id="mB0BBH5yKH" role="Zy5mW">
-                      <node concept="3QjmSW" id="mB0BBH5yKI" role="Zy5X4">
-                        <property role="3QmkSK" value="46ef3033-ce72-4166-b19e-6ceed23b6844" />
-                        <property role="3QjdP_" value="jetbrains.mps.baseLanguageInternal.generator.template.main.*" />
-                      </node>
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKJ" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yKK" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKL" role="Zy5mW">
-                      <property role="Zy5T0" value="---------------------------------------------------------------------------------" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKM" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKN" role="Zy5mW">
-                      <property role="Zy5T0" value="Model directly uses next languages (including explicitly engaged, if any):" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKO" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKP" role="Zy5mW">
-                      <property role="Zy5T0" value="  Minesweeper" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKQ" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKR" role="Zy5mW">
-                      <property role="Zy5T0" value="=================================" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKS" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKT" role="Zy5mW">
-                      <property role="Zy5T0" value="Engaged generators with trace:" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKU" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKV" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKW" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKX" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.lang.core/generator as OWNED through [EngagedLanguage: jetbrains.mps.lang.core as EXTENDS through [EngagedLanguage: Minesweeper]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yKY" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yKZ" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yL0" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yL1" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage.closures/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage.closures as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yL2" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yL3" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as EXTENDED GENERATOR through [EngagedGenerator: jetbrains.mps.baseLanguage.closures/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage.closures as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yL4" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yL5" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguageInternal/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguageInternal as GENERATES INTO through [EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yL6" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yL7" role="Zy5mW">
-                      <property role="Zy5T0" value=" EngagedGenerator: jetbrains.mps.baseLanguage/java as EXTENDED GENERATOR through [EngagedGenerator: jetbrains.mps.baseLanguageInternal/ as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguageInternal as GENERATES INTO through [EngagedGenerator: jetbrains.mps.baseLanguage/java as OWNED through [EngagedLanguage: jetbrains.mps.baseLanguage as GENERATES INTO through [EngagedGenerator: Minesweeper/main as OWNED through [EngagedLanguage: Minesweeper]]]]]]" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yL8" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yL9" role="Zy5mW">
-                      <property role="Zy5T0" value="=================================" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLa" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yLb" role="Zy5mW">
-                      <property role="Zy5T0" value="1 roots, 1 components" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLc" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yLd" role="Zy5mW">
-                      <property role="Zy5T0" value="#0(1):  MathSweeper" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLe" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yLf" role="Zy5mW" />
-                    <node concept="Zy5Tx" id="mB0BBH5yLg" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yLh" role="Zy5mW">
-                      <property role="Zy5T0" value="Strong:" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLi" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yLj" role="Zy5mW">
-                      <property role="Zy5T0" value="1 roots, 1 components" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLk" role="Zy5mW" />
-                    <node concept="Zy5XD" id="mB0BBH5yLl" role="Zy5mW">
-                      <property role="Zy5T0" value="#0(1):  MathSweeper" />
-                    </node>
-                    <node concept="Zy5Tx" id="mB0BBH5yLm" role="Zy5mW" />
-                  </node>
-                </node>
-                <node concept="2Clz$F" id="mB0BBH5yLn" role="aymYO" />
-                <node concept="2_V_lH" id="mB0BBH5yLo" role="1PhJh3">
-                  <ref role="2_V_lI" node="mB0BBH5yLn" resolve="CommandHolder" />
-                </node>
-              </node>
+              <registry />
             </model>
           </tab>
         </TabState>
@@ -502,7 +298,47 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
+              <option name="myItemId" value="03325c36-54f9-47f7-9c55-cd29f86c4fff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:54bcfcdc-62aa-4e60-a155-f6bfb74bf526(EducationalGame.build-game) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-game/models/EducationalGame.build-game.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03325c36-54f9-47f7-9c55-cd29f86c4fff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:54bcfcdc-62aa-4e60-a155-f6bfb74bf526(EducationalGame.build-game) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-game/models/EducationalGame.build-game.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5662406797162371132" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,11 +366,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemId" value="03325c36-54f9-47f7-9c55-cd29f86c4fff" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,28 +381,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,12 +397,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03325c36-54f9-47f7-9c55-cd29f86c4fff" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03325c36-54f9-47f7-9c55-cd29f86c4fff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:54bcfcdc-62aa-4e60-a155-f6bfb74bf526(EducationalGame.build-game) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-game/models/EducationalGame.build-game.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -676,7 +516,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/Furniture_Workshop" />
-    <property name="settings.editor.selected.configurable" value="mps.compiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Java Application.Node MathSweeper (1)">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
@@ -737,8 +577,8 @@
     </configuration>
     <list>
       <item itemvalue="Compound.Unnamed" />
-      <item itemvalue="Java Application.Node MathSweeper (1)" />
       <item itemvalue="Java Application.Class Minesweeper" />
+      <item itemvalue="Java Application.Node MathSweeper (1)" />
     </list>
     <recent_temporary>
       <list>

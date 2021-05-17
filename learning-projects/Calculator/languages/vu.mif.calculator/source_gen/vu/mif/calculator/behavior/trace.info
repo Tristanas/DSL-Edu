@@ -32,8 +32,8 @@
       <node id="8102881121105582039" at="73,14,74,58" concept="9" />
       <node id="8102881121105582039" at="80,48,81,22" concept="5" />
       <node id="8102881121105582039" at="86,40,87,19" concept="5" />
-      <node id="8102881121105582039" at="91,0,92,0" concept="6" trace="InputField$YA" />
-      <node id="8102881121105582039" at="95,0,96,0" concept="6" trace="inputField$6aS4" />
+      <node id="8102881121105582039" at="91,0,92,0" concept="6" trace="InputField$Ey" />
+      <node id="8102881121105582039" at="95,0,96,0" concept="6" trace="inputField$c6PS" />
       <node id="8102881121105582039" at="34,0,36,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8102881121105582039" at="44,0,46,0" concept="0" trace="Calculator__BehaviorDescriptor#()V" />
       <node id="8102881121105688280" at="37,116,40,5" concept="2" />

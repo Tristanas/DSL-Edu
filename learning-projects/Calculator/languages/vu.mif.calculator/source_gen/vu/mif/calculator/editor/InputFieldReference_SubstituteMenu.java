@@ -28,7 +28,7 @@ public class InputFieldReference_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_i4w2se_a(), CONCEPTS.InputFieldReference$zs));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_i4w2se_a(), CONCEPTS.InputFieldReference$fo));
     result.add(new SMP_Subconcepts_i4w2se_b());
     return result;
   }
@@ -50,7 +50,7 @@ public class InputFieldReference_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_i4w2se_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.InputFieldReference$zs, LINKS.field$5Ri0);
+      super((SAbstractConcept) CONCEPTS.InputFieldReference$fo, LINKS.field$2BpW);
     }
     @NotNull
     @Override
@@ -67,7 +67,7 @@ public class InputFieldReference_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_i4w2se_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.InputFieldReference$zs);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.InputFieldReference$fo);
     }
     @NotNull
     @Override
@@ -88,10 +88,10 @@ public class InputFieldReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept InputFieldReference$zs = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
+    /*package*/ static final SConcept InputFieldReference$fo = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, "vu.mif.calculator.structure.InputFieldReference");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink field$5Ri0 = MetaAdapterFactory.getReferenceLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, 0x1c7d7ea6dbe8ef8bL, "field");
+    /*package*/ static final SReferenceLink field$2BpW = MetaAdapterFactory.getReferenceLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe8ef8aL, 0x1c7d7ea6dbe8ef8bL, "field");
   }
 }

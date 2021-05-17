@@ -59,8 +59,8 @@ public class ResearchCalculator extends JFrame {
       i_b = Integer.parseInt(inputField_b.getText());
       i_c = Integer.parseInt(inputField_c.getText());
     } catch (NumberFormatException e) {
-      outputField_a.setText("" + (i_c * 4 - i_a * 50 * i_b));
     }
+    outputField_a.setText("" + (i_c * 4 - i_a * 50 + i_b));
   }
 
   public static void main(String[] args) {

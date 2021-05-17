@@ -35,8 +35,8 @@ public final class Calculator__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, SAbstractConcept kind, SNode child) {
-    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.InputField$YA)) {
-      return SimpleRoleScope.forNamedElements(__thisNode__, LINKS.inputField$6aS4);
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.InputField$Ey)) {
+      return SimpleRoleScope.forNamedElements(__thisNode__, LINKS.inputField$c6PS);
     }
     return null;
   }
@@ -88,10 +88,10 @@ public final class Calculator__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept InputField$YA = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
+    /*package*/ static final SConcept InputField$Ey = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink inputField$6aS4 = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe84946L, "inputField");
+    /*package*/ static final SContainmentLink inputField$c6PS = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe84946L, "inputField");
   }
 }

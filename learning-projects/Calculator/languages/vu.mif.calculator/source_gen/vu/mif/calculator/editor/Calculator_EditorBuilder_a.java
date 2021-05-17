@@ -19,7 +19,6 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
@@ -80,7 +79,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.name$tAp1;
+      final SProperty property = PROPS.name$MnvL;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no name>");
@@ -90,7 +89,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
-      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
@@ -129,10 +128,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.inputField$6aS4;
+      return LINKS.inputField$c6PS;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.InputField$YA;
+      return CONCEPTS.InputField$Ey;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -142,7 +141,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(inputFieldListHandler_uh00px_c0.this.getNode(), LINKS.inputField$6aS4));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(inputFieldListHandler_uh00px_c0.this.getNode(), LINKS.inputField$c6PS));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -215,10 +214,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.outputField$GziZ;
+      return LINKS.outputField$LVSt;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.OutputField$C3;
+      return CONCEPTS.OutputField$jZ;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -228,7 +227,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(outputFieldListHandler_uh00px_e0.this.getNode(), LINKS.outputField$GziZ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(outputFieldListHandler_uh00px_e0.this.getNode(), LINKS.outputField$LVSt));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -270,17 +269,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept InputField$YA = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
-    /*package*/ static final SConcept OutputField$C3 = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe86905L, "vu.mif.calculator.structure.OutputField");
+    /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
+    /*package*/ static final SConcept InputField$Ey = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe84915L, "vu.mif.calculator.structure.InputField");
+    /*package*/ static final SConcept OutputField$jZ = MetaAdapterFactory.getConcept(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe86905L, "vu.mif.calculator.structure.OutputField");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink inputField$6aS4 = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe84946L, "inputField");
-    /*package*/ static final SContainmentLink outputField$GziZ = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe8692dL, "outputField");
+    /*package*/ static final SContainmentLink inputField$c6PS = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe84946L, "inputField");
+    /*package*/ static final SContainmentLink outputField$LVSt = MetaAdapterFactory.getContainmentLink(0x433d109bb7724d40L, 0x88691370db4e5853L, 0x1c7d7ea6dbe715eeL, 0x1c7d7ea6dbe8692dL, "outputField");
   }
 }
