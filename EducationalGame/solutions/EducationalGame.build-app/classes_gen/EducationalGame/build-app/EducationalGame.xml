@@ -5,6 +5,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/EducationalGame" />
   <property name="mps_home" location="" />
   <property name="app_folder" location="${basedir}/languages/Minesweeper/sandbox/classes_gen/com/zetcode" />
+  <property name="minesweeper_java_source" location="${basedir}/../learning-projects/minesweeper-java/out/production/minesweeper" />
   <property name="resources_folder" location="${basedir}/languages/Minesweeper/sandbox/resources" />
   <property name="lib_folder" location="${basedir}/solutions/CommonClasses/libs" />
   <property name="app_name" value="Mathsweeper" />
@@ -37,10 +38,11 @@
     <manifest file="${build.tmp}/default/MANIFEST.MF">
       <attribute name="Main-Class" value="com.zetcode.Mathsweeper" />
     </manifest>
-    <mkdir dir="${build.tmp}/default/educational-game.jar/CommonClasses" />
     <jar destfile="${build.layout}/educational-game.jar" manifest="${build.tmp}/default/MANIFEST.MF" duplicate="preserve">
       <zipfileset dir="${resources_folder}" prefix="resources" />
+      <zipfileset file="${basedir}/solutions/CommonClasses/CommonClasses.msd" prefix="common2" />
       <zipfileset file="${basedir}/solutions/CommonClasses/CommonClasses.msd" prefix="CommonClasses" />
+      <zipfileset dir="${minesweeper_java_source}/common/" prefix="common" />
       <zipfileset dir="${app_folder}" prefix="com/zetcode" />
       <fileset dir="${build.tmp}/default/educational-game.jar" />
     </jar>
@@ -81,6 +83,7 @@
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
       <macro name="app_folder" path="${app_folder}" />
+      <macro name="minesweeper_java_source" path="${minesweeper_java_source}" />
       <macro name="resources_folder" path="${resources_folder}" />
       <macro name="lib_folder" path="${lib_folder}" />
     </generate>

@@ -9,15 +9,6 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
-    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
-      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
-        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
-        <child id="1622293396948928802" name="content" index="3o6s8t" />
-      </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
-        <property id="1622293396948953704" name="value" index="3o6i5n" />
-      </concept>
-    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
@@ -88,26 +79,10 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
-      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
-        <reference id="6592112598314586626" name="group" index="m$f5T" />
-      </concept>
-      <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
-        <property id="6592112598314498927" name="id" index="m$_wk" />
-        <child id="1359186315025500371" name="xml" index="20twgj" />
-        <child id="6592112598314498931" name="version" index="m$_w8" />
-        <child id="6592112598314499050" name="content" index="m$_yh" />
-        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
-        <child id="6592112598314499021" name="name" index="m$_yQ" />
-        <child id="6592112598314855574" name="containerName" index="m_cZH" />
-      </concept>
-      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
-        <reference id="6592112598314499066" name="target" index="m$_y1" />
-      </concept>
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
-      <concept id="2105528055260548241" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_FolderWithSources" flags="ng" index="1bldCd" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
@@ -115,9 +90,6 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
-      </concept>
-      <concept id="1692280246134781712" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleSources" flags="ng" index="3$exzU">
-        <reference id="1692280246134781713" name="module" index="3$exzV" />
       </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
@@ -128,7 +100,6 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="3335207478148059730" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJarContent" flags="ng" index="3PtdJl" />
       <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
@@ -157,6 +128,29 @@
                   <property role="2Ry0Am" value="com" />
                   <node concept="2Ry0Ak" id="5HOGEjnNaUp" role="2Ry0An">
                     <property role="2Ry0Am" value="zetcode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6jw$TreW1jB" role="1l3spd">
+      <property role="TrG5h" value="minesweeper_java_source" />
+      <node concept="55IIr" id="6jw$TreW1kL" role="398pKh">
+        <node concept="2Ry0Ak" id="6jw$TreW1lZ" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="6jw$TreW1mQ" role="2Ry0An">
+            <property role="2Ry0Am" value="learning-projects" />
+            <node concept="2Ry0Ak" id="6jw$TreW1nn" role="2Ry0An">
+              <property role="2Ry0Am" value="minesweeper-java" />
+              <node concept="2Ry0Ak" id="6jw$TreW1oB" role="2Ry0An">
+                <property role="2Ry0Am" value="out" />
+                <node concept="2Ry0Ak" id="6jw$TreW1p8" role="2Ry0An">
+                  <property role="2Ry0Am" value="production" />
+                  <node concept="2Ry0Ak" id="6jw$TreW1pD" role="2Ry0An">
+                    <property role="2Ry0Am" value="minesweeper" />
                   </node>
                 </node>
               </node>
@@ -201,7 +195,7 @@
       <node concept="aVJcg" id="5HOGEjnLIDG" role="aVJcv">
         <node concept="NbPM2" id="5HOGEjnLIDF" role="aVJcq">
           <node concept="3Mxwew" id="5HOGEjnLIDE" role="3MwsjC">
-            <property role="3MwjfP" value="Mathsweeper" />
+            <property role="3MwjfP" value="MathSweeper" />
           </node>
         </node>
       </node>
@@ -231,7 +225,7 @@
           <node concept="3FFNgi" id="5HOGEjnLnHF" role="2FjnpF">
             <node concept="3_J27D" id="5HOGEjnLnHH" role="3FFNgg">
               <node concept="3Mxwew" id="5HOGEjnLnLP" role="3MwsjC">
-                <property role="3MwjfP" value="com.zetcode.Mathsweeper" />
+                <property role="3MwjfP" value="com.zetcode.MathSweeper" />
               </node>
             </node>
             <node concept="3_J27D" id="5HOGEjnLnHI" role="3FFNgj">
@@ -253,10 +247,22 @@
             </node>
           </node>
         </node>
-        <node concept="1bldCd" id="5HOGEjnNbaF" role="39821P">
-          <ref role="3$exzV" node="5HOGEjnNaeX" resolve="CommonClasses" />
-          <node concept="3PtdJl" id="5HOGEjnNbbu" role="39821P">
-            <node concept="3PtdJl" id="5HOGEjnNbbI" role="39821P" />
+        <node concept="398223" id="6jw$TreW1th" role="39821P">
+          <node concept="3_J27D" id="6jw$TreW1tj" role="Nbhlr">
+            <node concept="3Mxwew" id="6jw$TreW1tU" role="3MwsjC">
+              <property role="3MwjfP" value="common" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="6jw$TreW1tW" role="39821P">
+            <node concept="398BVA" id="6jw$TreW1ue" role="2HvfZ0">
+              <ref role="398BVh" node="6jw$TreW1jB" resolve="minesweeper_java_source" />
+              <node concept="2Ry0Ak" id="6jw$TreW1uy" role="iGT6I">
+                <property role="2Ry0Am" value="common" />
+                <node concept="2Ry0Ak" id="6jw$TreW1uC" role="2Ry0An">
+                  <property role="2Ry0Am" value="" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="398223" id="5HOGEjnLnG4" role="39821P">
@@ -264,6 +270,9 @@
             <node concept="2HvfSZ" id="5HOGEjnLIOs" role="39821P">
               <node concept="398BVA" id="5HOGEjnLIRm" role="2HvfZ0">
                 <ref role="398BVh" node="5HOGEjnLI4P" resolve="app_folder" />
+                <node concept="2Ry0Ak" id="6jw$TreVXNZ" role="iGT6I">
+                  <property role="2Ry0Am" value="" />
+                </node>
               </node>
             </node>
             <node concept="3_J27D" id="5HOGEjnLTq6" role="Nbhlr">
@@ -282,36 +291,6 @@
           <node concept="3Mxwew" id="5HOGEjnLnG0" role="3MwsjC">
             <property role="3MwjfP" value="educational-game.jar" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="m$_wf" id="5HOGEjnMbKb" role="3989C9">
-      <property role="m$_wk" value="EducationalGame" />
-      <node concept="3_J27D" id="5HOGEjnMbKc" role="m$_yQ">
-        <node concept="3Mxwew" id="5HOGEjnMbKd" role="3MwsjC">
-          <property role="3MwjfP" value="EducationalGame" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="5HOGEjnMbKe" role="m$_w8">
-        <node concept="3Mxwew" id="5HOGEjnMbKf" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
-        </node>
-      </node>
-      <node concept="m$f5U" id="5HOGEjnMbKg" role="m$_yh">
-        <ref role="m$f5T" node="5HOGEjnMbKa" resolve="EducationalGame" />
-      </node>
-      <node concept="m$_yC" id="5HOGEjnMbKh" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="3_J27D" id="5HOGEjnMbKi" role="m_cZH">
-        <node concept="3Mxwew" id="5HOGEjnMbKj" role="3MwsjC">
-          <property role="3MwjfP" value="EducationalGame" />
-        </node>
-      </node>
-      <node concept="2pNNFK" id="5HOGEjnMbKk" role="20twgj">
-        <property role="2pNNFO" value="depends" />
-        <node concept="3o6iSG" id="5HOGEjnMbKl" role="3o6s8t">
-          <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
       </node>
     </node>
