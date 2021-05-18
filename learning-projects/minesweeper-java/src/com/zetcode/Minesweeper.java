@@ -22,6 +22,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.net.URL;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -52,8 +53,12 @@ public class Minesweeper extends JFrame implements ActionListener {
     JPanel menu, game;
 
     public Minesweeper() {
-        setupPaths();
+        System.out.println("Getting the flag image...");
+        ImageIcon img = new ImageIcon(ImageScaler.getImageResource("flag.png"));
+        System.out.println("Flag image size: " + img.getIconWidth() + "x" + img.getIconHeight());
+
         setupAppState();
+        setupPaths();
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
     }
@@ -64,6 +69,18 @@ public class Minesweeper extends JFrame implements ActionListener {
     }
 
     public void setupPaths() {
+        URL classUrl = Minesweeper.class.getResource("Board.class");
+        boolean launchedFromJar = classUrl != null && classUrl.getPath().startsWith("jar:");
+
+        if (launchedFromJar) {
+
+        } else {
+            setupIDEPaths();
+        }
+
+    }
+
+    public void setupIDEPaths() {
         File sourceLocation = new File(Minesweeper.class.getProtectionDomain().getCodeSource().getLocation().getPath());
         ImageIcon img;
         String imageName = "0.png";
@@ -81,6 +98,10 @@ public class Minesweeper extends JFrame implements ActionListener {
         ImageScaler.ResourcesPath = path;
         System.out.println("Root path: " + rootPath);
         System.out.println("Resources path: " + path);
+    }
+
+    public void setupJARPaths() {
+
     }
 
     public void showMenu() {

@@ -754,44 +754,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6jw$TreX$lf" role="3cqZAp">
-          <node concept="2OqwBi" id="6jw$TreXCbO" role="3clFbG">
-            <node concept="10M0yZ" id="6jw$TreXBFR" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="6jw$TreXD6W" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="6jw$TreXElu" role="37wK5m">
-                <node concept="37vLTw" id="6jw$TreXFBO" role="3uHU7w">
-                  <ref role="3cqZAo" node="7Cfb6vre25K" resolve="rootPath" />
-                </node>
-                <node concept="Xl_RD" id="6jw$TreXDQg" role="3uHU7B">
-                  <property role="Xl_RC" value="Root path: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6jw$TreXGia" role="3cqZAp">
-          <node concept="2OqwBi" id="6jw$TreXGib" role="3clFbG">
-            <node concept="10M0yZ" id="6jw$TreXGic" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="6jw$TreXGid" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="6jw$TreXGie" role="37wK5m">
-                <node concept="Xl_RD" id="6jw$TreXGig" role="3uHU7B">
-                  <property role="Xl_RC" value="Resources path: " />
-                </node>
-                <node concept="37vLTw" id="6jw$TreXIi5" role="3uHU7w">
-                  <ref role="3cqZAo" node="7Cfb6vreguh" resolve="path" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="7Cfb6vr5Uzf" role="1B3o_S" />
       <node concept="3cqZAl" id="7Cfb6vr5Uzg" role="3clF45" />

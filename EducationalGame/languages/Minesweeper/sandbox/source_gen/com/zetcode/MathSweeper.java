@@ -52,6 +52,8 @@ public class MathSweeper extends JFrame implements ActionListener {
   private JPanel game;
 
   public MathSweeper() {
+    System.out.println("Getting the flag image...");
+
     setupPaths();
     setupAppState();
     addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
@@ -76,8 +78,6 @@ public class MathSweeper extends JFrame implements ActionListener {
       path = rootPath + "resources/";
     }
     ImageScaler.ResourcesPath = path;
-    System.out.print("Root path: " + rootPath);
-    System.out.print("Resources path: " + path);
   }
   public void showMenu() {
     if (menu == null) {

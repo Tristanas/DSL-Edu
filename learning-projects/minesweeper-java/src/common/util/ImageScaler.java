@@ -3,6 +3,7 @@ package common.util;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.net.URL;
 
 public class ImageScaler {
     public static String ResourcesPath;
@@ -90,7 +91,7 @@ public class ImageScaler {
     }
 
     public static BufferedImage createMinesweeperImage(String imageName, int targetWidth, int targetHeight) {
-        ImageIcon img = new ImageIcon(ResourcesPath + imageName);
+        ImageIcon img = new ImageIcon(getImageResource(imageName));
         // If the load fails, look for resources in parent folder:
         if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
             System.err.println("Failed to get image: " + imageName);
@@ -98,6 +99,19 @@ public class ImageScaler {
         }
 
         return createScaledImage(img.getImage(), targetWidth, targetHeight);
+    }
+
+    /**
+     * Gets the image file from the resources folder whether it's a standard folder or a part of a jar.
+     * @param name name of the image to get. Must include the file extension.
+     * @return Image object if found, null if not found.
+     */
+    public static Image getImageResource(String name) {
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        URL url = ImageScaler.class.getResource("/resources/" + name);
+        Image img = tk.createImage(url);
+        tk.prepareImage(img, -1, -1, null);
+        return img;
     }
 
     /**
