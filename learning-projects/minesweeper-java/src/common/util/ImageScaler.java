@@ -95,7 +95,6 @@ public class ImageScaler {
         // If the load fails, look for resources in parent folder:
         if (img.getIconHeight() == -1 || img.getIconWidth() == -1) {
             System.err.println("Failed to get image: " + imageName);
-            System.err.println("Path to image: " + ResourcesPath);
         }
 
         return createScaledImage(img.getImage(), targetWidth, targetHeight);
