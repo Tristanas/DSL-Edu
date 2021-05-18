@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="1k9o" ref="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons)" />
-    <import index="f1yb" ref="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox)" />
     <import index="mslf" ref="r:e1395d8b-7045-4fb3-91de-568a313ccdf1(Minesweeper.sandbox.difficulties)" />
     <import index="7i3a" ref="r:68a8bc6e-7de3-494a-aa64-23dfc6f46ead(Education.sandbox.topics)" />
   </imports>

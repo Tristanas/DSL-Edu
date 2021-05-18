@@ -3,11 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper" version="2" />
-    <use id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education" version="-1" />
   </languages>
   <imports>
-    <import index="f1yb" ref="r:e28775db-3928-4183-a60b-46901ee4846b(Questionaire.sandbox)" />
-    <import index="1k9o" ref="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons)" />
     <import index="exsm" ref="r:41c7225c-b6b4-43de-80a6-2d323b38ee26(Minesweeper.sandbox.levels)" />
   </imports>
   <registry>

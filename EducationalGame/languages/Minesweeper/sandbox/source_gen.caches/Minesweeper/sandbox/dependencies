@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Minesweeper.sandbox.MathSweeper">
+    <classNode dependClassName="com.zetcode.MathSweeper" />
     <classNode dependClassName="common.data.ApplicationState" />
     <classNode dependClassName="common.data.GameConstants" />
     <classNode dependClassName="common.data.LevelDescription" />

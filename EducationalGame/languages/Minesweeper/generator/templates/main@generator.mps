@@ -2,9 +2,6 @@
 <model ref="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f086fa03-c195-4951-a78f-bf3bd377c791" name="Education" version="0" />
-    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
@@ -16,18 +13,13 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="mgfd" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:com.zetcode(CommonClasses/)" />
     <import index="d4zb" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.ui(CommonClasses/)" />
     <import index="jk8j" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.edu(CommonClasses/)" />
     <import index="t8el" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.data(CommonClasses/)" />
     <import index="4h0l" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.util(CommonClasses/)" />
-    <import index="hyqs" ref="67b3c41d-58b3-4756-b971-30bf8a9d63e6/java:jetbrains.jetpad.json(jetbrains.jetpad/)" />
     <import index="yz7o" ref="ce6ad31d-75bc-4f87-98cf-cce06e26c44d/java:common.ui.editor(CommonClasses/)" />
     <import index="cgkn" ref="r:e50e3323-bf4b-4477-ac62-28fa501ce249(Education.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -145,6 +137,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="2791683072064593257" name="packageName" index="2HnT6v" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -272,6 +265,7 @@
   </node>
   <node concept="312cEu" id="4kyY3TkPwZ3">
     <property role="TrG5h" value="Minesweeper" />
+    <property role="2HnT6v" value="com.zetcode" />
     <node concept="312cEg" id="7Cfb6vr5tAV" role="jymVt">
       <property role="TrG5h" value="appState" />
       <node concept="3uibUv" id="7Cfb6vr5tAX" role="1tU5fm">

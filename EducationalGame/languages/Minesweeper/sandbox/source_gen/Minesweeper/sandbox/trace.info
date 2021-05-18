@@ -337,8 +337,8 @@
         <var name="topics" id="8829112826486552167" />
       </scope>
       <scope id="8829112826486552167" at="195,0,305,0" />
-      <unit id="8829112826486552167" at="186,31,193,5" name="Minesweeper.sandbox.MathSweeper$1" />
-      <unit id="8829112826486552167" at="36,0,307,0" name="Minesweeper.sandbox.MathSweeper" />
+      <unit id="8829112826486552167" at="186,31,193,5" name="com.zetcode.MathSweeper$1" />
+      <unit id="8829112826486552167" at="36,0,307,0" name="com.zetcode.MathSweeper" />
     </file>
   </root>
 </debug-info>
