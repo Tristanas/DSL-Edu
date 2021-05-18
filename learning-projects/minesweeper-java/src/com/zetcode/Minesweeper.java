@@ -79,6 +79,8 @@ public class Minesweeper extends JFrame implements ActionListener {
             path = rootPath + "resources/";
         }
         ImageScaler.ResourcesPath = path;
+        System.out.println("Root path: " + rootPath);
+        System.out.println("Resources path: " + path);
     }
 
     public void showMenu() {
