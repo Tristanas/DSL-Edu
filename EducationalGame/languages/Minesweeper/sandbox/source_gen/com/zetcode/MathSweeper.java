@@ -52,6 +52,7 @@ public class MathSweeper extends JFrame implements ActionListener {
   private JPanel game;
 
   public MathSweeper() {
+    setupPaths();
     setupAppState();
     addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
     showMenu();
