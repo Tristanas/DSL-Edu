@@ -5,7 +5,7 @@
     <use id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper" version="2" />
   </languages>
   <imports>
-    <import index="exsm" ref="r:41c7225c-b6b4-43de-80a6-2d323b38ee26(Minesweeper.sandbox.levels)" />
+    <import index="exsm" ref="r:41c7225c-b6b4-43de-80a6-2d323b38ee26(Minesweeper.sandbox.levelCollections)" />
   </imports>
   <registry>
     <language id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper">

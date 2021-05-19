@@ -99,12 +99,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826485796814");
     b.version(2);
+    b.property("teacherApp", 0x42ff3555e6de9f1cL).type(PrimitiveTypeId.BOOLEAN).origin("4827635968626302748").done();
     b.aggregate("levelCollections", 0x7a874f56488801bbL).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L).optional(false).ordered(true).multiple(true).origin("8829112826485801403").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLearningLevel() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LearningLevel", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.super_("Minesweeper.structure.Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/1160393055216179913");
     b.version(2);
@@ -115,7 +116,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForLevel() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "Level", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/7848903088671281841");
     b.version(2);
     b.property("questionsQount", 0x7a874f5648a6183dL).type(PrimitiveTypeId.INTEGER).origin("8829112826487773245").done();

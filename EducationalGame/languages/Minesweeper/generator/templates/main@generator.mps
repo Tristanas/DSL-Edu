@@ -249,13 +249,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="nn" index="tu5oc">
@@ -467,24 +460,20 @@
     <node concept="3clFb_" id="7Cfb6vr5Uy5" role="jymVt">
       <property role="TrG5h" value="setupAppState" />
       <node concept="3clFbS" id="7Cfb6vr5Uy6" role="3clF47">
-        <node concept="1X3_iC" id="mB0BBH5My7" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7Cfb6vr5Uy7" role="8Wnug">
-            <node concept="37vLTI" id="7Cfb6vr5Uy8" role="3clFbG">
-              <node concept="37vLTw" id="7Cfb6vr5Uy9" role="37vLTJ">
-                <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
-              </node>
-              <node concept="2YIFZM" id="7Cfb6vr6aM0" role="37vLTx">
-                <ref role="1Pybhc" to="t8el:~ApplicationState" resolve="ApplicationState" />
-                <ref role="37wK5l" to="t8el:~ApplicationState.deserializeAppState(java.lang.String)" resolve="deserializeAppState" />
-                <node concept="3cpWs3" id="7Cfb6vrmqc$" role="37wK5m">
-                  <node concept="37vLTw" id="7Cfb6vrmr6C" role="3uHU7B">
-                    <ref role="3cqZAo" node="7Cfb6vre25K" resolve="rootPath" />
-                  </node>
-                  <node concept="37vLTw" id="7Cfb6vr6aM1" role="3uHU7w">
-                    <ref role="3cqZAo" node="7Cfb6vr5tAR" resolve="saveFileName" />
-                  </node>
+        <node concept="3clFbF" id="7Cfb6vr5Uy7" role="3cqZAp">
+          <node concept="37vLTI" id="7Cfb6vr5Uy8" role="3clFbG">
+            <node concept="37vLTw" id="7Cfb6vr5Uy9" role="37vLTJ">
+              <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
+            </node>
+            <node concept="2YIFZM" id="7Cfb6vr6aM0" role="37vLTx">
+              <ref role="1Pybhc" to="t8el:~ApplicationState" resolve="ApplicationState" />
+              <ref role="37wK5l" to="t8el:~ApplicationState.deserializeAppState(java.lang.String)" resolve="deserializeAppState" />
+              <node concept="3cpWs3" id="7Cfb6vrmqc$" role="37wK5m">
+                <node concept="37vLTw" id="7Cfb6vrmr6C" role="3uHU7B">
+                  <ref role="3cqZAo" node="7Cfb6vre25K" resolve="rootPath" />
+                </node>
+                <node concept="37vLTw" id="7Cfb6vr6aM1" role="3uHU7w">
+                  <ref role="3cqZAo" node="7Cfb6vr5tAR" resolve="saveFileName" />
                 </node>
               </node>
             </node>
@@ -809,7 +798,9 @@
         <node concept="3clFbF" id="7Cfb6vr5Uzt" role="3cqZAp">
           <node concept="1rXfSq" id="7Cfb6vr5Uzu" role="3clFbG">
             <ref role="37wK5l" to="z60i:~Frame.setResizable(boolean)" resolve="setResizable" />
-            <node concept="3clFbT" id="7Cfb6vr5Uzv" role="37wK5m" />
+            <node concept="3clFbT" id="7Cfb6vr5Uzv" role="37wK5m">
+              <property role="3clFbU" value="true" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7Cfb6vr5Uzw" role="3cqZAp">
@@ -1057,7 +1048,9 @@
         <node concept="3clFbF" id="7Cfb6vr5U$D" role="3cqZAp">
           <node concept="1rXfSq" id="7Cfb6vr5U$E" role="3clFbG">
             <ref role="37wK5l" to="z60i:~Frame.setResizable(boolean)" resolve="setResizable" />
-            <node concept="3clFbT" id="7Cfb6vr5U$F" role="37wK5m" />
+            <node concept="3clFbT" id="4bZdlnAQXcG" role="37wK5m">
+              <property role="3clFbU" value="true" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7Cfb6vr5U$G" role="3cqZAp">

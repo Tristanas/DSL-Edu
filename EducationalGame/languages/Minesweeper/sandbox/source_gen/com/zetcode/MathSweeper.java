@@ -58,6 +58,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     showMenu();
   }
   public void setupAppState() {
+    appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
     if (appState == null) {
       setupDefaultGameSettings();
     }
@@ -87,7 +88,7 @@ public class MathSweeper extends JFrame implements ActionListener {
       createMenu();
     }
     setContentPane(menu);
-    setResizable(false);
+    setResizable(true);
     pack();
     setTitle("Minesweeper Menu");
     setLocationRelativeTo(null);
@@ -108,7 +109,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     createGame(level);
     // else minesweeperBoard.newGame(true, true); 
     setContentPane(game);
-    setResizable(false);
+    setResizable(true);
     pack();
     setTitle("Minesweeper");
     setLocationRelativeTo(null);

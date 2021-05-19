@@ -46,7 +46,6 @@
   <node concept="1TIwiD" id="6NGTWosHXaL">
     <property role="EcuMT" value="7848903088671281841" />
     <property role="TrG5h" value="Level" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7E7jPp8DxwX" role="1TKVEl">
       <property role="IQ2nx" value="8829112826487773245" />
@@ -57,7 +56,6 @@
   <node concept="1TIwiD" id="10qyPnJZpF9">
     <property role="EcuMT" value="1160393055216179913" />
     <property role="TrG5h" value="LearningLevel" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="6NGTWosHXaL" resolve="Level" />
     <node concept="1TJgyj" id="7E7jPp8xZ0J" role="1TKVEi">
       <property role="IQ2ns" value="8829112826485796911" />
@@ -139,6 +137,11 @@
       <property role="20kJfa" value="levelCollections" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7E7jPp8z1pT" resolve="LevelCollectionRef" />
+    </node>
+    <node concept="1TJgyi" id="4bZdlnARDWs" role="1TKVEl">
+      <property role="IQ2nx" value="4827635968626302748" />
+      <property role="TrG5h" value="teacherApp" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="7E7jPp8z1pT">
