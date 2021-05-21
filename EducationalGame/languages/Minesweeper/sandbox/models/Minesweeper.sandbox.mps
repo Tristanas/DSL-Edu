@@ -10,6 +10,7 @@
   <registry>
     <language id="8f66faec-bf22-4d22-8974-76ccb51727ae" name="Minesweeper">
       <concept id="8829112826485796814" name="Minesweeper.structure.EducationalGame" flags="ng" index="M0a2o">
+        <property id="4827635968626302748" name="teacherApp" index="2$8qD9" />
         <child id="8829112826485801403" name="levelCollections" index="M3OVH" />
       </concept>
       <concept id="8829112826486068857" name="Minesweeper.structure.LevelCollectionReference" flags="ng" index="M2P$J">
@@ -25,6 +26,13 @@
   <node concept="M0a2o" id="7E7jPp8$RpB">
     <property role="TrG5h" value="MathSweeper" />
     <node concept="M2P$J" id="7E7jPp8LkW_" role="M3OVH">
+      <ref role="M2PBq" to="exsm:7E7jPp8IQxN" resolve="Statistics" />
+    </node>
+  </node>
+  <node concept="M0a2o" id="6QtedtYJCpZ">
+    <property role="TrG5h" value="MathSweeperTeacher" />
+    <property role="2$8qD9" value="true" />
+    <node concept="M2P$J" id="6QtedtYJCq0" role="M3OVH">
       <ref role="M2PBq" to="exsm:7E7jPp8IQxN" resolve="Statistics" />
     </node>
   </node>

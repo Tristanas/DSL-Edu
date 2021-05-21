@@ -8,7 +8,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/CommonClasses/CommonClasses.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Education.sandbox/Education.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/EducationalGame.build-app/EducationalGame.build-app.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/EducationalGame.build-game/EducationalGame.build-game.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Questionaire/Questionaire.msd" folder="" />
     </projectModules>
   </component>
