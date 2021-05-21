@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class DifficultyRef_Editor extends DefaultNodeEditor {
+public class DifficultyReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DifficultyRef_EditorBuilder_a(editorContext, node).createCell();
+    return new DifficultyReference_EditorBuilder_a(editorContext, node).createCell();
   }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Minesweeper.editor.DifficultyRef_Editor">
-    <classNode dependClassName="Minesweeper.editor.DifficultyRef_EditorBuilder_a" />
+  <dependency className="Minesweeper.editor.DifficultyReference_Editor">
+    <classNode dependClassName="Minesweeper.editor.DifficultyReference_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Minesweeper.editor.DifficultyRef_EditorBuilder_a">
+  <dependency className="Minesweeper.editor.DifficultyReference_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -47,7 +47,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="Minesweeper.editor.DifficultyRef_SubstituteMenu">
+  <dependency className="Minesweeper.editor.DifficultyReference_SubstituteMenu">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Collection" />
@@ -111,11 +111,11 @@
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
   <dependency className="Minesweeper.editor.EditorAspectDescriptorImpl">
-    <classNode dependClassName="Minesweeper.editor.DifficultyRef_Editor" />
-    <classNode dependClassName="Minesweeper.editor.DifficultyRef_SubstituteMenu" />
+    <classNode dependClassName="Minesweeper.editor.DifficultyReference_Editor" />
+    <classNode dependClassName="Minesweeper.editor.DifficultyReference_SubstituteMenu" />
     <classNode dependClassName="Minesweeper.editor.Difficulty_Editor" />
     <classNode dependClassName="Minesweeper.editor.LearningLevel_Editor" />
-    <classNode dependClassName="Minesweeper.editor.LevelCollectionRef_SubstituteMenu" />
+    <classNode dependClassName="Minesweeper.editor.LevelCollectionReference_SubstituteMenu" />
     <classNode dependClassName="Minesweeper.editor.LevelCollection_Editor" />
     <classNode dependClassName="Minesweeper.editor.TestLevel_Editor" />
     <classNode dependClassName="java.lang.Override" />
@@ -178,7 +178,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="Minesweeper.editor.LevelCollectionRef_SubstituteMenu">
+  <dependency className="Minesweeper.editor.LevelCollectionReference_SubstituteMenu">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Collection" />

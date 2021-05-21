@@ -12,7 +12,7 @@
       <concept id="8829112826485796814" name="Minesweeper.structure.EducationalGame" flags="ng" index="M0a2o">
         <child id="8829112826485801403" name="levelCollections" index="M3OVH" />
       </concept>
-      <concept id="8829112826486068857" name="Minesweeper.structure.LevelCollectionRef" flags="ng" index="M2P$J">
+      <concept id="8829112826486068857" name="Minesweeper.structure.LevelCollectionReference" flags="ng" index="M2P$J">
         <reference id="8829112826486068876" name="levelCollection" index="M2PBq" />
       </concept>
     </language>

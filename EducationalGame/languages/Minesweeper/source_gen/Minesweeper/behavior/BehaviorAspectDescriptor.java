@@ -12,6 +12,9 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myLearningLevel__BehaviorDescriptor = new LearningLevel__BehaviorDescriptor();
+  private final BHDescriptor myTestLevel__BehaviorDescriptor = new TestLevel__BehaviorDescriptor();
+  private final BHDescriptor myLevelCollection__BehaviorDescriptor = new LevelCollection__BehaviorDescriptor();
   private final BHDescriptor myDifficulty__BehaviorDescriptor = new Difficulty__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -23,9 +26,15 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     switch (conceptIndex.index(cncpt)) {
       case 0:
         return myDifficulty__BehaviorDescriptor;
+      case 1:
+        return myLearningLevel__BehaviorDescriptor;
+      case 2:
+        return myLevelCollection__BehaviorDescriptor;
+      case 3:
+        return myTestLevel__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L), MetaIdFactory.conceptId(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L), MetaIdFactory.conceptId(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L), MetaIdFactory.conceptId(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L)).seal();
 }

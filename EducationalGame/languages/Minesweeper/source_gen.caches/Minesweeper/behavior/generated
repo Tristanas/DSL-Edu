@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="bmyrtsh78hd145hkef72np7niiizrxa">
-  <files names="BehaviorAspectDescriptor.java:Difficulty__BehaviorDescriptor.java" />
+<product version="3" modelHash="-821hdgrgdso97dj3z0qlbc7mwj67aqg">
+  <files names="BehaviorAspectDescriptor.java:Difficulty__BehaviorDescriptor.java:LearningLevel__BehaviorDescriptor.java:LevelCollection__BehaviorDescriptor.java:TestLevel__BehaviorDescriptor.java" />
 </product>
 

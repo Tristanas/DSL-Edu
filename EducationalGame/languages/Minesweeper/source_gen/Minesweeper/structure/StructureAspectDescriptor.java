@@ -14,12 +14,12 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDifficulty = createDescriptorForDifficulty();
-  /*package*/ final ConceptDescriptor myConceptDifficultyRef = createDescriptorForDifficultyRef();
+  /*package*/ final ConceptDescriptor myConceptDifficultyReference = createDescriptorForDifficultyReference();
   /*package*/ final ConceptDescriptor myConceptEducationalGame = createDescriptorForEducationalGame();
   /*package*/ final ConceptDescriptor myConceptLearningLevel = createDescriptorForLearningLevel();
   /*package*/ final ConceptDescriptor myConceptLevel = createDescriptorForLevel();
   /*package*/ final ConceptDescriptor myConceptLevelCollection = createDescriptorForLevelCollection();
-  /*package*/ final ConceptDescriptor myConceptLevelCollectionRef = createDescriptorForLevelCollectionRef();
+  /*package*/ final ConceptDescriptor myConceptLevelCollectionReference = createDescriptorForLevelCollectionReference();
   /*package*/ final ConceptDescriptor myConceptTestLevel = createDescriptorForTestLevel();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -36,7 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDifficulty, myConceptDifficultyRef, myConceptEducationalGame, myConceptLearningLevel, myConceptLevel, myConceptLevelCollection, myConceptLevelCollectionRef, myConceptTestLevel);
+    return Arrays.asList(myConceptDifficulty, myConceptDifficultyReference, myConceptEducationalGame, myConceptLearningLevel, myConceptLevel, myConceptLevelCollection, myConceptLevelCollectionReference, myConceptTestLevel);
   }
 
   @Override
@@ -45,8 +45,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Difficulty:
         return myConceptDifficulty;
-      case LanguageConceptSwitch.DifficultyRef:
-        return myConceptDifficultyRef;
+      case LanguageConceptSwitch.DifficultyReference:
+        return myConceptDifficultyReference;
       case LanguageConceptSwitch.EducationalGame:
         return myConceptEducationalGame;
       case LanguageConceptSwitch.LearningLevel:
@@ -55,8 +55,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLevel;
       case LanguageConceptSwitch.LevelCollection:
         return myConceptLevelCollection;
-      case LanguageConceptSwitch.LevelCollectionRef:
-        return myConceptLevelCollectionRef;
+      case LanguageConceptSwitch.LevelCollectionReference:
+        return myConceptLevelCollectionReference;
       case LanguageConceptSwitch.TestLevel:
         return myConceptTestLevel;
       default:
@@ -84,8 +84,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("specialEffects", 0x7a874f5648a61ac2L).type(PrimitiveTypeId.INTEGER).origin("8829112826487773890").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForDifficultyRef() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "DifficultyRef", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L);
+  private static ConceptDescriptor createDescriptorForDifficultyReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "DifficultyReference", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L);
     b.class_(false, false, false);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826488390265");
     b.version(2);
@@ -132,8 +132,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("learningLevels", 0x7a874f56488802d8L).target(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L).optional(true).ordered(true).multiple(true).origin("8829112826485801688").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForLevelCollectionRef() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LevelCollectionRef", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L);
+  private static ConceptDescriptor createDescriptorForLevelCollectionReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Minesweeper", "LevelCollectionReference", 0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L);
     b.class_(false, false, false);
     b.origin("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)/8829112826486068857");
     b.version(2);

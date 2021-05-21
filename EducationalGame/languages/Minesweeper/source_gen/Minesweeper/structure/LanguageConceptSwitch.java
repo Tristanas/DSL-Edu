@@ -10,23 +10,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Difficulty = 0;
-  public static final int DifficultyRef = 1;
+  public static final int DifficultyReference = 1;
   public static final int EducationalGame = 2;
   public static final int LearningLevel = 3;
   public static final int Level = 4;
   public static final int LevelCollection = 5;
-  public static final int LevelCollectionRef = 6;
+  public static final int LevelCollectionReference = 6;
   public static final int TestLevel = 7;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8f66faecbf224d22L, 0x897476ccb51727aeL);
     builder.put(0x7a874f5648971366L, Difficulty);
-    builder.put(0x7a874f5648af8279L, DifficultyRef);
+    builder.put(0x7a874f5648af8279L, DifficultyReference);
     builder.put(0x7a874f564887efceL, EducationalGame);
     builder.put(0x101a8b55effd9ac9L, LearningLevel);
     builder.put(0x6cece7c61cb7d2b1L, Level);
     builder.put(0x7a874f564887ef38L, LevelCollection);
-    builder.put(0x7a874f56488c1679L, LevelCollectionRef);
+    builder.put(0x7a874f56488c1679L, LevelCollectionReference);
     builder.put(0x101a8b55effd9ae8L, TestLevel);
     myIndex = builder.seal();
   }

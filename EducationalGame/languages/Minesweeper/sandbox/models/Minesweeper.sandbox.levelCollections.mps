@@ -16,7 +16,7 @@
         <child id="8829112826485796684" name="testLevel" index="M0a0q" />
         <child id="8829112826485801688" name="learningLevels" index="M3OQe" />
       </concept>
-      <concept id="8829112826488390265" name="Minesweeper.structure.DifficultyRef" flags="ng" index="MacOJ">
+      <concept id="8829112826488390265" name="Minesweeper.structure.DifficultyReference" flags="ng" index="MacOJ">
         <reference id="8829112826488390285" name="difficultyRef" index="MacRr" />
       </concept>
       <concept id="7848903088671281841" name="Minesweeper.structure.Level" flags="ng" index="1KmNlR">

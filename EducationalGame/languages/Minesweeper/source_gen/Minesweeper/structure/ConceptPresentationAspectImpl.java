@@ -10,12 +10,12 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Difficulty;
-  private ConceptPresentation props_DifficultyRef;
+  private ConceptPresentation props_DifficultyReference;
   private ConceptPresentation props_EducationalGame;
   private ConceptPresentation props_LearningLevel;
   private ConceptPresentation props_Level;
   private ConceptPresentation props_LevelCollection;
-  private ConceptPresentation props_LevelCollectionRef;
+  private ConceptPresentation props_LevelCollectionReference;
   private ConceptPresentation props_TestLevel;
 
   @Override
@@ -30,13 +30,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Difficulty = cpb.create();
         }
         return props_Difficulty;
-      case LanguageConceptSwitch.DifficultyRef:
-        if (props_DifficultyRef == null) {
+      case LanguageConceptSwitch.DifficultyReference:
+        if (props_DifficultyReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L, 0x7a874f5648af828dL, "difficultyRef", "", "");
-          props_DifficultyRef = cpb.create();
+          props_DifficultyReference = cpb.create();
         }
-        return props_DifficultyRef;
+        return props_DifficultyReference;
       case LanguageConceptSwitch.EducationalGame:
         if (props_EducationalGame == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -65,13 +65,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LevelCollection = cpb.create();
         }
         return props_LevelCollection;
-      case LanguageConceptSwitch.LevelCollectionRef:
-        if (props_LevelCollectionRef == null) {
+      case LanguageConceptSwitch.LevelCollectionReference:
+        if (props_LevelCollectionReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L, 0x7a874f56488c168cL, "levelCollection", "", "");
-          props_LevelCollectionRef = cpb.create();
+          props_LevelCollectionReference = cpb.create();
         }
-        return props_LevelCollectionRef;
+        return props_LevelCollectionReference;
       case LanguageConceptSwitch.TestLevel:
         if (props_TestLevel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

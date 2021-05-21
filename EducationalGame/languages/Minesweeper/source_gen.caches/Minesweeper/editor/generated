@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="5d03frel2vfh3f9eln28gv54o8y4xtp">
-  <files names="DifficultyRef_Editor.java:DifficultyRef_EditorBuilder_a.java:DifficultyRef_SubstituteMenu.java:Difficulty_Editor.java:Difficulty_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:LearningLevel_Editor.java:LearningLevel_EditorBuilder_a.java:LevelCollectionRef_SubstituteMenu.java:LevelCollection_Editor.java:LevelCollection_EditorBuilder_a.java:TestLevel_Editor.java:TestLevel_EditorBuilder_a.java" />
+<product version="3" modelHash="292dux7vp2hgv37mkl6fgm8573vol57">
+  <files names="DifficultyReference_Editor.java:DifficultyReference_EditorBuilder_a.java:DifficultyReference_SubstituteMenu.java:Difficulty_Editor.java:Difficulty_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:LearningLevel_Editor.java:LearningLevel_EditorBuilder_a.java:LevelCollectionReference_SubstituteMenu.java:LevelCollection_Editor.java:LevelCollection_EditorBuilder_a.java:TestLevel_Editor.java:TestLevel_EditorBuilder_a.java" />
 </product>
 

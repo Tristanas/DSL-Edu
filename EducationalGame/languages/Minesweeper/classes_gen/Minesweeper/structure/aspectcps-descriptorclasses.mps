@@ -200,7 +200,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_DifficultyRef" />
+      <property role="TrG5h" value="props_DifficultyReference" />
       <node concept="3uibUv" id="f" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -250,7 +250,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_LevelCollectionRef" />
+      <property role="TrG5h" value="props_LevelCollectionReference" />
       <node concept="3uibUv" id="p" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -445,7 +445,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="1G" role="37vLTJ">
-                        <ref role="3cqZAo" node="3" resolve="props_DifficultyRef" />
+                        <ref role="3cqZAo" node="3" resolve="props_DifficultyReference" />
                       </node>
                     </node>
                   </node>
@@ -453,18 +453,18 @@
                 <node concept="3clFbC" id="1o" role="3clFbw">
                   <node concept="10Nm6u" id="1J" role="3uHU7w" />
                   <node concept="37vLTw" id="1K" role="3uHU7B">
-                    <ref role="3cqZAo" node="3" resolve="props_DifficultyRef" />
+                    <ref role="3cqZAo" node="3" resolve="props_DifficultyReference" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="1m" role="3cqZAp">
                 <node concept="37vLTw" id="1L" role="3cqZAk">
-                  <ref role="3cqZAo" node="3" resolve="props_DifficultyRef" />
+                  <ref role="3cqZAo" node="3" resolve="props_DifficultyReference" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="1k" role="3Kbmr1">
-              <ref role="3cqZAo" node="4n" resolve="DifficultyRef" />
+              <ref role="3cqZAo" node="4n" resolve="DifficultyReference" />
               <ref role="1PxDUh" node="4k" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -791,7 +791,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="3H" role="37vLTJ">
-                        <ref role="3cqZAo" node="8" resolve="props_LevelCollectionRef" />
+                        <ref role="3cqZAo" node="8" resolve="props_LevelCollectionReference" />
                       </node>
                     </node>
                   </node>
@@ -799,18 +799,18 @@
                 <node concept="3clFbC" id="3p" role="3clFbw">
                   <node concept="10Nm6u" id="3K" role="3uHU7w" />
                   <node concept="37vLTw" id="3L" role="3uHU7B">
-                    <ref role="3cqZAo" node="8" resolve="props_LevelCollectionRef" />
+                    <ref role="3cqZAo" node="8" resolve="props_LevelCollectionReference" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3n" role="3cqZAp">
                 <node concept="37vLTw" id="3M" role="3cqZAk">
-                  <ref role="3cqZAo" node="8" resolve="props_LevelCollectionRef" />
+                  <ref role="3cqZAo" node="8" resolve="props_LevelCollectionReference" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="3l" role="3Kbmr1">
-              <ref role="3cqZAo" node="4s" resolve="LevelCollectionRef" />
+              <ref role="3cqZAo" node="4s" resolve="LevelCollectionReference" />
               <ref role="1PxDUh" node="4k" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -944,7 +944,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="DifficultyRef" />
+      <property role="TrG5h" value="DifficultyReference" />
       <node concept="3Tm1VV" id="4E" role="1B3o_S" />
       <node concept="10Oyi0" id="4F" role="1tU5fm" />
       <node concept="3cmrfG" id="4G" role="33vP2m">
@@ -999,7 +999,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="LevelCollectionRef" />
+      <property role="TrG5h" value="LevelCollectionReference" />
       <node concept="3Tm1VV" id="4T" role="1B3o_S" />
       <node concept="10Oyi0" id="4U" role="1tU5fm" />
       <node concept="3cmrfG" id="4V" role="33vP2m">
@@ -1068,7 +1068,7 @@
                 <property role="1adDun" value="0x7a874f5648af8279L" />
               </node>
               <node concept="37vLTw" id="5r" role="37wK5m">
-                <ref role="3cqZAo" node="4n" resolve="DifficultyRef" />
+                <ref role="3cqZAo" node="4n" resolve="DifficultyReference" />
               </node>
             </node>
           </node>
@@ -1148,7 +1148,7 @@
                 <property role="1adDun" value="0x7a874f56488c1679L" />
               </node>
               <node concept="37vLTw" id="5O" role="37wK5m">
-                <ref role="3cqZAo" node="4s" resolve="LevelCollectionRef" />
+                <ref role="3cqZAo" node="4s" resolve="LevelCollectionReference" />
               </node>
             </node>
           </node>
@@ -1262,12 +1262,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptDifficultyRef" />
+      <property role="TrG5h" value="myConceptDifficultyReference" />
       <node concept="3uibUv" id="6P" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="6Q" role="33vP2m">
-        <ref role="37wK5l" node="6G" resolve="createDescriptorForDifficultyRef" />
+        <ref role="37wK5l" node="6G" resolve="createDescriptorForDifficultyReference" />
       </node>
     </node>
     <node concept="312cEg" id="6m" role="jymVt">
@@ -1322,12 +1322,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptLevelCollectionRef" />
+      <property role="TrG5h" value="myConceptLevelCollectionReference" />
       <node concept="3uibUv" id="6Z" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="70" role="33vP2m">
-        <ref role="37wK5l" node="6L" resolve="createDescriptorForLevelCollectionRef" />
+        <ref role="37wK5l" node="6L" resolve="createDescriptorForLevelCollectionReference" />
       </node>
     </node>
     <node concept="312cEg" id="6r" role="jymVt">
@@ -1441,7 +1441,7 @@
               <ref role="3cqZAo" node="6k" resolve="myConceptDifficulty" />
             </node>
             <node concept="37vLTw" id="7C" role="37wK5m">
-              <ref role="3cqZAo" node="6l" resolve="myConceptDifficultyRef" />
+              <ref role="3cqZAo" node="6l" resolve="myConceptDifficultyReference" />
             </node>
             <node concept="37vLTw" id="7D" role="37wK5m">
               <ref role="3cqZAo" node="6m" resolve="myConceptEducationalGame" />
@@ -1456,7 +1456,7 @@
               <ref role="3cqZAo" node="6p" resolve="myConceptLevelCollection" />
             </node>
             <node concept="37vLTw" id="7H" role="37wK5m">
-              <ref role="3cqZAo" node="6q" resolve="myConceptLevelCollectionRef" />
+              <ref role="3cqZAo" node="6q" resolve="myConceptLevelCollectionReference" />
             </node>
             <node concept="37vLTw" id="7I" role="37wK5m">
               <ref role="3cqZAo" node="6r" resolve="myConceptTestLevel" />
@@ -1506,12 +1506,12 @@
             <node concept="3clFbS" id="86" role="3Kbo56">
               <node concept="3cpWs6" id="88" role="3cqZAp">
                 <node concept="37vLTw" id="89" role="3cqZAk">
-                  <ref role="3cqZAo" node="6l" resolve="myConceptDifficultyRef" />
+                  <ref role="3cqZAo" node="6l" resolve="myConceptDifficultyReference" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="87" role="3Kbmr1">
-              <ref role="3cqZAo" node="4n" resolve="DifficultyRef" />
+              <ref role="3cqZAo" node="4n" resolve="DifficultyReference" />
               <ref role="1PxDUh" node="4k" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -1571,12 +1571,12 @@
             <node concept="3clFbS" id="8q" role="3Kbo56">
               <node concept="3cpWs6" id="8s" role="3cqZAp">
                 <node concept="37vLTw" id="8t" role="3cqZAk">
-                  <ref role="3cqZAo" node="6q" resolve="myConceptLevelCollectionRef" />
+                  <ref role="3cqZAo" node="6q" resolve="myConceptLevelCollectionReference" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="8r" role="3Kbmr1">
-              <ref role="3cqZAo" node="4s" resolve="LevelCollectionRef" />
+              <ref role="3cqZAo" node="4s" resolve="LevelCollectionReference" />
               <ref role="1PxDUh" node="4k" resolve="LanguageConceptSwitch" />
             </node>
           </node>
@@ -2029,7 +2029,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForDifficultyRef" />
+      <property role="TrG5h" value="createDescriptorForDifficultyReference" />
       <node concept="3clFbS" id="aV" role="3clF47">
         <node concept="3cpWs8" id="aY" role="3cqZAp">
           <node concept="3cpWsn" id="b4" role="3cpWs9">
@@ -2044,7 +2044,7 @@
                   <property role="Xl_RC" value="Minesweeper" />
                 </node>
                 <node concept="Xl_RD" id="b9" role="37wK5m">
-                  <property role="Xl_RC" value="DifficultyRef" />
+                  <property role="Xl_RC" value="DifficultyReference" />
                 </node>
                 <node concept="1adDum" id="ba" role="37wK5m">
                   <property role="1adDun" value="0x8f66faecbf224d22L" />
@@ -3047,7 +3047,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForLevelCollectionRef" />
+      <property role="TrG5h" value="createDescriptorForLevelCollectionReference" />
       <node concept="3clFbS" id="gW" role="3clF47">
         <node concept="3cpWs8" id="gZ" role="3cqZAp">
           <node concept="3cpWsn" id="h5" role="3cpWs9">
@@ -3062,7 +3062,7 @@
                   <property role="Xl_RC" value="Minesweeper" />
                 </node>
                 <node concept="Xl_RD" id="ha" role="37wK5m">
-                  <property role="Xl_RC" value="LevelCollectionRef" />
+                  <property role="Xl_RC" value="LevelCollectionReference" />
                 </node>
                 <node concept="1adDum" id="hb" role="37wK5m">
                   <property role="1adDun" value="0x8f66faecbf224d22L" />

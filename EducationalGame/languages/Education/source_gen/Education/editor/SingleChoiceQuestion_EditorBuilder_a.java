@@ -74,7 +74,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Single choice:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Question:");
     editorCell.setCellId("Constant_7fhgsu_a0");
     editorCell.setDefaultText("");
     return editorCell;

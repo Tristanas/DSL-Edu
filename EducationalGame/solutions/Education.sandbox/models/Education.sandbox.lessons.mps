@@ -128,8 +128,5 @@
       <property role="3ZTL5_" value="There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value." />
     </node>
   </node>
-  <node concept="3ZTZAU" id="4bZdlnAObNA">
-    <property role="TrG5h" value="Statistics introduction" />
-  </node>
 </model>
 

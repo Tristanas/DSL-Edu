@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class LevelCollectionRef_SubstituteMenu extends SubstituteMenuBase {
+public class DifficultyReference_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_iesb6b_a(), CONCEPTS.LevelCollectionRef$we));
-    result.add(new SMP_Subconcepts_iesb6b_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_pmshjo_a(), CONCEPTS.DifficultyReference$EH));
+    result.add(new SMP_Subconcepts_pmshjo_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class LevelCollectionRef_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for LevelCollectionRef. Generated from implicit smart reference attribute.", new SNodePointer("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)", "8829112826486068857")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for DifficultyReference. Generated from implicit smart reference attribute.", new SNodePointer("r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure)", "8829112826488390265")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class LevelCollectionRef_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_iesb6b_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_pmshjo_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_iesb6b_a() {
+    public SMP_ReferenceScope_pmshjo_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.LevelCollectionRef$we, LINKS.levelCollection$x$UM);
+      super((SAbstractConcept) CONCEPTS.DifficultyReference$EH, LINKS.difficultyRef$yEpj);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class LevelCollectionRef_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_iesb6b_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_pmshjo_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.LevelCollectionRef$we);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.DifficultyReference$EH);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "LevelCollectionRef", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "DifficultyReference", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,10 +88,10 @@ public class LevelCollectionRef_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept LevelCollectionRef$we = MetaAdapterFactory.getConcept(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L, "Minesweeper.structure.LevelCollectionRef");
+    /*package*/ static final SConcept DifficultyReference$EH = MetaAdapterFactory.getConcept(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L, "Minesweeper.structure.DifficultyReference");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink levelCollection$x$UM = MetaAdapterFactory.getReferenceLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f56488c1679L, 0x7a874f56488c168cL, "levelCollection");
+    /*package*/ static final SReferenceLink difficultyRef$yEpj = MetaAdapterFactory.getReferenceLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648af8279L, 0x7a874f5648af828dL, "difficultyRef");
   }
 }

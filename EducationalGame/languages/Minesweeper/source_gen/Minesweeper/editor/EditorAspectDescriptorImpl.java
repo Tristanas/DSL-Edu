@@ -21,7 +21,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Difficulty_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new DifficultyRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new DifficultyReference_Editor());
       case 2:
         return Collections.<ConceptEditor>singletonList(new LearningLevel_Editor());
       case 3:
@@ -40,9 +40,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = concept;
     switch (conceptIndex1.index(cncpt)) {
       case 0:
-        return Collections.<SubstituteMenu>singletonList(new DifficultyRef_SubstituteMenu());
+        return Collections.<SubstituteMenu>singletonList(new DifficultyReference_SubstituteMenu());
       case 1:
-        return Collections.<SubstituteMenu>singletonList(new LevelCollectionRef_SubstituteMenu());
+        return Collections.<SubstituteMenu>singletonList(new LevelCollectionReference_SubstituteMenu());
       default:
     }
     return Collections.<SubstituteMenu>emptyList();

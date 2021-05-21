@@ -72,7 +72,7 @@
     <ref role="1XX52x" to="cgkn:24$UGS0btFk" resolve="SingleChoiceQuestion" />
     <node concept="3EZMnI" id="24$UGS0btHa" role="2wV5jI">
       <node concept="3F0ifn" id="24$UGS0btHh" role="3EZMnx">
-        <property role="3F0ifm" value="Single choice:" />
+        <property role="3F0ifm" value="Question:" />
       </node>
       <node concept="3F0A7n" id="24$UGS0btHn" role="3EZMnx">
         <ref role="1NtTu8" to="cgkn:24$UGS0btGY" resolve="question" />
@@ -164,6 +164,9 @@
   <node concept="24kQdi" id="10qyPnK0xMt">
     <ref role="1XX52x" to="cgkn:10qyPnJZnce" resolve="Fact" />
     <node concept="3EZMnI" id="10qyPnK0xNq" role="2wV5jI">
+      <node concept="3F0ifn" id="6QtedtYFEpC" role="3EZMnx">
+        <property role="3F0ifm" value="Fact" />
+      </node>
       <node concept="3F0A7n" id="10qyPnK0xNn" role="3EZMnx">
         <ref role="1NtTu8" to="cgkn:10qyPnJZpCI" resolve="Name" />
       </node>
@@ -198,7 +201,7 @@
       </node>
       <node concept="l2Vlx" id="10qyPnK0xQw" role="2iSdaV" />
       <node concept="3F0ifn" id="10qyPnK0xQO" role="3EZMnx">
-        <property role="3F0ifm" value="Concepts:" />
+        <property role="3F0ifm" value="Facts:" />
         <node concept="pVoyu" id="10qyPnK0xQZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

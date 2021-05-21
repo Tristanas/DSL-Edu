@@ -12,22 +12,22 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
-    <file name="DifficultyRef_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="Minesweeper.editor.DifficultyRef_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="Minesweeper.editor.DifficultyRef_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="Minesweeper.editor.DifficultyRef_SubstituteMenu$SMP_ReferenceScope_ilanyo_a" />
-      <unit at="68,0,89,0" name="Minesweeper.editor.DifficultyRef_SubstituteMenu$SMP_Subconcepts_ilanyo_b" />
-      <unit at="26,0,98,0" name="Minesweeper.editor.DifficultyRef_SubstituteMenu" />
+    <file name="DifficultyReference_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="Minesweeper.editor.DifficultyReference_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="Minesweeper.editor.DifficultyReference_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="Minesweeper.editor.DifficultyReference_SubstituteMenu$SMP_ReferenceScope_pmshjo_a" />
+      <unit at="68,0,89,0" name="Minesweeper.editor.DifficultyReference_SubstituteMenu$SMP_Subconcepts_pmshjo_b" />
+      <unit at="26,0,98,0" name="Minesweeper.editor.DifficultyReference_SubstituteMenu" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
       <unit at="16,0,54,0" name="Minesweeper.editor.EditorAspectDescriptorImpl" />
     </file>
-    <file name="LevelCollectionRef_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="Minesweeper.editor.LevelCollectionRef_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="Minesweeper.editor.LevelCollectionRef_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="Minesweeper.editor.LevelCollectionRef_SubstituteMenu$SMP_ReferenceScope_iesb6b_a" />
-      <unit at="68,0,89,0" name="Minesweeper.editor.LevelCollectionRef_SubstituteMenu$SMP_Subconcepts_iesb6b_b" />
-      <unit at="26,0,98,0" name="Minesweeper.editor.LevelCollectionRef_SubstituteMenu" />
+    <file name="LevelCollectionReference_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="Minesweeper.editor.LevelCollectionReference_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="Minesweeper.editor.LevelCollectionReference_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="Minesweeper.editor.LevelCollectionReference_SubstituteMenu$SMP_ReferenceScope_5kdpfb_a" />
+      <unit at="68,0,89,0" name="Minesweeper.editor.LevelCollectionReference_SubstituteMenu$SMP_Subconcepts_5kdpfb_b" />
+      <unit at="26,0,98,0" name="Minesweeper.editor.LevelCollectionReference_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:3378f1ca-b81b-40d8-81f0-bfaa91aadd08(Minesweeper.editor)/4713983093039199736">
@@ -1447,18 +1447,18 @@
     </file>
   </root>
   <root nodeRef="r:3378f1ca-b81b-40d8-81f0-bfaa91aadd08(Minesweeper.editor)/8829112826488390294">
-    <file name="DifficultyRef_Editor.java">
-      <node id="8829112826488390294" at="11,79,12,79" concept="6" />
+    <file name="DifficultyReference_Editor.java">
+      <node id="8829112826488390294" at="11,79,12,85" concept="6" />
       <node id="8829112826488390294" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8829112826488390294" at="11,79,12,79" />
+      <scope id="8829112826488390294" at="11,79,12,85" />
       <scope id="8829112826488390294" at="11,0,14,0">
         <var name="editorContext" id="8829112826488390294" />
         <var name="node" id="8829112826488390294" />
       </scope>
-      <unit id="8829112826488390294" at="10,0,15,0" name="Minesweeper.editor.DifficultyRef_Editor" />
+      <unit id="8829112826488390294" at="10,0,15,0" name="Minesweeper.editor.DifficultyReference_Editor" />
     </file>
-    <file name="DifficultyRef_EditorBuilder_a.java">
-      <node id="8829112826488390294" at="45,93,46,19" concept="9" />
+    <file name="DifficultyReference_EditorBuilder_a.java">
+      <node id="8829112826488390294" at="45,99,46,19" concept="9" />
       <node id="8829112826488390294" at="46,19,47,18" concept="1" />
       <node id="8829112826488390294" at="52,26,53,18" concept="6" />
       <node id="8829112826488390294" at="56,39,57,32" concept="6" />
@@ -1524,7 +1524,7 @@
       <node id="8829112826488390294" at="101,0,104,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8829112826488390305" at="122,0,125,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8829112826488390312" at="147,0,150,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8829112826488390294" at="45,0,49,0" concept="0" trace="DifficultyRef_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8829112826488390294" at="45,0,49,0" concept="0" trace="DifficultyReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8829112826488390294" at="93,0,97,5" concept="3" />
       <node id="8829112826488390294" at="50,0,55,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8829112826488390294" at="71,72,76,49" concept="5" />
@@ -1549,7 +1549,7 @@
       <scope id="8829112826488390305" at="128,28,129,20" />
       <scope id="8829112826488390312" at="147,43,148,120" />
       <scope id="8829112826488390312" at="156,17,157,42" />
-      <scope id="8829112826488390294" at="45,93,47,18" />
+      <scope id="8829112826488390294" at="45,99,47,18" />
       <scope id="8829112826488390294" at="94,40,96,52" />
       <scope id="8829112826488390294" at="105,73,107,145">
         <var name="manager" id="8829112826488390294" />
@@ -1611,15 +1611,15 @@
         <var name="referenceLink" id="8829112826488390294" />
       </scope>
       <scope id="8829112826488390294" at="68,0,111,0" />
-      <unit id="8829112826488390294" at="162,0,165,0" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$LINKS" />
-      <unit id="8829112826488390294" at="171,0,174,0" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$PROPS" />
-      <unit id="8829112826488390294" at="72,74,76,9" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$1$1" />
-      <unit id="8829112826488390294" at="100,102,104,5" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$2" />
-      <unit id="8829112826488390312" at="146,104,150,9" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="8829112826488390294" at="166,0,170,0" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$CONCEPTS" />
-      <unit id="8829112826488390294" at="70,42,89,5" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$1" />
-      <unit id="8829112826488390305" at="111,0,161,0" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8829112826488390294" at="41,0,175,0" name="Minesweeper.editor.DifficultyRef_EditorBuilder_a" />
+      <unit id="8829112826488390294" at="162,0,165,0" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$LINKS" />
+      <unit id="8829112826488390294" at="171,0,174,0" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$PROPS" />
+      <unit id="8829112826488390294" at="72,74,76,9" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$1$1" />
+      <unit id="8829112826488390294" at="100,102,104,5" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$2" />
+      <unit id="8829112826488390312" at="146,104,150,9" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="8829112826488390294" at="166,0,170,0" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$CONCEPTS" />
+      <unit id="8829112826488390294" at="70,42,89,5" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$1" />
+      <unit id="8829112826488390305" at="111,0,161,0" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a$Inline_Builder0" />
+      <unit id="8829112826488390294" at="41,0,175,0" name="Minesweeper.editor.DifficultyReference_EditorBuilder_a" />
     </file>
   </root>
 </debug-info>

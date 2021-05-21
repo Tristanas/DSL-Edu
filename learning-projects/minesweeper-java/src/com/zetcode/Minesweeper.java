@@ -10,19 +10,14 @@ import common.edu.Topic;
 import common.ui.Board;
 import common.ui.LearningPortfolio;
 import common.ui.LevelSelection;
-import common.ui.editor.FactEditor;
-import common.ui.editor.LevelEditor;
-import common.ui.editor.QuestionEditor;
 import common.ui.editor.TopicEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
-import common.util.JSONPort;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
-import java.net.URL;
 import java.util.ArrayList;
 import javax.swing.*;
 

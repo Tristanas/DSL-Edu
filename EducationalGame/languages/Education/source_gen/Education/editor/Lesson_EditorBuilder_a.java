@@ -116,7 +116,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Concepts:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Facts:");
     editorCell.setCellId("Constant_hwd54a_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
