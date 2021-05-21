@@ -5,5 +5,10 @@
       <unit id="6590088575814515716" at="1,0,68,10" name="EducationalGame.build-app.EducationalGame" />
     </file>
   </root>
+  <root nodeRef="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/7898531819673526041">
+    <file name="EducationalGame2.xml">
+      <unit id="7898531819673526041" at="1,0,68,10" name="EducationalGame.build-app.EducationalGame2" />
+    </file>
+  </root>
 </debug-info>
 

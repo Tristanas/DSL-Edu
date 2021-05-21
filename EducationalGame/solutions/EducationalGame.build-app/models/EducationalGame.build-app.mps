@@ -385,5 +385,317 @@
       </node>
     </node>
   </node>
+  <node concept="1l3spW" id="6QtedtYKDWp">
+    <property role="TrG5h" value="EducationalGame2" />
+    <property role="2DA0ip" value="../.." />
+    <node concept="10PD9b" id="6QtedtYKDWq" role="10PD9s" />
+    <node concept="3b7kt6" id="6QtedtYKDWr" role="10PD9s" />
+    <node concept="2kB4xC" id="6QtedtYKDWs" role="1l3spd">
+      <property role="TrG5h" value="game_name" />
+      <node concept="aVJcg" id="6QtedtYKDWt" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWu" role="aVJcq">
+          <node concept="3Mxwew" id="6QtedtYKDWv" role="3MwsjC">
+            <property role="3MwjfP" value="MathSweeper" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="6QtedtYKDWw" role="1l3spd">
+      <property role="TrG5h" value="teacher_app_name" />
+      <node concept="aVJcg" id="6QtedtYKDWx" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWy" role="aVJcq">
+          <node concept="3Mxwew" id="6QtedtYKDWz" role="3MwsjC">
+            <property role="3MwjfP" value="MathSweeperTeacher" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="6QtedtYKDW$" role="1l3spd">
+      <property role="TrG5h" value="student_app_name" />
+      <node concept="aVJcg" id="6QtedtYKDW_" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWA" role="aVJcq">
+          <node concept="3Mxwey" id="6QtedtYKDWB" role="3MwsjC">
+            <ref role="3Mxwex" node="6QtedtYKDWs" resolve="game_name" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="6QtedtYKDWC" role="1l3spd">
+      <property role="TrG5h" value="teacher_app_jar" />
+      <node concept="aVJcg" id="6QtedtYKDWD" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWE" role="aVJcq">
+          <node concept="3Mxwey" id="6QtedtYKDWF" role="3MwsjC">
+            <ref role="3Mxwex" node="6QtedtYKDWs" resolve="game_name" />
+          </node>
+          <node concept="3Mxwew" id="6QtedtYKDWG" role="3MwsjC">
+            <property role="3MwjfP" value="-teacher.jar" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="6QtedtYKDWH" role="1l3spd">
+      <property role="TrG5h" value="student_app_jar" />
+      <node concept="aVJcg" id="6QtedtYKDWI" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWJ" role="aVJcq">
+          <node concept="3Mxwey" id="6QtedtYKDWK" role="3MwsjC">
+            <ref role="3Mxwex" node="6QtedtYKDWs" resolve="game_name" />
+          </node>
+          <node concept="3Mxwew" id="6QtedtYKDWL" role="3MwsjC">
+            <property role="3MwjfP" value=".jar" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="6QtedtYKDWM" role="1l3spd">
+      <property role="TrG5h" value="app_class" />
+      <node concept="aVJcg" id="6QtedtYKDWN" role="aVJcv">
+        <node concept="NbPM2" id="6QtedtYKDWO" role="aVJcq">
+          <node concept="3Mxwey" id="6QtedtYKDWP" role="3MwsjC">
+            <ref role="3Mxwex" node="6QtedtYKDWs" resolve="game_name" />
+          </node>
+          <node concept="3Mxwew" id="6QtedtYKDWQ" role="3MwsjC">
+            <property role="3MwjfP" value=".class" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6QtedtYKDWR" role="1l3spd">
+      <property role="TrG5h" value="app_folder" />
+      <node concept="55IIr" id="6QtedtYKDWS" role="398pKh">
+        <node concept="2Ry0Ak" id="6QtedtYKDWT" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="6QtedtYKDWU" role="2Ry0An">
+            <property role="2Ry0Am" value="Minesweeper" />
+            <node concept="2Ry0Ak" id="6QtedtYKDWV" role="2Ry0An">
+              <property role="2Ry0Am" value="sandbox" />
+              <node concept="2Ry0Ak" id="6QtedtYKDWW" role="2Ry0An">
+                <property role="2Ry0Am" value="classes_gen" />
+                <node concept="2Ry0Ak" id="6QtedtYKDWX" role="2Ry0An">
+                  <property role="2Ry0Am" value="com" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDWY" role="2Ry0An">
+                    <property role="2Ry0Am" value="zetcode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6QtedtYKDWZ" role="1l3spd">
+      <property role="TrG5h" value="minesweeper_java_source" />
+      <node concept="55IIr" id="6QtedtYKDX0" role="398pKh">
+        <node concept="2Ry0Ak" id="6QtedtYKDX1" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="6QtedtYKDX2" role="2Ry0An">
+            <property role="2Ry0Am" value="learning-projects" />
+            <node concept="2Ry0Ak" id="6QtedtYKDX3" role="2Ry0An">
+              <property role="2Ry0Am" value="minesweeper-java" />
+              <node concept="2Ry0Ak" id="6QtedtYKDX4" role="2Ry0An">
+                <property role="2Ry0Am" value="out" />
+                <node concept="2Ry0Ak" id="6QtedtYKDX5" role="2Ry0An">
+                  <property role="2Ry0Am" value="production" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDX6" role="2Ry0An">
+                    <property role="2Ry0Am" value="minesweeper" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6QtedtYKDX7" role="1l3spd">
+      <property role="TrG5h" value="resources_folder" />
+      <node concept="55IIr" id="6QtedtYKDX8" role="398pKh">
+        <node concept="2Ry0Ak" id="6QtedtYKDX9" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="6QtedtYKDXa" role="2Ry0An">
+            <property role="2Ry0Am" value="Minesweeper" />
+            <node concept="2Ry0Ak" id="6QtedtYKDXb" role="2Ry0An">
+              <property role="2Ry0Am" value="sandbox" />
+              <node concept="2Ry0Ak" id="6QtedtYKDXc" role="2Ry0An">
+                <property role="2Ry0Am" value="resources" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6QtedtYKDXd" role="1l3spd">
+      <property role="TrG5h" value="lib_folder" />
+      <node concept="55IIr" id="6QtedtYKDXe" role="398pKh">
+        <node concept="2Ry0Ak" id="6QtedtYKDXf" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="6QtedtYKDXg" role="2Ry0An">
+            <property role="2Ry0Am" value="CommonClasses" />
+            <node concept="2Ry0Ak" id="6QtedtYKDXh" role="2Ry0An">
+              <property role="2Ry0Am" value="libs" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1l3spV" id="6QtedtYKDXi" role="1l3spN">
+      <node concept="398223" id="6QtedtYKDXj" role="39821P">
+        <node concept="3981dx" id="6QtedtYKDXk" role="39821P">
+          <node concept="3FFNgc" id="6QtedtYKDXl" role="39821P">
+            <node concept="3FFNgi" id="6QtedtYKDXm" role="2FjnpF">
+              <node concept="3_J27D" id="6QtedtYKDXn" role="3FFNgg">
+                <node concept="3Mxwew" id="6QtedtYKDXo" role="3MwsjC">
+                  <property role="3MwjfP" value="com.zetcode." />
+                </node>
+                <node concept="3Mxwey" id="6QtedtYKDXp" role="3MwsjC">
+                  <ref role="3Mxwex" node="6QtedtYKDWw" resolve="teacher_app_name" />
+                </node>
+              </node>
+              <node concept="3_J27D" id="6QtedtYKDXq" role="3FFNgj">
+                <node concept="3Mxwew" id="6QtedtYKDXr" role="3MwsjC">
+                  <property role="3MwjfP" value="Main-Class" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDXs" role="39821P">
+            <node concept="3_J27D" id="6QtedtYKDXt" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDXu" role="3MwsjC">
+                <property role="3MwjfP" value="resources" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6QtedtYKDXv" role="39821P">
+              <node concept="398BVA" id="6QtedtYKDXw" role="2HvfZ0">
+                <ref role="398BVh" node="6QtedtYKDX7" resolve="resources_folder" />
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDXx" role="39821P">
+            <node concept="3_J27D" id="6QtedtYKDXy" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDXz" role="3MwsjC">
+                <property role="3MwjfP" value="common" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6QtedtYKDX$" role="39821P">
+              <node concept="398BVA" id="6QtedtYKDX_" role="2HvfZ0">
+                <ref role="398BVh" node="6QtedtYKDWZ" resolve="minesweeper_java_source" />
+                <node concept="2Ry0Ak" id="6QtedtYKDXA" role="iGT6I">
+                  <property role="2Ry0Am" value="common" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDXB" role="2Ry0An">
+                    <property role="2Ry0Am" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDXC" role="39821P">
+            <node concept="398223" id="6QtedtYKDXD" role="39821P">
+              <node concept="2HvfSZ" id="6QtedtYKDXE" role="39821P">
+                <node concept="398BVA" id="6QtedtYKDXF" role="2HvfZ0">
+                  <ref role="398BVh" node="6QtedtYKDWR" resolve="app_folder" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDXG" role="iGT6I" />
+                </node>
+              </node>
+              <node concept="3_J27D" id="6QtedtYKDXH" role="Nbhlr">
+                <node concept="3Mxwew" id="6QtedtYKDXI" role="3MwsjC">
+                  <property role="3MwjfP" value="zetcode" />
+                </node>
+              </node>
+            </node>
+            <node concept="3_J27D" id="6QtedtYKDXJ" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDXK" role="3MwsjC">
+                <property role="3MwjfP" value="com" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_J27D" id="6QtedtYKDXL" role="Nbhlr">
+            <node concept="3Mxwey" id="6QtedtYKDXM" role="3MwsjC">
+              <ref role="3Mxwex" node="6QtedtYKDWC" resolve="teacher_app_jar" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_J27D" id="6QtedtYKDXN" role="Nbhlr">
+          <node concept="3Mxwey" id="6QtedtYKDXO" role="3MwsjC">
+            <ref role="3Mxwex" node="6QtedtYKDWs" resolve="game_name" />
+          </node>
+          <node concept="3Mxwew" id="6QtedtYKDYl" role="3MwsjC">
+            <property role="3MwjfP" value="-testing" />
+          </node>
+        </node>
+        <node concept="3981dx" id="6QtedtYKDXP" role="39821P">
+          <node concept="3FFNgc" id="6QtedtYKDXQ" role="39821P">
+            <node concept="3FFNgi" id="6QtedtYKDXR" role="2FjnpF">
+              <node concept="3_J27D" id="6QtedtYKDXS" role="3FFNgg">
+                <node concept="3Mxwew" id="6QtedtYKDXT" role="3MwsjC">
+                  <property role="3MwjfP" value="com.zetcode." />
+                </node>
+                <node concept="3Mxwey" id="6QtedtYKDXU" role="3MwsjC">
+                  <ref role="3Mxwex" node="6QtedtYKDW$" resolve="student_app_name" />
+                </node>
+              </node>
+              <node concept="3_J27D" id="6QtedtYKDXV" role="3FFNgj">
+                <node concept="3Mxwew" id="6QtedtYKDXW" role="3MwsjC">
+                  <property role="3MwjfP" value="Main-Class" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDXX" role="39821P">
+            <node concept="3_J27D" id="6QtedtYKDXY" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDXZ" role="3MwsjC">
+                <property role="3MwjfP" value="resources" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6QtedtYKDY0" role="39821P">
+              <node concept="398BVA" id="6QtedtYKDY1" role="2HvfZ0">
+                <ref role="398BVh" node="6QtedtYKDX7" resolve="resources_folder" />
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDY2" role="39821P">
+            <node concept="3_J27D" id="6QtedtYKDY3" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDY4" role="3MwsjC">
+                <property role="3MwjfP" value="common" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6QtedtYKDY5" role="39821P">
+              <node concept="398BVA" id="6QtedtYKDY6" role="2HvfZ0">
+                <ref role="398BVh" node="6QtedtYKDWZ" resolve="minesweeper_java_source" />
+                <node concept="2Ry0Ak" id="6QtedtYKDY7" role="iGT6I">
+                  <property role="2Ry0Am" value="common" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDY8" role="2Ry0An">
+                    <property role="2Ry0Am" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="6QtedtYKDY9" role="39821P">
+            <node concept="398223" id="6QtedtYKDYa" role="39821P">
+              <node concept="2HvfSZ" id="6QtedtYKDYb" role="39821P">
+                <node concept="398BVA" id="6QtedtYKDYc" role="2HvfZ0">
+                  <ref role="398BVh" node="6QtedtYKDWR" resolve="app_folder" />
+                  <node concept="2Ry0Ak" id="6QtedtYKDYd" role="iGT6I" />
+                </node>
+              </node>
+              <node concept="3_J27D" id="6QtedtYKDYe" role="Nbhlr">
+                <node concept="3Mxwew" id="6QtedtYKDYf" role="3MwsjC">
+                  <property role="3MwjfP" value="zetcode" />
+                </node>
+              </node>
+            </node>
+            <node concept="3_J27D" id="6QtedtYKDYg" role="Nbhlr">
+              <node concept="3Mxwew" id="6QtedtYKDYh" role="3MwsjC">
+                <property role="3MwjfP" value="com" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_J27D" id="6QtedtYKDYi" role="Nbhlr">
+            <node concept="3Mxwey" id="6QtedtYKDYj" role="3MwsjC">
+              <ref role="3Mxwex" node="6QtedtYKDWH" resolve="student_app_jar" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
