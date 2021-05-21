@@ -42,8 +42,21 @@ public class GameConstants {
     public static final int DRAW_WRONG_MARK = 12;
     public static final int DRAW_CERTAIN_MARK = 13;
 
+    /**
+     * UI:
+     */
+    // Learning portfolio:
+    public static final int LESSON_TOP_PADDING = 20;
+    public static final int LESSON_BOT_PADDING = 20;
+    public static final int TOPIC_FONT_SIZE = 18;
+    public static final Dimension LEARNING_PORTFOLIO_SIZE = new Dimension(500,600);
 
-    // TOPIC AND LESSON EDITOR LAYOUT:
+    public static final String NEXT_TOPIC = "Next topic";
+    public static final String PREVIOUS_TOPIC = "Previous topic";
+
+    /**
+     * TOPIC AND LESSON EDITOR LAYOUT:
+     */
     // Question:
     public static final int QUESTION_WIDTH = 300;
     public static final int QUESTION_HEIGHT = 250;

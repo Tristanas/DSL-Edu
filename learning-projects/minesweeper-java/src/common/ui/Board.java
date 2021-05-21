@@ -89,6 +89,7 @@ public class Board extends JPanel implements ActionListener {
 
         if (level.type == LevelDescription.GameType.learn) {
             this.questions = level.lesson.questions;
+            facts = level.lesson.getRandomFacts(level.factCount);
         } else {
             this.facts = new ArrayList<>();
             this.questions = level.topic.generateTest();
@@ -138,7 +139,6 @@ public class Board extends JPanel implements ActionListener {
         var random = new Random();
 
         // Reset state and counters:
-        facts = level.lesson.getRandomFacts(level.factCount);
         inGame = true;
         mineExploded = false;
         revealEnabled = false;
@@ -461,7 +461,7 @@ public class Board extends JPanel implements ActionListener {
         if (factWindow == null) {
             factWindow = displayFoundFact(newFact);
         } else {
-            factWindow.setContentPane(newFact.createFactPanel());
+            factWindow.setContentPane(newFact.createFactPanel(factWindowSize.width));
             factWindow.setVisible(true);
         }
     }
@@ -469,7 +469,7 @@ public class Board extends JPanel implements ActionListener {
     private JFrame displayFoundFact(Fact fact) {
         JFrame frame = new JFrame("New fact found");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.add(fact.createFactPanel());
+        frame.add(fact.createFactPanel(factWindowSize.width));
         frame.setSize(factWindowSize);
         Point location = parentWindow.getLocation();
         location.translate(-factWindowSize.width, 0);

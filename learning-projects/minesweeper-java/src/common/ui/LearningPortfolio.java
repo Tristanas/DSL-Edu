@@ -4,6 +4,7 @@ import common.data.GameConstants;
 import common.edu.Fact;
 import common.edu.Lesson;
 import common.edu.Topic;
+import common.data.GameConstants.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,14 +12,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class LearningPortfolio extends JPanel implements ActionListener {
-    final int LESSON_TOP_PADDING = 20;
-    final int LESSON_BOT_PADDING = 20;
-    final int TOPIC_FONT_SIZE = 18;
+import static common.data.GameConstants.LEARNING_PORTFOLIO_SIZE;
+import static common.data.GameConstants.TOPIC_FONT_SIZE;
 
+public class LearningPortfolio extends JPanel implements ActionListener {
     // Implement topic switching later:
-    final String NEXT_TOPIC = "Next topic";
-    final String PREVIOUS_TOPIC = "Previous topic";
     int currentTopicNo;
 
     ArrayList<Topic> topics;
@@ -34,7 +32,7 @@ public class LearningPortfolio extends JPanel implements ActionListener {
 
     private void initUI() {
         setLayout(new BorderLayout());
-        setPreferredSize(new Dimension(500, 600));
+        setPreferredSize(LEARNING_PORTFOLIO_SIZE);
 
         // Display first topic by default:
         Topic topic = topics.get(0);
@@ -76,7 +74,7 @@ public class LearningPortfolio extends JPanel implements ActionListener {
         for (Fact fact : facts
         ) {
             if (fact.unlocked) {
-                JPanel factPanel = fact.createFactPanel();
+                JPanel factPanel = fact.createFactPanel(LEARNING_PORTFOLIO_SIZE.width);
                 factPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
                 factList.add(factPanel);
             }

@@ -217,7 +217,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7E7jPp8FSam">
-    <ref role="1XX52x" to="8ed4:7E7jPp8FS9T" resolve="DifficultyRef" />
+    <ref role="1XX52x" to="8ed4:7E7jPp8FS9T" resolve="DifficultyReference" />
     <node concept="3EZMnI" id="7E7jPp8FSao" role="2wV5jI">
       <node concept="1iCGBv" id="7E7jPp8FSav" role="3EZMnx">
         <ref role="1NtTu8" to="8ed4:7E7jPp8FSad" resolve="difficultyRef" />
