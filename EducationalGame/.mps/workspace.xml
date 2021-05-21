@@ -21,10 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b6eb6c-e4b2-41a4-94b6-5a89b03e7b84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/EducationalGame2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/classes_gen/EducationalGame/build-app/EducationalGame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/classes_gen/EducationalGame/build-app/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/classes_gen/EducationalGame/build-app/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen.caches/EducationalGame/build-app/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen.caches/EducationalGame/build-app/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/EducationalGame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/Mathsweeper Apps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/EducationalGame2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/EducationalGame.build-app/source_gen/EducationalGame/build-app/trace.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +42,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5682e06a-4de0-4e1a-8972-9782e436e84d/r:6f06e674-d2a2-44ec-880b-129bd329cda8(TempModule5682e06a-4de0-4e1a-8972-9782e436e84d/ConsoleModel_298565294997600)">
+            <model ref="4fd08698-1d5b-4247-b541-113186f246af/r:222dbd27-530d-456c-b753-fa4bcff00fee(TempModule4fd08698-1d5b-4247-b541-113186f246af/ConsoleModel_329217491235600)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -58,11 +62,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="6QtedtYF0vZ">
-                <node concept="3balQm" id="6QtedtYF0w0" role="aymYE" />
-                <node concept="2Clz$F" id="6QtedtYF0w1" role="aymYO" />
-                <node concept="2_V_lH" id="6QtedtYF0w2" role="1PhJh3">
-                  <ref role="2_V_lI" node="6QtedtYF0w1" resolve="CommandHolder" />
+              <node concept="aymSD" id="4FT_NPi3LSF">
+                <node concept="3balQm" id="4FT_NPi3LSG" role="aymYE" />
+                <node concept="2Clz$F" id="4FT_NPi3LSH" role="aymYO" />
+                <node concept="2_V_lH" id="4FT_NPi3LSI" role="1PhJh3">
+                  <ref role="2_V_lI" node="4FT_NPi3LSH" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -199,221 +203,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fa9df09-efd2-4981-833c-9df54b2b46c5(Minesweeper.structure) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/models/Minesweeper.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f086fa03-c195-4951-a78f-bf3bd377c791(Education)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2eef48e2-ecc1-4e5f-9ea7-693f4ed65e81(Education.editor) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Education/models/Education.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Education" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:cef0a2ab-f87c-4358-8c49-2f3d00a8cb12(Education.sandbox.lessons) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Education.sandbox/models/Education.sandbox.lessons.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Education" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Education" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:68a8bc6e-7de3-494a-aa64-23dfc6f46ead(Education.sandbox.topics) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/Education.sandbox/models/Education.sandbox.topics.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:af9f2a0c-227a-421f-8221-a5797c4c093a(main@generator) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/generator/templates/main@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8f66faec-bf22-4d22-8974-76ccb51727ae(Minesweeper)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minesweeper#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="32b5aa98-5525-4feb-a5ea-6bf5d46ea031" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationalGame" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7898531819673526041" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="FileSystem">
         <subPane>
           <expand>
@@ -484,6 +273,145 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6590088575814515716" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3dfd05a0-1ad4-4695-b695-530cc9ad0a1b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minesweeper" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:614b4ad1-dc73-49ea-8b18-9cc2dcb5af68(Minesweeper.sandbox) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/languages/Minesweeper/sandbox/models/Minesweeper.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EducationalGame" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app) in IdeaFile[path: C:/Users/Vilius/Documents/GitHub/DSL-Edu/EducationalGame/solutions/EducationalGame.build-app/models/EducationalGame.build-app.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6590088575814515716" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -497,12 +425,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/minesweeper-java/src" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Build Script.EducationalGame2">
-    <configuration name="EducationalGame" type="Build Script" factoryName="Build Script" temporary="true">
+  <component name="RunManager" selected="Build Script.Minesweeper JAR">
+    <configuration name="EducationalGame2" type="Build Script" factoryName="Build Script" temporary="true">
       <myNodePointer>
         <MyState>
-          <option name="myNodePointer" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/6590088575814515716" />
-          <option name="myNodeText" value="EducationalGame.build-app.EducationalGame" />
+          <option name="myNodePointer" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/7898531819673526041" />
+          <option name="myNodeText" value="EducationalGame.build-app.EducationalGame2" />
         </MyState>
       </myNodePointer>
       <mySettings>
@@ -516,18 +444,18 @@
         <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EducationalGame2" type="Build Script" factoryName="Build Script" temporary="true">
+    <configuration name="Minesweeper JAR" type="Build Script" factoryName="Build Script" temporary="true">
       <myNodePointer>
         <MyState>
-          <option name="myNodePointer" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/7898531819673526041" />
-          <option name="myNodeText" value="EducationalGame.build-app.EducationalGame2" />
+          <option name="myNodePointer" value="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/6590088575814515716" />
+          <option name="myNodeText" value="EducationalGame.build-app.EducationalGame" />
         </MyState>
       </myNodePointer>
       <mySettings>
         <MyState>
           <option name="myUseOtherAntLocation" value="false" />
-          <option name="myOtherAntLocation" />
-          <option name="myAntOptions" />
+          <option name="myOtherAntLocation" value="" />
+          <option name="myAntOptions" value="" />
         </MyState>
       </mySettings>
       <method v="2">
@@ -609,20 +537,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Build Script.EducationalGame" />
+      <item itemvalue="Build Script.EducationalGame2" />
       <item itemvalue="Build Script.lightweight-game" />
       <item itemvalue="Compound.Unnamed" />
       <item itemvalue="Java Application.Class Minesweeper" />
       <item itemvalue="Java Application.Node MathSweeper (1)" />
-      <item itemvalue="Build Script.EducationalGame2" />
+      <item itemvalue="Build Script.Minesweeper JAR" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Build Script.EducationalGame2" />
-        <item itemvalue="Build Script.EducationalGame" />
+        <item itemvalue="Build Script.Minesweeper JAR" />
         <item itemvalue="Java Application.Node MathSweeper (1)" />
         <item itemvalue="Java Application.Class Minesweeper" />
         <item itemvalue="Build Script.lightweight-game" />
+        <item itemvalue="Build Script.EducationalGame2" />
       </list>
     </recent_temporary>
   </component>
