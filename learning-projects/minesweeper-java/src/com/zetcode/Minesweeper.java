@@ -52,6 +52,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         //System.out.println("Getting the flag image...");
         //ImageIcon img = new ImageIcon(ImageScaler.getImageResource("flag.png"));
         //System.out.println("Flag image size: " + img.getIconWidth() + "x" + img.getIconHeight());
+        // Test getting topic from google drive:
+        Topic topic = JSONPort.getTopicFromGDrive("https://drive.google.com/file/d/1-89IlS7pse71Ffxsp5CR4lobH5-7D55Y/view?usp=sharing");
+
         setupPaths();
         setupAppState();
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
