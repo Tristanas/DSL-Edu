@@ -93,6 +93,11 @@ public class LevelSelection extends JPanel {
         backBtn.addActionListener(actionListener);
         navButtons.add(backBtn);
 
+        JButton importTopicBtn = new JButton("Download Topic");
+        importTopicBtn.setActionCommand(GameConstants.DOWNLOAD_TOPIC);
+        importTopicBtn.addActionListener(actionListener);
+        navButtons.add(importTopicBtn);
+
         add(navButtons, BorderLayout.SOUTH);
     }
 

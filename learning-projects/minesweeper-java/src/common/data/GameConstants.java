@@ -14,6 +14,7 @@ public class GameConstants {
     public static final String LESSONS = "Check lessons";
     public static final String EXIT = "Exit";
     public static final String REVEAL = "Reveal";
+    public static final String DOWNLOAD_TOPIC = "DownloadTopic";
 
     // Action strings for editing:
     public static final String UPDATE = "Update";

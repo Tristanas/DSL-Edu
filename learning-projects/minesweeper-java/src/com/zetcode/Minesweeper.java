@@ -53,7 +53,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         //ImageIcon img = new ImageIcon(ImageScaler.getImageResource("flag.png"));
         //System.out.println("Flag image size: " + img.getIconWidth() + "x" + img.getIconHeight());
         // Test getting topic from google drive:
-        Topic topic = JSONPort.getTopicFromGDrive("https://drive.google.com/file/d/1-89IlS7pse71Ffxsp5CR4lobH5-7D55Y/view?usp=sharing");
+        //Topic topic = JSONPort.getTopicFromGDrive("https://drive.google.com/file/d/1-89IlS7pse71Ffxsp5CR4lobH5-7D55Y/view?usp=sharing");
 
         setupPaths();
         setupAppState();
@@ -188,6 +188,10 @@ public class Minesweeper extends JFrame implements ActionListener {
             case LESSONS:
                 showLearningPortfolio();
                 break;
+            case DOWNLOAD_TOPIC:
+                downloadTopic();
+                showLevelSelection(); // Update levels list.
+                break;
             case EXIT:
                 System.out.println("Application exiting");
                 ApplicationState.serializeAppState(appState, rootPath + saveFileName);
@@ -196,6 +200,17 @@ public class Minesweeper extends JFrame implements ActionListener {
             case MENU:
                 showMenu();
                 break;
+        }
+    }
+
+    public void downloadTopic() {
+        String url = JOptionPane.showInputDialog(this, "Enter the download link:");
+        if (url != null && !url.equals("")) {
+            Topic topic = JSONPort.getTopicFromGDrive(url);
+            appState.topics.add(topic);
+            topic.lessons.forEach(lesson -> appState.levels.add(lesson.learningLevel));
+            appState.levels.add(topic.testLevel);
+            JOptionPane.showMessageDialog(this, "Topic downloaded successfully!");
         }
     }
 
