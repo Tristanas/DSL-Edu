@@ -53,7 +53,7 @@ public class QuestionListEditor extends EditorPanel {
     }
 
     public void addNewQuestion() {
-        Question question = new Question();
+        Question question = new Question(true);
         addQuestion(question);
         questions.add(question);
         updateUI();

@@ -2,6 +2,7 @@ package common.ui.editor;
 
 import common.data.GameConstants;
 import common.edu.Lesson;
+import common.edu.Question;
 import common.ui.UIFunctions;
 import common.util.JSONPort;
 
@@ -14,6 +15,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 public class LessonEditor extends JFrame implements ActionListener {
     ActionListener parentListener;
@@ -59,7 +61,32 @@ public class LessonEditor extends JFrame implements ActionListener {
         JButton button = addNavButton("New Question", buttonsPanel);
         button.addActionListener(e -> questionsEditor.addNewQuestion());
 
-        // Add a new question:
+        // Import questions:
+        button = addNavButton("Import Questions", buttonsPanel);
+        button.setToolTipText("Select a file or a file that has a correct format.");
+        button.addActionListener(e -> {
+            ArrayList<Question> questions = Question.importQuestions();
+            if (questions.size() > 0) {
+                JOptionPane.showMessageDialog(parentWindow, "Imported questions successfully.");
+                questions.forEach(question -> {
+                    lesson.questions.add(question);
+                    questionsEditor.addQuestion(question);
+                    questionsEditor.updateUI();
+                });
+            } else {
+                JOptionPane.showMessageDialog(parentWindow, "Failed to import questions.", "Import failed", JOptionPane.ERROR_MESSAGE);
+            }
+        });
+
+        // Export questions:
+        button = addNavButton("Export Questions", buttonsPanel);
+        button.setToolTipText("Exports questions. Make sure you save them before exporting.");
+        button.addActionListener(e -> {
+            boolean success = Question.exportQuestions(lesson.questions, lesson.title);
+            if (success) JOptionPane.showMessageDialog(parentWindow, "Exported questions successfully.");
+        });
+
+        // Add a new fact:
         button = addNavButton("New Fact", buttonsPanel);
         button.addActionListener(e -> factListEditor.addNewFact());
 

@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class JSONPort {
-      // Export folder path:
-      //public static final String exportFolder = "C:/Users/Vilius/Desktop/";
+      // Reference to application state:
+      private static ApplicationState applicationState;
 
       // Constants for json object field names:
       // Question:
@@ -324,12 +324,11 @@ public class JSONPort {
       /**
        * Opens a file dialog which allows selecting only folders. Use for selecting a destination for a save/export file.
        * @param frame JFrame that the dialog will be related to.
-       * @param applicationState application configuration object, which is used for storing default save file location.
        * @return path to the selected folder.
        */
-      public static String selectFolder(JFrame frame, ApplicationState applicationState) {
+      public static String selectFolder(JFrame frame) {
             String saveFileFolder = ".";
-            if (!applicationState.exportFolder.equals("")) saveFileFolder = applicationState.exportFolder;
+            if (applicationState.exportFolder != null) saveFileFolder = applicationState.exportFolder;
 
             JFileChooser fileChooser = new JFileChooser(saveFileFolder);
             fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -342,5 +341,33 @@ public class JSONPort {
                   System.out.println("No Selection ");
             }
             return "";
+      }
+
+      /**
+       * Opens a file dialog which allows selecting only files. Use for selecting a file when importing settings.
+       * @param frame JFrame that the dialog will be related to.
+       * @return path to the selected file. Returns empty string "" if file selection is canceled.
+       */
+      public static String selectFile(JFrame frame) {
+            String folderPath = ".";
+            if (applicationState.importFolder != null) folderPath = applicationState.importFolder;
+
+            JFileChooser fileChooser = new JFileChooser(folderPath);
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            fileChooser.setAcceptAllFileFilterUsed(false);
+
+            if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+                  File selectedFile = fileChooser.getSelectedFile();
+                  System.out.println("Selected file" + selectedFile.toString());
+                  applicationState.importFolder = selectedFile.getParent() + "/";
+                  return fileChooser.getSelectedFile().toString();
+            } else {
+                  System.out.println("No Selection ");
+            }
+            return "";
+      }
+
+      public static void setApplicationState(ApplicationState applicationState) {
+            JSONPort.applicationState = applicationState;
       }
 }

@@ -38,7 +38,7 @@ public class MathSweeper extends JFrame implements ActionListener {
   public final String saveFileName = "minesweeper-save.ser";
   private String rootPath;
 
-  private final int N_BUTTONS = 4;
+  private final int N_BUTTONS = 3;
   private final int BUTTON_WIDTH = 140;
   private final int BUTTON_HEIGHT = 40;
   private final int BUTTON_SPACING = 30;
@@ -100,8 +100,9 @@ public class MathSweeper extends JFrame implements ActionListener {
     menu.setPreferredSize(new Dimension(MENU_WIDTH, MENU_HEIGHT));
     menu.add(Box.createRigidArea(new Dimension(0, TOP_PADDING)));
     addButton(GameConstants.PLAY, "Play in learning mode", menu);
-    addButton(GameConstants.EDIT, "Create and edit topics, lessons, levels", menu);
-    addButton(GameConstants.LESSONS, "View found lessons", menu);
+    
+    addButton(GameConstants.LESSONS, "View learning portfolio", menu);;
+
     addButton(GameConstants.EXIT, "Close application", menu);
     menu.add(Box.createRigidArea(new Dimension(0, BOTTOM_PADDING)));
   }
@@ -233,7 +234,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     learningLevel = new LevelDescription();
     learningLevel.levelNo = levelNo++;
     learningLevel.setGameBase(9, 9, 10, 1);
-    learningLevel.setItemCounts(1, 10, 3);
+    learningLevel.setItemCounts(1, 3, 3);
     learningLevel.startingReveals = 1;
     levels.add(learningLevel);
 

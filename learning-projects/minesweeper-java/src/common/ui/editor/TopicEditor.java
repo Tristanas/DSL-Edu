@@ -3,6 +3,7 @@ package common.ui.editor;
 import common.data.ApplicationState;
 import common.data.GameConstants;
 import common.edu.Lesson;
+import common.edu.Question;
 import common.edu.Topic;
 import common.ui.UIFunctions;
 import common.util.JSONPort;
@@ -89,6 +90,32 @@ public class TopicEditor extends EditorPanel {
         button = addNavButton("New Question", buttonsPanel);
         button.addActionListener(e -> questionsEditor.addNewQuestion());
 
+        // Import questions:
+        button = addNavButton("Import Questions", buttonsPanel);
+        button.setToolTipText("Select a file or a file that has a correct format.");
+        button.addActionListener(e -> {
+            ArrayList<Question> questions = Question.importQuestions();
+            if (questions.size() > 0) {
+                JOptionPane.showMessageDialog(parentWindow, "Imported questions successfully.");
+                questions.forEach(question -> {
+                    currTopic.testQuestions.add(question);
+                    questionsEditor.addQuestion(question);
+                    questionsEditor.updateUI();
+                });
+            } else {
+                JOptionPane.showMessageDialog(parentWindow, "Failed to import questions.", "Import failed", JOptionPane.ERROR_MESSAGE);
+            }
+
+        });
+
+        // Export questions:
+        button = addNavButton("Export Questions", buttonsPanel);
+        button.setToolTipText("Exports questions. Make sure you save them before exporting.");
+        button.addActionListener(e -> {
+            boolean success = Question.exportQuestions(currTopic.testQuestions, currTopic.title);
+            if (success) JOptionPane.showMessageDialog(parentWindow, "Exported questions successfully.");
+        });
+
         // Add a new lesson:
         button = addNavButton("New Lesson", buttonsPanel);
         button.addActionListener(e -> addNewLesson());
@@ -103,13 +130,14 @@ public class TopicEditor extends EditorPanel {
         button.setActionCommand(UPDATE);
         button.addActionListener(this);
 
-        // Export
-        button = addNavButton("Export", buttonsPanel);
+        // Export topic
+        button = addNavButton("Export Topic", buttonsPanel);
         button.addActionListener(e -> {
-            String path = JSONPort.selectFolder(parentWindow, appState);
+            String path = JSONPort.selectFolder(parentWindow);
             if (!path.equals("")) {
                 System.out.println("Exporting topic to destination: " + path);
                 JSONPort.exportTopic(currTopic, path);
+                JOptionPane.showMessageDialog(parentWindow, "Topic has been exported.");
             }
         });
 
@@ -143,6 +171,7 @@ public class TopicEditor extends EditorPanel {
         // Update questions:
         questionsEditor.updateObject();
         System.out.println("Topic '" + currTopic.title + "' has been saved.");
+        JOptionPane.showMessageDialog(parentWindow, "Topic has been saved.");
     }
 
     public void showLessonEditor(Lesson lesson) {

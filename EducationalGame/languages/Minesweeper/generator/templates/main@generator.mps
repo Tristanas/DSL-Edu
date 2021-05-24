@@ -187,6 +187,9 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
+      </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -204,6 +207,7 @@
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
@@ -303,7 +307,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="10Oyi0" id="3EkTMGp7VyO" role="1tU5fm" />
       <node concept="3cmrfG" id="3EkTMGp7VyP" role="33vP2m">
-        <property role="3cmrfH" value="4" />
+        <property role="3cmrfH" value="3" />
       </node>
       <node concept="3Tm6S6" id="3EkTMGp8bSI" role="1B3o_S" />
     </node>
@@ -946,23 +950,40 @@
             <node concept="37vLTw" id="mB0BBH5P1m" role="37wK5m">
               <ref role="3cqZAo" node="3EkTMGp7VyG" resolve="menu" />
             </node>
+            <node concept="1W57fq" id="12efBjmC4MY" role="lGtFl">
+              <node concept="3IZrLx" id="12efBjmC4N1" role="3IZSJc">
+                <node concept="3clFbS" id="12efBjmC4N2" role="2VODD2">
+                  <node concept="3clFbF" id="12efBjmC4N8" role="3cqZAp">
+                    <node concept="2OqwBi" id="12efBjmC4N3" role="3clFbG">
+                      <node concept="3TrcHB" id="12efBjmC4N6" role="2OqNvi">
+                        <ref role="3TsBF5" to="8ed4:4bZdlnARDWs" resolve="teacherApp" />
+                      </node>
+                      <node concept="30H73N" id="12efBjmC4N7" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="gft3U" id="12efBjmD8vG" role="UU_$l">
+                <node concept="3clFbF" id="12efBjmDjho" role="gfFT$">
+                  <node concept="1rXfSq" id="12efBjmDjhp" role="3clFbG">
+                    <ref role="37wK5l" node="7Cfb6vr5U_P" resolve="addButton" />
+                    <node concept="10M0yZ" id="12efBjmEdv9" role="37wK5m">
+                      <ref role="3cqZAo" to="t8el:~GameConstants.LESSONS" resolve="LESSONS" />
+                      <ref role="1PxDUh" to="t8el:~GameConstants" resolve="GameConstants" />
+                    </node>
+                    <node concept="Xl_RD" id="12efBjmDjhr" role="37wK5m">
+                      <property role="Xl_RC" value="View learning portfolio" />
+                    </node>
+                    <node concept="37vLTw" id="12efBjmDjhs" role="37wK5m">
+                      <ref role="3cqZAo" node="3EkTMGp7VyG" resolve="menu" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Cfb6vr5U$d" role="3cqZAp">
-          <node concept="1rXfSq" id="7Cfb6vr5U$e" role="3clFbG">
-            <ref role="37wK5l" node="7Cfb6vr5U_P" resolve="addButton" />
-            <node concept="10M0yZ" id="7Cfb6vr6aAK" role="37wK5m">
-              <ref role="1PxDUh" to="t8el:~GameConstants" resolve="GameConstants" />
-              <ref role="3cqZAo" to="t8el:~GameConstants.LESSONS" resolve="LESSONS" />
-            </node>
-            <node concept="Xl_RD" id="7Cfb6vr5U$g" role="37wK5m">
-              <property role="Xl_RC" value="View found lessons" />
-            </node>
-            <node concept="37vLTw" id="7Cfb6vr5U$h" role="37wK5m">
-              <ref role="3cqZAo" node="3EkTMGp7VyG" resolve="menu" />
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="12efBjmDeW2" role="3cqZAp" />
         <node concept="3clFbF" id="7Cfb6vr5U$i" role="3cqZAp">
           <node concept="1rXfSq" id="7Cfb6vr5U$j" role="3clFbG">
             <ref role="37wK5l" node="7Cfb6vr5U_P" resolve="addButton" />

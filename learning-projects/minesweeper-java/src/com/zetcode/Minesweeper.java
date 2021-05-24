@@ -13,6 +13,7 @@ import common.ui.LevelSelection;
 import common.ui.editor.TopicEditor;
 import common.util.GameWindowListener;
 import common.util.ImageScaler;
+import common.util.JSONPort;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -52,15 +53,16 @@ public class Minesweeper extends JFrame implements ActionListener {
         //ImageIcon img = new ImageIcon(ImageScaler.getImageResource("flag.png"));
         //System.out.println("Flag image size: " + img.getIconWidth() + "x" + img.getIconHeight());
         setupPaths();
-
         setupAppState();
         addWindowListener(new GameWindowListener(appState, rootPath + saveFileName));
         showMenu();
     }
 
     public void setupAppState() {
-        //appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
+        appState = ApplicationState.deserializeAppState(rootPath + saveFileName);
         if (appState == null) setupDefaultGameSettings();
+        // Give JSONPort a reference to appState for default folder paths:
+        JSONPort.setApplicationState(appState);
     }
 
     // To deprecate:

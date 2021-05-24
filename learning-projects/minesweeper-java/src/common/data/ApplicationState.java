@@ -11,6 +11,7 @@ public class ApplicationState implements Serializable {
 
     // File saving:
     public String exportFolder;
+    public String importFolder;
 
 
     public ApplicationState(ArrayList<Topic> topics, ArrayList<LevelDescription> levels) {
@@ -63,11 +64,9 @@ public class ApplicationState implements Serializable {
 
             System.out.println("Application state has been deserialized ");
         }
-
-        catch(IOException ex)
+        catch (InvalidClassException ex)
         {
-            System.out.println("Failed to deserialize app state: could not read from save file.");
-            ex.printStackTrace();
+            System.out.println("Loading save file from a different application version.");
         }
 
         catch(ClassNotFoundException ex)
@@ -75,6 +74,14 @@ public class ApplicationState implements Serializable {
             System.out.println("Failed to deserialize app state: saved state was from a different version of the app.");
             ex.printStackTrace();
         }
+
+        catch(IOException ex)
+        {
+            System.out.println("Failed to deserialize app state: could not read from save file.");
+            ex.printStackTrace();
+        }
+
+
 
         return appState;
     }

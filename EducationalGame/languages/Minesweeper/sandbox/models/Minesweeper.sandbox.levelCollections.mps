@@ -49,7 +49,7 @@
   <node concept="M0a1I" id="7E7jPp8IQxN">
     <property role="TrG5h" value="Statistics" />
     <node concept="3ZTL6s" id="45FrEmTMu8x" role="M3OQe">
-      <property role="Z3lr3" value="10" />
+      <property role="Z3lr3" value="3" />
       <property role="M8ltF" value="3" />
       <node concept="MacOJ" id="45FrEmTMu8B" role="Mcuge">
         <ref role="MacRr" to="mslf:7E7jPp8AAy2" resolve="Easy" />

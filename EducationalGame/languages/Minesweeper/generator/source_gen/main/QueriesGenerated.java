@@ -122,6 +122,9 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
   public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.teacherApp$K_72);
+  }
+  public static boolean ifMacro_Condition_1_1(final IfMacroContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.levelCollection$x$UM), LINKS.testLevel$NYj) != null;
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
@@ -306,6 +309,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, IfMacroCondition> imcMethods = new HashMap<String, IfMacroCondition>();
   {
     int i = 0;
+    imcMethods.put("1192959622837718206", new IfMC(i++));
     imcMethods.put("6383579779442774252", new IfMC(i++));
   }
   @NotNull
@@ -324,6 +328,8 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.ifMacro_Condition_1_0(ctx);
+        case 1:
+          return QueriesGenerated.ifMacro_Condition_1_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -364,5 +370,6 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SProperty factsCount$yrJ0 = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ac9L, 0xe6e29df31637f1cL, "factsCount");
     /*package*/ static final SProperty questionsQount$YSIm = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x6cece7c61cb7d2b1L, 0x7a874f5648a6183dL, "questionsQount");
     /*package*/ static final SProperty reveals$FJll = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f5648971366L, 0x7a874f5648a61812L, "reveals");
+    /*package*/ static final SProperty teacherApp$K_72 = MetaAdapterFactory.getProperty(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887efceL, 0x42ff3555e6de9f1cL, "teacherApp");
   }
 }
