@@ -222,6 +222,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
     questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
     questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
+    questions.add(new Question("What is an arithmetic average?", new String[]{"The most frequent value from a list of numbers.", "The most likely sum of two numbers.", "The sum of the largest and the smallest numbers of a list divided by two.", "The sum of each number in a collection, divided by the size of the collection."}, "The sum of each number in a collection, divided by the size of the collection."));
 
     facts = new ArrayList();
     facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
@@ -240,20 +241,50 @@ public class MathSweeper extends JFrame implements ActionListener {
 
     lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
     lessons.add(lesson);
-    // Lesson " Statistics introduction " and its level: 
+    // Lesson " Combinatorics basics " and its level: 
     questions = new ArrayList();
-    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
-    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
-    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
+    questions.add(new Question("There is a class of 18 students: 10 girls, 8 boys. A team of 2 girls and 1 boy is being selected. In how many ways can the team be selected?", new String[]{"720", "816", "560", "360"}, "360"));
+    questions.add(new Question("6! = ?", new String[]{"120", "5040", "360", "720"}, "720"));
+    questions.add(new Question("There is a class of 15 students: 10 girls, 8 boys. A team of 4 students is being selected. In how many ways can the team be selected?", new String[]{"1560", "8190", "2016", "1365"}, "1365"));
+    questions.add(new Question("8 students are participating in a race. In how many ways can the top 3 places be distributed?", new String[]{"56", "168", "1680", "336"}, "336"));
+    questions.add(new Question("What is the expression 5P4 (P = permutation ) equal to?", new String[]{"20", "60", "120", "5"}, "5"));
+    questions.add(new Question("Jane is attempting to unlock her locker but has forgotten her locker combination. The lock uses 3 numbers and includes only the numbers 1 to 9. Each of the digits also can not be repeated in the combination. How many possible locker combinations can be formed?", new String[]{"729", "27", "252", "504 "}, "504 "));
+    questions.add(new Question("What is the expression 7P2 (P = permutation ) equal to?", new String[]{"120", "2640", "5040", "42"}, "42"));
 
     facts = new ArrayList();
-    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
-    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
+    facts.add(new Fact("Combination", "A selection of items from a collection, such that the order of selection does not matter (unlike permutations). "));
+    facts.add(new Fact("Factorial", " The factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n: n! = n·(n - 1)·(n - 2)·(n - 3)· ... ·3·2·1. For example, 5! = 5·4·3·2·1 = 120."));
+    facts.add(new Fact("Factorial division", "Due to definition of factorials, it is convenient to divide factorials of larger numbers by those of smaller. For example, 10! / 8! = (10·9·8·7·...·2·1)/(8·7·6·...·2·1) = 10·9 = 90."));
+    facts.add(new Fact("Calculating combinations", "If the set has n elements, the number of k-combinations is equal to the binomial coefficient C(n, k) = n! / (k!·(n - k)!). For example, a pair of students from a class of 20 students is a 2-combination from 20 elements, denoted by C(20, 2). The amount of such combinations is C(20, 2) = 20! / (2!·(20-2)!) = 20! / (2!·18!) = 20·19/2 = 10·19 = 190."));
+    facts.add(new Fact("Permutation", "An arrangement of a set's members into a sequence or linear order, or if the set is already ordered, a rearrangement of its elements. Order matters."));
+    facts.add(new Fact("Partial permutation", "The number of arrangements of r items from n objects is consider a partial permutation. It is written as nPr (which reads \"n permute r\"), and is equal to the number n·(n-1)···(n-r+1)  (also written as n!/((n-r)!). For example, 10 cars are racing and we need to calculate all the possible top 5's. This can be expressed as 10P5 and calculated with 10!/((10-5)!) = 10!/5! = 10·9·8·7·6."));
+
+
+    learningLevel = new LevelDescription();
+    learningLevel.levelNo = levelNo++;
+    learningLevel.setGameBase(16, 16, 40, 1);
+    learningLevel.setItemCounts(3, 2, 4);
+    learningLevel.startingReveals = 1;
+    levels.add(learningLevel);
+
+    lesson = new Lesson("Combinatorics basics", facts, questions, learningLevel);
+    lessons.add(lesson);
+    // Lesson " Probability basics " and its level: 
+    questions = new ArrayList();
+    questions.add(new Question("What is the likelihood of tossing a coin and getting tails each time?", new String[]{"0.0625", "0.25", "0.75", "0.125"}, "0.125"));
+    questions.add(new Question("What is the probability of rolling an even number with a six-sided dice?", new String[]{"0.25", "0.166", "0.33", "0.5"}, "0.5"));
+    questions.add(new Question("There is a class of 18 students: 10 girls, 8 boys. A class representative is being selected. What is the probability that a girl will be elected?", new String[]{"1", "0.44", "0.5", "0.55"}, "0.55"));
+    questions.add(new Question("Which one is NOT an event?", new String[]{"Tom scored 10 from the test.", "Julia received 7 flowers.", "Scott won the game.", "Rolling 6 is good."}, "Rolling 6 is good."));
+    questions.add(new Question("Which pair of events are mutually exclusive?", new String[]{"Rolling a dice to get 2 and an even number.", "Scoring 7 from a maths test and 10 from history.", "Tossing a coin to get a tail and a head."}, "Tossing a coin to get a tail and a head."));
+    questions.add(new Question("What is the probability of rolling a dice once and getting less than 3?", new String[]{"0.5", "0.66", "0.16", "0.33"}, "0.33"));
+    questions.add(new Question("There is a standard deck of 52 cards. One card is drawn. How many outcomes satisfy the event \"Hearts will be drawn\"?", new String[]{"26", "4", "13"}, "13"));
+
+    facts = new ArrayList();
+    facts.add(new Fact("Event", "An occurrance that might happen if certain conditions are satisfied."));
+    facts.add(new Fact("Probability", "A numerical expression that shows how likely it is for an event to occur. To calculate the probability one needs to calculate the amount of all possible outcomes and of those that satisfy the conditions of the event. To calculate the probability divide desirable outcomes by all possible outcomes. For example, a coin toss has two outcomes: heads or tails. If an event is getting tails, then the probability is 1 divided by 2, which is equal to 0.5."));
+    facts.add(new Fact("Independent events", "A pair of events (or a bigger collection), where each one is not affected by the other. For example, a coin toss is not dependent from earlier tosses."));
+    facts.add(new Fact("Dependent events", "A collection of events (also called \"Conditional\"), where an event is affected by other events. For example, when taking cards from a deck, the second and further draws depend on what cards were taken previously. As there are 52 cards, the probability of drawing a King is 4 out of 52 for the first draw. If the first card was not a king, the second draw is more likely with a 4 out of 51 chance. If it was a king, the second draw's chance is reduced to 3 out of 51. Note that if you return the card to the deck, the chances do not change and the events become independent."));
+    facts.add(new Fact("Mutually exclusive events", "A collection of events that cannot happen at the same time. Examples of such events are: two students becoming the student president, passing and failing the test, drawing a card that is a king and an ace, turning left and right."));
 
 
     learningLevel = new LevelDescription();
@@ -263,32 +294,7 @@ public class MathSweeper extends JFrame implements ActionListener {
     learningLevel.startingReveals = 1;
     levels.add(learningLevel);
 
-    lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
-    lessons.add(lesson);
-    // Lesson " Statistics introduction " and its level: 
-    questions = new ArrayList();
-    questions.add(new Question("What is the median of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"3.5", "6.5", "5", "6"}, "6"));
-    questions.add(new Question("What is the Range of the following list? 6, 7, 1, 4, 9, 6, 3, 6.", new String[]{"2", "6", "5", "8"}, "8"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The median is 8. What grade was omitted?", new String[]{"7", "8", "10", "9"}, "9"));
-    questions.add(new Question("A student has the following grades: .., 6, 7, 8, 10, 10. One grade is omitted. The range is 6. What grade was omitted?", new String[]{"2", "3", "5", "4"}, "4"));
-    questions.add(new Question("A student has the following grades: 5, 6, 7, ..., 10, 10. One grade is omitted. The average is 7.5. What grade was omitted?", new String[]{"8", "9", "10", "7"}, "7"));
-
-    facts = new ArrayList();
-    facts.add(new Fact("Arithmetic average", "Arithmetic average (mean) is the sum of each number in a collection, divided by the size of the collection. For example, the average of 4 and 6 is 10 divided by 2, which equals 5."));
-    facts.add(new Fact("Median", "The median is the middle value in the list of numbers. To find the median, your numbers have to be listed in numerical order from smallest to largest, so you may have to rewrite your list before you can find the median."));
-    facts.add(new Fact("Range", "The range of a list of numbers is just the difference between the largest and smallest values."));
-    facts.add(new Fact("Mode", "The mode is the value that occurs most often. If no number in the list is repeated, then there is no mode for the list."));
-    facts.add(new Fact("Calculating a Mode", "There are a few approaches to calculating a mode. One is rewriting the list in an ordered manner and then counting number appearances. This is useful as you may also easily find the median and the range of such a list. Another way is to create a table, write values on the first line and their occurrences on the second. You may add more lines to the table to further analyze each value."));
-
-
-    learningLevel = new LevelDescription();
-    learningLevel.levelNo = levelNo++;
-    learningLevel.setGameBase(30, 16, 99, 1);
-    learningLevel.setItemCounts(3, 4, 5);
-    learningLevel.startingReveals = 0;
-    levels.add(learningLevel);
-
-    lesson = new Lesson("Statistics introduction", facts, questions, learningLevel);
+    lesson = new Lesson("Probability basics", facts, questions, learningLevel);
     lessons.add(lesson);
 
     // Test for the topic:  <node> 

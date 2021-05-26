@@ -129,6 +129,11 @@
     <node concept="PrWs8" id="5yn1ZNt8hf_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="3PHWx4E4xOY" role="1TKVEi">
+      <property role="IQ2ns" value="4426460164309261630" />
+      <property role="20kJfa" value="Test" />
+      <ref role="20lvS9" node="4XM$1KSToDH" resolve="SimpleTest" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10qyPnJZnbJ">
     <property role="EcuMT" value="1160393055216169711" />

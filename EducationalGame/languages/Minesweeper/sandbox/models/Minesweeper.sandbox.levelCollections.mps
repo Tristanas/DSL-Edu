@@ -54,28 +54,28 @@
       <node concept="MacOJ" id="45FrEmTMu8B" role="Mcuge">
         <ref role="MacRr" to="mslf:7E7jPp8AAy2" resolve="Easy" />
       </node>
-      <node concept="M0bUW" id="45FrEmTMu8D" role="M0bXT">
-        <ref role="M0bUE" to="1k9o:10qyPnJZG5I" resolve="Statistics introduction" />
-      </node>
-    </node>
-    <node concept="3ZTL6s" id="45FrEmTN7bW" role="M3OQe">
-      <property role="Z3lr3" value="3" />
-      <property role="M8ltF" value="4" />
-      <node concept="MacOJ" id="45FrEmTN7cv" role="Mcuge">
-        <ref role="MacRr" to="mslf:7E7jPp8B6u6" resolve="Medium" />
-      </node>
-      <node concept="M0bUW" id="45FrEmTN7cW" role="M0bXT">
+      <node concept="M0bUW" id="3PHWx4E4pRQ" role="M0bXT">
         <ref role="M0bUE" to="1k9o:10qyPnJZG5I" resolve="Statistics introduction" />
       </node>
     </node>
     <node concept="3ZTL6s" id="45FrEmTN785" role="M3OQe">
-      <property role="Z3lr3" value="4" />
-      <property role="M8ltF" value="5" />
-      <node concept="MacOJ" id="45FrEmTN79m" role="Mcuge">
-        <ref role="MacRr" to="mslf:7E7jPp8B6uH" resolve="Hard" />
+      <property role="Z3lr3" value="2" />
+      <property role="M8ltF" value="4" />
+      <node concept="MacOJ" id="3PHWx4E4pSh" role="Mcuge">
+        <ref role="MacRr" to="mslf:7E7jPp8B6u6" resolve="Medium" />
       </node>
-      <node concept="M0bUW" id="45FrEmTN79N" role="M0bXT">
-        <ref role="M0bUE" to="1k9o:10qyPnJZG5I" resolve="Statistics introduction" />
+      <node concept="M0bUW" id="3PHWx4E4pSc" role="M0bXT">
+        <ref role="M0bUE" to="1k9o:3PHWx4E42Xh" resolve="Combinatorics basics" />
+      </node>
+    </node>
+    <node concept="3ZTL6s" id="3PHWx4E4pRZ" role="M3OQe">
+      <property role="Z3lr3" value="3" />
+      <property role="M8ltF" value="4" />
+      <node concept="M0bUW" id="3PHWx4E4pSa" role="M0bXT">
+        <ref role="M0bUE" to="1k9o:3PHWx4E42Xn" resolve="Probability basics" />
+      </node>
+      <node concept="MacOJ" id="3PHWx4E4pSf" role="Mcuge">
+        <ref role="MacRr" to="mslf:7E7jPp8B6u6" resolve="Medium" />
       </node>
     </node>
     <node concept="3ZTL6X" id="5yn1ZNt7WE2" role="M0a0q">
