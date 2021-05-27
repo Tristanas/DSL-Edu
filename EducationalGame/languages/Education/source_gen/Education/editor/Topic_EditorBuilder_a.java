@@ -80,7 +80,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Topic:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Topic title:");
     editorCell.setCellId("Constant_20yula_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -111,7 +111,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Test:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Test questionaire:");
     editorCell.setCellId("Constant_20yula_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);

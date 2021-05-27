@@ -53,5 +53,15 @@
     <property role="M8lt4" value="0" />
     <property role="M8lmk" value="3" />
   </node>
+  <node concept="M45KK" id="1lOelrCQ2tY">
+    <property role="M45KZ" value="25" />
+    <property role="M45KY" value="9" />
+    <property role="M45KL" value="9" />
+    <property role="M45KW" value="30" />
+    <property role="M8lt6" value="4" />
+    <property role="M8lt4" value="0" />
+    <property role="M8lmk" value="1" />
+    <property role="TrG5h" value="SmallTest" />
+  </node>
 </model>
 

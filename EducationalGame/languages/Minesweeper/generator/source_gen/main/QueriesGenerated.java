@@ -125,6 +125,9 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getBoolean(_context.getNode(), PROPS.teacherApp$K_72);
   }
   public static boolean ifMacro_Condition_1_1(final IfMacroContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.levelCollection$x$UM), LINKS.testLevel$NYj), LINKS.topic$L$Tc), LINKS.topicRef$wps$), LINKS.Test$bFOf) != null;
+  }
+  public static boolean ifMacro_Condition_1_2(final IfMacroContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.levelCollection$x$UM), LINKS.testLevel$NYj) != null;
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
@@ -143,7 +146,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.incorrectAnswers$ogmD);
   }
   public static Iterable<SNode> sourceNodesQuery_1_5(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.levelCollection$x$UM), LINKS.testLevel$NYj), LINKS.questionaire$rGhI), LINKS.questions$3WMF);
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.levelCollection$x$UM), LINKS.testLevel$NYj), LINKS.topic$L$Tc), LINKS.topicRef$wps$), LINKS.Test$bFOf), LINKS.questions$3WMF);
   }
   public static Iterable<SNode> sourceNodesQuery_1_6(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.levelCollections$9hLc);
@@ -211,7 +214,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("6383579779442773937", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "4"));
     pvqMethods.put("6383579779442773947", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "1"));
     pvqMethods.put("6383579779442773828", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "name"));
-    pvqMethods.put("6383579779442773992", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "name"));
+    pvqMethods.put("1545923617533088420", new PVQ(i++, MetaAdapterFactory.getProperty(0xc7fb639fbe784307L, 0x89b0b5959c3fa8c8L, 0x229012ddae35f04L, 0x229012ddae35f05L, "value"), "\"Name\""));
     pvqMethods.put("6383579779442774020", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Is it okay to sweep mines?"));
     pvqMethods.put("6383579779442774037", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "wrongAnswers"));
     pvqMethods.put("6383579779442774045", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Answer"));
@@ -310,6 +313,7 @@ public class QueriesGenerated extends QueryProviderBase {
   {
     int i = 0;
     imcMethods.put("1192959622837718206", new IfMC(i++));
+    imcMethods.put("1545923617532754775", new IfMC(i++));
     imcMethods.put("6383579779442774252", new IfMC(i++));
   }
   @NotNull
@@ -330,6 +334,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.ifMacro_Condition_1_0(ctx);
         case 1:
           return QueriesGenerated.ifMacro_Condition_1_1(ctx);
+        case 2:
+          return QueriesGenerated.ifMacro_Condition_1_2(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -347,11 +353,11 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink topic$L$Tc = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L, 0xe6e29df31a656e5L, "topic");
     /*package*/ static final SReferenceLink topicRef$wps$ = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0xe6e29df31a5e180L, 0xe6e29df31a5e194L, "topicRef");
     /*package*/ static final SContainmentLink difficulty$4Kkk = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L, 0x72edabd130ddb607L, "difficulty");
+    /*package*/ static final SReferenceLink Test$bFOf = MetaAdapterFactory.getReferenceLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72d0L, 0x3d6df2112a121d3eL, "Test");
     /*package*/ static final SContainmentLink incorrectAnswers$ogmD = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x2124eace002ddad4L, 0x2124eace002ddad7L, "incorrectAnswers");
     /*package*/ static final SContainmentLink Questions$DWXJ = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x416b6ea5b9bdd627L, "Questions");
     /*package*/ static final SContainmentLink Facts$YWXG = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x101a8b55effd72efL, 0x101a8b55effd99f9L, "Facts");
     /*package*/ static final SContainmentLink learningLevels$h2Gi = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887ef38L, 0x7a874f56488802d8L, "learningLevels");
-    /*package*/ static final SContainmentLink questionaire$rGhI = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x101a8b55effd9ae8L, 0xe6e29df31a23600L, "questionaire");
     /*package*/ static final SContainmentLink questions$3WMF = MetaAdapterFactory.getContainmentLink(0xf086fa03c1954951L, 0xa78fbf3bd377c791L, 0x4f72901c38e58a6dL, 0x2124eace002ddbbeL, "questions");
     /*package*/ static final SContainmentLink levelCollections$9hLc = MetaAdapterFactory.getContainmentLink(0x8f66faecbf224d22L, 0x897476ccb51727aeL, 0x7a874f564887efceL, 0x7a874f56488801bbL, "levelCollections");
   }

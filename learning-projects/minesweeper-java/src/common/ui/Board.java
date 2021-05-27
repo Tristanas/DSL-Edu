@@ -69,8 +69,8 @@ public class Board extends JPanel implements ActionListener {
     // Questions:
     private int clickedMinePosition;
     private int questionsAnswered;
-    private final int questionsCount;
-    private final ArrayList<Question> questions;
+    private int questionsCount;
+    private ArrayList<Question> questions;
 
     // Lessons:
     private ArrayList<Fact> facts;
@@ -87,17 +87,6 @@ public class Board extends JPanel implements ActionListener {
         this.statusbar = new StatusBar(this);
         this.level = level;
         this.actionListener = actionListener;
-
-        if (level.type == LevelDescription.GameType.learn) {
-            this.questions = level.lesson.questions;
-            // Randomize the order of questions:
-            facts = level.lesson.getRandomFacts(level.factCount);
-        } else {
-            this.facts = new ArrayList<>();
-            this.questions = level.topic.generateTest();
-        }
-
-        this.questionsCount = questions.size();
 
         // Init final fields:
         N_COLS = level.columns;
@@ -139,7 +128,16 @@ public class Board extends JPanel implements ActionListener {
     public void newGame(boolean addFacts, boolean addEffects) {
         int i;
         var random = new Random();
-        Collections.shuffle(level.lesson.questions);
+
+        if (level.type == LevelDescription.GameType.learn) {
+            this.questions = level.lesson.questions;
+            // Randomize the order of questions:
+            facts = level.lesson.getRandomFacts(level.factCount);
+        } else {
+            this.facts = new ArrayList<>();
+            this.questions = level.topic.generateTest();
+        }
+        this.questionsCount = questions.size();
 
         // Reset state and counters:
         inGame = true;

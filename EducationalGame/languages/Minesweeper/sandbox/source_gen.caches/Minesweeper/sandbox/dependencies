@@ -15,6 +15,7 @@
     <classNode dependClassName="common.ui.editor.TopicEditor" />
     <classNode dependClassName="common.util.GameWindowListener" />
     <classNode dependClassName="common.util.ImageScaler" />
+    <classNode dependClassName="common.util.JSONPort" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />
@@ -53,6 +54,7 @@
     <classNode dependClassName="common.ui.editor.TopicEditor" />
     <classNode dependClassName="common.util.GameWindowListener" />
     <classNode dependClassName="common.util.ImageScaler" />
+    <classNode dependClassName="common.util.JSONPort" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Component" />
     <classNode dependClassName="java.awt.Container" />

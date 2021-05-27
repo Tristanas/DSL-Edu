@@ -272,13 +272,13 @@
     <ref role="1XX52x" to="cgkn:10qyPnJZnbg" resolve="Topic" />
     <node concept="3EZMnI" id="5yn1ZNt83sB" role="2wV5jI">
       <node concept="3F0ifn" id="5yn1ZNt83sI" role="3EZMnx">
-        <property role="3F0ifm" value="Topic:" />
+        <property role="3F0ifm" value="Topic title:" />
       </node>
       <node concept="3F0A7n" id="5yn1ZNt83sO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3PHWx4E4xPe" role="3EZMnx">
-        <property role="3F0ifm" value="Test:" />
+        <property role="3F0ifm" value="Test questionaire:" />
         <node concept="pVoyu" id="3PHWx4E4xPs" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

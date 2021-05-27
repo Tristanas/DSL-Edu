@@ -80,8 +80,8 @@
     </node>
     <node concept="3ZTL6X" id="5yn1ZNt7WE2" role="M0a0q">
       <property role="M8ltF" value="10" />
-      <node concept="MacOJ" id="5yn1ZNt7WG9" role="12c1Rm">
-        <ref role="MacRr" to="mslf:7E7jPp8B6u6" resolve="Medium" />
+      <node concept="MacOJ" id="1lOelrCQ4I0" role="12c1Rm">
+        <ref role="MacRr" to="mslf:1lOelrCQ2tY" resolve="SmallTest" />
       </node>
       <node concept="ZMWxv" id="5yn1ZNt9nGA" role="ZM7WU">
         <ref role="ZMWxb" to="7i3a:5yn1ZNt9non" resolve="Statistics" />

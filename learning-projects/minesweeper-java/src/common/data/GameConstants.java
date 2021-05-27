@@ -69,7 +69,7 @@ public class GameConstants {
     public static Font SECTION_FONT = new Font(Font.SANS_SERIF, Font.PLAIN, SECTION_FONT_SIZE);
 
     // Specific sections:
-    public static final int LEVEL_EDITOR_WIDTH = 200;
+    public static final int LEVEL_EDITOR_WIDTH = 250;
     public static final int LESSON_LIST_WIDTH = 250;
     public static final int FACT_LIST_WIDTH = 350;
     public static final int QUESTION_LIST_WIDTH = QUESTION_WIDTH + 50;

@@ -22,6 +22,7 @@ public class LevelEditor extends EditorPanel {
     JTextField mines;
     JTextField lives;
     JTextField questions;
+    JTextField topicQuestions;
     JTextField effects;
     JTextField reveals;
     JTextField facts;
@@ -45,6 +46,7 @@ public class LevelEditor extends EditorPanel {
 
         rows = addField("Rows:", levelInfo);
         questions = addField("Questions:", levelInfo);
+        questions.setToolTipText("Amount of questions per level.");
         cols = addField("Columns:", levelInfo);
         reveals = addField("Reveals:", levelInfo);
         lives = addField("Lives:", levelInfo);
@@ -52,6 +54,9 @@ public class LevelEditor extends EditorPanel {
         mines = addField("Mines:", levelInfo);
         if (level.type == LevelDescription.GameType.learn) {
             facts = addField("Facts:", levelInfo);
+        } else {
+            topicQuestions = addField("Topic Questions:", levelInfo);
+            topicQuestions.setToolTipText("How many test questions will be from the topic questions. \nRemaining questions will be from the lessons.");
         }
         add(levelInfo, BorderLayout.CENTER);
 
@@ -69,6 +74,8 @@ public class LevelEditor extends EditorPanel {
         reveals.setText(Integer.toString(level.startingReveals));
         if (level.type == LevelDescription.GameType.learn) {
             facts.setText(Integer.toString(level.factCount));
+        } else {
+            topicQuestions.setText(Integer.toString(level.topicQuestionsCount));
         }
     }
 
@@ -83,6 +90,8 @@ public class LevelEditor extends EditorPanel {
         level.startingReveals = Integer.parseInt(reveals.getText());
         if (level.type == LevelDescription.GameType.learn) {
             level.factCount = Integer.parseInt(facts.getText());
+        } else {
+            level.topicQuestionsCount = Integer.parseInt(topicQuestions.getText());
         }
     }
 

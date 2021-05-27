@@ -21,7 +21,8 @@ public class LevelDescription implements Serializable {
     public int startingReveals = 0;
 
     // Educational section:
-    public int questionsCount = 0; // Amount of questions (from a lesson or a question pool) to include in the level;
+    public int questionsCount = 3; // Amount of questions (from a lesson or a question pool) to include in the level;
+    public int topicQuestionsCount = 3; // Amount of questions to take from the topic when forming a test.
     public GameType type;
 
     // Learning game:
@@ -80,6 +81,7 @@ public class LevelDescription implements Serializable {
      */
     public void setTestGame(Topic topic) {
         this.type = GameType.test;
+        this.topicQuestionsCount = Math.min(questionsCount,topic.testQuestions.size());
         this.topic = topic;
     }
 

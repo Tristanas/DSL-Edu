@@ -349,7 +349,7 @@ public class Minesweeper extends JFrame implements ActionListener {
         // Setup test:
         testLevel = new LevelDescription();
         testLevel.levelNo = levelNo++;
-        testLevel.setGameBase(8, 8, 10, 2);
+        testLevel.setGameBase(8, 8, 10, 6);
         testLevel.setItemCounts(1, 0, 4);
         testLevel.startingReveals = 1;
         levels.add(testLevel);
