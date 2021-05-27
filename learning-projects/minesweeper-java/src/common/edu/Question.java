@@ -47,7 +47,7 @@ public class Question implements Serializable {
      */
     public void exportToFile(FileWriter targetFile) throws IOException {
         targetFile.write(QUESTION_TAG + ": " + question + "\n");
-        targetFile.write(CORRECT_ANSWER_TAG + FIRST_ANSWER_TAG + ": " + correctAnswer + "\n");
+        targetFile.write(CORRECT_ANSWER_TAG + "" + FIRST_ANSWER_TAG + ": " + correctAnswer + "\n");
 
         char prefix = FIRST_ANSWER_TAG + 1;
         for (int i = 1; i < answers.size(); i++) {
@@ -95,7 +95,6 @@ public class Question implements Serializable {
     /**
      * Exports questions to a text file.
      * @param questions what should be exported.
-     * @param appState parameter to retrieve/set default save location.
      * @return true if succeeded.
      */
     public static boolean exportQuestions(ArrayList<Question> questions, String objectName) {
@@ -120,7 +119,6 @@ public class Question implements Serializable {
 
     /**
      * Creates a list of Questions from a text file selected with a file picker.
-     * @param appState used for retrieving save folder path.
      * @return list of questions from a text file.
      */
     public static ArrayList<Question> importQuestions() {

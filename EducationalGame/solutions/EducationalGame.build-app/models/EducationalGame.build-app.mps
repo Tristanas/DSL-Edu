@@ -496,7 +496,7 @@
                 <node concept="2Ry0Ak" id="1lOelrD0BGS" role="2Ry0An">
                   <property role="2Ry0Am" value="libs" />
                   <node concept="2Ry0Ak" id="1lOelrD0BH8" role="2Ry0An">
-                    <property role="2Ry0Am" value="minesweeper 2.6.1.jar" />
+                    <property role="2Ry0Am" value="minesweeper 2.6.2.jar" />
                   </node>
                 </node>
               </node>
