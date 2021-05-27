@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Objects;
 import java.util.Random;
 import javax.swing.*;
@@ -88,7 +89,9 @@ public class Board extends JPanel implements ActionListener {
         this.actionListener = actionListener;
 
         if (level.type == LevelDescription.GameType.learn) {
+            Collections.shuffle(level.lesson.questions);
             this.questions = level.lesson.questions;
+            // Randomize the order of questions:
             facts = level.lesson.getRandomFacts(level.factCount);
         } else {
             this.facts = new ArrayList<>();
@@ -417,6 +420,10 @@ public class Board extends JPanel implements ActionListener {
 
     public boolean askQuestion(Question q)
     {
+        // Randomize the order of answers:
+        ArrayList<String> randomAnswers = q.answers;
+        Collections.shuffle(randomAnswers);
+
         // If player closes question window or clicks cancel, selectedOption becomes null.
         String selectedOption = (String) JOptionPane.showInputDialog(
                 parentWindow,
@@ -425,8 +432,8 @@ public class Board extends JPanel implements ActionListener {
                 "Question time",
                 JOptionPane.QUESTION_MESSAGE,
                 null, // Do not use a custom icon
-                q.answers.toArray(), // Possible answers
-                q.correctAnswer);
+                randomAnswers.toArray(), // Possible answers
+                randomAnswers.get(0));
 
         return selectedOption != null && selectedOption.equals(q.correctAnswer);
     }
