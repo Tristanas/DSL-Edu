@@ -13,14 +13,18 @@
   <property name="minesweeper_java_source" location="${basedir}/../learning-projects/minesweeper-java/out/production/minesweeper" />
   <property name="resources_folder" location="${basedir}/languages/Minesweeper/sandbox/resources" />
   <property name="lib_folder" location="${basedir}/solutions/CommonClasses/libs" />
+  <property name="environment" value="env" />
+  <property name="env.JAVA_HOME" value="${java.home}/.." />
+  <property name="jdk.home" value="${env.JAVA_HOME}" />
   
-  <target name="assemble" depends="classes, declare-mps-tasks">
+  <target name="assemble" depends="classes">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_teacher_app_jar_rbrace_" />
     <manifest file="${build.tmp}/default/MANIFEST.MF">
       <attribute name="Main-Class" value="com.zetcode.${teacher_app_name}" />
     </manifest>
     <jar destfile="${build.layout}/${teacher_app_jar}" manifest="${build.tmp}/default/MANIFEST.MF" duplicate="preserve">
+      <zipfileset dir="${lib_folder}/json-simple-1.1.1/org" prefix="org" />
       <zipfileset dir="${resources_folder}" prefix="resources" />
       <zipfileset dir="${minesweeper_java_source}/common/" prefix="common" />
       <zipfileset dir="${app_folder}" prefix="com/zetcode" />
@@ -33,6 +37,7 @@
     <jar destfile="${build.layout}/${student_app_jar}" manifest="${build.tmp}/default/MANIFEST.MF1" duplicate="preserve">
       <zipfileset dir="${resources_folder}" prefix="resources" />
       <zipfileset dir="${minesweeper_java_source}/common/" prefix="common" />
+      <zipfileset dir="${lib_folder}/json-simple-1.1.1/org" prefix="org" />
       <zipfileset dir="${app_folder}" prefix="com/zetcode" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_student_app_jar_rbrace_" />
     </jar>
@@ -50,7 +55,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" />
+  <target name="compileJava" depends="java.compile.MinesweeperApp" />
   
   <target name="processResources" />
   
@@ -60,9 +65,21 @@
   
   <target name="check" depends="test" />
   
-  <target name="generate" depends="declare-mps-tasks" />
-  
-  <target name="declare-mps-tasks" />
-  
-  <target name="makeDependents" />
+  <target name="java.compile.MinesweeperApp">
+    <mkdir dir="${app_folder}" />
+    <mkdir dir="${build.tmp}/java/out/MinesweeperApp" />
+    <javac destdir="${build.tmp}/java/out/MinesweeperApp" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${app_folder}" />
+      </src>
+      <classpath>
+        <fileset file="${basedir}/solutions/CommonClasses/libs/json-simple-1.1.1.jar" />
+        <fileset file="${basedir}/solutions/CommonClasses/libs/minesweeper 2.6.1.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/MinesweeperApp">
+      <fileset dir="${basedir}/languages/Minesweeper/sandbox/resources" />
+    </copy>
+  </target>
 </project>
