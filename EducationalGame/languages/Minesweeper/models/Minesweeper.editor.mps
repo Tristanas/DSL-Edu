@@ -19,6 +19,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -310,6 +311,64 @@
         <ref role="1NtTu8" to="8ed4:7E7jPp8DxwX" resolve="questionsQount" />
       </node>
       <node concept="l2Vlx" id="5yn1ZNt7ex7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1lOelrCMtRL">
+    <ref role="1XX52x" to="8ed4:7E7jPp8xYZe" resolve="EducationalGame" />
+    <node concept="3EZMnI" id="1lOelrCMtSH" role="2wV5jI">
+      <node concept="3F0ifn" id="1lOelrCMtSO" role="3EZMnx">
+        <property role="3F0ifm" value="Game:" />
+      </node>
+      <node concept="3F0A7n" id="1lOelrCMtSU" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1lOelrCMtT2" role="3EZMnx">
+        <property role="3F0ifm" value="Teacher application:" />
+        <node concept="pVoyu" id="1lOelrCMtTK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1lOelrCMtTc" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:4bZdlnARDWs" resolve="teacherApp" />
+      </node>
+      <node concept="3F0ifn" id="1lOelrCMtTo" role="3EZMnx">
+        <property role="3F0ifm" value="Level collections:" />
+        <node concept="pVoyu" id="1lOelrCMtTP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1lOelrCMtTA" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8y06V" resolve="levelCollections" />
+        <node concept="l2Vlx" id="1lOelrCMtTC" role="2czzBx" />
+        <node concept="pVoyu" id="1lOelrCMtTS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="1lOelrCMtTU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1lOelrCMtTX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1lOelrCMtSK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1lOelrCNJKA">
+    <ref role="1XX52x" to="8ed4:7E7jPp8z1pT" resolve="LevelCollectionReference" />
+    <node concept="3EZMnI" id="1lOelrCNJKH" role="2wV5jI">
+      <node concept="3F0ifn" id="1lOelrCNJKO" role="3EZMnx">
+        <property role="3F0ifm" value="Collection Name:" />
+      </node>
+      <node concept="1iCGBv" id="1lOelrCNJKU" role="3EZMnx">
+        <ref role="1NtTu8" to="8ed4:7E7jPp8z1qc" resolve="levelCollection" />
+        <node concept="1sVBvm" id="1lOelrCNJKW" role="1sWHZn">
+          <node concept="3F0A7n" id="1lOelrCNJL4" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1lOelrCNJKK" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -89,7 +89,6 @@ public class Board extends JPanel implements ActionListener {
         this.actionListener = actionListener;
 
         if (level.type == LevelDescription.GameType.learn) {
-            Collections.shuffle(level.lesson.questions);
             this.questions = level.lesson.questions;
             // Randomize the order of questions:
             facts = level.lesson.getRandomFacts(level.factCount);
@@ -140,6 +139,7 @@ public class Board extends JPanel implements ActionListener {
     public void newGame(boolean addFacts, boolean addEffects) {
         int i;
         var random = new Random();
+        Collections.shuffle(level.lesson.questions);
 
         // Reset state and counters:
         inGame = true;

@@ -36,8 +36,5 @@
       <ref role="M2PBq" to="exsm:7E7jPp8IQxN" resolve="Statistics" />
     </node>
   </node>
-  <node concept="M0a2o" id="3PHWx4E6h3h">
-    <node concept="M2P$J" id="3PHWx4E6h3i" role="M3OVH" />
-  </node>
 </model>
 
