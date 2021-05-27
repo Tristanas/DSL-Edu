@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="de.itemis.mps.celllayout" />
+    <plugin id="de.itemis.mps.selection" />
+    <plugin id="de.slisson.mps.editor.multiline" />
+    <plugin id="de.slisson.mps.hacks" />
+  </component>
+</project>

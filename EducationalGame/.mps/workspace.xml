@@ -605,10 +605,6 @@
               <option name="myItemId" value="EducationalGame" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5c5d129c-2bba-418e-af62-0d9f88e5c938" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
@@ -694,7 +690,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-projects/minesweeper-java/src" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RunManager" selected="Build Script.Minesweeper JAR">
     <configuration name="Minesweeper JAR" type="Build Script" factoryName="Build Script" temporary="true">
