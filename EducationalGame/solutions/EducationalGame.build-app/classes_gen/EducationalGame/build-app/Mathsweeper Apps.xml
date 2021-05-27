@@ -14,13 +14,14 @@
   <property name="resources_folder" location="${basedir}/languages/Minesweeper/sandbox/resources" />
   <property name="lib_folder" location="${basedir}/solutions/CommonClasses/libs" />
   
-  <target name="assemble" depends="classes, declare-mps-tasks">
+  <target name="assemble" depends="classes">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_teacher_app_jar_rbrace_" />
     <manifest file="${build.tmp}/default/MANIFEST.MF">
       <attribute name="Main-Class" value="com.zetcode.${teacher_app_name}" />
     </manifest>
     <jar destfile="${build.layout}/${teacher_app_jar}" manifest="${build.tmp}/default/MANIFEST.MF" duplicate="preserve">
+      <zipfileset dir="${lib_folder}/json-simple-1.1.1/org" prefix="org" />
       <zipfileset dir="${resources_folder}" prefix="resources" />
       <zipfileset dir="${minesweeper_java_source}/common/" prefix="common" />
       <zipfileset dir="${app_folder}" prefix="com/zetcode" />
@@ -33,6 +34,7 @@
     <jar destfile="${build.layout}/${student_app_jar}" manifest="${build.tmp}/default/MANIFEST.MF1" duplicate="preserve">
       <zipfileset dir="${resources_folder}" prefix="resources" />
       <zipfileset dir="${minesweeper_java_source}/common/" prefix="common" />
+      <zipfileset dir="${lib_folder}/json-simple-1.1.1/org" prefix="org" />
       <zipfileset dir="${app_folder}" prefix="com/zetcode" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_student_app_jar_rbrace_" />
     </jar>
@@ -59,10 +61,4 @@
   <target name="test" depends="classes" />
   
   <target name="check" depends="test" />
-  
-  <target name="generate" depends="declare-mps-tasks" />
-  
-  <target name="declare-mps-tasks" />
-  
-  <target name="makeDependents" />
 </project>

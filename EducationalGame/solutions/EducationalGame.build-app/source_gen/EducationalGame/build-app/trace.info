@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root nodeRef="r:7fc84f00-0d6e-4e92-a907-7624e0db57e3(EducationalGame.build-app)/6590088575814515716">
-    <file name="Mathsweeper Apps.xml">
-      <unit id="6590088575814515716" at="1,0,85,10" name="EducationalGame.build-app.Mathsweeper Apps" />
+    <file name="mathsweeper-apps.xml">
+      <unit id="6590088575814515716" at="1,0,64,10" name="EducationalGame.build-app.mathsweeper-apps" />
     </file>
   </root>
 </debug-info>
