@@ -66,19 +66,19 @@ public class ApplicationState implements Serializable {
         }
         catch (InvalidClassException ex)
         {
-            System.out.println("Loading save file from a different application version.");
+            System.out.println("Tried to load save file from a different application version.");
         }
 
         catch(ClassNotFoundException ex)
         {
             System.out.println("Failed to deserialize app state: saved state was from a different version of the app.");
-            ex.printStackTrace();
+            //ex.printStackTrace();
         }
 
         catch(IOException ex)
         {
             System.out.println("Failed to deserialize app state: could not read from save file.");
-            ex.printStackTrace();
+            //ex.printStackTrace();
         }
 
 

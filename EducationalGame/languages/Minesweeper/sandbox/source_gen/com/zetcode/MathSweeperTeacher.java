@@ -213,6 +213,8 @@ public class MathSweeperTeacher extends JFrame implements ActionListener {
     ArrayList<Fact> facts;
     ArrayList<LevelDescription> levels;
 
+    System.out.println("Loading default game configuration.");
+
     levels = new ArrayList();
     int levelNo = 0;
 

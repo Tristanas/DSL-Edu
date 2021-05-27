@@ -231,8 +231,9 @@ public class Minesweeper extends JFrame implements ActionListener {
         ArrayList<Fact> facts;
         ArrayList<LevelDescription> levels;
         ArrayList<Topic> topics = new ArrayList<>();
-
         levels = new ArrayList<>();
+
+        System.out.println("Loading default game configuration.");
 
         int levelNo = 0;
         // Setup education part:

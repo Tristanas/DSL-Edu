@@ -2052,6 +2052,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="7Cfb6vr76CQ" role="3cqZAp" />
+        <node concept="3clFbF" id="1lOelrCXS5y" role="3cqZAp">
+          <node concept="2OqwBi" id="1lOelrCXUnT" role="3clFbG">
+            <node concept="10M0yZ" id="1lOelrCXUnS" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1lOelrCXUnU" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="Xl_RD" id="1lOelrCXUnV" role="37wK5m">
+                <property role="Xl_RC" value="Loading default game configuration." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1lOelrCXPwM" role="3cqZAp" />
         <node concept="3clFbF" id="5yn1ZNt2AID" role="3cqZAp">
           <node concept="37vLTI" id="5yn1ZNt2AIE" role="3clFbG">
             <node concept="37vLTw" id="7Cfb6vr7asK" role="37vLTJ">
