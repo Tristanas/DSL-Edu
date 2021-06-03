@@ -130,8 +130,9 @@ public class Board extends JPanel implements ActionListener {
         var random = new Random();
 
         if (level.type == LevelDescription.GameType.learn) {
-            this.questions = level.lesson.questions;
             // Randomize the order of questions:
+            this.questions = level.lesson.questions;
+            Collections.shuffle(this.questions);
             facts = level.lesson.getRandomFacts(level.factCount);
         } else {
             this.facts = new ArrayList<>();
@@ -455,6 +456,7 @@ public class Board extends JPanel implements ActionListener {
         lives--;
         flagsLeft--;
         correctFlags++;
+        questionsAnswered++; // Answered incorrectly, however.
         statusbar.update(getStats()); // Make sure the status bar updates.
         JOptionPane.showMessageDialog(parentWindow,
                 "You did not answer the question correctly. \nThe mine exploded.",

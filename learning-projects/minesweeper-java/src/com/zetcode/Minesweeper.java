@@ -240,14 +240,29 @@ public class Minesweeper extends JFrame implements ActionListener {
         lessons = new ArrayList<>();
         questions = new ArrayList<>();
         questions.add(new Question(
-                "1. Is it okay to sweep mines?",
-                new String[]{"Yes", "No", "I'm just borrowing them"},
-                "Yes"
+                "I want those purple _______.",
+                new String[]{"One", "Ones"},
+                "Ones"
         ));
         questions.add(new Question(
-                "Question?",
-                new String[]{"1", "2", "3"},
-                "1"
+                "Select the pronoun that can replace the words in caps. MY BROTHER AND HIS WIFE are going to Las Vegas.",
+                new String[]{"We", "He", "They"},
+                "They"
+        ));
+        questions.add(new Question(
+                "Anna: Are you Spanish? Marco: No, _______.",
+                new String[]{"I'm not", "I don't", "I isn't"},
+                "I'm not"
+        ));
+        questions.add(new Question(
+                "One who hides away on a ship to obtain a free passage is a __________.",
+                new String[]{"Shipwright", "Compositor", "Stowaway", "Stoker"},
+                "Stowaway"
+        ));
+        questions.add(new Question(
+                "3. Is it okay to sweep mines?",
+                new String[]{"Yes", "No", "I'm just borrowing them"},
+                "Yes"
         ));
 
         facts = new ArrayList<>();
@@ -273,14 +288,24 @@ public class Minesweeper extends JFrame implements ActionListener {
 
         questions = new ArrayList<>();
         questions.add(new Question(
-                "2. Is it okay to sweep mines?",
-                new String[]{"Yes", "No", "I'm just borrowing them"},
-                "Yes"
+                "Select the pronoun that can replace the words in caps. ANA, SARAH AND I are on our way to school.",
+                new String[]{"Us", "They", "We", "Our"},
+                "We"
         ));
         questions.add(new Question(
-                "Question?",
-                new String[]{"1", "2", "3"},
-                "1"
+                "Select the pronoun that can replace the words in caps. MY BROTHER AND HIS WIFE are going to Las Vegas.",
+                new String[]{"We", "He", "They"},
+                "They"
+        ));
+        questions.add(new Question(
+                "Anna: Are you Spanish? Marco: No, _______.",
+                new String[]{"I'm not", "I don't", "I isn't"},
+                "I'm not"
+        ));
+        questions.add(new Question(
+                "One who hides away on a ship to obtain a free passage is a __________.",
+                new String[]{"Shipwright", "Compositor", "Stowaway", "Stoker"},
+                "Stowaway"
         ));
 
         learningLevel = new LevelDescription();

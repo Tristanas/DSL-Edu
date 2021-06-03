@@ -193,7 +193,7 @@
       </node>
     </node>
     <node concept="x2j0q" id="4XM$1KSYoJh" role="x2j5K">
-      <property role="x2j7K" value="One who hides away on a ship to optain a free passage is a __________." />
+      <property role="x2j7K" value="One who hides away on a ship to obtain a free passage is a __________." />
       <node concept="x2j0v" id="4XM$1KSYoKw" role="x2j0p">
         <property role="x2j0s" value="Shipwright" />
       </node>
