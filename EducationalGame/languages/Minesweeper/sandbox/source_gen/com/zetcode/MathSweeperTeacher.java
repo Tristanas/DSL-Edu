@@ -25,11 +25,12 @@ import java.awt.Container;
 import javax.swing.JButton;
 import java.awt.Component;
 import javax.swing.BorderFactory;
-import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
-import java.awt.EventQueue;
-import common.edu.Lesson;
 import common.edu.Topic;
+import java.util.function.Consumer;
+import common.edu.Lesson;
+import java.awt.event.ActionEvent;
+import java.awt.EventQueue;
 import java.util.ArrayList;
 import common.edu.Question;
 import common.edu.Fact;
@@ -158,6 +159,20 @@ public class MathSweeperTeacher extends JFrame implements ActionListener {
     // Add bottom padding: 
     container.add(Box.createRigidArea(new Dimension(0, BUTTON_SPACING)));
   }
+  public void downloadTopic() {
+    String url = JOptionPane.showInputDialog(this, "Enter the download link:");
+    if (url != null && !(url.equals(""))) {
+      Topic topic = JSONPort.getTopicFromGDrive(url);
+      appState.topics.add(topic);
+      topic.lessons.forEach(new Consumer<Lesson>() {
+        public void accept(Lesson lesson) {
+          appState.levels.add(lesson.learningLevel);
+        }
+      });
+      appState.levels.add(topic.testLevel);
+      JOptionPane.showMessageDialog(this, "Topic downloaded successfully!");
+    }
+  }
   public void actionPerformed(ActionEvent e) {
     // Manage level selection button presses: 
     try {
@@ -188,6 +203,12 @@ public class MathSweeperTeacher extends JFrame implements ActionListener {
       case GameConstants.EDIT:
         showTopicEditor();
         break;
+      case GameConstants.DOWNLOAD_TOPIC:
+        downloadTopic();
+        showLevelSelection();
+        // Update levels list. 
+        break;
+
       default:
     }
   }

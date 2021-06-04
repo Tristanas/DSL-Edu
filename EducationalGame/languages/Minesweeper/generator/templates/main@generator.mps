@@ -128,6 +128,9 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
@@ -181,6 +184,7 @@
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -216,6 +220,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -1659,6 +1664,168 @@
       <node concept="3Tm6S6" id="7Cfb6vr5UAK" role="1B3o_S" />
       <node concept="3cqZAl" id="7Cfb6vr5UAL" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="5ydGnGorGCB" role="jymVt">
+      <property role="TrG5h" value="downloadTopic" />
+      <node concept="3clFbS" id="5ydGnGorGCC" role="3clF47">
+        <node concept="3cpWs8" id="5ydGnGorGCE" role="3cqZAp">
+          <node concept="3cpWsn" id="5ydGnGorGCD" role="3cpWs9">
+            <property role="TrG5h" value="url" />
+            <node concept="3uibUv" id="5ydGnGorGCF" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="5ydGnGorMFe" role="33vP2m">
+              <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object)" resolve="showInputDialog" />
+              <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+              <node concept="Xjq3P" id="5ydGnGorMFf" role="37wK5m" />
+              <node concept="Xl_RD" id="5ydGnGorMFg" role="37wK5m">
+                <property role="Xl_RC" value="Enter the download link:" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ydGnGorGCJ" role="3cqZAp">
+          <node concept="1Wc70l" id="5ydGnGorGCK" role="3clFbw">
+            <node concept="3y3z36" id="5ydGnGorGCL" role="3uHU7B">
+              <node concept="37vLTw" id="5ydGnGorGCM" role="3uHU7B">
+                <ref role="3cqZAo" node="5ydGnGorGCD" resolve="url" />
+              </node>
+              <node concept="10Nm6u" id="5ydGnGorGCN" role="3uHU7w" />
+            </node>
+            <node concept="3fqX7Q" id="5ydGnGorGCO" role="3uHU7w">
+              <node concept="2OqwBi" id="5ydGnGorMYV" role="3fr31v">
+                <node concept="37vLTw" id="5ydGnGorMYU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ydGnGorGCD" resolve="url" />
+                </node>
+                <node concept="liA8E" id="5ydGnGorMYW" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="Xl_RD" id="5ydGnGorMYX" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5ydGnGorGCS" role="3clFbx">
+            <node concept="3cpWs8" id="5ydGnGorGCU" role="3cqZAp">
+              <node concept="3cpWsn" id="5ydGnGorGCT" role="3cpWs9">
+                <property role="TrG5h" value="topic" />
+                <node concept="3uibUv" id="5ydGnGorGCV" role="1tU5fm">
+                  <ref role="3uigEE" to="jk8j:~Topic" resolve="Topic" />
+                </node>
+                <node concept="2YIFZM" id="5ydGnGorNQw" role="33vP2m">
+                  <ref role="1Pybhc" to="4h0l:~JSONPort" resolve="JSONPort" />
+                  <ref role="37wK5l" to="4h0l:~JSONPort.getTopicFromGDrive(java.lang.String)" resolve="getTopicFromGDrive" />
+                  <node concept="37vLTw" id="5ydGnGorNQx" role="37wK5m">
+                    <ref role="3cqZAo" node="5ydGnGorGCD" resolve="url" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ydGnGorGCY" role="3cqZAp">
+              <node concept="2OqwBi" id="5ydGnGorOkx" role="3clFbG">
+                <node concept="2OqwBi" id="5ydGnGorOkv" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ydGnGorOku" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
+                  </node>
+                  <node concept="2OwXpG" id="5ydGnGorOkw" role="2OqNvi">
+                    <ref role="2Oxat5" to="t8el:~ApplicationState.topics" resolve="topics" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ydGnGorOky" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
+                  <node concept="37vLTw" id="5ydGnGorOkz" role="37wK5m">
+                    <ref role="3cqZAo" node="5ydGnGorGCT" resolve="topic" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ydGnGorGD1" role="3cqZAp">
+              <node concept="2OqwBi" id="5ydGnGorNkN" role="3clFbG">
+                <node concept="2OqwBi" id="5ydGnGorNkL" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ydGnGorNkK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ydGnGorGCT" resolve="topic" />
+                  </node>
+                  <node concept="2OwXpG" id="5ydGnGorNkM" role="2OqNvi">
+                    <ref role="2Oxat5" to="jk8j:~Topic.lessons" resolve="lessons" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ydGnGorNkO" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~ArrayList.forEach(java.util.function.Consumer)" resolve="forEach" />
+                  <node concept="1bVj0M" id="5ydGnGorYSV" role="37wK5m">
+                    <node concept="3clFbS" id="5ydGnGorYSW" role="1bW5cS">
+                      <node concept="3clFbF" id="5ydGnGos114" role="3cqZAp">
+                        <node concept="2OqwBi" id="5ydGnGos1is" role="3clFbG">
+                          <node concept="2OqwBi" id="5ydGnGos1iq" role="2Oq$k0">
+                            <node concept="37vLTw" id="5ydGnGos1ip" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
+                            </node>
+                            <node concept="2OwXpG" id="5ydGnGos1ir" role="2OqNvi">
+                              <ref role="2Oxat5" to="t8el:~ApplicationState.levels" resolve="levels" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5ydGnGos1it" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
+                            <node concept="2OqwBi" id="5ydGnGos1iu" role="37wK5m">
+                              <node concept="37vLTw" id="5ydGnGos1iv" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5ydGnGorZEo" resolve="lesson" />
+                              </node>
+                              <node concept="2OwXpG" id="5ydGnGos1iw" role="2OqNvi">
+                                <ref role="2Oxat5" to="jk8j:~Lesson.learningLevel" resolve="learningLevel" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTG" id="5ydGnGorZEo" role="1bW2Oz">
+                      <property role="TrG5h" value="lesson" />
+                      <node concept="3uibUv" id="5ydGnGorZEn" role="1tU5fm">
+                        <ref role="3uigEE" to="jk8j:~Lesson" resolve="Lesson" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ydGnGorGD3" role="3cqZAp">
+              <node concept="2OqwBi" id="5ydGnGorN1n" role="3clFbG">
+                <node concept="2OqwBi" id="5ydGnGorN1l" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ydGnGorN1k" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Cfb6vr5tAV" resolve="appState" />
+                  </node>
+                  <node concept="2OwXpG" id="5ydGnGorN1m" role="2OqNvi">
+                    <ref role="2Oxat5" to="t8el:~ApplicationState.levels" resolve="levels" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ydGnGorN1o" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object)" resolve="add" />
+                  <node concept="2OqwBi" id="5ydGnGorQQW" role="37wK5m">
+                    <node concept="37vLTw" id="5ydGnGorQQV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5ydGnGorGCT" resolve="topic" />
+                    </node>
+                    <node concept="2OwXpG" id="5ydGnGorQQX" role="2OqNvi">
+                      <ref role="2Oxat5" to="jk8j:~Topic.testLevel" resolve="testLevel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ydGnGorGD6" role="3cqZAp">
+              <node concept="2YIFZM" id="5ydGnGorNk$" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
+                <node concept="Xjq3P" id="5ydGnGorNk_" role="37wK5m" />
+                <node concept="Xl_RD" id="5ydGnGorNkA" role="37wK5m">
+                  <property role="Xl_RC" value="Topic downloaded successfully!" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ydGnGorGDa" role="1B3o_S" />
+      <node concept="3cqZAl" id="5ydGnGorGDb" role="3clF45" />
+    </node>
     <node concept="3clFb_" id="7Cfb6vr5UAM" role="jymVt">
       <property role="TrG5h" value="actionPerformed" />
       <node concept="37vLTG" id="7Cfb6vr5UAN" role="3clF46">
@@ -1893,6 +2060,39 @@
                 </node>
               </node>
               <node concept="3zACq4" id="mB0BBH8$Hn" role="3cqZAp" />
+            </node>
+          </node>
+          <node concept="3KbdKl" id="5ydGnGoryqx" role="3KbHQx">
+            <node concept="10M0yZ" id="5ydGnGor_et" role="3Kbmr1">
+              <ref role="3cqZAo" to="t8el:~GameConstants.DOWNLOAD_TOPIC" resolve="DOWNLOAD_TOPIC" />
+              <ref role="1PxDUh" to="t8el:~GameConstants" resolve="GameConstants" />
+            </node>
+            <node concept="3clFbS" id="5ydGnGor_gw" role="3Kbo56">
+              <node concept="3clFbF" id="5ydGnGor_qQ" role="3cqZAp">
+                <node concept="1rXfSq" id="5ydGnGosJ2P" role="3clFbG">
+                  <ref role="37wK5l" node="5ydGnGorGCB" resolve="downloadTopic" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5ydGnGor_qS" role="3cqZAp">
+                <node concept="1rXfSq" id="5ydGnGor_qT" role="3clFbG">
+                  <ref role="37wK5l" node="7Cfb6vr5U_A" resolve="showLevelSelection" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="5ydGnGor_qV" role="3cqZAp">
+                <node concept="1PaTwC" id="5ydGnGor_qW" role="1aUNEU">
+                  <node concept="3oM_SD" id="5ydGnGor_qY" role="1PaTwD">
+                    <property role="3oM_SC" value="Update" />
+                  </node>
+                  <node concept="3oM_SD" id="5ydGnGor_qZ" role="1PaTwD">
+                    <property role="3oM_SC" value="levels" />
+                  </node>
+                  <node concept="3oM_SD" id="5ydGnGor_r0" role="1PaTwD">
+                    <property role="3oM_SC" value="list." />
+                  </node>
+                </node>
+              </node>
+              <node concept="3zACq4" id="5ydGnGor_qU" role="3cqZAp" />
+              <node concept="3clFbH" id="5ydGnGor_gx" role="3cqZAp" />
             </node>
           </node>
         </node>
