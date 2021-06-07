@@ -19,3 +19,6 @@ A MPS Solution which contains defined languages for game creation and a sandbox 
 7. Right click on "EducationalGame" in the project view and select "Make Project". Wait for the build process to finish.
 
 Once you follow these steps you may define your own questionaires, Minesweeper games, extend or modify existing languages and play the games. Games are located in the Minesweeper sandbox solution. Right click on a game and select "run node" to run it.
+
+## Sample applications:
+In order to run sample applications outside the MPS environment, Java Runtime Environment (JRE) must be installed. Since, Java 11 compiler is used to generate the applications, it is recommended to install JRE version 11 or newer. (Oversight - not targetting Java 8 version)
